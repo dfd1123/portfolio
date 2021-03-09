@@ -1,0 +1,114 @@
+/*
+    COMPONENT - donggle sweetalert popup
+*/
+.dg-sal_popup {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  .dg-sal_icon {
+    width: 100%;
+    margin: 20px auto 0px;
+    border-radius: 0px;
+    border: 0px none;
+    background-image: url($path-icon+"icon_complete.svg");
+    @include bgOption(auto, center center);
+    transform: scale(0.8);
+    > div {
+      display: none;
+    }
+  }
+  .dg-sal_error_icon {
+    background-image: url($path-icon+"icon_error.svg");
+  }
+  .dg-sal_warning_icon,
+  .dg-sal_info_icon {
+    background-image: url($path-icon+"icon_warning.svg");
+  }
+  .dg-sal_question_icon {
+    background-image: url($path-icon+"icon_alert_question.svg");
+  }
+  .dg-sal_title,
+  .dg-sal_content {
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-size: $f-18;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: $purple_dark;
+    user-select: none;
+  }
+  .dg-sal_confirm_button {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    height: 46px;
+    border: none;
+    overflow: hidden;
+    border-radius: 0px;
+    background: none;
+    color: $white;
+    outline: none;
+    font-size: $f-16;
+    z-index: 1;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      width: 200%;
+      height: 100%;
+      background: -moz-linear-gradient(
+        left,
+        rgba(161, 52, 232, 1) 0%,
+        rgba(252, 78, 173, 1) 50%,
+        rgba(161, 52, 232, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        rgba(161, 52, 232, 1) 0%,
+        rgba(252, 78, 173, 1) 50%,
+        rgba(161, 52, 232, 1) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(161, 52, 232, 1) 0%,
+        rgba(252, 78, 173, 1) 50%,
+        rgba(161, 52, 232, 1) 100%
+      );
+      z-index: -1;
+      transition: all 0.3s;
+    }
+    &:hover:before {
+      left: -100%;
+    }
+  }
+  .dg-sal_cancel_button {
+    width: 45%;
+    height: 46px;
+    border: 1px solid $light_gray7;
+    border-radius: 0px;
+    font-size: $f-16;
+    color: $gray;
+  }
+  .swal2-styled:focus {
+    box-shadow: none;
+  }
+}
+.swal2-icon.swal2-success [class^="swal2-success-line"][class$="tip"],
+.swal2-icon.swal2-success [class^="swal2-success-line"][class$="long"],
+.swal2-icon.swal2-error [class^="swal2-x-mark-line"][class$="left"],
+.swal2-icon.swal2-error [class^="swal2-x-mark-line"][class$="right"] {
+  display: none;
+}
+
+// @keyframes bg_scale {
+//   100% {
+//     transform: scale(1);
+//   }
+// }
+// animation-name: bg_scale;
+// animation-timing-function: cubic-bezier(.39,.84,.15,1.24);
+// animation-duration: 1s;
+// animation-fill-mode: forwards;

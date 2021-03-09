@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.552" height="47" viewBox="0 0 46.552 47">
+  <g id="그룹_1038" data-name="그룹 1038" transform="translate(-569 -897)">
+    <circle id="타원_50" data-name="타원 50" cx="20" cy="20" r="20" transform="translate(573 904)" fill="rgba(0,219,216,0.34)"/>
+    <g id="btn_profile03_review" transform="translate(570 898)">
+      <g id="레이어_1" data-name="레이어 1">
+        <path id="패스_2559" data-name="패스 2559" d="M41.335,24.226a9.574,9.574,0,0,1,4.216,7.662,9.6,9.6,0,0,1-4.328,7.727V42.73a1.3,1.3,0,0,1-1.9,1.151l-3.665-1.914a16.06,16.06,0,0,1-3.092.309c-6.05,0-11.134-3.311-12.576-7.791" transform="translate(-1 -1)" fill="none" stroke="#00dbd8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_36" data-name="선 36" x2="4.082" transform="translate(34.545 29.157)" fill="none" stroke="#00dbd8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_37" data-name="선 37" x2="6.06" transform="translate(32.567 33.485)" fill="none" stroke="#00dbd8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="패스_2560" data-name="패스 2560" d="M21.748,1C10.289,1,1,8.431,1,17.6c0,4.91,2.68,9.308,6.916,12.347v4.977a2.075,2.075,0,0,0,3.035,1.839L16.807,33.7a25.661,25.661,0,0,0,4.941.493C33.207,34.2,42.5,26.765,42.5,17.6S33.207,1,21.748,1Z" transform="translate(-1 -1)" fill="none" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="선_38" data-name="선 38" x2="19.365" transform="translate(11.066 13.832)" fill="none" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="선_39" data-name="선 39" x2="9.682" transform="translate(11.066 20.748)" fill="none" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

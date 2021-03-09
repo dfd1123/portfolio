@@ -1,0 +1,74 @@
+.dg-subscribe-btn {
+  @include bgOption(35px, center 36px);
+
+  position: relative;
+  height: 260px;
+  padding: 107px 15px 30px;
+  margin: 0 0.7%;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    z-index: -1;
+  }
+  &.active {
+    border-color: $black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+  }
+  ._tit {
+    font-weight: 500;
+  }
+  ._desc {
+    margin: 8px 0px;
+    line-height: 1.5;
+    font-size: $f-12;
+    font-weight: 200;
+    color: $gray;
+  }
+  ._price {
+    font-size: $f-14;
+    font-weight: 200;
+    color: $light_gray7;
+    > b {
+      font-size: $px-22 + rem;
+      font-weight: 600;
+      color: $pink;
+    }
+  }
+}
+.dg-sub_buy-btn {
+  background-image: url($path-img+"grade/level_02_buyer_medal.png");
+}
+.dg-sub_spe-btn {
+  background-image: url($path-img+"grade/level_03_special_medal.png");
+}
+#subscribe-page {
+  &.step_common {
+    margin: 30px auto 150px;
+  }
+  .dg-reg_check_form {
+    margin: 30px 0px 0px;
+  }
+  .reg_check_peice .dg-reg_agree {
+    margin: 0px 0px 8px;
+  }
+  .dg-input-checkbox_text {
+    font-size: $f-14;
+    color: $gray;
+  }
+  .dg_write_agree_all {
+    font-size: $f-16;
+    color: $black;
+  }
+  .reg_check_peice {
+    padding: 5px 15px 15px;
+  }
+}

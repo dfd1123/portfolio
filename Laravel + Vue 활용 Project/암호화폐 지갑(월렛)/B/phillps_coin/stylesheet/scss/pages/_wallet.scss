@@ -1,0 +1,593 @@
+/* wallet */
+
+.container--wallet{
+
+    &01{
+
+        height: 100%;
+
+        .scrl-wrap{
+            @include scrollyArea();
+        }
+
+        .basic_panel--dark__contents{
+            margin-bottom: 18px;
+        }
+
+        .table_type02{
+            margin-bottom: 15px;
+        }
+
+    }
+
+    &02{
+
+        height: 100%;
+
+        .scrl-wrap{
+            @include scrollyArea();
+        }
+
+        .status-tit{
+            color: $mid-gray-01;
+        }
+
+        .basic_panel__title{
+            margin-bottom: 4px;
+        }
+
+        .basic_panel__contents{
+            margin-bottom: 18px;
+            &:last-child{
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &03{
+        .caution_list{
+            color: #333333;
+        }
+
+        .table_type01__tr:last-child{
+            border-bottom: 0;
+        }
+
+        .table_type01__tr--direct-input .table_type01__input{
+            padding-right: 2.5rem;
+        }
+
+    }
+
+    &04{
+
+        .table_type03__th{
+            width: 30%;
+            text-align: left;
+            vertical-align: middle;
+            padding: 10px 0 10px 10px;
+            color: #2E87C8;
+        }
+
+        .basic_panel--dark{
+            margin-bottom: 2rem;
+        }
+    }
+    
+
+    &03-1,
+    &04-1{
+        
+        @include scrollyArea();
+
+    }
+
+    .wallet__history-contents{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s;
+    }
+
+    #chck_history_tbl:checked ~ .basic_panel--dark__title > .basic_panel__title-label{
+        background-image: url($base-url-btn+'arrow_top_light.png');
+    }
+    #chck_history_tbl:checked ~ .wallet__history-contents{
+        max-height: 100vh;
+        transition: max-height 0.3s;
+    }
+
+    &05{
+
+        padding: 0;
+        height: 100%;
+
+        .basic_panel--dark{
+            height: 100%;
+            margin-bottom: 0;
+        }
+
+        .wallet__history-contents{
+            height: 100%;
+        }
+
+        .wallet__history{
+            height: 100%;
+        }
+
+        .wallet__history__tbl-box{
+            height: calc(100% - 45px);
+            @include responsive('mobile'){
+                height: calc(100% - 40px);
+            }
+        }
+
+        .wallet__history__tbl-scrl{
+            height: calc(100% - 33px);
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .wallet__history__btns{
+            justify-content: left;
+            align-items: center;
+            color: $white;
+            max-width: 100%;
+            padding: 0 20px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .wallet__history__btns h2{
+            margin-right: 1.5rem;
+        }
+
+        .wallet__history__btn{
+            width: 5rem;
+            padding: 7px 0;
+            margin-right: 1.2rem;
+        }
+
+        .wallet__history__btn:last-child{
+            margin-right: 0;
+        }
+
+        .wallet__history__tr .status span:before{
+            @include bgStyle(50%, 50%, contain);
+            @include position(relative, 3px, 0);
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .wallet__history__tr--status01 .status span:before{
+            background-image: url($base-url-icon+'get_light.png');
+        }
+
+        .wallet__history__tr--status02 .status span:before{
+            background-image: url($base-url-icon+'send_light.png');
+        }
+
+        .wallet__history__tr--status03 .status span:before{
+            background-size: 15px;
+            background-image: url($base-url-btn+'arrow_bt_light.png');
+        }
+
+        .wallet__history__tr--status04 .status span:before{
+            background-size: 15px;
+            background-image: url($base-url-btn+'arrow_top_light.png');
+        }
+        .wallet__history__tr--status05 .status span:before{
+            background-size: 15px;
+            background-image: url($base-url-btn+'cancel_light.png');
+        }
+
+        .wallet__history__tbl th{
+            border-color: #333;
+            font-size: 0.9em;
+            text-align: left;
+            padding-left: 15px;
+
+            &:nth-child(1){
+                width: 33%;
+            }
+            &:nth-child(2){
+                width: 33%;
+            }
+            &:nth-child(3){
+                width: 33%;
+                padding: {
+                    left: 0;
+                    right: 15px;
+                }
+                text-align: right;
+            }
+        }
+
+        .wallet__history__tbl td{
+            border: 0;
+            border-bottom: 1px solid #333333;
+            font-size: 0.9em;
+            text-align: left;
+            padding-left: 15px;
+
+            &:nth-child(1){
+                width: 33%;
+            }
+            &:nth-child(2){
+                width: 33%;
+            }
+            &:nth-child(3){
+                width: 33%;
+                padding: {
+                    left: 0;
+                    right: 15px;
+                }
+                text-align: right;
+            }
+        }
+
+        .wallet__history__tbl .date{
+            color: #999999;
+            font-size: 0.85em;
+        }
+
+    }
+
+}
+
+.wallet{
+
+    &__after-tit{
+        @include fontStyle('basic-m', normal, $light-gray-01);
+        padding-top: 45px;
+        margin-bottom: 30px;
+
+        b{
+            font: {
+                size: 1.3em;
+                weight: inherit;
+            }
+            color: $white;
+        }
+        opacity: 0;
+        transform: translateX(-2rem);
+        animation: translateNone 0.5s 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.51,.92,.24,1.15); 
+
+    }
+
+    &__etc-info{
+        @include fontStyle('basic-m', 400, black);
+        width: 100%;
+        background: #F4F4F4;
+        display: inline-block;
+        word-break: break-all;
+        padding: 10px 13px;
+        color: black;
+    }
+
+    &__adress{
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    &__qrcode{
+        width: 40%;
+        max-width: 150px;
+        display: block;
+        margin: 10px auto 15px;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__account-info{
+        line-height: 1.2;
+        text-align: center;
+        margin: 0.8rem 0 1rem;
+
+        &>span{
+            width: 100%;
+            display: inline-block;
+        }
+
+        b{
+            font-weight: 500;
+        }
+
+        &__name{
+            @include fontStyle('basic', 400, $mid-gray-01);
+        }
+    }
+
+    &__total-withdraw-price{
+        
+        &.table_type01{
+            position: relative;
+            padding: 5px 0 5px 13rem;
+            text-align: right;
+        }
+
+        .table_type01__th{
+            @include position(absolute, 5px, 0);
+            width: unset;
+        }
+        .table_type01__td{
+            padding: 0;
+            word-break: break-all;
+        }
+    }
+
+    &__history{
+        padding: 15px 0;
+
+        &__btns{
+            display: flex;
+            justify-content: space-between;
+            max-width: 25rem;
+            margin: 0 auto 15px;
+        }
+
+        &__btn{
+            @include buttonDefaultRemove(30px, #333333);
+            border: 1px solid transparent;
+            color: #fff;
+            font-weight: 300;
+            padding: 7px 30px;
+        }
+
+        &__btn.active{
+            border-color: #fff;
+        }
+
+        &__tbl{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        &__tbl-scrl{
+            @include scrollyArea(calc( (74px * 5) + 1px), 0);
+            @include responsive('mobile'){
+                @include scrollyArea(calc( (72px * 5) + 1px), 0);
+            }
+        }
+
+        &__tbl th{
+            @include fontStyle('basic', 300, $white);
+            background-color: #333;
+            padding: 5px 0;
+            border: {
+                top: 2px solid #DFDFDF;
+                bottom: 2px solid #DFDFDF;
+            }
+
+            &:nth-child(1){
+                width: 15%;
+            }
+
+            &:nth-child(2){
+                width: 35%;
+            }
+
+            &:nth-child(3){
+                width: 25%;
+            }
+
+            &:nth-child(4){
+                width: 25%;
+            }
+        }
+
+        &__tbl td{
+            @include fontStyle('basic', 200, $white);
+            border: 1px solid #999999;
+            vertical-align: middle;
+            text-align: center;
+            padding: 15px 5px;
+            line-height: 1.5;
+            letter-spacing: 0.3px;
+            
+
+            &:nth-child(1){
+                width: 15%;
+            }
+
+            &:nth-child(2){
+                width: 35%;
+            }
+
+            &:nth-child(3){
+                width: 25%;
+            }
+
+            &:nth-child(4){
+                width: 25%;
+            }
+
+            .btn_mini02{
+                margin-top: 3px;
+            }
+        }
+
+        &__tr{
+            height: 74px;
+            @include responsive('mobile'){
+                height: 72px;
+            }
+        }
+
+        &__tr--in{
+            .status{
+                font-weight: 500;
+                color: $blue-color;
+            }
+        }
+
+        &__tr--out{
+            .status{
+                font-weight: 500;
+                color: $red-color;
+            }
+        }
+
+    }
+
+}
+
+/* -- 
+    wallet
+    (before, after) 
+*/
+
+.wallet-panel{
+
+    /*before*/
+    &--before{
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 35px;
+    }
+
+    &--before p{
+        @include fontStyle('basic-l-02', 400, $mid-gray-00);
+        letter-spacing: -1px;
+
+        b{
+            font-weight: 400;
+            color: $light-gray-01;
+        }
+
+    }
+    /*end before*/
+
+    /*after*/
+    &--after{
+
+        @include bgStyle(calc(100% - 0.8rem), 0.5rem, 7.5rem);
+        width: 100%;
+        background-color: $white;
+        border-radius: 5px;
+        box-shadow: 0 3px 0 #ABABAB;
+        background-image: url($base-url-logo+'logo_wordtype.png');
+
+        transform: translateY(5rem);
+        opacity: 0;
+        animation: translateNone 0.7s 1 0.4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.51,.92,.24,1.15); 
+
+        &__hd{
+            padding: 10px 15px;
+            text-transform: uppercase;
+        }
+
+        &__hd .wlt_coin{
+            @include fontStyle('basic-l-02', inherit, $black);
+            width: calc(100% - 7.5rem);
+            word-break: break-all;
+            letter-spacing: -1px;
+            line-height: 1.3;
+        }
+
+        &__hd .wlt_price{
+            @include fontStyle('basic', inherit, $mid-gray-01);
+        }
+
+        &__hd .front_doller:before{
+            content:'$';
+        }
+
+        &__md{
+            padding: 0px 15px 10px;
+        }
+
+        &__md .wlt_adrs_label{
+            @include fontStyle('basic', inherit, $mid-gray-01);
+            display: inline-block;
+            width: 100%;
+        }
+
+        &__md .wlt_adrs{
+            @include fontStyle('basic-l-02', inherit, $black);
+            word-break: break-all;
+            line-height: 1.2;
+        }
+
+        &__bt{
+            border: {
+                top: 1px solid $border-color-02;
+                bottom: 1px solid $border-color-02;
+            }
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        &__bt .wlt_menu_btn{
+            @include buttonDefaultRemove(0, $white);
+            @include fontStyle('basic', inherit, $black);
+            @include activeEvent(){
+                background-color: darken($white, 5%);
+            }
+            width: 25%;
+            border-right: 1px solid $border-color-02;
+            text-align: center;
+            padding: 13px 0;        
+
+            &:last-child{
+                border-right: 0;
+            }
+
+            &__txt{
+                padding-left: 20px;
+            }
+
+            &__txt--send{
+                @include bgStyle(2px, 55%, 11px);
+                background-image: url($base-url-icon+'mini_send_top_dark.png');
+            }
+
+            &__txt--receive{
+                @include bgStyle(2px, 55%, 11px);
+                background-image: url($base-url-icon+'mini_get_bt_dark.png');
+            }
+
+            &__txt--deposit{
+                @include bgStyle(3px, 55%, 12px);
+                background-image: url($base-url-btn+'arrow_bt_dark.png');
+            }
+
+            &__txt--withdraw{
+                @include bgStyle(3px, 55%, 12px);
+                background-image: url($base-url-btn+'arrow_top_dark.png');
+            }
+
+        }
+
+        &__bt-02 .wlt_menu_btn{
+            @include buttonDefaultRemove(0, transparent);
+            @include fontStyle('basic', inherit, $black);
+            @include activeEvent(){
+                background-color: darken($white, 5%);
+            }
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            border: {
+                bottom-left-radius: 5px;
+                bottom-right-radius: 5px;
+            }
+        }
+
+    }
+    /*end after*/
+
+}
+
+/* -- end
+    wallet
+    (before, after) 
+*/
+
+/* end wallet */

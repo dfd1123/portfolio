@@ -1,0 +1,197 @@
+@import '../helpers/mixin';
+
+.wrapper--intro{
+
+    background-image: url(/img/bg/bg-intro.png);
+    @include bgStyle(cover);
+    @include beforeSelector(100%, 100%, rgba(0,0,0,0.4));
+
+    .wrapper--inner{
+        height: 100vh;
+    }
+
+    &__con{
+
+        font-size: 20px;
+        color: #fff;
+        padding-top: 5vh;
+
+        &__skip{
+
+            width: 100%;
+            display: inline-block;
+            text-align: right;
+            color: inherit;
+            font-size: 0.75em;
+
+        }
+
+        &__span{
+
+            font-size: 0.9em;
+            display: inline-block;
+            margin: 2.3em auto 1em;
+            width: 100%;
+            text-align: left;
+            transform: translateY(3rem);
+            opacity: 0;
+            animation-delay: 0.3s;
+            animation-name: fadeInText;
+            animation-duration: 0.8s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        }
+
+        &__h1{
+
+            font-size: 2.3em;
+            font-weight: 800;
+            display: inline-block;
+            position: relative;
+            transform: translateY(2rem);
+            opacity: 0;
+            animation-delay: 0.6s;
+            animation-name: fadeInText;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+
+            img{
+    
+                @include position($t: -0.08em, $r: -0.05em, $transX: 0, $transY: 0);
+                width: 0.9em;
+    
+            }
+
+        }
+
+    }
+
+    &__button_group{
+
+        width: 100%;
+        margin-top: 10vh;
+        font-size: $parent-normal-font;
+
+    }
+
+    &__button{
+
+        display: inline-block;
+        width: 100%;
+        padding: 1rem 0;
+        color: #fff;
+        text-align: center;
+        border-radius: 4px;
+
+        &--register{
+
+            background-color: rgba($main-color,0.75);
+            margin-bottom: 11px;
+            transform: translateY(2rem);
+            opacity: 0;
+            animation-delay: 0.8s;
+            animation-name: fadeInText;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+
+        }
+
+        &--login{
+
+            background-color: rgba(#fff, 0.6);
+            transform: translateY(3rem);
+            opacity: 0;
+            animation-delay: 1s;
+            animation-name: fadeInText;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+
+        }
+
+    }
+
+    .ft-info{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: rgba(249, 249, 249, 0.8);
+        backdrop-filter: blur(5px);
+    }
+
+    .ft-info__list__label{
+        font-weight: 400;
+    }
+
+    .ft-info__list__txt{
+        color: #6b757b;
+        font-weight: 300;
+    }
+
+}
+
+.wrapper--splash{
+
+    &__container{
+
+        @include position($t: 50%, $l: 0, $transX: 0, $transY: -50%);
+        width: 100%;
+
+    }
+
+    .ani-logo-group{
+        padding-top: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+.splash__progress{
+
+    width: 100%;
+    @include paddingLeftRight2rem;
+
+    &__bar{
+        width: 100%;
+        height: 3px;
+        background-color: $light-blue-color;
+        position: relative;
+    }
+
+    &__gage{
+        @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+        width: 50%;
+        height: 100%;
+        background-color: $main-color;
+        animation: progressGage 2s alternate 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+
+@keyframes progressGage{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes fadeInText{
+
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+
+}

@@ -1,0 +1,835 @@
+/* ----------start 모바일버전 메인페이지 스타일---------- */
+
+/* 공지사항바 */
+#main_wrap .notice_bar {
+    width: 100%;
+    height: 30px;
+    background: #f5f5f5;
+    position: relative;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#main_wrap .notice_bar i {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.ntc_bar_mask {
+    overflow: hidden;
+    height: 100%;
+    height: 17px;
+    width: 93%;
+    padding-left: 46px;
+}
+
+.ntc_tit {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    color: #00b9ff;
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+    font-size: 12px;
+    font-family: "Spoqa Han Sans Bold";
+}
+
+/* //공지사항바 */
+
+/* 메인 거래소-입출금-내자산 바로가기버튼 */
+#main_wrap .m_direct_btn {
+    width: 100%;
+    height: 100px;
+}
+
+#main_wrap .m_direct_btn ul {
+    width: 100%;
+    height: 100%;
+}
+
+#main_wrap .m_direct_btn ul li {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    background: #333;
+    text-align: center;
+}
+
+#main_wrap .m_direct_btn ul li a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 12px 0;
+}
+
+#main_wrap .m_direct_btn ul li a:active {
+    background: #141428;
+}
+
+#main_wrap .m_direct_btn ul li .icon {
+    width: 40px;
+    height: 45px;
+    display: block;
+    margin: 0 auto 0.2rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+}
+
+#main_wrap .m_direct_btn ul li:nth-child(1) .icon {
+    background-image: url(/storage/image/homepage/mobile_icon/main_01_exchange.svg);
+}
+#main_wrap .m_direct_btn ul li:nth-child(2) .icon {
+    background-image: url(/storage/image/homepage/mobile_icon/main_02_statement.svg);
+    position: relative;
+    left: 2px;
+    z-index: 1;
+}
+#main_wrap .m_direct_btn ul li:nth-child(3) .icon {
+    background-image: url(/storage/image/homepage/mobile_icon/main_03_asset.svg);
+}
+
+/* //메인 거래소-입출금-내자산 바로가기버튼 */
+
+/* 메인 코인검색 및 코인차트 */
+#main_wrap .m_coin_chart .coin_sch_bar {
+    padding-right: 0px;
+    border-top: 1px solid #dddddd;
+}
+
+#main_wrap .m_coin_chart .coin_sch_bar i {
+    top: 10px;
+}
+
+#main_wrap .m_coin_chart .sch_bar .coin_sch_checkbox {
+    display: none;
+}
+
+#main_wrap .m_coin_chart .table_label {
+    border-top: 1px solid #dddddd;
+}
+
+#main_wrap .m_coin_chart .table_label thead {
+    border-bottom: 1px solid #dddddd;
+}
+
+#main_wrap .m_coin_chart .table_label thead > tr > th,
+#main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td {
+    text-align: center;
+}
+
+#main_wrap .m_coin_chart .table_label thead > tr > th:nth-child(1) {
+    width: 20%;
+    text-align: left;
+    padding-left: 10px;
+}
+#main_wrap .m_coin_chart .table_label thead > tr > th:nth-child(2) {
+    width: 25%;
+}
+#main_wrap .m_coin_chart .table_label thead > tr > th:nth-child(3) {
+    width: 25%;
+}
+#main_wrap .m_coin_chart .table_label thead > tr > th:nth-child(4) {
+    width: 20%;
+    text-align: center;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td {
+    font-size: 0.85rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 9px 0px;
+    color: #333;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td .coin_name_eng {
+    display: inline-block;
+    color: #969696;
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td:nth-child(1) {
+    width: 25%;
+    text-align: left;
+    padding-left: 10px;
+}
+#main_wrap
+    .m_coin_chart
+    .coin_chart_tbl
+    tbody
+    > tr
+    > td:nth-child(1)
+    .coin_name
+    > small {
+    font-size: 10px;
+    color: #bbb;
+    display: block;
+}
+#main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td:nth-child(2) {
+    width: 30%;
+}
+#main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td:nth-child(3) {
+    width: 25%;
+}
+#main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td:nth-child(4) {
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    letter-spacing: 0;
+}
+
+/* //메인 코인검색 및 코인차트 */
+
+/* usdc마켓 - btc마켓 - eth마켓 탭버튼 */
+
+#main_wrap .market_list_tab {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #969696;
+}
+
+#main_wrap .market_list_tab li {
+    width: 50%;
+    border-right: 1px solid #dcdcdc;
+    font-weight: 500;
+}
+
+#main_wrap .market_list_tab li:last-child {
+    border: 0;
+}
+
+#main_wrap .market_list_tab li label {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+}
+
+#main_wrap .market_list_tab li.active {
+    color: #00b9ff;
+    border: 1px solid #00b9ff;
+}
+
+#main_wrap .market_list_tab li label:active {
+    background-color: #fafafa;
+}
+
+/* // css마켓 - btc마켓 - eth마켓 탭버튼 */
+
+/* 반응형 */
+
+@media all and (max-width: 330px) {
+    #main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td:nth-child(1) {
+        padding-left: 6px;
+    }
+
+    #main_wrap .m_coin_chart .coin_chart_tbl tbody > tr > td:nth-child(4) {
+        padding-right: 6px;
+    }
+}
+
+/* ----------end 모바일버전 메인페이지 스타일---------- */
+
+.m_coin_chart .coin_table_wrap {
+    border-top: 1px solid #333;
+}
+
+/* ---------- 191202 모바일버전 메인페이지 리뉴얼 ---------- */
+
+/* 1) 이벤트배너영역 */
+#main_wrap .m-main-event-area {
+    position: relative;
+    width: 100%;
+}
+
+#main_wrap .m-main-event-group {
+    position: relative;
+    width: 100%;
+}
+
+#main_wrap .m-main-event-list::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#main_wrap .m-main-event-list .in-toucharea {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+#main_wrap .m-main-event-list .in-more {
+    background: #0e0e3c;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    color: white;
+    padding: 5px 25px 3px;
+    border-radius: 30px;
+    font-size: 13px;
+    transform: translateY(-50%);
+}
+
+#main_wrap .m-main-event-list img {
+    width: 100%;
+    float: left;
+}
+
+#main_wrap .m-main-event-area .swiper-pagination {
+    bottom: 0;
+}
+
+#main_wrap .m-main-event-area .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.7;
+}
+
+#main_wrap .m-main-event-area .swiper-pagination-bullet-active {
+    background: #00b9ff;
+    opacity: 1;
+}
+/* 1) E */
+
+/* 2) 코인선택탭 */
+#main_wrap .market_list_tab {
+    color: #dcdcdc;
+}
+
+#main_wrap .market_list_tab li {
+    border: 0;
+}
+
+#main_wrap .market_list_tab li label {
+    font-weight: bold;
+}
+
+#main_wrap .market_list_tab li.active {
+    border: 0;
+    border-bottom: 3px solid #00b9ff;
+}
+/* 2) E */
+
+/* 3) 공지사항링크영역 */
+#main_wrap .m-main-notice-area {
+    min-height: 82px;
+    color: #333333;
+}
+
+#main_wrap .m-main-notice-area:active {
+    background-color: #f8f8f8;
+}
+
+#main_wrap .m-main-notice-area a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px 12px;
+    line-height: 1;
+    background-color: #dff2fe;
+}
+
+#main_wrap .m-main-ntc-title {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 1;
+    background: url(/images/icon/icon-arrow-right.svg) no-repeat 100% 50%;
+}
+
+#main_wrap .m-main-ntc-text {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#main_wrap .m-main-ntc-date {
+    color: #888888;
+    font-size: 10px;
+    line-height: 1;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+/* 3) E */
+
+/* 4) 메인컨텐츠영역 */
+#m-main-contents-area {
+    background-color: #231f2d;
+    text-align: center;
+    color: white;
+    font-family: spoqa han sans regular;
+}
+
+#m-main-contents-area .m-main-hdcon .sub-title {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.09;
+    letter-spacing: -0.66px;
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+#m-main-contents-area .m-main-hdcon {
+    padding: 35px 0 40px;
+    border-bottom: 4px solid white;
+}
+
+#m-main-contents-area .m-main-hdcon .big-title {
+    display: inline-block;
+    font-family: spoqa han sans bold;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2.1px;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.24);
+    margin: 10px 0 15px;
+    width: 100%;
+}
+
+#m-main-contents-area .m-main-hdcon .big-title b {
+    color: #00b9ff;
+    font-size: 77px;
+    padding-right: 11px;
+}
+
+#m-main-contents-area .m-main-hdcon .three-s li {
+    padding: 0 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 0.9;
+    vertical-align: middle;
+}
+
+#m-main-contents-area .m-main-hdcon .three-s li:nth-child(2) {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#m-main-contents-area .three-s-visual {
+    padding: 40px 0;
+}
+
+#m-main-contents-area .three-s-visual-list {
+    background: url(/images/bg/bg.png) no-repeat 50% 50%;
+    width: 30%;
+    margin: 0 2px;
+    padding: 20px 0 10px;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#m-main-contents-area .three-s-visual-list img {
+    width: 46%;
+    margin-bottom: 9px;
+    box-shadow: 0 4px 3px rgba(95, 95, 95, 0.4);
+    border-radius: 10px;
+}
+
+#m-main-contents-area .three-s-visual-list > h3 {
+    font-family: spoqa han sans regular;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+#m-main-contents-area .three-s-visual-list > span {
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 10px;
+}
+
+#m-main-contents-area .indetail-btn {
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    background: linear-gradient(to left, #4275ff, #00b1ff);
+    max-width: 200px;
+    outline: none;
+}
+
+#m-main-contents-area .m-main-videocon {
+    background: url(/images/bg/back_img.png) no-repeat;
+    background-size: 190%;
+    background-position: 30% 100%;
+    padding-top: 25px;
+    border-bottom: 4px solid white;
+}
+
+#m-main-contents-area .m-main-videocon .sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.89;
+    letter-spacing: -0.81px;
+    text-align: left;
+    color: #c6c6c6;
+}
+
+#m-main-contents-area .m-main-videocon .big-title {
+    font-family: spoqa han sans bold;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.23;
+    letter-spacing: -0.47px;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0 17px;
+}
+
+#m-main-contents-area .m-main-videocon .big-title span {
+    text-align: left;
+    display: inline-block;
+}
+
+#m-main-contents-area .m-main-videocon .sub-text {
+    color: #acaab1;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+#m-main-contents-area .video-container {
+    height: 220px;
+    padding: 0 2rem;
+    margin: 10px 0 20px;
+}
+
+#m-main-contents-area .video-contents {
+    font-size: 14px;
+}
+
+#m-main-contents-area .video-contents-tit {
+    color: #04b5ff;
+    font-family: "Spoqa Han Sans Regular";
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+#m-main-contents-area .video-list-area {
+    padding: 35px 0;
+}
+
+#m-main-contents-area .video-list-area .in-title {
+    color: #04b5ff;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#m-main-contents-area .video-list:active {
+    opacity: 0.8;
+}
+
+#m-main-contents-area .video-list .video-list-card {
+    border: 1px solid #04b5ff;
+    background-color: #1d3155;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 7px 10px 10px;
+}
+
+#m-main-contents-area .video-list .in-txt {
+    display: table-cell;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.7);
+    height: 20px;
+    display: -webkit-box;
+    overflow: hidden;
+    line-height: 20px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+#m-main-contents-area .video-list-area .vd-swiper-button-prev,
+#m-main-contents-area .video-list-area .vd-swiper-button-next {
+    width: 20px;
+    height: 20px;
+    background-size: 50% !important;
+    margin-top: 0;
+    top: 10px;
+}
+#m-main-contents-area .video-list-area .vd-swiper-button-prev {
+    background: url(/images/icon/arrow-left.svg) no-repeat;
+    left: 10px;
+}
+#m-main-contents-area .video-list-area .vd-swiper-button-next {
+    background: url(/images/icon/arrow-right.svg) no-repeat;
+    right: 0;
+    left: unset;
+}
+/* 4) E */
+
+/* 5) 게임스케쥴영역 */
+
+#main_wrap .m-main-gameschedule-area {
+    background: url(/images/bg/bg_game.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 20px 0 45px;
+}
+
+#main_wrap .m-main-gameschedule-area::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main_wrap .m-main-gameschedule-area ._inner {
+    position: relative;
+    z-index: 1;
+}
+
+#main_wrap .m-main-gameschedule-area .big-title {
+    font-family: spoqa han sans bold;
+    font-size: 35px;
+}
+
+#main_wrap .m-main-gameschedule-area .sub-text {
+    font-size: 21px;
+    padding: 5px 0 22px;
+}
+
+#main_wrap .m-main-gameschedule-area .game-content-wrap {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+#main_wrap .m-main-gameschedule-area .game-list-area {
+    position: relative;
+    z-index: 1;
+}
+
+#main_wrap .m-main-gameschedule-area .game-list-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#main_wrap .m-main-gameschedule-area .game-list-group.active {
+    opacity: 1;
+    pointer-events: visible;
+    transition: all 0.3s;
+}
+
+#main_wrap .m-main-gameschedule-area .game-list-group:after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 4.5rem);
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+#main_wrap .m-main-gameschedule-area .game-list-card {
+    line-height: 1;
+    padding: 20px 0 40px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#main_wrap .game-schedule {
+    margin-bottom: 40px;
+}
+
+#main_wrap .m-main-gameschedule-area .game-list {
+    padding: 0 2.3rem;
+}
+
+#main_wrap .m-main-gameschedule-area .game-date {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+#main_wrap .m-main-gameschedule-area .game-league {
+    display: inline-block;
+    width: 100%;
+    color: #ffff00;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+#main_wrap .m-main-gameschedule-area .game-time {
+    font-size: 13px;
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#main_wrap .m-main-gameschedule-area .match-team {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #707070;
+    position: relative;
+    height: 32px;
+    text-align: center;
+    color: #0c83fe;
+    line-height: 30px;
+    font-weight: 500;
+    max-width: 65%;
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+#main_wrap .game-score-mobi {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    font-weight: bold;
+    color: white;
+}
+
+#main_wrap .m-main-gameschedule-area .match-team > img {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+}
+
+#main_wrap .m-main-gameschedule-area .match-team ~ .vs-image {
+    width: 109px;
+    margin: -10px 0;
+}
+
+#main_wrap .m-main-gameschedule-area .gm-swiper-button-prev,
+#main_wrap .m-main-gameschedule-area .gm-swiper-button-next {
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+}
+
+#main_wrap .m-main-gameschedule-area .gm-swiper-button-prev {
+    background: url(/images/icon/arrow-left-cicle.png) no-repeat;
+    left: 21px;
+}
+
+#main_wrap .m-main-gameschedule-area .gm-swiper-button-next {
+    background: url(/images/icon/arrow-right-cicle.png) no-repeat;
+    right: 19px;
+    left: unset;
+}
+
+#main_wrap .game-category-tab {
+    padding: 0 2.25rem;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+#main_wrap .game-category-btn {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 0;
+    height: 22px;
+    width: 33%;
+    background-color: #969696;
+    line-height: 22px;
+    font-size: 12px;
+    color: #656565;
+    outline: none;
+}
+
+#main_wrap .game-category-btn:active {
+    opacity: 0.8;
+}
+
+#main_wrap .game-category-btn.active {
+    background-color: white;
+    color: black;
+}
+/* 5) E */
+
+/* 6) 푸터영역 */
+#main_wrap .m-main-footer-area {
+    background-color: #f0f0f0;
+    color: #9d9d9d;
+    font-size: 12px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#main_wrap .m-main-footer-logo {
+    width: 29%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+#main_wrap .m-main-footer-info {
+    padding: 11px 0;
+}
+/* 6) E */
+
+/* ---------- 191202 END  ---------- */
+
+/* ---------- 191223 거래소 유지보수 ---------- */
+
+/* sport coin */
+#coin_table_usd_wrapper {
+    display: none;
+}
+
+#usdc_market_list:checked ~ #coin_table_usd_wrapper {
+    display: block;
+}
+
+#usdc_market_list:checked ~ #coin_table_krw_wrapper {
+    display: none;
+}
+
+/* public coin */
+#coin_table_krw_wrapper {
+    display: none;
+}
+
+#krw_market_list:checked ~ #coin_table_krw_wrapper {
+    display: block;
+}
+
+#krw_market_list:checked ~ #coin_table_usd_wrapper {
+    display: none;
+}
+
+.coin_table_renew thead tr th:active {
+    background-color: rgba(0, 185, 255, 0.03);
+}
+
+/* ---------- 191223 END ---------- */

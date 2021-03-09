@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/ui.css" />
+</head>
+
+<body>
+  <!-- main top popup -->
+
+  <!-- header -->
+
+  <!-- content -->
+  <!--
+    _fill     리뷰/댓글이 있을 때
+    _empty    리뷰/댓글이 없을 때
+
+    ._comment_page ._empty,
+    ._deffrent_review_wrap ._empty
+
+    미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+    
+          ._board_pager : pagination이 들어갈 자리
+   -->
+  <div id="dg-product-qna-detail-wrapper">
+    <div class="dg-content_center">
+      <!-- 미니 퀵메뉴 -->
+      <aside id="_mini_quick_menu">
+        <div class="_img_box">
+          <img src="/images/badge/badge_3.svg" alt="logo">
+        </div>
+        <h2 class="_title">#QUICK</h2>
+        <ul class="_mini_quick_menu_btn_wrap">
+          <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top">위로</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom">아래로</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- 미니 퀵메뉴 E -->
+      <section id="product_qna">
+        <div class="review-detail_title clear_both">
+          <a href="ProductDetailView.html" class="_back_btn">뒤로가기</a>
+          <div class="review_img_box">
+            <img src="/images/img/product2.jpg" alt="컨트리 기모 하이웨스트 일자 바지">
+          </div>
+          <h2>
+            <b>컨트리 기모 하이웨스트 일자 바지</b><br>
+            <span>스토어명</spa>
+          </h2>
+        </div>
+        <!-- qna detail -->
+        <div class="l-con-article clear_both product_qna_contents">
+          <section class="_cs_wrap _support_wrapper _support_title_wrapper">
+            <h3>상품 문의<a href="#" class="_write_popup_btn">문의하기</a></h3>
+            <!-- 1:1문의 작성 팝업 -->
+            <div class="_popup_wrapper _write_ppopup_wrapper _cs_support_write_popup_wrapper display_none">
+              <div class="_bg"></div>
+              <div class="_popup_wrap _popup_wrap_657">
+                <div class="_popup_title">
+                  <h4>문의 작성<a href="#" class="_close_btn"> </a></h4>
+                </div>
+                <div class="_popup_content">
+                  <!-- 상품 종류 E -->
+                  <div class="_product_view _store_view vi">
+                    <div class="symbol-circle">
+                      <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                    </div>
+                    <div class="_text">
+                      <p>스토어명</p>
+                    </div>
+                  </div>
+                  <!-- 상품 종류 E -->
+                  <div class="_input_wrap">
+                    <div class="dg_write write_title">
+                      <label for="#" class="dg_blind">제목</label>
+                      <input type="tel" id="#" class="input_text_box" placeholder="제목" maxlength="13">
+                    </div>
+                  </div>
+                  <!-- 에디터 대신 삽입 -->
+                  <div class="_edter_wrap">
+                    <textarea class="_editer" name="#" id="#"></textarea>
+                  </div>
+                  <!-- 에디터 대신 삽입 E -->
+                  <div class="dg-dubble_btn_wrap clear_both">
+                    <a href="#" class="dg-btn_line dg-dubble_btn">닫기</a>
+                    <a href="#" class="dg-btn_gra dg-dubble_btn">작성완료</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 1:1문의 작성 팝업 E -->
+            <div class="_board over-y_scroll">
+              <!-- 등록된 문의가 없을 때 -->
+              <ul class="_board_layout _cs_layout _question_wrap _question_empty display_none">
+                <li>등록된 문의가 없습니다.</li>
+              </ul>
+              <!-- 등록된 문의가 없을 때 E -->
+
+              <!-- 등록된 문의가 있을 때 -->
+              <ul class="_board_layout _cs_layout _question_wrap _question_fill">
+                <li class="_cs_content _support_title active">
+                  <div class="symbol-circle">
+                    <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                  </div>
+                  <div class="_board_title_label">
+                    <span class="_name">동글 고객센터</span>
+                    <span class="_check _wait">답변대기</span>
+                    <span class="_date">2019-00-00</span>
+                    <span class="_title">질문 제목입니다. 제목이 이 레이아웃안에서는 ...으로 표시되게 바꿔주세요</span>
+                  </div>
+                </li>
+                <li class="_cs_content _support_title">
+                  <div class="symbol-circle">
+                    <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                  </div>
+                  <div class="_board_title_label">
+                    <span class="_name">동글 고객센터</span>
+                    <span class="_check _end">답변완료</span>
+                    <span class="_date">2019-00-00</span>
+                    <span class="_title">질문 제목입니다. 제목이 길어지면 이 레이아웃안에서는 ...으로 표시되게 바꿔주세요</span>
+                  </div>
+                </li>
+              </ul>
+              <!-- 등록된 문의가 있을 때 E -->
+
+            </div>
+          </section>
+
+          <section class="_cs_wrap _support_wrapper _support_content_wrapper">
+            <h3 class="_with_profill">
+              <div class="symbol-circle">
+                <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+              </div>
+              <span>동글 고객센터
+            </span></h3>
+            <div class="_board over-y_scroll">
+              <!-- 등록된 문의가 없을 때  -->
+              <ul class="_board_layout _cs_layout _question_empty_a display_none">
+                <li>등록된 문의가 없습니다.</li>
+              </ul>
+              <!-- 등록된 문의가 없을 때 E -->
+              <!-- 등록된 문의가 있을 때 -->
+              <ul class="_board_layout _cs_layout _question_fill">
+                <li class="_cs_content _support_content">
+                  <div class="_support_content_wrap">
+                    <div class="_board_title_label _support_content_title">
+                      <span class="_name">내닉네임</span>
+                      <span class="_date">2019-00-00</span>
+                      <span class="_title">질문 제목입니다. 제목이 길어져 2줄이 되어도 모두 표시를 해주세요</span>
+                    </div>
+                    <div class="_support_content_desc">
+                      <p>문의 내용입니다.최소 높이를 초과하면 자연스럽게 높이가 늘어납니다. 어느 스토어에서 어떤걸 사려는데 주문을 받다 막히던데요 왜 그런거죠?</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="_cs_content _support_content _support_answer_content _no_response">
+                  <div class="_support_content_wrap">
+                    <div class="_board_title_label _support_content_title">
+                      <span class="_name">동글 고객센터</span>
+                      <span class="_title">답변 대기중</span>
+                    </div>
+                    <div class="_support_content_desc">
+                      <p class="answer_desc">답변 대기 중입니다.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="_cs_content _support_content _support_answer_content _response  display_none">
+                  <div class="_support_content_wrap">
+                    <div class="_board_title_label _support_content_title">
+                      <span class="_name">동글 고객센터</span>
+                      <span class="_title">답변 제목입니다. 제목이 2줄이 되어도 모두 표시를 해주세요</span>
+                    </div>
+                    <div class="_support_content_desc">
+                      <p>문의해주신 상품에 관하여
+                        문의해주신 상품은 현재 품절중으로 확인되었습니다. 이후 추가 구매에 대한 계획이 있을 경우,
+                        동글 메시지를 통하여 연락드리겠습니다.
+                        최소 높이를 초과하면 자연스럽게 높이가 늘어납니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- 등록된 문의가 있을 때 E -->
+            </div>
+          </section>
+        </div>
+        <!-- qna detail E -->
+
+      </section>
+    </div>
+  </div>
+  <!-- content E -->
+
+  <!-- footer -->
+</body>
+
+</html>

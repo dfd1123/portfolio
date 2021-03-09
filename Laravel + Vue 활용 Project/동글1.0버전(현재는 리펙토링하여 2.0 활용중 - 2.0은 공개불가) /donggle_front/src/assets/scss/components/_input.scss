@@ -1,0 +1,174 @@
+/* 
+CONPONENTS - input
+ */
+//checked label design
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.dg-input-checkbox_label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  top: 9px;
+  width: 21px;
+  height: 21px;
+  margin: 3px 7px 3px 0px;
+  border-radius: 50%;
+  border: 1px solid $light_gray2;
+  background-color: white;
+}
+.dg-input-checkbox:checked + .dg-input-checkbox_label {
+  background: linear-gradient(
+    to bottom,
+    rgba(161, 52, 232, 1) 0%,
+    rgba(252, 78, 173, 1) 100%
+  );
+  border: 1px solid transparent;
+}
+.dg-input-checkbox:checked + .dg-input-checkbox_label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 28.3%;
+  left: 26.4%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: $white;
+}
+.dg-input-checkbox_text {
+  display: inline-block;
+  font-size: 0.8125em;
+  cursor: pointer;
+  user-select: none;
+}
+.write_check{
+  user-select: none;
+}
+
+// 양식 작성하기 영역
+.dg-write_form {
+  .dg_write > label {
+    display: block;
+    font-size: 0.75em;
+    user-select: none;
+  }
+  .dg_write ._label{
+    display: block;
+    font-size: 0.75em;
+    user-select: none;
+  }
+  .dg_write > p {
+    font-size: 0.75em;
+    padding: 5px 0px;
+  }
+  .dg_write {
+    margin-top: 40px;
+  }
+  .write_size {
+    position: relative;
+    .reg_select {
+      color: rgba(51, 51, 51, 0.2);
+      outline: none;
+      margin: 10px 0px 0px;
+      border: 1px solid $light_gray6;
+      padding: 11px 0px 11px 10px;
+      font-weight: 200;
+      cursor: pointer;
+      option {
+        color: $black;
+      }
+    }
+    .reg_select:focus {
+      border-color: $purple;
+      color: $gray3;
+    }
+    .reg_select:before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 20px;
+      bottom: 40px;
+      width: 7px;
+      height: 7px;
+      border-top: 0.5px solid #000;
+      border-left: 0.5px solid #000;
+      transform: rotate(-135deg);
+    }
+    .dg-reg_ex {
+      color: rgba(51, 51, 51, 0.3);
+      font-size: 0.68em;
+      user-select: none;
+    }
+  }
+  .dg-write_eq {
+    color: $blue;
+  }
+  .dg-write_wr {
+    color: $red;
+  }
+}
+
+/* wrong hide */
+.dg-write_eq_nn,
+.dg-write_wr_pw {
+  display: block;
+  user-select: none;
+}
+
+//text box design
+.input_text_box {
+  width: 100%;
+  margin-top: 1px;
+  border: none;
+  border-bottom: 1px solid $gray;
+  padding: 11px 0px;
+  font-family: "spoqa";
+  font-size:$f-14;
+  &:hover,
+  &:focus {
+    border-color: $purple;
+  }
+  &::placeholder{
+    letter-spacing: -0.8px;
+  }
+}
+.input_text_box_rewrite {
+  margin: 10px 0px;
+}
+.input_text_box_with_btn {
+  width: 72%;
+  font-size:$f-14;
+  &::placeholder{
+    letter-spacing: -0.8px;
+  }
+}
+.dg-tel_countdown {
+  margin-left: -3.5em;
+  font-size: 0.75em;
+  color: $blue;
+  user-select: none;
+}
+input::placeholder {
+  color: $black;
+  opacity: 0.2;
+}
+.input_btn_with_textbox_wrap {
+  position: relative;
+  .input_btn_with_textbox_btn {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 28%;
+    padding: 12px 0px;
+    text-align: center;
+    letter-spacing: -1.2px;
+    cursor: pointer;
+    font-size:$f-13;
+  }
+}
+.dg_blind + .input_btn_with_textbox_wrap {
+  margin-top: 10px;
+}

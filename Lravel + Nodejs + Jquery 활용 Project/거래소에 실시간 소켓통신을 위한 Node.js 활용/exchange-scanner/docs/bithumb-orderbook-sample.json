@@ -1,0 +1,52 @@
+{
+  "status": "0000",
+  "data": {
+    "timestamp": "1547118918360",
+    "payment_currency": "KRW",
+    "order_currency": "BTC",
+    "bids": [
+      { "quantity": "0.0383", "price": "4244000" },
+      { "quantity": "1.2464", "price": "4243000" },
+      { "quantity": "0.2", "price": "4242000" },
+      { "quantity": "2.0", "price": "4241000" },
+      { "quantity": "0.5686", "price": "4239000" },
+      { "quantity": "0.4349", "price": "4237000" },
+      { "quantity": "4.6619", "price": "4235000" },
+      { "quantity": "1.6928", "price": "4234000" },
+      { "quantity": "0.0064", "price": "4233000" },
+      { "quantity": "0.1591", "price": "4230000" },
+      { "quantity": "4.375", "price": "4228000" },
+      { "quantity": "0.0012", "price": "4227000" },
+      { "quantity": "0.3146", "price": "4226000" },
+      { "quantity": "0.9665", "price": "4225000" },
+      { "quantity": "0.5932", "price": "4224000" },
+      { "quantity": "3.557", "price": "4223000" },
+      { "quantity": "0.2846", "price": "4222000" },
+      { "quantity": "2.1102", "price": "4221000" },
+      { "quantity": "3.1116", "price": "4220000" },
+      { "quantity": "0.1587", "price": "4219000" }
+    ],
+    "asks": [
+      { "quantity": "0.87771614", "price": "4245000" },
+      { "quantity": "0.8", "price": "4246000" },
+      { "quantity": "1.79", "price": "4247000" },
+      { "quantity": "0.4535", "price": "4249000" },
+      { "quantity": "1.385", "price": "4250000" },
+      { "quantity": "10.4215", "price": "4251000" },
+      { "quantity": "23.21815823", "price": "4252000" },
+      { "quantity": "4.4745", "price": "4253000" },
+      { "quantity": "0.4708", "price": "4254000" },
+      { "quantity": "0.3672", "price": "4255000" },
+      { "quantity": "4.375", "price": "4260000" },
+      { "quantity": "0.4023", "price": "4261000" },
+      { "quantity": "0.1251", "price": "4262000" },
+      { "quantity": "7.2124", "price": "4263000" },
+      { "quantity": "20.31", "price": "4264000" },
+      { "quantity": "2.8018", "price": "4265000" },
+      { "quantity": "0.032", "price": "4266000" },
+      { "quantity": "0.013", "price": "4268000" },
+      { "quantity": "0.1392", "price": "4270000" },
+      { "quantity": "0.6463", "price": "4271000" }
+    ]
+  }
+}

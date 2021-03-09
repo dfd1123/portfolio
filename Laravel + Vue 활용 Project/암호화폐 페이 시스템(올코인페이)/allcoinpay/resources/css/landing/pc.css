@@ -1,0 +1,212 @@
+@media all and (max-width: 1850px) {
+
+	/*사이드 네비게이션 가로 줄면서 padding-left 줄어듦*/
+	
+	.side_nav {
+		width: 170px;
+	}
+
+	#pc_container {
+		padding-left: 170px;
+	}
+
+	/*section_1 start*/
+	
+	.main_title {
+		width: 65%;
+		min-width: 1300px;
+	}
+
+	.slide_wrapper.next_advan .slide_con.slide_con_1 {
+		background-size: 1920px 100%;
+		background-position: left;
+	}
+
+	/*section_1 end*/
+	
+	/*section_2 start*/
+	
+	.moniter_wrap {
+		width: 60%;
+	}
+
+	.middle_line .con_box {
+		right: 7%;
+		padding: 2% 0;
+		height: 217px;
+	}
+
+	.middle_line .con_box .next_btn_wrap {
+		bottom: 30px;
+		right: -40px;
+	}
+
+	.offline_phone_wrap, .allcoin_info {
+		width: 82%;
+	}
+
+	.offline_phone_wrap li {
+		margin-right: 30px;
+	}
+
+	/*section_2 end*/
+}
+
+@media all and (max-width: 1800px) {
+
+	/*section_1 start*/
+	
+	.main_title {
+		min-width: inherit;
+	}
+
+	.main_title span:nth-child(1) {
+		margin-left: 0;
+		width: 100%;
+		font-size: 3.3rem;
+		margin-bottom: 20px;
+	}
+
+	.main_title span:nth-child(2) {
+		width: 300px;
+		float: inherit;
+		right: 0;
+	}
+
+	/*section_1 end*/
+}
+
+/*pc 최소버전*/
+
+@media all and (max-width: 1584px) {
+
+	/* section_1 start */
+	
+	.slide_wrapper.next_advan .slide_con.slide_con_1 {
+		background-position: 20% 0;
+	}
+
+	.main_title span:nth-child(1) {
+		margin-left: 0;
+		width: 100%;
+		font-size: 3.3rem;
+		margin-bottom: 20px;
+	}
+
+	.main_title span:nth-child(2) {
+		width: 300px;
+		float: inherit;
+		margin: 0 auto;
+		right: 0;
+	}
+
+	.sub_title p {
+		right: -20px;
+		bottom: -10vh;
+	}
+
+	b.next_btn {
+		width: 28px;
+		height: 28px;
+		line-height: 28px;
+		font-size: 0.9rem;
+	}
+
+	.advantage_wrap li p:nth-child(1) {
+		width: 70px;
+		height: 65px;
+	}
+
+	.advantage_wrap li p:nth-child(2) {
+		font-size: 2.3rem;
+	}
+
+	.advantage_wrap li p:nth-child(3) {
+		font-size: 1.6rem;
+		line-height: 2.7rem;
+	}
+
+	.advantage_wrap li:nth-child(3) p:nth-child(1) {
+		width: 50px;
+	}
+
+	/* section_1 end */
+	
+	/* section_2 start */
+	
+	.moniter_wrap .moniter_view {
+		width: 475px;
+		height: 297px;
+		top: 56px;
+		left: 91px;
+	}
+
+	.moniter_wrap img.moniter {
+		width: 555px;
+	}
+
+	.moniter_wrap .phone_area {
+		top: 470px;
+		right: 390px;
+	}
+
+	.moniter_wrap .phone_area img.phone {
+		width: 152px;
+	}
+
+	.moniter_wrap .phone_area .phone_view {
+		width: 104px;
+		height: 184px;
+		top: 29px;
+		left: 21px;
+	}
+
+	.middle_line .con_box .next_btn_wrap {
+		bottom: 15px;
+	}
+
+
+	.middle_line .con_box.order_3 .noted_items {
+		left: -10px;
+	}
+
+	.phone_in_hand_wrap {
+		right: -30px;
+	}
+	
+	.offline_phone_wrap .offline_phone_box{
+		width: 161px;
+	}
+
+	.offline_phone_wrap,
+	.allcoin_info,.middle_line .con_box p:nth-child(2)
+	.offline_phone_wrap .offline_phone_box img {
+		width: 85%;
+	}
+
+	.offline_phone_wrap .offline_phone_box {
+		height: 260px;
+	}
+
+	.offline_phone_wrap li {
+		margin-right: 20px;
+	}
+
+	.phone_in_hand_wrap img {
+		width: 95%;
+	}
+
+	/*오프라인*/
+	.allcoin_info ul li {
+		font-size: 1.4rem;
+		margin: 1px 0;
+	}
+
+	/* section_3 start */
+	
+	.right_picture {
+		width: 490px;
+	}
+
+	/* section_3 end */
+}

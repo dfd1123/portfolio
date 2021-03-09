@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+// playbar
+
+.playbar {
+    width: 100%;
+    height: $theme-playbar-height;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0%;
+    position: fixed;
+    z-index: 200;
+    min-width: 1024px;
+
+    &-inner {
+        width: 90%;
+        min-width: 1370px;
+        max-width: 1920px;
+        margin: auto;
+        height: 100%;
+        position: relative;
+    }
+
+    &-info01 {
+        position: absolute;
+        top: 32px;
+        left: 0;
+        padding-left: 92px;
+
+        .title_singer_info {
+            color: #fff;
+            margin-top: 15px;
+        }
+
+        .title_singer_info .title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .title_singer_info .artist {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 100;
+            margin-top: 5px;
+        }
+    }
+
+    &-info02 {
+        position: absolute;
+        top: 30px;
+        display: flex;
+        align-items: center;
+        right: 0;
+
+        .btn-01 {
+            padding: 0 20px;
+            border-radius: 10px;
+            margin-left: 15px;
+        }
+    }
+
+    &-control-area {
+        text-align: center;
+        color: #fff;
+        width: 50%;
+        margin: 0 auto;
+        min-width: 700px;
+        max-width: 960px;
+
+        .playbar-time {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            height: 30px;
+        }
+
+        .ctrl-btn {
+            margin: 0 10px;
+        }
+    }
+
+    &-btns {
+        padding-top: 15px;
+    }
+}
+
+// 컨트롤 버튼
+
+.ctrl-btn {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url($ui-path-img-btn+"control_btn01.svg");
+
+    &-repeat {
+        background-position: 0 0;
+
+        &.active {
+            background-position: -60px 0;
+        }
+    }
+
+    &-prv-play {
+        background-position: -120px 0;
+    }
+
+    &-list-play {
+        background-position: -240px 0;
+    }
+
+    &-list-palse {
+        background-position: -180px 0;
+    }
+
+    &-next-play {
+        background-position: -300px 0;
+    }
+
+    &-shuffle {
+        background-position: 0 -120px;
+
+        &.active {
+            background-position: -60px -120px;
+        }
+    }
+
+    &-like-song {
+        background-position: -120px -117px;
+
+        &.active {
+            background-position: -180px -117px;
+        }
+    }
+
+    &-volume-ctrl {
+        background-position: 0 -60px;
+
+        &.active {
+            background-position: -60px -60px;
+        }
+    }
+
+    &-show-list {
+        background-position: -120px -58px;
+
+        &.active {
+            background-position: -180px -58px;
+        }
+    }
+
+    &-close {
+        background-position: -300px -120px;
+        position: absolute;
+        top: 20px;
+        right: 7px;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.volume-ctrl-panel {
+    @include position($t: -61px, $l: 60px);
+    background-color: black;
+    display: block;
+    z-index: 10;
+    padding: 10px 30px;
+    border-radius: 15px;
+    width: 230px;
+
+    [type="range"] {
+        padding: 0;
+    }
+
+    &__inner {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+
+    .volume-ctrl-progress-bar {
+        @include position($t: 50%, $l: 0);
+        transform: translateY(-50%);
+        height: 5px;
+        background-color: #fff;
+        pointer-events: none;
+    }
+}
+
+// 재생바 프로그레스
+
+.playbar-time {
+    &-progress-range {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+
+    &-progress-bar {
+        @include position($t: 50%, $l: 0);
+        transform: translateY(-50%);
+        display: block;
+        height: 5px;
+        background-color: #fff;
+        pointer-events: none;
+    }
+
+    .current_time {
+        margin-right: 30px;
+        color: #fff;
+    }
+
+    .all_time {
+        color: #bc9bff;
+        margin-left: 30px;
+    }
+}
+
+.playbar-option-bar {
+    z-index: 5;
+}
+
+.playlist-option-bar {
+    &.option-bar {
+        width: 530px;
+        right: 0;
+        left: unset;
+        z-index: 3;
+    }
+
+    .option-able {
+        display: block;
+    }
+}

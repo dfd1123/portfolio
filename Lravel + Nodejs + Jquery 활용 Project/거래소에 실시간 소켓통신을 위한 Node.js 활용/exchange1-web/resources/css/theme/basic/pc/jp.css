@@ -1,0 +1,108 @@
+body{
+    letter-spacing: -0.7px;
+	font-family: "Nunito", 'Noto Sans JP', sans-serif;
+}
+
+/* common.css */
+.board_st_wrap .board_st_inner .left_tit,
+.board_st_wrap .list_tab_ul li,
+.board_st_wrap .tab_menu_bar ul li,
+.board_st_wrap .main_tit {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* header.css */
+.navbar-sharebits .right_nav .mypage_toggle li:first-child a{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* main.css */
+.main_visual_wrap .viusal_top,
+.main_visual_wrap .p_2nd b,
+.main_section_wrap_1 .text_box h1,
+.main_section_wrap_2 .sharebits_advan_ul li h2,
+.main_section_wrap_3 .title{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+/* mypage.css */
+.mypage_hd h1{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* 거래소 */
+.trans_wrap #coin_list_table.table_in_box tr td:nth-child(1) {
+    width: 40%;
+}
+
+.trans_wrap .right_con_inbox-1 .tit .table_label th:first-child{
+    width: 39%;
+}
+
+/* 입출금 */
+.second_wdr_con .second_wdr_form_group .btn{
+    width: 28%;
+}
+
+/* FAQ */
+.board_st_wrap .tab_menu_bar ul li{
+    width: 140px;
+}
+
+/* 장외거래 */
+.p2p_list_group .list_in_con .buy_tit::before {
+    content: '購入';
+}
+.p2p_list_group .list_in_con .sell_tit::before {
+    content: '売却';
+}
+.p2p_modal_popup label{
+    width: 25%;
+}
+.p2p_modal_popup .small_slc{
+    width: 40%;
+}
+
+/* ICO */
+.ico_write_con .info_form_group label.tit{
+    width: 170px;
+}
+
+.ico_write_con .info_form_group._interview .form_align_group table th{
+    width: 16%;
+}
+
+.ico_write_con .info_form_group._notice h5:after{
+    content:'サムネイル画像の解像度を最小570 X 570pxサイズにお勧めします。';
+}
+.ico_write_con .info_form_group._detail_page h5:after{
+    content:'添付画像最大3個/解像度横1225pxをお勧めします。 （ハンジャンダン20MB以下である必要があります。）';
+}
+
+.ico_write_con .info_form_group._interview label.under_txt:after {
+    content: '(Max 10)';
+    color: #474846;
+    top: 22px;
+}
+
+.ico_write_con .info_form_group._interview label.under_txt:after {
+    content: '(Max 10)';
+    color: #474846;
+    top: 42px;
+}
+
+.attach_btn{
+    width: 175px;
+}
+
+.trans_wrap .coin_table tr td:nth-child(1) p {
+    margin-top: 7px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.trans_wrap .center_con .coin_state_1 .in_cell span {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    letter-spacing: -1.5px;
+}

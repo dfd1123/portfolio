@@ -1,0 +1,136 @@
+@media all and (max-width:320px) {
+    .startbox{
+        padding:20px 0px 20px 27%;
+    }
+    .test--title .title__number{
+        top:40px;
+    }
+    /* 평가완료 */
+    ._finish_wrap{
+        padding:5% 0px 0px;
+    }
+}//아이폰 초기버전
+
+@media all and (min-width:321px) and (max-width:375px) {
+    /* 평가완료 */
+    ._finish_wrap{
+        padding:18% 0px 0px;
+    }
+}//아이폰6/7/8
+
+@media all and (min-width:376px) and (max-width:414px) {
+    /* 평가완료 */
+    ._finish_wrap{
+        padding:29% 0px 0px;
+    }
+}//픽셀, 아이폰플러스
+
+@media all and (min-width:768px) and (max-width:1023px) {
+    .pusan--gnbwrap{
+        width:5%;
+    }
+    #pusan--gnb{
+        &::before{
+            margin-top:15px;
+        }
+        &::after{
+            margin-top:13px;
+        }
+    }
+    .start__btn{
+        width:10vw;
+        height:10vw;
+        line-height:10vw;
+    }
+    ._competency{
+        padding-top:4.8em;
+    }
+    .competency--morebtn{
+        background-position:159px center;
+    }
+    .test--qna__btn{
+        height:120px;
+    }
+    .test--title__mar{
+        margin-left:11%;
+    }
+    .test--title .title__big{
+        margin:0px 30px 15px 0px;
+        padding:13px 30px;
+    }
+    .test--title{
+        height:10em;
+    }
+    .test--form{
+        margin-bottom:100px;
+    }
+    .texfill{
+        margin-top:2.3em;
+        font-size:0.9em;
+    }
+    .texfill1{
+        line-height:1.3em;
+    }
+}//아이패드
+
+@media all and (min-width:1024px) {
+    #pusan--gnb{
+        @at-root #pusan--gnb,#pusan--gnb::before,#pusan--gnb::after{
+            height:3px;
+        }
+    }
+    .start__btn{
+        width:7vw;
+        height:7vw;
+        line-height:7vw;
+    }
+    ._competency{
+        padding-top:8em;
+    }
+    .competency--title .title__number{
+        top:2.3em;
+    }
+    .competency--morebtn{
+        background-position:159px center;
+    }
+    .test--qna__btn{
+        height:200px;
+    }
+    .test--title__mar{
+        margin-left:11%;
+    }
+    .test--title .title__big{
+        margin:0px 30px 15px 0px;
+        padding:13px 30px;
+    }
+    .test--title{
+        height:10em;
+    }
+    .test--form{
+        margin-bottom:100px;
+    }
+    .test--qnawrap{
+        margin:25px 0px;
+    }
+    .test--qnawrap1{
+        margin-top:-10px;
+    }
+    .texfill{
+        margin-top:4.5em;
+        font-size:0.9em;
+    }
+    .texfill1{
+        line-height:1.3em;
+    }
+    /* 평가완료 */
+    ._finish_wrap{
+        padding:35% 0px 0px;
+    }
+}//아이패드 프로
+
+@media all and (min-width:1200px) {
+    /* 평가완료 */
+    ._finish_wrap{
+        padding:14% 0px 0px;
+    }
+}

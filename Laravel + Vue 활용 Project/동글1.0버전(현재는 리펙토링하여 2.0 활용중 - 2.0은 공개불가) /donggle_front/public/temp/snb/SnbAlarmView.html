@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/ui.css" />
+</head>
+
+<body>
+  <!--
+    header 자리
+  -->
+
+  <!-- content -->
+  <div id="dg-snb-alarm-wrapper" class="dg-cs-wrapper">
+
+    <div class="l-page-wrapper">
+      <!-- 
+      미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+     -->
+      <!-- 미니 퀵메뉴 -->
+      <aside id="_mini_quick_menu">
+        <div class="_img_box">
+          <img src="/images/badge/badge_3.svg" alt="logo">
+        </div>
+        <h2 class="_title">#QUICK</h2>
+        <ul class="_mini_quick_menu_btn_wrap">
+          <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top">위로</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom">아래로</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- 미니 퀵메뉴 E -->
+      <div class="dg-alarm-card">
+        <h3 class="in-subject">알림</h3>
+        <div class="in-contents">
+          <ul class="_alarm_list_group">
+            <!-- 알림 리스트 없을 때 -->
+            <!-- <li class="nothing-history">
+              <img src="/images/icon/empty_alarm.svg" alt="icon empty" class="in-empty-icon" />
+              <span class="in-empty-ment">알람이 없습니다.</span>
+            </li> -->
+            <!-- 알림 리스트 없을 때 E -->
+            <!-- 알림 리스트 있을 때 -->
+            <li class="_list">
+              <figure class="symbol-circle">
+                <img src="/images/img/profile_store.jpg" alt="logo" class="_imgtag">
+              </figure>
+              <h4 class="_store">스토어명</h4>
+              <span class="_date">2019-00-00</span>
+              <p class="_txt">앗! 3일 뒤에 사라지는 할인쿠폰이 있어요. 좋은기회 놓치지 말고 사용하세요! </p>
+            </li>
+            <!-- ※ 미확인 알림은 _list에 클래스 new 추가 
+                클릭시 확인처리되면서 new 클래스 사라짐
+            -->
+            <li class="_list new">
+              <figure class="symbol-circle">
+                <img src="/images/img/profile_admin.png" alt="logo" class="_imgtag">
+              </figure>
+              <h4 class="_store">스토어명</h4>
+              <span class="_date">2019-00-00</span>
+              <p class="_txt">앗! 3일 뒤에 사라지는 할인쿠폰이 있어요. 좋은 기회 놓
+                치지 말고 사용하세요! 텍스트 영역은 작성하는 만큼 다
+                보이게 해주세요.</p>
+            </li>
+            <!-- ※ 미확인 알림은 _list에 클래스 new 추가 
+                클릭시 확인처리되면서 new 클래스 사라짐 END
+            -->
+            <!-- 알림 리스트 있을 때 E-->
+          </ul>
+        </div>
+        </divc>
+      </div>
+    </div>
+
+  </div>
+  <!-- content E -->
+
+  <!--
+    footer 자리
+  -->
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+/* LAYOUT - navigation
+   ========================================================================== */
+
+// 왼쪽 global navigation
+#header-gnb {
+  @include set-fixed($t: 0, $l: 0, $b: 0);
+  @include z-index(nav);
+  @include box-shadow($navi-shadow);
+
+  width: layoutPc(hd-gnb-width);
+
+  background-color: #ffffff;
+
+  .in-brand-con-box {
+    @include set-flex;
+
+    height: layoutPc(hd-snb-bar-height);
+    background-color: $primary-color;
+
+    .in-brand-logo {
+      display: inline-block;
+    }
+
+    .in-brand-logo > a {
+      @include width-height-100;
+
+      display: inline-block;
+    }
+
+    .in-logo {
+      width: 100%;
+    }
+  }
+}
+
+.in-gnb-group {
+  position: relative;
+
+  .in-gnb-list {
+    @include set-flex($justify-con: left);
+    @include font($c: $gray);
+    @include bg-img($path-btn, "btn_nav_arrow_off.svg");
+    @include bg-option($s: 7px, $p: calc(100% - 29px));
+
+    width: 100%;
+    height: layoutPc(hd-title-bar-height);
+    position: relative;
+
+    border-bottom: 1px solid $gray-lighter;
+    padding: 0 layoutPc(container-pd);
+
+    &.active {
+      @include bg-img($path-btn, "btn_nav_arrow_on.svg");
+      @include make-before {
+        @include set-absolute($t: 0, $l: 0);
+        @include gradient(
+          to top,
+          $primary-gradient-start,
+          $primary-gradient-end
+        );
+
+        width: 6px;
+        height: 100%;
+        background-color: red;
+      }
+
+      background-color: $gray-lighter-02;
+      color: $primary-color;
+    }
+
+    &.active .in-gnb-icon.mode-on {
+      display: block;
+    }
+
+    &.active .in-gnb-icon.mode-off {
+      display: none;
+    }
+  }
+
+  .in-gnb-icon {
+    margin-right: 11px;
+  }
+
+  .in-gnb-icon.mode-on {
+    display: none;
+  }
+}
+// END
+
+// 탭,모바일 버전일 때 검정 오버레이
+.mobile-overlay {
+  @include width-height-100;
+  @include set-fixed($t: 0, $l: 0);
+  @include z-index(overlay);
+
+  background-color: rgba(black, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+// END
+
+// 탭, 모바일 버전일 때 왼쪽 global navigation 펼치는 기능
+#mobile_show_gnb:checked ~ .mobile-overlay {
+  opacity: 1;
+  pointer-events: visible;
+  transition: 0.4s;
+}
+
+#mobile_show_gnb:checked ~ #header-gnb {
+  left: 0;
+}
+// END
+
+//기능 버튼들
+.in-mobile-gnb-hd {
+  .icon-close-btn {
+    top: 10px;
+    left: 10px;
+    transform: none;
+    background-position: center;
+  }
+  .in-store-profile {
+    padding: 10px 18px;
+  }
+
+  .in-bottom-btns {
+    @include set-absolute($b: 0px, $l: 0px);
+
+    width: 100%;
+    background-color: $gray-lighter;
+
+    > a {
+      @include set-relative;
+      @include font($s: $em-12px, $c: $gray);
+
+      display: block;
+      float: left;
+      width: 50%;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+    }
+    .link-cs-btn:before {
+      @include set-absol-top;
+
+      content: "";
+      right: 0px;
+      display: block;
+      width: 1px;
+      height: 16px;
+      background-color: $gray-light-01;
+    }
+  }
+}
+
+// 모바일 snb
+.inner-snb-group {
+  @include set-absolute($r: 10px, $t: 0);
+
+  display: inline-block;
+
+  .in-icon-btn {
+    @include inline-block;
+
+    position: relative;
+  }
+}
+
+/* LAYOUT - navigation (반응형)
+   ========================================================================== */
+
+@include media-pc(15inch) {
+  // 왼쪽 global navigation
+  #header-gnb {
+    width: layoutPc15(hd-gnb-width);
+
+    .in-brand-con-box {
+      height: layoutPc15(hd-snb-bar-height);
+
+      .in-brand-logo {
+        width: 93px;
+      }
+    }
+  }
+
+  .in-gnb-group {
+    .in-gnb-list {
+      background-image: unset;
+      height: layoutPc15(hd-title-bar-height);
+      padding: 0 layoutPc15(container-pd);
+      font-size: 13px;
+
+      &.active {
+        background-image: unset;
+      }
+    }
+  }
+  // END
+}
+
+@include media-mobile-version(ipad){
+  // 왼쪽 global navigation
+  #header-gnb {
+    width: layoutTablet(hd-gnb-width);
+    left: -#{layoutTablet(hd-gnb-width)};
+
+    padding-top: layoutTablet(hd-title-bar-height);
+    transition: 0.4s;
+  }
+  // END
+  
+  .in-gnb-group {
+    .in-gnb-list {
+      @include bg-img($path-btn, "btn_nav_arrow_off.svg");
+      @include bg-option($s: 7px, $p: calc(100% - 20px));
+
+      height: 60px;
+      padding: 0 30px;
+      font-size: 14px;
+
+      &.active {
+        @include bg-img($path-btn, "btn_nav_arrow_on.svg");
+      }
+    }
+  }
+}
+
+@include media-mobile-version(galaxy-tab){
+  // 왼쪽 global navigation
+  #header-gnb {
+    width: layoutTab(hd-gnb-width);
+    left: -#{layoutTab(hd-gnb-width)};
+
+    padding-top: layoutTab(hd-title-bar-height);
+  }
+  // END
+}
+
+@include media-mobile-version(mobile-only){
+  // 왼쪽 global navigation
+  #header-gnb {
+    width: layoutMobile(hd-gnb-width);
+    left: -#{layoutMobile(hd-gnb-width)};
+    box-shadow: none;
+  }
+
+  .in-gnb-group {
+    height: calc(100% - 100px);
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+      -ms-overflow-style: none;
+    }
+
+    .in-gnb-list {
+      @include bg-option($s: 8.5px, $p: calc(100% - 20px));
+    }
+  }
+  // END
+}

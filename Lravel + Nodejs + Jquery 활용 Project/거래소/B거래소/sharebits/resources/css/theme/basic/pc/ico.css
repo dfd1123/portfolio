@@ -1,0 +1,966 @@
+/* ------------------------ICO 스타일 START ------------------------ */
+
+/* ------------------------1.ICO------------------------ */
+
+/* ICO목록 */
+.ico_list_group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ico_list_group .list_in_con{
+    width: 32%;
+    margin-right: 2%;
+}
+
+.ico_list_group .list_in_con:nth-child(3n){
+    margin-right: 0;
+}
+
+.ico_list_group .list_in_con .thumnail{
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ico_list_group .list_in_con .thumnail img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.ico_list_group .list_in_con .thumnail:after{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 120px 0;
+    display: none;
+}
+
+.ico_list_group .list_in_con .thumnail.upcoming:after{
+    content: 'coming soon';
+    display: block;
+}
+
+.ico_list_group .list_in_con .thumnail.soldout:after{
+    content: 'sold out';
+    display: block;
+}
+
+.ico_list_group .list_in_con .thumnail.end:after{
+    content: 'end';
+    display: block;
+}
+
+.ico_list_group .list_in_con:hover .thumnail img{
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+
+.ico_list_group .list_in_con .thumnail.waiting:after{
+    content: 'Conforming';
+    display: block;
+}
+.ico_list_group .list_in_con:hover{
+    border-color: #62cccc;
+}
+
+.ico_list_group .list_in_con .infos{
+    padding: 16px;
+    font-size: 13px;
+    color: #787878;
+}
+
+.ico_list_group .list_in_con .infos .hd{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    color: black;
+}
+
+.ico_list_group .list_in_con .infos .hd span:nth-child(1){
+    color: #4aa4a4;
+    padding-right: 10px;
+    border-right: 1px solid #4aa4a4;
+    margin-right: 5px;
+}
+
+.ico_list_group .list_in_con .infos p{
+    position: relative;
+}
+
+.ico_list_group .list_in_con .info label{
+    position: absolute;
+    left: 0;
+}
+
+.ico_list_group .list_in_con .info._date{
+    padding-top: 10px;
+    font-size: 11px;
+    letter-spacing: 0.1px;
+}
+
+.ico_list_group .list_in_con .info._txt{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.ico_list_group .list_in_con .info._period{
+    font-size: 12px;
+    letter-spacing: 0.1px;
+}
+
+.ico_list_group .list_in_con .info._psbcoin{
+    color: #474846;
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+.ico_list_group .list_in_con .info._psbcoin label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #ff4646;
+    border: 1px solid #ff4646;
+    padding: 0 10px;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 5px;
+}
+
+.ico_list_group .list_in_con .info._minimal{
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+    text-align: right;
+    font-weight: bold;
+    color: #474846;
+}
+
+.ico_list_group .list_in_con .info._minimal label{
+    font-size: 11px;
+    top: 14px;
+    color: #787878;
+    font-weight: 400;
+}
+
+.ico_list_group .list_in_con .info._minimal span{
+    font-size: 15px;
+}
+
+/* //ICO목록 */
+
+/* ------------------------2.나의 ICO------------------------ */
+
+
+/* ------------------------//2.나의 ICO------------------------ */
+
+/* ------------------------3.나의 ICO내역------------------------ */
+
+.ico_list_wrap.ico_hstry_wrap {
+    border: 1px solid #dddddd;
+}
+
+.ico_list_wrap.ico_hstry_wrap .table_label{
+    border-bottom: 1px solid #dddddd;
+}
+
+.ico_list_wrap.ico_hstry_wrap .currency{
+    margin-left: 0;
+}
+
+.ico_list_wrap.ico_hstry_wrap .table_label thead>tr>th{
+    text-align: center;
+}
+
+.ico_list_wrap.ico_hstry_wrap .table_label thead>tr>th:nth-child(1){
+    width: 17%;
+}
+.ico_list_wrap.ico_hstry_wrap .table_label thead>tr>th:nth-child(2){
+    width: 13%;
+    text-align: left;
+    padding-left: 30px;
+}
+.ico_list_wrap.ico_hstry_wrap .table_label thead>tr>th:nth-child(3){
+    width: 21%;
+}
+.ico_list_wrap.ico_hstry_wrap .table_label thead>tr>th:nth-child(4){
+    width: 14%;
+}
+.ico_list_wrap.ico_hstry_wrap .table_label thead>tr>th:nth-child(5){
+    width: 14%;
+}
+.ico_list_wrap.ico_hstry_wrap .table_label thead>tr>th:nth-child(6){
+    width: 21%;
+}
+
+.ico_list_wrap.ico_hstry_wrap .coin_chart_tbl tbody>tr>td{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.ico_list_wrap.ico_hstry_wrap .coin_chart_tbl tbody>tr>td:nth-child(1){
+    width: 17%;
+    text-align: center;
+    padding: 0;
+}
+.ico_list_wrap.ico_hstry_wrap .coin_chart_tbl tbody>tr>td:nth-child(2){
+    width: 13%;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 0;
+}
+.ico_list_wrap.ico_hstry_wrap .coin_chart_tbl tbody>tr>td:nth-child(3){
+    width: 21%;
+}
+.ico_list_wrap.ico_hstry_wrap .coin_chart_tbl tbody>tr>td:nth-child(4){
+    width: 14%;
+}
+.ico_list_wrap.ico_hstry_wrap .coin_chart_tbl tbody>tr>td:nth-child(5){
+    width: 14%;
+    
+}
+.ico_list_wrap.ico_hstry_wrap .coin_chart_tbl tbody>tr>td:nth-child(6){
+    width: 21%;
+    text-align: right;
+}
+
+.ico_list_wrap.ico_hstry_wrap .coin_chart_tbl tbody>tr.none_transac>td:nth-child(1){
+    padding: 20px 0;
+}
+
+/* ------------------------//3.나의 ICO내역------------------------ */
+
+/* ------------------------ico_view------------------------ */
+
+/* 상단 메인정보(썸네일, 구매옵션창) */
+
+.ico_view_con .main_info{
+    width: 100%;
+    height: 615px;
+    display: flex;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 20px 0;
+}
+
+.ico_view_con .main_info .thumnail{
+    width: 45%;
+    margin-right: 50px;
+}
+
+.ico_view_con .main_info .thumnail img{
+    width: 100%;
+    height: 100%;
+}
+
+.ico_view_con .main_info .infos{
+    width: 55%;
+    font-size: 13px;
+}
+
+.ico_view_con .main_info .infos .hd_coin{
+    color: #4aa4a4;
+    font-size: 26px;
+    padding-right: 15px;
+    border-right: 1px solid #4aa4a4;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 10px;
+    padding-top: 3px;
+    margin-top: 5px;
+}
+
+.ico_view_con .main_info .infos .hd_tit{
+    display: inline-block;
+    font-size: 25px;
+    line-height: 25px;
+    height: 25px;
+    padding-top: 3px;
+    margin-top: 5px;
+}
+
+.ico_view_con .main_info .info._date{
+    font-size: 11px;
+    color: #787878;
+    padding: 10px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.ico_view_con .main_info .infos .not_active_btn{
+    background: #aaaaaa;
+}
+
+.ico_view_con .main_info .info._date .idbywriten{
+    color: #333333;
+    border-right: 1px solid #dddddd;
+    letter-spacing: 0;
+}
+
+.ico_view_con .main_info .info._date .datewriten{
+    color: #333333;
+    letter-spacing: 0;
+}
+
+.ico_view_con .main_info .info._period{
+    letter-spacing: 0;
+    font-size: 15px;
+    padding: 15px 10px 10px 40px;
+    background-image: url(/storage/image/homepage/calender_icon.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.ico_view_con .main_info .s_info{
+    padding: 3px 0;
+    position: relative;
+}
+
+.ico_view_con .main_info .s_info label{
+    width: 120px;
+    font-size: 12px;
+}
+
+.ico_view_con .main_info .s_info._price{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+.ico_view_con .main_info .s_info._myast{
+    margin-top: 10px;
+}
+
+.ico_view_con .main_info .s_info._psbcoin span,
+.ico_view_con .main_info .s_info._price span{
+    font-weight: bold; font-size: 16px;
+}
+
+.ico_view_con .main_info .s_info._psbcoin span{
+    color: #ff4646;
+}
+
+.ico_view_con .main_info .s_info._myast,
+.ico_view_con .main_info .s_info._minimal{
+    text-align: right;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ico_view_con .main_info .s_info._myast label,
+.ico_view_con .main_info .s_info._minimal label,
+.ico_view_con .main_info .s_info._buyamt label{
+    position: absolute;
+    left: 0;
+    text-align: left;
+    top: 0;
+    height: 100%;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.ico_view_con .main_info .s_info._myast .currency,
+.ico_view_con .main_info .s_info._minimal .currency{
+    font-weight: 400;
+}
+
+.ico_view_con .main_info .info._totalsum{
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid #4aa4a4;
+}
+
+.ico_view_con .main_info .info._totalsum label{
+    font-weight: bold;
+    top: 10px;
+    left: 0;
+    position: absolute;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group{
+    height: 40px;
+    font-size: 15px;
+    position: relative;
+    width: 320px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group input{
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    padding-right: 80px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: right;
+    font-size: 20px;
+    outline: none;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group input:focus{
+    border-color: #4aa4a4;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .currency{
+    position: absolute;
+    right: 40px;
+    top: 0;
+    height: 100%;
+    line-height: 40px;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .updown_btn{
+    background: #fff;
+    position: absolute;
+    right: 0;
+    border: 1px solid #dddddd;
+    width: 30px;
+    text-align: center;
+    color: #555555;
+    height: 21px;
+    cursor: pointer;
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .up_btn.updown_btn{
+    top: 0;
+    background-image: url(/storage/image/homepage/icon/plu-min-01.svg);
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .up_btn.updown_btn:hover{
+	background-color: rgba(255,70,70,0.1);
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .up_btn.updown_btn:active{
+	background-color: rgba(255,70,70,0.2);
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .down_btn.updown_btn{
+    bottom: 0;
+    background-image: url(/storage/image/homepage/icon/plu-min-02.svg);
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .down_btn.updown_btn:hover{
+	background-color: rgba(67,120,255,0.1);
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .down_btn.updown_btn:active{
+	background-color: rgba(67,120,255,0.2);
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent{
+    display: flex;
+    width: 320px;
+    margin: 17px 0 10px auto;
+    padding-right: 50px;
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent li{
+    flex: 1;
+    width: 100%;
+    height: 2px;
+    background: #dddddd;
+    position: relative;
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent li button{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid #dddddd;
+    position: absolute;
+    border-radius: 50%;
+    padding: 0;
+    top: -5px;
+    right: 0;
+    cursor: pointer;
+    outline: none
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent li button:active{
+    background: #4aa4a4;
+    border-color: #4aa4a4;
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent li:nth-child(1) button.left{
+    left: 0;
+}
+
+.ico_view_con .main_info .info._totalsum .pctvalue{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    color: #787878;
+}
+
+.ico_view_con .main_info .info._totalsum .pctvalue b{
+    font-weight: 400;
+    margin-right: 3px;
+}
+
+.ico_view_con .main_info .s_info._buyamt{
+    text-align: right;
+    margin: 10px 0 20px;
+    font-weight: bold;
+}
+
+.ico_view_con .main_info .s_info._buyamt label{
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.ico_view_con .main_info .s_info._buyamt b{
+    font-size: 19px;
+    letter-spacing: 0;
+}
+
+.ico_view_con .main_info .s_info._buyamt .currency{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.ico_view_con .main_info .info_agree{
+    font-size: 11px;
+    color: #b4b4b4;
+    position: relative;
+}
+
+.ico_view_con .main_info .info_agree label{
+    padding-left: 30px;
+}
+
+.ico_view_con .main_info .info_agree input{
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+
+.ico_view_con .main_info .btn_style{
+    height: calc(2.6rem + 2px);
+    font-size: 14px;
+    outline: none;
+}
+
+/* //상단 메인정보(썸네일, 구매옵션창) */
+
+.ico_view_con .info_section {
+    border-radius: 5px;
+    padding: 15px 80px 60px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.ico_view_con .info_section h6{
+    padding-top: 50px;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.ico_view_con .info_section h6:before{
+    position: absolute;
+    bottom: 47px;
+    height: 3px;
+    width: 21px;
+    background: #4aa4a4;
+    content: '';
+    left: 0;
+}
+
+.ico_view_con .info_section2 table{
+    width: 100%;
+    font-size: 13px;
+}
+
+.ico_view_con .info_section2 table th{
+    padding: 10px 0;
+    color: #787878;
+    font-weight: 400;
+}
+
+.ico_view_con .info_section2 table .down_btn{
+    background: #fff;
+    border: 0;
+    border: 1px solid #474846;
+    border-radius: 30px;
+    font-weight: bold;
+    outline: none;
+    padding: 5px 25px 5px 10px;
+    margin-right: 5px;
+    background-image: url(/storage/image/homepage/icon/download_icon.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 33px 6px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.ico_view_con .info_section2 table .down_btn:hover{
+    border-color: #4aa4a4;
+    color: #4aa4a4;
+}
+
+.ico_view_con .info_section2 table .down_btn:active{
+    background-color: #f7f7f7;
+}
+
+.ico_view_con .info_section2 table .sns_tr a{
+    color: #4aa4a4;
+    text-decoration: underline;
+    margin-right: 5px;
+}
+
+.ico_view_con .info_section2 table .hp_tr a:hover{
+    text-decoration: underline;
+}
+
+.ico_view_con .text-right .btn_style{
+    width: 90px;
+    font-size: 13px;
+    height: calc(2rem + 1px);
+    outline: none;
+}
+
+.ico_view_con .text-right span{
+    color: #787878;
+    font-size: 12px;
+}
+
+.ico_view_con .text-right .btn_style:last-child{
+    background: #464a58;
+}
+
+.ico_view_con .text-right .btn_style:last-child:hover{
+    background: #373c49;
+}
+
+section.info_section.info_section3 div img {
+    width: 100%;
+}
+
+/* ------------------------//ico_view------------------------ */
+
+/* ------------------------ico_write------------------------ */
+
+/* 공통 */
+
+.grouper{
+    display: inline-block;
+    float: left;
+}
+
+.grouper input,.grouper .form-control{
+    float: left;
+    display: inline-block;
+}
+
+.attach_btn{
+    width: 95px;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    background: #b4b4b4;
+    color: #fff; 
+    padding: 0.375rem 0;   
+}
+
+.w_180px{
+    width: 180px;
+}
+
+.w_50px{
+    width: 50px;
+}
+
+.w_half{
+    width: 50%;
+}
+
+.w_100{
+    width: 100%;
+}
+
+.bd-red{
+    border: 1px solid #ff4646; 
+    text-align: center;
+    text-transform: uppercase;
+    background: #fff !important;
+}
+
+.bd-blue{
+    border: 1px solid #4378ff;   
+    text-transform: uppercase;
+    background: #fff !important;
+}
+
+.bb-f0f0{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* //공통 */
+
+/* 각 섹션 제목부분 */
+
+.ico_write_con .hd_subject{
+    border-bottom: 1px solid #000000;
+    padding: 0 15px 10px 17px;
+    position: relative;
+}
+
+.ico_write_con .hd_subject h1{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.ico_write_con .hd_subject span{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #787878;
+}
+
+.ico_write_con .info_form_group {
+    padding: 23px 5px;
+    border-bottom: 1px solid #87cdce;
+}
+
+.ico_write_con .info_form_group h5 {
+    padding: 2px 10px 25px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    background-image: url(/storage/image/homepage/icon/write_icon.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.ico_write_con .info_form_group._notice h5:after,
+.ico_write_con .info_form_group._detail_page h5:after{
+    content: '* 썸네일 이미지 해상도를 최소 570 X 570px사이즈로 권장합니다.';
+    color: #ff4646;
+    font-size: 12px;
+    position: absolute;
+    top: 3px;
+    left: 110px;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.ico_write_con .info_form_group._detail_page h5:after{
+    content:'* 첨부이미지 최대3개 / 해상도 가로 1225px을 권장합니다. (한장당 20MB 이하여야합니다.)';
+    left: 130px;
+}
+
+/* //각 섹션 제목부분 */
+
+/* 라인 */
+
+.ico_write_con .info_form_group .form_align {
+    display: flex;
+    margin-bottom: 0.5rem;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.ico_write_con .info_form_group div.form_align{
+    height: auto;
+}
+
+/* //라인 */
+
+/* //폼 라벨 */
+
+.ico_write_con .info_form_group label.tit {
+    width: 140px;
+    font-size: 13px;
+    position: relative;
+}
+
+.ico_write_con .info_form_group label.under_txt:after{
+    content: '* jpg,png';
+    color: red;
+    position: absolute;
+    top: 20px;
+    font-size: 12px;
+    left: 0;
+}
+
+.ico_write_con .info_form_group label.under_txt.pdf:after{
+    content: '* pdf';
+}
+
+.ico_write_con .info_form_group._interview label.under_txt:after{
+    content: '(최대 10개)';
+    color: #474846;
+}
+
+.info_form_group .form_align_group._officalsns label.tit{
+    width: 170px;
+}
+
+.form_align._officalsns label.tit{
+    width: 170px;
+}
+
+/* //폼 라벨 */
+
+/* 기타 */
+
+.ico_write_con .info_form_group .form-control.symbol_form{
+    width: 95px;
+}
+
+.ico_write_con .info_form_group._notice .type_num_checker{
+    position: absolute;
+    color: #4378ff;
+    font-size: 11px;
+    right: 10px;
+    top: 0;
+}
+
+.form_align._buyprice .point_clr_1{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ico_write_con .info_form_group._interview .form_align_group table th{
+    width: 11%;
+}
+
+/* //기타 */
+
+/* 다운로드 받을 수 있는거 모아놓은 테이블 */
+
+.form_align_group{
+    margin-bottom: 0.5rem;
+    display: flex;
+}
+
+.form_align_group table{
+    width: 100%;
+}
+
+.form_align_group table th{
+    font-size: 12px;
+    vertical-align: middle;
+    width: 8%;
+    padding: 0 15px 0 5px;
+    text-align: right;
+}
+
+.form_align_group table td{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.plus_tr_btn{
+    padding-left: 35px;
+    text-align: left;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.plus_tr_btn:before{
+    display: block;
+    position: absolute;
+    content: '+';
+    border-radius: 50%;
+    background: #464a58;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    top: 5px; left: 0;
+    line-height: 25px;
+}
+
+.ico_write_con .info_form_group._interview .form_align_group table th.plus_tr_btn{
+    padding: 10px 0;
+    padding-left: 35px;
+    text-align: left;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.board_st_wrap.p2p_ico_wrap.ico_create_wrap button[type="submit"]{
+    background: #464a58;
+    width: 185px;
+    font-size: 14px;
+}
+
+/* //다운로드 받을 수 있는거 모아놓은 테이블 */
+
+/* 시간설정할 수 있는거 */
+
+/* 시간설정할 수 있는거 */
+
+/* 반응형 */
+
+@media all and (max-width: 1500px){
+    
+    .board_st_wrap.p2p_ico_wrap.ico_create_wrap .board_st_inner{
+        padding: 25px 0;
+    }
+    
+}
+
+@media all and (max-width: 1350px){
+    
+    
+    .board_st_wrap.p2p_ico_wrap .board_st_con.ico_write_con{
+        width: 95%;
+    }
+    .ico_write_con .info_form_group label.tit{
+        width: 120px;
+        font-size: 12px;
+    }
+    
+}
+
+/* //반응형 */
+
+/* ------------------------//ico_write------------------------ */
+
+/* ------------------------ICO 스타일 END ------------------------ */

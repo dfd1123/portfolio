@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.521" height="17.457" viewBox="0 0 16.521 17.457">
+  <g id="btn_delete-on" transform="translate(0.6 0.6)">
+    <g id="그룹_3515" data-name="그룹 3515" transform="translate(0 2.357)">
+      <line id="선_380" data-name="선 380" x2="15.321" stroke-width="1.2" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    </g>
+    <path id="패스_127" data-name="패스 127" stroke="#333" d="M13.926,17.4H3.146L2.25,3.5H14.821Z" fill="none" transform="translate(-0.875 -1.143)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2" fill-rule="evenodd"/>
+    <rect id="사각형_1018" data-name="사각형 1018" width="6.286" height="2.357" transform="translate(4.518 0)" stroke-width="1.2" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <line id="선_381" data-name="선 381" y2="6.286" transform="translate(7.661 5.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <line id="선_382" data-name="선 382" y2="6.286" transform="translate(10.018 5.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <line id="선_383" data-name="선 383" y2="6.286" transform="translate(5.304 5.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+  </g>
+</svg>

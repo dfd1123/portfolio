@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="btn_calendar" width="18" height="13.604" viewBox="0 0 18 13.604">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-1,.cls-2{stroke:#00b9ff}.cls-2,.cls-4{fill:none}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="사각형_822" class="cls-1" data-name="사각형 822">
+        <path d="M0 0h18v12.104H0z" class="cls-3" transform="translate(0 1.5)"/>
+        <path d="M.5.5h17v11.104H.5z" class="cls-4" transform="translate(0 1.5)"/>
+    </g>
+    <path id="선_81" d="M0 0h18" class="cls-2" data-name="선 81" transform="translate(0 5.629)"/>
+    <path id="선_82" d="M0 0v4" class="cls-2" data-name="선 82" transform="translate(4)"/>
+    <path id="선_83" d="M0 0v4" class="cls-2" data-name="선 83" transform="translate(14)"/>
+</svg>

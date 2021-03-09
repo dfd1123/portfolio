@@ -1,0 +1,49 @@
+/* login */
+.container--login{
+    
+    text-align: center;
+    max-width: 30rem;
+
+    .btn_solid{
+        margin-top: 20px;
+    }
+    
+}
+
+.login{
+
+    &__symbol{
+        max-width: 10rem;
+        width: 40%;
+        margin: 30px auto 15px;
+    }
+
+    &__ment{
+        @include fontStyle('basic-l', $color: inherit);
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        letter-spacing: -1px;
+
+        em{
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+    }
+
+    &__option{
+        @include fontStyle('basic', $color: #444444);
+        margin: 15px 0;
+        text-align: center;
+
+        a{
+            color: $light-gray-01;
+            padding: 0 18px;
+        }
+
+    }
+
+}
+
+/* end login */

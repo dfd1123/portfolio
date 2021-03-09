@@ -1,0 +1,53 @@
+.slick-dots {
+  position: absolute;
+  top: -62px;
+  left: -253px;
+  bottom: auto;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 0px;
+    padding: 0;
+    cursor: pointer;
+
+    &.slick-active button:before {
+      color: $purple;
+    }
+
+    &:active button:before {
+      color: $purple;
+    }
+
+    button:before {
+      font-family: slick;
+      font-size: 3px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: "•";
+      text-align: center;
+      opacity: 0.25;
+      color: #dbdbdb;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+
+.popular-main-lists {
+  .slick-dots {
+    left: -173px;
+  }
+}

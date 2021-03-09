@@ -1,0 +1,37 @@
+<?php
+
+return [
+'lockset' => 'Coinlock Superintend',
+'newcoin' => 'Create Coinlock',
+'lockedit' =>  'Edit Coinlock',
+'locklist' => 'Coinlock List',
+'lockkind' => 'Monetary type',
+'fee' => 'Rate of commission allocation',
+'active' => 'State',
+'time' => 'Creation time',
+'time2' => 'Last Operation Time',
+'active2' => 'Movement',
+'ending' => 'Terminating',
+'off' => 'No Progress',
+'ing' => 'In Progress',
+'weekcoin' => 'Determines the percentage of the entire weeks fees for that coin to be distributed as a dividend. Up to four decimal places.
+ex) 35 percent distribution at 0.35 input.',
+'add' => 'Add',
+'chan' => 'Change',
+'gg' => 'Cancel',
+'update' => 'Updated information in',
+'insert' => 'You must enter a value.',
+'lot' => 'Too many digits.',
+'wrong' => 'You have entered an invalid value.',
+'nofee1' => 'The fee allocation ratio can not be less than or equal to zero.',
+'nofee2' => 'The fee allocation ratio can not be greater than one.',
+'nocoinlock' => 'Coinlock does not exist.',
+'endc' => 'Are you sure you want to cancel?',
+'start' => 'Are you sure you want to start? You can not exit immediately after startup.',
+'end' => 'Are you sure you want to quit? It ends after dividend at the last dividend day after the end of the termination.',
+'noend' => 'Cancel exit',
+'gogo' => 'Start',
+'realend' => 'Cancel exit',
+'edit' => 'Edit',
+
+];

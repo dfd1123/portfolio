@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-mypage-store-list-wrapper" class="mypage-store-list-wrapper">
+      <!-- * 마이페이지 헤더 -->
+      <div class="l-con-area full">
+        <article class="l-con-article dg-product-list-wrapper">
+          <div class="_page_title_wrap">
+            <h2>
+              관심리스트
+              <a href="#" class="_back_btn">뒤로가기</a>
+            </h2>
+            <div class="second_title clear_both">
+              <a href="MyPageLikeListView.html">찜한 상품</a>
+              <a href="MyPageCurrentListView.html">최근 본 상품</a>
+              <a href="MyPageStoreListView.html" class="active">즐겨찾기 스토어</a>
+            </div>
+          </div>
+      <!-- * 마이페이지 헤더 -->
+
+      <div class="l-mypage-contents">
+
+        <!-- 1) 즐겨찾기 스토어 -->
+        <div>
+          <div class="l-con-article">
+            <div class="l-con-area">
+              <!-- 1. 즐겨찾는 스토어가 없을 때 -->
+              <div class="nothing-history">
+                <img
+                  src="/images/icon/empty_bookmark.svg"
+                  alt="icon empty"
+                  class="in-empty-icon"
+                />
+                <span class="in-empty-ment">즐겨찾는 스토어가 없습니다.</span>
+              </div>
+              <!-- 1. 즐겨찾는 스토어가 없을 때 E -->
+
+              <!-- 2. 즐겨찾는 스토어가 있을 때 -->
+              <ul class="l-grid-group">
+                <li class="l-grid-list">
+                  <!-- * 즐찾 스토어 카드 -->
+                  <div class="dg-favorite-store-card clear_both">
+                    <div class="symbol-circle">
+                      <img
+                        src="/images/img/profile_store.jpg"
+                        alt="brand logo"
+                        class="_imgtag"
+                      />
+                    </div>
+                    <div class="like_store_decswrap">
+                      <h3><a href="/mobile_temp/store/StoreDefaultView.html" class="_name">스토어명</a></h3>
+                      <ul class="in-detail_middle clear_both">
+                        <li class="_desc _score">
+                          <img
+                            class="_icon"
+                            src="/images/icon/icon_review.svg"
+                            alt="star icon"
+                          /><span class="_rate">5.0</span>
+                        </li>
+                        <li class="_desc _bookmark">
+                          <button type="button" class="_bookmark_btn">
+                            <img
+                              class="_icon"
+                              src="/images/icon/icon_fav-on.svg"
+                              alt="favorite icon"
+                            /><span>즐겨찾기</span>
+                          </button>
+                        </li>
+                        <li class="_desc _question">
+                          <a
+                            href="/mobile_temp/store/StoreInquiryView.html"
+                            onclick="alert('스토어 문의 페이지로 이동합니다.')"
+                          >
+                            <img
+                              class="_icon"
+                              src="/images/icon/icon_contact.svg"
+                              alt="contact icon"
+                            /><span>스토어 문의</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- * 즐찾 스토어 카드 E -->
+                </li>
+              </ul>
+              <!-- 2. 즐겨찾는 스토어가 있을 때 E -->
+            </div>
+          </div>
+        </div>
+        <!-- 1) 즐겨찾기 스토어 E -->
+      </div>
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

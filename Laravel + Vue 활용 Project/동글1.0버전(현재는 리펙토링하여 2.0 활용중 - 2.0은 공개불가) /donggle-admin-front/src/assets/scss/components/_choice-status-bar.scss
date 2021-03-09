@@ -1,0 +1,47 @@
+@include media-mobile-version(ipad) {
+  .choice-status-bar {
+    padding: 60px 10px 0;
+    text-align: left;
+    height: auto;
+
+    .in-choice-wrap {
+      position: relative;
+      height: 54px;
+      vertical-align: middle;
+      line-height: 50px;
+      text-align: left;
+    }
+
+    .in-check-circle {
+      float: none;
+    }
+
+    .in-sorting {
+      float: none;
+      line-height: 1;
+    }
+
+    .in-sorting .type .word {
+      color: $gray-md-04;
+    }
+
+    .form-select {
+      width: calc(100% - 20px);
+      min-width: calc(100% - 20px);
+      right: unset;
+      left: 10px;
+    }
+
+    .in-button-group {
+      @include set-absolute($t: 50%, $r: 0);
+
+      transform: translateY(-50%);
+      line-height: 1;
+    }
+
+    .rounded-square-xs-btn {
+      min-width: 66px;
+      padding: 0;
+    }
+  }
+}

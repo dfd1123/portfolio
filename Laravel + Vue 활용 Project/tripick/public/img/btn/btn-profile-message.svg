@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+  <defs>
+    <filter id="패스_2540" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_1028" data-name="그룹 1028" transform="translate(-138 -765)">
+    <g transform="matrix(1, 0, 0, 1, 138, 765)" filter="url(#패스_2540)">
+      <path id="패스_2540-2" data-name="패스 2540" d="M29,0A29,29,0,1,1,0,29,29,29,0,0,1,29,0Z" transform="translate(9 6)" fill="#00dbd8" opacity="0.8"/>
+    </g>
+    <g id="레이어_1" data-name="레이어 1" transform="translate(161 789)">
+      <path id="패스_2541" data-name="패스 2541" d="M15.006,20.13a4.87,4.87,0,0,1-2.357-.611L0,12.54V24.8a2.728,2.728,0,0,0,2.728,2.728H27.284A2.728,2.728,0,0,0,30.012,24.8V12.54L17.363,19.519a4.87,4.87,0,0,1-2.357.611Z" transform="translate(0 -5.697)" fill="#fff"/>
+      <path id="패스_2542" data-name="패스 2542" d="M16.573,12.389l13.44-7.415V2.728A2.728,2.728,0,0,0,27.284,0H2.728A2.728,2.728,0,0,0,0,2.728V4.973l13.44,7.415a3.226,3.226,0,0,0,3.133,0Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

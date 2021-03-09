@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57.662" height="72.207" viewBox="0 0 57.662 72.207">
+  <g id="그룹_999" data-name="그룹 999" transform="translate(-986.106 -221)">
+    <path id="패스_2814" data-name="패스 2814" d="M997.734,250.768a10.036,10.036,0,0,1-4.194,5.859.868.868,0,0,0,.1,1.508,10.034,10.034,0,0,1,4.931,5.254.523.523,0,0,0,1-.066,10.035,10.035,0,0,1,4.195-5.859.869.869,0,0,0-.1-1.508,10.033,10.033,0,0,1-4.931-5.254A.522.522,0,0,0,997.734,250.768Z" transform="translate(-3.567 -14.878)" fill="#ffdf55"/>
+    <path id="패스_2815" data-name="패스 2815" d="M989.043,292.869a6.427,6.427,0,0,1-2.685,3.75.556.556,0,0,0,.064.965,6.425,6.425,0,0,1,3.157,3.363.334.334,0,0,0,.639-.042,6.425,6.425,0,0,1,2.685-3.75.556.556,0,0,0-.064-.965,6.425,6.425,0,0,1-3.157-3.363A.334.334,0,0,0,989.043,292.869Z" transform="translate(0 -36.285)" fill="#ffdf55"/>
+    <circle id="타원_360" data-name="타원 360" cx="23.68" cy="23.68" r="23.68" transform="translate(996.409 245.847)" fill="#ffa000"/>
+    <circle id="타원_361" data-name="타원 361" cx="23.68" cy="23.68" r="23.68" transform="translate(996.409 243.256)" fill="#fed800"/>
+    <circle id="타원_362" data-name="타원 362" cx="18.498" cy="18.498" r="18.498" transform="translate(1001.591 248.438)" fill="#ffbf00"/>
+    <path id="패스_2816" data-name="패스 2816" d="M1035.994,278.35a18.5,18.5,0,0,1,18.477,17.635c.013-.287.021-.574.021-.864a18.5,18.5,0,0,0-37,0c0,.29.008.577.021.864A18.5,18.5,0,0,1,1035.994,278.35Z" transform="translate(-15.905 -28.185)" fill="#fea300"/>
+    <g id="그룹_996" data-name="그룹 996" transform="translate(1000.313 248.516)">
+      <path id="패스_2817" data-name="패스 2817" d="M1091.787,290.361l-3.4,3.035a18.477,18.477,0,0,1,1.411,3.372l3.595-3.2c-.032-.077-.061-.155-.093-.232A22.954,22.954,0,0,0,1091.787,290.361Z" transform="translate(-1052.137 -283.662)" fill="#fff5a0"/>
+      <path id="패스_2818" data-name="패스 2818" d="M1030.383,345.09l-3.4,3.034a22.912,22.912,0,0,0,2.778,1.839c.072.041.146.079.219.119l3.6-3.2A18.474,18.474,0,0,1,1030.383,345.09Z" transform="translate(-1021.023 -311.394)" fill="#fff5a0"/>
+      <path id="패스_2819" data-name="패스 2819" d="M1018.33,331.2l-3.425,3.053.073.129a23.105,23.105,0,0,0,4.921,5.923c.024.021.049.041.074.062l3.372-3.005A18.6,18.6,0,0,1,1018.33,331.2Z" transform="translate(-1014.905 -304.356)" fill="#fff5a0"/>
+      <path id="패스_2820" data-name="패스 2820" d="M1081.514,285.521l3.37-3-.053-.08a23.1,23.1,0,0,0-5.32-5.568l-.121-.087-3.424,3.051A18.6,18.6,0,0,1,1081.514,285.521Z" transform="translate(-1045.845 -276.781)" fill="#fff5a0"/>
+    </g>
+    <path id="패스_2821" data-name="패스 2821" d="M1051.809,257.008a3.383,3.383,0,1,0,3.384,3.383A3.384,3.384,0,0,0,1051.809,257.008Zm0,4.549a1.165,1.165,0,1,1,1.165-1.165A1.165,1.165,0,0,1,1051.809,261.557Z" transform="translate(-31.577 -18.246)" fill="#fed800"/>
+    <path id="패스_2822" data-name="패스 2822" d="M1054.088,261.505a1.165,1.165,0,1,0,1.165,1.165A1.165,1.165,0,0,0,1054.088,261.505Z" transform="translate(-33.856 -20.524)" fill="#fff"/>
+    <path id="패스_2823" data-name="패스 2823" d="M1054.04,221h-31.509a.794.794,0,0,0-.795.795v8.752a5.44,5.44,0,0,0,3.128,4.924l7.708,3.121,3.78,1.531a4.831,4.831,0,0,0,4.137-.015l3.51-1.443,7.743-3.183a5.439,5.439,0,0,0,3.093-4.907v-8.78A.794.794,0,0,0,1054.04,221Z" transform="translate(-18.054)" fill="#fed800"/>
+    <path id="패스_2824" data-name="패스 2824" d="M1022.531,221a.794.794,0,0,0-.795.795v8.752a5.44,5.44,0,0,0,3.128,4.924l7.708,3.121V221Z" transform="translate(-18.054)" fill="#fed800"/>
+    <path id="패스_2825" data-name="패스 2825" d="M1043.7,221v17.592l3.78,1.531a4.83,4.83,0,0,0,4.137-.015l3.51-1.443V221Z" transform="translate(-29.184)" fill="#fed800"/>
+    <path id="패스_2826" data-name="패스 2826" d="M1076.908,221h-10.041v17.665l7.743-3.183a5.439,5.439,0,0,0,3.093-4.907v-8.78A.794.794,0,0,0,1076.908,221Z" transform="translate(-40.922)" fill="#fed800"/>
+    <path id="패스_2827" data-name="패스 2827" d="M1043.7,221v17.592l3.78,1.531a4.83,4.83,0,0,0,4.137-.015l3.51-1.443V221Z" transform="translate(-29.184)" fill="#fff5a0"/>
+    <path id="패스_2828" data-name="패스 2828" d="M1054.6,259.51a4.83,4.83,0,0,1-4.137.015l-.581-.235a3.369,3.369,0,0,0-.3.373l.877.355a4.831,4.831,0,0,0,1.559.432,1.094,1.094,0,0,1,.781.01,4.831,4.831,0,0,0,1.8-.457l.651-.268a3.472,3.472,0,0,0-.279-.379Z" transform="translate(-32.167 -19.401)" fill="#fea300" opacity="0.6"/>
+    <g id="그룹_997" data-name="그룹 997" transform="translate(1011.522 257.01)">
+      <image id="사각형_340" data-name="사각형 340" width="16.279" height="18.252" transform="translate(1.169 0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAlCAYAAADMdYB5AAAAAXNSR0IArs4c6QAAAfdJREFUWAnFlz1OxEAMhTcRDbsVFQXHoEaiR6Kj4xicgAtwCKi5Ah0d91iokFiJAmnDcxRHb72eifOnRBrZ4xn7ffFMVtqiqqpV36d6KY6Sivuq6FtH9xcRCE9UC6RsH6gkxBBhDygC40JMBcBQOZgDiDnEIyClbpobQHRSGjVEalEBp7SeVtuJKYW6almQ0ga6Cky1zrqLdMK+yKIQ2o0y9/1a4rnm7e+EUs0llKu76HEoWNsJCUS74R1hNFeF2R5AdIF44lxsKEj4OLoABCayh6HVP+qELHhvxAJ2nddS+SroWbcTtqiXyDELxWsR34WQRAZhf6ygB5WE8DbPFctCaAf47TU2JZB7Ma2AQHjiXpyBbZ3UPNsJSvr1intglBN2QxAQW6PiF0B+cpU90Nx+XQtByGaAnMNsNdHaoQDSzTBEI7qF2IcFGDvvBQHqKwgKyBsLY/6J+Q5jz/EuX7oge3pBSAISb2DaYwHAezOXmIxvjD+M8BP6RG01CD8hJpd109icf2rzZa5dqP3IH2KvCEAeERdxHRGguvMMMApCkgHy0BNiDYAzyeXnhCcDfLkD9iiSnQHApacx6E5wIXTjFnM+Cg9qA4A7zmN/NIQUA8g1DIO0PsTl7mSfscehxeV3Qo+h7gTEX3Wx08rXMcXYP68uhtb5B3eSNCnFO+iDAAAAAElFTkSuQmCC"/>
+      <circle id="타원_363" data-name="타원 363" cx="1.191" cy="1.191" r="1.191" transform="translate(7.471 8.453)" fill="#fea300"/>
+      <path id="패스_2829" data-name="패스 2829" d="M1039.623,320.652a1.285,1.285,0,0,0-.245-.471Q1039.493,320.419,1039.623,320.652Z" transform="translate(-1038.516 -307.266)" fill="#fea300"/>
+      <path id="패스_2830" data-name="패스 2830" d="M1048.414,317.039l-.359-.7-6.594-9.549h0c-.382.161-1.024-.726-1.306-1.427a2.284,2.284,0,0,1-.159-.7l-1.052-1.523a8.788,8.788,0,0,0-1.172,6.18v.022a8.685,8.685,0,0,0,.726,2.206,1.275,1.275,0,0,1,.247.47,8.827,8.827,0,0,0,.679,1.028c.02.026.041.05.061.075h0l.34.489,0,0,6.55,9.471s1.455-1.24,1.623-1.444A3.98,3.98,0,0,0,1048.414,317.039Z" transform="translate(-1037.63 -298.634)" fill="#fea300"/>
+      <path id="패스_2831" data-name="패스 2831" d="M1043.888,308.36h0l-1.467-2.125a2.284,2.284,0,0,0,.159.7C1042.863,307.634,1043.505,308.521,1043.888,308.36Z" transform="translate(-1040.058 -300.199)" fill="#fea300"/>
+      <circle id="타원_364" data-name="타원 364" cx="1.342" cy="1.342" r="1.342" transform="translate(7.282 8.189)" fill="#fea300"/>
+      <path id="패스_2832" data-name="패스 2832" d="M1040.713,322.486l-.046-.068Z" transform="translate(-1039.169 -308.4)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2833" data-name="패스 2833" d="M1038.586,318.257l0-.009Z" transform="translate(-1038.113 -306.287)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2834" data-name="패스 2834" d="M1038.033,316.278Z" transform="translate(-1037.834 -305.289)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2835" data-name="패스 2835" d="M1038.685,318.537l0-.007Z" transform="translate(-1038.163 -306.43)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2836" data-name="패스 2836" d="M1041.706,323.872h0l-.341-.493Z" transform="translate(-1039.522 -308.887)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2837" data-name="패스 2837" d="M1038.493,317.977h0Z" transform="translate(-1038.067 -306.149)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2838" data-name="패스 2838" d="M1039.875,321.136h0Z" transform="translate(-1038.767 -307.75)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2839" data-name="패스 2839" d="M1040.35,321.932l-.032-.05Z" transform="translate(-1038.992 -308.128)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2840" data-name="패스 2840" d="M1040.18,321.658l-.025-.041Z" transform="translate(-1038.909 -307.994)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2841" data-name="패스 2841" d="M1041.144,323.087l-.1-.132Z" transform="translate(-1039.36 -308.672)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2842" data-name="패스 2842" d="M1040.527,322.208l-.038-.059Z" transform="translate(-1039.078 -308.263)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2843" data-name="패스 2843" d="M1040.02,321.389l-.017-.03Z" transform="translate(-1038.832 -307.863)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2844" data-name="패스 2844" d="M1040.911,322.768l-.058-.081Z" transform="translate(-1039.263 -308.536)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2845" data-name="패스 2845" d="M1037.974,315.992v0Z" transform="translate(-1037.804 -305.141)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2846" data-name="패스 2846" d="M1037.919,315.705h0Z" transform="translate(-1037.776 -304.998)" fill="#fea300" opacity="0.5"/>
+      <path id="패스_2847" data-name="패스 2847" d="M1040.616,322.342l-.049-.074Z" transform="translate(-1039.118 -308.324)" fill="#fea300"/>
+      <path id="패스_2848" data-name="패스 2848" d="M1044.537,297.635a8.856,8.856,0,0,0-1.254.957c.377-.088.558-.407.888-.613A1.235,1.235,0,0,0,1044.537,297.635Z" transform="translate(-1040.494 -295.842)" fill="#fea300"/>
+      <path id="패스_2849" data-name="패스 2849" d="M1040.435,322.065l-.053-.081Z" transform="translate(-1039.024 -308.18)" fill="#fea300"/>
+      <path id="패스_2850" data-name="패스 2850" d="M1038.688,318.545a8.638,8.638,0,0,0,.586,1.278,1.283,1.283,0,0,0-.245-.471A8.706,8.706,0,0,1,1038.688,318.545Z" transform="translate(-1038.166 -306.437)" fill="#fea300"/>
+      <path id="패스_2851" data-name="패스 2851" d="M1040.806,322.62l-.045-.065Z" transform="translate(-1039.216 -308.469)" fill="#fea300"/>
+      <path id="패스_2852" data-name="패스 2852" d="M1038.26,317.116a8.572,8.572,0,0,1-.227-.838A8.572,8.572,0,0,0,1038.26,317.116Z" transform="translate(-1037.834 -305.289)" fill="#fea300"/>
+      <path id="패스_2853" data-name="패스 2853" d="M1041.008,322.9l-.037-.051Z" transform="translate(-1039.323 -308.62)" fill="#fea300"/>
+      <path id="패스_2854" data-name="패스 2854" d="M1040.261,321.79l-.055-.089Z" transform="translate(-1038.935 -308.036)" fill="#fea300"/>
+      <path id="패스_2855" data-name="패스 2855" d="M1038.537,318.111q-.023-.067-.044-.133Q1038.514,318.045,1038.537,318.111Z" transform="translate(-1038.067 -306.15)" fill="#fea300"/>
+      <path id="패스_2856" data-name="패스 2856" d="M1040.1,321.517l-.058-.1Z" transform="translate(-1038.849 -307.893)" fill="#fea300"/>
+      <path id="패스_2857" data-name="패스 2857" d="M1038,316.136c-.01-.046-.02-.092-.029-.138C1037.984,316.044,1037.994,316.09,1038,316.136Z" transform="translate(-1037.805 -305.147)" fill="#fea300"/>
+      <path id="패스_2858" data-name="패스 2858" d="M1038.635,318.4l-.046-.13Z" transform="translate(-1038.116 -306.296)" fill="#fea300"/>
+      <path id="패스_2859" data-name="패스 2859" d="M1037.946,315.845c-.009-.046-.018-.093-.027-.139C1037.927,315.752,1037.936,315.8,1037.946,315.845Z" transform="translate(-1037.776 -304.999)" fill="#fea300"/>
+      <path id="패스_2860" data-name="패스 2860" d="M1039.938,321.246l-.063-.11Z" transform="translate(-1038.767 -307.75)" fill="#fea300"/>
+      <path id="패스_2861" data-name="패스 2861" d="M1054.049,311.337a1.163,1.163,0,1,0,1.163,1.163A1.163,1.163,0,0,0,1054.049,311.337Z" transform="translate(-1045.36 -302.785)" fill="#fea300"/>
+    </g>
+    <g id="그룹_998" data-name="그룹 998" transform="translate(1011.522 255.037)">
+      <image id="사각형_341" data-name="사각형 341" width="16.279" height="18.252" transform="translate(1.169)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAlCAYAAADMdYB5AAAAAXNSR0IArs4c6QAAAeRJREFUWAnFlz1OxEAMhTeIBqioKDgGNRI9Eh034QRcgJtwBTo6joEEVEggUSAR/KI48jiesTOTaEeyEnvs52+d2b+u7/tdxbKKugqdoeQwWGg11aU6JwxVgtCiuqnnc70Lc5BRYoHM9qIwtIp6GsItWNQ+Tc6CSIhsUqrV5Jk9GMLcbGqXL571Yoh8yTY7CQggksA2PU3Vqe++JpFQ7RtimAYg3A+TBHsDhyexT5CeITZ4fXFJ+d2BaUwn1pGwJhetnUnrSVjisgj7uZxcXNab9xrCTBqDkSaRnFkPCyIihNFLk8KRepm/syCQsFSo+jygWQ5Cg0iopoYQ1qsEoXM38z0InoB89RxbDcqDQCOrKWIcl/fIl8Dw3RWBgMgPmSXOIG6jUkIU4phEPsi+SmK0Z4E6JeV3hy4+o8CbDgq/CoDqu+gkuBcgXthZ67oU4pIaA+RJAbyT/032p+KeO5yppRAQvSaTj+V59BGDfZL9koVXV/mH+IE64LCejNfS/VGGZnpn1UJA914AlCAkKE9+AoBQCwTq78gAEIVA3ilZsuQvq2Qj6OAMaIAS1IWl2zoJaN6QyZFbUNi/RbK11oCA7hWZBJH3ODvF1fo4WByfE/wYeBKPvOld15oE+pyTvXoNrf1/VjlQbQ/YuqUAAAAASUVORK5CYII="/>
+      <circle id="타원_365" data-name="타원 365" cx="1.191" cy="1.191" r="1.191" transform="translate(7.471 8.453)" fill="#fff"/>
+      <path id="패스_2862" data-name="패스 2862" d="M1039.623,316.652a1.285,1.285,0,0,0-.245-.471Q1039.493,316.419,1039.623,316.652Z" transform="translate(-1038.516 -303.266)" fill="#fff"/>
+      <path id="패스_2863" data-name="패스 2863" d="M1048.414,313.038l-.359-.7-6.594-9.549h0c-.382.161-1.024-.726-1.306-1.427a2.284,2.284,0,0,1-.159-.7l-1.052-1.523a8.788,8.788,0,0,0-1.172,6.18v.022a8.684,8.684,0,0,0,.726,2.206,1.275,1.275,0,0,1,.247.47,8.824,8.824,0,0,0,.679,1.027c.02.026.041.05.061.076h0l.34.489,0,0,6.55,9.471s1.455-1.24,1.623-1.444A3.98,3.98,0,0,0,1048.414,313.038Z" transform="translate(-1037.63 -294.634)" fill="#fff"/>
+      <path id="패스_2864" data-name="패스 2864" d="M1043.888,304.36h0l-1.467-2.125a2.284,2.284,0,0,0,.159.7C1042.863,303.634,1043.505,304.521,1043.888,304.36Z" transform="translate(-1040.058 -296.199)" fill="#fff"/>
+      <circle id="타원_366" data-name="타원 366" cx="1.342" cy="1.342" r="1.342" transform="translate(7.282 8.189)" fill="#fff"/>
+      <path id="패스_2865" data-name="패스 2865" d="M1040.713,318.486l-.046-.068Z" transform="translate(-1039.169 -304.4)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2866" data-name="패스 2866" d="M1038.586,314.257l0-.009Z" transform="translate(-1038.113 -302.287)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2867" data-name="패스 2867" d="M1038.033,312.278Z" transform="translate(-1037.834 -301.289)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2868" data-name="패스 2868" d="M1038.685,314.537l0-.007Z" transform="translate(-1038.163 -302.43)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2869" data-name="패스 2869" d="M1041.706,319.872h0l-.341-.493Z" transform="translate(-1039.522 -304.887)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2870" data-name="패스 2870" d="M1038.493,313.977h0Z" transform="translate(-1038.067 -302.149)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2871" data-name="패스 2871" d="M1039.875,317.136h0Z" transform="translate(-1038.767 -303.75)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2872" data-name="패스 2872" d="M1040.35,317.932l-.032-.05Z" transform="translate(-1038.992 -304.128)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2873" data-name="패스 2873" d="M1040.18,317.658l-.025-.041Z" transform="translate(-1038.909 -303.994)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2874" data-name="패스 2874" d="M1041.144,319.087l-.1-.132Z" transform="translate(-1039.36 -304.672)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2875" data-name="패스 2875" d="M1040.527,318.208l-.038-.059Z" transform="translate(-1039.078 -304.263)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2876" data-name="패스 2876" d="M1040.02,317.389l-.017-.03Z" transform="translate(-1038.832 -303.863)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2877" data-name="패스 2877" d="M1040.911,318.768l-.058-.081Z" transform="translate(-1039.263 -304.536)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2878" data-name="패스 2878" d="M1037.974,311.992v0Z" transform="translate(-1037.804 -301.141)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2879" data-name="패스 2879" d="M1037.919,311.705h0Z" transform="translate(-1037.776 -300.998)" fill="#fff" opacity="0.5"/>
+      <path id="패스_2880" data-name="패스 2880" d="M1040.616,318.342l-.049-.074Z" transform="translate(-1039.118 -304.324)" fill="#fff"/>
+      <path id="패스_2881" data-name="패스 2881" d="M1044.537,293.635a8.858,8.858,0,0,0-1.254.957c.377-.088.558-.407.888-.613A1.235,1.235,0,0,0,1044.537,293.635Z" transform="translate(-1040.494 -291.842)" fill="#fff"/>
+      <path id="패스_2882" data-name="패스 2882" d="M1040.435,318.065l-.053-.081Z" transform="translate(-1039.024 -304.18)" fill="#fff"/>
+      <path id="패스_2883" data-name="패스 2883" d="M1038.688,314.545a8.64,8.64,0,0,0,.586,1.278,1.283,1.283,0,0,0-.245-.471A8.709,8.709,0,0,1,1038.688,314.545Z" transform="translate(-1038.166 -302.437)" fill="#fff"/>
+      <path id="패스_2884" data-name="패스 2884" d="M1040.806,318.62l-.045-.065Z" transform="translate(-1039.216 -304.469)" fill="#fff"/>
+      <path id="패스_2885" data-name="패스 2885" d="M1038.26,313.116a8.572,8.572,0,0,1-.227-.838A8.572,8.572,0,0,0,1038.26,313.116Z" transform="translate(-1037.834 -301.289)" fill="#fff"/>
+      <path id="패스_2886" data-name="패스 2886" d="M1041.008,318.9l-.037-.051Z" transform="translate(-1039.323 -304.62)" fill="#fff"/>
+      <path id="패스_2887" data-name="패스 2887" d="M1040.261,317.79l-.055-.089Z" transform="translate(-1038.935 -304.036)" fill="#fff"/>
+      <path id="패스_2888" data-name="패스 2888" d="M1038.537,314.111q-.023-.067-.044-.133Q1038.514,314.045,1038.537,314.111Z" transform="translate(-1038.067 -302.15)" fill="#fff"/>
+      <path id="패스_2889" data-name="패스 2889" d="M1040.1,317.517l-.058-.1Z" transform="translate(-1038.849 -303.893)" fill="#fff"/>
+      <path id="패스_2890" data-name="패스 2890" d="M1038,312.136c-.01-.046-.02-.092-.029-.138C1037.984,312.044,1037.994,312.09,1038,312.136Z" transform="translate(-1037.805 -301.147)" fill="#fff"/>
+      <path id="패스_2891" data-name="패스 2891" d="M1038.635,314.4l-.046-.13Z" transform="translate(-1038.116 -302.296)" fill="#fff"/>
+      <path id="패스_2892" data-name="패스 2892" d="M1037.946,311.845c-.009-.046-.018-.093-.027-.139C1037.927,311.752,1037.936,311.8,1037.946,311.845Z" transform="translate(-1037.776 -300.999)" fill="#fff"/>
+      <path id="패스_2893" data-name="패스 2893" d="M1039.938,317.246l-.063-.11Z" transform="translate(-1038.767 -303.75)" fill="#fff"/>
+      <path id="패스_2894" data-name="패스 2894" d="M1054.049,307.337a1.163,1.163,0,1,0,1.163,1.163A1.163,1.163,0,0,0,1054.049,307.337Z" transform="translate(-1045.36 -298.785)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

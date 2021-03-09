@@ -1,0 +1,30 @@
+/* BASE - typegraphy
+   ========================================================================== */
+
+@font-face {
+  font-family: "Spoqa";
+  src: url($path-font+"Spoqa_Han_Sans_Regular.woff") format("woff"),
+    url($path-font+"Spoqa_Han_Sans_Regular.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url($path-font+"Spoqa_Han_Sans_Bold.woff") format("woff"),
+    url($path-font+"Spoqa_Han_Sans_Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url($path-font+"Spoqa_Han_Sans_Light.woff") format("woff"),
+    url($path-font+"Spoqa_Han_Sans_Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url($path-font+"Spoqa_Han_Sans_Thin.woff") format("woff"),
+    url($path-font+"Spoqa_Han_Sans_Thin.ttf") format("truetype");
+  font-weight: 100;
+}

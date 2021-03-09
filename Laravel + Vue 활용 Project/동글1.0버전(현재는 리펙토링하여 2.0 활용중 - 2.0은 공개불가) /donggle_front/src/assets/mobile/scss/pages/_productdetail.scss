@@ -1,0 +1,742 @@
+/* 
+Pages - product detail view
+ */
+.img-thumbnail_wrap {
+  width: 100%;
+}
+.product-sell-info {
+  margin: 10px 0px;
+  .product-store-name-wrap {
+    margin: 20px 0px 10px;
+  }
+  .symbol-circle {
+    display: block;
+    float: left;
+    width: 34px;
+    height: 34px;
+    margin: 0px 10px;
+  }
+  .product-store_name {
+    display: block;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: $f-13;
+    font-weight: 400;
+    color: $gray;
+  }
+  ._prevpage_btn:before {
+    width: 8px;
+    height: 8px;
+  }
+}
+._more_review_view {
+  font-size: $f-12;
+  font-weight: 200;
+  color: $gray;
+  text-decoration: underline;
+  text-decoration-color: $gray;
+}
+//찜하기
+.product-sell-desc {
+  > h3 {
+    border-bottom: 1px solid $light_gray6;
+    padding: 7px 10px 17px;
+    line-height: 1.5;
+    font-size: $f-20;
+    font-weight: 400;
+  }
+  .product-sell-star_score {
+    position: relative;
+    margin: 15px 10px;
+  }
+  .dg-like_number {
+    position: absolute;
+    top: 43px;
+    right: 33px;
+    font-size: $f-09;
+    font-weight: 200;
+  }
+  .dg-clothes-thumbup {
+    position: absolute;
+    top: -14px;
+    right: -9px;
+    height: 70px;
+    padding: 0px 10px;
+    z-index: 0;
+    .heart-badge-label {
+      position: inherit;
+    }
+  }
+  .dg-clothes-thumbup svg {
+    width: 50px;
+    height: 50px;
+  }
+  .dg-clothes-thumbup svg .heart-path {
+    fill: $light_gray2;
+  }
+}
+//찜하기 E
+//가격
+.dg-clothes-detail {
+  margin: 20px 0px;
+  border-bottom: 1px solid $light_gray6;
+  padding: 0px 10px 10px;
+  ._streetprice > span:first-of-type {
+    margin: 0px 7px 0px 0px;
+  }
+  ._delivery > span {
+    color: $black;
+  }
+  ._soldout {
+    height: 54px;
+    color: $pink2;
+    font-size: $f-24;
+  }
+  ._pricename {
+    margin: 0px 7px 0px 0px;
+  }
+  .in-pricedetail {
+    ._hashlist {
+      padding-right: 0px;
+    }
+    ._hashlist ._inner {
+      white-space: inherit;
+      overflow: inherit;
+      height: auto;
+    }
+    ._streetprice {
+      font-size: $f-13;
+      font-weight: 200;
+      margin: 8px 0px 5px;
+      ._pricename {
+        font-weight: 400;
+      }
+    }
+    ._finalprice {
+      font-size: $f-16;
+      ._pricename {
+        font-size: $f-13;
+        font-weight: 400;
+      }
+      > b {
+        font-size: $f-24;
+      }
+    }
+    ._streetpriceblack {
+      margin: 20px 0px 5px;
+    }
+  }
+}
+//가격 E
+/* store infomation */
+.store-info {
+  margin: 20px 0px;
+  border-bottom: 6px solid $light_gray6;
+  ._text {
+    margin: 20px 10px;
+    font-size: 0.8125em;
+    font-weight: 200;
+    > li {
+      margin: 10px 0px;
+    }
+    ._title {
+      display: inline-block;
+      width: 25%;
+      font-weight: 400;
+    }
+  }
+  ._btn_wrap {
+    margin: 24px 10px 20px;
+    .left-icon-btn {
+      width: 50%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+}
+.left-icon-btn {
+  display: block;
+  float: left;
+  width: 49.5%;
+  height: 40px;
+  margin: 0px;
+  border: 1px solid $light_gray2;
+  padding: 0px 0px 0px 30px;
+  @include bgOption(auto, 24px center);
+  line-height: 0px;
+  &_store {
+    margin: 0px -1px 0px 0px;
+    border-radius: 10px 0px 0px 10px;
+    background-image: url($path-icon+"icon_contact.svg");
+  }
+  &_share {
+    border-radius: 0px 10px 10px 0px;
+    background-image: url($path-icon+"icon_share.svg");
+  }
+}
+/* store infomation E */
+
+/* tab title */
+.dg-tab-title {
+  border-bottom: 1px solid $light_gray6;
+  .tab-title_width {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    > li {
+      display: inline-block;
+    }
+  }
+  .tab-title_content {
+    position: relative;
+    display: block;
+    width: 100%;
+    border: 0px none;
+    padding: 21px 0px;
+    outline: 0px none;
+    background-color: $white;
+    text-align: center;
+    font-weight: 500;
+    font-size: $f-14;
+    &:focus,
+    &:active,
+    &.active {
+      font-weight: 700;
+      border-bottom: 2px solid $black;
+    }
+    > span {
+      position: absolute;
+      bottom: 9px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: $px-09 + rem;
+      font-weight: 200;
+      color: $gray;
+    }
+    &:hover > span {
+      font-weight: 700;
+    }
+    &.active > span {
+      font-weight: 700;
+    }
+  }
+}
+/* tab title E */
+
+/* detail infomation */
+.product-infomation {
+  text-align: center;
+  margin: 30px 10px 50px;
+  line-height: 1.5;
+  > h3 {
+    font-size: $f-24;
+    font-weight: 500;
+  }
+}
+._ect_desc_wrap,
+._review_wrap,
+._qna_wrap,
+._return_wrap {
+  margin: 15px 0px 50px;
+  > h3 {
+    padding: 8px 0px;
+    > span {
+      font-size: 0.65em;
+      font-weight: 300;
+      color: $gray;
+      margin: 0px 0px 0px 4px;
+    }
+  }
+}
+._ect_desc_wrap {
+  margin: 15px 10px 34px;
+}
+/* act infomation */
+._ect_detail_info_layer {
+  margin: 15px 10px;
+}
+._ect_desc_layer {
+  width: 100%;
+  border-collapse: collapse;
+  > tbody {
+    border-top: 1px solid $black;
+  }
+  ._title {
+    width: 25%;
+    min-height: 50px;
+    border-bottom: 1px solid $light_gray6;
+    padding: 15px 0px;
+    font-size: $f-13;
+    font-weight: 700;
+    text-align: left;
+  }
+  ._desc {
+    width: 75%;
+    border-bottom: 1px solid $light_gray6;
+    padding: 11px 0px;
+    vertical-align: middle;
+    font-size: $f-13;
+    font-weight: 200;
+    ._text {
+      margin: 0px 15px 0px 0px;
+      line-height: 1.6;
+    }
+  }
+  ._detail_info {
+    @include inlineBlockStyle(middle);
+    width: 68px;
+    margin: 0px 10px;
+    border: 1px solid $light_gray6;
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+    &:first-of-type {
+      margin: 0px 10px 0px 0px;
+    }
+    &.active {
+      border-color: $gray4;
+      background-color: $black;
+      color: $white;
+    }
+  }
+}
+._round_btn {
+  ._title {
+    vertical-align: middle;
+  }
+}
+/* act infomation E */
+/* 해시태그영역 */
+.mo-hash-wrap {
+  border-top: 1px solid $light_gray6;
+  padding-top: 30px;
+  border-bottom: 6px solid $light_gray6;
+  text-align: center;
+  > h3 {
+    > small {
+      display: block;
+      margin: 5px 0px;
+      font-size: $f-12;
+      font-weight: 200;
+      color: $light_gray7;
+    }
+  }
+  .in-pricedetail .rounded-list-s {
+    height: 34px;
+    line-height: 34px;
+    margin: 0px 1px 12px;
+    padding: 0px 15px;
+    border-radius: 17px;
+    font-weight: 400;
+  }
+}
+/* 베스트상품 해시태그영역 */
+/* detail infomation E */
+/* buy option */
+.product-buy_option_btn {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  ._soldout {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  > .dg-btn_gra {
+    display: block;
+    width: 100vw;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    z-index: 9;
+  }
+}
+.product-buy_bg {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.product-buy_option_wrap {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 60%;
+  background-color: $white;
+  z-index: 10;
+  .over-y_scroll {
+    height: calc(100% - 106px);
+  }
+}
+.product-buy_option:checked ~ .product-buy_option_wrapper {
+  display: block;
+}
+/* choice select */
+.choice_product {
+  margin: 0px;
+  padding: 10px 0px 15px;
+  background-position: 13px center;
+  > h4 {
+    margin: 15px 0px;
+    font-weight: 500;
+  }
+  > select {
+    @include bgOption(auto, 95% center);
+
+    position: relative;
+    display: block;
+    width: 95%;
+    height: 45px;
+    margin: 5px auto;
+    border: 1px solid $light_gray6;
+    padding: 10px;
+    font-size: $f-13;
+    background-image: url($path-btn+"btn_arrow_spread.svg");
+    background-color: $white;
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid #333;
+    }
+  }
+}
+/* choice select E */
+/* choice option */
+.choice_option {
+  position: relative;
+  width: 95%;
+  margin: 8px auto;
+  border-bottom: 1px solid $light_gray6;
+  padding: 0px 10px 45px;
+  font-size: $f-13;
+  ._name {
+    display: inline-block;
+    width: 100%;
+    font-size: $px-12 + rem;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+  ._amount {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    margin: 0px 10px;
+    > div {
+      display: block;
+      float: left;
+      position: relative;
+      width: 26px;
+      height: 26px;
+      margin: 0px;
+      border: 1px solid $light_gray7;
+      padding: 0px;
+      background-color: $white;
+      cursor: pointer;
+    }
+    ._plusbtn,
+    ._minusbtn {
+      @include hoverActiveBg($white);
+    }
+    > div:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 1px;
+      background-color: $black;
+    }
+    ._plusbtn:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      width: 1px;
+      height: 11px;
+      background-color: $black;
+    }
+    ._number-input {
+      float: left;
+      width: 26px;
+      height: 26px;
+      margin: 0px -1px;
+      border: 1px solid $light_gray7;
+      text-align: center;
+    }
+    ._number-input::placeholder {
+      opacity: 1;
+    }
+  }
+  ._total_price {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    font-weight: 600;
+  }
+  ._close_btn {
+    top: auto;
+    bottom: 15px;
+    right: 10px;
+    transform: none;
+    &:before,
+    &:after {
+      height: 13px;
+    }
+  }
+}
+/* choice opoption E */
+._quick_menu_bot {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  ._total {
+    padding: 18px 20px;
+    ._price {
+      float: right;
+      font-size: $f-18;
+      font-weight: 600;
+    }
+  }
+  .dg-dubble_btn:first-of-type {
+    margin: 0px;
+    font-weight: 200;
+  }
+  .dg-dubble_btn {
+    width: 50%;
+  }
+}
+/* buy option E */
+/* review */
+._review_wrap,
+._qna_wrap {
+  position: relative;
+}
+._review_wrap > h3 {
+  border-bottom: 1px solid $black;
+}
+._with_title {
+  display: block;
+  width: calc(100% - 20px);
+  height: 42px;
+  line-height: 42px;
+  margin: 20px auto;
+  border: 1px solid $gray;
+  border-radius: 7px;
+  background-color: $white;
+  text-align: center;
+  > span {
+    display: block;
+    padding: 0px;
+    font-size: $f-14;
+  }
+}
+._empty {
+  height: 70vh;
+  padding: calc(70vh - 355px) 0px;
+}
+._review_wrap {
+  width: 100%;
+  ._fill {
+    margin: 0px 20px 0px;
+  }
+  ._review:nth-of-type(5n) {
+    margin: 20px 0px 0px;
+  }
+  ._review_writer {
+    position: relative;
+  }
+  .symbol-circle {
+    width: 34px;
+    height: 34px;
+  }
+  .in-star-group {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  ._review_write_product {
+    padding: 5px 0px 0px 42px;
+  }
+  ._review_write_image {
+    width: 70px;
+    height: 70px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 7px;
+  }
+  ._review_write_text._with_img > p {
+    width: calc(100% - 80px);
+  }
+  ._review_write_text > p {
+    height: auto;
+  }
+}
+/* review E */
+
+/* qna */
+._qna_wrap {
+  ._empty {
+    border-bottom: 0px none;
+  }
+  ._board_content {
+    display: none;
+    background-color: $light_gray5;
+    > div:last-of-type {
+      border-bottom: 1px solid $light_gray6;
+    }
+    ._writer {
+      font-size: $f-11;
+      color: $gray;
+    }
+    ._desc {
+      font-weight: 200;
+      > span {
+        font-size: $px-18 + rem;
+        font-weight: 400;
+      }
+    }
+  }
+  ._board_title_wrap:checked ~ ._board_content {
+    display: block;
+  }
+  ._board_title_label {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid $light_gray6;
+    padding: 14px 20px;
+    background-image: none;
+    ._btn {
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      width: 54px;
+      height: 25px;
+      line-height: 25px;
+      border: 1px solid $light_gray6;
+      border-radius: 7px;
+      background-color: $light_gray6;
+      text-align: center;
+      font-size: $f-11;
+      color: $light_gray2;
+    }
+    ._complete {
+      background-color: $white;
+      border-color: $pink;
+      color: $pink;
+    }
+  }
+  ._board_layout {
+    border-top: 1px solid $light_gray6;
+    ._title {
+      display: block;
+      padding: 0px 0px 0px 84px;
+      @include bgOption(14px, 65px 3px);
+      background-image: url($path-icon+"icon_secret.svg");
+    }
+    ._writer {
+      position: relative;
+      padding: 0px 0px 0px 65px;
+      font-weight: 400;
+      font-size: $f-11;
+      color: $gray;
+    }
+    ._writer:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      right: -10px;
+      width: 1px;
+      height: 70%;
+      background-color: $light_gray6;
+    }
+    ._date {
+      bottom: 3px;
+      left: calc(24px + 10em);
+      font-weight: 200;
+    }
+  }
+}
+
+/* qna E */
+
+/* return */
+._return_wrap {
+  ._return-title {
+    margin: 20px;
+    font-size: $f-14;
+    font-weight: 600;
+  }
+  ._return_text {
+    margin: 20px;
+    border-bottom: 6px solid $profill_bd;
+    padding: 0px 0px 20px;
+    font-size: $f-12;
+    font-weight: 200;
+    line-height: 1.6;
+  }
+  ._return_text._end {
+    border: 0px none;
+    padding: 0px 0px 40px;
+  }
+}
+/* return E */
+/* i pad pro */
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  ._empty {
+    height: 67vh;
+    padding: calc(67vh - 355px) 0px;
+  }
+}
+/* i pad */
+@media all and (max-width: 768x) and (min-width: 415px) {
+  ._empty {
+    height: 70vh;
+    padding: calc(63vh - 355px) 0px;
+  }
+}
+/* i phone 6~8 */
+@media all and (max-width: 375x) and (min-width: 360px) {
+  ._empty {
+    height: 67vh;
+    padding: calc(72vh - 355px) 0px;
+  }
+}
+/* galaxy s5 이하 */
+@media all and (max-width: 360px) {
+  ._ect_desc_layer ._title {
+    width: 17%;
+  }
+  ._ect_desc_layer ._desc {
+    width: 83%;
+  }
+  ._empty {
+    height: 65vh;
+    padding: calc(74vh - 355px) 0px;
+  }
+}
+/* i phone 5 이하 */
+@media all and (max-width: 320px) {
+  ._ect_desc_layer ._detail_info {
+    margin: 0px 7px;
+  }
+  ._ect_desc_layer ._detail_info:first-of-type {
+    margin: 0px 7px 0px 0px;
+  }
+  ._empty {
+    height: 60vh;
+    padding: calc(70vh - 300px) 0px;
+  }
+}

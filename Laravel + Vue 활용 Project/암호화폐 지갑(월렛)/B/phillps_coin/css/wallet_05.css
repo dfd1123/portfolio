@@ -1,0 +1,149 @@
+/* wallet05 */
+.container--wallet05 {
+    padding: 0;
+    height: 100%;
+}
+
+.container--wallet05 .basic_panel--dark {
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.container--wallet05 .wallet__history-contents {
+    height: 100%;
+}
+
+.container--wallet05 .wallet__history {
+    height: 100%;
+}
+
+.container--wallet05 .wallet__history__tbl-box {
+    height: calc(100% - 45px);
+}
+
+@media (max-width: 576px) {
+    .container--wallet05 .wallet__history__tbl-box {
+    height: calc(100% - 40px);
+    }
+}
+
+.container--wallet05 .wallet__history__tbl-scrl {
+    height: calc(100% - 33px);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container--wallet05 .wallet__history__btns {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 1.5rem;
+}
+
+.container--wallet05 .wallet__history__btns h2 {
+    margin-right: 1.5rem;
+}
+
+.container--wallet05 .wallet__history__btn {
+    width: 5rem;
+    padding: 7px 0;
+    margin-right: 1.2rem;
+}
+
+.container--wallet05 .wallet__history__btn:last-child {
+    margin-right: 0;
+}
+
+.container--wallet05 .wallet__history__tr .status span:before {
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 3px;
+    left: 0;
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.container--wallet05 .wallet__history__tr--status01 .status span:before {
+    background-image: url("../../img/icon/get_light.png");
+}
+
+.container--wallet05 .wallet__history__tr--status02 .status span:before {
+    background-image: url("../../img/icon/send_light.png");
+}
+
+.container--wallet05 .wallet__history__tr--status03 .status span:before {
+    background-size: 15px;
+    background-image: url("../../img/btn/arrow_bt_light.png");
+}
+
+.container--wallet05 .wallet__history__tr--status04 .status span:before {
+    background-size: 15px;
+    background-image: url("../../img/btn/arrow_top_light.png");
+}
+
+.container--wallet05 .wallet__history__tr--status05 .status span:before {
+    background-size: 15px;
+    background-image: url("../../img/btn/cancel_light.png");
+}
+
+.container--wallet05 .wallet__history__tbl th {
+    border-color: #333;
+    font-size: 0.9em;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.container--wallet05 .wallet__history__tbl th:nth-child(1) {
+    width: 33%;
+}
+
+.container--wallet05 .wallet__history__tbl th:nth-child(2) {
+    width: 33%;
+}
+
+.container--wallet05 .wallet__history__tbl th:nth-child(3) {
+    width: 33%;
+    padding-left: 0;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.container--wallet05 .wallet__history__tbl td {
+    border: 0;
+    border-bottom: 1px solid #333333;
+    font-size: 0.9em;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.container--wallet05 .wallet__history__tbl td:nth-child(1) {
+    width: 33%;
+}
+
+.container--wallet05 .wallet__history__tbl td:nth-child(2) {
+    width: 33%;
+}
+
+.container--wallet05 .wallet__history__tbl td:nth-child(3) {
+    width: 33%;
+    padding-left: 0;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.container--wallet05 .wallet__history__tbl .date {
+    color: #999999;
+    font-size: 0.85em;
+}
+/* end wallet05 */

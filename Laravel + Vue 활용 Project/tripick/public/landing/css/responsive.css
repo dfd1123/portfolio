@@ -1,0 +1,987 @@
+/*모든 구간*/
+.mo_planbtn{
+    display:none;
+}
+@media all and (max-width:1600px) and (min-width:1500px) {
+    /*app1*/
+    @keyframes airplane1{
+        100%{
+            bottom: 360px;
+            right: 150px; 
+        }
+    }
+
+    /*app2*/
+    .tab__img--wrap {
+        top: 23%;
+        right: 14%;
+    }
+    @keyframes img_up{
+        100%{
+            opacity:1;
+            margin-top:-60px;
+        }
+    }
+    .tab__img--pl1 {
+        top: 10px;
+    }
+    .tab__img--sb1 {
+        top: 85px;
+    }
+    .tab__img--pl2 {
+        top: 160px;
+    }
+    .tab__img--sb2 {
+        top: 154px;
+    }
+    
+    /*app3*/
+    .bgimg__bg {
+        top: 11%;
+        right: 19%;
+        width: 490px;
+        height: 800px;
+    }
+    .bgimg__pop {
+        top: 33%;
+        right: 18.6%;
+        width: 400px;
+        height: 289px;
+    }
+
+    /*plan*/
+    @keyframes form_open {
+        100%{
+            right:10%;
+            opacity:1;
+        }
+    }
+}/*1600~*/
+@media all and (max-width:1536px) and (min-width:1440px) {
+    /*app2*/
+    #t_appdown2 .bg_airplane{
+        bottom: 120px;
+        right: 810px;
+    }
+    @keyframes airplane2{
+        100%{
+            bottom: 340px;
+            right: 50px;
+        }
+    }
+
+    /*app3*/
+    .bgimg__bg {
+        right: 14%;
+    }
+    .bgimg__pop {
+        right: 13.6%;
+    }
+    #t_appdown3 .bg_airplane {
+        right: 800px;
+    }
+    @keyframes airplane3{
+        100% {
+            bottom: 270px;
+            right: 190px;
+        }
+    }
+}/*1536~*/
+@media all and (max-width:1440px) and (min-width:1367px) {
+    /*main*/
+    .onlybg{
+        background-size:cover;
+    }
+
+    /*app1*/
+
+    @keyframes airplane1{
+        100%{
+            bottom:350px;
+            right:90px;
+        }
+    }
+
+    /*app2*/
+    .tab__img--wrap{
+        right:8%;
+    }
+    #t_appdown2 .bg_airplane{
+        bottom: 80px;
+        right: 790px;
+    }
+
+    /*app3*/
+    #t_appdown3 .bg_airplane{
+        bottom: 60px;
+        right: 749px;
+    }
+    @keyframes airplane3{
+        100%{
+            bottom: 260px;
+            right: 110px;
+        }
+    }
+
+    /*plan*/
+    @keyframes form_open {
+        100%{
+            right:5%;
+            opacity:1;
+        }
+    }
+}/*1440~*/
+@media all and (max-width:1366px) and (min-width:1281px) {
+    .onlybg{
+        background-size:120%;
+    }
+    .tab__img{
+        right:7%;
+    }
+    .tab__img--wrap{
+        right:5%;
+    }
+    .bgimg__bg{
+        right:4%;
+    }
+    .bgimg__pop{
+        right:3.7%;
+    }
+    @keyframes form_open {
+        100%{
+            right:3%;
+            opacity:1;
+        }
+    }
+}/*1366~*/
+@media all and (max-width:1280px) and (min-width:1025px) {
+    #t_hd{
+        width:300px;
+    }
+    #t_appdown1, #t_appdown2, #t_appdown3, #t_plannerreg{
+        padding-left:300px;
+    }
+    .onlybg{
+        background-size:130%;
+        background-position:-100px -130px;
+    }
+    .tab__img{
+        right:3%;
+    }
+    .cir__bag{
+        left:70%;
+    }
+    .cir__hum{
+        left:64%;
+    }
+    .cir__cal{
+        left:56%;
+    }
+    .cir__map{
+        left:61%;
+    }
+    .tab__img--wrap{
+        right:4%;
+    }
+    .tab__img--wrap2{
+        top:10%;
+    }
+    .bgimg__bg{
+        right:0%;
+    }
+    .bgimg__pop{
+        right:-0.2%;
+    }
+    @keyframes form_open {
+        100%{
+            right:2%;
+            opacity:1;
+        }
+    }
+}
+@media all and (max-width:1024px) and (min-width:769px) {
+    h2{
+        font-size:3em;
+    }
+    #t_hd{
+        width:200px;
+        padding:60px 0px 0px 50px;
+    }
+    #t_gnb{
+        left:54px;
+    }
+    #t_main, #t_appdown1, #t_appdown2, #t_appdown3, #t_plannerreg{
+        padding-left:200px;
+    }
+    .onlybg{
+        background-size:112%;
+    }
+    .tab__img{
+        right:2%;
+    }
+    .cir__bag{
+        left:72%;
+        width:90px;
+        height:90px;
+    }
+    .cir__hum{
+        left:66%;
+        width:50px;
+        height:50px;
+    }
+    .cir__cal{
+        left:56%;
+        width:102px;
+        height:102px;
+    }
+    .cir__map{
+        left:61%;
+        width:90px;
+        height:90px;
+    }
+    .tab__title{
+        font-size:1.5em;
+    }
+    .travel--tab__desc{
+        font-size:1em;
+    }
+    .tab__img--wrap{
+        right:5%;
+    }
+    .tab__img--ms{
+        width:370px;
+        height:100px;
+    }
+    .tab__img--ms1{
+        top:-66px;
+    }
+    .tab__img--ms2{
+        top:40px;
+    }
+    .tab__img--ms3{
+        top:146px;
+    }
+    .tab__img--ms4{
+        top:252px;
+    }
+    .tab__img--ms5{
+        top:358px;
+    }
+    .tr_name{
+        top: 19px;
+        left: 129px;
+    }
+    .tr_form {
+        top: 7px;
+        left: 163px;
+    }
+    .tr_pl_info {
+        top: 39px;
+        left: 129px;
+    }
+    .tr_prace {
+        top: 60px;
+        left: 129px;
+    }
+    .tr_won {
+        top: 61px;
+        left: 178px;
+    }
+    .tr_star {
+        left:309px;
+    }
+    .tab__img--ms1 .tr_star{
+        top:57px;
+    }
+    .tab__img--ms2 .tr_star{
+        top:59px;
+    }
+    .tab__img--ms3 .tr_star{
+        top:58px;
+    }
+    .tab__img--ms4 .tr_star{
+        top:57px;
+    }
+    .tab__img--ms5 .tr_star{
+        top:58px;
+    }
+    .tab__img--bg {
+        width: 324px;
+        height: 465px;
+    }
+    .tab__img--pl{
+        width:50px;
+        height:50px;
+    }
+    .tab__img--pl1 {
+        top: 44px;
+        left: 14px;
+    }
+    .tab__img--sb1{
+        top: 98px;
+        left: 5px;
+        width: 275px;
+        height: 68px;
+    }
+    .tab__img--pl2{
+        top: 160px;
+        right: 14px;
+    }
+    .tab__img--sb2{
+        top: 158px;
+        right: 60px;
+    }
+
+    /*app3*/
+    .bgimg__bg{
+        right:6%;
+        width: 445px;
+        height: 724px;
+    }
+    .bgimg__pop{
+        right:4.8%;
+        width: 379px;
+        height: 290px;
+    }
+    .fain_1{
+        font-size:2rem;
+    }
+    .btn--ghost{
+        font-size:0.95em;
+    }
+    .form__planner {
+        width:435px;
+        padding:20px 13px;
+    }
+    .form__planner input, .plan_btn{
+        height:53px;
+    }
+    @keyframes form_open {
+        100%{
+            right:1%;
+            opacity:1;
+        }
+    }
+}
+
+/*mobile*/
+@media all and (max-width:768px) {
+    body{
+        font-size:12px;
+    }
+    h2{
+        font-size:2em;
+        letter-spacing:0px;
+        text-align:center;
+    }
+    .next_arrow, .next_arrow.active{
+        display:none;
+    }
+
+    /*header*/
+    .onlybg{
+        background-image:url(../img/main/mo_main_bg.png);
+        background-position: -43px -89px;
+        background-size: 115%;
+    }
+    #t_hd{
+        width:0px;
+        padding:30px 0px 0px 26px;
+    }
+    .logo{
+        width:91px;
+        height:21px;
+    }
+    .logo.no{
+        display:none;
+    }
+    #t_gnb{
+        display:none;
+    }
+
+    #t_main, #t_appdown1, #t_appdown2, #t_appdown3, #t_plannerreg{
+        padding-left:0px;
+    }
+    /*main*/
+	#t_main{
+		padding-top:60px;
+	}
+    #t_main h2{
+        margin:-190px auto 0px;
+        font-size:2.5em;
+    }
+    .ani_h2_3{
+        display:inline-block;
+        margin-right:-8px;
+    }
+    .main--appdown_wrap{
+        display:none;
+    }
+    .mo_planbtn{
+        display:block;
+        position: absolute;
+        bottom:0px;
+        left:0px;
+        width:100%;
+        height:46px;
+    }
+    .mo_planbtn a{
+        display:block;
+        width:100%;
+        height:100%;
+        padding-top:11px;
+        box-sizing:border-box;
+        font-size:1.15em;
+        background-color:#00244C;
+        color:#00DBD8;
+        text-align:center;
+    }
+
+    /*app1*/
+    .bg_cloud, .bg_airplane{
+        display:none;
+    }
+    .cir__bag{
+        width: 50px;
+        height: 50px;
+        top: 13.3%;
+        left: 75%;
+    }
+    .cir__hum{
+        width: 36px;
+        height: 36px;
+        top: 20%;
+        left: 22%;
+    }
+    .cir__cal{
+        width: 51px;
+        height: 51px;
+        top: 39%;
+        left: 8%;
+        z-index: 9;
+    }
+    .cir__map{
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 76%;
+    }
+    #t_appdown1{
+        background-image:none;
+    }
+    #t_appdown1 h2{
+        margin-bottom:24px;
+    }
+    .tab__img{
+        position: absolute;
+        top:8%;
+        left:50%;
+        transform:translate(-50%);
+        width:70%;
+        height:70%;
+    }
+    .mo_content1{
+        position: absolute;
+        bottom:0px;
+        left:0px;
+        width:100%;
+        padding-top:17px;
+        box-sizing:border-box;
+        background-color:#fff;
+    }
+    .t_appdown1--travel_wrap{
+        width:100%;
+    }
+    .travel--tab__title{
+        border-bottom:1px solid #c1c1c1;
+        width:100%;
+        height:33px;
+    }
+    .tab1__title--wrap{
+        margin:0px auto;
+        width:168px;
+    }
+    .tab__title{
+        font-size:1em;
+        margin-bottom:-2px;
+    }
+    .tab__text{
+        text-align:center;
+    }
+    .travel--tab__desc{
+        font-size:1em;
+        margin:30px 45px;
+    }
+    /*app2*/
+    #t_appdown2 h2 {
+        margin-bottom: 10px;
+    }
+    .mo_content2{
+        position: absolute;
+        top: 65px ;
+        left: 0px;
+        width:100%;
+    }
+    .t_appdown2--travel_wrap{
+        width:100%;
+    }
+    .tab2__title--wrap{
+        width:183px;
+        margin:0px auto;
+    }
+    .travel2--tab{
+        margin:25px 75px;
+    }
+    .travel--tab__title2{
+        border-color:#315681;
+    }
+    .tab__img--wrap{ 
+        position: absolute;
+        width: 100%;
+        top: 138.6%;
+        right: 50%;
+        transform: translate(50%);
+    }
+    .tab__img--ms4, .tab__img--ms5{
+        display:none;
+    }
+    .tab__img--ms{
+        position: relative;
+        width: 318px;
+        height: 84px;
+        margin:0px auto;
+    }
+    .tab__img--ms1{
+        top:-50px;
+    }
+    .tab__img--ms2{
+        top:-40px;
+    }
+    .tab__img--ms3{
+        top:-30px;
+    }
+    .tab__img--ms p{
+        font-size:7px;
+        letter-spacing: -1px;
+    }
+    .tr_name{
+        top: 14px;
+        left: 105px;
+    }
+    .tr_form{
+        top: 1px;
+        left: 138px;
+        font-size: 4px;
+    }
+    .tr_pl_info{
+        top: 33px;
+        left: 105px;
+    }
+    .tr_prace{
+        left: 105px;
+    }
+    .tr_won {
+        left: 144px;
+        font-size: 5px;
+    }
+    .tr_star{
+        left:265px;
+        font-size:8px;
+    }
+    .tab__img--ms1 .tr_prace, .tab__img--ms1 .tr_won, .tab__img--ms1 .tr_star{
+        top:49px;
+    }
+    .tab__img--ms2 .tr_prace, .tab__img--ms2 .tr_won, .tab__img--ms2 .tr_star{
+        top:51px;
+    }
+    .tab__img--ms3 .tr_prace, .tab__img--ms3 .tr_won, .tab__img--ms3 .tr_star{
+        top:50px;
+    }
+    #t_appdown2 .bg_cloud{
+        display:block;
+        bottom: -80px;
+        right: -80px;
+        width: 190%;
+    }
+    .tab__img--bg{
+        width: 263px;
+        height: 378px;
+        margin: 0px auto;
+    }
+    .tab__img--wrap2{
+        top:94%;
+    }
+    @keyframes img_up{
+        100%{
+            opacity:1;
+            margin-top:4px;
+        }
+    }
+    .tab__img--pl1{
+        top: 41px;
+        left: -100px;
+        width: 45px;
+        height: 45px;
+        margin: 0px auto;
+    }
+    .tab__img--sb1{
+        top: 94px;
+        left: 178px;
+        width: 239px;
+        height: 59px;
+        margin: 0px auto;
+    }
+    .tab__img--pl2{
+        top: 159px;
+        left: 266px;
+        width: 45px;
+        height: 45px;
+        margin: 0px auto;
+    }
+    .tab__img--sb2{
+        top: 150px;
+        left: 133px;
+        width: 235px;
+        height: 163px;
+        margin: 0px auto;
+    }
+    .tr_allprace {
+        margin:40% 0% 0% 63%;
+        font-size:12px;
+    }
+    .tr_allprace .tr_prace{
+        font-size:12px;
+        letter-spacing:0px;
+    }
+
+    /*app3*/
+    #t_appdown3{
+        background-size:cover;
+        background-position:-211px 0px;
+    }
+    .mo_content3{
+        position: absolute;
+        top:75px;
+        left:0%;
+        width:100%;
+    }
+    .app3_con{
+        margin-top: 16px;
+        font-size:1em;
+        text-align: center;
+    }
+    .bgimg__bg{
+        top:32%;
+        right:50%;
+        width: 231px;
+        height: 500px;
+        background-position: -69px bottom;
+        transform: translateX(50%);
+    }
+    .bgimg__pop{
+        top: 53%;
+        right: 10%;
+        width: 80%;
+        height: 202px;
+        background-position: 0px 4px;
+    }
+    
+    /*plan*/
+    #t_plannerreg{
+        background-size:cover;
+        background-position:-266px 0px;
+    }
+    .mo_content4{
+        /* position: absolute;
+        top: 60px;
+        left: 17%; */
+    }
+    .fain_1{
+        display: block;
+        margin-bottom: 5px;
+        font-size:1rem;
+        letter-spacing:-1px;
+    }
+    .fain_2{
+        display:inline-block;
+    }
+    .fain_3{
+        color:#fff;
+    }
+    .fain_4{
+        margin-left:-9px;
+    }
+    .btn--ghost{
+        width:138px;
+        margin: 10px auto;
+        padding:15px;
+        font-size:0.85em;
+    }
+    #t_plannerreg.active .form__planner{
+        right:0px;
+        height:auto;
+		padding:10px 22px 15px
+    }
+    .form__planner{
+        position:static;
+        width:250px;
+        height:325px;
+        padding:22px;
+        margin-left:50%;
+        transform: translateX(-50%);
+    }
+    .form__planner h3{
+        width:initial;
+        margin:0px auto 4px;
+        padding:8px 0px;
+        background-size:7%;
+        background-position:52px 7px;
+        font-size:1.07em;
+        text-align:center;
+    }
+    .form__planner input.in_textbox {
+        width: 100%;
+        height: 32px;
+        line-height:32px;
+        margin-bottom:3px;
+        padding:2px 0px;
+        font-size:9px;
+    }
+    .form__planner  .plan_btn{
+        width:100%;
+        height:32px;
+        margin:0px;
+        font-size:1.07em;
+    }
+    .tr_ft{
+    	margin-top:20px;
+    }
+    .tr_ft small{
+        margin-left:10%;
+        font-size:8px;
+        padding-right: 10%;
+        width:35%;
+    }
+    .tr_sns{
+    	margin-right:10%;
+        width:35%;
+    }
+    .tr_sns a{
+        width:30px;
+        height:30px;
+        margin:0px;
+    }
+    .fain_1{
+        animation-delay:0.0s;
+    }
+    .fain_2{
+        animation-delay:0.2s;
+    }
+    .fain_3{
+        animation-delay:0.4s;
+    }
+    .fain_4{
+        animation-delay:0.6s;
+    }
+    .fain_5{
+        animation-delay:0.8s;
+    }
+    .btn--ghost{
+        animation-delay:1.2s;
+    }
+    .form__planner{
+        animation-delay:1.4s;
+    }
+
+    @media all and (max-height:823px) and (min-height:667px) {
+        body{
+            font-size:15px;
+        }
+        .onlybg{
+            background-position:-43px -62px;
+        }
+        #t_main h2{
+            margin:-310px auto 0px;
+        }
+        .tab__img{
+            width:90%;
+            height:80%;
+        }
+        .tab1__title--wrap{
+            width:179px;
+        }
+        #t_appdown1 h2{
+            margin-bottom:12px;
+        }
+        #t_appdown2 h2{
+            margin:20px 0px 30px;
+        }
+        .tab2__title--wrap{
+            width:196px;
+        }
+        .tab__img--wrap{
+            top:158.6%;
+        }
+        .tab__img--ms{
+            width:338px;
+            height:90px;
+        }
+        .tab__img--ms p{
+            font-size:10px;
+        }
+        .tr_name{
+            top: 16px;
+            left: 115px;
+        }
+        .tr_form{
+            top: 3px;
+            left: 148px;
+            font-size: 7px;
+        }
+        .tr_pl_info{
+            top: 36px;
+            left: 115px;
+        }
+        .tr_prace{
+            left: 115px;
+        }
+        .tr_won {
+            left: 144px;
+            font-size: 8px;
+        }
+        .tr_star{
+            left:279px;
+            font-size:11px;
+        }
+        .tab__img--ms1 .tr_prace, .tab__img--ms1 .tr_won, .tab__img--ms1 .tr_star{
+            top:53px;
+        }
+        .tab__img--ms2 .tr_prace, .tab__img--ms2 .tr_won, .tab__img--ms2 .tr_star{
+            top:56px;
+        }
+        .tab__img--ms3 .tr_prace, .tab__img--ms3 .tr_won, .tab__img--ms3 .tr_star{
+            top:54px;
+        }
+        .tab__img--wrap{
+            top:158.6%;
+        }
+        .tab__img--wrap2{
+            top:108.6%;
+        }
+        .tab__img--pl{
+            width:40px;
+            height:40px;
+        }
+        .tab__img--sb1{
+            width: 239px;
+            height: 59px;
+            left:203px;
+        }
+        .tab__img--sb2{
+            width: 210px;
+            height: 150px;
+            left:163px;
+        }
+        .bgimg__pop{
+            top:48%;
+            height:223px;
+        }
+        .btn--ghost{
+            width:141px;
+        }
+        .form__planner{
+            width:350px;
+            height:480px;
+        }
+        .form__planner h3{
+            margin-bottom:16px;
+            background-size: 6%;
+            background-position: 92px 6px;
+        }
+        .form__planner input, .plan_btn{
+            width:304px;
+            height:58px;
+            font-size: 0.8em;
+        }
+        .form__planner input{
+            margin-bottom:9px;
+        }
+    }
+}/*~768*/
+@media all and (max-width:360px) {
+    .tab__img--wrap{
+        top:100%;
+    }
+    .tab__img--ms {
+        width: 288px;
+        height: 81px;
+    }
+    .tab__img--ms1{
+        top:0px;
+    }
+    .tab__img--ms2{
+        top:5px;
+    }
+    .tab__img--ms3{
+        top:10px;
+    }
+    .tr_name{
+        left:100px;
+    }
+    .tr_form{
+        left:130px;
+    }
+    .tr_pl_info {
+        top:31px;
+        left:100px;
+    }
+    .tr_prace{
+        left:100px;
+    }
+    .tr_won{
+        left:142px;
+    }
+    .tr_star{
+        left:245px;
+    }
+    .tab__img--ms1 .tr_prace, .tab__img--ms1 .tr_won, .tab__img--ms1 .tr_star{
+        top:46px;
+    }
+    .tab__img--ms2 .tr_prace, .tab__img--ms2 .tr_won, .tab__img--ms2 .tr_star{
+        top:49px;
+    }
+    .tab__img--ms3 .tr_prace, .tab__img--ms3 .tr_won, .tab__img--ms3 .tr_star{
+        top:47px;
+    }
+    .tab__img--bg{
+        width: 200px;
+        height: 298px;
+    }
+    .tab__img--pl1{
+        top: 36px;
+        left: -75px;
+        width: 40px;
+        height: 40px;
+    }
+    .tab__img--sb1{
+        top: 80px;
+        left: 155px;
+        width: 185px;
+        height: 46px;
+    }
+    .tab__img--pl2{
+        top: 124px;
+        left: 225px;
+        width: 40px;
+        height: 40px;
+    }
+    .tab__img--sb2{
+        top: 122px;
+        left: 110px;
+        width: 196px;
+        height: 138px;
+    }
+    .tr_allprace{
+        margin:40.5% 0% 0% 60%;
+    }
+}/*~360*/

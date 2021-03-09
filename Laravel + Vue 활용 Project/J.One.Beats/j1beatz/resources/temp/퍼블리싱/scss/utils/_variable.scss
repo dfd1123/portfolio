@@ -1,0 +1,65 @@
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+
+$theme-bg-color: #1b1b38;
+$theme-hd-color: #16162d;
+$theme-hd-nav-color: rgba(126, 42, 255, 0.3);
+$theme-playbar-bg-color: #000000;
+$theme-playlist-bg-color: rgba(10, 10, 27, 0.9);
+$theme-button01-color: #7e2aff;
+$theme-button02-color: #393939;
+
+$red-color: #ff6767;
+$blue-color: #6a7eff;
+
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+
+$theme-hd-width: 320px;
+$theme-playbar-height: 135px;
+$theme-playlist-width: 530px;
+
+/* 
+    ----------------- 
+        array 
+    -----------------
+*/
+
+$mood: (
+  mood-1,
+  mood-2,
+  mood-3,
+  mood-4,
+  mood-5,
+  mood-6,
+  mood-7,
+  mood-8,
+  mood-9,
+  mood-10,
+  mood-11,
+  mood-12,
+  mood-13,
+  mood-14,
+  mood-15,
+  mood-16,
+  mood-17,
+  mood-18
+);
+$genre: (
+  genre-1,
+  genre-2,
+  genre-3,
+  genre-4,
+  genre-5,
+  genre-6,
+  genre-7,
+  genre-8,
+  genre-9,
+  genre-10
+);

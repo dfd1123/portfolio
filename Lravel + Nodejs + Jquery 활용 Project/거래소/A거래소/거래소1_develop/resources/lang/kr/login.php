@@ -1,0 +1,93 @@
+<?php
+
+return [
+
+'email_address' => '이메일',
+'password' => '비밀번호',
+'OTP_login' => 'OTP 2차 로그인',
+'OTP_number' => 'OTP번호',
+'join_login_sentence1' => '구글OTP번호 6자리를 제한시간내에 입력하세요.',
+'join_login_sentence2' => '서비스 약관 및 개인정보 수집·이용에 동의해주세요.',
+'join_login_sentence2_mb' => '서비스 약관 및 <br class="mb_block"> 개인정보 수집·이용에 동의해주세요.',
+'join_login_sentence3' => '스포와이드 거래소 서비스 이용약관 동의 (필수)',
+'join_login_sentence4' => '스포와이드 거래소 개인정보 수집 및 이용동의 (필수)',
+'join_login_sentence5' => '스포와이드 거래소 마케팅 수신에 동의합니다. (선택)',
+'join_login_sentence5_mb' => '스포와이드 거래소 마케팅 수신에 동의합니다. (선택)',
+'login_info' => '<b>로그인 정보</b>',
+'join_login_sentence6' => '사용하시는 이메일 주소를 통해 로그인 아이디를 생성합니다.',
+'join_login_sentence6_mb' => '사용하시는 이메일 주소를 통해 <br class="mb_block">로그인 아이디를 생성합니다.',
+'send_certification' => '인증메일 전송',
+'input_certification' => '인증번호 입력',
+'certification' => '인증하기',
+'join_login_sentence7' => '비밀번호 입력(영문,숫자 포함 8~20자리)',
+'check_password' => '비밀번호 확인 (영문,숫자 포함 8~20자리)',
+'right_password' => '비밀번호가 일치합니다.',
+'wrong_password' => '비밀번호가 일치하지 않습니다.',
+'user_info' => '회원정보',
+'name' => '이름',
+'contry' => '국가',
+'phone_number' => '휴대폰 번호',
+'send_massege' => '인증문자 전송',
+'wallet_account' => '지갑계정',
+'wallet_account_2' => '지갑계정(영문 또는 숫자)',
+'join_login_sentence8' => '회원가입이 완료되었습니다.<br>이메일 인증 후 SPOWIDE의 모든 서비스를 이용할 수 있습니다.',
+'join_login_sentence9' => '*마이페이지>보안강화에서 OTP인증을 완료하여<br/>더욱 안전한 SPOWIDE를 사용해보세요.<br>OTP인증 완료시 입출금 한도가 상승됩니다.',
+'login' => '로그인하기',
+'join_login_sentence10' => '사용하시는 이메일 주소를 통해<br> 비밀번호를 재생성 합니다.',
+'check' => '확인',
+'cancel' => '취소',
+'user_id' => '유저 아이디',
+'join_login_sentence11' => '신규 비밀번호(영문,숫자 포함 8 ~ 20자리)',
+'change' => '변경하기',
+'one' => '약관내용1',
+'two' => '약관내용2',
+'ko' => '한국',
+'find' => '비밀번호 찾기',
+'see' => '자세히 보기',
+'join' => '회원가입',
+// 추가본    
+'suc_email' => '이메일 인증완료',
+'join_login_sentence12' => '이메일 인증이 완료되었습니다.',
+'main' => '메인으로 가기',
+'email_cer' => '이메일 인증',
+'join_login_sentence13' => '전송이 완료되었습니다.<br>가입시 필요한 이메일로 전송된 메일을 확인하시고 인증버튼을 눌러주세요.',
+'no_cer' => '인증메일을 못받으셨다면?',
+'re' => '재전송',
+'suc' => '전송완료',
+'join_login_sentence14' => '서비스 이용을 위해서는 이메일 인증이 필요합니다.<br>이메일 인증 완료시, SPOWIDE를 이용하실 수 있습니다.',   
+'checking' => '중복확인',
+'change2' => '비밀번호 변경',
+
+
+'general_register' => '일반 회원가입',
+'corp_register' => '기업 회원가입',
+'email_warning' => '※ 정확한 이메일 주소를 입력하세요. 허위 계정일경우 추후 인증메일을 받아볼 수 없으며, 거래 제한 및 입출금이 금지됩니다.',
+'register_success' => '회원가입 완료',
+'nickname' => '닉네임',
+'certify_myself' => '본인인증',
+'phone_check' => '휴대폰 번호',
+'login' => '로그인',
+'find_password' => '비밀번호 찾기',
+'email_check' => '이메일 전송',
+'email_id' => '이메일 아이디',
+'password_reset' => '사용하실 비밀번호를 재설정 해주세요.',
+'password_change_success' => '비밀번호 변경 완료',
+'next_btn' => '다음',
+'corp_login_info' => '<b>기업 정보</b>',
+
+
+//거래소 서비스 이용약관
+'agree_tit' => '스포와이드 거래소 서비스 이용약관',
+
+
+//기업 회원가입시 기업정보
+'corp_name' => '회사명',
+'corp_ceo' => '대표자명',
+'corp_register_number' => '사업자 등록번호',
+'corp_phone_number' => '사업장 전화번호',
+'corp_address' => '사업장 주소',
+'corp_detail_address' => '상세주소',
+
+
+
+];

@@ -1,0 +1,88 @@
+/*
+    COMPONENT - donggle review
+*/
+._review_wrap {
+  width: 100%;
+  ._review {
+    margin: 20px 0px;
+    border-bottom: 1px solid $light_gray6;
+    padding: 0px 0px 20px;
+    cursor: pointer;
+    &:hover ._review_write_text > p {
+      text-decoration: underline;
+      text-decoration-color: $black;
+    }
+  }
+  .symbol-circle {
+    float: left;
+  }
+  ._review_product_wrap {
+    float: left;
+    margin: 1px 12px;
+  }
+  ._review_score {
+    margin: 0px 0px 2px;
+    ._star {
+      display: inline-block;
+    }
+    ._number {
+      font-size: $f-12;
+    }
+    ._text {
+      font-size: $f-10;
+      color: $blue;
+    }
+  }
+  ._review_writer_info {
+    margin: 5px 0px;
+    > span {
+      margin-left: 10px;
+      border-left: 1px solid $light_gray6;
+      padding-left: 10px;
+      font-size: $f-11;
+      font-weight: 200;
+      color: $gray;
+    }
+    ._name {
+      margin: 0px;
+      border: 0px none;
+      padding: 0px;
+      font-size: $f-15;
+      font-weight: 500;
+      color: $black;
+    }
+    ._comment {
+      padding-left: 28px;
+      background-image: url($path-icon+"icon_comment.svg");
+      @include bgOption(auto, 10px center);
+    }
+  }
+  ._review_write_product {
+    padding: 5px 0px 0px 55px;
+    font-size: $f-13;
+    font-weight: 200;
+    color: $gray;
+  }
+  ._review_write_image {
+    float: left;
+    width: 98px;
+    height: 98px;
+    margin: 0px 20px 0px 0px;
+    overflow: hidden;
+    > img {
+      width: 100%;
+    }
+  }
+  ._review_write_text {
+    padding: 24px 0px 0px;
+    > p {
+      float: left;
+      font-size: $f-14;
+      font-weight: 300;
+      @include ellipse(3, 22px);
+    }
+    &._with_img > p {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../static/stylesheets/Root.scss';
+
+.coupon-list {
+    width: 100%;
+    padding: 0px 24px;
+    height: calc(100vh - 132px);
+    overflow-y: scroll;
+    .coupon-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 160px;
+        border: 1px solid #e9ebed;
+        border-left: 4px solid #222222;
+        margin: 32px auto;
+        .default {
+            writing-mode: vertical-rl;
+            font-size: 18px;
+            font-weight: 500;
+            transform: rotate(180deg);
+        }
+        .description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 60%;
+            .subject {
+                font-size: 16px;
+            }
+            .price {
+                font-size: 36px;
+                font-weight: bold;
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            .end-date {
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+        .state-box {
+            position: relative;
+            height: 100%;
+            svg {
+                height: 100%;
+            }
+            .check {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.15s ease-in;
+            }
+            .checked {
+                opacity: 1;
+            }
+            .book {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.15s ease-in;
+            }
+            .bookCheck {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.coupon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 132px);
+    .explain {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}

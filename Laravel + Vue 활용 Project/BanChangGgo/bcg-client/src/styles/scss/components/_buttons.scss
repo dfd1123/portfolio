@@ -1,0 +1,86 @@
+/*
+  버튼
+
+  wide_btn: 가로로 긴 버튼
+  small_btn01: 인증하기 버튼
+  btn_only_theme: color => 테마컬러버튼
+
+*/
+
+.wide_btn {
+  @include initButton(30px);
+  width: 100%;
+  height: $g-wide_btn;
+  transition: all 0.2s;
+  max-width: 1024px;
+}
+
+.wide_radius_5_btn {
+  width: 100%;
+  @include initButton(5px);
+  height: 2.5rem;
+  transition: all 0.2s;
+}
+
+.small_btn01 {
+  @include initButton(5px);
+  height: 2.5rem;
+  padding: 0 15px;
+  transition: all 0.2s;
+}
+
+.btn_only_theme {
+  @include remFont("18px");
+  background-color: $theme-03;
+  color: white;
+  border: {
+    radius: 15px;
+    bottom-left-radius: 0;
+    bottom-right-radius: 0;
+  }
+  @media all and (min-width: 576px) {
+    &:hover {
+      background-color: darken($theme-03, 3%);
+    }
+  }
+  &:active {
+    background-color: darken($theme-03, 7%);
+  }
+}
+
+.btn_clear_to_theme {
+  @include remFont("18px");
+  background-color: $theme-04;
+  color: white;
+  &.active {
+    @include btnShadow($theme-03, 0.45);
+    background-color: $theme-03;
+    transition: all 0.2s;
+    @media all and (min-width: 576px) {
+      &:hover {
+        background-color: darken($theme-03, 3%);
+      }
+    }
+    &:active {
+      background-color: darken($theme-03, 7%);
+    }
+  }
+}
+
+.btn_theme_to_gray {
+  @include remFont("15px");
+  background-color: $gray-05;
+  color: white;
+  &.active {
+    background-color: $theme-03;
+    transition: all 0.2s;
+    @media all and (min-width: 576px) {
+      &:hover {
+        background-color: darken($theme-03, 3%);
+      }
+    }
+    &:active {
+      background-color: darken($theme-03, 7%);
+    }
+  }
+}

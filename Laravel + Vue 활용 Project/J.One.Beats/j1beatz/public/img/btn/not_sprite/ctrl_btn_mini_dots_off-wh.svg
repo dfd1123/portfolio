@@ -1,0 +1,7 @@
+<svg id="ctrl_btn_mini_dots_off-wh" xmlns="http://www.w3.org/2000/svg" width="4.2" height="21" viewBox="0 0 4.2 21">
+  <g id="레이어_1" data-name="레이어 1">
+    <path id="패스_11" data-name="패스 11" d="M2.1,0A2.1,2.1,0,1,1,0,2.1,2.1,2.1,0,0,1,2.1,0Z" fill="#fff" opacity="0.8"/>
+    <circle id="타원_7" data-name="타원 7" cx="2.1" cy="2.1" r="2.1" transform="translate(0 8.4)" fill="#fff" opacity="0.6"/>
+    <path id="패스_10" data-name="패스 10" d="M2.1,0A2.1,2.1,0,1,1,0,2.1,2.1,2.1,0,0,1,2.1,0Z" transform="translate(0 16.8)" fill="#fff" opacity="0.4"/>
+  </g>
+</svg>

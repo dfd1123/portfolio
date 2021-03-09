@@ -1,0 +1,433 @@
+/*
+    PAGES - (고객센터)공지사항, 자주묻는 질문, 이벤트
+*/
+// 고객센터 공통요소
+.dg-cs-wrapper {
+  padding-bottom: 50px;
+  background-color: $light_gray5;
+  #_mini_quick_menu{
+    top:120px;
+  }
+}
+._cs_wrap {
+  > h3 {
+    height: 66px;
+    line-height: 66px;
+    margin-bottom: 6px;
+    border: 1px solid $light_gray7;
+    padding: 0px 0px 0px 20px;
+    background-color: $white;
+    font-size: $f-22;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
+    user-select: none;
+  }
+  ._board {
+    background-color: $white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
+  }
+  ._cs_layout {
+    border-top: 0px none;
+  }
+  ._board_pager {
+    margin: 0px auto;
+    padding: 49px 0px;
+  }
+  ._cs_content {
+    position: relative;
+    border-bottom: 1px solid $light_gray6;
+    .link {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+    }
+    ._desc {
+      line-height: 1.7;
+    }
+    ._desc_01 {
+      margin-bottom: 20px;
+    }
+  }
+  ._board_title_wrap {
+    display: none;
+  }
+  ._board_title_label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 16px 20px;
+    line-height: 1.8;
+    cursor: pointer;
+    @include hoverActiveBg($white);
+    > span {
+      display: inline-block;
+    }
+    ._number {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-size: $f-13;
+      color: $dark;
+      letter-spacing: 0px;
+    }
+    ._date {
+      position: absolute;
+      top: 15px;
+      right: 50px;
+      font-size: $f-13;
+      color: $dark;
+      letter-spacing: 0px;
+    }
+    ._title {
+      width: 100%;
+      padding: 0px 0px 0px 42px;
+      background-image: url($path-btn+"btn_next_gr.svg");
+      background-position: 100% 5px;
+      font-size: $f-15;
+      @include ellipse(1, 22px);
+    }
+  }
+  ._board_hidden {
+    display: none;
+    padding: 0 20px 35px 20px;
+    background-color: white;
+  }
+  ._board_title_wrap:checked {
+    ~ ._board_hidden {
+      display: block;
+    }
+    ~ ._board_title_label ._title {
+      -webkit-line-clamp: inherit;
+      background-image: url($path-btn+"btn_folder.svg");
+    }
+  }
+  ._board_hidden ._board_content {
+    background-color: #fafafa;
+  }
+}
+// 고객센터 공통요소 END
+/*
+    PAGES - (고객센터)자주묻는 질문
+*/
+._fnq_wrap {
+  ._board_title_label ._title {
+    padding: 0px;
+    background-image: url($path-btn+"btn_spreader.svg");
+    background-position: calc(100% - 20px) 8px;
+  }
+}
+/*
+    PAGES - (고객센터)이벤트
+*/
+._event_wrap {
+  ._board_title_label ._title {
+    padding: 0px 200px 0px 141px;
+  }
+  ._check {
+    position: absolute;
+    top: 50%;
+    left: 62px;
+    width: 79px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid $light_gray2;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: $f-13;
+    color: $light_gray2;
+    user-select: none;
+  }
+  ._term {
+    position: absolute;
+    top: 16px;
+    right: 58px;
+    font-size: $f-13;
+    font-weight: 200;
+    letter-spacing: 0px;
+  }
+  ._ing {
+    border-color: $blue;
+    color: $blue;
+  }
+}
+
+/*
+    PAGES - (고객센터)1:1문의
+*/
+#dg-cs-support-wrapper{
+  
+  ._support_content_wrap .dg-edit-del-btn-wrap {
+    float: right;
+    display: block;
+    width: 190px;
+    margin: 10px 20px 5px;
+    text-align: right;
+
+    .rounded-btn-outline {
+      @include fontType01(#{$px-11}rem);
+      @include makeAfter {
+        @include position($t: 0, $l: 0);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 0;
+        height: 100%;
+      }
+
+      position: relative;
+      background: transparent;
+      overflow: hidden;
+      height: 24px;
+      line-height: 24px;
+      transition: all 0.2s;
+      z-index: 1;
+    }
+
+    .rounded-btn-outline:hover {
+      background-color: transparent;
+      color: white;
+      transition: all 0.2s;
+    }
+
+    .rounded-btn-outline:hover:after {
+      width: 100%;
+    }
+
+    .btn--edit {
+      @include makeAfter {
+        z-index: -1;
+        background: #28b2a9;
+      }
+
+      border-color: #28b2a9;
+      color: #28b2a9;
+
+      &:active:after {
+        background-color: darken(#28b2a9, 7%);
+      }
+    }
+
+    .btn--del {
+      @include makeAfter {
+        z-index: -1;
+        background: #ff5656;
+      }
+
+      margin-left:10px;
+      border-color: #ff5656;
+      color: #ff5656;
+
+      &:active:after {
+        background-color: darken(#ff5656, 7%);
+      }
+    }
+  }
+}
+._support_title_wrapper {
+  float: left;
+  width: 370px;
+}
+._support_content_wrapper {
+  float: left;
+  width: calc(100% - 380px);
+  margin-left: 10px;
+}
+._support_wrapper {
+  > h3 {
+    position: relative;
+    padding: 0px 0px 0px 21px;
+    user-select: none;
+    ._write_popup_btn {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-image: url($path-btn+"btn_write-off.svg");
+      @include bgOption(auto, center center);
+      text-indent: -9999px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        background-image: url($path-btn+"btn_write-on.svg");
+      }
+    }
+  }
+  ._board {
+    height: 576px;
+  }
+  ._question_wrap {
+    height: 100%;
+  }
+  ._question_empty,
+  ._question_empty_a {
+    background-image: url($path-icon+"empty_inquiry.svg");
+    @include bgOption(auto, 50% 225px);
+    > li {
+      padding: 331px 0px 0px;
+      text-align: center;
+      font-size: $f-14;
+      color: $purple_gray;
+    }
+  }
+  ._cs_content {
+    padding: 16px 20px;
+  }
+  ._support_title {
+    cursor: pointer;
+    &:hover {
+      @include hoverActiveBg($white);
+    }
+  }
+  .symbol-circle {
+    @include circleSize(48px);
+
+    display: inline-block;
+  }
+  ._board_title_label {
+    display: inline-block;
+    width: calc(100% - 52px);
+    padding: 0px 0px 0px 5px;
+    ._name {
+      font-size: $f-10;
+      color: $gray;
+    }
+    ._check {
+      width: 56px;
+      height: 18px;
+      line-height: 15px;
+      margin: 0px 0px 0px 6px;
+      border: 1px solid $light_gray6;
+      border-radius: 10px;
+      background-color: $light_gray6;
+      font-size: $f-10;
+      text-align: center;
+      color: $light_gray2;
+      user-select: none;
+    }
+    ._end {
+      border-color: $pink;
+      background-color: inherit;
+      color: $pink;
+    }
+    ._date {
+      top: 6px;
+      left: auto;
+      right: 20px;
+      font-size: $f-10;
+      font-weight: 200;
+      color: $gray;
+    }
+    ._title {
+      padding: 0px;
+      background-image: none;
+      font-size: $f-14;
+    }
+  }
+  ._support_title.active {
+    border: 1px solid $pink;
+  }
+}
+._support_content_wrapper {
+  ._with_profill {
+    position: relative;
+    > span,
+    > a {
+      display: inline-block;
+      padding: 0px 0px 0px 46px;
+      vertical-align: top;
+      font-size: 0.727em;
+      font-weight: 500;
+    }
+    > a {
+      padding: 0px 40px 0px 46px;
+      background-image: url($path-btn+"btn_more.svg");
+      @include bgOption(auto, right center);
+    }
+    > a:hover {
+      color: $purple;
+    }
+  }
+  .symbol-circle {
+    @include circleSize(38px);
+
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translateY(-50%);
+  }
+  ._support_content {
+    padding: 16px 0px 22px 20px;
+    &:first-of-type ._support_content_title:before {
+      content: "Q";
+    }
+  }
+  ._support_quastion_content{
+    padding: 16px 0px 11px 20px;
+  }
+  ._support_content_title {
+    position: relative;
+    width: 100%;
+    padding: 0px 20px 17px 47px;
+    cursor: default;
+    &:hover {
+      background-color: inherit;
+    }
+    &:before {
+      content: "A";
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+      border-radius: 50%;
+      background-color: $black;
+      text-align: center;
+      font-size: $f-18;
+      font-weight: 600;
+      color: $white;
+    }
+    ._date {
+      position: relative;
+      top: 0px;
+      right: auto;
+      display: inline-block;
+      margin: 0px 0px 0px 8px;
+    }
+    ._title {
+      height: auto;
+      line-height: 1.5;
+      -webkit-line-clamp: inherit;
+      overflow: inherit;
+      font-size: $f-16;
+      font-weight: 500;
+    }
+  }
+  ._support_content_desc {
+    position: relative;
+    min-height: 192px;
+    line-height: 1.5;
+    margin: 0px 20px 0px 0px;
+    padding: 20px;
+    background-color: $light_gray5;
+    font-size: $f-13;
+    font-weight: 200;
+    color: $gray;
+  }
+  ._no_response .answer_desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

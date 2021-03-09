@@ -1,0 +1,114 @@
+/*! 
+    helpers.scss | 19-10-23
+    ==========================================================================
+ */
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+  width: 0;
+  height: 0;
+  display: inline-block;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.none {
+  display: none;
+}
+
+.ta_right {
+  text-align: right;
+}
+
+.ta_center {
+  text-align: center;
+}
+
+.ta_left {
+  text-align: left;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
+.bd_bt_0 {
+  border-bottom: 0 !important;
+}
+
+.bd_bt {
+  border-bottom: 1px solid;
+}
+
+.pd_bt_nav {
+  padding-bottom: $g-page_footer_nav_height;
+}
+
+.tbl_cell_middle {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.color {
+  &_theme-01 {
+    color: $theme-01;
+  }
+  &_theme-02 {
+    color: $theme-02;
+  }
+  &_theme-03 {
+    color: $theme-03;
+  }
+  &_theme-04 {
+    color: $theme-04;
+  }
+
+  &_gray-01 {
+    color: $gray-01;
+  }
+  &_gray-02 {
+    color: $gray-02;
+  }
+  &_gray-03 {
+    color: $gray-03;
+  }
+  &_gray-04 {
+    color: $gray-04;
+  }
+  &_gray-05 {
+    color: $gray-05;
+  }
+  &_gray-06 {
+    color: $gray-06;
+  }
+
+  &_black {
+    color: #272720;
+  }
+
+  &_skyblue-01 {
+    color: $sky-blue-01;
+  }
+  &_red-01 {
+    color: $red-01;
+  }
+}

@@ -1,0 +1,140 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.none {
+  display: none;
+}
+
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.app {
+  width: 100%;
+  min-height: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  z-index: 5;
+  padding: 0 50px;
+}
+
+.header-inner {
+  height: 100%;
+  position: relative;
+}
+
+.header-logo {
+  width: 14.688rem;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.header-logo > a {
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+}
+
+.header-logo .in-logo {
+  float: left;
+}
+
+.header-nav-button {
+  width: 24px;
+  height: 19px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  outline: 0px;
+}
+
+.header-nav-button .hamburger {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  border-radius: 30px;
+
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.header-nav-button .hamburger:before,
+.header-nav-button .hamburger:after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+}
+
+.header-nav-button .hamburger:before {
+  top: -8px;
+}
+
+.header-nav-button .hamburger:after {
+  top: 8px;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.container-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.rounded-button {
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  padding: 0;
+  height: 48px;
+  line-height: 48px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-bluegradi {
+  background: linear-gradient(to right, #1dbbff, #1d6aff);
+  color: white;
+}
+
+.btn-gray {
+  background-color: #d8d8d8;
+  color: #fff;
+}

@@ -1,0 +1,671 @@
+/* 한도안내 */
+
+.limit_guide_sub_ment{
+    border: 1px solid black;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: -1px;
+    max-width: 760px;
+    line-height: 1.5;
+    width: 80%;
+}
+
+/* end 한도안내 */
+
+/* 개인정보 취급방침 */
+
+.wpb_wrapper h1, 
+.wpb_wrapper h2, 
+.wpb_wrapper h3, 
+.wpb_wrapper h4, 
+.wpb_wrapper h5, 
+.wpb_wrapper h6 {
+    font-weight: 600;
+    color: #000;
+    line-height: 1.5;
+    margin: 30px 0 20px;
+}
+
+.wpb_wrapper p {
+    font-size: 13px;
+    line-height: 1.65;
+    color: #666;
+    margin: 0 0 20px;
+}
+
+.wpb_wrapper p.mg_0{
+    margin: 0 0 5px;
+}
+
+.wpb_wrapper .red_color{
+    color: #ff6060;
+}
+
+.wpb_wrapper .green_color{
+    color: green;
+}
+
+.wpb_wrapper .bg_green{
+    background-color: #77a277;
+    color: white !important;
+}
+
+.wpb_wrapper .bg_red{
+    background-color: #ff7777;
+    color: white !important;
+}
+
+.wpb_wrapper .bg_gray{
+    background-color: #d6d6d6;
+}
+
+.wpb_wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 1em;
+}
+
+.wpb_wrapper table td {
+    text-align: inherit;
+    padding: .769em 1em;
+    border: 1px solid #eee;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #666;
+}
+
+.wpb_wrapper table .ta_center{
+    text-align: center;
+}
+
+#limit_guide_text_con .wpb_wrapper table th{
+    font-weight: 600;
+    color: #444;
+    font-size: 13px;
+    line-height: 1.65;
+    border: 1px solid #eee;
+    padding: .769em 1em;
+}
+
+#limit_guide_text_con .wpb_wrapper thead {
+    background: #f7f7f7;
+}
+
+/* end 개인정보 취급방침 */
+
+/* 회사소개 */
+
+/* 제목들어가는 hd 공통 */
+
+.hd_container{
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hd_container .tit_group{
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.hd_container ._tit{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: -3px;
+}
+
+.hd_container ._text {
+    font-size: 19px;
+    margin: 15px 0 25px;
+}
+
+/* end 제목들어가는 hd 공통 */
+
+#company_intro_wrapper .hd_container{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+#company_intro_wrapper .hd_container:before {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#company_intro_wrapper .hd_container .bg_span{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/images/bg/bg_title.jpg);
+    z-index: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: bg_effect 2s 1;
+    animation-timing-function: ease-in-out;
+}
+
+#company_intro_wrapper .hd_container ._tit{
+    position: relative;
+    font-size: 40px;
+    color: #fff;
+    z-index: 1;
+    padding-top: 130px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#company_intro_wrapper .hd_container ._tit b{
+    animation: tit_up 0.8s 1;
+    position: relative;
+    display: inline-block;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+#company_intro_wrapper .hd_container ._tit_bt_line {
+    width: 50px;
+    height: 4px;
+    margin: 40px auto 0;
+    background: linear-gradient(-45deg, #4375FF, #00B9FF);
+    z-index: 1;
+    transform: scaleX(0);
+    opacity: 0;
+    animation-delay: 0.65s;
+    animation-name: tit_bt_line;
+    animation-duration: 0.8s;
+    animation-iteration-count: tit_bt_line 0.8s 1;
+    position: relative;
+    display: block;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes bg_effect{
+
+    0%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes tit_up{
+    0%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+
+@keyframes tit_bt_line{
+
+    45%{
+        transform: scale(1.1);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#company_intro_wrapper .blue-color {
+    color: #00B9FF;
+    font-weight: 800;
+}
+
+#company_intro_wrapper .com_intro_wrapper {
+    text-align: center;
+    position: relative;
+}
+
+#company_intro_wrapper .com_intro_wrapper ._com_intro_main_tit {
+    position: relative;
+    font-size: 26px;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    color: #333333;
+}
+
+#company_intro_wrapper .com_intro_wrapper ._text {
+    font-size: 17px;
+    letter-spacing: -1px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+/* 첫번째 섹션 */
+#company_intro_wrapper .intro_section {
+    padding-bottom: 50px;
+}
+
+#company_intro_wrapper .company_character_wrapper {
+    margin: 110px auto 80px;
+    position: relative;
+}
+
+#company_intro_wrapper .company_character_wrapper:after {
+    content: '';
+    background-color: #f8f8f8;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: 230px;
+    z-index: 0;
+}
+
+#company_intro_wrapper .company_character_group {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+#company_intro_wrapper .company_character_group:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#company_intro_wrapper .company_character_list {
+    background-color: #fff;
+    border: 1px solid #00B9FF;
+    height: 290px;
+    width: 260px;
+    float: left;
+    margin: 0 6px;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.15);
+    padding-top: 130px;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.8px;
+    color: #333333;
+    line-height: 1.4;
+}
+
+#company_intro_wrapper .company_character_list:nth-child(2n) {
+    margin-top: -50px;
+}
+
+#company_intro_wrapper .company_character_list ._icon {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#company_intro_wrapper .company_character_list h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002EBF;
+    margin-bottom: 20px;
+}
+/* end 첫번째 섹션 */
+
+/* 두번째 섹션 */
+#company_intro_wrapper .com_intro_wrapper .intro_desc_section ._com_intro_main_tit:before,
+#company_intro_wrapper .map_topic:before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(-45deg, #4375FF, #00B9FF);
+    animation-iteration-count: tit_bt_line 0.8s 1;
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+}
+
+#company_intro_wrapper .intro_desc_section {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+#company_intro_wrapper .guide_line_logos {
+    display: table;
+    width: 100%;
+    margin: 40px 0 60px;
+}
+
+#company_intro_wrapper .guideline_logo {
+    vertical-align: middle;
+}
+
+#company_intro_wrapper .guideline_logo:nth-child(2) {
+    margin: 0 9%;
+}
+
+#company_intro_wrapper .guide_line_text_wrapper {
+    text-align: left;
+    padding-left: 65px;
+}
+
+#company_intro_wrapper .guide_line_text_con {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+#company_intro_wrapper .guide_line_text_con h5 {
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#company_intro_wrapper .guide_line_text_con h5:before {content: '';background-color: blue;width: 28px;height: 2px;position: relative;margin: 0 auto;background: #00B9FF;z-index: 1;/* margin-top: 40px; *//* transform: scaleX(0); *//* opacity: 0; *//* animation-delay: 0.65s; *//* animation-name: tit_bt_line; *//* animation-duration: 0.8s; */animation-iteration-count: tit_bt_line 0.8s 1;position: absolute;display: block;top: 50%;transform: translateY(-50%);left: -41px;}
+
+#company_intro_wrapper .guide_line_text_con p {
+    margin-bottom: 35px;
+}
+
+#company_intro_wrapper .guide_line_text_con .mini_ex {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0 0;
+    font-size: 13px;
+    color: #969696;
+}
+
+#company_intro_wrapper .list_dot {
+    margin-right: 7px;
+}
+
+/* end 두번쨰 섹션 */
+
+/* 고객센터 번호 마지막 섹션 */
+
+#company_intro_wrapper .last_section {
+    background: #F0F0F0;
+    padding: 70px 0;
+}
+
+#company_intro_wrapper .last_section >img {
+    display: block;
+    margin: 0 auto;
+}
+
+#company_intro_wrapper .last_section ._big_tit {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+#company_intro_wrapper .last_section ._number {
+    font-size: 32px;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: -2px;
+    margin-bottom: 40px;
+}
+
+#company_intro_wrapper .last_section ._ment {
+    color: #969696;
+    letter-spacing: -0.5px;
+    font-size: 14px;
+}
+
+/* end 고객센터 번호 마지막 섹션 */
+
+/* 회사소개 안 로드맵 */
+
+#company_intro_wrapper .map_wrap{
+    width: 100%;
+    height: 600px;
+    background: url(/images/bg_roadmap.jpg) center center / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#company_intro_wrapper .map_inner {
+    color: rgb(255, 255, 255);
+    max-width: 1024px;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 4% 5% 2%;
+}
+
+#company_intro_wrapper .map_topic {
+    font-family: Poppins-SemiBold;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    position: relative;
+}
+
+#company_intro_wrapper .years {
+    margin-bottom: 30px;
+}
+
+#company_intro_wrapper .map_year {
+    display: inline-block;
+    font-family: "Spoqa Han Sans Bold";
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.48;
+    text-align: left;
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+#company_intro_wrapper .map_year.active {
+    display: inline-block;
+    line-height: 1.48;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+#company_intro_wrapper .map_year.active::after {
+    content: "";
+    display: block;
+    width: 21px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 185, 255);
+    border-image: initial;
+    margin: 0px auto;
+}
+
+#company_intro_wrapper .map_year_space {
+    margin-right: 10px;
+}
+
+#company_intro_wrapper .ex-roadmap-wrapper {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#company_intro_wrapper .ex-roadmap-navi {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+#company_intro_wrapper .ex-roadmap-list {
+    width: 12.5%;
+    height: 100%;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+#company_intro_wrapper .ex-roadmap-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#company_intro_wrapper .ex-roadmap-list.active .ex-roadmap-dot {
+    width: 34px;
+    height: 34px;
+    top: -17px;
+    background-color: rgba(0, 185, 255, 0.2);
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#company_intro_wrapper .ex-roadmap-list.active .ex-roadmap-dot:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 185, 255);
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#company_intro_wrapper .ex-roadmap-desc-wrapper {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+#company_intro_wrapper .ex-roadmap-desc-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#company_intro_wrapper .ex-roadmap-desc-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#company_intro_wrapper .ex-roadmap-desc-list:nth-child(1) {
+    display: block;
+}
+
+#company_intro_wrapper .ex-roadmap-desc-list ._month {
+    color: #00b9ff;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#company_intro_wrapper .ex-roadmap-desc-list ._tit {
+    font-weight: bold;
+    margin: 10px 0 20px;
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: -1px;
+}
+
+#company_intro_wrapper .ex-roadmap-desc-list ._desc {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.72px;
+    color: #ffffff;
+}
+
+#company_intro_wrapper .ex-roadmap-desc-list .main_more {
+    margin-top: 40px;
+}
+
+/* end 회사소개 안 로드맵 */
+
+/* 회사소개 미니 네비 */
+
+#company_intro_wrapper .com_intro_floating {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    text-align: right;
+    padding: 20px 0;
+    transition: all 0.3s;
+}
+
+#company_intro_wrapper .com_intro_floating.fixed{
+    position: fixed;
+    top: 40px;
+    right: 100px;
+    transition: all 0.3s;
+}
+
+#company_intro_wrapper .com_intro_floating ul {
+    padding-right: 20px;
+    font-size: 13px;
+    color: #969696;
+    letter-spacing: -0.5px;
+    font-weight: 200;
+    border-right: 1px solid #969696;
+}
+
+#company_intro_wrapper .com_intro_floating ul li {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#company_intro_wrapper .com_intro_floating ul li:after {content: '';width: 17px;height: 17px;border: 2px solid #969696;display: inline-block;position: absolute;top: 0;right: -29px;background-color: #fff;border-radius: 50%;/* margin-top: -8px; */}
+
+#company_intro_wrapper .com_intro_floating ul li:nth-child(2) {
+    margin: 35px 0;
+}
+
+#company_intro_wrapper .com_intro_floating ul li.active{
+    font-weight: 800;
+    color: black;
+    transition: all 0.3s;
+}
+
+#company_intro_wrapper .com_intro_floating ul li.active:after{
+    border-color: #00B9FF;
+}
+
+/* end 회사소개 미니 네비 */
+
+/* end 회사소개 */

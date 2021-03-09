@@ -1,0 +1,79 @@
+#login{
+    position:absolute;
+    top:50%;
+    left:0px;
+    transform:translateY(-50%);
+    width:100%;
+    margin:0px auto;
+    letter-spacing:-0.5px;
+}
+.pusan--logo{
+    text-indent:-9999px;
+    @include bgimg(url(/client/assets/img/login/login_symbol.svg));
+    width:40vw;
+    height:40vw;
+    background-position:center 43%;
+    background-size:90%;
+    margin:50px auto;
+}
+.pusan--login{
+    @include center(80%);
+    margin-top:20px;
+    .login--user{
+        color:$label;
+        font-size:0.8em;
+        opacity:0;
+        transition:0.3s;
+        &.on{
+            opacity:1;
+        }
+    }
+    .login_text_box{
+        display:block;
+        width:100%;
+        border:0px none;
+        border-bottom:1px solid #333;
+        outline:0px none;
+        padding:10px 0px;
+        color:$text;
+        &::placeholder{
+            color:$label;
+        }
+        &.active{
+            border-color:$blue;
+        }
+    }
+    a{
+        display:block;
+        margin:10px 0px 28px;
+        text-align:right;
+        font-size:0.8em;
+        color:$green;
+    }
+}
+.pusan--login__btn{
+    display:block;
+    width:80%;
+    @include btn_form($white,$blue,30px);
+    text-align:center;
+    margin:0px auto;
+    border:0px none;
+    padding:20px 0px;
+    font-weight:700;
+    box-shadow:0px 5px 15px rgba(110,160,255,0.35);
+    &:hover, &:focus, &.active{
+        background-color:darken($blue,10%);
+    }
+}
+.pusan--join{
+    h2{
+        margin-top:30px;
+        font-weight:500;
+        font-size:0.8em;text-align:center;
+        color:#99B1CB;
+        a{
+            color:$green;
+            margin-left:1em;
+        }
+    }
+}

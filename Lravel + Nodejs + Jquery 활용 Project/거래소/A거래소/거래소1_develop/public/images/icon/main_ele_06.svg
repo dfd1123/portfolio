@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84.192" height="84.192" viewBox="0 0 84.192 84.192">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4ec0a6"/>
+      <stop offset="1" stop-color="#73f2d0"/>
+    </linearGradient>
+    <filter id="사각형_1496" x="0" y="0" width="84.192" height="84.192" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#64ddbf" flood-opacity="0.518"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#사각형_1496)">
+    <rect id="사각형_1496-2" data-name="사각형 1496" width="32" height="32" rx="4" transform="matrix(0.26, 0.97, -0.97, 0.26, 53.41, 22.5)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

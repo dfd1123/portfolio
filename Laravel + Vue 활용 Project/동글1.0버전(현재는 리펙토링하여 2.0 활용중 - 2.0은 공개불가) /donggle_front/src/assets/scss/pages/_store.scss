@@ -1,0 +1,169 @@
+/*
+    PAGES - 스토어
+*/
+
+// 스토어 프로필카드 요소
+
+.dg-store-profile-card {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 30px 10px 10px;
+  border: 1px solid $light_gray6;
+  user-select: none;
+
+  // 로고
+  .symbol-circle {
+    @include circleSize(80px);
+
+    display: block;
+    margin: 0px auto 14px;
+  }
+  // 로고 END
+
+  // 스토어 기본소개
+  .in-detail_top {
+    padding: 0;
+
+    ._brandname {
+      text-align: center;
+    }
+
+    ._brandname ._name {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+
+    ._brandname ._stars {
+      margin: 3px 0 5px;
+    }
+
+    ._brandname ._stars img {
+      vertical-align: middle;
+    }
+
+    ._brandname ._rate {
+      @include fontType01(#{$px-14}rem, #787878, 400);
+      @include inlineBlockStyle(middle);
+
+      margin-left: 3px;
+    }
+
+    ._brandintro {
+      @include center(95%);
+
+      text-align: left;
+      padding: 20px 0;
+    }
+
+    ._brandintro p {
+      @include fontType01(#{$px-12}rem, #787878, 200);
+      @include ellipse(5, 17.5px);
+    }
+  }
+  // 스토어 기본소개 END
+
+  // 버튼
+  .in-detail_middle {
+    padding: 10px 0;
+    border-bottom: 1px solid $light_gray6;
+    margin-bottom: 5px;
+
+    li {
+      @include fontType01(#{$px-12}rem);
+
+      line-height: 33px;
+      width: 100%;
+      height: 35px;
+      text-align: center;
+      border: 1px solid $light_gray6;
+      margin: 7px 0;
+      cursor: pointer;
+    }
+    li .icon--on {
+      display: none;
+    }
+    li.active {
+      border: 1px solid #fc4ead;
+    }
+    li.active .icon--on {
+      display: inline-block;
+    }
+    li.active .icon--off {
+      display: none;
+    }
+    li span,
+    li img {
+      @include inlineBlockStyle(middle);
+    }
+    li span {
+      margin-left: 5px;
+    }
+
+    ._btn {
+      @include hoverActiveBg(white) {
+        &:hover {
+          border-color: #333;
+        }
+      }
+    }
+  }
+  // 버튼 END
+
+  // 즐찾 및 판매중상품 갯수
+  ._etc_info {
+    @include fontType01(#{$px-12}rem);
+
+    padding: 7px 0;
+
+    ._list {
+      padding: 4px 0;
+      text-align: right;
+    }
+    ._label {
+      color: #b4b4b4;
+      font-weight: 200;
+      text-align: left;
+      float: left;
+    }
+    ._txt {
+      display: inline-block;
+      letter-spacing: 0.3px;
+    }
+  }
+  // 즐찾 및 판매중상품 갯수
+}
+// 스토어 프로필 카드 요소
+
+#dg-store-default-wrapper {
+  .in-sorting {
+    right: 0;
+  }
+
+  .in-sorting ._type {
+    .sort_radio_input:checked ~ .word{
+      color: $black;
+      font-weight: 400;
+    }
+  }
+
+  .dg-store-main-image {
+    width: 100%;
+    height: 422px;
+    padding: 0 10px;
+    margin-bottom: 80px;
+  }
+
+  .dg-store-main-image .in-image {
+    @include bgOption;
+
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+}

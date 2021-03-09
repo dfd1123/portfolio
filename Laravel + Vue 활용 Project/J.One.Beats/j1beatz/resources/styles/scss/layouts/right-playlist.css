@@ -1,0 +1,385 @@
+@charset "UTF-8";
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+.playlist {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 120px;
+  right: 0;
+  overflow: hidden;
+  width: 530px;
+  padding: 40px 30px;
+  background-color: rgba(10, 10, 27, 0.5);
+  overflow: hidden;
+  right: -530px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.playlist h2 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.playlist h2 a {
+  color: #fff;
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+  top: -4px;
+  display: none;
+}
+
+.playlist-sch-bar {
+  line-height: 35px;
+  width: 100%;
+  padding: 20px 0px 10px 0px;
+}
+
+.playlist-sch-bar:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.playlist-sch-bar fieldset {
+  display: inline-block;
+  width: 300px;
+  height: 35px;
+  padding: 0;
+  position: relative;
+}
+
+.playlist-sch-bar fieldset input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  font-weight: 100;
+  outline: none;
+}
+
+.playlist-sch-bar fieldset input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.playlist-sch-bar fieldset input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.playlist-sch-bar fieldset input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.playlist-sch-bar fieldset input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.playlist-sch-bar fieldset input:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.playlist-sch-bar fieldset input + button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background-image: url("/img/btn/btn_sch.svg");
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.playlist-sch-bar fieldset input + button:hover {
+  opacity: 0.5;
+}
+
+.playlist-sch-bar .right_edit {
+  color: #fff;
+  float: right;
+}
+
+.playlist-sch-bar .cancle_btn {
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 13px;
+}
+
+.playlist-del-bar {
+  display: none;
+  min-height: 20px;
+  margin: 20px 0 10px;
+}
+
+.playlist-del-bar input[type="checkbox"] + label {
+  margin-right: 5px;
+  margin-left: 25px;
+  position: relative;
+  top: 5px;
+}
+
+.playlist-del-bar label,
+.playlist-del-bar a {
+  font-size: 13px;
+  color: #fff;
+}
+
+.playlist-del-bar a {
+  float: right;
+  position: relative;
+  top: 9px;
+  right: 35px;
+}
+
+.playlist-inner {
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 115px;
+}
+
+.playlist-inner-wrapper {
+  background-color: rgba(27, 27, 56, 0.6);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+
+.playlist-inner-container {
+  width: 100%;
+  font-size: 17px;
+  height: calc(100vmin - 320px);
+  overflow-y: scroll;
+  /* 재생목록 더보기 메뉴 최상단, 최하단 위치조정 */
+}
+
+.playlist-inner-container .beat-ul-list {
+  position: relative;
+  padding-left: 100px;
+  padding: 1em 1.3em 1em 5em;
+  border-radius: 20px;
+}
+
+.playlist-inner-container .beat-ul-list:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.playlist-inner-container .beat-ul-list input[type="checkbox"] {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+
+.playlist-inner-container .beat-ul-list input[type="checkbox"] + label {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+
+.playlist-inner-container .beat-ul-list:hover .thumb-mini-outer:before {
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.playlist-inner-container .mini-btns {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.playlist-inner-container .mini-album-btn {
+  background-image: url("/img/btn/mini-album.svg");
+}
+
+.playlist-inner-container .mini-buy-btn {
+  background-image: url("/img/btn/mini-buy.svg");
+}
+
+.playlist-inner-container .mini-dot3-btn {
+  background-image: url("/img/btn/mini-dot3.svg");
+}
+
+.playlist-inner-container .mini-btn.mini-buy-btn {
+  background-position: 50% 42%;
+}
+
+.playlist-inner-container .beat-ul-list .beat-pd-info-view {
+  position: absolute;
+  top: -20px;
+  right: 25px;
+}
+
+.playlist-inner-container .beat-ul-list:last-child .beat-pd-info-view {
+  position: absolute;
+  top: -23px;
+  right: 25px;
+}
+
+.playlist-inner-container .beat-ul-list:first-child .beat-pd-info-view {
+  position: absolute;
+  top: -13px;
+  right: 25px;
+}
+
+.playlist-inner-container .mini-btn {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5em;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 10px;
+  background-color: #7300df;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 0.75;
+}
+
+.playlist-inner-container .mini-btn:hover {
+  background-color: #5900ac;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.playlist-inner-container .mini-btn.mini-dot3-btn {
+  background-size: 4px;
+  background-color: transparent;
+  width: 1.5em;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.playlist-inner-container .mini-btn.mini-dot3-btn:hover {
+  background-color: transparent;
+}
+
+.playlist-inner-container .del-btn {
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("/img/icon/icon-del-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+  cursor: pointer;
+}
+
+.playlist-inner-container .nothing_result {
+  text-align: center;
+}
+
+.playlist-inner-container .nothing_result__img {
+  width: 40px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.playlist-inner-container .nothing_result__ment {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.playlist.active h2 a {
+  display: inline-block;
+}
+
+.playlist.active .playlist-sch-bar {
+  display: none;
+}
+
+.playlist.active .playlist-del-bar {
+  display: block;
+}
+
+.playlist.active .playlist-inner-wrapper {
+  border-radius: 0;
+}
+
+.playlist.active .playlist-inner-wrapper .playlist-inner-container.selecting {
+  height: calc(100vmin - 450px);
+}
+
+.playlist.active .playlist-inner-wrapper .beat-ul-list {
+  padding: 1em 1.3em 1em 7em;
+}
+
+.playlist.active .playlist-inner-wrapper input[type="checkbox"] + label {
+  display: block;
+}
+
+.playlist.active .playlist-inner-wrapper .thumb-mini-outer {
+  left: 48px;
+}
+
+.playlist.active .playlist-inner-wrapper .mini-btns,
+.playlist.active .playlist-inner-wrapper .mini-btn.mini-dot3-btn {
+  display: none;
+}
+
+.playlist.active .playlist-inner-wrapper .del-btn {
+  display: block;
+}
+
+#playlist-container .beat-pd-info-view {
+  background-color: #fff;
+  padding: 7px 0;
+}
+
+#playlist-container .beat-pd-info-view a {
+  padding: 6px 10px 6px 48px;
+}
+/*# sourceMappingURL=right-playlist.css.map */

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1130.239" height="677.197" viewBox="0 0 1130.239 677.197">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2,.cls-3,.cls-4{fill:none}.cls-2{stroke:#707070;stroke-linecap:square;stroke-dasharray:6;opacity:.148}.cls-2,.cls-4,.cls-5{stroke-miterlimit:10}.cls-4{stroke:#1ae8ce;stroke-linecap:round;stroke-width:3px}.cls-5{stroke:rgba(0,0,0,0);opacity:.2;fill:url(#linear-gradient)}.cls-6{fill:url(#linear-gradient-2)}.cls-7{fill:url(#linear-gradient-3)}.cls-8{fill:#6e6e6e;font-size:28px}.cls-10,.cls-11,.cls-8{font-family:SpoqaHanSans-Regular,SpoqaHanSans}.cls-10,.cls-9{fill:#005c9b}.cls-9{font-size:45px;font-family:SpoqaHanSans-Bold,SpoqaHanSans;font-weight:700}.cls-10,.cls-11{font-size:24px;letter-spacing:-.04em}.cls-11{fill:#1382ce;font-size:25px}.cls-12{filter:url(#Combined_Shape-4)}.cls-13{filter:url(#Combined_Shape-3)}.cls-14{filter:url(#Combined_Shape-2)}.cls-15{filter:url(#Combined_Shape)}.cls-16{filter:url(#Background)}
+        </style>
+        <filter id="Background" width="1130.239" height="677.197" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-color="#97a9ce" flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#1ae8ce"/>
+            <stop offset="1" stop-color="#1ae8ce" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1="1" x2="0" xlink:href="#linear-gradient-2"/>
+        <filter id="Combined_Shape" width="217.671" height="168.087" x="20.001" y="332.212" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-2" stdDeviation="8"/>
+            <feFlood flood-color="#4b556e" flood-opacity=".2"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Combined_Shape-2" width="217.671" height="168.087" x="302.998" y="304.167" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-3" stdDeviation="8"/>
+            <feFlood flood-color="#4b556e" flood-opacity=".2"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Combined_Shape-3" width="217.671" height="168.087" x="586.998" y="198.458" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-4" stdDeviation="8"/>
+            <feFlood flood-color="#4b556e" flood-opacity=".2"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Combined_Shape-4" width="217.671" height="168.087" x="869.994" y="23.715" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-5" stdDeviation="8"/>
+            <feFlood flood-color="#4b556e" flood-opacity=".2"/>
+            <feComposite in2="blur-5" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="img_1-2" transform="translate(-395.004 -2482)">
+        <g id="그룹_4091" data-name="그룹 4091" transform="translate(409.994 2496)">
+            <g class="cls-16" transform="translate(-14.99 -14)">
+                <path id="Background-2" d="M8.629 0H1091.61a8.629 8.629 0 0 1 8.629 8.629v629.939a8.629 8.629 0 0 1-8.629 8.629H8.629A8.629 8.629 0 0 1 0 638.568V8.629A8.629 8.629 0 0 1 8.629 0z" class="cls-1" data-name="Background" transform="translate(15 14)"/>
+            </g>
+            <g id="Lines" transform="translate(91.229 64.559)">
+                <path id="Line" d="M1 582.638V0" class="cls-2" transform="translate(-1)"/>
+                <path id="Line-2" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(57.852)"/>
+                <path id="Line-3" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(113.762)"/>
+                <path id="Line-4" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(172.614)"/>
+                <path id="Line-5" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(228.524)"/>
+                <path id="Line-6" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(287.376)"/>
+                <path id="Line-7" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(343.286)"/>
+                <path id="Line-8" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(402.138)"/>
+                <path id="Line-9" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(458.048)"/>
+                <path id="Line-10" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(516.9)"/>
+                <path id="Line-11" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(572.81)"/>
+                <path id="Line-12" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(631.662)"/>
+                <path id="Line-13" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(687.572)"/>
+                <path id="Line-14" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(746.425)"/>
+                <path id="Line-15" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(802.334)"/>
+                <path id="Line-16" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(861.187)"/>
+                <path id="Line-17" d="M1 582.638V0" class="cls-2" data-name="Line" transform="translate(917.096)"/>
+            </g>
+            <path id="Mask" d="M0 0h1100v455a15 15 0 0 1-15 15H15a15 15 0 0 1-15-15z" class="cls-3" transform="translate(.004 176.051)"/>
+            <path id="Path" d="M0 322.027C728.577 378.164 1089.44-93.411 1089.44-93.411" class="cls-4" transform="translate(5.494 157.027)"/>
+            <path id="교차_1" d="M0 558.768v-139.3C680.512 466.445 1050.76 58.573 1100.24 0v558.768z" class="cls-5" data-name="교차 1" transform="translate(0 61.467)"/>
+            <path id="Mask-2" d="M0 0h1100v455a15 15 0 0 1-15 15H15a15 15 0 0 1-15-15z" class="cls-3" data-name="Mask" transform="translate(.004 176.051)"/>
+            <g id="Gradient" transform="translate(.004 .051)">
+                <path id="Gradient-2" d="M0 0h85a4 4 0 0 1 4 4v638a4 4 0 0 1-4 4H0z" class="cls-6" data-name="Gradient" transform="translate(1011)"/>
+                <path id="Gradient-3" d="M4 0h84v646H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" class="cls-7" data-name="Gradient"/>
+            </g>
+        </g>
+        <text id="_20:00" class="cls-8" data-name="20:00" transform="translate(1320.042 3063.051)">
+            <tspan x="0" y="0">2020.03</tspan>
+        </text>
+        <text id="_16:00" class="cls-8" data-name="16:00" transform="translate(1037.042 3063.051)">
+            <tspan x="0" y="0">2020.01</tspan>
+        </text>
+        <text id="_12:00" class="cls-8" data-name="12:00" transform="translate(753.042 3063.051)">
+            <tspan x="0" y="0">2019.12</tspan>
+        </text>
+        <text id="_8:00" class="cls-8" data-name="8:00" transform="translate(470.042 3063.051)">
+            <tspan x="0" y="0">2019.11</tspan>
+        </text>
+        <text id="Training_pace" class="cls-9" data-name="Training pace" transform="translate(497.998 2625.051)">
+            <tspan x="0" y="0">Health Care Market</tspan>
+        </text>
+        <text id="Training_pace-2" class="cls-10" data-name="Training pace" transform="translate(497.998 2669.051)">
+            <tspan x="0" y="0">a. 헬스케어 제품</tspan><tspan x="0" y="34">b. 헬스케어 App 서비스</tspan><tspan x="0" y="68">c. 헬스케어 교육 / 강연 콘텐츠</tspan>
+        </text>
+        <g id="그룹_4092" data-name="그룹 4092" transform="translate(444.075 2833.212)">
+            <g class="cls-15" transform="translate(-49.07 -351.21)">
+                <path id="Combined_Shape-5" d="M67.409 107.167H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8h153.671a8 8 0 0 1 8 8v91.167a8 8 0 0 1-8 8h-59.41l-17.426 12.92z" class="cls-1" data-name="Combined Shape" transform="translate(44 351.21)"/>
+            </g>
+            <text id="_8:00-2" class="cls-11" data-name="8:00" transform="translate(34.423 62.839)">
+                <tspan x="0" y="0">축구용품</tspan>
+            </text>
+        </g>
+        <g id="그룹_4093" data-name="그룹 4093" transform="translate(726.842 2805.167)">
+            <g class="cls-14" transform="translate(-331.84 -323.17)">
+                <path id="Combined_Shape-6" d="M67.409 107.167H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8h153.671a8 8 0 0 1 8 8v91.167a8 8 0 0 1-8 8h-59.41l-17.426 12.92z" class="cls-1" data-name="Combined Shape" transform="translate(327 323.17)"/>
+            </g>
+            <g id="그룹">
+                <text id="한정판" class="cls-11" transform="translate(45.656 46.884)">
+                    <tspan x="0" y="0">한정판</tspan>
+                </text>
+                <text id="굿즈" class="cls-11" transform="translate(56.656 75.884)">
+                    <tspan x="0" y="0">굿즈</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="그룹_4094" data-name="그룹 4094" transform="translate(1021.452 2699.458)">
+            <g class="cls-13" transform="translate(-626.45 -217.46)">
+                <path id="Combined_Shape-7" d="M67.409 107.167H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8h153.671a8 8 0 0 1 8 8v91.167a8 8 0 0 1-8 8h-59.41l-17.426 12.92z" class="cls-1" data-name="Combined Shape" transform="translate(611 217.46)"/>
+            </g>
+            <g id="그룹-2" data-name="그룹">
+                <text id="경기" class="cls-11" transform="translate(47.046 47.593)">
+                    <tspan x="0" y="0">경기</tspan>
+                </text>
+                <text id="관람권" class="cls-11" transform="translate(36.046 76.593)">
+                    <tspan x="0" y="0">관람권</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="그룹_4095" data-name="그룹 4095" transform="translate(1296.218 2524.715)">
+            <g class="cls-12" transform="translate(-901.21 -42.72)">
+                <path id="Combined_Shape-8" d="M67.409 107.167H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8h153.671a8 8 0 0 1 8 8v91.167a8 8 0 0 1-8 8h-59.41l-17.426 12.92z" class="cls-1" data-name="Combined Shape" transform="translate(893.99 42.72)"/>
+            </g>
+            <g id="그룹-3" data-name="그룹">
+                <text id="헬스케어" class="cls-11" transform="translate(32.28 47.336)">
+                    <tspan x="0" y="0">헬스케어</tspan>
+                </text>
+                <text id="제품" class="cls-11" transform="translate(54.28 76.336)">
+                    <tspan x="0" y="0">제품</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

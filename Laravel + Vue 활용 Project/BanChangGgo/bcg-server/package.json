@@ -1,0 +1,14 @@
+{
+  "name": "bcg-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "./scripts/post-merge.sh"
+  },
+  "gitHooks": {
+    "post-merge": "npm run deploy"
+  },
+  "dependencies": {
+    "yorkie": "^2.0.0"
+  }
+}

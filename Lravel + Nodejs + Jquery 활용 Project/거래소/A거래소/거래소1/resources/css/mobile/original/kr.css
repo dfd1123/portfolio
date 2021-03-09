@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+	font-family: "Nunito", sans-serif;
+	letter-spacing: -.3px;
+}
+
+.ntc_tab_list.m_tab_list ul.w-120{
+	width: 100%;
+}

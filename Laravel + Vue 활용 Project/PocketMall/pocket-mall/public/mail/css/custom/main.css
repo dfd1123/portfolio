@@ -1,0 +1,721 @@
+/* 메인페이지 공통 */
+.main-common-inner {
+    max-width: 1005px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+/* 메인페이지 공통 */
+
+/* 메인헤더 */
+
+.main-hd-section {
+    width: 100%;
+    height: 518px;
+    padding-top: 80px; /* 헤더높이 띄우기 */
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-hd-section-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(125deg, #1dbbff, #1d6aff);
+}
+
+.main-hd-section .main-common-inner {
+    height: 100%;
+    padding-top: 4em;
+}
+
+/* E 메인헤더 */
+
+/* 메인헤더 - 디자인요소 */
+
+.main-deco-element {
+    height: 305px;
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    bottom: 73px;
+}
+
+.main-deco-element .in-deco-ele {
+    width: 200%;
+    height: 100%;
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    border-radius: 4px;
+}
+
+.main-deco-element .in-deco-ele-first {
+    background-color: white;
+    z-index: 2;
+}
+
+.main-deco-element .in-deco-ele-second {
+    background-color: #c6ecff;
+    z-index: 1;
+}
+
+.main-deco-element .in-deco-ele-third {
+    background-color: #8edaff;
+    z-index: 0;
+}
+
+.main-deco-element-left {
+    left: 100px;
+    opacity: 0;
+
+    left: 0;
+    opacity: 1;
+}
+
+.main-deco-element-left.active {
+    left: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.main-deco-element-left .in-deco-ele {
+    left: -100%;
+}
+
+.main-deco-element-left .in-deco-ele-first {
+    opacity: 0;
+    transform: translateX(0);
+    animation: leftDecoLayer01 0.5s 1 both;
+}
+
+.main-deco-element-left .in-deco-ele-second {
+    opacity: 0;
+    transform: translateX(0) scaleY(0.94);
+    animation: leftDecoLayer02 0.5s 1 0.2s both;
+}
+
+.main-deco-element-left .in-deco-ele-third {
+    opacity: 0;
+    transform: translateX(11px) scaleY(0.89);
+    animation: leftDecoLayer03 0.5s 1 0.4s both;
+}
+
+@keyframes leftDecoLayer01 {
+    100% {
+        opacity: 1;
+        transform: translateX(-22px);
+    }
+}
+
+@keyframes leftDecoLayer02 {
+    100% {
+        opacity: 1;
+        transform: translateX(-11px) scaleY(0.94);
+    }
+}
+
+@keyframes leftDecoLayer03 {
+    100% {
+        opacity: 1;
+        transform: translateX(0) scaleY(0.89);
+    }
+}
+
+.main-deco-element-right {
+    right: 0;
+}
+
+.main-deco-element-right .in-deco-ele {
+    right: -100%;
+}
+
+.main-deco-element-right .in-deco-ele-first {
+    opacity: 0;
+    transform: translateX(0);
+    animation: rightDecoLayer01 0.5s 1 both;
+}
+
+.main-deco-element-right .in-deco-ele-second {
+    opacity: 0;
+    transform: translateX(0) scaleY(0.94);
+    animation: rightDecoLayer02 0.5s 1 0.2s both;
+}
+
+.main-deco-element-right .in-deco-ele-third {
+    opacity: 0;
+    transform: translateX(-11px) scaleY(0.89);
+    animation: rightDecoLayer03 0.5s 1 0.4s both;
+}
+
+@keyframes rightDecoLayer01 {
+    100% {
+        opacity: 1;
+        transform: translateX(22px);
+    }
+}
+
+@keyframes rightDecoLayer02 {
+    100% {
+        opacity: 1;
+        transform: translateX(11px) scaleY(0.94);
+    }
+}
+
+@keyframes rightDecoLayer03 {
+    100% {
+        opacity: 1;
+        transform: translateX(0) scaleY(0.89);
+    }
+}
+
+/* E 메인헤더 - 디자인요소 */
+
+/* 메인헤더 - 심볼 텍스트그룹 */
+.main-symbol-text-group {
+    padding-bottom: 2.25em;
+}
+
+.main-symbol-text-group .in-symbol-area {
+    width: 6.875em;
+    height: 6.875em;
+    background-color: white;
+    border: 8px solid #1e7def;
+    border-radius: 50%;
+    margin: 0 auto 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-symbol-text-group .in-symbol-area .in-symbol-img {
+    position: relative;
+    top: -0.25rem;
+    width: 65%;
+    max-width: 65px;
+}
+
+.main-symbol-text-group .in-text {
+    display: block;
+    font-size: 1.25em;
+    letter-spacing: -0.025em;
+}
+
+.main-symbol-text-group .in-text-group {
+    line-height: 1.5;
+}
+
+/* E 메인헤더 - 심볼 텍스트그룹 */
+
+/* 메인헤더 - 카테고리 그룹 */
+
+.main-category-group {
+    padding: 1.5em 1em;
+    position: relative;
+}
+
+.main-category-group .in-line-element {
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(29, 106, 255, 0.27);
+}
+
+.main-category-group .in-line-element:before {
+    width: 100%;
+    height: 1px;
+    content: "";
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+.main-category-group .in-category-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-category-group .in-category {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.main-category-group .in-category.active {
+    font-weight: bold;
+    color: white;
+}
+
+.main-category-group .in-category.active .in-link {
+    position: relative;
+    z-index: 1;
+}
+
+.main-category-group .in-category.active:after {
+    width: calc(100% + 5px);
+    height: 8px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: -3px;
+    background-color: rgba(255, 255, 190, 0.23);
+    z-index: -1;
+}
+
+/* E 메인헤더 - 카테고리 그룹 */
+
+/* 메인컨텐츠 */
+
+.main-content-section {
+    background-color: #eff4fd;
+    text-align: center;
+    position: relative;
+    padding-bottom: 350px;
+}
+
+.main-content-group {
+    position: relative;
+    margin-top: -3em;
+    margin-bottom: -3em;
+}
+
+/* E 메인컨텐츠 */
+
+/* 메인컨텐츠 - 카드영역 */
+.main-category-card-area {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    margin: 0 0.65em;
+    width: 33%;
+    max-width: 318px;
+    min-width: 318px;
+    transition: 0.3s;
+    vertical-align: top;
+}
+
+.main-category-card {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 3px;
+    border-radius: 23px;
+    width: 100%;
+    min-height: 478px;
+}
+
+.main-category-card-area:hover {
+    top: -14px;
+    transition: 0.3s;
+}
+
+.main-category-card-area:hover .in-shadow-element {
+    opacity: 1;
+    top: 5%;
+    transition: 0.4s;
+}
+
+.main-category-card-area .in-shadow-element {
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 50px 44px #d0dffa;
+    z-index: 0;
+    border-radius: 23px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.6s;
+}
+
+.main-category-card .card-thumbnail {
+    border-top-left-radius: 20px;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    height: 170px;
+    background-color: #f5f5f5;
+}
+
+.main-category-card .card-thumbnail .in-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+}
+
+.main-category-card .card-infomation {
+    padding: 1.2em;
+}
+
+.main-category-card .card-default-info {
+    font-size: 18px;
+    text-align: left;
+}
+
+.main-category-card .card-title {
+    font-size: 1.55em;
+    margin-bottom: 7px;
+    letter-spacing: -0.02em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 1.2em;
+    height: 1.2em;
+}
+
+.main-category-card .card-desc {
+    font-size: 0.889em;
+    color: #9a9a9a;
+}
+
+.main-category-card .card-price-info {
+    text-align: right;
+    font-size: 28px;
+    padding: 25px 0 20px;
+}
+
+.main-category-card .card-sale-price {
+    color: #e5e5e5;
+    text-decoration: line-through;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 0.857em;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin-right: 7px;
+}
+
+.main-category-card .card-sale-price.none {
+    display: none;
+}
+
+.main-category-card .card-real-price {
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #1d6aff;
+}
+
+.main-category-card .card-real-price:after {
+    content: "원";
+    color: black;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    top: -3px;
+    margin-left: 5px;
+    font-size: 0.857em;
+}
+
+.main-category-card .card-select-area {
+    font-size: 16px;
+    position: relative;
+}
+
+.main-category-card .card-select-area .in-selected-type {
+    width: 100%;
+    color: #9a9a9a;
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+    padding: 0 13px;
+    font-size: 1em;
+    background: url(../../images/icon/select-arrow-icon.svg) no-repeat
+        calc(100% - 13px) center;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+@media all and (min-width: 1024px) {
+    .main-category-card .card-select-area .in-selected-type:hover {
+        background-color: #f5f5f5;
+    }
+}
+
+.main-category-card .card-select-area .in-select-list-group {
+    height: 250px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-y: auto;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 42px;
+    left: 0;
+    display: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.main-category-card .card-select-area .in-select-list-group::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+}
+
+.main-category-card .in-select-list-group .in-select-list {
+    min-height: 65px;
+    text-align: left;
+}
+
+.main-category-card .in-select-list .select-type {
+    padding: 10px 13px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media all and (min-width: 1024px) {
+    .main-category-card .in-select-list .select-type:hover {
+        background-color: #f5f5f5;
+        transition: 0.2s;
+    }
+}
+
+.main-category-card .select-type .type-upper-area {
+    display: block;
+    width: 100%;
+    color: #1d6aff;
+    font-weight: 500;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.main-category-card .type-upper-area .type-title {
+    font-weight: inherit;
+    float: left;
+}
+
+.main-category-card .type-upper-area .type-price {
+    font-size: 100%;
+    float: right;
+}
+
+.main-category-card .card-select-area .type-lower-area {
+    display: block;
+    color: #838383;
+    font-size: 0.875em;
+    line-height: 1.45;
+}
+
+.main-category-card .type-lower-area .type-hash {
+    margin-right: 2px;
+}
+
+.main-category-card .card-button-area {
+    padding-top: 10px;
+}
+
+.main-category-card .card-button-area .rounded-button {
+    letter-spacing: -0.01em;
+    font-size: 1.125em;
+}
+
+.type-list-show:checked ~ .card-select-area .in-select-list-group {
+    display: block;
+}
+
+.type-list-show:checked ~ .card-select-area .in-selected-type {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* 메인컨텐츠 - 카드영역 */
+
+/* 메인 하단고정 체크바 */
+.main-check-container {
+    background-color: #1d6aff;
+    color: white;
+    text-align: center;
+    height: 147px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.main-check-container .inner {
+    max-width: 1005px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.main-check-cart {
+    float: left;
+    width: 350px;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 8px;
+}
+.main-check-cart::-webkit-scrollbar {
+    width: 14px;
+    border-radius: 7px;
+    background-color: #1a63f0;
+}
+.main-check-cart::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: #144cb7;
+}
+
+.main-check-cart .in-cart-list {
+    width: 90%;
+    max-width: 292px;
+    padding: 9px 0;
+}
+
+.main-check-cart .in-cart-detail {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 16px 25px;
+    text-align: left;
+}
+.main-check-cart .in-cart-detail:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #fff;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #125be8;
+    background-image: url("../../images/icon/icon_plus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    z-index: 1;
+}
+.main-check-cart .in-cart-detail:last-of-type {
+    margin-bottom: 0px;
+}
+.main-check-cart .in-cart-detail:last-of-type:after {
+    content: none;
+}
+
+.main-check-cart .in-tit {
+    position: relative;
+}
+
+.main-check-cart ._delete_btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 0px none;
+    padding: 3px 0px 0px;
+    outline: 0px none;
+    background-color: transparent;
+    font-size: 0.875rem;
+    color: #1d6aff;
+    cursor: pointer;
+}
+
+.main-check-cart .in-cart-detail .in-detail {
+    font-size: 0.8em;
+}
+
+.main-check-cart .in-cart-detail dt {
+    color: #a0a0a0;
+    font-weight: 400;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-check-cart .in-cart-detail dd {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.main-check-cart .in-cart-detail dd i {
+    color: #1d6aff;
+    font-weight: bold;
+}
+
+.main-check-price {
+    float: right;
+    width: calc(100% - 350px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.main-check-price .in-total {
+    font-size: 1.85em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.85em;
+}
+
+.main-check-price .in-final-price {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 0.85em;
+}
+
+.main-check-price .in-final-price:after {
+    content: "원";
+    font-size: 0.74em;
+    font-weight: 400;
+    margin-left: 0.35em;
+    position: relative;
+    top: -0.1em;
+}
+
+.main-check-price .in-final-button {
+    background-color: white;
+    border: 0;
+    padding: 0;
+    height: 61px;
+    line-height: 61px;
+    color: #1d6aff;
+    box-shadow: 0 16px 18px rgba(11, 77, 206, 0.27);
+    border-radius: 13px;
+    letter-spacing: -0.02em;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* E 메인 하단고정 체크바 */

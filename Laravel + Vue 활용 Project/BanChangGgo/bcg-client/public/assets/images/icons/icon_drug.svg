@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.312" height="21.427" viewBox="0 0 19.312 21.427">
+  <g id="icon_drug" transform="translate(-433.671 -266.343)">
+    <path id="패스_198" data-name="패스 198" d="M436.195,274.408a5.785,5.785,0,1,0,8.18,8.181l3.273-3.273-8.18-8.18Z" transform="translate(0.052 0.673)" fill="#fff"/>
+    <path id="패스_199" data-name="패스 199" d="M442.066,268.538l-3.272,3.272,8.18,8.18,3.272-3.272a5.784,5.784,0,0,0-8.18-8.18Z" transform="translate(0.725)" fill="#ffe8c2"/>
+    <g id="그룹_138" data-name="그룹 138" transform="translate(434.171 266.843)">
+      <path id="패스_200" data-name="패스 200" d="M435.866,274.408a5.785,5.785,0,0,0,8.18,8.181l3.273-3.273-8.181-8.18Z" transform="translate(-434.171 -266.17)" fill="none" stroke="#272720" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_201" data-name="패스 201" d="M441.737,268.538l-3.273,3.272,8.181,8.18,3.272-3.272a5.784,5.784,0,0,0-8.18-8.18Z" transform="translate(-433.498 -266.843)" fill="none" stroke="#272720" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+    <g id="그룹_139" data-name="그룹 139" transform="translate(442.65 277.436)">
+      <path id="패스_202" data-name="패스 202" d="M446.417,276a4.916,4.916,0,0,0-3.476,8.393l6.953-6.953A4.9,4.9,0,0,0,446.417,276Z" transform="translate(-441.5 -276)" fill="#fff" stroke="#272720" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_203" data-name="패스 203" d="M442.745,284.2a4.916,4.916,0,1,0,6.953-6.953Z" transform="translate(-441.305 -275.805)" fill="#fff" stroke="#272720" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

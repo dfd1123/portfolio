@@ -1,0 +1,22 @@
+.clear:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.ps_blind{
+    position: absolute;
+    top:0px;
+    left:-9999px;
+}
+.bg-color{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background-color:$bg;
+    z-index: 0;
+}
+.display_none{
+    display:none;
+}

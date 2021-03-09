@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="btn_menu_01_on" width="50.5" height="44.422" viewBox="0 0 50.5 44.422">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#007bd2;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px}
+        </style>
+    </defs>
+    <g id="레이어_1" data-name="레이어 1">
+        <path id="사각형_284" d="M0 0h10.099v13.619H0z" class="cls-1" data-name="사각형 284" transform="translate(20.201 29.552)"/>
+        <path id="패스_2324" d="M49.25 24.02l-24-22.77-24 22.77h6.386v19.152h35.228V24.02z" class="cls-1" data-name="패스 2324"/>
+    </g>
+</svg>

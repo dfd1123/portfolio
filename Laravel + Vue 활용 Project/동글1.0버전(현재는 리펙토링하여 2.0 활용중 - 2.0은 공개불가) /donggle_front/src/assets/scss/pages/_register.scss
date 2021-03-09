@@ -1,0 +1,448 @@
+/*
+    PAGES - 회원가입
+*/
+
+// register header
+#dg-reg-hd {
+  @include center(330px);
+  padding-top: 100px;
+}
+.dg-reg-hd-logo {
+  width: 191px;
+  height: 51px;
+  margin: 0px auto;
+  @include bgimg(url($path-logo+"logo.svg"));
+  text-indent: -9999px;
+}
+.dg-reg-hd-step_wrap {
+  > h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.375em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    user-select: none;
+  }
+  > a {
+    display: block;
+    position: relative;
+    top: -23px;
+    left: 0px;
+    width: 21px;
+    height: 17px;
+    @include bgimg(url($path-btn+"btn_back.svg"));
+    text-indent: -9999px;
+    //누르면 이전단계로 이동. step1에서는 보이지 않음.
+  }
+}
+.dg-reg-hd-step {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 73%;
+    background-color: $light_gray2;
+  }
+  .dg-btn_line {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border: 2px solid $light_gray2;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: $white;
+    text-align: center;
+    color: $gray;
+    &.active {
+      background-color: $black;
+      border-color: $black;
+      color: $white;
+    }
+  }
+}
+/* register header E */
+
+.step_common {
+  @include center(330px);
+  margin-bottom: 150px;
+  > h2 {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 0.875em;
+    text-align: center;
+    color: $gray;
+  }
+}
+/*
+step1
+***********************************************************************************
+*/
+#step1 > h2 {
+  padding-bottom: 50px;
+}
+.login_connect {
+  position: relative;
+  line-height: 40px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-left: 49px;
+  background-size: auto;
+  background-position: 23px center;
+  background-repeat: no-repeat;
+  font-size: 0.875em;
+  color: $white;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid $white;
+    border-right: 1px solid $white;
+    transform: rotate(45deg) translateY(-50%);
+  }
+  &_naver {
+    background-color: #00bf19;
+    background-image: url($path-icon+"icon_naver.svg");
+    &:hover {
+      background-color: darken($color: #00bf19, $amount: 8%);
+    }
+  }
+  &_kakao {
+    background-color: #fce000;
+    background-image: url($path-icon+"icon_kakao.svg");
+    color: #381e1f;
+    &:hover {
+      background-color: darken($color: #fce000, $amount: 8%);
+    }
+    &:before {
+      border-color: #381e1f;
+    }
+  }
+  &_facebook {
+    background-color: #4267b2;
+    background-image: url($path-icon+"icon_face.svg");
+    background-position: 28px center;
+    &:hover {
+      background-color: darken($color: #4267b2, $amount: 8%);
+    }
+  }
+  &_email {
+    background-color: $black;
+    background-image: url($path-icon+"icon_email.svg");
+    &:hover {
+      background-color: darken($color: $black, $amount: 8%);
+    }
+  }
+}
+/* step1 E */
+
+/*
+step2
+***********************************************************************************
+*/
+.dg-reg_gender {
+  display: inline-block;
+  width: 25%;
+}
+.write_birth {
+  .input_text_box {
+    width: 50%;
+    margin: 10px 0px 0px;
+    border: 1px solid $light_gray6;
+    padding: 11px 10px;
+    background-image: url($path-btn+"btn_calendar.svg");
+    @include bgOption(auto, 95% center);
+    &::placeholder {
+      color: $black;
+    }
+    &:hover,
+    &:focus {
+      border-color: $purple;
+    }
+  }
+}
+.dg-reg_check_form {
+  position: relative;
+  margin: 70px 0px 0px;
+  &:before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 2.5em;
+    margin: 13px 0px;
+    background-color: $gray4;
+  }
+}
+.reg_check {
+  color: $gray;
+}
+.reg_check_peice {
+  background: $light_gray5;
+  margin: 20px 0px 50px;
+  padding: 2px 15px 10px;
+  .dg-reg_agree {
+    position: relative;
+    margin: 4px 0px;
+    > p {
+      font-size: 0.75em;
+      padding: 5px 2em;
+      width: 100%;
+      line-height: 1.5;
+      color: $light_gray2;
+      user-select: auto;
+    }
+  }
+  .view_agree_desc {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: $light_gray2;
+    font-size: 0.625em;
+    vertical-align: middle;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 4px;
+      right: -6px;
+      width: 4px;
+      height: 4px;
+      border-top: 1px solid $light_gray2;
+      border-left: 1px solid $light_gray2;
+      transform: rotate(135deg);
+    }
+  }
+}
+.btn_write_complete_wrap {
+  width: 100%;
+  margin: 20px 0px;
+  .btn_write_complete {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 0px none;
+    outline: 0px none;
+    font-size: 1rem;
+    letter-spacing: -1.3px;
+  }
+}
+#step2 {
+  .vdp-datepicker {
+    > div > input {
+      font-size: $px-13 + rem;
+    }
+    > div > input:focus {
+      border-color: $purple;
+    }
+  }
+}
+/* step2 E */
+
+/*
+step3
+***********************************************************************************
+*/
+#step3 {
+  @include center(1060px);
+}
+.dg-reg-style_choice_box {
+  margin: 70px 0px 30px;
+  user-select: none;
+  > a,
+  > button {
+    display: inline-block;
+    padding: 5px 20px;
+    border-right: 1px solid $light_gray6;
+    margin-right: 20px;
+    @include bgOption(contein, left center);
+    background-image: url($path-btn+"btn_refresh.svg");
+    color: $gray;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .dg-reg-style_choice {
+    position: relative;
+    min-width: auto;
+    border-color: $black;
+    line-height: 30px;
+    padding: 0px 10px;
+    padding-right: 30px;
+    margin: 2px 10px 2px 0px;
+    text-align: center;
+    ._close_btn {
+      right: 10px;
+    }
+    ._close_btn:before,
+    ._close_btn:after {
+      height: 11px;
+      background-color: $gray;
+    }
+  }
+}
+.dg-reg-style_wrap {
+  max-width: 1056px;
+  margin: 30px 0px;
+  user-select: none;
+}
+.dg-reg-style {
+  position: relative;
+  float: left;
+  width: calc(20% - 10px);
+  min-height: 203px;
+  height: 203px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  &:nth-of-type(5n + 1) {
+    margin-left: 0px;
+  }
+  &:nth-of-type(5n) {
+    margin-right: 0px;
+  }
+  .dg-reg-style-img {
+    border-radius: 8px;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .cover_black {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0.02) 36%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0.02) 36%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0.02) 36%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+  .dg-reg-style-desc {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    text-align: center;
+  }
+  .dg-reg-style_title {
+    text-align: center;
+    color: $white;
+    font-weight: 600;
+    font-size: 1.125em;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  .dg-style-logo_badge {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    @include bgimg(url($path-badge+"badge_3.svg"));
+  }
+  &.active .cover_black {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  &.active .dg-style-logo_badge {
+    display: block;
+  }
+  > input[type="checkbox"] {
+    display: none;
+    ~ label {
+      cursor: pointer;
+    }
+  }
+  > input[type="checkbox"]:checked {
+    ~ label {
+      > .cover_black {
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      > .dg-style-logo_badge {
+        display: block;
+      }
+    }
+  }
+}
+.btn_write_complete_wrap .dg-reg-style_btn {
+  display: block;
+  width: 330px;
+  margin: 0px auto;
+}
+/* step3 E */
+
+/*
+step end
+***********************************************************************************
+*/
+#step_end {
+  @include center(330px);
+}
+.dg-popup_alert_desc {
+  padding: 120px 58px 40px;
+  border: 1px solid $light_gray6;
+  margin: 30px 0px 50px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  @include bgOption(30%, center 30px);
+  background-image: url($path-icon+"icon_complete.svg");
+  > h2 {
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.98em;
+    > b {
+      color: $purple;
+      font-weight: 500;
+    }
+  }
+  .dg-popup_alert_text {
+    padding: 20px 0px 0px;
+    font-size: 0.75em;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+/* step end E */
+
+// #step1, #step2, #step3{
+//     display:none;
+// }

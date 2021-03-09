@@ -1,0 +1,90 @@
+/*
+    COMPONENT - donggle board
+*/
+._board_layout {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 1.4;
+  > tbody {
+    border-top: 1px solid $black;
+  }
+  ._board_title {
+    cursor: pointer;
+    &:hover ._title {
+      text-decoration: underline;
+      text-decoration-color: $black;
+    }
+  }
+  ._board_title > td {
+    border-bottom: 1px solid $light_gray6;
+    margin: 0px 0px 0px -1px;
+  }
+  ._answer {
+    ._wait {
+      margin: 7px 0px 10px;
+      border-radius: 5px;
+      padding: 13px;
+      background-color: $light_gray6;
+      color: $light_gray2;
+      font-size: $f-13;
+      user-select: none;
+    }
+    ._complete {
+      margin: 7px 0px 10px;
+      border: 1px solid $pink;
+      border-radius: 5px;
+      padding: 13px;
+      color: $pink;
+      font-size: $f-13;
+      user-select: none;
+    }
+  }
+  ._title {
+    width: 68%;
+    padding: 0px 0px 0px 50px;
+    @include bgOption(auto, 20px 14px);
+    background-image: url($path-icon+"icon_secret.svg");
+    font-size: $f-14;
+  }
+  ._writer,
+  ._date {
+    text-align: center;
+    font-size: $f-11;
+    font-weight: 300;
+    color: $gray;
+  }
+  ._writer {
+    width: 7em;
+    user-select: none;
+  }
+  ._board_hidden {
+    background-color: $light_gray5;
+  }
+  ._desc {
+    padding: 10px 15px 20px;
+    font-size: $f-13;
+    .qna-icon {
+      float: left;
+      display: block;
+      margin: 0px 10px 0px 0px;
+      line-height: 1.4;
+      font-size: 2em;
+      user-select: none;
+    }
+    .qna-text {
+      float: left;
+      // 100% - icon - 여백
+      width: 628px;
+      // icon과 폰트 크기 차이
+      margin-top: 17px;
+    }
+  }
+  ._desc_answer {
+    .qna-text {
+      margin-top: 13px;
+    }
+  }
+  ._desc_answer {
+    border-top: 1px solid $white;
+  }
+}

@@ -1,0 +1,174 @@
+.orderbox{display:block;position:relative;width:100%;margin:0 auto;text-align:center;overflow:hidden;min-height:500px;margin-top: 10px;}
+.orderbox h3.yellow_tit{display:inline-block;text-align:left;margin-bottom:15px;}
+span.subtxt{display:inline-block;margin-left:10px;color:#888;text-align:left;}
+.orderall{position:relative;margin:0 auto;overflow:hidden;}
+.orderbox .leftform{display:block;width:100%;text-align:left;position: relative;}
+.orderbox .rightform{display:block;width:100%;text-align:left;box-sizing:border-box;padding-top:10px;}
+.orderbox .rightform .boxline{max-width:100%;}
+.boxline{border:1px solid #dcdcdc;padding:10px;background:#fff;box-sizing:border-box;border-radius:3px;font-family: 'Noto Sans KR', sans-serif;}
+.otxt{display:block;overflow:hidden;padding-bottom:20px;border-bottom:1px dotted #ddd;}
+.otxt.linenone{border-bottom:none;}
+.otxt h4{display:inline-block;font-size:15px;font-weight:bold;vertical-align:middle;}
+.otxt dl{padding:0;margin:0;padding-top:0px;overflow:hidden;}
+.otxt dl:nth-of-type(1){padding-top:10px;}
+.otxt dl dt{display:block;width:100%;margin-bottom:5px;font-size:13px;margin-top:5px;}
+.otxt dl dt:before{content:'';width:4px;height:4px;background:#fea803;display:inline-block;margin-right:3px;vertical-align:middle;}
+.otxt dl dt.essential:after{content:'*';color:#fea803;display:inline-block;margin-left:3px;vertical-align:middle;}
+.otxt dl dd{display:block;width:100%;margin:0;padding:0;color:#888;line-height:180%}
+.otxt dl dd a.add_search{border-radius:3px;line-height:41px;height:41px;font-size:13px;padding:0px 5px;}
+.otxt span.same{display:inline-block;color:#888;vertical-align:middle;}
+.otxt span .check{display:inline-block;margin-bottom:0px;vertical-align:middle;}
+
+.price em{display: inline-block;width: 22px; height: 22px;line-height:18px;font-weight: bold;margin-left: 5px;vertical-align:middle;}
+.price em.kric{color:#fff;font-size:11px;line-height:22px;}
+.price.bil_cell{border: none;margin-top: -10px;}
+
+
+.pro_order{background:#fff;border-radius:3px;margin-bottom:10px;border-bottom:1px solid #d2d2d2;}
+
+.pro_order ul{padding:0;margin:0px auto;overflow:hidden;width:95%;padding:5px;border-bottom:1px solid #d2d2d2;}
+.pro_order ul li:nth-of-type(1){float:left;width:30%;}
+.pro_order ul li:nth-of-type(1) img{max-width:100%;border-radius:3px;}
+.pro_order ul li:nth-of-type(2){float:left;width:65%;margin-left:10px;margin-top:0px;}
+.pro_order ul li:nth-of-type(2) span.option{display:block;font-size:12px;color:#999;margin-top:0px;}
+.pro_order ul li:nth-of-type(2) span.tit{display:block;font-size:15px;color:#222;white-space:wrap;text-overflow:ellipsis;overflow:hidden;}
+
+.pro_order dl{padding:0;margin:0px auto;overflow:hidden;width:95%;overflow:hidden;padding:5px;border-bottom:1px dotted #d2d2d2;}
+.pro_order dl dt{float:left;width:40%;padding:5px 0;font-size:13px;}
+.pro_order dl dd{float:right;width:58%;padding:0;margin:0;font-size:15px;}
+.pro_order dl dd p{padding:5px 0;text-align:right;border-top:none; }
+.pro_order dl dd p.price{font-size:13px;}
+.pro_order dl dd p i{display:inline-block;color:#ddd;font-style:normal;margin-left:5px;margin-right:5px;}
+.pro_order dl.total {border-bottom:none;}
+.pro_order dl.total dt{font-size:18px;}
+.pro_order dl.total dd{font-size:18px;line-height:180%;}
+.pro_order dl.total dd p{color:#ff0b0b;}
+.pro_order dl.total dd p.price{padding:0px;margin-top:0px;font-size:15px;}
+
+
+
+
+
+
+.otxt dl dd .receipt_list,
+.otxt ul.payment{padding:0;margin:0;margin:0 auto;text-align:center;width:100%;overflow:hidden;padding:7px 5px;border-radius:3px;background:#eeeeee;box-sizing:border-box;margin-bottom:10px;margin-top:10px;}
+.otxt ul.payment li{display:inline-block;margin:0 auto;margin-right:3px;width:47%;}
+.otxt ul.payment li label{display:block;padding:8px 0;border:1px solid #d2d2d2;font-size:13px;color:#888888;border-radius:3px;border-radius:3px;width:100%;background:#fff;cursor:pointer}
+.otxt ul.payment li label.active,
+.otxt ul.payment li label:hover,
+.otxt ul.payment li label:focus{border:1px solid #222;color:#222}
+.otxt input{line-height:41px;height:41px;font-size:12px;border-radius:3px;}
+
+.otxt dl dt.w100{display:block;width:100%;}
+.otxt dl dt.w100 em{display:inline-block;margin-left:5px;color:#888;font-size:13px;}
+.otxt dl dd.w100{display:block;width:100%;}
+.otxt dl dd div.receipt_list{margin-top:10px;}
+.otxt dl dd div.receipt_list ul{padding:0;margin:0;width:100%;overflow:hidden;}
+.otxt dl dd div.receipt_list ul li{display:inline-block;margin:0 auto;margin-right:15px;font-size:13px;margin-bottom:5px;margin-top:5px;}
+.otxt dl dd div.receipt_list ul li.w100{width:100%;margin:0;padding-top:5px;box-sizing:border-box;}
+.otxt dl dd div.receipt_list ul li.w100 .select{margin-bottom:0px !important;}
+.otxt dl dd div.receipt_list ul:nth-of-type(2) li{display:block;float:none;width:100%;margin-bottom:0;margin-right:0;margin-top:0;}
+.otxt dl dd div.receipt_list ul:nth-of-type(2) li:last-child{font-size:13px;}
+.otxt dl dd.w100 p{display:block;margin-left:5px;margin-top:5px;}
+
+.mutong dl:nth-of-type(1),
+.mutong dl:nth-of-type(2){overflow:hidden;border-bottom:1px solid #ddd;padding-bottom:20px;}
+.mutong dl:nth-of-type(2){padding-bottom:10px;}
+.graybox{background:#fff;padding:5px;}
+
+.graybox .check{color:#888;font-size:13px;letter-spacing:-1px;margin-bottom:15px;}
+.graybox .check label span{margin-bottom:5px;}
+.graybox .check label strong{color:#222;}
+
+.resultbox{display:block;margin:0 auto;text-align:center;padding:5px;box-sizing:border-box;background:#fff;border:1px solid #dcdcdc;border-radius:3px;margin-top:20px;}
+.resultbox p{display:block;width:100px;height:100px;border:1px dotted #bbb;margin:0 auto;border-radius:100em;margin-bottom:20px;margin-top:30px;}
+.resultbox p img{max-width:60px;margin-top:25px;}
+.resultbox span{display:block;font-size:18px;color:#fea803;margin-bottom:10px;}
+.resultbox ul{overflow:hidden;margin-bottom:30px}
+.resultbox ul li{display:block;margin-bottom:10px;font-size:13px;}
+.resultbox ul li strong{color:#fea803;text-decoration:underline;}
+.resultbox a.btmy{display:inline-block;line-height:41px;background:#413e70;color:#fff;font-size:15px;width:100%;border-radius:3px;margin-top:5px;text-align:center;}
+.resultbox a.btbk{display:inline-block;line-height:41px;background:#fff;color:#222;border:1px solid #222;font-size:15px;width:100%;border-radius:3px;margin-top:5px;text-align:center;}
+
+
+.mutong .select__arrow,
+.receipt_list .select__arrow{top:18px;}
+.mutong .select select,
+.receipt_list .select select{border-radius:3px;}
+
+.check input{  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;}
+.check input[type="checkbox"]:not(old){
+  width   :0px;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+  border:none;
+}
+
+.check input[type="checkbox"]:not(old) + label span {
+
+	display : inline-block;
+	border:none;
+	text-align:left;
+	background : url('/storage/image/mobile/ic_check_off.png') left no-repeat;
+	width:19px;height:19px;
+	line-height  : 19px;
+	color:#888;
+	font-size:13px;
+	vertical-align:middle;margin-right:4px;
+	 
+}
+
+.check input[type="checkbox"]:not(old):checked + label span{
+
+  display      : inline-block;
+  background   : url('/storage/image/mobile/ic_check_on.png') left no-repeat;
+  width:19px;height:19px;
+}
+
+
+input.choice[type="radio"] {
+    display:none;
+}
+input.choice[type="radio"] + label {
+	display:inline-block;cursor:pointer;
+	color:#222;
+}
+
+input.choice[type="radio"] + label span {
+    display:inline-block;
+    vertical-align:top;  
+    cursor:pointer;
+	width:18px;
+	height:18px;
+	box-sizing:border-box;
+	line-height:15px;
+	border:1px solid #d4d4d4;
+	background:#fff;
+	border-radius:100em;
+	margin-right:5px;
+}
+input.choice[type="radio"]:checked + label span {
+     border:5px solid #fea803;background:#fff;
+	
+}
+/* 라디오버튼 탭 */
+#css_tabs label{font-size:15px;padding-top:10px;padding-right:10px;}
+
+/* 탭 선택 시 표시할 요소(div) 정의(1번 탭 선택 시 첫 번째 div 요소 표시) */
+#css_tabs input.tb:nth-of-type(1), #css_tabs input.tb:nth-of-type(1) ~ div.tab1_content,
+#css_tabs input.tb:nth-of-type(2), #css_tabs input.tb:nth-of-type(2) ~ div.tab2_content,
+#css_tabs input.tb:nth-of-type(3), #css_tabs input.tb:nth-of-type(3) ~ div.tab3_content {
+    display:none
+}
+#css_tabs input.tb:nth-of-type(1):checked ~ div.tab1_content,
+#css_tabs input.tb:nth-of-type(2):checked ~ div.tab2_content,
+#css_tabs input.tb:nth-of-type(3):checked ~ div.tab3_content {
+    display:block
+}
+
+
+/* 실제 내용이 담긴 div 요소 스타일 지정 */
+#css_tabs .tab1_content, #css_tabs .tab2_content, #css_tabs .tab3_content { display:block;padding:1em;width:100%;box-sizing:border-box;}

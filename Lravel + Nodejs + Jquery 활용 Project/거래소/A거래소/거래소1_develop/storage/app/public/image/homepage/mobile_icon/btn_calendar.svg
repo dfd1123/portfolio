@@ -1,0 +1,11 @@
+<svg id="btn_calendar" xmlns="http://www.w3.org/2000/svg" width="18" height="13.604" viewBox="0 0 18 13.604">
+  <g id="사각형_822" data-name="사각형 822" transform="translate(0 1.5)" fill="#fff" stroke="#00b9ff" stroke-width="1">
+    <rect width="18" height="12.104" stroke="none"/>
+    <rect x="0.5" y="0.5" width="17" height="11.104" fill="none"/>
+  </g>
+  <line id="선_81" data-name="선 81" x2="18" transform="translate(0 5.629)" fill="none" stroke="#00b9ff" stroke-width="1"/>
+  <line id="선_82" data-name="선 82" y2="4" transform="translate(4)" fill="none" stroke="#00b9ff" stroke-width="1"/>
+  <line id="선_83" data-name="선 83" y2="4" transform="translate(14)" fill="none" stroke="#00b9ff" stroke-width="1"/>
+</svg>
+
+

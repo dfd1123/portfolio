@@ -1,0 +1,246 @@
+/* Original Jongwan modal CSS Start */
+
+.jw_modal_wrap{
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+
+.jw_modal_wrap .jw_overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.jw_modal_wrap .jw_modal_content_wrap{
+	position: relative;
+    z-index: 102;
+    width: 700px;
+    height:100%;
+    margin: 0 auto;
+}
+.jw_modal_wrap .cux_modal_dialog{ width:400px;z-index: 102;}
+.jw_modal_wrap .cux_modal_dialog dl dd input{width:100%;text-align:left;}
+.jw_modal_wrap .cux_modal_dialog dl dd:after {display:none !important;}
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content{
+	background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 100%;
+    left: 0;
+    padding-top: 49px;
+    overflow: hidden;
+    transition: top ease 0.5s;
+}
+
+.jw_modal_wrap.active .jw_modal_content_wrap .jw_modal_content{
+	top: 10%;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_hd{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 103;
+    width: 100%;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_hd h5{
+	font-size: 15px;
+    padding: 3px;
+    text-align: center;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_hd>div{
+	position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 104;
+    padding: 13px 20px;
+    cursor:pointer;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_hd>div i{
+	font-size: 21px;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_bd{
+	padding: 0 5px;
+    padding-bottom: 22px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_bd h5{
+	display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 15px;
+    color: #413e70;
+    letter-spacing: -1px;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_bd .content_box{
+	
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_bd::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	border-radius: 0px;
+	background-color: #F5F5F5;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_bd::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap .jw_modal_content .jw_modal_bd::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #bbb;
+}
+
+/* Original Jongwan modal CSS End */
+
+
+
+#order_cancel_reason_modal .jw_modal_content_wrap {
+    position: relative;
+    z-index: 102;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#order_cancel_reason_modal .jw_modal_content_wrap .jw_modal_content {
+    height: 150px;
+}
+
+
+#view_cancel_reason_modal .jw_modal_content_wrap {
+    position: relative;
+    z-index: 102;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#view_cancel_reason_modal .jw_modal_content_wrap .jw_modal_content {
+    height: 100px;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux{
+	width: auto !important;
+	max-width:430px;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content{
+	padding-top: 60px;
+	height: auto !important;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_hd{
+	padding-top: 0;
+    padding-bottom: 0;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_hd h5{
+	display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 19px;
+    padding: 15px 0;
+    font-weight: 300;
+    overflow: hidden;
+    letter-spacing: -1px;
+    color: #222;
+    border-bottom: 1px dotted #dcdcdc;
+}
+
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_hd>div{
+	padding: 18px 20px;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_bd{
+	display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f9f9f9;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_bd h5{
+	display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 15px;
+    color: #413e70;
+    letter-spacing: -1px;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_bd h5 i{
+	margin-right: 5px;
+    font-size: 17px;
+    text-shadow: 1px 0 3px rgba(0,0,0,0.1);
+    vertical-align: middle;
+    color: #fea803;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_bd input[type="text"]{
+	width: 100%;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 0px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #888;
+    font-size: 13px;
+    border-bottom: 1px solid #222;
+    margin-bottom: 10px;
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_ft{
+	
+}
+
+.jw_modal_wrap .jw_modal_content_wrap.like_cux .jw_modal_content .jw_modal_ft button.cashgo{
+	display: block;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 15px;
+    padding: 15px 0;
+    text-align: center;
+    background: #413e70;
+    border: 1px solid #413e70;
+    color: #fff;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+

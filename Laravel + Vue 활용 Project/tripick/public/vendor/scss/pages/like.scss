@@ -1,0 +1,98 @@
+@import "../helpers/mixin";
+
+$like-card-pd-tb: 1.7rem;
+
+.wrapper--like{
+
+    width: 100%;
+    padding-top: 13rem;
+    padding-bottom: 6rem;
+
+    &__scroll-area{
+        @include scrollArea(100%);
+    }
+
+}
+
+.user-list{
+
+    @include paddingLeftRight2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__thum{
+        @include position($t: 50%, $l: 0, $transX: 0, $transY: -50%);
+        @include bgStyle(cover);
+        width: 4.5rem;
+        height: 4.5rem;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $bg-01-color;
+    }
+
+    &__name{
+        width: 100%;
+        font-weight: bold;
+        font-size: 0.95em;
+        margin-bottom: 7px;
+
+    }
+
+    &__msg{
+        @include fontStyle(0.7em, 200, $navy-color);
+        @include textOverflow(1);
+        padding-right: 50px;
+    }
+
+    &:active{
+
+        background-color: #F4F7F9;
+
+    }
+
+}
+
+.user-like{
+
+    &__group{
+        font-size: 18px;
+    }
+
+    &__card{
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #ECF1F5;
+        padding: $like-card-pd-tb 0 $like-card-pd-tb 5.5rem;
+
+    }
+
+    &__type{
+        @include fontStyle(0.75em, 400, $sky-blue-color);
+    }
+
+    
+
+    &__list--nothing{
+
+        .user-like__card {
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        .icon {
+            display: block;
+            width: 30px;
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+        .caution {
+            display: block;
+            width: 100%;
+            color: #00cada;
+            font-size: 0.85em;
+        }
+
+    }
+
+}

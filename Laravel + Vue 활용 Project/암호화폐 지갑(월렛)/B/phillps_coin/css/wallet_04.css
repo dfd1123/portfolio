@@ -1,0 +1,56 @@
+/* wallet04 */
+.container--wallet04 .table_type03__th {
+    width: 30%;
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px 0 10px 10px;
+    color: #2E87C8;
+}
+
+.container--wallet04 .basic_panel--dark {
+    margin-bottom: 2rem;
+}
+
+.container--wallet03-1, .container--wallet04-1 {
+    height: 100%;
+    padding-bottom: 90px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container--wallet .wallet__history-contents {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s;
+    transition: max-height 0.2s;
+}
+
+.container--wallet #chck_history_tbl:checked ~ .basic_panel--dark__title > .basic_panel__title-label {
+    background-image: url("../../img/btn/arrow_top_light.png");
+}
+
+.container--wallet #chck_history_tbl:checked ~ .wallet__history-contents {
+    max-height: 100vh;
+    -webkit-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+}
+
+.wallet__total-withdraw-price.table_type01 {
+    position: relative;
+    padding: 5px 0 5px 13rem;
+    text-align: right;
+}
+
+.wallet__total-withdraw-price .table_type01__th {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: unset;
+}
+
+
+.wallet__total-withdraw-price .table_type01__td {
+    padding: 0;
+    word-break: break-all;
+}
+/* end wallet04 */

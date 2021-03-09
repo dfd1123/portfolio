@@ -1,0 +1,315 @@
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+.popup-layer {
+  max-width: 600px;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.popup-layer .popup-01 {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 67px 30px 30px;
+  text-align: center;
+  z-index: 999;
+  position: relative;
+}
+
+.popup-layer .popup-02 {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 67px 30px 30px;
+  text-align: center;
+  z-index: 999;
+  position: relative;
+  padding: 67px 40px 30px;
+}
+
+.popup-layer b {
+  color: #7e2aff;
+}
+
+.popup-layer-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.popup-layer-txt {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.popup-layer-txt._small {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.popup-layer-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/btn/btn-close-dark.svg");
+  border: 0;
+  cursor: pointer;
+}
+
+.popup-layer-close-btn:hover {
+  opacity: 0.8;
+}
+
+.popup-layer .btn {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.popup-layer .btn-01 {
+  border-radius: 10px;
+  line-height: 47px;
+  height: 47px;
+  background-color: #7e2aff;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.popup-layer .btn-01:hover {
+  background-color: #6100f6;
+}
+
+.popup-layer .btn-02 {
+  border-radius: 10px;
+  line-height: 47px;
+  height: 47px;
+  background-color: #c5c5c5;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.popup-layer .btn-02:hover {
+  background-color: #acacac;
+}
+
+.popup-layer .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-layer .btn-group._double {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.popup-layer .btn-group .btn {
+  width: 48.5%;
+}
+
+.popup-layer .member-mail-guide {
+  padding: 15px;
+  margin-bottom: 18px;
+}
+
+.popup-layer .member-mail-guide p {
+  font-size: 17px;
+}
+
+.popup-layer .select-folder {
+  display: inline-block;
+  width: 79%;
+  background-color: #f9f9f9;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.popup-layer .select-folder-label {
+  display: inline-block;
+  font-size: 14px;
+  width: 20%;
+  text-align: left;
+}
+
+.popup-layer .select-folder ._label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 0 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.popup-layer .select-folder ._label em {
+  font-size: 15px;
+  color: black;
+}
+
+.popup-layer .select-folder ._label:after {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+  border-top: 5px solid rgba(51, 51, 51, 0.5);
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+
+.popup-layer .select-folder ._input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-size: 15px;
+}
+
+.popup-layer .select-folder ._input:placeholder {
+  color: rgba(114, 114, 114, 0.5);
+}
+
+.popup-layer .select-folder-group {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  border-radius: 10px;
+  text-align: left;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  max-height: 0;
+  border: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.popup-layer .select-folder .select-folder-list {
+  font-size: 15px;
+  line-height: 40px;
+  padding: 0 15px;
+  color: black;
+  cursor: pointer;
+}
+
+.popup-layer .select-folder .select-folder-list._create_btn {
+  color: #ff6767;
+}
+
+.popup-layer .select-folder .select-folder-list:hover {
+  background-color: #fff;
+}
+
+.popup-layer .label-select-group {
+  margin-bottom: 15px;
+}
+
+.popup-layer #check-show-folder-list:checked + .select-folder-group {
+  padding: 10px 0;
+  height: auto;
+  max-height: 50em;
+  border: 1px solid #dbdbdb;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.popup-layer .ticket-info-table table th,
+.popup-layer .ticket-info-table table td {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 0;
+  text-transform: uppercase;
+}
+
+.popup-layer .ticket-info-table table th {
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #f8f8f8;
+  width: 27%;
+}
+
+.popup-layer .ticket-info-table table th:first-child {
+  width: 19%;
+}
+
+.popup-layer .ticket-info-table em {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.popup-layer-etc {
+  max-width: 610px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 30px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  padding: 67px 30px 30px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=j1beatz_popup.css.map */

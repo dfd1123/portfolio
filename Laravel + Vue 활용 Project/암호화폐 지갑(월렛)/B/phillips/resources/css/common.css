@@ -1,0 +1,80 @@
+[v-cloak] {
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1;
+    letter-spacing: -0.5px;
+}
+
+html body.swal2-height-auto {
+    height: 100% !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+#app {
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+.half_100_btn {
+    margin: 0 -15px;
+    margin-bottom: -10px;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.half_100_btn button {
+    float: left;
+    width: 50%;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.half_100_btn button:first-child {
+    background: #fff;
+    color: #b4b4b4;
+    border-top: 1px solid #ddd;
+}
+
+.half_100_btn button:last-child {
+    background: #1d324f;
+    color: #fff;
+    border-top: 1px solid #1d324f;
+}

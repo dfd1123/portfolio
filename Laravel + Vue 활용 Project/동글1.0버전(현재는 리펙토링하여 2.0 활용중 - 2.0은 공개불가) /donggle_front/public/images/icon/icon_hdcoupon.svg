@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.801" height="24.801" viewBox="0 0 24.801 24.801">
+  <g id="icon_hdcoupon" transform="translate(-0.5 -0.5)">
+    <path id="패스_72" data-name="패스 72" d="M1.25,11.394,1.415,1.42l9.978-.17L24.551,14.407,14.407,24.551Z" fill="none" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g id="그룹_417" data-name="그룹 417" transform="translate(8.952 9.418)">
+      <line id="선_237" data-name="선 237" x1="9.412" y1="0.005" transform="translate(0 3.816)" fill="none" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="패스_73" data-name="패스 73" d="M26.038,31.708a.667.667,0,1,1,0-.943A.666.666,0,0,1,26.038,31.708Z" transform="translate(-20.743 -24.037)" fill="#3a3a3a" stroke="#3a3a3a" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="패스_74" data-name="패스 74" d="M26.038,18.678a.667.667,0,1,1,0-.943A.666.666,0,0,1,26.038,18.678Z" transform="translate(-20.743 -17.54)" fill="#3a3a3a" stroke="#3a3a3a" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <path id="패스_75" data-name="패스 75" d="M9.109,6.5A1.844,1.844,0,1,1,6.5,6.5,1.84,1.84,0,0,1,9.109,6.5Z" transform="translate(-2.348 -2.348)" fill="none" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

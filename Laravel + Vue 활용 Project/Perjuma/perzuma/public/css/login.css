@@ -1,0 +1,133 @@
+#main_hd{
+    box-shadow:none;
+}
+
+#main_hd .center_hd{
+    padding-top: 2em;
+}
+
+#main_hd .right_hd{
+    display:none;
+}
+
+#content{
+    background-color:#f6f6f6;
+    padding:3.2em 0;
+}
+.main{
+    padding: 3.5em 3em;
+    padding-bottom: 4.8em;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: transparent;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    background-color: #fff;
+}
+.ment_div{
+    margin-bottom: 3em;
+}
+.ment_div .login_ment{
+    color: #007bd2;
+    font-size: 1.8em;
+    width: 49%;
+    display: inline-block;
+    font-weight: bold;
+}
+.ment_div .next_ment{
+    color: #007bd2;
+    font-size: 0.7em;
+    width: 49%;
+    text-align: right;
+    display: inline-block;
+    cursor: pointer;
+    display:none;
+}
+.input_div{
+    color: #a0a5af;
+    margin: 1em 0;
+}
+.input_div input{
+    border: none;
+    padding: 1em 0;
+    line-height: 0.9em;
+    font-size: 0.9em;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: #d5dcea 1px solid;
+}
+.bottom_div{
+    margin-top:2em;
+}
+.bottom_div .forgotpwd{
+    font-size:0.9em;
+    color:#007bd2;
+    cursor:pointer;
+}
+.login_btn{
+    position:absolute;
+    width:90px;
+    height:90px;
+    background-color:#007bd2;
+    box-shadow: 0 30px 50px 0 rgba(122, 122, 122, 0.51);
+    border-radius:50px;
+    display:table;
+    text-align:center;
+    bottom:-45px;
+    right:10%;
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+.login_btn i{
+    color:#fff;
+    font-size:30px;
+    vertical-align:middle;
+} 
+.bottom{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:3;
+    text-align:center;
+}
+.bottom p{
+    color:#707070;
+    font-size:10px;
+}
+
+.bottom button{
+    background:transparent;
+    padding:13px;
+    border-radius:40px;
+    border:1px solid #007bd2;
+    color:#007bd2;
+    margin:20px 10px;
+    font-size:13px;
+    outline:none;
+    transition:background 0.3s;
+}
+
+.bottom button:active{
+    background:#fff;
+}
+
+.bottom a{
+    background:transparent;
+    padding:13px;
+    border-radius:40px;
+    border:1px solid #007bd2;
+    color:#007bd2;
+    margin:20px 10px;
+    font-size:13px;
+    outline:none;
+    transition:background 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.bottom a:active{
+    background:#fff;
+}

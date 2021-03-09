@@ -1,0 +1,410 @@
+.information_div{
+    padding: 0 0;
+}
+
+.information_div h3{
+    font-size:1rem;
+    color:#007bd2;
+    line-height: 1.39;
+    letter-spacing: -0.6px;
+    margin-bottom:0.8rem;
+}
+
+.information_div h3 img{
+    width: 1.2rem;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+.information_div p{
+    color: #5d5d5d;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    font-size: 0.75em;
+}
+
+.company_page_wrap{
+    
+}
+
+.company_page_wrap .company_page_content{
+    padding: 0 2.5%;
+    padding-top: 1.5em;
+    box-sizing: border-box;
+}
+
+.company_page_wrap .company_page_content .company_page_box{
+    position: relative;
+    border-radius: 13px;
+    box-shadow: 0 12px 18px 0 rgba(122, 122, 122, 0.31);
+    background: #fff;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_profile_img{
+    position: absolute;
+    top: 1.3em;
+    left: 1em;
+    z-index: 2;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 3px 11px 0 rgba(198, 198, 198, 0.61);
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div{
+
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div{
+    
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div h2{
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.6px;
+    color: #4f5256;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div ul{
+    overflow: hidden;
+    margin-top: 0.45em;
+    margin-bottom: 0.35em;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div ul li{
+    float: left;
+    width: 33.3%;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div ul li b{
+    width:100%;
+    display:block;
+    font-size: 0.95em;
+    font-weight:400;
+    line-height: 1.3;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #2b2b2b;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div ul li b i{
+    margin-right:2px;
+    color: #007bd2;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div ul li span{
+    width:100%;
+    display:block;
+    font-size: 0.7em;
+    line-height: 1.77;
+    letter-spacing: -0.44px;
+    text-align: center;
+    color: #4f5256;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div a{
+    border-radius: 6px;
+    background-color: #17334a;
+    font-size: 0.85em;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    height: 2.8em;
+    letter-spacing: -0.5px;
+    text-align: center;
+    padding: 0.9em 0;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div>div a i{
+    margin-right:4px;
+    font-size: 0.9em;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_profile_img img{
+    width:100%;
+    height:100%;
+}
+
+.company_page_wrap .company_page_content .company_page_box .company_infor_div{
+    width:100%;
+    padding-left: 110px;
+}
+
+.company_page_wrap .company_page_content .company_page_box .estimate_price{
+    border-radius: 7px;
+    background-color: #00a2ff;
+    color: #fff;
+    padding: 1em 1em;
+    overflow: hidden;
+    margin: 1.5em 0;
+    font-size: 1em;
+}
+
+.company_page_wrap .company_page_content .company_page_box .estimate_price span:first-child{
+    float:left;
+}
+
+.company_page_wrap .company_page_content .company_page_box .estimate_price span:last-child{
+    float:right;
+}
+
+.company_review_hd{
+    width: 95%;
+    margin: 1.5em auto;
+    position: relative;
+}
+
+.company_review_hd .hd_left{
+    position:absolute;
+    top:0;
+    left:15px;
+    z-index:2;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow: 0px 3px 11px 0 rgba(198, 198, 198, 0.61);
+}
+
+.company_review_hd .hd_left img{
+    width:100%;
+    height:100%;
+}
+
+.company_review_hd .hd_right{
+    padding: 10px 0;
+    padding-left: 120px;
+}
+
+.company_review_hd .hd_right h2{
+    font-size: 0.97em;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: -0.56px;
+    color: #4f5256;
+    min-height:21px;
+}
+
+.company_review_hd .hd_right ul{
+    overflow:hidden;
+    margin-bottom: 0.6em;
+}
+
+.company_review_hd .hd_right ul li{
+    float:left;
+    font-size: 0.85em;
+    line-height: 1.77;
+    letter-spacing: -0.44px;
+    color: #4f5256;
+}
+
+.company_review_hd .hd_right ul li span{
+    color:#007bd2;
+    font-weight:700;
+    padding: 0 0.2em;
+}
+
+.company_review_hd .hd_right ul li:after{
+    content: "";
+    display: inline-block;
+    margin: 0 10px;
+    width: 1px;
+    height: 11px;
+    background-color: #9a9a9a;
+}
+
+.company_review_hd .hd_right ul li:last-child:after{
+    display:none;
+}
+
+.company_review_hd .hd_right>div img{
+    width: 7rem;
+    min-width: 7rem;
+    vertical-align: bottom;
+}
+
+.company_review_hd .hd_right>div span{
+    font-size:1em;
+    line-height: 1.07;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #d5d5d5;
+    margin-left: 0.5em;
+}
+
+.company_review_hd .hd_right>div span em{
+    color:#2b2b2b;
+}
+
+.company_review_wrap .company_review_content .company_review_box{
+    width: 95%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 7px 8px 0 rgba(122, 122, 122, 0.18);
+    border: solid 0.5px #cbcbcb;
+    padding: 1em;
+    overflow:hidden;
+}
+
+.company_review_wrap .company_review_content .company_review_box .review_li{
+    border-bottom:1px solid #cbcbcb;
+    margin-bottom: 0.8em;
+}
+
+.company_review_wrap .company_review_content .company_review_box .review_li:last-child{
+    border:none;
+}
+
+.company_review_wrap .company_review_content .company_review_box .review_li .review_infor{
+
+}
+
+.company_review_wrap .company_review_content .company_review_box .review_li .review_infor img{
+    width: 5rem;
+}
+
+.company_review_wrap .company_review_content .company_review_box .review_li .review_infor span{
+    font-size: 0.75em;
+    letter-spacing: -0.34px;
+    text-align: center;
+    color: #adadad;
+    padding: 0 4px;
+    line-height: 2.29;
+}
+
+.company_review_wrap .company_review_content .company_review_box .review_li .review_body{
+    
+}
+
+.company_review_wrap .company_review_content .company_review_box .review_li .review_body h4{
+    font-size: 0.95em;
+    font-weight: 700;
+    line-height: 2.8;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #5d5d5d;
+}
+
+.company_review_wrap .company_review_content .company_review_box .review_li .review_body .review_contents{
+    font-size:0.85em;
+    line-height: 1.59;
+    letter-spacing: -0.44px;
+    text-align: left;
+    color: #2b2b2b;
+    padding-bottom: 15px;
+}
+
+#content{
+    padding-top: 5.8em;
+    background: #f6f6f6;
+    position: relative;
+}
+
+.slider_wrap{
+    width:100%;
+    height:198px;
+    margin-bottom:1.5em;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ddd;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet{
+    box-sizing:content-box;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 2px;
+}
+
+.swiper-pagination-bullet-active{
+    background:#fff;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    left:85%;
+}
+
+.btn_review{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 4;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.23);
+    background-color: #007bd2;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.btn_review img{
+    width: 27px;
+}
+
+.auth_update_btn{
+    margin: 1em 0;
+    text-align:right;
+}
+
+.auth_update_btn button{
+    border: solid 1px #cbcbcb;
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-size: 0.75em;
+    letter-spacing: -0.34px;
+    text-align: center;
+    color: #007bd2;
+    height: 2.1em;
+    padding: 0 1.3em;
+}
+
+.auth_update_btn button#review_edit{
+    color: #007bd2;
+}
+
+.auth_update_btn button#review_delete{
+    color:#df4900;
+}
+
+.non_data{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding-top: 55vh;
+    text-align: center;
+    font-size: 1.1em;
+    color: #aaa;
+    font-weight: 700;
+}

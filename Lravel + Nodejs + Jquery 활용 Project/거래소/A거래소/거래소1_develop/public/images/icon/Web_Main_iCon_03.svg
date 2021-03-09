@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.465" height="47.083" viewBox="0 0 54.465 47.083">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="2.396" x2="0.5" y2="-0.126" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e179b2"/>
+      <stop offset="1" stop-color="#e29dc5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="4.76" x2="0.5" y2="-3.393" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="11.919" x2="0.5" y2="-12.841" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="0.5" y1="1.282" x2="0.5" y2="-1.239" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="0.5" y1="1.16" x2="0.5" y2="-6.993" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="0.5" y1="0.985" x2="0.5" y2="-23.775" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="0.5" y1="1.641" x2="0.5" y2="-4.004" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="0.5" y1="4.662" x2="0.5" y2="-0.982" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="그룹_4295" data-name="그룹 4295" transform="translate(-326.023 -1734.633)">
+    <path id="패스_2097" data-name="패스 2097" d="M350.67,1754.273H326.023v-19.64H350.67Zm-21.647-3H347.67v-13.64H329.023Z" fill="url(#linear-gradient)"/>
+    <rect id="사각형_1508" data-name="사각형 1508" width="3" height="6.074" transform="translate(336.847 1752.773)" fill="url(#linear-gradient-2)"/>
+    <rect id="사각형_1509" data-name="사각형 1509" width="12.778" height="2" transform="translate(331.958 1757.848)" fill="url(#linear-gradient-3)"/>
+    <path id="패스_2098" data-name="패스 2098" d="M380.488,1776.142H355.841V1756.5h24.647Zm-21.647-3h18.647V1759.5H358.841Z" fill="url(#linear-gradient-4)"/>
+    <rect id="사각형_1510" data-name="사각형 1510" width="3" height="6.074" transform="translate(366.665 1774.642)" fill="url(#linear-gradient-5)"/>
+    <rect id="사각형_1511" data-name="사각형 1511" width="12.778" height="2" transform="translate(361.775 1779.716)" fill="url(#linear-gradient-6)"/>
+    <g id="그룹_4294" data-name="그룹 4294">
+      <path id="패스_2099" data-name="패스 2099" d="M346.214,1776.066H331.785v-8.773h2v6.773h12.429Z" fill="url(#linear-gradient-7)"/>
+      <path id="패스_2100" data-name="패스 2100" d="M374.726,1749.556h-2v-6.774H359.3v-2h15.429Z" fill="url(#linear-gradient-8)"/>
+    </g>
+  </g>
+</svg>

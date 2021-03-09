@@ -1,0 +1,301 @@
+/*
+    COMPONENT - donggle clothes list component
+*/
+
+// 제품 카드
+.dg-clothes-thumbnail {
+  width: 45vw;
+  height: 61vw;
+  position: relative;
+
+  // 20-03-31 background-size 변경
+  .in-image {
+    @include bgOption;
+    background-size: auto 100%;
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 8px;
+  }
+  .heart-badge-label {
+    @include position($t: 0, $r: 0);
+
+    z-index: 1;
+  }
+}
+// 제품 카드 END
+
+// 제품 썸네일
+.dg-clothes-list-card {
+  position: relative;
+  padding-bottom: 35px;
+
+  .in-information {
+    padding: 12px 0 5px;
+    border-bottom: 1px solid $light_gray6;
+    margin-bottom: 10px;
+
+    li {
+      color: #333333;
+    }
+    li > a {
+      @include fontType01(inherit, inherit, inherit);
+
+      width: 100%;
+      display: inline-block;
+      text-align: inherit;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    ._category {
+      @include fontType01(#{$px-09}em, $purple, 500);
+      @include fontType02(0);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+      width: 100%;
+      overflow: hidden;
+    }
+    ._sellername {
+      @include fontType01(#{$px-11}em, $gray, 200);
+      @include fontType02(0);
+
+      padding: 10px 0 3px;
+    }
+    ._name {
+      @include fontType01(#{$px-14}em);
+      @include fontType02(-0.3px, 1.5);
+
+      margin-bottom: 10px;
+    }
+    ._name a {
+      @include ellipse(1, 20px);
+      display: block;
+      width: 100%;
+    }
+    ._options {
+      @include fontType01(#{$px-12}em, #787878, 200);
+    }
+    ._op_category {
+      @include fontType02($line-height: 1.5);
+    }
+    ._op_tit {
+      display: inline-block;
+      width: 40px;
+    }
+    ._op_list {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 73%;
+      letter-spacing: 0;
+      vertical-align: text-bottom;
+      span {
+        @include fontType02(0);
+        margin-right: 2.5px;
+        text-transform: capitalize;
+      }
+      span:after {
+        @include makePseudo("/");
+        padding-left: 2.5px;
+      }
+      span:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  // 제품 정보
+  .in-pricedetail {
+    ._streetprice {
+      @include fontType01(#{$px-13}em, #aaaaaa, 200);
+      @include fontType02(0);
+
+      margin: 8px 0 2px;
+    }
+    ._finalprice {
+      @include fontType01(#{$px-15}em, $black, 700);
+      @include fontType02(0);
+    }
+    ._finalprice > * {
+      @include inlineBlockStyle(middle);
+
+      letter-spacing: 0.2px;
+    }
+    ._finalprice b + span {
+      @include fontType01(#{$px-12}rem, $weight: 500);
+      @include inlineBlockStyle(middle);
+
+      padding: 0 4px 0 2px;
+    }
+    ._finalprice img {
+      margin: 0 5px;
+    }
+    ._finalprice small {
+      color: #bbb;
+      font-weight: 300;
+      font-size: 0.75em;
+    }
+    ._finalprice ._rate {
+      @include fontType01(#{$px-11}rem, $black, 500);
+    }
+    ._hashlist {
+      width: 100%;
+      position: relative;
+      margin: 15px 0;
+      padding-right: 30px;
+    }
+    ._hashlist ._inner {
+      white-space: nowrap;
+      overflow-x: scroll;
+      height: 25px;
+      .rounded-list-s {
+        @include fontType01(#{$px-12}em, #624450, 100);
+
+        line-height: 17px;
+        height: 20px;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    ._hashlist ._inner::-webkit-scrollbar {
+      display: none;
+    }
+    .rounded-list-s {
+      @include fontType01(#{$px-13}em, #624450, 100);
+      @include fontType02($line-height: 20px);
+      @include inlineBlockStyle;
+      border-radius: 30px;
+      background-color: #ffe9f5;
+      height: 20px;
+      padding: 0 10px;
+      margin: 0 1px 5px;
+      border: none;
+      outline: none;
+    }
+    .rounded-list-s:hover,
+    .rounded-list-s.active {
+      background-color: #fc4ead;
+      color: white;
+      -webkit-text-shadow: none;
+      -webkit-text-stroke: 0;
+      span {
+        color: white;
+        -webkit-text-shadow: none;
+        -webkit-text-stroke: 0;
+      }
+    }
+    .rounded-list-s:first-child {
+      margin-left: 0;
+    }
+    .rounded-list-s span::before {
+      @include makePseudo("#");
+    }
+    ._hashlist-more {
+      @include position($t: 20px);
+
+      text-align: right;
+      width: 100%;
+      height: 0;
+    }
+    .in-morebtn {
+      @include bgimg(url($path-btn+"btn_tag.svg"));
+      @include position($position: relative, $t: -20px, $r: 0);
+      @include inputInit($bd-radius: 50%, $pointer: pointer);
+
+      background-size: 50%;
+      background-color: $light_gray6;
+      width: 20px;
+      height: 20px;
+      color: transparent;
+      border: 1px solid #b7b7b7;
+      text-shadow: none;
+      -webkit-text-stroke: 0;
+    }
+  }
+
+  // 제품 리뷰관련 별점
+  .in-star-review {
+    margin-top: -4px;
+
+    ._star {
+      margin-bottom: 8px;
+    }
+    ._star_tit {
+      @include fontType01(#{$px-10}em, #787878, 200);
+
+      display: inline-block;
+      width: 40px;
+      position: relative;
+    }
+    ._star_con_text {
+      @include fontType01(#{$px-10}em, #787878, 200);
+
+      display: inline-block;
+    }
+    ._button {
+      padding: 5px 0;
+    }
+    .rounded-btn-outline {
+      @include fontType01(#{$px-14}em, #c8c8c8);
+
+      width: 100%;
+      height: 37px;
+      cursor: default;
+      &:hover {
+        background-color: white;
+      }
+      &:active {
+        background-color: white;
+      }
+    }
+    .rounded-btn-outline.active {
+      @include hoverActiveBg(white);
+
+      color: #333;
+      cursor: pointer;
+    }
+    ._reviews {
+      @include fontType01(#{$px-10}em, #787878, 200);
+      @include ellipse(1, 15px);
+    }
+  }
+}
+
+._hashlist-con {
+  @include position(fixed, $t: 0, $l: 0);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  padding: 13px 0 10px;
+  transition: all 0.2s;
+  transform: translateY(30px);
+  background: transparent;
+  &.active {
+    @include position(fixed, $t: 0, $l: 0);
+    opacity: 1;
+    z-index: 9;
+    pointer-events: visible;
+    transition: all 0.2s;
+    transform: translateY(0);
+    &.whenPopupOver {
+      z-index: 9999;
+      ._hashtag_wrap {
+        bottom: 0;
+      }
+    }
+  }
+}
+// 제품 썸네일 END

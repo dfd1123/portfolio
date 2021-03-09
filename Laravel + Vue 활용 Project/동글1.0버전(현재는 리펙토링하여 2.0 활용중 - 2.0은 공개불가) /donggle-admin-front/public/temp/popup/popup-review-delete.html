@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <div class="popup-container bgc-none">
+      <div class="popup-bg"></div>
+      <div class="popup-content-wrap">
+        <div class="popup-hd">
+          <h1 class="popup-tit">구매후기 삭제요청</h1>
+          <button class="icon-close-btn-wh">닫기</button>
+        </div>
+        <!-- content -->
+        <div class="popup-content popup-delete-con">
+          <section class="popup-content-number">
+            <h2 class="in-tit">후기 No.</h2>
+            <div class="in-desc">
+              <input type="number" placeholder="게시글 번호" />
+            </div>
+          </section>
+          <section class="popup-content-reason">
+            <h2 class="in-tit">삭제 요청 사유</h2>
+            <div class="in-desc">
+              <select class="form-select">
+                <option value="0">폭언 및 부적절한 언행</option>
+              </select>
+            </div>
+          </section>
+          <section class="popup-content-detail">
+            <h2 class="in-tit">상세내용</h2>
+            <div class="in-desc">
+              <textarea name="#" id="#" class="_txt "></textarea>
+            </div>
+          </section>
+        </div>
+        <!-- content E -->
+        <div class="popup-btn-wrap">
+          <button class="square-md-btn btn-outline-gray close-btn">닫기</button>
+          <button class="square-md-btn btn-gradient">삭제요청</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

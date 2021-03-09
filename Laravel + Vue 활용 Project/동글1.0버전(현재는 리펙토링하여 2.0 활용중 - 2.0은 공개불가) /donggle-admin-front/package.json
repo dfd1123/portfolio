@@ -1,0 +1,90 @@
+{
+  "name": "donggle-admin-front",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --modern",
+    "lint": "vue-cli-service lint",
+    "deploy": "rsync -ahv dist/* deploy"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^16.0.0",
+    "@ckeditor/ckeditor5-vue": "^1.0.1",
+    "chart.js": "^2.9.3",
+    "compressorjs": "^1.0.6",
+    "core-js": "^3.4.4",
+    "is-element-visible": "^1.0.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "moment-range": "^4.0.2",
+    "unreset-css": "^1.0.1",
+    "v-month-picker": "^1.0.0",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.5.0",
+    "vue-clickaway": "^2.2.2",
+    "vue-cookies": "^1.7.0",
+    "vue-date-pick": "^1.2.1",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-momentjs": "^0.1.2",
+    "vue-monthly-picker": "^0.2.8",
+    "vue-router": "^3.1.3",
+    "vue-slider-component": "^3.1.1",
+    "vue-uniq-ids": "^1.0.0",
+    "vuejs-datepicker": "^1.6.2",
+    "vuex": "^3.1.2",
+    "vux-uploader-component": "^1.0.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.2.2",
+    "@vue/cli-plugin-eslint": "^4.2.2",
+    "@vue/cli-plugin-router": "^4.2.2",
+    "@vue/cli-plugin-vuex": "^4.2.2",
+    "@vue/cli-service": "^4.2.2",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.1",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-axios": "0.0.4",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "ecmaVersion": 2019
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "plugins": [
+      "vue"
+    ],
+    "rules": {}
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11"
+  ],
+  "gitHooks": {
+    "post-merge": "npm install && npm run build && npm run deploy"
+  }
+}

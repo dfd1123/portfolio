@@ -1,0 +1,43 @@
+/*
+    COMPONENT - 내역 없을 때
+*/
+
+// 은영 ver
+._empty {
+  margin: 20px 0px;
+  border-bottom: 1px solid $light_gray6;
+  padding: 30px 0px;
+  text-align: center;
+  ._img_box {
+    width: 93px;
+    height: 93px;
+    margin: 0px auto;
+    user-select: none;
+  }
+  ._img_box > img {
+    width: 100%;
+  }
+  ._text {
+    margin: 20px 0px;
+    line-height: 1.5;
+    font-size: $f-14;
+    color: $purple_gray;
+  }
+}
+
+// 혜진 ver
+.nothing-history {
+  text-align: center;
+
+  .in-empty-icon {
+    display: block;
+    margin: 0 auto 10px;
+    user-select: none;
+  }
+  .in-empty-ment {
+    @include fontType01(#{$px-13}em, #c3afcd, 400);
+    @include fontType02(-0.2px);
+
+    user-select: none;
+  }
+}

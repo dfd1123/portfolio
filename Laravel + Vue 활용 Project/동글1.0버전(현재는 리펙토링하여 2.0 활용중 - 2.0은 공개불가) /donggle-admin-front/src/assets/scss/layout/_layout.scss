@@ -1,0 +1,347 @@
+/* LAYOUT - layout
+   ========================================================================== */
+
+#app {
+  height: 100%;
+}
+
+.show-mobile {
+  display: none;
+}
+
+.show-pc {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+// 내용부분
+#admin-container {
+  width: 100%;
+  min-height: 100%;
+
+  background-color: $color-bg;
+  padding-left: layoutPc(hd-gnb-width);
+  padding-top: calc(
+    #{layoutPc(hd-snb-bar-height)} + #{layoutPc(hd-title-bar-height)}
+  );
+
+  .wrapper {
+    padding: 25px layoutPc(container-pd);
+    min-height: calc(
+      100vh - #{layoutPc(hd-snb-bar-height)} - #{layoutPc(hd-title-bar-height)} -
+        #{layoutPc(ft-height)}
+    );
+  }
+}
+// END 내용부분
+
+// 글로벌 로딩
+.progress_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 750;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: rgba(255, 255, 255, 0.3);
+  .progress_con {
+    display: table-cell;
+    vertical-align: middle;
+    .multi-spinner {
+      border-top-color: #fc4ead;
+    }
+  }
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 750;
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+}
+// END 글로벌 로딩
+
+/* LAYOUT - layout (반응형)
+   ========================================================================== */
+
+@include media-pc(15inch) {
+  // 내용부분
+  #admin-container {
+    padding-left: layoutPc15(hd-gnb-width);
+    padding-top: calc(
+      #{layoutPc15(hd-snb-bar-height)} + #{layoutPc15(hd-title-bar-height)}
+    );
+
+    .wrapper {
+      padding: 25px layoutPc15(container-pd);
+      min-height: calc(
+        100vh - #{layoutPc15(hd-snb-bar-height)} - #{layoutPc15(
+            hd-title-bar-height
+          )} - #{layoutPc15(ft-height)}
+      );
+    }
+  }
+  // END 내용부분
+}
+
+@include media-mobile-version(ipad) {
+  .show-pc {
+    display: none !important;
+  }
+  .show-mobile {
+    display: block !important;
+  }
+
+  // 내용부분
+  #admin-container {
+    padding-left: 0;
+    padding-top: layoutTablet(hd-title-bar-height);
+
+    .wrapper {
+      padding: 0;
+      min-height: calc(100vh - 100px - 50px);
+    }
+
+    .grid-line-group .table-area {
+      padding: 0px 0px 70px;
+    }
+  }
+  // END 내용부분
+}
+
+@include media-mobile-version(galaxy-tab) {
+  .mobile-only {
+    display: block;
+  }
+  .not-mobile {
+    display: none !important;
+  }
+}
+
+@include media-mobile-version(mobile-only) {
+  #admin-container.main-container {
+    background: linear-gradient(to bottom, #fff, #fcfcfc, #f0f0f0);
+
+    .wrapper {
+      padding: 5px 10px;
+    }
+  }
+}
+
+@include media-mobile-version(mobile-small) {
+  html {
+    font-size: 14px;
+  }
+
+  // 내용부분
+  #admin-container {
+    padding-top: 3.125rem;
+    .wrapper {
+      min-height: auto;
+    }
+  }
+  // END 내용부분
+}
+
+// 모바일 스크롤시 상단 고정
+@include media-mobile-version(ipad) {
+  // 기본 디자인 : 검색 + 필터검색 or 탭 + 셀렉트 + 전체선택바 = 주문상품확인, 상품문의
+  .fixed_top {
+    > .grid-line-group {
+      padding-top: calc(#{layoutMobile(hd-title-bar-height)} + 172px);
+    }
+
+    .table-area .show-mobile {
+      padding-top: 90px;
+    }
+    
+    .table-area .search-default-bar {
+      @include set-fixed($t: layoutMobile(hd-title-bar-height), $l: 0px);
+      @include z-index(sideNav);
+
+      width: 100%;
+      margin: 0px;
+      border-bottom: 1px solid $gray-lighter;
+      background-color: white;
+    }
+
+    .search-default-bar .icon-search-btn {
+      top: 0px;
+    }
+
+    .search-default-bar .form-select,
+    .search-default-bar .form-input-txt {
+      margin: 0px;
+      font-size: 12px;
+    }
+
+    .filter-search-wrapper {
+      @include set-fixed($t: layoutMobile(hd-title-bar-height), $l: 0px);
+      @include z-index(sideNav);
+
+      width: 100%;
+      margin-top: 42px;
+      padding: 0px;
+      border-top: 1px solid $gray-lighter;
+      border-bottom: 1px solid $gray-lighter;
+      background-color: white;
+    }
+
+    .sorting-tab-bar {
+      @include set-fixed($t: layoutMobile(hd-title-bar-height), $l: 0px);
+      @include z-index(sideNav);
+
+      width: 100%;
+      margin: 43px 0px 0px;
+      padding: 0px !important;
+    }
+
+    .sorting-tab-bar .first-tab {
+      margin: 0px !important;
+    }
+
+    .sorting-tab-bar .in-tab {
+      display: block;
+      float: left;
+      width: 50% !important;
+      height: 40px;
+      line-height: 40px;
+      margin: 0px !important;
+      border-radius: 0px !important;
+      background-color: white;
+      font-size: 14px;
+      color: $primary-color;
+    }
+
+    .choice-status-bar {
+      @include set-fixed($t: layoutMobile(hd-title-bar-height), $l: 0px);
+      @include z-index(fixed_top);
+
+      width: 100%;
+      height: auto;
+      margin: calc(42px + 41px) 0px 0px !important;
+      border-bottom: 1px solid $gray-lighter;
+      padding: 42px 13px 0px !important;
+      background-color: white;
+    }
+
+    .choice-status-bar .in-choice-wrap{
+      height: 44px;
+      padding:0px !important;
+      background-color:white;
+    }
+
+    .choice-status-bar .in-check-circle {
+      top: 4px;
+      vertical-align: initial;
+    }
+
+    .choice-status-bar .in-sorting {
+      @include set-relative;
+
+      vertical-align: initial;
+    }
+
+    .choice-status-bar .in-button-group{
+      right:0px !important;
+      top: auto;
+      bottom: 6px !important;
+      transform: none;
+    }
+
+    .choice-status-bar .form-select {
+      @include z-index(sideNav);
+      @include bg-img($path-btn, "btn_spread_under.svg");
+      @include font(13px, $w: 400);
+
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      border: 0px none;
+      border-bottom: 1px solid $gray-lighter;
+      border-radius: 0px;
+    }
+
+    .dg-filter-search_wrap {
+      border: 0px none;
+    }
+  }
+
+  // 타입1 : 검색 + 필터검색 = 구매후기
+  .fixed_top .fix_type-01 {
+    padding-top: calc(#{layoutMobile(hd-title-bar-height)} + 79px);
+    .choice-status-bar{
+      position: static;
+    }
+  }
+
+  // 타입2 : 검색 + 필터검색 + 셀렉트 = 주문내역리스트, 취소/환불내역 리스트
+  .fixed_top .fix_type-02{
+    padding-top: calc(#{layoutMobile(hd-title-bar-height)} + 79px);
+    .choice-status-bar{
+      position: relative;
+
+      .form-select {
+        @include set-fixed($t: layoutMobile(hd-title-bar-height), $l: 0px);
+
+        margin-top: 92px;
+      }
+    }
+  }
+
+  // 타입3 : 필터검색 + 셀렉트 = 매출현황
+  .fixed_top .fix_type-03{
+    padding-top: calc(#{layoutMobile(hd-title-bar-height)} + 79px);
+    .filter-search-wrapper{
+      margin-top: 0px;
+    }
+    .choice-status-bar {
+      margin: 50px 0px !important;
+      padding: 0px !important;
+    }
+  }
+
+  // 타입4 : 검색 + 셀렉트 + 전체선택바 = 상품관리
+  .fixed_top .fix_type-04 {
+    .choice-status-bar {
+      margin-top: 42px !important;
+    }
+  }
+}
+
+@include media-mobile-version(mobile-small) {
+  #page-inquiry-prdt-list-wrap.fixed_top {
+    .dg-filter-search_wrap {
+      height: 40px;
+      > h2 {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    .dg-filter-search-btn {
+      height: 39px;
+    }
+    .choice-status-bar {
+      padding: 40px 0px 0px;
+    }
+    .choice-status-bar {
+      .in-choice-wrap {
+        height: 44px;
+      }
+      .check-gradi-circle {
+        vertical-align: inherit;
+      }
+      .in-sorting {
+        margin-bottom: 3px;
+        vertical-align: inherit;
+      }
+    }
+  }
+}
+// 모바일 스크롤시 상단 고정 E

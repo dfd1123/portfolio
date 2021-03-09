@@ -1,0 +1,124 @@
+#content{
+    background-color:#f2f2f2;
+}
+.main_div{
+    margin:1em;
+    box-shadow: 0px 13px 16px 0 rgba(36, 36, 36, 0.08);
+}
+.main_div .top_div{
+    background-color:#fff;
+    border-top-left-radius:1em;
+    border-top-right-radius:1em;
+    padding:1em;
+}
+.main_div .top_div .title{
+    padding:1em;
+    border-bottom:1px solid #f2f2f2;
+    display:table;
+    width:100%;
+}
+.main_div .top_div .title .left_title{
+    display:table-cell;
+    width:69.4%;
+    vertical-align: middle;
+}
+.main_div .top_div .title .left_title p:nth-child(1){
+    font-size:0.8em;
+}
+.main_div .top_div .title .left_title p:nth-child(1) em{
+    font-size:0.5em;
+}
+.main_div .top_div .title .left_title p:nth-child(2){
+    margin-top:0.6em;
+    font-size:0.5em;
+    color:#e20000;
+}
+.main_div .top_div .title .right_title{
+    width:29.4%;
+    text-align:right;
+    display:table-cell;
+    vertical-align: middle;
+}
+.main_div .top_div .title .right_title .btn{
+    border-radius: 43px;
+    box-shadow: 0px 13px 16px 0 rgba(36, 36, 36, 0.07);
+    background-color: #17334a;
+    border: none;
+    color: #fff;
+    width: 90%;
+    padding: 0.7em;
+    font-size: 0.7em;
+}
+.main_div .top_div .info{
+    padding:1em;
+    display:table;
+    width:100%;
+}
+.main_div .top_div .info .info_left_div{
+    width:19.4%;
+    display:table-cell;
+    vertical-align: middle;
+}
+.main_div .top_div .info .info_left_div img{
+    max-width:100%;
+}
+.main_div .top_div .info .info_right_div{
+    width:79.4%;
+    display:table-cell;
+    vertical-align: middle;
+}
+.main_div .top_div .info .info_right_div p{
+    font-size:0.7em;
+    color:#a0a5af;
+    line-height: 2;
+    margin:0 1em;
+}
+.main_div .top_div .info .info_right_div p em{
+    font-weight:bold;
+}
+
+.main_div .middle_div{
+    background-color:#f2f2f2;
+    padding:1em;
+}
+.main_div .middle_div .input_div{
+    background-color:#fff;
+    border-radius:15px;
+    box-shadow: 0px 13px 16px 0 rgba(36, 36, 36, 0.08);
+}
+.main_div .middle_div .input_div div{
+    padding: 1.5em 2em;
+    border-bottom:1px solid #f2f2f2;
+}
+.main_div .middle_div .input_div div:last-child{
+    border-bottom:none;
+}
+.main_div .middle_div .input_div div span{
+    font-size:0.7em;
+    color:#828282;
+}
+.main_div .middle_div .input_div div img{
+    float: right;
+    width: 1.5em;
+}
+
+.main_div .bottom_div{
+    background-color:#fff;
+    border-bottom-left-radius:1em;
+    border-bottom-right-radius:1em;
+    padding:1em;
+    text-align:center;
+}
+.main_div .bottom_div .btn{
+    border-radius: 43px;
+    box-shadow: 0px 13px 16px 0 rgba(36, 36, 36, 0.07);
+    background-color: #d5dcea;
+    border: none;
+    color: #fff;
+    width: 90%;
+    padding: 0.6em 0.7em;
+    font-size: 1.2em;
+}
+.main_div .bottom_div .btn.active{
+    background-color: #17334a;
+}

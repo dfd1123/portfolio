@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <!-- 모바일 화면에서 필터검색 버튼을 통해 열리는 영역
+    -->
+    <div class="popup-container">
+      <div class="popup-content-box">
+
+        <!-- popup header -->
+
+        <!-- 기간검색
+        : 매출현황 일일검색일 때, .filter_input_wrap > .date_end 가 보이지 않음
+        -->
+        <div class="filter-popup-content">
+          <section class="filter-select_date">
+            <h3 class="none">기간선택</h3 class="none">
+            <div class="filter_selec_wrap">
+              <select name="#" id="#" class="form-select">
+                <option value="0">일일</option>
+                <option value="1">일간</option>
+                <option value="2">월간</option>
+                <option value="3">연간</option>
+              </select>
+            </div>
+          </section>
+          <!-- 기간검색 E -->
+
+          <!-- 기간입력 : 공통 -->
+          <section class="filter-input_date">
+            <h3 class="filter_section_title small_title">기간입력</h3>
+            <div class="filter_input_wrap clearfix">
+              <div class="date_start">
+                <input
+                  type="text"
+                  class="form-input-date"
+                  value="2019-11-21"
+                />
+              </div>
+              <span class="swung-dash"> ~ </span>
+              <div class="date_end">
+                <input
+                  type="text"
+                  class="form-input-date"
+                  value="2019-11-21"
+                />
+              </div>
+            </div>
+          </section>
+          <!-- 기간입력 E -->
+        </div>
+        <!-- 기간검색 E -->
+
+        <!-- popup footer -->
+
+      </div>
+    </div>
+  </body>
+</html>

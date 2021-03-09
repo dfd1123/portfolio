@@ -1,0 +1,748 @@
+/*------------------------MAIN 메인페이지 스타일 START------------------------*/
+
+/*------------① main_visual_wrap (메인 비주얼 공지사항, 뉴스, 배너 등 스타일) start------------*/
+
+.width_align {
+	width: 80%;
+	margin: auto;
+	max-width: 1250px;
+}
+
+.main_visual_wrap {
+	width: 100%;
+	height: auto;
+	padding: 20px 0 0;
+	color: #fff;
+	background: #ddd;
+	background-size: cover;
+	background-image: url(/storage/image/homepage/main/mainheader_bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.main_visual_wrap .viusal_top {
+	font-family: 'Noto Sans Korean', sans-serif;
+	padding-top: 45px;
+}
+
+.main_visual_wrap .notice_bar_wrap {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	height: auto;
+	padding: 10px 0;
+}
+
+.main_visual_wrap .p_1st {
+	font-family: "Nunito", sans-serif;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #00b9ff;
+}
+
+.main_visual_wrap .p_2nd {
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	text-align: center;
+	color: #505050;
+}
+
+.main_visual_wrap .p_2nd b {
+	font-family: 'Noto Sans Korean', sans-serif;
+}
+
+.main_visual_wrap .p_3rd {
+	font-size: 25px;
+	font-weight: 100;
+	text-align: center;
+	color: #505050;
+}
+
+.main_visual_wrap .p_3rd b{
+	color: #00b9ff;
+}
+
+.main_visual_wrap .p_3rd strong {
+	font-weight: bold;
+}
+
+/*--①-1 banner_wrap 슬라이드 배너영역*/
+.banner_wrap {
+	width: 100%;
+	height: 210px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 1;
+	padding-top: 40px;
+}
+
+.banner_slide {
+	width: 100%;
+	margin: auto;
+	height: 140px;
+}
+
+.banner_slide .banner_con {
+	height: 140px;
+    background: gray;
+    margin: 10px 10px 10px;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.banner_slide .banner_con .banner_img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.slick-dots {
+	top: -45px;
+	bottom: unset !important;
+}
+
+.slick-dots li button:before {
+	font-size: 15px !important;
+	color: #fff !important;
+}
+
+.slick-dots li.slick-active button:before {
+	color: #00b9ff !important;
+}
+
+.slick-prev:before, .slick-next:before {
+	content: '' !important;
+	width: 20px;
+	height: 20px;
+	background-position: center;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+.slick-prev:before {
+	background-image: url(/storage/image/homepage/icon/mainbanner_arrow-01.svg);
+}
+
+.slick-next:before {
+	background-image: url(/storage/image/homepage/icon/mainbanner_arrow-02.svg);
+}
+/*--//①-1 banner_wrap 슬라이드 배너영역*/
+
+/*--①-2 notice_bar_wrap 공지사항 및 뉴스영역*/
+
+
+/* 이벤트나 뉴스 둘 중 하나 없을때 적용되는 active */
+.notice_bar_wrap .ntc_ul .ntc_li.active{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+/* //이벤트나 뉴스 둘 중 하나 없을때 적용되는 active */
+
+.notice_bar_wrap .width_align {
+	padding: 0 200px 25px;
+}
+
+.notice_bar_wrap .ntc_ul {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	height: 60px;
+	overflow: hidden;
+}
+
+.notice_bar_wrap .ntc_ul .ntc_li {
+	width: 50%;
+	font-size: 13px;
+	position: relative;
+	padding-left: 130px;
+}
+
+.notice_bar_wrap .ntc_ul .ntc_li:nth-child(2):before {
+	border-right: 1px solid #222;
+	content: '';
+	position: absolute;
+	top: 17px;
+	left: 0;
+	width: 1px;
+	height: 40px;
+}
+
+.notice_bar_wrap .ntc_ul .ntc_li .ntc_span {
+	letter-spacing: .5px;
+	height: 28px;
+	color: #323232;
+	display: inline-block;
+	width: 94px;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	text-transform: uppercase;
+	cursor: default;
+	padding: 4px 0;
+	transform: translateY(-50%);
+}
+
+.notice_bar_wrap .ntc_ul .ntc_li:nth-child(2) .ntc_span {
+	padding-left: 43px;
+}
+
+.notice_bar_wrap .ntc_ul .ntc_li .ntc_p {
+	font-size: 13px;
+	padding: 5px 0;
+	text-align: left;
+	font-weight: 300;
+}
+
+.notice_bar_wrap .ntc_ul .ntc_li .ntc_p a {
+	color: #323232;
+}
+
+.notice_bar_wrap .ntc_ul .ntc_li .ntc_p a:hover {
+	text-decoration: underline;
+}
+
+.notice_bar_wrap .ntc_ul .ntc_li .slide_group {
+	width: 100%;
+	position: relative;
+}
+/*//①-2 notice_bar_wrap 공지사항 및 뉴스영역*/
+
+/*--①-3main_login_wrap 로그인영역 */
+.main_login_bar {
+	background: rgba(0,0,0,0.6);
+	padding: 22px 0;
+	display: block;
+}
+
+.main_login_group {
+	display: flex;
+	height: 35px;
+	padding: 0 165px;
+	margin: 5px 0;
+}
+
+.main_login_group .main_login_form-btn {
+	width: 35%;
+	border: 1px solid rgba(255,255,255,1);
+	background: transparent;
+	color: #fff;
+	font-size: 13px;
+	border-radius: 30px;
+	padding: 7px 0;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+.main_login_group .main_login_form-btn.login_btn {
+	background: rgba(0,185,255,0.6);
+    border: 1px solid #00b9ff;
+}
+
+.main_login_group .main_login_form-btn:hover {
+	background: rgba(0,185,255,0.8);
+	transition: all .2s;
+}
+
+.main_login_group .main_login_form-btn:active {
+	box-shadow: inset 0 3px 7px rgba(0,0,0,0.3);
+	transition: all .2s;
+}
+
+.main_login_before_group .main_login_form .etc_btn {
+	color: white;
+	font-size: 13px;
+	margin: 7px 0;
+	width: 32%;
+	text-align: center;
+}
+
+.main_login_before_group .main_login_form .etc_btn.regi_btn {
+	text-align: right;
+	padding-right: 15px;
+}
+
+.main_login_before_group .main_login_form .etc_btn:hover {
+	color: #00b9ff;
+}
+
+.main_login_before_group .main_login_form {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_login_before_group .main_login_form.login_form_first {
+	padding-right: 25px;
+	width: 62%;
+}
+
+.main_login_before_group .main_login_form.login_form_second {
+	width: 38%;
+	justify-content: unset;
+}
+
+.main_login_before_group .login_form_first .main_login-input {
+	width: 48%;
+	padding: 5px 10px;
+	font-size: 13px;
+	line-height: 1;
+	font-weight: 400;
+	border-radius: 30px;
+	border: 1px solid transparent;
+	outline: none;
+}
+
+.main_login_before_group .login_form_first .main_login-input:focus {
+	border-color: rgba(0,185,255,1);
+}
+
+.main_login_after_group {
+	justify-content: space-between;
+	height: 40px;
+	padding: 0 200px;
+}
+
+.main_login_after_group .login_after-btn {
+	width: 20%;
+	padding: 10px 0;
+	border-radius: 20px;
+}
+
+.main_login_after_group i {
+	font-size: 18px;
+	margin-right: 3px;
+}
+/*--//①-3 main_login_wrap 로그인영역 */
+
+/*------------① main_visual_wrap (메인 비주얼 공지사항, 뉴스, 배너 등 스타일) end------------*/
+
+/*------------② main_table_wrap (메인 코인목록 스타일) start------------*/
+.main_table_wrap {
+	padding: 45px 0;
+}
+.main_table_wrap .coin_chart_tbl {
+	width: 100%;
+}
+
+.main_table_wrap .coin_chart_tbl thead {
+	text-align: left;
+}
+.main_table_wrap .coin_chart_tbl thead > tr {
+	background: #fafafa;
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+}
+.main_table_wrap .coin_chart_tbl thead > tr > th {
+	width: unset;
+	font-weight: 500;
+	padding: 10px 10px;
+	color: #969696;
+	font-size: 12px;
+	text-align:right !important;
+}
+.main_table_wrap .coin_chart_tbl thead > tr > th:nth-child(1) {
+	padding-left: 123px;
+	width: 29% !important;
+	text-align: left !important;
+}
+
+.main_table_wrap .coin_chart_tbl tbody > tr {
+	border-bottom: 1px solid #e6e6e6;
+}
+.main_table_wrap .coin_chart_tbl tbody > tr:last-child {
+	border-bottom: 0;
+}
+.main_table_wrap .coin_chart_tbl tbody > tr > td {
+	border: 0;
+	text-align: left !important;
+	vertical-align: middle;
+	position: relative;
+	font-size: 17px;
+	color: #5d5d5d;
+	padding: 15px 10px;
+	text-align: right !important;
+}
+.main_table_wrap .coin_chart_tbl tbody > tr > td:nth-child(1) {
+	width: 29%;
+	padding: 10px 0 10px 125px;
+	text-align: left !important;
+}
+.main_table_wrap .coin_chart_tbl tbody > tr > td.coin_td .coin_symbol {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 26px;
+	left: 92px;
+}
+
+.main_table_wrap .coin_chart_tbl tbody > tr > td.coin_td .coin_name_eng, .main_table_wrap .coin_chart_tbl tbody > tr > td.coin_td .coin_name {
+	width: unset;
+}
+.main_table_wrap .coin_chart_tbl tbody > tr > td.coin_td .coin_name {
+	font-size: 17px;
+	letter-spacing: -1px;
+}
+.main_table_wrap .coin_chart_tbl tbody > tr > td.coin_td .coin_name_eng {
+	font-size: 10px;
+	padding-left: 10px;
+}
+.main_table_wrap .coin_chart_tbl tbody > tr > td .currency {
+	font-size: 13px;
+}
+
+/* 0403 USDC마켓, BTC마켓, ETH마켓 탭 추가 시작 */
+
+.main_chart_top_tab ul{
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+.main_chart_top_tab ul li{
+    text-align: center;
+    width: 49.5%;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.08);
+    border: 1px solid #dddddd;
+    font-weight: bold;
+    color: #474846;
+    border-radius: 5px;
+}
+
+.main_chart_top_tab ul li label{
+	width: 100%;
+	height: 100%;
+	padding: 9px 0;
+	display: inline-block;
+    cursor: pointer;
+}
+
+.main_chart_top_tab ul li label:active{
+	background: #f7f7f7;
+}
+
+.main_chart_2,
+.main_chart_3,
+.main_chart_4{
+	display: none;
+}
+
+.main_chart_top_tab ul li.active{
+    border: 4px solid #00b9ff;
+}
+
+#usdcmarket_check:checked ~ .main_chart_1{
+	display: table;
+}
+
+#usdcmarket_check:checked ~ .main_chart_2,
+#usdcmarket_check:checked ~ .main_chart_3,
+#usdcmarket_check:checked ~ .main_chart_4{
+	display: none;
+}
+
+#btcmarket_check:checked ~ .main_chart_2{
+	display: table;
+}
+
+#btcmarket_check:checked ~ .main_chart_1,
+#btcmarket_check:checked ~ .main_chart_3,
+#btcmarket_check:checked ~ .main_chart_4{
+	display: none;
+}
+
+#ethmarket_check:checked ~ .main_chart_3{
+	display: table;
+}
+
+#ethmarket_check:checked ~ .main_chart_1,
+#ethmarket_check:checked ~ .main_chart_2,
+#ethmarket_check:checked ~ .main_chart_4{
+	display: none;
+}
+
+#krwmarket_check:checked ~ .main_chart_4{
+	display: table;
+}
+
+#krwmarket_check:checked ~ .main_chart_1,
+#krwmarket_check:checked ~ .main_chart_2,
+#krwmarket_check:checked ~ .main_chart_3{
+	display: none;
+}
+
+/* 0403 USDC마켓, BTC마켓, ETH마켓 탭 추가 끝 */
+
+/*------------② main_table_wrap (메인 코인목록 스타일) end------------*/
+
+/*------------② main_section_wrap_1 (메인 거래소 소개 섹션 스타일) start------------*/
+.main_section_wrap_1 {
+	width: 100%;
+	height: 544px;
+	background: #0172ff;
+}
+.main_section_wrap_1 .width_align {
+	position: relative;
+	height: 100%;
+}
+
+.main_section_wrap_1 .width_align .mockup_img_wrap{
+	float: left;
+    width: 45%;
+    position: relative;
+}
+
+.main_section_wrap_1 .width_align .allcoinwallet_mockup_01{
+	width: 71%;
+    position: absolute;
+    top: 97px;
+    left: 27%;
+    z-index: 2;
+}
+
+.main_section_wrap_1 .width_align .allcoinwallet_mockup_02{
+	width: 71%;
+    position: absolute;
+    top: 123px;
+    left: 8%;
+    z-index: 1;
+}
+
+.main_section_wrap_1 .main_img1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35%;
+}
+.main_section_wrap_1 .text_box {
+	padding-left: 550px;
+	width: 100%;
+	height: 100%;
+	padding-top: 120px;
+	position: relative;
+	font-size: 13px;
+	color: #fff;
+	text-align:right;
+}
+
+.main_section_wrap_1 .text_box .acw_download_btn{
+	margin: 20px 0;
+}
+
+.main_section_wrap_1 .text_box .acw_download_btn button{
+	width: 100px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #fff;
+	color: #fff;
+	vertical-align: middle;
+	margin:0 0.5%;
+	cursor:pointer;
+}
+
+.main_section_wrap_1 .text_box .acw_download_btn button img{
+	width:100%;
+	height:100%;
+}
+
+.main_section_wrap_1 .text_box h1 {
+	font-family: 'Noto Sans Korean', sans-serif;
+	font-weight: 300;
+	font-size: 31px;
+	color: #fff;
+	letter-spacing: -2px;
+	line-height: 44px;
+	margin-bottom: 20px;
+}
+.main_section_wrap_1 .text_box h1 b {
+	color: #fff;
+	font-weight: 900;
+}
+/*------------② main_section_wrap_1 (메인 거래소 소개 섹션 스타일) end------------*/
+
+/*------------② main_section_wrap_2 (메인 거래소 장점 세가지 스타일) start------------*/
+.main_section_wrap_2 {
+	width: 100%;
+	padding: 85px 0;
+}
+.main_section_wrap_2 .sharebits_advan_ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.main_section_wrap_2 .sharebits_advan_ul li {
+	width: 33%;
+	text-align: center;
+	color: #646464;
+	font-size: 13px;
+}
+.main_section_wrap_2 .sharebits_advan_ul li .icon {
+	display: block;
+	background-color: #ebebeb;
+	width: 128px;
+	height: 128px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 52%;
+}
+
+.main_section_wrap_2 .sharebits_advan_ul li:nth-child(1) .icon {
+	background-image: url(/storage/image/homepage/main/icon_01_pg.svg);
+}
+.main_section_wrap_2 .sharebits_advan_ul li:nth-child(2) .icon {
+	background-image: url(/storage/image/homepage/main/icon_02_cold.svg);
+}
+.main_section_wrap_2 .sharebits_advan_ul li:nth-child(3) .icon {
+	background-image: url(/storage/image/homepage/main/icon_03_ui.svg);
+}
+
+.main_section_wrap_2 .sharebits_advan_ul li .sub_txt {
+	display: inline-block;
+	margin: 15px 0 7px;
+}
+.main_section_wrap_2 .sharebits_advan_ul li h2 {
+	font-family: 'Noto Sans Korean', sans-serif;
+	letter-spacing: -0.5px;
+	font-size: 23px;
+	color: #072b98;
+	font-weight: bold;
+}
+.main_section_wrap_2 .sharebits_advan_ul li h2 span {
+	font-weight: 400;
+	font-size: 20px;
+}
+/*------------② main_section_wrap_2 (메인 거래소 장점 세가지 스타일) end------------*/
+
+/*------------② main_section_wrap_3 (메인 거래소 회원가입 권유 섹션 스타일) start------------*/
+.main_section_wrap_3 {
+	background: #282828;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+.main_section_wrap_3 .title {
+	font-size: 31px;
+	font-family: 'Noto Sans Korean', sans-serif;
+	font-weight: 300;
+	letter-spacing: -1px;
+	line-height: 40px;
+}
+.main_section_wrap_3 .title b {
+	font-weight: 900;
+	color: #00b9ff;
+}
+.main_section_wrap_3 .sub_txt {
+	font-weight: 300;
+	padding: 20px 0 25px;
+	font-size: 13px;
+}
+.main_section_wrap_3 .direct_btn {
+	width: 130px;
+    color: #282828;
+    font-size: 13px;
+    border-radius: 30px;
+    padding: 7px 0;
+    transition: all .2s;
+    background: rgba(0,185,255,1);
+    border: 1px solid rgba(0,185,255,0.7);
+    display: inline-block;
+}
+.main_section_wrap_3 .direct_btn:hover {
+	background: rgba(0,185,255,0.8);
+	transition: all .2s;
+}
+.main_section_wrap_3 .direct_btn:active {
+	box-shadow: inset 0 3px 7px rgba(0,0,0,0.3);
+	transition: all .2s;
+}
+/*------------② main_section_wrap_3 (메인 거래소 회원가입 권유 섹션 스타일) end------------*/
+
+/*------------------------MAIN 메인페이지 스타일 END------------------------*/
+
+/* ------------------------ 191025 hj interaction ------------------------ */
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_right{
+    position: relative;
+}
+
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_right .deco_star{
+    position: absolute;
+    animation-name: decoStarAni;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_right .deco_star--1st{
+    top: -160px;
+    left: 70px;
+}
+
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_right .deco_star--2nd{
+    left: 225px;
+    z-index: 1;
+    top: -35px;
+    animation-delay: 0.2s;
+}
+
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_right .deco_star--3rd{
+    right: -65px;
+    bottom: -55px;
+}
+
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_right .deco_star--4th{
+    right: -100px;
+    top: 110px;
+    animation-delay: 0.2s;
+}
+
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_right .deco_star--5th{
+    right: -20px;
+    z-index: 1;
+    top: -40px;
+}
+
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_right .deco_star--6th{
+    bottom: -200px;
+    left: 185px;
+    animation-delay: 0.2s;
+}
+
+@keyframes decoStarAni{
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-17px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+#main_page_wrapper .main_bg .main1_contents_wrap .main_contetns .main_left>.detail_btn button:hover {
+    background-color: #52CAFF;
+    color: white;
+    transition: all 0.4s;
+}
+
+/* ------------------------ end 191025 ------------------------ */

@@ -1,0 +1,1000 @@
+/* ----------start 모바일버전 마이페이지 스타일---------- */
+
+/* 공통속성 */
+.m_mypage_wrap{
+    height: calc(100% - 40px);
+}
+
+.mypage_msg_alarm{
+    border-bottom: 1px solid #dcdcdc;
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    font-size: 0.95rem;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+}
+
+
+.mypage_msg{
+    font-size: 0.85rem;
+    color: #333;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    background-color: #F8F8F8;
+    padding: 15px 0;
+    margin: 30px auto 40px auto;
+    width: 90%;
+}
+
+.lv_certifi_after{
+    text-align: center;
+}
+
+.m_mypage_wrap-2 .big_tit,
+.m_mypage_wrap-lvup .big_tit{
+    font-size: 0.9rem;
+}
+
+.m_mypage_wrap-2 .complit_icon,
+.m_mypage_wrap-lvup .complit_icon{
+    width: 80px;
+}
+
+
+/* //공통속성 */
+
+/* ----------알림설정---------- */
+.m_mypage_wrap-1{
+    padding-bottom: 50px;
+}
+
+.m_mypage_wrap-1 .alarm_div{
+    font-size: 0.9rem;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    padding: 20px;
+}
+
+.m_mypage_wrap-1 .alarm_div .alarm_group{
+    display: inline-block; float: right;
+}
+
+.m_mypage_wrap-1 .abslt_btn,
+.m_mypage_wrap-4 .abslt_btn{
+    background: #333;
+}
+
+/* ----------//알림설정---------- */
+
+/* 보안인증 start */
+
+.m_mypage_wrap-lvup {
+    padding: 20px 75px;
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.m_mypage_wrap-lvup .mobile_certify_code_wrap{
+    text-align: left;
+}
+
+.m_mypage_wrap-lvup .mobile_certify_code_wrap .certifi_form_input{
+    width: 98%;
+}
+
+@media all and (max-width: 610px){
+    
+    .m_mypage_wrap-lvup{
+        width: 100%;
+        padding: 15px 20px;
+        padding-bottom: 30px
+    }
+    
+    .security_set_group .certifi_form_group{
+        flex-wrap: wrap;
+    }
+    
+    .certifi_form_group .certifi_form_input{
+        margin-right: 0 !important;
+    }
+    
+    .m_mypage_wrap-lvup .mobile_certify_code_wrap .certifi_form_input{
+        width: 100%;
+    }
+    
+}
+
+.m_mypage_wrap-lvup .title{
+    line-height: 25px;
+    font-size: 0.8rem;
+    font-size: 0.75rem;
+    color: #787878;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.security_set_group .boan_level_wrap{
+    display: block;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con{
+    width: 95px;
+    height: 95px;
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 55px 0 30px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 31%;
+    background-size: 20px;
+    position: relative;
+    font-size: 0.75rem;
+    color: #a0a0a0;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1){
+    background-image: url(/storage/image/homepage/icon/level_icon1_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(2){
+    background-image: url(/storage/image/homepage/icon/level_icon2_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .second.boan_level_con:nth-child(1){
+    background-image: url(/storage/image/homepage/icon/level_icon3_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .second.boan_level_con:nth-child(2){
+    background-image: url(/storage/image/homepage/icon/level_icon4_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con.active{
+    color: #333;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.2);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1).active{
+    background-image: url(/storage/image/homepage/icon/level_icon1_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(2).active{
+    background-image: url(/storage/image/homepage/icon/level_icon2_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .second.boan_level_con:nth-child(1).active{
+    background-image: url(/storage/image/homepage/icon/level_icon3_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .second.boan_level_con:nth-child(2).active{
+    background-image: url(/storage/image/homepage/icon/level_icon4_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .info_list {
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.75rem;
+    color: #787878;
+    text-align: left;
+}
+
+.mypage_inner .complit_icon{
+    width: 105px;
+}
+
+.resend_btn{
+    width: 100px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 3px 0;
+}
+
+
+.indiv_info_confirm{
+    text-align: left;
+}
+
+.certi_confirm_box{
+    width: 100%;
+    height: 120px;
+    padding: 15px 10px 10px 10px;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 10px;
+    position: relative;
+    color:#fff;
+}
+
+.certi_confirm_box:hover{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: 1px solid #00B9FF;
+}
+
+.certi_main_txt{
+    font-size: 1.09rem;
+    line-height: 1.5;
+    letter-spacing: -0.72px;
+    color: #333333;
+}
+
+.certi_sub_txt{
+	font-family: 'Spoqa Han Sans Light';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.46;
+    letter-spacing: -0.48px;
+    color: #969696;
+    margin: 0.3rem 0 1.2rem 0;
+}
+
+.indiv_info{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.security_change_btn{
+    outline: 0;
+    border:0;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    background-color: #333;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px; 
+    letter-spacing: -0.52px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.security_change_btn_success{
+    outline: 0;
+    border: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #DCDCDC;
+    width: 90px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    color: #969696;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/* 보안인증 end */
+
+/* ----------보안강화---------- */
+
+.m_mypage_wrap-2 .mypage_msg{
+    color: #333333;
+}
+
+.m_mypage_wrap-2 .tit{
+    display: inline-block;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.m_mypage_wrap-2 .top_qr_box{
+    background: #f5f5f5;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.m_mypage_wrap-2 .qr_box{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.m_mypage_wrap-2 .qr_box img{
+    width: 100%;
+    height: 100%;
+}
+
+.m_mypage_wrap-2 .otp_div{
+    padding: 15px 20px 20px;
+}
+
+.m_mypage_wrap-2 .otp_setting_group{
+    text-align: center;
+    padding: 0 20px 20px;
+    font-size: 0.75rem;
+}
+
+.m_mypage_wrap-2 .download_btn{
+    text-align: center;
+    font-size: 12px;
+    padding: 0 13px;
+    background: #fff;
+    border: 1px solid #333;
+    color: #333; 
+    outline: none;
+    width: 100%;
+}
+
+.m_mypage_wrap-2 .download_btn b{
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.m_mypage_wrap-2 .download_btn:hover{
+    border-color: #00b9ff;
+    color: #00b9ff;
+    background: #fff;outline: none;
+}
+
+.m_mypage_wrap-2 .small_ment.boxing{
+    font-size: 0.75rem;
+    width: 85%;
+    margin: 0 auto;
+    padding: 11px 15px;
+}
+
+.m_mypage_wrap-2 .small_ment.boxing b{
+    color: #00b9ff;
+}
+
+/* ----------//보안강화---------- */
+
+/* ----------락리워드---------- */
+.btn_lock_back{
+    width: 100%;
+    height: calc(2.5rem + 5px);
+    background-color: #ff6060;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: 'Spoqa Han Sans Bold';
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+}
+
+.btn_unlock_back{
+    width: 100%;
+    height: calc(2.5rem + 5px);
+    background-color: #6498ff;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: 'Spoqa Han Sans Bold';
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+}
+
+.btn_lock_back:hover{
+    background-color: #ff0000;
+}
+
+.btn_unlock_back:hover{
+    background-color: #3075ff;
+
+}
+
+
+
+/* 잠금중-잠금해제중-잠금가능 상태창 */
+.m_mypage_wrap-3 .lock_indicator{
+    background: #f5f5f5;
+    padding: 5px 20px;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul{
+    width: 100%; 
+    height: 100%;
+    display: block;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul li{
+    width: 100%;
+    font-size: 0.75rem;
+    color: #333;
+    height: 30px;
+    line-height: 28px;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul li p{
+    display: inline-block;
+    float: left;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul li .amount_span{
+    float: right;
+    color: #333;
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul li .amount_span .currency{
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding-left: 5px;
+}
+
+/* //잠금중-잠금해제중-잠금가능 상태창 */
+
+/* 코인수량, 잠금-잠금해제 버튼 담은 div */
+.m_mypage_wrap-3 .lock_div{
+    padding: 10px 20px 40px;
+}
+/* //코인수량, 잠금-잠금해제 버튼 담은 div */
+
+/* 코인수량 */
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar label{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar input{
+    width: 100%;
+    font-size: 1rem;
+    border: 0;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: right;
+    padding: 0px 4px 0 80px;
+    outline: none;
+    border-radius: 0;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar input::placeholder{
+    color: #969696;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar input:focus{
+    border-color: #00b9ff;
+    outline: none;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar input.point_b{
+    font-weight: bold;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar select.form-control{
+    width: 25%;
+    text-transform: uppercase;
+}
+/* //코인수량 */
+
+/* 잠금-잠금해제 버튼 */
+.m_mypage_wrap-3 .lock_reward_hd .svgicon{
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    position: relative;
+    left: -4px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .svgicon + span{
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .svgicon.lock_icon{
+	background-image: url(/storage/image/homepage/icon/icon_lock.svg);
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .svgicon.unlock_icon{
+	background-image: url(/storage/image/homepage/icon/unlock.svg);
+}
+/* //잠금-잠금해제 버튼 */
+
+/* 락리워드 내역 */
+.m_mypage_wrap-3 .lock_reward_group .label{
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding: 0 0px 5px 20px;
+    font-size: 0.93rem;
+    font-weight: bold;
+}
+
+.m_mypage_wrap-3 .lock_reward_group .lock_history_tab{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    margin: 13px 0;
+}
+
+.m_mypage_wrap-3 .lock_reward_group .lock_history_tab ul{
+    width: 100%; height: 100%;
+}
+
+.m_mypage_wrap-3 .lock_history_tab li {
+    width: 49%;
+    border: 1px solid #dcdcdc;
+    float: left;
+    height: 100%;
+    line-height: 40px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.mr_space{
+    margin-right: 2%;
+}
+
+.m_mypage_wrap-3 .lock_history_tab li.active{
+    border-color: #00B9FF;
+}
+
+.m_mypage_wrap-3 .lock_history_table .table_label{
+    border: 1px solid #dcdcdc;
+    border-right: 0;
+    border-left: 0;
+}
+
+.m_mypage_wrap-3 .lock_history_table .table_label thead > tr > th{
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: -0.48px;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_1 .table_label thead > tr > th:nth-child(1),
+.m_mypage_wrap-3 .lock_history_table.table_1 .table_label thead > tr > th:nth-child(2){
+    width: 30%;
+}
+.m_mypage_wrap-3 .lock_history_table.table_1 .table_label thead > tr > th:nth-child(3){
+    width: 40%;
+}
+
+.m_mypage_wrap-3 .lock_history_table .coin_chart_tbl tbody > tr:last-child{
+    border-color: #dcdcdc;
+}
+
+.m_mypage_wrap-3 .lock_history_table .coin_chart_tbl tbody > tr > td{
+    text-align: center;
+    color: #333;
+    padding: 15px 0;
+    font-size: 0.73rem;
+    letter-spacing: -0.6px;
+    font-weight: 300;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(1),
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    width: 30%;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(3){
+    width: 40%;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr.lock_status > td:nth-child(1){
+    font-weight: bold;
+    color: #ff6060;
+}
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr.unlock_status > td:nth-child(1){
+    font-weight: bold;
+    color: #6498ff;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_2 .table_label thead > tr > th:nth-child(1),
+.m_mypage_wrap-3 .lock_history_table.table_2 .table_label thead > tr > th:nth-child(2){
+    width: 50%;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(1),
+.m_mypage_wrap-3 .lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    width: 50%;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    border-right: 1px solid #dcdcdc;
+}
+
+.m_mypage_wrap-3 .lock_history_table .coin_chart_tbl tr:nth-child(even){
+    background: transparent;
+}
+
+
+
+.lock_icon_notice{
+    vertical-align: top;
+}
+
+
+/* //락리워드 내역 */
+
+/* ----------//락리워드---------- */
+
+/* ----------비밀번호 변경---------- */
+.m_mypage_wrap-4{
+    padding: 0 20px;
+}
+
+.info_change_tit{
+    font-size: 0.95rem;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #333;
+    padding: 1.5rem 20px 0 20px;
+}
+
+.password_space{
+    margin: 1rem 0 2rem 0;
+}
+
+
+
+
+/* ----------//비밀번호 변경---------- */
+
+/* ----------보안인증 팝업 스타일---------- */
+
+.popup_page{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    padding: 50px 20px 20px;
+    text-align: center;
+    transition:all 600ms cubic-bezier(0.86,0,0.07,1);
+}
+
+/* 팝업창 밑에서 올라오게하는 스타일 */
+.popup_page.popup_open{
+    top:0;
+}
+
+.mypage_sc_popup_hd {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 15px;
+}
+
+.mypage_sc_popup_title {
+    font-size: 25px;
+    color: #496582;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+}
+
+.mypage_sc_popup_ment {
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.mypage_sc_popup_con{
+    width: 100%;
+}
+
+.popup_page .btn_style {
+    background-color: #f0f0f0;
+    color: #969696;
+}
+
+.popup_page .mypage_sc_popup_con .modal_content .btn_style:hover,
+.popup_page .mypage_sc_popup_con .modal_content .btn_style:active
+ {
+    color: #00b9ff;
+    border: 1px solid #00b9ff;
+    background: transparent;
+}
+
+/* 계좌인증 팝업창 컨텐츠 스타일 */
+.popup_page .mypage_sc_popup_con,
+.popup_page .mypage_sc_popup_con .modal_content{
+    text-align: left;
+}
+
+.popup_page .certify_label{
+    font-size:13px;
+    display:block;
+}
+
+.popup_page input[name="pop_bank_check"]:checked ~ .bank_view {
+    max-height: 700px;
+    transition: max-height 0.2s;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.popup_page .bank_label {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 15px;
+    letter-spacing: -0.96px;
+    width: 41%;
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    background-size: initial;
+    background-position: 90% 55%;
+    background-repeat: no-repeat;
+    background-image: url(/images/arrow_down.png);
+    cursor: pointer;
+    color: #dcdcdc;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.popup_page .bank_label em{
+    font-style: normal;
+}
+
+.popup_page .bank_coin_name {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    font-weight: 600;
+}
+
+.popup_page .bank_view {
+    max-height: 0;
+    transition: max-height 0.2s;
+    position: absolute;
+    top: 234px;
+    left: 21px;
+    width: 36.5%;
+    background-color: #fff;
+    z-index: 3;
+    overflow-y: scroll;
+    height: calc(48px * 4);
+}
+
+.popup_page .bank_view::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.popup_page .bank_view::-webkit-scrollbar-button:start:decrement,
+.popup_page .bank_view::-webkit-scrollbar-button:end:increment {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url() transparent;
+}
+.popup_page .bank_view::-webkit-scrollbar-track {
+    background: transparent;
+}
+.popup_page .bank_view::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.popup_page .bank_view li {
+    padding: 14px;
+    height: 48px;
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-family: 'Spoqa Han Sans Light';
+    letter-spacing: -0.72px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.popup_page .bank_view li:hover {
+    background-color: rgba(0, 185, 255, 0.15)
+}
+
+.popup_page .pop_division {
+    border: 0.5px solid #dcdcdc;
+    width: 100%;
+    display: block;
+}
+
+.popup_page .pop_checking_sub {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.popup_page .act_number_box .certifi_line{
+    width: 72%;
+    display: inline-block;
+}
+
+.popup_page .act_number_box .number_space{
+    width: 24%;
+}
+
+.popup_page .file_btn_style {
+    border:0;
+    -webkit-appearance: button;
+    color: #fff;
+    background-color: #333;
+    padding: 11px 10px;
+    font-size: 13px;
+    width: 100%;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+
+/* 계좌번호 불일치 시 폰트 스타일 */
+.popup_page .ment .pw_no {
+    font-size: 0.8rem;
+    color: #ff6060;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+}
+
+ /* 계좌 인증번호 전송 전 버튼  */
+ .popup_page .modal_content .btn_sending{
+    border: 1px solid #00b9ff;
+    background-color: transparent;
+    color: #00b9ff;
+ }
+
+ .popup_page .modal_content .btn_sending.btn_certi_before{
+    background: #f0f0f0;
+    color: #969696;
+    border: 0;
+}
+
+/* 신분증 인증 팝업창 컨텐츠 스타일 */
+.popup_page_id .act_number_box .certifi_line{
+    width: 72%;
+    display: inline-block;
+}
+
+.popup_page_id .upload-btn_wrap{
+    position: relative;
+    display: inline-block;
+    width: 26%;
+    height: 40px;
+    padding-left: 3px;
+}
+
+.popup_page_id .upload-btn_wrap input.input_file{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.form-control:disabled, .form-control[readonly]{
+    background-color: #fff;
+}
+
+/* OTP 인증 팝업창 컨텐츠 스타일 */
+.popup_page_otp .qr_code_form {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.popup_page_otp .modal_content{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.popup_page_otp .qr_code_example {
+    padding: 20px;
+    border: 1px solid #00B9FF;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.popup_page_otp .code_number {
+    font-size: 15px;
+    letter-spacing: 0.75px;
+}
+
+.popup_page_otp .mypage_sc_popup_con .btn_copy {
+    color: #333;
+    font-family: 'Spoqa Han Sans Light';
+    background-color: transparent;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 13px;
+    width: 51%;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+
+
+/* 마이페이지 팝업창 닫기 버튼 */
+.popup_page .cancel_btn{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    top:0; right:0;
+    cursor: pointer;
+}
+
+.popup_page .cancel_btn span{
+    width:18px;
+    height:1px;
+    background: transparent;
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-50%, -50%);
+}
+
+.popup_page .cancel_btn span:before,
+.popup_page .cancel_btn span:after{
+    content: '';
+    width:100%;
+    height: 100%;
+    background-color: #333;
+    display: inline-block;
+    position: absolute;
+    left:0;
+}
+
+.popup_page .cancel_btn span:before{
+    transform: rotate(45deg);
+}
+.popup_page .cancel_btn span:after{
+    transform: rotate(-230deg);
+}
+
+
+/* 계좌인증 팝업 */
+.popup_page_account .mypage_sc_popup_hd {
+    height: 100px;
+}
+
+.popup_page_account .mypage_sc_popup_con {
+    height: calc(100% - 90px);
+    overflow-y: scroll;
+}
+
+/* //계좌인증 팝업 */
+
+/* ----------//보안인증 팝업 스타일---------- */
+
+/* ----------end 모바일버전 마이페이지 스타일---------- */

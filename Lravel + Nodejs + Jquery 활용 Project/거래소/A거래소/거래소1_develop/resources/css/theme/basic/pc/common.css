@@ -1,0 +1,844 @@
+/*------------------------COMMON 전체페이지 공통 START------------------------*/
+
+html, body {
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	width: 100%;
+	margin-bottom: -68px;
+	padding-bottom: 68px;
+	margin-top: -55px;
+	padding-top: 55px;
+}
+
+#main_container {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+#wrapper.back_bg{
+	background-image: url(/storage/image/homepage/bg_login.png);
+    background-position: 0 150px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*------------basic style start------------*/
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	color: #555555;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #555555;
+}
+
+.non_data{
+	padding: 20px 0;
+	text-align: center;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.blue {
+	color: #2e4dff;
+}
+
+.point_clr_1{
+	color: #00B9FF;;
+}
+
+.bd-dddd{
+	border: 1px solid #dcdcdc;
+}
+
+body {
+	background-color: #fff;
+}
+
+.hide{
+	display: none;
+}
+
+.pl-120px{
+	padding-left: 120px;
+}
+
+.non_data{
+	padding: 110px 0;
+    text-align: center;
+}
+
+.boxing {
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 11px 0;
+    color: #474846;
+}
+
+.register_pw_alert.ment{
+	text-align: right !important;
+	width: 100%;
+	display: inline-block;
+	font-size: 13px;
+}
+
+.register_pw_alert.ment .pw_no{
+	color: #ff4646;
+}
+
+.register_pw_alert.ment .pw_yes{
+	color: #4378ff;
+}
+
+.table_view_more{
+	width: 100%;
+    height: calc(2.5rem + 2px);
+}
+
+.table_view_more button{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #fff;
+    border: 1px solid #474846;
+    border-radius: 5px;
+    font-size: 13px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.08);
+	outline: none;
+	cursor: pointer;
+}
+
+.table_view_more button:hover{
+	border-color: #00B9FF;;
+}
+
+.table_view_more button:active{
+	background: #f7f7f7;
+}
+
+.none_fas{
+    font-size: 18px;
+    color: #474846;
+}
+
+/*------------basic style end------------*/
+
+/*------------modal popup start------------*/
+
+.form-control{
+	border-color: #dcdcdc;
+}
+
+#fullscreen_modal {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 77, 79, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.modal_popup{
+    width: 520px;
+    padding: 30px;
+    background: #fff;
+    border-top: 10px solid #00B9FF;;
+    border-radius: 5px;
+    box-shadow: 0 5px 13px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 4;
+	transform: translateX(-50%);
+}
+
+.p2p_modal_popup{
+	width: 600px;
+}
+
+.modal_popup h1{
+    font-size: 25px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.modal_popup .form-control{
+	border-color: #dcdcdc;
+}
+
+.modal_popup textarea{
+	resize: none; height: 400px;
+}
+
+.modal_popup .btn_style{
+	background: #48413b;
+	font-size: 13px;
+	box-shadow: none;
+	outline: none;
+}
+
+a.btn_style{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+    height: calc(2.19rem + 2px);
+    line-height: calc(2.19rem + 2px);
+}
+
+/*------------modal popup end------------*/
+
+/*------------pagination start------------*/
+
+.cs_pagination{
+	width: 100%; text-align: center;
+	margin-top: 30px;
+}
+
+.cs_pagination ul{
+	display: inline-block;
+}
+
+.cs_pagination ul li{
+    float: left;
+}
+
+.cs_pagination ul li a{
+    padding: 5px 10px;
+    font-size: 13px;
+    border: 1px solid #dcdcdc;
+}
+
+.cs_pagination ul li a:hover{
+	background: #f7f7f7;
+}
+
+.cs_pagination ul li a:active{
+	background: #e6e6e6;
+}
+
+.cs_pagination ul li.paging_arrow a{
+	border: 0;
+}
+
+.cs_pagination ul li.paging_arrow a i{
+	font-size: 15px;
+	color: black;
+}
+
+.cs_pagination ul li.active a{
+    background: #28283c;
+    border-color: #28283c;
+    color: #00B9FF;;
+}
+
+.cs_pagination ul li.paging_arrow.active a{
+	background: transparent;
+	border-color: transparent;
+	color: black;
+}
+
+/*------------pagination end------------*/
+
+/* pagination new */
+.pagination{
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    height: 35px;
+}
+.pagination li {
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+.page-item.active .page-link {
+    background-color: #28283c;
+    border-color: #28283c;
+}
+
+.page-link {
+    color: #969696;
+    text-align: center;
+    padding: 0.4rem;
+}
+/* pagination end */
+
+/*------------scrollbar style start------------*/
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #969696;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555555;
+}
+
+/*------------scrollbar style end------------*/
+
+/*------------input[type="checkbox"] grayCheckbox style start------------*/
+
+.grayCheckbox {
+	width: 12px;
+	height: 12px;
+	position: relative;
+	transition: all .3s;
+}
+
+.grayCheckbox:checked::after {
+	content: '';
+	position: absolute;
+	background-image: url(/storage/image/homepage/icon/graycheckbox-02.svg);
+	background-size: 110%;
+	background-color: #dcdcdc;
+	background-position: center;
+	transition: all .3s;
+	border: 2px solid #dcdcdc;
+	width: 20px;
+	height: 20px;
+	top: -3px;
+	left: -3px;
+}
+
+.grayCheckbox::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 2px solid #dcdcdc;
+	border-radius: 50%;
+	transition: all .3s;
+	background-size: 115%;
+}
+
+/*------------input[type="checkbox"] grayCheckbox style end------------*/
+
+/*------------jconfirm alert plugin style start------------*/
+
+.jconfirm.jconfirm-my-theme .jconfirm-bg {
+	background-color: #3a4d4f;
+	opacity: .2;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box div.jconfirm-title-c {
+	text-align: center;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box {
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.jconfirm.jconfirm-my-theme.jconfirm-open .jconfirm-box .jconfirm-title-c {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-title-c {
+	transition: transform .5s, -webkit-transform .5s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	color: #00B9FF !important;
+	font-size: 40px;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content {
+	text-align: center;
+	font-size: 14px;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons {
+	text-align: center;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button {
+	background: #dcdcdc;
+	color: rgba(255,255,255,0.8);
+	padding: 4px 25px;
+	text-transform: uppercase;
+	font-family: "Nunito", sans-serif;
+	font-weight: bold;
+}
+
+/*------------jconfirm alert plugin style end------------*/
+
+/*------------coin chart 코인 목록 테이블 공통스타일 start------------*/
+
+.ta_coin_list_wrap, .coin_chart_tbl, .table_label {
+	width: 100%;
+}
+
+.table_label thead > tr > th:nth-child(1), .ta_coin_list_wrap .coin_chart_tbl tbody > tr > td:nth-child(1) {
+	width: 30%;
+}
+
+.table_label thead > tr > th:nth-child(2), .ta_coin_list_wrap .coin_chart_tbl tbody > tr > td:nth-child(2) {
+	width: 20%;
+}
+
+.table_label thead > tr {
+	text-align: center;
+}
+
+.coin_chart_tbl .table_label thead > tr, .ta_coin_list_wrap .table_label thead > tr, .history_con_wrap .table_label thead > tr {
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.table_label thead > tr > th {
+	font-size: 12px;
+	color: #969696;
+	padding: 4px 0;
+	font-weight: 500;
+}
+
+.coin_chart_tbl tbody > tr {
+	border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+}
+
+.coin_chart_tbl tbody > tr:hover {
+	background: #fafafa;
+}
+
+.coin_chart_tbl tbody > tr:active {
+	background: #efefef;
+}
+
+.coin_chart_tbl tbody > tr > td {
+	vertical-align: middle;
+	font-size: 13px;
+	letter-spacing: 0;
+	position: relative;
+}
+
+.coin_chart_tbl tbody > tr > td.coin_td {
+	position: relative;
+	padding-left: 35px;
+	padding: 10px 0 10px 45px;
+	text-align: left;
+}
+
+.coin_chart_tbl tbody > tr > td.coin_td .coin_symbol {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 11px;
+	left: 18px;
+}
+
+.coin_chart_tbl tbody > tr > td.coin_td .coin_name {
+	width: 100%;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.coin_chart_tbl tbody > tr > td.coin_td .coin_name_eng, .coin_chart_tbl tbody > tr > td:nth-child(3) .usdc_eng_line {
+	text-transform: uppercase;
+	width: 100%;
+	display: inline-block;
+	font-size: 12px;
+	color: #7f7f7f;
+	letter-spacing: .5px;
+}
+
+.coin_chart_tbl tbody > tr > td .currency {
+	color: #969696;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+
+.coin_chart_tbl .status_btn {
+	letter-spacing: 0;
+	border: 0;
+	background: transparent;
+	color: #dcdcdc;
+	font-size: 11px;
+	padding: 8px 17px;
+	border-radius: 5px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	background: #dcdcdc;
+	color: #fff;
+	padding: 8px 0;
+	width: 80px;
+    text-transform: uppercase;
+}
+
+.coin_chart_tbl .status_btn:active {
+	background: #000000;
+}
+
+.coin_chart_tbl .inout_btn {
+	background: transparent;
+	color: #dcdcdc;
+}
+
+.coin_chart_tbl .inout_btn.status_btn:active {
+	background: transparent;
+	color: #000000;
+}
+
+/* 거래내역 존재하지 않을 때 */
+.coin_chart_tbl tbody > tr.none_transac > td{
+	padding: 20px 0;
+	text-align: center;
+}
+
+.none_transac{
+	padding: 20px 0;
+	text-align: center;
+	font-size: 13px;
+	width: 100%;
+}
+/* 거래내역 존재하지 않을 때 */
+
+/*------------coin chart 코인 목록 테이블 공통스타일 end------------*/
+
+/* ------------장외거래, ICO, 고객센터 게시판 공통스타일 start------------ */
+
+.board_st_wrap{
+	width: 100%;
+	position: relative;
+}
+
+.board_st_wrap .board_st_inner{
+	max-width: 1250px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+	padding: 15px 0;
+}
+
+.board_st_wrap .board_st_inner .board_st_con{
+	width: 98%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.board_st_wrap .board_st_con .left_con{
+    background: #fff;
+    position: relative;
+    width: 20%;
+}
+
+.board_st_wrap .board_st_inner .left_tit{
+    width: 100%;
+    padding: 0 0 15px 15px;
+    border-bottom: 1px solid #dcdcdc;
+    color: #474846;
+    font-size: 14px;
+    
+    font-weight: 500;
+}
+
+.board_st_wrap .list_tab_ul li{
+    cursor: pointer;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 14px;
+    border: 1px solid #c8c8c8;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.08);
+    border-radius: 5px;
+    margin: 8px 0;
+    background: #fff;
+    
+	transition: all 0.2s;
+}
+
+.board_st_wrap .list_tab_ul li:hover{
+	background: #f7f7f7;
+	transition: all 0.2s;
+}
+
+.board_st_wrap .list_tab_ul li:active{
+	background: #f1f1f1;
+}
+
+.board_st_wrap .list_tab_ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    color: #474846;
+}
+
+.board_st_wrap .list_tab_ul li i{
+    font-size: 23px;
+    float: right;
+    color: #00B9FF;;
+}
+
+.board_st_wrap .list_tab_ul li.active{
+    border: 1px solid #48413b;
+    background: #48413b;
+}
+
+.board_st_wrap .list_tab_ul li.active a{
+    color: #ffffff;
+}
+
+.board_st_wrap .board_st_con .right_con{
+    position: relative;
+    width: 75%;
+}
+
+.board_st_wrap .main_tit{
+    width: 100%;
+    font-size: 32px;
+    color: #474846;
+    padding: 0 15px 15px;
+    
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.board_st_wrap .board_st_con .tab_menu_bar{
+	height: 45px;
+	position: relative;
+}
+
+.board_st_wrap .write_btn_st {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 6px 17px;
+    border: 1px solid #555555;
+    line-height: 1.5;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.08);
+	color: black;
+}
+
+.board_st_wrap .write_btn_st:hover{
+	background: #f7f7f7;
+}
+
+.board_st_wrap .write_btn_st:active{
+    background: #eaeaea;
+}
+/* 장외거래, ICO, 자주묻는 질문의 질문유형 분류탭메뉴 스타일 start */
+
+.board_st_wrap .tab_menu_bar ul{
+    height: 100%;
+}
+
+.board_st_wrap .tab_menu_bar ul li {
+    padding: 0 25px;
+    text-align: center;
+    font-size: 14px;
+    
+    font-weight: 400;
+    color: #474846;
+    cursor: pointer;
+    float: left;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.board_st_wrap .tab_menu_bar ul li.active{
+	border-bottom: 3px solid #00B9FF;;
+}
+
+.board_st_wrap .tab_menu_bar ul li a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+    padding: 10px 0;
+}
+
+.board_st_wrap .tab_menu_bar ul li:hover{
+	background: #f7f7f7;
+}
+
+.board_st_wrap .tab_menu_bar ul li:active{
+	background: #f1f1f1;
+}
+
+/* 장외거래, ICO, 자주묻는 질문의 질문유형 분류탭메뉴 스타일 end */
+
+/* ------------장외거래, ICO, 고객센터 게시판 공통스타일 end------------ */
+
+/* ------------note_label (내역 조회기간 선택 스타일) start------------ */
+
+/* 내자산의 테이블라벨 공통스타일 */
+.note_label {
+	background: #f5f5f5;
+	text-align: left;
+	font-size: 12px;
+	color: #969696;
+	border: 1px solid #dcdcdc;
+	border-bottom: 0;
+	padding: 15px;
+	position: relative;
+}
+
+.note_label > .type_sort_slt {
+	color: #969696;
+	width: 80px;
+	border-radius: 5px;
+    float: right;
+	height: 30px;
+	outline: none;
+    width: 100px;
+    padding: 0 5px;
+}
+/* //내자산의 테이블라벨 공통스타일 */
+
+/* 내역 조회기간 스타일 */
+.history_con .note_label > .type_sort_slt:focus{
+	border-color: #00B9FF;;
+}
+
+.history_con .increase_btn_group,
+.history_con .period_sch_group,
+.history_con .coin_sch_group{
+	display: inline-block;
+}
+
+.history_con .note_label .btn_style {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #474846;
+	box-shadow: none;
+	outline: none;
+}
+
+.history_con .note_label .increase_btn_group .btn_style{
+	background: #fff;
+	color: #474846;
+}
+
+.history_con .note_label .increase_btn_group .btn_style:active{
+	border-color: #00B9FF;;
+	color: #00B9FF;;
+}
+
+.history_con .period_sch_group{
+	color: #474846;
+}
+
+.history_con .period_sch_group .period_sch_input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    outline: 0;
+    color: #474846;
+    background-image: url(/storage/image/homepage/icon/calender_icon.svg);
+    background-size: 19px;
+    background-position: 120px 5px;
+    background-repeat: no-repeat;
+    width: 150px;
+    padding: 0 8px;
+}
+
+.history_con .period_sch_group .period_sch_input:focus{
+	border-color: #00B9FF;;
+}
+
+.history_con .period_sch_group label{
+	font-size: 10px; 
+}
+
+.history_con .coin_sch_group input{
+    height: 30px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    width: 140px;
+    padding: 0 30px 0px 7px;
+    background: url(/storage/image/homepage/icon/sch_icon.svg) no-repeat 115px center;
+    background-color: #fff;
+	background-size: 14px;
+	outline: none;
+}
+
+.history_con .coin_sch_group input:focus{
+	border-color: #00B9FF;;
+}
+/* //내역 조회기간 스타일 */
+
+.posi_wrap{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 5;
+	width:100%;
+	height:100%;
+	display: table;
+}
+
+.posi_wrap>div{
+	display: table-cell;
+	vertical-align: middle;
+    text-align: center;
+}
+
+#loading {
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #00B9FF;;
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+  }
+
+/* ------------note_label (내역 조회기간 선택 스타일) end------------ */
+
+/*------------responsive 반응형------------*/
+
+@media all and (max-width: 1080px){
+	
+	html,body{
+		width: 1080px;
+	}
+	
+}
+
+/*------------//responsive 반응형------------*/
+
+/*------------------------COMMON 전체페이지 공통 END------------------------*/
+
+.btn_notice{
+	margin-right: 0.5rem;
+    vertical-align: top;
+}
+
+
+
+
+
+

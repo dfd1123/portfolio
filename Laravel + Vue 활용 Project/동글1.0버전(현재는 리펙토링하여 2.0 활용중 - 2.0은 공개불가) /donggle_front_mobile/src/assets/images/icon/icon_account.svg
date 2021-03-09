@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a134e8"/>
+      <stop offset="1" stop-color="#fc4ead"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_account" transform="translate(-1255 -522)">
+    <circle id="타원_87" data-name="타원 87" cx="25" cy="25" r="25" transform="translate(1255 522)" fill="url(#linear-gradient)"/>
+    <g id="icon_account-on" transform="translate(1265 536)">
+      <g id="그룹_402" data-name="그룹 402" transform="translate(0 0)">
+        <path id="패스_62" data-name="패스 62" d="M28.546,18.15l.64,10.965c0,.276-.364.492-.822.492H2.072c-.452,0-.822-.222-.822-.492L1.89,18.15" transform="translate(-1.25 -6.76)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <line id="선_187" data-name="선 187" x2="20.772" transform="translate(3.579 15.872)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="패스_63" data-name="패스 63" d="M28.852,12.31c0,.283-.364.505-.822.505H3.012c-.452,0-.822-.229-.822-.505V1.755c0-.276.364-.505.822-.505H28.03c.452,0,.822.229.822.505Z" transform="translate(-1.556 -1.25)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <line id="선_188" data-name="선 188" x2="10.939" transform="translate(3.828 4.03)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <line id="선_189" data-name="선 189" x2="4.374" transform="translate(3.828 7.461)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+      <g id="그룹_403" data-name="그룹 403" transform="translate(19.242 4.576)">
+        <path id="패스_60" data-name="패스 60" d="M34.106,20.7a7.653,7.653,0,1,1-7.65-7.656A7.65,7.65,0,0,1,34.106,20.7Z" transform="translate(-18.8 -13.04)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+      <path id="패스_64" data-name="패스 64" d="M25.43,20.47l1.705,5.3,1.705-5.21,1.436,5.21,1.53-5.122" transform="translate(-1.72 -10.886)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="선_190" data-name="선 190" x1="7.09" transform="translate(23.353 12.233)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

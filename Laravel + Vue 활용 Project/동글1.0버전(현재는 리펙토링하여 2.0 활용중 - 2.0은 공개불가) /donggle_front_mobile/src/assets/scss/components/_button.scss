@@ -1,0 +1,505 @@
+/*
+    COMPONENT - donggle button set
+*/
+
+.dg-btn_line {
+  display: inline-block;
+  border: 1px solid $gray;
+  background: #fff;
+  &:hover {
+    background-color: darken($color: $white, $amount: 4%);
+  }
+}
+.dg-btn {
+  display: block;
+  background: $black;
+  color: $white;
+  -webkit-text-shadow: none;
+  -webkit-text-stroke: 0;
+  border: none;
+  outline: none;
+}
+.dg-btn_gra {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background: none;
+  color: $white;
+  -webkit-text-shadow: none;
+  -webkit-text-stroke: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+.dg-btn_gra::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 200%;
+  height: 100%;
+  background: -moz-linear-gradient(
+    left,
+    rgba(161, 52, 232, 1) 0%,
+    rgba(252, 78, 173, 1) 50%,
+    rgba(161, 52, 232, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(161, 52, 232, 1) 0%,
+    rgba(252, 78, 173, 1) 50%,
+    rgba(161, 52, 232, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(161, 52, 232, 1) 0%,
+    rgba(252, 78, 173, 1) 50%,
+    rgba(161, 52, 232, 1) 100%
+  );
+  z-index: -1;
+  transition: all 0.3s;
+}
+@media all and (min-width: 1024px){
+  .dg-btn_gra:hover:before {
+    left: -100%;
+  }
+}
+
+.dg-btn_gra:active:before{
+  left: -100%;
+}
+
+//닫기버튼
+._close_btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-indent: -9999px;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%) rotate(45deg);
+    width: 2px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: $black;
+  }
+  &:after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+//뒤로가기버튼
+._back_btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: 0px none;
+  outline: 0px none;
+  background-color: transparent;
+  @include bgimg(url($path-btn+"btn_back.svg"));
+  background-size: 21px;
+  text-indent: -9999px;
+  z-index: 1;
+}
+._prevpage_btn {
+  position: relative;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid $gray;
+    border-left: 1px solid $gray;
+    transform: translateY(-50%) rotate(135deg);
+  }
+}
+//카트버튼
+._cart_btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 17px;
+  border:0px none;
+  outline: 0px none;
+  @include bgimg(url($path-mobile_btnhd+"btn_03_cart.svg"));
+  text-indent: -9999px;
+}
+
+//다음화면 버튼
+._next_round_btn {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url($path-mobile_btn+"btn_next_round.svg");
+  @include bgOption(auto, right center);
+  text-indent: -9999px;
+}
+
+//홈 버튼
+._home_btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  background-image: url($path-mobile_btnhd+"btn_01_home.svg");
+  @include bgOption(22px, center center);
+  text-indent: -9999px;
+  &:hover {
+    background-image: url($path-mobile_btnhd+"btn_01_home_on.svg");
+  }
+}
+//공유, 문의 버튼: 스토어
+._qna_btn {
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  background-image: url($path-icon+"icon_contact.svg");
+  @include bgOption(19px, center center);
+  text-indent: -9999px;
+}
+._shere_btn {
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border: 0px none;
+  outline: 0px none;
+  background-color: transparent;
+  background-image: url($path-icon+"icon_share.svg");
+  @include bgOption(13px, 80% center);
+  text-indent: -9999px;
+}
+//문의하기 작성버튼
+._write_popup_btn {
+  @include bgOption(auto, center);
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: 0px none;
+  background-image: url($path-btn+"btn_write-on.svg");
+  background-color: transparent;
+  text-indent: -9999px;
+}
+
+//더보기 버튼
+._view_more {
+  margin: 0px;
+  > button {
+    width: 100%;
+    height: 50px;
+    border: 0px none;
+    outline: none;
+    background-color: $white;
+    font-size: $f-11;
+    color: $light_gray7;
+  }
+}
+
+//해시태그 기본디자인
+.round-hashtag {
+  @include inlineBlockStyle(middle);
+  @include fontType01(12px);
+  @include buttonInit(50px, 1px solid #f0f0f0, 0 10px, default);
+  opacity: 0.7;
+}
+
+// 라운드버튼-윤곽선
+.rounded-btn-outline {
+  @include inlineBlockStyle(middle);
+  @include fontType01(13px);
+  @include buttonInit(50px, 1px solid #f0f0f0, 0 20px, pointer);
+
+  height: 30px;
+  min-width: 90px;
+  margin: 2px 0;
+  &.active {
+    border-color: $black;
+  }
+}
+
+// 라운드버튼 - 까만색
+.rounded-btn-dark {
+  @include inlineBlockStyle(middle);
+  @include fontType01(13px);
+  @include buttonInit(50px, 0, 0 15px, pointer);
+
+  height: 30px;
+  background: white;
+  margin: 2px 0;
+  &.active {
+    background-color: $black;
+    color: white;
+    -webkit-text-shadow: none;
+    -webkit-text-stroke: 0;
+  }
+}
+
+label.rounded-btn-dark {
+  line-height: 30px;
+}
+
+// 사각형버튼 - 윤곽
+.square-btn-outline {
+  @include inlineBlockStyle(middle);
+  @include fontType01(13px);
+  @include buttonInit(0, 1px solid $black, 0 20px, pointer, $bg: white);
+
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 13px;
+}
+
+input[type="button"].square-btn-outline {
+  padding: 0 20px;
+}
+
+.square-btn-dark {
+  @include inlineBlockStyle(middle);
+  @include fontType01(13px);
+  @include buttonInit(
+    0,
+    1px solid #333,
+    0 20px,
+    pointer,
+    $bg: #333,
+    $hover-color: white,
+    $active-color: white
+  );
+
+  color: white;
+  -webkit-text-shadow: none;
+  -webkit-text-stroke: 0;
+  height: 30px;
+}
+
+// 그라데이션 테마버튼 - 라지사이즈
+.theme-btn-gradient {
+  @include fontType01(16px, white, 400);
+  @include makeBefore {
+    @include position($t: 0, $l: 0);
+    width: 200%;
+    height: 100%;
+    background: -moz-linear-gradient(
+      left,
+      rgba(161, 52, 232, 1) 0%,
+      rgba(252, 78, 173, 1) 50%,
+      rgba(161, 52, 232, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(161, 52, 232, 1) 0%,
+      rgba(252, 78, 173, 1) 50%,
+      rgba(161, 52, 232, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(161, 52, 232, 1) 0%,
+      rgba(252, 78, 173, 1) 50%,
+      rgba(161, 52, 232, 1) 100%
+    );
+    z-index: -1;
+    transition: all 0.3s;
+  }
+
+  &:hover:before {
+    left: -100%;
+  }
+
+  &.btn-shadow {
+    box-shadow: 0 5px 7px rgba(#fc4ead, 0.2);
+  }
+
+  width: 100%;
+  height: 54px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+// 그라데이션 테마버튼 다크버전 - 라지사이즈
+.theme-btn-gradient--dark {
+  @include fontType01(18px, white, 400);
+  @include makeBefore {
+    @include position($t: 0, $l: 0);
+    width: 200%;
+    height: 100%;
+    background: -moz-linear-gradient(
+      left,
+      #333333 0%,
+      #787878 50%,
+      #333333 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      #333333 0%,
+      #787878 50%,
+      #333333 100%
+    );
+    background: linear-gradient(
+      to right,
+      #333333 0%,
+      #787878 50%,
+      #333333 100%
+    );
+    z-index: -1;
+    transition: all 0.3s;
+  }
+
+  &:hover:before {
+    left: -100%;
+  }
+
+  &.btn-shadow {
+    box-shadow: 0 5px 7px rgba(#000000, 0.16);
+  }
+
+  width: 100%;
+  height: 54px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+// 테마버튼 다크버전 - 라지사이즈
+.theme-btn-dark {
+  @include buttonInit(
+    $bg: #333,
+    $pointer: pointer,
+    $hover-color: white,
+    $active-color: white
+  );
+  @include fontType01(18px, white, 400);
+
+  width: 100%;
+  height: 54px;
+  position: relative;
+}
+
+// 더블버튼 랩퍼
+.dg-button-wrap {
+  display: flex;
+  margin: 0 auto;
+
+  &--double {
+    justify-content: space-between;
+
+    button {
+      width: 49.2%;
+    }
+  }
+}
+
+//사각형버튼 - 한라인에 두개
+.dg-dubble_btn {
+  display: block;
+  float: left;
+  width: 48.5%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  &:first-of-type {
+    margin-right: 3%;
+  }
+}
+
+//다음에할게요 스킵버튼
+.skip_btn {
+  display: block;
+  border: 0px none;
+  background-color: transparent;
+  font-size: $f-12;
+  text-align: center;
+}
+
+//수정 버튼
+.btn--edit {
+  border-color: #28b2a9;
+  color: #28b2a9;
+  &:hover,
+  &:focus {
+    background-color: #28b2a9;
+    color: $white;
+    -webkit-text-shadow: none;
+    -webkit-text-stroke: 0;
+  }
+}
+
+//삭제 버튼
+.btn--del {
+  border-color: $red;
+  color: $red;
+  &:hover,
+  &:focus {
+    background-color: $red;
+    color: $white;
+    -webkit-text-shadow: none;
+    -webkit-text-stroke: 0;
+  }
+}
+
+//즐겨찾기
+._bookmark_btn{
+  background-color: $white;
+  outline: 0px none;
+  border: 0px none;
+}

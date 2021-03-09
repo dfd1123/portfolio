@@ -1,0 +1,453 @@
+/* 소셜 트레이딩 */
+#social_wrapper{
+    background-color: #f8f8f8;
+}
+
+#social_wrapper .hd_container ._guide-btn{
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    padding: 0 17px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+#social_wrapper .hd_container ._text{
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+#social_wrapper .hd_container{    
+    background-image: linear-gradient(to bottom, #00B9FF, #4375FF);
+    height: 90px;
+}
+
+#social_wrapper .hd_container .tit_group{
+    padding-top: 22px;
+}
+
+#social_wrapper .social_section{
+    text-align: center;
+}
+
+#social_wrapper .social_section ._tit{
+    color: #333333;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: -1.5px;
+}
+
+#social_wrapper .card_wrapper {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+#social_wrapper .social_cards_wrapper{
+    width: 100%;
+    overflow-x: scroll;
+    padding-left: 10px;
+}
+
+#social_wrapper .social_section_01{
+    background-color: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 10px;
+}
+
+#social_wrapper .social_section_01 ._tit{
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#social_wrapper .social_section_01 ._text{
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    margin: 10px 0 10px;
+    font-weight: 200;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#social_wrapper .popular_card_wrapper {
+    padding: 10px 0 20px 20px;
+}
+
+#social_wrapper .popular_card_group{
+    overflow-x: scroll;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#social_wrapper .popular_card_list{
+    display: inline-block;
+    width: 236px;
+    margin: 0 -7px;
+}
+
+#social_wrapper .popular_card_list img {
+    width: 100%;
+}
+
+#social_wrapper .social_section_02{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 70px;
+}
+
+#social_wrapper .social_cards_title_group {
+    border-bottom: 0;
+    position: relative;
+    padding: 0 20px;
+}
+
+#social_wrapper .social_cards_title_group ._tit {
+    text-align: left;
+    height: 33px;
+    position: relative;
+    padding-left: 0;
+    padding-top: 2px;
+}
+
+#social_wrapper .social_cards_title_group .tit_in_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#social_wrapper .social_cards_title_group a{
+    position: absolute;
+    right: 20px;
+    text-transform: uppercase;
+    font-size: 11px;
+    top: 35%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    padding: 5px 10px;
+    font-weight: 400;
+    color: #333333;
+}
+
+#social_wrapper .social_popup.m_social_popup{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+    overflow-x: scroll;
+}
+
+#social_wrapper .social_popup{
+    position: fixed;
+    display: none;
+}
+
+#social_wrapper .social_popup ._x-btn{
+    background-image: url(/images/icon/btn_modal_close.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center center;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: transparent;
+    border: 0;
+    display: inline-block;
+    width: 45px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#social_wrapper .social_popup img{
+    width: 80%;
+    margin: 50px auto;
+    display: block;
+}
+
+#social_wrapper .social_view_popup-01 img{
+    width: 80%;
+    margin: 50px auto;
+    display: block;
+}
+
+#social_wrapper .social_popup.popup_open_ani{
+    animation-name: popup_open_ani;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+
+#social_wrapper .social_popup.popup_close_ani{
+    animation-name: popup_close_ani;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes popup_open_ani{
+    0%{
+        transform: translateY(10rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes popup_close_ani{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(10rem);
+    }
+}
+
+/* end 소셜 트레이딩 */
+
+/* 소셜 트레이닝 view */
+
+#social_wrapper .red-color {
+    color: #FF6060;
+}
+
+#social_wrapper .blue-color {
+    color: #6498FF;
+}
+
+#social_wrapper .scrl_x_wrapper{
+    overflow-x: scroll;
+    width: 100%;
+}
+
+#social_wrapper .social_person_view_wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+#social_wrapper .social_person_view_wrapper:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+#social_wrapper .social_person_view_wrapper img {
+    width: 100%;
+}
+
+#social_wrapper .social_person_info_container {
+    width: 100%;
+}
+
+#social_wrapper .social_person_profile {
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#social_wrapper .social_person_tit_group {
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 36px;
+    line-height: 36px;
+}
+
+#social_wrapper .social_person_tit_group ._tit {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    display: inline-block;
+}
+
+#social_wrapper ._copier_info_group {
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    font-size: 14px;
+}
+
+#social_wrapper .copier_info_list {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+#social_wrapper .social_person_info_section {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#social_wrapper .social_person_info_section.social_person_info_section--return{
+    padding-right: 0;
+}
+
+#social_wrapper .social_person_info_section.social_person_info_section--return img{
+    width: unset;
+}
+
+#social_wrapper .social_person_info_section:last-child{
+    border-bottom: 0;
+}
+
+#social_wrapper .social_person_info_section--col_2:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#social_wrapper .social_person_info_section--col_2 .in_first_col {
+    width: 100%;
+}
+
+#social_wrapper .social_person_info_section--col_2 .in_first_col img{
+    width: 58%;
+    margin: 0 auto;
+    display: block;
+}
+
+#social_wrapper .social_person_info_section--col_2 .in_second_col {
+    width: 100%;
+}
+
+#social_wrapper .social_person_tit_group .more-btn {
+    background-color: #00B9FF;
+    border: 0;
+    padding: 10px 29px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: none;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#social_wrapper .social_person_tit_group .more-btn:active {
+    background-color: rgb(0, 152, 207);
+}
+
+#social_wrapper ._now_risk_score {
+    display: inline-block;
+    width: 100%;
+    line-height: 1;
+}
+
+#social_wrapper ._now_risk_score em {
+    color: #969696;
+}
+
+#social_wrapper ._now_risk_score b {
+    color: #FFA527;
+    font-weight: bold;
+}
+
+#social_wrapper .now_risk_info_group {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: -0.8px;
+    color: #333333;
+    line-height: 1.8;
+}
+
+#social_wrapper .now_risk_info_group i {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#social_wrapper .now_risk_info_group em {
+    padding-right: 5px;
+}
+
+#social_wrapper .copier_info_list em {
+    color: #969696;
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-style: normal;
+}
+
+#social_wrapper .copier_info_list i{
+    font-style: normal;
+}
+
+#social_wrapper .copier_info_list:last-child {border-right: 0;margin-right: 0;}
+
+#social_wrapper ._what_copier {
+    font-size: 14px;
+    padding-left: 19px;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    margin-left: 6px;
+    top: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+#social_wrapper ._what_copier:before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(/images/icon/what_copier.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#social_wrapper ._what_copier:hover{
+    color: #00B9FF;
+    border-bottom: 1px solid #00B9FF;
+}
+
+#social_wrapper .social_person_popup_container .popup {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    padding: 30px 20px 13px;
+}
+
+#social_wrapper .social_person_popup_container .popup p {
+    line-height: 1.5;
+    color: #969696;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px;
+}
+
+#social_wrapper .social_person_popup_container .popup p b {
+    color: black;
+    font-weight: bold;
+}
+
+#social_wrapper .social_person_popup_container .popup .copy-btn {
+    width: 100%;
+    background: linear-gradient(-45deg, #4375FF, #00B9FF);
+    cursor: pointer;
+    padding: 10px 0;
+}
+/* end 소셜 트레이닝 view */

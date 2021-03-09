@@ -1,0 +1,234 @@
+<div style="width:1000px;margin:100px auto;">
+	<div>
+		<img src="{{asset('storage/image/product/'.$product->image)}}" style="width:300px;" />
+		<h3>{{$product->title}}</h3>
+		<p>{{$product->intorduce}}</p>
+		<p>배송비: 4500원</p>
+	</div>
+	<form enctype="multipart/form-data" method="POST" action="{{ route('orders.store') }}">
+		
+		@csrf
+		
+		<input type="hidden" name="pro_id" value="{{$order_id}}" />
+		
+		<h3>주문자 정보</h3>
+		
+		이름
+		<input type="text" name="uname" value="{{ $user->name }}" readonly="readonly" /><br /><br />
+		연락처
+		<input type="text" name="mobile_number1" value="{{ isset($mobile_number[0])? $mobile_number[0]:"" }}" />
+		-
+		<input type="text" name="mobile_number2" value="{{ isset($mobile_number[1])? $mobile_number[1]:"" }}" />
+		-
+		<input type="text" name="mobile_number3" value="{{ isset($mobile_number[2])? $mobile_number[2]:"" }}" /><br /><br />
+		이메일
+		<input type="text" name="uemail1" value="{{ isset($email[0])? $email[0]:"" }}" /> @ <input type="text" name="uemail2" value="{{ isset($email[1])? $email[1]:"" }}" />
+		
+		<br /><br /><br />
+		<label for="same_order"><input type="checkbox" id="same_order" />주문자 정보와 동일</label> 
+		
+		
+		
+		<h3>받는사람 정보</h3>
+		
+		이름
+		<input type="text" name="user_name" value="{{ old('user_name') }}" /><br /><br />
+		연락처
+		<input type="number" name="user_mobile_number1" value="{{ old('user_mobile_number1') }}" />
+		-
+		<input type="number" name="user_mobile_number2" value="{{ old('user_mobile_number1') }}" />
+		-
+		<input type="number" name="user_mobile_number3" value="{{ old('user_mobile_number1') }}" /><br /><br />
+		주소
+		<input type="text" name="post_num" id="post_num" value="{{ old('post_num') }}"  onclick="Postcode()" readonly="readonly" /><br />
+		<input type="text" name="user_addr1" id="user_addr1" value="{{ old('user_addr1') }}" />
+		<input type="text" name="user_extra_addr" id="user_extra_addr" value="{{ old('user_extra_addr') }}" />
+		<input type="text" name="user_addr2" id="user_addr2" value="{{ old('user_addr2') }}" placeholder="상세주소"/>
+		<span id="guide" style="color:#999;display:none"></span><br /><br />
+		배송시 요청사항
+		<input type="text" name="delivery_ask" required="required" />
+		<br /><br /><br /><br />
+		<div>
+			<div class="payment_kind_sel">
+				<label for="deposit_pay" class="active"><input type="radio" name="payment_kind" id="deposit_pay" style="display:none;" value="0" checked="checked" />무통장입금</label>
+				<label for="allcoin_pay"><input type="radio" name="payment_kind" id="allcoin_pay" style="display:none;" value="10" />코인결제</label>
+			</div>
+			<div class="payment_kind_infor">
+				<div class="deposit_pay_wrap">
+					<select name="bank" id="deposit_bank">
+						<option selected="selected">은행선택</option>
+						<option value="농협은행">농협은행</option>
+						<option value="대구은행">대구은행</option>
+						<option value="부산은행">부산은행</option>
+						<option value="국민은행">국민은행</option>
+						<option value="기업은행">기업은행</option>
+						<option value="우리은행">우리은행</option>
+					</select>
+					<h6>현금영수증</h6>
+					<div class="bilkind_wrap">
+						<label for="bil_kind1"><input type="radio" id="bil_kind1" name="bil_kind" value="1" checked="checked" />개인소득공제용</label>
+						<label for="bil_kind2"><input type="radio" id="bil_kind2" name="bil_kind" value="2" />사업자증빙용</label>
+						<label for="bil_kind3"><input type="radio" id="bil_kind2" name="bil_kind" value="0" />신청안함</label>
+					</div>
+					<div class="bilkind2_wrap">
+						<div class="personal_bil">
+							<select name="individual_kind">
+								<option value="1">현금영수증 카드번호</option>
+								<option value="0" selected="selected">휴대폰번호</option>
+							</select>
+							<div class="mobile_number_wrap">
+								<input type="text" name="bilmobile_number1" />
+								-
+								<input type="text" name="bilmobile_number2" />
+								-
+								<input type="text" name="bilmobile_number3" />
+							</div>
+							<div class="bilcard_number_wrap" style="display:none;">
+								<input type="text" name="bilcard_number1" />
+								-
+								<input type="text" name="bilcard_number2" />
+								-
+								<input type="text" name="bilcard_number3" />
+								-
+								<input type="text" name="bilcard_number4" />
+							</div>
+						</div>
+						<div class="business_bil" style="display:none;">
+							<input type="text" name="business_number1" />
+								-
+								<input type="text" name="business_number2" />
+								-
+								<input type="text" name="business_number3" />
+						</div>
+					</div>
+					<div>
+						<h6>환불계좌</h6>
+						<select name="user_bank_name">
+							<option selected="selected">은행선택</option>
+							<option value="농협은행">농협은행</option>
+							<option value="대구은행">대구은행</option>
+							<option value="부산은행">부산은행</option>
+							<option value="국민은행">국민은행</option>
+							<option value="기업은행">기업은행</option>
+							<option value="우리은행">우리은행</option>
+						</select>
+						<input type="text" name="user_bank_number" />
+					</div>
+				</div>
+				<div class="allcoin_pay_wrap" style="display:none;">
+					코인결제
+				</div>
+			</div>
+		</div>
+		
+		<button type="submit">제출</button>
+	</form>
+</div>-->
+<script src="https://ssl.daumcdn.net/dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script>
+	$('#same_order').change(function(){
+		if($(this).is(":checked")){
+			$('input[name="user_name"]').val($('input[name="uname"]').val());
+			$('input[name="user_mobile_number1"]').val($('input[name="mobile_number1"]').val());
+			$('input[name="user_mobile_number2"]').val($('input[name="mobile_number2"]').val());
+			$('input[name="user_mobile_number3"]').val($('input[name="mobile_number3"]').val());
+		}else{
+			$('input[name="user_name"]').val('');
+			
+		}
+		
+	});
+	
+	$('.payment_kind_sel label input').change(function(){
+		$(this).parent().addClass('active');
+		$(this).parent().siblings().removeClass('active');
+		if($(this).val()==0){
+			$('.payment_kind_infor>div').hide();
+			$('.payment_kind_infor .deposit_pay_wrap').show();
+		}else if($(this).val()==10){
+			$('.payment_kind_infor>div').hide();
+			$('.payment_kind_infor .allcoin_pay_wrap').show();
+		}
+	});
+	
+	$('.bilkind_wrap label input').change(function(){
+		if($(this).val()==1){
+			$('.bilkind2_wrap>div').hide();
+			$('.bilkind2_wrap .personal_bil').show();
+		}else if($(this).val()==2){
+			$('.bilkind2_wrap>div').hide();
+			$('.bilkind2_wrap .business_bil').show();
+		}else{
+			$('.bilkind2_wrap>div').hide();
+		}
+	});
+	
+	$('.personal_bil select').change(function(){
+		if($(this).val()==0){
+			$('.mobile_number_wrap').siblings('div').hide();
+			$('.mobile_number_wrap').show();
+		}else if($(this).val()==1){
+			$('.bilcard_number_wrap').siblings('div').hide();
+			$('.bilcard_number_wrap').show();
+		}
+	});
+	
+
+	
+	function Postcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var roadAddr = data.roadAddress; // 도로명 주소 변수
+                var extraRoadAddr = ''; // 참고 항목 변수
+
+                // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                    extraRoadAddr += data.bname;
+                }
+                // 건물명이 있고, 공동주택일 경우 추가한다.
+                if(data.buildingName !== '' && data.apartment === 'Y'){
+                   extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                }
+                // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                if(extraRoadAddr !== ''){
+                    extraRoadAddr = ' (' + extraRoadAddr + ')';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('post_num').value = data.zonecode;
+                document.getElementById("user_addr1").value = roadAddr;
+                
+                // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
+                if(roadAddr !== ''){
+                    document.getElementById("user_extra_addr").value = extraRoadAddr;
+                } else {
+                    document.getElementById("user_extra_addr").value = '';
+                }
+
+                var guideTextBox = document.getElementById("guide");
+                // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
+                if(data.autoRoadAddress) {
+                    var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+                    guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+                    guideTextBox.style.display = 'block';
+
+                } else if(data.autoJibunAddress) {
+                    var expJibunAddr = data.autoJibunAddress;
+                    guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
+                    guideTextBox.style.display = 'block';
+                } else {
+                    guideTextBox.innerHTML = '';
+                    guideTextBox.style.display = 'none';
+                }
+            }
+        }).open();
+    }
+    
+    
+
+</script>

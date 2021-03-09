@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/ui.css" />
+</head>
+
+<body>
+  <!-- main top popup -->
+
+  <!-- header -->
+
+  <!-- content -->
+  <!--
+    _fill     리뷰/댓글이 있을 때
+    _empty    리뷰/댓글이 없을 때
+
+    ._comment_page ._empty,
+    ._deffrent_review_wrap ._empty
+
+    미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+    
+          ._board_pager : pagination이 들어갈 자리
+   -->
+  <div id="dg-product-review-detail-wrapper">
+    <div class="dg-content_center">
+      <!-- 미니 퀵메뉴 -->
+      <aside id="_mini_quick_menu">
+        <div class="_img_box">
+          <img src="/images/badge/badge_3.svg" alt="logo">
+        </div>
+        <h2 class="_title">#QUICK</h2>
+        <ul class="_mini_quick_menu_btn_wrap">
+          <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top">위로</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom">아래로</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- 미니 퀵메뉴 E -->
+      <section id="product_review">
+        <div class="review-detail_title clear_both">
+          <a href="ProductDetailView.html" class="_back_btn">뒤로가기</a>
+          <div class="review_img_box">
+            <img src="/images/img/product2.jpg" alt="컨트리 기모 하이웨스트 일자 바지">
+          </div>
+          <h2>
+            <b>컨트리 기모 하이웨스트 일자 바지</b><br>
+            <span>스토어명</spa>
+          </h2>
+        </div>
+        <!-- review detail, comment -->
+        <div class="review-detail_and_comment_wrap">
+          <section class="product_review_detail _review_wrap">
+            <h3 class="dg_blind">리뷰보기</h3>
+            <div class="_review">
+              <!-- review writer -->
+              <div class="_review_writer clear_both">
+                <div class="symbol-circle">
+                  <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                </div>
+                <div class="_review_product_wrap">
+                  <!-- ※ 별 점수에 따라 star-05, star-04, star-03, star-02, star-01 클래스 추가 -->
+                  <div class="in-star-group star-04">
+                    <i class="_img"></i>
+                    <span class="_rate"></span>
+                    <b class="_rate_txt"></b>
+                  </div>
+                  <!-- ※ 별 점수에 따라 star-05, star-04, star-03, star-02, star-01 클래스 추가 END -->
+                  <div class="_review_writer_info">
+                    <span class="_name">닉네임</span>
+                    <span class="_date">2019-00-00</span>
+                    <span class="_number">NO.001</span>
+                  </div>
+                </div>
+              </div>
+              <!-- review writer E -->
+              <!-- review write -->
+              <div class="_review_write_wrap clear_both">
+                <div class="_review_write_product">
+                  [구매옵션] 팔찌1 컬러 : 실버 / 팔찌2 컬러 : 실버 / 각인 문구 / 뒷면 각인 시 선택 : 뒷면 각인 안함
+                </div>
+                <div class="_review_write_text">
+                  <img src="/images/img/product2.jpg" alt="상품 리뷰 사진">
+                  <p>
+                    크림색이랑 살구색 시켰는데 크림색은 딱 정말 따뜻해보이는예쁜 크림색이고 살구색은 고민좀 하다가 겨울인데<br>
+                    다른옷이 너무 칙칙하니까 이거라도 밝은거 입을려고 시켰는데 진짜 상큼하고 이쁜색이에요!!<br>
+                    그리고 저는 키 163정도인데 핏도 딱 적당하게 나오는거 같구 츄리닝이랑 같이 편하게 입을려고 산거였는데 편안<br>
+                    하기도 한데 너무이뻐요!! 소재도 보풀 잘 일어날것 같지 않은 탄탄한 소재구요 안에 기모도 따뜻해요.<br>
+                    크림색이랑 살구색 시켰는데 크림색은 딱 정말 따뜻해보이는예쁜 크림색이고 살구색은 고민좀 하다가 겨울인데
+                    다른옷이 너무 칙칙하니까 이거라도 밝은거 입을려고 시켰는데 진짜 상큼하고 이쁜색이에요!!
+                    그리고 저는 키 163정도인데 핏도 딱 적당하게 나오는거 같구 츄리닝이랑 같이 편하게 입을려고 산거였는데 편안
+                    하기도 한데 너무이뻐요!! 소재도 보풀 잘 일어날것 같지 않은 탄탄한 소재구요 안에 기모도 따뜻해요.
+                  </p>
+                </div>
+              </div>
+              <!-- review write E -->
+
+            </div>
+          </section>
+          <section class="product_review_comment">
+            <!-- 댓글 개수 표시는 h3:after 로 제어 -->
+            <h3>댓글</h3>
+            <div class="_comment_page over-y_scroll">
+              <!-- 댓글이 없을 때 -->
+              <div class="_empty">
+                <div class="_img_box">
+                  <img src="/images/icon/empty_comment.svg" alt="등록된 댓글이 없습니다.">
+                </div>
+                <div class="_text">등록된 댓글이 없습니다.<br>첫 댓글을 남겨주세요!</div>
+              </div>
+              <!-- 댓글이 없을 때 E -->
+
+              <!-- 댓글이 있을 때 -->
+              <div class="_fill">
+                <!-- comment layout -->
+                <div class="_comment">
+                  <div class="symbol-circle">
+                    <img src="/images/img/basic_profile/05.png" alt="프로필사진" class="_imgtag">
+                  </div>
+                  <div class="_comment_text">
+                    <span>작성자</span>
+                    <div class="_comment_desc">
+                      안녕하세요 동글입니다.<br>
+                      소중한 구매후기 감사합니다.<br>
+                      좋은 선물이 되신 것 같아 저도 뿌듯하네요
+                      좋은 선물이 되신 것 같아 저도 뿌듯하네요
+                      좋은 선물이 되신 것 같아 저도 뿌듯하네요
+                      좋은 선물이 되신 것 같아 저도 뿌듯하네요
+                    </div>
+                  </div>
+                  <div class="_date">
+                    <span>2019-00-00</span>
+                  </div>
+                </div>
+                <!-- comment layout E -->
+                <!-- comment layout -->
+                <div class="_comment">
+                  <div class="symbol-circle">
+                    <img src="/images/img/basic_profile/02.png" alt="프로필사진" class="_imgtag">
+                  </div>
+                  <div class="_comment_text">
+                    <span>내가 씀</span>
+                    <div class="_comment_desc">
+                      귤이 많이 단가요, 신가요??
+                      <div class="dg-my-review-btn-wrap">
+                        <button type="button" class="rounded-btn-outline btn--del">
+                          삭제
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_date">
+                    <span>2019-00-00</span>
+                  </div>
+                </div>
+                <!-- comment layout E -->
+              </div>
+              <!-- 댓글이 있을 때 E -->
+
+            </div>
+            <form action="post" class="_comment_write_wrap">
+              <input type="text" name="#" id="#" class="_comment_write" placeholder="댓글을 남겨주세요">
+              <button class="square-btn-dark _comment_sign_up">등록</button>
+            </form>
+          </section>
+        </div>
+        <!-- review detail, comment E -->
+
+        <!-- 구매후기 -->
+        <section class="_review_wrap _deffrent_review_wrap">
+          <h3>이 상품의 다른 구매후기</h3>
+          <!-- 리뷰가 없을 때 -->
+          <div class="_empty">
+            <div class="_img_box">
+              <img src="/images/icon/empty_review.svg" alt="등록된 후기가 없습니다.">
+            </div>
+            <div class="_text">등록된 후기가 없습니다.</div>
+          </div>
+          <!-- 리뷰가 없을 때 E -->
+          <!-- 리뷰가 있을 때 1페이지에 5개씩 보이기 -->
+          <div class="_review _fill">
+            <!-- review writer -->
+            <div class="_review_writer clear_both">
+              <div class="symbol-circle">
+                <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+              </div>
+              <div class="_review_product_wrap">
+                <!-- ※ 별 점수에 따라 star-05, star-04, star-03, star-02, star-01 클래스 추가 -->
+                <div class="in-star-group star-04">
+                  <i class="_img"></i>
+                  <span class="_rate"></span>
+                  <b class="_rate_txt"></b>
+                </div>
+                <!-- ※ 별 점수에 따라 star-05, star-04, star-03, star-02, star-01 클래스 추가 END -->
+                <div class="_review_writer_info">
+                  <span class="_name">닉네임</span>
+                  <span class="_number">NO.001</span>
+                  <span class="_date">2019-00-00</span>
+                  <span class="_comment">12</span>
+                </div>
+              </div>
+            </div>
+            <!-- review writer E -->
+            <!-- review write -->
+            <div class="_review_write_wrap clear_both">
+              <div class="_review_write_product">
+                [구매옵션] 팔찌1 컬러 : 실버 / 팔찌2 컬러 : 실버 / 각인 문구 / 뒷면 각인 시 선택 : 뒷면 각인 안함
+              </div>
+              <div class="_review_write_text">
+                <div class="_review_write_image">
+                  <img src="/images/img/product2.jpg" alt="상품 리뷰 사진">
+                </div>
+                <p>
+                  크림색이랑 살구색 시켰는데 크림색은 딱 정말 따뜻해보이는예쁜 크림색이고 살구색은 고민좀 하다가<br>
+                  겨울인데 다른옷이 너무 칙칙하니까 이거라도 밝은거 입을려고 시켰는데 진짜 상큼하고 이쁜색이에요!!<br>
+                  그리고 저는 키 163정도인데 핏도 딱 적당하게 나오는거 같구 츄리닝이랑 같이 편하게 입을때에도 좋은 옷입니다!<br>
+                  최대 세줄까지만 보이게 해주세요.
+                </p>
+              </div>
+            </div>
+            <!-- review write E -->
+
+          </div>
+          <!-- 리뷰가 있을 때 E -->
+          <div class="_board_pager">
+            <!-- pager -->
+          </div>
+        </section>
+        <!-- 구매후기 E -->
+
+      </section>
+    </div>
+  </div>
+  <!-- content E -->
+
+  <!-- footer -->
+</body>
+
+</html>

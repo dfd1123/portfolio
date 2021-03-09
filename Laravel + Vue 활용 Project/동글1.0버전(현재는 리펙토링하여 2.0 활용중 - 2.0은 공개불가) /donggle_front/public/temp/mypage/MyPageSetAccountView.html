@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-mypage-set-account-wrapper">
+      <!-- 팝업은 최하단부에 추가 -->
+      <!-- * 마이페이지 헤더 -->
+      <div class="l-mypage-hd">
+        <div class="l-mypage-hd-inner">
+          <div class="in-profile">
+            <figure class="_pic">
+              <div class="symbol-circle">
+                <img
+                  src="/images/img/basic_profile/01.png"
+                  alt="default profile img"
+                  class="_imgtag"
+                />
+              </div>
+              <!-- ※ 회원등급에 따라서 lv-01, lv-02, lv-03, lv-04, lv-05 클래스 바뀜 -->
+              <span class="_grade lv-01"></span>
+              <!-- ※ 회원등급에 따라서 lv-01, lv-02, lv-03, lv-04, lv-05 클래스 바뀜 END -->
+            </figure>
+            <h3 class="_name">
+              <b>김동글</b><span>님의 등급은</span> <i>비기너</i
+              ><span>입니다.</span>
+            </h3>
+            <button
+              type="button"
+              class="rounded-btn-outline"
+              onclick="alert('(기능)프로필 사진 변경기능입니다.')"
+            >
+              프로필 사진 변경
+            </button>
+          </div>
+
+          <ul class="in-panels">
+            <li class="_list">
+              <span>쿠폰</span>
+              <a href="MyPageCouponListView.html">0개</a>
+            </li>
+            <li class="_list">
+              <span>주문완료</span>
+              <a href="MyPageOrderHistoryView.html">5개</a>
+            </li>
+            <li class="_list">
+              <span>취소/환불</span>
+              <a href="MyPageCancelHistoryView.html">0건</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- * 마이페이지 헤더 -->
+
+      <div class="l-mypage-contents">
+        <!-- 활성화된 메뉴 _list 에 active 추가 -->
+        <div class="l-side-navi">
+          <div class="l-con-title-group type01 mb-10">
+            <h2
+              class="in-subject"
+              onclick="location.href='MyPageDefaultView.html'"
+            >
+              마이페이지
+            </h2>
+          </div>
+          <article class="in-nav-section">
+            <h4 class="_subject">주문배송</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageOrderHistoryView.html">주문내역 조회</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCancelHistoryView.html">취소/환불내역</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">나의 구매후기</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageWriteReviewView.html">구매후기 작성하기</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageMyReviewView.html">나의 구매후기</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">관심리스트</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageLikeListView.html">찜한 상품</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCurrentListView.html">최근 본 상품</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageStoreListView.html">즐겨찾기 스토어</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">쿠폰</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageCouponListView.html">내 쿠폰함</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCouponZoneView.html">쿠폰받기</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCouponHistoryView.html">쿠폰 사용내역</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">내 정보</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageSetInfoView.html">내 정보 관리</a>
+              </li>
+              <li class="_list active">
+                <a href="MyPageSetAccountView.html">카드 및 환불계좌 관리</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageGradeView.html">회원등급</a>
+              </li>
+              <!-- TODO: 회원등급 페이지 요청中 -->
+              <!-- <li class="_list">
+              <a href="#">회원등급</a>
+            </li> -->
+            </ul>
+          </article>
+        </div>
+
+        <!-- 1) 카드 및 환불계좌 관리 -->
+        <div class="l-con-area">
+          <article class="l-con-article">
+            <div class="l-con-title-group type01 mb-35">
+              <h2 class="in-subject">카드 및 환불계좌 관리</h2>
+            </div>
+
+            <div class="l-contents-group">
+              <ul class="l-grid-group">
+                <li class="l-grid-list l-col-2">
+                  <!-- * 카드~계좌 등록카드 -->
+                  <div class="dg-account-set-card">
+                    <img
+                      src="/images/icon/icon_card.svg"
+                      alt="card icon"
+                      class="in-icon"
+                    />
+                    <h4 class="in-name">결제 카드 등록</h4>
+                    <p class="in-caution">
+                      간편하게 카드를 등록하고 결제하세요.
+                    </p>
+                    <div class="in-state">
+                      <!-- ※ 정보 없을 때 -->
+                      <span class="_nothing">정보가 없습니다.</span>
+                      <!-- ※ 정보 없을 때 END -->
+                      <!-- ※ 정보 있을 때 -->
+                      <span class="_thing">
+                        <i>삼성카드</i> / <i>TapTapO</i> /
+                        <i>1234-****--1234-1234</i>
+                      </span>
+                      <!-- ※ 정보 있을 때 END -->
+                    </div>
+                    <!-- ※ 등록완료됐을 경우 변경하기로 텍스트 변경해야함 -->
+                    <button
+                      type="button"
+                      class="in-full-button"
+                      onclick="alert('(팝업)카드 등록 팝업')"
+                    >
+                      등록하기
+                    </button>
+                    <!-- ※ 등록완료됐을 경우 변경하기로 텍스트 변경해야함 END -->
+                  </div>
+                  <!-- * 카드~계좌 등록카드 -->
+                </li>
+
+                <li class="l-grid-list l-col-2">
+                  <!-- * 카드~계좌 등록카드 -->
+                  <div class="dg-account-set-card">
+                    <img
+                      src="/images/icon/icon_account.svg"
+                      alt="account icon"
+                      class="in-icon"
+                    />
+                    <h4 class="in-name">환불 계좌 등록</h4>
+                    <p class="in-caution">
+                      계좌를 등록하셔야 환불을 받으실 수 있습니다.
+                    </p>
+                    <div class="in-state">
+                      <!-- ※ 정보 없을 때 -->
+                      <span class="_nothing">정보가 없습니다.</span>
+                      <!-- ※ 정보 없을 때 END -->
+                      <!-- ※ 정보 있을 때 -->
+                      <span class="_thing">
+                        <i>국민은행</i> / <i>123456-78-12345678</i> /
+                        <i>김동글</i>
+                      </span>
+                      <!-- ※ 정보 있을 때 END -->
+                    </div>
+                    <!-- ※ 등록완료됐을 경우 변경하기로 텍스트 변경해야함 -->
+                    <button
+                      type="button"
+                      class="in-full-button"
+                      onclick="alert('(팝업)계좌 등록 팝업')"
+                    >
+                      등록하기
+                    </button>
+                    <!-- ※ 등록완료됐을 경우 변경하기로 텍스트 변경해야함 END -->
+                  </div>
+                  <!-- * 카드~계좌 등록카드 -->
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!-- 1) 카드 및 환불계좌 관리 E -->
+      </div>
+
+      <!-- 계좌 등록 팝업 -->
+      <!-- 카드 등록 팝 업은 외부연결이라 없음 -->
+      <div class="_popup_wrapper _account_popup_wrapper">
+        <div class="_bg"></div>
+        <div class="_popup_wrap">
+          <div class="_popup_title">
+            <h4>계좌등록<a href="#" class="_close_btn"> </a></h4>
+            <span>계좌를 등록하셔야 환불을 받으실 수 있습니다.</span>
+          </div>
+          <div class="_popup_content">
+            <div class="_popup_text_wrap">
+              <form action="#" method="post">
+                <fieldset class="dg-write_form">
+                  <legend class="dg_blind">계좌 등록</legend>
+                  <div class="dg_write write_bank">
+                    <label for="#">은행명</label>
+                    <select class="input_text_box reg_select">
+                      <option value="#">농협</option>
+                      <option value="#">기업은행</option>
+                      <option value="#">국민은행</option>
+                      <option value="#">우리은행</option>
+                    </select>
+                  </div>
+                  <div class="dg_write write_number">
+                    <label for="#">계좌번호</label>
+                    <input
+                      type="number"
+                      id="#"
+                      class="input_text_box"
+                      maxlength="10"
+                      placeholder="계좌번호를 입력하세요"
+                    />
+                  </div>
+                  <div class="dg_write write_name">
+                    <label for="#">예금주명</label>
+                    <input
+                      type="text"
+                      id="#"
+                      class="input_text_box"
+                      placeholder="-"
+                    />
+                    <p class="dg-write_wr dg-write_wr_nn">
+                      은행과 계좌번호가 일치하지 않습니다.
+                    </p>
+                  </div>
+                </fieldset>
+              </form>
+              <div class="dg-dubble_btn_wrap clear_both">
+                <a href="#" class="dg-btn_line dg-dubble_btn">계좌 인증하기</a>
+              </div>
+            </div>
+            <!-- _popup_text_wrap E -->
+          </div>
+        </div>
+      </div>
+      <!-- 계좌 등록 팝업 E -->
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

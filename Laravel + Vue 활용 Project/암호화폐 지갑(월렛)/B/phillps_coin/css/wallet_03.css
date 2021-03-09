@@ -1,0 +1,61 @@
+/* wallet03 */
+.container--wallet03 .caution_list {
+    color: #333333;
+}
+
+.container--wallet03 .table_type01__tr:last-child {
+    border-bottom: 0;
+}
+
+.container--wallet03 .table_type01__tr--direct-input .table_type01__input {
+    padding-right: 2.5rem;
+}
+
+.container--wallet03-1, .container--wallet04-1 {
+    height: 100%;
+    padding-bottom: 90px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container--wallet .wallet__history-contents {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s;
+    transition: max-height 0.2s;
+}
+
+.container--wallet #chck_history_tbl:checked ~ .basic_panel--dark__title > .basic_panel__title-label {
+    background-image: url("../../img/btn/arrow_top_light.png");
+}
+
+.container--wallet #chck_history_tbl:checked ~ .wallet__history-contents {
+    max-height: 100vh;
+    -webkit-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+}
+
+.wallet__account-info {
+    line-height: 1.2;
+    text-align: center;
+    margin: 0.8rem 0 1rem;
+}
+
+
+.wallet__account-info > span {
+    width: 100%;
+    display: inline-block;
+}
+
+
+.wallet__account-info b {
+    font-weight: 500;
+}
+
+
+.wallet__account-info__name {
+    font-size: 0.75em;
+    font-weight: 400;
+    color: #8b8b8b;
+}
+/* wallet03 */

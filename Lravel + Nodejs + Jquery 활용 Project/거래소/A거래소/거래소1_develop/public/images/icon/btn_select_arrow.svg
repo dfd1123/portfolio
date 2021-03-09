@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="btn_select_arrow" clip-path="url(#clip-path)">
+    <rect id="사각형_847" data-name="사각형 847" width="16" height="16" fill="#fff" opacity="0"/>
+    <path id="btn_select_arrow-2" data-name="btn_select_arrow" d="M-4825.013-13805.006l5,5,5-5" transform="translate(4828.013 13810.506)" fill="none" stroke="#333" stroke-width="1"/>
+  </g>
+</svg>

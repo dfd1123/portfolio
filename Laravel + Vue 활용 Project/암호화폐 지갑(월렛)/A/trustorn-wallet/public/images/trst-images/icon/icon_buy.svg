@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="icon_buy" transform="translate(-25.437 -261.087)">
+    <circle id="타원_13" data-name="타원 13" cx="11" cy="11" r="11" transform="translate(25.437 261.087)" fill="#00acdf"/>
+    <g id="그룹_18" data-name="그룹 18">
+      <line id="선_33" data-name="선 33" y1="4.694" transform="translate(36.965 267.767)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_8" data-name="패스 8" d="M39.028,270.738,36.965,272.8,34.9,270.738" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_9" data-name="패스 9" d="M28.83,268.12h2.832l.973,7.286H41.38l.9-5.826H40.062" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="선_34" data-name="선 34" x1="2.219" transform="translate(32.145 269.601)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <circle id="타원_14" data-name="타원 14" cx="1.033" cy="1.033" r="1.033" transform="translate(32.571 277.049)" fill="#fff"/>
+      <circle id="타원_15" data-name="타원 15" cx="1.033" cy="1.033" r="1.033" transform="translate(39.299 277.049)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

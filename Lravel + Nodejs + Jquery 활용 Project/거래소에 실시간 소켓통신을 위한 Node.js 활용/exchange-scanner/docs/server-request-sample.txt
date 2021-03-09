@@ -1,0 +1,33 @@
+거래소 목록조회
+[parameter]
+(none)
+
+[examples]
+curl -X POST http://localhost:9600/scanner/list
+{"timestamp":1548037133444,"scanners":[{"eid":0,"name":"upbit","scanning":true},{"eid":1,"name":"bithumb","scanning":true}]}
+
+
+거래소 스캔 시작/정지
+[parameter]
+eid: '0', '1', ...
+scan: 'on', 'off'
+
+[examples]
+curl -d "eid=0&scan=on" -X POST http://localhost:9600/scanner
+{"eid":1,"name":"bithumb","timestamp":1548037236381,"scanning":true}
+
+
+거래소 주문목록 요청
+[parameter]
+type: 'buy', 'sell'
+coin: 'BTC', 'ETH', ...
+amount: (number: 코인을 구매할 금액이나 판매할 코인 갯수)
+
+[examples] 
+# 코인구매(buy)
+curl -d "type=buy&coin=BTC&amount=10000000" -X POST http://localhost:9600/orderbook
+{"coin":"BTC","type":"buy","timestamp":1548038166122,"orders":[{"eid":0,"qty":1.85130052,"price":3979000,"value":7365492},{"eid":1,"qty":0.66210282,"price":3979000,"value":2634507}]}
+
+# 코인판매(sell)
+curl -d "type=sell&coin=BTC&amount=0.1" -X POST http://localhost:9600/orderbook
+{"coin":"BTC","type":"sell","timestamp":1548037341830,"orders":[{"eid":0,"qty":0.0857,"price":3977000,"value":340828},{"eid":1,"qty":0.0143,"price":3979000,"value":56899}]}

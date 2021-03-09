@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/ui.css" />
+</head>
+
+<body>
+  <!--
+    header 자리
+  -->
+
+  <!-- content -->
+  <div id="dg-category-choice-wrapper" class="l-page-wrapper">
+    <!-- 
+    미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+   -->
+    <!-- 미니 퀵메뉴 -->
+    <aside id="_mini_quick_menu">
+      <div class="_img_box">
+        <img src="/images/badge/badge_3.svg" alt="logo">
+      </div>
+      <h2 class="_title">#QUICK</h2>
+      <ul class="_mini_quick_menu_btn_wrap">
+        <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top">위로</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom">아래로</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- 미니 퀵메뉴 E -->
+
+    <!-- * 카테고리결과 그룹 -->
+    <div class="dg-category-result-group">
+
+      <div class="l-con-title-group">
+        <h2 class="in-subject">카테고리</h2>
+        <h3 class="in-object">상의</h3>
+      </div>
+
+      <div class="l-contents-group dg-prdct-sch-related-group">
+        <button type="button" class="rounded-btn-outline active">여자</button>
+        <button type="button" class="rounded-btn-outline">후드셔츠</button>
+        <button type="button" class="rounded-btn-outline">민소매셔츠</button>
+        <button type="button" class="rounded-btn-outline">반팔티셔츠</button>
+        <button type="button" class="rounded-btn-outline">긴팔티셔츠</button>
+      </div>
+
+    </div>
+    <!-- * 카테고리결과 그룹 E -->
+
+    <!-- * 필터검색 -->
+    <div class="dg-filter-search-group">
+
+      <h2 class="in-subject">필터검색</h2>
+
+      <input id="view-filter-group" type="checkbox" class="display_none">
+      <label for="view-filter-group" class="fold-btn"></label>
+
+      <div id="view-filter-view" class="l-contents-group">
+
+        <div class="dg-filter-search-list">
+          <h3 class="in-label">성별</h3>
+          <div class="in-section">
+            <button type="button" class="rounded-btn-dark ">여자</button>
+            <button type="button" class="rounded-btn-dark active">남자</button>
+          </div>
+        </div>
+
+        <div class="dg-filter-search-list">
+          <h3 class="in-label">나이</h3>
+          <div class="in-section">
+            <button type="button" class="rounded-btn-dark ">10대</button>
+            <button type="button" class="rounded-btn-dark active">20대</button>
+            <button type="button" class="rounded-btn-dark active">30대</button>
+            <button type="button" class="rounded-btn-dark active">40대</button>
+            <button type="button" class="rounded-btn-dark active">50대 이상</button>
+          </div>
+        </div>
+
+        <div class="dg-filter-search-list">
+          <h3 class="in-label">나이</h3>
+          <div class="in-section">
+            <button type="button" class="rounded-btn-dark active">블랙</button>
+            <button type="button" class="rounded-btn-dark">화이트</button>
+            <button type="button" class="rounded-btn-dark">아이보리</button>
+            <button type="button" class="rounded-btn-dark">베이지</button>
+            <button type="button" class="rounded-btn-dark">챠콜</button>
+            <button type="button" class="rounded-btn-dark">블루</button>
+            <button type="button" class="rounded-btn-dark">핑크</button>
+            <button type="button" class="rounded-btn-dark">카키</button>
+            <button type="button" class="rounded-btn-dark">그린</button>
+            <button type="button" class="rounded-btn-dark">옐로우</button>
+            <button type="button" class="rounded-btn-dark">레드</button>
+            <button type="button" class="rounded-btn-dark">와인</button>
+            <button type="button" class="rounded-btn-dark">퍼플</button>
+            <button type="button" class="rounded-btn-dark">브라운</button>
+            <button type="button" class="rounded-btn-dark active">카멜</button>
+            <button type="button" class="rounded-btn-dark active">민트</button>
+            <button type="button" class="rounded-btn-dark">네온핑크</button>
+            <button type="button" class="rounded-btn-dark">네온옐로우</button>
+            <button type="button" class="rounded-btn-dark">오렌지</button>
+            <button type="button" class="rounded-btn-dark">청</button>
+            <button type="button" class="rounded-btn-dark">연청</button>
+            <button type="button" class="rounded-btn-dark">진청</button>
+            <button type="button" class="rounded-btn-dark">+ 기타색상 선택</button>
+          </div>
+        </div>
+
+        <div class="dg-filter-search-list">
+          <h3 class="in-label">가격대</h3>
+          <div class="in-section">
+            <button type="button" class="rounded-btn-dark active">5,000원 이하</button>
+            <button type="button" class="rounded-btn-dark active">5,000원 ~ 10,000원</button>
+            <button type="button" class="rounded-btn-dark active">10,000원 ~ 20,000원</button>
+            <button type="button" class="rounded-btn-dark active">20,000원 ~ 40,000원</button>
+            <button type="button" class="rounded-btn-dark active">40,000원 ~ 60,000원</button>
+            <button type="button" class="rounded-btn-dark active">100,000원 이상</button>
+            <div class="_price_range">
+              <span class="_start"><input type="text" class="init-input">원</span>
+              <span class="_end"><input type="text" class="init-input">원</span>
+              <input type="button" class="square-btn-outline" value="검색"></input>
+            </div>
+          </div>
+        </div>
+
+        <div class="dg-filter-search-list">
+          <h3 class="in-label">사이즈</h3>
+          <div class="in-section">
+            <div class="_size_range">
+              <input type="range" min="10" max="110" step="10"></input>
+            </div>
+          </div>
+        </div>
+
+        <div class="dg-filter-search-list">
+          <h3 class="in-label">해시태그</h3>
+          <div class="in-section">
+            <span class="_hash"><input type="text" class="init-input"></span>
+            <input type="button" class="square-btn-outline" value="추가"></input>
+          </div>
+        </div>
+
+        <div class="dg-filter-search-list dg-filter-search-list--refresh">
+          <button type="button" class="in-refresh">
+            <img src="/images/btn/btn_refresh.svg" alt="refresh button">
+            <span>전체해제</span>
+          </button>
+          <div class="in-section">
+            <button type="button" class="rounded-btn-outline">
+              <span>여자</span>
+              <img src="/images/btn/btn_cancle_tag.svg" alt="cancel tag" />
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- * 필터검색 E -->
+
+    <!-- * 상품리스트 구역 -->
+    <div class="l-con-area">
+
+      <article class="l-con-article">
+
+        <div class="l-con-title-group type01">
+          <h2 class="in-subject">상품리스트</h2>
+          <ul class="in-sorting">
+            <li class="_type active">
+              <a href="#" class="word">인기순</a>
+            </li>
+            <li class="_type">
+              <a href="#" class="word">신상품 순</a>
+            </li>
+            <li class="_type">
+              <a href="#" class="word">낮은 가격 순</a>
+            </li>
+            <li class="_type">
+              <a href="#" class="word">높은 가격 순</a>
+            </li>
+            <li class="_type">
+              <a href="#" class="word">상품평 순</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="l-contents-group">
+
+          <ul class="l-grid-group">
+
+            <li class="l-grid-list l-col-5">
+              <!-- * 옷상품 카드 -->
+              <div class="dg-clothes-list-card">
+                <figure class="dg-clothes-thumbnail">
+                  <input type="checkbox" class="heart-badge" id="test01">
+                  <label class="heart-badge-label" for="test01">
+                    <svg viewBox="467 392 58 57">
+                      <defs>
+                        <linearGradient id="heart-shape-gradient" x2="0.35" y2="1">
+                          <stop offset="0%" stop-color="var(--color-stop)" />
+                          <stop offset="100%" stop-color="var(--color-bot)" />
+                        </linearGradient>
+                      </defs>
+
+                      <g class="heart-Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                        <path
+                          d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                          class="heart-path" fill="#AAB8C2" />
+                        <circle class="main-circ" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+
+                        <g class="grp7" opacity="0" transform="translate(7 6)">
+                          <circle class="oval2" fill="#a134e8" cx="5" cy="6" r="2" />
+                          <circle class="oval1" fill="#fc4ead" cx="2" cy="2" r="2" />
+                        </g>
+
+                        <g class="grp6" opacity="0" transform="translate(0 28)">
+                          <circle class="oval1" fill="#fc4ead" cx="2" cy="7" r="2" />
+                          <circle class="oval2" fill="#ff62b9" cx="3" cy="2" r="2" />
+                        </g>
+
+                        <g class="grp3" opacity="0" transform="translate(52 28)">
+                          <circle class="oval2" fill="#a134e8" cx="2" cy="7" r="2" />
+                          <circle class="oval1" fill="#a134e8" cx="4" cy="2" r="2" />
+                        </g>
+
+                        <g class="grp2" opacity="0" transform="translate(44 6)">
+                          <circle class="oval2" fill="#a134e8" cx="5" cy="6" r="2" />
+                          <circle class="oval1" fill="#fc4ead" cx="2" cy="2" r="2" />
+                        </g>
+
+                        <g class="grp5" opacity="0" transform="translate(14 50)">
+                          <circle class="oval1" fill="#fc4ead" cx="6" cy="5" r="2" />
+                          <circle class="oval2" fill="#ff62b9" cx="2" cy="2" r="2" />
+                        </g>
+
+                        <g class="grp4" opacity="0" transform="translate(35 50)">
+                          <circle class="oval1" fill="#fc4ead" cx="2" cy="7" r="2" />
+                          <circle class="oval2" fill="#fc4ead" cx="3" cy="2" r="2" />
+                        </g>
+
+                        <g class="grp1" opacity="0" transform="translate(24)">
+                          <circle class="oval1" fill="#a134e8" cx="2.5" cy="3" r="2" />
+                          <circle class="oval2" fill="#a134e8" cx="7.5" cy="2" r="2" />
+                        </g>
+                      </g>
+                    </svg>
+                  </label>
+                  <a class="in-image" href="#"
+                    style="background-image: url('/images/example/ex-clothes-img2.png');"></a>
+                </figure>
+
+                <ul class="in-information">
+                  <li class="_category">아우터</li>
+                  <li class="_sellername">
+                    <a href="#">판매자명</a>
+                  </li>
+                  <li class="_name">
+                    <a href="#">하프 리본 트렌치코트</a>
+                  </li>
+                  <li class="_options">
+                    <dl class="_op_category">
+                      <dt class="_op_tit">색상</dt>
+                      <dd class="_op_list">
+                        <span>블랙</span>
+                        <span>블랙</span>
+                        <span>블랙</span>
+                      </dd>
+                    </dl>
+                    <dl class="_op_category">
+                      <dt class="_op_tit">사이즈</dt>
+                      <dd class="_op_list">
+                        <span>s</span>
+                        <span>free</span>
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+
+                <ul class="in-pricedetail">
+                  <li class="_streetprice">
+                    <span>시중가:</span><span>29,800원</span>
+                  </li>
+                  <li class="_finalprice">
+                    <b>46,800</b><span>원</span>
+                    <img src="/images/icon/icon_review.svg" alt="star icon"><span class="_rate">5.0</span>
+                  </li>
+                  <li class="_hashlist">
+                    <div class="_inner">
+                      <a href="#" class="rounded-list rounded-list-s">
+                        <span>흰색</span>
+                      </a>
+                      <a href="#" class="rounded-list rounded-list-s">
+                        <span>흰색</span>
+                      </a>
+                      <a href="#" class="rounded-list rounded-list-s">
+                        <span>글자수길면</span>
+                      </a>
+                    </div>
+                    <div class="_hashlist-more">
+                      <input type="button" value="+" class="in-morebtn">
+                      <div class="_hashlist-con">
+                        <a href="#" class="rounded-list rounded-list-s">
+                          <span>흰색</span>
+                        </a>
+                        <a href="#" class="rounded-list rounded-list-s">
+                          <span>롱코트</span>
+                        </a>
+                        <a href="#" class="rounded-list rounded-list-s">
+                          <span>롱코트</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- * 옷상품 카드 E -->
+            </li>
+
+          </ul>
+
+        </div>
+
+      </article>
+
+    </div>
+    <!-- * 상품리스트 구역 E -->
+
+  </div>
+  <!-- content E -->
+
+  <!--
+    footer 자리
+  -->
+</body>
+
+</html>

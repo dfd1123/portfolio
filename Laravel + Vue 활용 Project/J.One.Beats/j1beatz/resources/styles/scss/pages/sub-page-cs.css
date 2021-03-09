@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+/*
+    --------------------------------------------------------------------
+
+        INDEX 고객센터페이지
+
+            00. 공통
+            01. FAQ
+            02. 1:1문의
+
+    --------------------------------------------------------------------
+*/
+.sub-page-cs > section {
+  width: 1000px;
+  margin: 40px auto 40px auto;
+  text-align: center;
+}
+
+.cs-sch-field {
+  width: 440px;
+  height: 40px;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cs-sch-field input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #333;
+  color: black;
+  font-weight: 100;
+}
+
+.cs-sch-field button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("/img/btn/btn_sch_big_purple.svg");
+  background-position: center center;
+  border: 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.cs-sch-field button:hover {
+  opacity: 0.5;
+}
+
+.cs-board {
+  width: 100%;
+  border-top: 2px solid #dcdcdc;
+}
+
+.cs-board-thead {
+  width: inherit;
+  display: table;
+  border-top: 2px solid #dcdcdc;
+  padding-right: 60px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.cs-board-thead span {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.5);
+  display: table-cell;
+}
+
+.cs-board-thead ._check {
+  width: 60px;
+}
+
+.cs-board-thead ._category {
+  width: 110px;
+  text-align: center;
+}
+
+.cs-board-thead ._subject {
+  text-align: left;
+}
+
+.cs-board-thead ._data {
+  width: 110px;
+}
+
+.cs-board-thead ._answer {
+  width: 80px;
+}
+
+.cs-board-tab ._label {
+  display: table;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+  position: relative;
+}
+
+.cs-board-tab ._label:after {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: url("/img/btn/icon-bt-arrow.svg");
+}
+
+.cs-board-tab ._label > span {
+  display: table-cell;
+}
+
+.cs-board-tab ._num {
+  width: 80px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.cs-board-tab ._check {
+  width: 60px;
+}
+
+.cs-board-tab ._category {
+  width: 110px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cs-board-tab ._subject {
+  text-align: left;
+}
+
+.cs-board-tab ._data {
+  width: 110px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.cs-board-tab ._answer {
+  width: 80px;
+  font-weight: 500;
+}
+
+.cs-board-tab ._answer.__yes {
+  color: #6a7eff;
+}
+
+.cs-board-tab ._answer.__no {
+  color: #ff6767;
+}
+
+.cs-board-tab-view {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+  position: relative;
+  background-color: #f9f9f9;
+  text-align: left;
+  font-size: 14px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  line-height: 1.8;
+}
+
+.cs-board-tab input[type="checkbox"]:checked ~ .cs-board-tab-view {
+  max-height: 100em;
+  padding: 25px 80px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.cs-board-tab input[type="checkbox"]:checked + ._label {
+  border-bottom: 1px solid #7e2aff;
+}
+
+.cs-board-tab input[type="checkbox"]:checked + ._label:after {
+  content: url("/img/btn/icon-top-arrow.svg");
+}
+
+.sub-page-cs-02 .cs-faq-category-tab_var {
+  text-align: left;
+}
+
+.sub-page-cs-03 .cs-ask-category {
+  text-align: left;
+}
+
+.sub-page-cs-03 .cs-ask-category ._label {
+  display: inline-block;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.sub-page-cs-03 .cs-ask-category select {
+  width: 280px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.sub-page-cs-03 .cs-ask-contents {
+  margin: 15px 0;
+}
+
+.sub-page-cs-03 .cs-ask-contents textarea {
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  line-height: 1.7;
+}
+
+.sub-page-cs-03 .cs-ask-input_file {
+  position: relative;
+}
+
+.sub-page-cs-03 .cs-ask-input_file .btn-input {
+  border-radius: 10px;
+  line-height: 45px;
+  height: 45px;
+  background-color: #fff;
+  color: #7e2aff;
+  font-size: 0.95rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #7e2aff;
+  padding: 0 20px;
+}
+
+.sub-page-cs-03 .cs-ask-input_file .btn-input:hover {
+  background-color: #e6e6e6;
+}
+
+.sub-page-cs-03 .cs-ask-input_file-list {
+  height: 55px;
+  line-height: 55px;
+  text-align: left;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.sub-page-cs-03 .cs-ask-input_file-list span {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 7px;
+}
+
+.sub-page-cs-03 .cs-ask-caution {
+  padding: 15px 5px;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.sub-page-cs-03 .cs-ask-caution > span {
+  font-weight: 400;
+  color: #757575;
+}
+
+.sub-page-cs-03 .cs-ask-caution ._caution-img {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.sub-page-cs-03 .cs-ask-caution ._caution-info {
+  position: relative;
+  padding-left: 20px;
+}
+
+.sub-page-cs-03 .cs-ask-caution ._caution-info:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url("/img/icon/icon-caution.svg");
+}
+
+.sub-page-cs-03 .btn-complete {
+  border-radius: 30px;
+  line-height: 55px;
+  height: 55px;
+  background-color: #333333;
+  color: #fff;
+  font-size: 1.1rem;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.sub-page-cs-03 .btn-complete:hover {
+  background-color: #1a1a1a;
+}
+
+.sub-page-cs-03 .cs-ask-history {
+  margin-top: 80px;
+}
+
+.sub-page-cs-03 .cs-ask-history .in-title-right {
+  top: 0;
+}
+
+.sub-page-cs-03 .cs-ask-history .cs-board {
+  border-top: 0;
+}
+
+.sub-page-cs-03 .cs-ask-history .cs-board-tab ._label {
+  padding-right: 60px;
+}
+/*# sourceMappingURL=sub-page-cs.css.map */

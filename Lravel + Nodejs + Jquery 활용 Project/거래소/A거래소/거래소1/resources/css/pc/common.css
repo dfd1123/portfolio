@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family:'Spoqa Han Sans Regular';
+	src:url('/fonts/SpoqaHanSans_all/SpoqaHanSans_original/Spoqa Han Sans Regular.ttf');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans Bold';
+	src:url('/fonts/SpoqaHanSans_all/SpoqaHanSans_original/Spoqa Han Sans Bold.ttf');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans Light';
+	src : url('/fonts/SpoqaHanSans_all/SpoqaHanSans_original/Spoqa Han Sans Light.ttf');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans Thin';
+	src : url('/fonts/SpoqaHanSans_all/SpoqaHanSans_original/Spoqa Han Sans Thin.ttf');
+}
+@font-face {
+	font-family:'Poppins-Regular';
+	src : url('/fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+	font-family:'Poppins-Bold';
+	src : url('/fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+	font-family:'Poppins-SemiBold';
+	src : url('/fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+	font-family:'Poppins-ExtraLight';
+	src : url('/fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+html, body{
+	min-width:1280px;
+	height:100%;
+}
+
+body{
+	font-family: 'Spoqa Han Sans Regular','Poppins-Regular';
+}
+
+#wrapper{
+	min-height: 100%;
+    padding: 75px 0 323px;
+    margin: -75px 0 -323px;
+}
+
+#container{
+	min-width:1280px;
+	width:100%;
+}
+
+.bg_wh_btn{
+	width: 100%;
+    height: 60px;
+    border: solid 1px #00b9ff;
+    background: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #00b9ff;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+.bg_wh_btn:hover{
+    border: solid 3px #00b9ff;
+}
+
+.bg_blue_btn{
+	width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #00b9ff 20%, #4375ff 80%);
+}
+
+.invalid-feedback{
+	font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #ff6060;
+}
+
+.swal-icon {
+    width: 60px;
+    height: 60px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    box-sizing: content-box;
+    margin: 20px auto;
+}
+
+.swal-icon--error {
+    border-color: #ff6060;
+    background: #ff6060;
+    -webkit-animation: animateErrorIcon .5s;
+    animation: animateErrorIcon .5s;
+}
+
+.swal-icon--error__line {
+    position: absolute;
+    height: 4px;
+    width: 36px;
+    background-color: #fff;
+    display: block;
+    top: 29px;
+    border-radius: 2px;
+}
+
+.swal-icon--error__line--left {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 13px;
+}
+
+.swal-icon--error__line--right {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 12px;
+}
+
+.swal-title {
+    color: rgba(0,0,0,.65);
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    display: block;
+    padding: 0px 16px;
+    font-size: 27px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.48;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #496582;
+}
+
+.swal-text {
+    font-size: 16px;
+    position: relative;
+    float: none;
+    line-height: normal;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    color: rgba(0,0,0,.64);
+    max-width: calc(100% - 20px);
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #969696;
+}
+
+.swal-button-container {
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+}
+
+.swal-button {
+    background-color: #28283c;
+    padding: 10px 44px;
+    box-shadow: none !important;
+    outline: none !important;
+    border: 1px solid #00b9ff;
+    border-radius: 0;
+    background: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #00b9ff;
+    width: 100%;
+    height: 60px;
+}
+
+.swal-footer {
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    padding-bottom: 39px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.swal-icon:first-child {
+    margin-top: 45px;
+}

@@ -1,0 +1,155 @@
+.answer_section {
+  .form_select {
+    @include initInput;
+    @include emFont("16px", $color: $gray-01);
+    @include bgStyle(calc(100% - 15px), 50%, unset);
+    @include answerFormStyle;
+    background-image: url($g-btn-url+"btn_select_bt.svg");
+    display: block;
+  }
+  .form_input {
+    @include answerFormStyle;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+    box-shadow: none;
+    & > label {
+      width: 100%;
+      display: inline-block;
+      padding: 0.8rem 0 0.5rem 38px;
+      position: relative;
+      color: #9b9b9b;
+    }
+    .in_name {
+      @include emFont("16px", $color: inherit);
+      line-height: 25px;
+    }
+    .in_desc {
+      @include remFont("13px", $weight: 300);
+      padding: 6px 0;
+    }
+    .in_input_text {
+      @include remFont("15px", $weight: 300);
+      @include initInput;
+      width: 100%;
+      height: 2.75rem;
+      border-bottom: 1px solid #d8d8d8;
+      margin-bottom: 0.65rem;
+    }
+    .in_input_textarea textarea {
+      @include remFont("14px", $weight: 300);
+      width: 100%;
+      height: 2.75rem;
+      background-color: transparent;
+      border: 0;
+      outline: none;
+      border-bottom: 1px solid #d8d8d8;
+      margin-bottom: 0.25rem;
+      padding: 10px 0;
+      line-height: 1.5;
+    }
+    .in_input_textarea textarea::placeholder {
+      color: rgba(#272720, 0.3);
+    }
+    .checkbox_02_box {
+      @include position($t: 0.75rem, $l: 0);
+      @include responsive("iphone5") {
+        top: 0.6rem;
+      }
+    }
+  }
+  .form_input--etc {
+    padding-bottom: 0.6rem;
+    & > label {
+      padding: 0.8rem 0 0 38px;
+    }
+  }
+  .form_input.checked {
+    background-color: white;
+    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.1);
+    border-color: $theme-03;
+    & > label {
+      color: $gray-01;
+    }
+  }
+  .form_textarea {
+    textarea {
+      @include answerFormStyle;
+      @include remFont("15px", $weight: 400);
+      resize: none;
+      min-height: 160px;
+      padding: {
+        top: 0.8rem;
+        bottom: 0.8rem;
+      }
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    textarea::placeholder {
+      color: rgba(#272720, 0.3);
+    }
+  }
+}
+
+// element-UI timepicker style
+.answer_section {
+  .el-date-editor.el-input,
+  .el-date-editor.el-input__inner {
+    width: 100%;
+  }
+  .el-input__inner {
+    @include initInput;
+    @include setFont(1.1em, $color: $gray-01);
+    @include bgStyle(calc(100% - 15px), 50%, unset);
+    @include answerFormStyle;
+    background-image: url($g-btn-url+"btn_select_bt.svg");
+    display: block;
+    margin: 4px 0;
+    border: 1px solid $theme-03 !important;
+    padding-left: 30px !important;
+    padding-right: 30px;
+    &::placeholder {
+      @include setFont(1.05em, $color: $gray-01);
+    }
+    &:hover,
+    &:active {
+      border-color: $theme-02 !important;
+    }
+  }
+  .el-input__icon {
+    color: $gray-04;
+  }
+  .el-input__suffix {
+    right: 32px;
+  }
+}
+
+.answer_section__timepicker {
+  width: calc(100% - 3rem) !important;
+  max-width: calc(1024px - 3rem);
+  border-radius: 10px !important;
+  .popper__arrow {
+    left: 50% !important;
+    translate: translateX(-50%) !important;
+  }
+  .el-time-spinner__item {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: $gray-04;
+  }
+  .el-time-panel__content::after,
+  .el-time-panel__content::before {
+    height: 40px;
+    padding-bottom: 6px;
+  }
+  .el-time-panel__btn {
+    @include setFont(14px, $weight: 400, $color: $gray-01);
+    width: 50%;
+    margin: 0;
+  }
+  .el-time-panel__btn.confirm {
+    color: $theme-02 !important;
+    font-weight: 500 !important;
+  }
+}

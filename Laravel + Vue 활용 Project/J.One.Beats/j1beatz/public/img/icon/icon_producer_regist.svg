@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.234" height="16.234" viewBox="0 0 16.234 16.234">
+  <g id="레이어_2" data-name="레이어 2" transform="translate(0.5 0.5)">
+    <g id="레이어_1" data-name="레이어 1" transform="translate(0 0)">
+      <circle id="타원_32" data-name="타원 32" cx="7.617" cy="7.617" r="7.617" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle id="타원_33" data-name="타원 33" cx="1.523" cy="1.523" r="1.523" transform="translate(6.094 6.094)" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path id="패스_63" data-name="패스 63" d="M11.078,21.078A5.078,5.078,0,0,1,6,16" transform="translate(-3.461 -8.383)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_64" data-name="패스 64" d="M16,6a5.078,5.078,0,0,1,5.078,5.078" transform="translate(-8.383 -3.461)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

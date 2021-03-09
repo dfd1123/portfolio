@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="18.699" viewBox="0 0 14 18.699">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a134e8"/>
+      <stop offset="1" stop-color="#fc4ead"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_fav-on" transform="translate(-1422 -3482.301)">
+    <path id="Icon" d="M0,0V17.7L6.5,14.11,13,17.7V0Z" transform="translate(1422.5 3482.801)" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    <g id="그룹_244" data-name="그룹 244" transform="translate(-1 1)">
+      <line id="선_58" data-name="선 58" x2="6" transform="translate(1427 3489)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <line id="선_59" data-name="선 59" x2="6" transform="translate(1430 3486) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

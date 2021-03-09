@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-mypage-coupon-list-wrapper">
+      <!-- * 마이페이지 헤더 -->
+      <div class="l-mypage-hd">
+        <div class="l-mypage-hd-inner">
+          <div class="in-profile">
+            <figure class="_pic">
+              <div class="symbol-circle">
+                <img
+                  src="/images/img/basic_profile/01.png"
+                  alt="default profile img"
+                  class="_imgtag"
+                />
+              </div>
+              <!-- ※ 회원등급에 따라서 lv-01, lv-02, lv-03, lv-04, lv-05 클래스 바뀜 -->
+              <span class="_grade lv-01"></span>
+              <!-- ※ 회원등급에 따라서 lv-01, lv-02, lv-03, lv-04, lv-05 클래스 바뀜 END -->
+            </figure>
+            <h3 class="_name">
+              <b>김동글</b><span>님의 등급은</span> <i>비기너</i
+              ><span>입니다.</span>
+            </h3>
+            <button
+              type="button"
+              class="rounded-btn-outline"
+              onclick="alert('(기능)프로필 사진 변경기능입니다.')"
+            >
+              프로필 사진 변경
+            </button>
+          </div>
+
+          <ul class="in-panels">
+            <li class="_list">
+              <span>쿠폰</span>
+              <a href="MyPageCouponListView.html">0개</a>
+            </li>
+            <li class="_list">
+              <span>주문완료</span>
+              <a href="MyPageOrderHistoryView.html">5개</a>
+            </li>
+            <li class="_list">
+              <span>취소/환불</span>
+              <a href="MyPageCancelHistoryView.html">0건</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- * 마이페이지 헤더 -->
+
+      <div class="l-mypage-contents">
+        <!-- 
+      미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+     -->
+        <!-- 미니 퀵메뉴 -->
+        <aside id="_mini_quick_menu">
+          <div class="_img_box">
+            <img src="/images/badge/badge_3.svg" alt="logo" />
+          </div>
+          <h2 class="_title">#QUICK</h2>
+          <ul class="_mini_quick_menu_btn_wrap">
+            <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+            <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+            <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+            <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+            <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+            <li>
+              <a
+                href="#"
+                class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top"
+                >위로</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom"
+                >아래로</a
+              >
+            </li>
+          </ul>
+        </aside>
+        <!-- 미니 퀵메뉴 E -->
+
+        <!-- 활성화된 메뉴 _list 에 active 추가 -->
+        <div class="l-side-navi">
+          <div class="l-con-title-group type01 mb-10">
+            <h2
+              class="in-subject"
+              onclick="location.href='MyPageDefaultView.html'"
+            >
+              마이페이지
+            </h2>
+          </div>
+          <article class="in-nav-section">
+            <h4 class="_subject">주문배송</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageOrderHistoryView.html">주문내역 조회</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCancelHistoryView.html">취소/환불내역</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">나의 구매후기</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageWriteReviewView.html">구매후기 작성하기</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageMyReviewView.html">나의 구매후기</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">관심리스트</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageLikeListView.html">찜한 상품</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCurrentListView.html">최근 본 상품</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageStoreListView.html">즐겨찾기 스토어</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">쿠폰</h4>
+            <ul>
+              <li class="_list active">
+                <a href="MyPageCouponListView.html">내 쿠폰함</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCouponZoneView.html">쿠폰받기</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCouponHistoryView.html">쿠폰 사용내역</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">내 정보</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageSetInfoView.html">내 정보 관리</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageSetAccountView.html">카드 및 환불계좌 관리</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageGradeView.html">회원등급</a>
+              </li>
+              <!-- TODO: 회원등급 페이지 요청中 -->
+              <!-- <li class="_list">
+              <a href="#">회원등급</a>
+            </li> -->
+            </ul>
+          </article>
+        </div>
+
+        <!-- 1) 내 쿠폰함 -->
+        <div class="l-con-area">
+          <article class="l-con-article">
+            <div class="l-con-title-group type01 mb-25">
+              <h2 class="in-subject">내 쿠폰함</h2>
+            </div>
+
+            <div class="l-contents-group">
+              <!-- 0. 쿠폰코드 입력 + 분류 -->
+              <div class="dg-coupon-input-group">
+                <h4 class="in-subject">쿠폰 코드 입력</h4>
+                <div class="in-input-group">
+                  <input
+                    type="text"
+                    class="_input"
+                    placeholder="쿠폰 코드를 입력해주세요."
+                  />
+                  <button
+                    type="button"
+                    class="square-btn-outline"
+                    onclick="alert('(스윗알럿)쿠폰등록이 완료되었습니다.')"
+                  >
+                    쿠폰등록
+                  </button>
+                </div>
+              </div>
+
+              <div class="dg-coupon-sorting-bar">
+                <ul class="in-sorting">
+                  <li class="_type active">
+                    <a href="#" class="word">최신순</a>
+                  </li>
+                  <li class="_type">
+                    <a href="#" class="word">할인순</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 0. 쿠폰코드 입력 + 분류 E -->
+
+              <!-- 1. 제공된 쿠폰이 없을 때 -->
+              <div class="nothing-history">
+                <img
+                  src="/images/icon/empty_coupon.svg"
+                  alt="icon empty"
+                  class="in-empty-icon"
+                />
+                <span class="in-empty-ment">제공된 쿠폰이 없습니다.</span>
+              </div>
+              <!-- 1. 제공된 쿠폰이 없을 때 E -->
+
+              <!-- 2. 제공된 쿠폰이 있을 때 -->
+              <ul class="l-grid-group">
+                <li class="l-grid-list l-col-2">
+                  <!-- * 쿠폰컴퍼넌트 -->
+                  <div class="dg-coupon-card">
+                    <div class="dg-coupon-card-inner">
+                      <div class="in-information">
+                        <h5 class="_tit">
+                          할인쿠폰 제목은 1줄 이상 넘어가면 이렇게 됩니다
+                        </h5>
+                        <dl class="_desc">
+                          <dt>사용기간</dt>
+                          <dd>2019-11-14 ~ 2019-12-14</dd>
+                        </dl>
+                        <dl class="_desc">
+                          <dt>적용범위</dt>
+                          <dd><span>전체상품 사용 가능</span></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 쿠폰컴퍼넌트 E -->
+                </li>
+
+                <li class="l-grid-list l-col-2">
+                  <!-- * 쿠폰컴퍼넌트 -->
+                  <div class="dg-coupon-card">
+                    <div class="dg-coupon-card-inner">
+                      <div class="in-information">
+                        <h5 class="_tit">
+                          할인쿠폰 제목은 1줄 이상 넘어가면 이렇게 됩니다
+                        </h5>
+                        <dl class="_desc">
+                          <dt>사용기간</dt>
+                          <dd>2019-11-14 ~ 2019-12-14</dd>
+                        </dl>
+                        <dl class="_desc">
+                          <dt>적용범위</dt>
+                          <dd><span>전체상품 사용 가능</span></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 쿠폰컴퍼넌트 E -->
+                </li>
+
+                <li class="l-grid-list l-col-2">
+                  <!-- * 쿠폰컴퍼넌트 -->
+                  <div class="dg-coupon-card">
+                    <div class="dg-coupon-card-inner">
+                      <div class="in-information">
+                        <h5 class="_tit">
+                          할인쿠폰 제목은 1줄 이상 넘어가면 이렇게 됩니다
+                        </h5>
+                        <dl class="_desc">
+                          <dt>사용기간</dt>
+                          <dd>2019-11-14 ~ 2019-12-14</dd>
+                        </dl>
+                        <dl class="_desc">
+                          <dt>적용범위</dt>
+                          <dd><span>전체상품 사용 가능</span></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 쿠폰컴퍼넌트 E -->
+                </li>
+
+                <li class="l-grid-list l-col-2">
+                  <!-- * 쿠폰컴퍼넌트 -->
+                  <div class="dg-coupon-card">
+                    <div class="dg-coupon-card-inner">
+                      <div class="in-information">
+                        <h5 class="_tit">2019년 가을맞이 1,000원 할인쿠폰</h5>
+                        <dl class="_desc">
+                          <dt>사용기간</dt>
+                          <dd>2019-11-14 ~ 2019-12-14</dd>
+                        </dl>
+                        <dl class="_desc">
+                          <dt>적용범위</dt>
+                          <dd>
+                            <span>전체상품 사용 가능</span>
+                            <!-- ※ 버튼 있는 경우 -->
+                            <button
+                              type="button"
+                              class="rounded-btn-outline"
+                              onclick="alert('(팝업)적용상품 보기 뜹니다.')"
+                            >
+                              적용상품 보기
+                            </button>
+                            <!-- ※ 버튼 있는 경우 END -->
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 쿠폰컴퍼넌트 E -->
+                </li>
+              </ul>
+              <!-- 2. 제공된 쿠폰이 있을 때 E -->
+
+              <!-- 쿠폰 적용 상품 보기 팝업 -->
+              <div class="_popup_wrapper _coupon_popup_wrapper">
+                <div class="_bg"></div>
+                <div class="_popup_wrap _popup_wrap_930">
+                  <div class="_popup_title">
+                    <h4>쿠폰 적용 상품<a href="#" class="_close_btn"> </a></h4>
+                  </div>
+                  <div class="_popup_content over-y_scroll">
+                    <div class="_popup_coupon_table_wrap">
+                      <table class="_popup_coupon_sort_table">
+                        <caption class="dg_blind">
+                          선택 쿠폰
+                        </caption>
+                        <thead class="dg_blind">
+                          <tr>
+                            <th>종류</th>
+                            <th>내용</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="_popup_coupon_table_con">
+                            <th>쿠폰명</th>
+                            <td>2019년 잘가~! 마지막 할인 20% 할인쿠폰</td>
+                          </tr>
+                          <tr class="_popup_coupon_table_con">
+                            <th>사용기간</th>
+                            <td>2019-00-00 ~ 2019-00-00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="_popup_coupon_list">
+                      <!-- 상품 정렬 리스트 -->
+                      <div class="l-con-title-group type01">
+                        <h2 class="in-subject">상품리스트</h2>
+                        <ul class="in-sorting">
+                          <li class="_type active">
+                            <a href="#" class="word">인기순</a>
+                          </li>
+                          <li class="_type">
+                            <a href="#" class="word">신상품 순</a>
+                          </li>
+                          <li class="_type">
+                            <a href="#" class="word">낮은 가격 순</a>
+                          </li>
+                          <li class="_type">
+                            <a href="#" class="word">높은 가격 순</a>
+                          </li>
+                          <li class="_type">
+                            <a href="#" class="word">상품평 순</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 상품 정렬 리스트 E -->
+                      <!-- 상품 리스트 -->
+                      <div class="l-contents-group">
+                        <ul class="l-grid-group">
+                          <!-- 1페이지당 4*5개씩 보이기 -->
+                          <li class="l-grid-list l-col-4">
+                            <!-- * 옷상품 카드 -->
+                            <div class="dg-clothes-list-card">
+                              <figure class="dg-clothes-thumbnail">
+                                <input
+                                  type="checkbox"
+                                  class="heart-badge"
+                                  id="test01"
+                                />
+                                <label class="heart-badge-label" for="test01">
+                                  <svg viewBox="467 392 58 57">
+                                    <defs>
+                                      <linearGradient
+                                        id="heart-shape-gradient"
+                                        x2="0.35"
+                                        y2="1"
+                                      >
+                                        <stop
+                                          offset="0%"
+                                          stop-color="var(--color-stop)"
+                                        />
+                                        <stop
+                                          offset="100%"
+                                          stop-color="var(--color-bot)"
+                                        />
+                                      </linearGradient>
+                                    </defs>
+
+                                    <g
+                                      class="heart-Group"
+                                      fill="none"
+                                      fill-rule="evenodd"
+                                      transform="translate(467 392)"
+                                    >
+                                      <path
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        class="heart-path"
+                                        fill="#AAB8C2"
+                                      />
+                                      <circle
+                                        class="main-circ"
+                                        opacity="0"
+                                        cx="29.5"
+                                        cy="29.5"
+                                        r="1.5"
+                                      />
+
+                                      <g
+                                        class="grp7"
+                                        opacity="0"
+                                        transform="translate(7 6)"
+                                      >
+                                        <circle
+                                          class="oval2"
+                                          fill="#a134e8"
+                                          cx="5"
+                                          cy="6"
+                                          r="2"
+                                        />
+                                        <circle
+                                          class="oval1"
+                                          fill="#fc4ead"
+                                          cx="2"
+                                          cy="2"
+                                          r="2"
+                                        />
+                                      </g>
+
+                                      <g
+                                        class="grp6"
+                                        opacity="0"
+                                        transform="translate(0 28)"
+                                      >
+                                        <circle
+                                          class="oval1"
+                                          fill="#fc4ead"
+                                          cx="2"
+                                          cy="7"
+                                          r="2"
+                                        />
+                                        <circle
+                                          class="oval2"
+                                          fill="#ff62b9"
+                                          cx="3"
+                                          cy="2"
+                                          r="2"
+                                        />
+                                      </g>
+
+                                      <g
+                                        class="grp3"
+                                        opacity="0"
+                                        transform="translate(52 28)"
+                                      >
+                                        <circle
+                                          class="oval2"
+                                          fill="#a134e8"
+                                          cx="2"
+                                          cy="7"
+                                          r="2"
+                                        />
+                                        <circle
+                                          class="oval1"
+                                          fill="#a134e8"
+                                          cx="4"
+                                          cy="2"
+                                          r="2"
+                                        />
+                                      </g>
+
+                                      <g
+                                        class="grp2"
+                                        opacity="0"
+                                        transform="translate(44 6)"
+                                      >
+                                        <circle
+                                          class="oval2"
+                                          fill="#a134e8"
+                                          cx="5"
+                                          cy="6"
+                                          r="2"
+                                        />
+                                        <circle
+                                          class="oval1"
+                                          fill="#fc4ead"
+                                          cx="2"
+                                          cy="2"
+                                          r="2"
+                                        />
+                                      </g>
+
+                                      <g
+                                        class="grp5"
+                                        opacity="0"
+                                        transform="translate(14 50)"
+                                      >
+                                        <circle
+                                          class="oval1"
+                                          fill="#fc4ead"
+                                          cx="6"
+                                          cy="5"
+                                          r="2"
+                                        />
+                                        <circle
+                                          class="oval2"
+                                          fill="#ff62b9"
+                                          cx="2"
+                                          cy="2"
+                                          r="2"
+                                        />
+                                      </g>
+
+                                      <g
+                                        class="grp4"
+                                        opacity="0"
+                                        transform="translate(35 50)"
+                                      >
+                                        <circle
+                                          class="oval1"
+                                          fill="#fc4ead"
+                                          cx="2"
+                                          cy="7"
+                                          r="2"
+                                        />
+                                        <circle
+                                          class="oval2"
+                                          fill="#fc4ead"
+                                          cx="3"
+                                          cy="2"
+                                          r="2"
+                                        />
+                                      </g>
+
+                                      <g
+                                        class="grp1"
+                                        opacity="0"
+                                        transform="translate(24)"
+                                      >
+                                        <circle
+                                          class="oval1"
+                                          fill="#a134e8"
+                                          cx="2.5"
+                                          cy="3"
+                                          r="2"
+                                        />
+                                        <circle
+                                          class="oval2"
+                                          fill="#a134e8"
+                                          cx="7.5"
+                                          cy="2"
+                                          r="2"
+                                        />
+                                      </g>
+                                    </g>
+                                  </svg>
+                                </label>
+                                <a
+                                  class="in-image"
+                                  href="#"
+                                  style="background-image: url('/images/example/ex-clothes-img2.png');"
+                                ></a>
+                              </figure>
+                              <ul class="in-information">
+                                <li class="_category">아우터</li>
+                                <li class="_sellername">
+                                  <a href="#">판매자명</a>
+                                </li>
+                                <li class="_name">
+                                  <a href="#">하프 리본 트렌치코트</a>
+                                </li>
+                                <li class="_options">
+                                  <dl class="_op_category">
+                                    <dt class="_op_tit">색상</dt>
+                                    <dd class="_op_list">
+                                      <span>블랙</span>
+                                      <span>블랙</span>
+                                      <span>블랙</span>
+                                    </dd>
+                                  </dl>
+                                  <dl class="_op_category">
+                                    <dt class="_op_tit">사이즈</dt>
+                                    <dd class="_op_list">
+                                      <span>s</span>
+                                      <span>free</span>
+                                    </dd>
+                                  </dl>
+                                </li>
+                              </ul>
+                              <ul class="in-pricedetail">
+                                <li class="_streetprice">
+                                  <span>시중가:</span><span>29,800원</span>
+                                </li>
+                                <li class="_finalprice">
+                                  <b>46,800</b><span>원</span>
+                                  <img
+                                    src="/images/icon/icon_review.svg"
+                                    alt="star icon"
+                                  /><span class="_rate">5.0</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- * 옷상품 카드 E -->
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 상품 리스트 E -->
+                      <!-- pagination 자리 -->
+                      <div class="_board_pager"></div>
+                      <!-- pagination 자리 E -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 쿠폰 적용 상품 보기 팝업 E -->
+            </div>
+          </article>
+        </div>
+        <!-- 1) 내 쿠폰함 E -->
+      </div>
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

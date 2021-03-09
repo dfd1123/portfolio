@@ -1,0 +1,74 @@
+/*
+    PAGES - (사이드네비)장바구니
+*/
+
+#dg-snb-cart-wrapper {
+  padding-top: 35px;
+  padding-bottom: 200px;
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  .l-contents-group {
+    padding: 0 10px;
+  }
+
+  .l-con-title-group .in-more {
+    @include position($t: 50%, $r: 10px);
+
+    transform: translateY(-50%);
+  }
+
+  // 전체선택 선택해제 선택상품삭제
+  .in-sorting {
+    margin: 17px 0;
+
+    ._type:first-child {
+      padding-left: 16px;
+      position: relative;
+    }
+
+    ._type:first-child .dg-input-checkbox_label {
+      @include position($t: -3px, $l: 0);
+
+      margin: 0;
+    }
+  }
+  // 전체선택 선택해제 선택상품삭제 END
+
+  .in-breadcrumb {
+    @include position($t: 50%, $r: 0);
+
+    transform: translateY(-50%);
+  }
+
+  .dg-clothes-history-card {
+    .in-content {
+      padding: 22px 17px 17px 50px;
+      .dg-input-checkbox_label {
+        @include position($t: 0, $l: -32px);
+
+        margin: 0;
+      }
+    }
+  }
+
+  .nothing-history {
+    padding: 100px 0;
+  }
+
+  .dg-button-wrap {
+    max-width: 510px;
+
+    &--single {
+      max-width: 250px;
+    }
+  }
+
+  .dg-order-wrapper {
+    .dg-clothes-history-card .in-content ._price_wrap {
+      margin: 10px 0px 15px 28px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "responseCode": 200,
+  "message": "정상처리되었습니다",
+  "pageInfo": null,
+  "data": [
+    {
+      "userUuid": "5b240f85-2811-41e3-85fb-b5eb840ca74b",
+      "custId": "0000000004",
+      "userId": "bdidcwk001",
+      "autCd": "04",
+      "userNm": "분당idc작업자1",
+      "userPwd": null,
+      "apvSttusCd": "01",
+      "accSttusCd": "01",
+      "userTelNo": null,
+      "userEmail": null,
+      "userImg": null,
+      "pos": null,
+      "rspof": null,
+      "recntLoginDt": null,
+      "loginFailTmscnt": 0,
+      "chgPwdDt": null,
+      "accsTokn": null,
+      "refrsTokn": null,
+      "toknExpDt": null,
+      "cretDt": "2019-11-19 17:26:47",
+      "amdDt": "2019-11-19 17:26:47",
+      "svcId": null,
+      "unitSvcUserAutCd": "03",
+      "svcUserGroupUuid": null,
+      "recntLoginSvcYn": "N",
+      "pushId": "cjx3Va5Ry0Q:APA91bF4Et9mnaqXdx9ITgQXr_cqBbOv5pLA6SMS8bPm3RpQzNcBVVOx-56JCrQYh1jw5GIQLml6c4Ah07TA4RM-uuN8ivElToTog5TA0PLQYTHH0L4sjCICpJPtitQtLOptJPmoOm_z",
+      "pushUseYn": "Y",
+      "expnsnAtribVal": null
+    }
+  ]
+}

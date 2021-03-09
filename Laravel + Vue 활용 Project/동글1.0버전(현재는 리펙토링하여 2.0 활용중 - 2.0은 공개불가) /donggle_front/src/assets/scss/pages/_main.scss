@@ -1,0 +1,241 @@
+/*
+    PAGES - 메인
+*/
+
+#dg-home-wrapper {
+  width: 100%;
+  position: relative;
+
+  .l-con-area {
+    @include center(1126px);
+
+    padding: 0 35px;
+  }
+  .l-con-title-group {
+    margin-bottom: 3rem;
+    letter-spacing: -1px;
+
+    .in-more {
+      @include position($t: 50%, $r: 14px);
+      transform: translateY(-50%);
+      user-select: none;
+    }
+  }
+  .l-con-article {
+    margin-bottom: 60px;
+    border-bottom: 1px solid $light_gray6;
+    padding-top: 16px;
+  }
+  .l-con-article--main-recmnd {
+    border-bottom: 0;
+  }
+  //영역 데이터가 비어있을 때
+  .non_data {
+    @include bgOption(93px, center top);
+    @include fontType01(#{$px-13}em, #c3afcd, 400);
+    @include fontType02(-0.2px);
+
+    user-select: none;
+    line-height: 1.4;
+    background-image: url($path-icon+"empty_recent.svg");
+  }
+
+  // 메인 상품썸네일 별점 정렬
+  .dg-clothes-list-card .in-pricedetail ._finalprice {
+    b + span{
+      margin-right: 0px;
+    }
+    img, ._rate {
+      position: relative;
+      top: 2px;
+      vertical-align: middle;
+    }
+  }
+}
+
+// 1. 배너
+.dg-main-banner-area {
+  width: 100%;
+  max-width: 100%;
+  min-width: 1056px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 85px;
+  user-select: none;
+
+  .clear_both {
+    width: 100%;
+    float: left;
+  }
+  img {
+    width: 100%;
+    float: left;
+  }
+}
+
+// 2. 추천스토어
+.dg-main-recmnd-card {
+  position: relative;
+  height: 340px;
+}
+
+.dg-main-recmnd-thumbnail {
+  @include inlineBlockStyle(bottom);
+
+  width: 70%;
+  background-color: transparent;
+  height: 340px;
+  max-width: 710px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  .in-image {
+    @include bgOption;
+    @include inlineBlockStyle;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.dg-main-recmnd-detail {
+  @include inlineBlockStyle(bottom);
+
+  width: 30%;
+  padding: 0 25px 10px;
+  letter-spacing: -0.8px;
+
+  .in-logo {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #f5f5f5;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border-radius: 50%;
+  }
+  .in-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .in-detail_top {
+    padding: 10px 0;
+  }
+  ._brandname {
+    @include fontType01(#{$px-28}em, $purple, bold);
+
+    letter-spacing: -1px;
+  }
+  ._brandname a {
+    @include fontType01(inherit, inherit);
+    @include ellipse(1, 35px);
+    color: #7826ac;
+  }
+  ._brandintro {
+    @include fontType01(#{$px-15}em, $weight: 200);
+    @include fontType02($line-height: 1.5);
+    padding: 15px 0 18px;
+  }
+
+  .in-detail_middle {
+    position: relative;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    &:before {
+      @include themeGradientColor(to left);
+      @include position($t: -10px, $l: 0);
+      @include makePseudo("");
+
+      width: 60px;
+      height: 2px;
+      border-radius: 10%;
+    }
+  }
+  .in-detail_middle li {
+    @include inlineBlockStyle(middle);
+  }
+  .in-detail_middle li:nth-child(2) {
+    margin: 0px 7px 0px 12px;
+  }
+  .in-detail_middle li img,
+  .in-detail_middle li span {
+    @include inlineBlockStyle(middle);
+  }
+  .in-detail_middle li img {
+    margin-right: 6px;
+  }
+  .in-detail_middle li span {
+    @include fontType01(#{$px-13}em);
+  }
+  .in-detail_middle ._b_favorite button {
+    background-color: $white;
+    border: 0px none;
+    outline: none;
+    cursor: pointer;
+    &:active {
+      color: $purple;
+    }
+  }
+  ._brandintro p {
+    @include ellipse(3, 23px);
+  }
+}
+
+.main-banner-slider {
+  .slick-dots {
+    position: absolute;
+    bottom: 15px;
+    top: unset;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .slick-slide {
+    margin-right: 0;
+    text-align: center;
+    > div {
+      max-width: 2000px;
+      margin: 0 auto;
+    }
+  }
+
+  .slick-next,
+  .slick-prev {
+    width: 27px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    transition: all ease 0.3s;
+  }
+
+  &:hover {
+    .slick-prev {
+      left: 20px !important;
+    }
+    .slick-next {
+      right: 20px !important;
+    }
+  }
+
+  .slick-prev {
+    left: -30px;
+    background-image: url(/images/btn/btn_arrow_left.svg);
+  }
+
+  .slick-next {
+    right: -30px;
+    background-image: url(/images/btn/btn_arrow_right.svg);
+  }
+
+  .slick-prev:before {
+    content: "";
+  }
+
+  .slick-next:before {
+    content: "";
+  }
+}

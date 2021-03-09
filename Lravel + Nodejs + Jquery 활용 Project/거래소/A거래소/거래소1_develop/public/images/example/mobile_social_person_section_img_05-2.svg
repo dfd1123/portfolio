@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="278" height="138.5" viewBox="0 0 278 138.5">
+  <g id="그룹_4086" data-name="그룹 4086" transform="translate(-22 -1651.5)">
+    <text id="평균_손실률" data-name="평균 손실률" transform="translate(22 1786)" fill="#969696" font-size="13" font-family="SpoqaHanSans-Light, SpoqaHanSans" font-weight="300"><tspan x="0" y="0">평균 손실률</tspan></text>
+    <text id="_00.00_" data-name="▼ 00.00%" transform="translate(300 1786)" fill="#6498ff" font-size="13" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="-62.491" y="0">▼ 00.00%</tspan></text>
+    <text id="평균_수익률" data-name="평균 수익률" transform="translate(22 1762)" fill="#969696" font-size="13" font-family="SpoqaHanSans-Light, SpoqaHanSans" font-weight="300"><tspan x="0" y="0">평균 수익률</tspan></text>
+    <text id="_00.00_2" data-name="▲ 00.00%" transform="translate(300 1762)" fill="#ff6060" font-size="13" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="-62.491" y="0">▲ 00.00%</tspan></text>
+    <text id="_3_236" data-name="3,236" transform="translate(49 1710)" fill="#333" font-size="30" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">3,236</tspan></text>
+    <text id="총_거래횟수" data-name="총 거래횟수" transform="translate(58 1676)" fill="#969696" font-size="13" font-family="SpoqaHanSans-Light, SpoqaHanSans" font-weight="300" letter-spacing="-0.04em"><tspan x="0" y="0">총 거래횟수</tspan></text>
+    <text id="_00.00_3" data-name="00.00%" transform="translate(176 1710)" fill="#ff6060" font-size="30" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">00.00%</tspan></text>
+    <text id="총_수익률" data-name="총 수익률" transform="translate(206 1676)" fill="#969696" font-size="13" font-family="SpoqaHanSans-Light, SpoqaHanSans" font-weight="300" letter-spacing="-0.04em"><tspan x="0" y="0">총 수익률</tspan></text>
+    <line id="선_329" data-name="선 329" y2="81" transform="translate(160.5 1651.5)" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+  </g>
+</svg>

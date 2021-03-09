@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a134e8"/>
+      <stop offset="1" stop-color="#fc4ead"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_card" transform="translate(-834 -522)">
+    <circle id="타원_86" data-name="타원 86" cx="25" cy="25" r="25" transform="translate(834 522)" fill="url(#linear-gradient)"/>
+    <g id="icon_card-on" transform="translate(845 537)">
+      <g id="그룹_397" data-name="그룹 397" transform="translate(0 0)">
+        <g id="그룹_396" data-name="그룹 396">
+          <path id="패스_55" data-name="패스 55" d="M29.375,20.141a.866.866,0,0,1-.863.869H2.113a.862.862,0,0,1-.863-.869V2.113a.86.86,0,0,1,.863-.863H28.505a.864.864,0,0,1,.863.863V20.141Z" transform="translate(-1.25 -1.25)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="선_179" data-name="선 179" x2="11.538" transform="translate(3.37 16.324)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="선_180" data-name="선 180" x2="4.617" transform="translate(18.945 16.324)" fill="#fff" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <path id="패스_56" data-name="패스 56" d="M28.971,8.89H1.5v3.923H28.971" transform="translate(-1.332 -3.741)" fill="#a134e8"/>
+      </g>
+    </g>
+  </g>
+</svg>

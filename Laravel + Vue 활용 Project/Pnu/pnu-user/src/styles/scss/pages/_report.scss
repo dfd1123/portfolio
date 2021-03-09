@@ -1,0 +1,113 @@
+.pusan_report_contents{
+    height:100vh;
+    margin:0px;
+    @include gra_bg;
+}
+.report_content{
+    padding-top:10vh;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.bg-symbol{
+    position: absolute;
+    top:15%;
+    left:50%;
+    transform:translateX(-50%);
+    width:150px;
+    height:150px;
+    margin:0px auto;
+    background-image:url(/client/assets/img/common/symbol_wh.svg);
+    @include bgOption(cover,center center);
+}
+._graph_choice{
+    position: relative;
+    width:90%;
+    height:51px;
+    line-height:51px;
+    margin:30px auto;
+    border:1px solid $white;
+    padding:0px 0px 0px 15px;
+    border-radius:8px;
+    background-color:rgba($white,0.08);
+    font-size:$f-21;
+    font-weight:500;
+    color:$white;
+    &:before, &:after{
+        content:'';
+        display:block;
+        position: absolute;
+        top:50%;
+        right:19px;
+        width:2px;
+        height:10px;
+        border-radius:2px;
+        transform:translateY(-50%) rotate(45deg);
+        background-color:$white;
+        transition:all 0.3s;
+    }
+    &:after{
+        right:25px;
+        transform:translateY(-50%) rotate(-45deg);
+    }
+    &.active{
+        &:before{
+            transform:translateY(-50%) rotate(-45deg);
+        }
+        &:after{
+            transform:translateY(-50%) rotate(45deg);
+        }
+    }
+    &.active{
+        ~ ._graph_choice_box{
+            display:block;
+        }
+    }
+}
+._graph_choice_box{
+    display:none;
+    position: absolute;
+    top:calc(10vh + 111px);
+    left:5%;
+    width:90%;
+    padding:24px 12px;
+    border-radius:8px;
+    background-color:$white;
+    box-shadow:0px 10px 30px rgba(0,0,0,0.4);
+    z-index: 1001;
+    &:before{
+        content:'';
+        display:block;
+        position: absolute;
+        top:-5px;
+        right:20px;
+        width:10px;
+        height:10px;
+        background-color:$white;
+        transform:rotate(45deg);
+    }
+}
+._graph_choice_btn{
+    > a{
+        display:block;
+        border-bottom:1px solid $light_gray4;
+        padding:11px 0 11px 6px;
+        font-size:$f-16;
+        font-weight:300;
+        text-align:left;
+    }
+    &:last-of-type > a{
+        border-bottom:0px none;
+    }
+    &.active{
+        display:none;
+    }
+}
+.report_graph{
+    width:90%;
+    margin:0px auto;
+    .graph{
+        color:$white;
+    }
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div
+      id="dg-mypage-order-history-wrapper"
+      class="l-ordercancel-wrapper mypage-order-history-wrapper mypage-cancel-history-wrapper"
+    >
+      <!-- 주문취소/환불 팝업 -->
+      <div class="_popup_wrapper _cancel_popup_wrapper display_none">
+        <div class="_bg"></div>
+        <div class="_popup_wrap">
+          <div class="_popup_title">
+            <!-- 환불시에는 "환불 신청 내역"으로 바뀌어야 함 -->
+            <h4>
+              주문취소 신청 내역<button
+                type="button"
+                class="_close_btn"
+              ></button>
+            </h4>
+          </div>
+          <div class="_popup_content">
+            <div class="cancel_title">
+              <!-- 경우에 따라 "환불 신청중", "환불 완료", "환불 거절", "취소 신청중", "취소 완료", "취소 거절" -->
+              <h5 class="_title">환불 신청중</h5>
+              <span class="_date">2020-00-00 00:00:00</span>
+              <span class="_num">1234567809</span>
+            </div>
+
+            <div class="_cancel_reason _cancel_my_reason">
+              <h5 class="_title">취소사유</h5>
+              <p class="_reason">
+                주문에는 이상없으나 구매의사 없음(변심)
+              </p>
+              <div class="_reason_detail">
+                사유에 작성했던 내용
+              </div>
+            </div>
+            <!-- 거절시에만 생김. 거절사유가 없을 때에는 이 레이아웃자체가 보이지 않음 -->
+            <div class="_cancel_reason _cancel_store_reason">
+              <h5 class="_title">거절사유</h5>
+              <div class="_reason_detail">
+                저희 동글 스토어를 이용해주셔서 진심으로 감사합니다. 고객님의
+                취소신청을 확인 하였습니다. 하지만 단순변심으로만으로는 주문
+                취소가 불가합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 주문취소/환불 팝업 E -->
+
+      <!-- 1) 주문배송 -->
+      <div class="l-con-area full">
+        <article class="l-con-article dg-product-list-wrapper">
+          <div class="_page_title_wrap">
+            <h2>
+              주문배송
+              <a href="#" class="_back_btn">뒤로가기</a>
+            </h2>
+            <div class="second_title clear_both">
+              <a href="MyPageOrderHistoryView.html">주문내역</a>
+              <a href="MyPageCancelHistoryView.html" class="active"
+                >취소/환불내역</a
+              >
+            </div>
+          </div>
+
+          <!-- 조회기간 -->
+          <div class="dg-filter-search_wrap">
+            <h2>조회기간</h2>
+            <!-- 조회기간 표시 조회기간설정해서 조회버튼 누르면 보임 -->
+            <div class="dg-filter-search-list">
+              <div class="in-section">
+                <button type="button" class="rounded-btn-outline">
+                  <span>2020-02-02 ~ 2020-05-05</span>
+                </button>
+              </div>
+            </div>
+            <!-- 조회기간 표시 조회기간설정해서 조회버튼 누르면 보임 E -->
+            <!-- 조회기간 설정 -->
+            <input
+              id="test11"
+              type="checkbox"
+              class="filter-search-list_view display_none"
+            />
+            <label for="test11" class="dg-filter-search-btn_wrap">
+              <span class="dg-filter-search-btn">필터</span>
+            </label>
+            <div class="filter-search-list-wrap">
+              <ul class="filter-search-list">
+                <li>
+                  <button href="#" class="_search_date_btn">1주일</button>
+                </li>
+                <li>
+                  <button href="#" class="_search_date_btn active">
+                    1개월
+                  </button>
+                </li>
+                <li>
+                  <button href="#" class="_search_date_btn">3개월</button>
+                </li>
+                <li>
+                  <button href="#" class="_search_date_btn">6개월</button>
+                </li>
+              </ul>
+              <div class="filter_search_input_wrap">
+                <div class="dg_write write_birth write_date">
+                  <label for="#" class="display_none">조회시작일</label>
+                  <input
+                    type="text"
+                    id="#"
+                    class="input_text_box"
+                    maxlength="10"
+                    placeholder="2019-00-00"
+                  />
+                </div>
+                <span class="_date_from-to">~</span>
+                <div class="dg_write write_birth write_date">
+                  <label for="#" class="display_none">조회종료일</label>
+                  <input
+                    type="text"
+                    id="#"
+                    class="input_text_box"
+                    maxlength="10"
+                    placeholder="2019-00-00"
+                  />
+                </div>
+              </div>
+              <button class="filter-search-end-btn">조회</button>
+            </div>
+            <!-- 조회기간 설정 E -->
+          </div>
+          <!-- 조회기간 E -->
+          <div class="mypage-btn-wrap">
+            <div class="bd_1px clear_both">
+              <button type="button" class="mypage-btn active">전체</button>
+              <button type="button" class="mypage-btn">취소</button>
+              <button type="button" class="mypage-btn">환불</button>
+            </div>
+          </div>
+          <!-- 주문 리스트 -->
+          <div class="dg-order-list-wrap">
+            <ul class="l-grid-group">
+              <li class="l-grid-list l-col-1">
+                <!-- * 주문일시, 주문번호 정보라벨 -->
+                <ul class="dg-about-odnum-label">
+                  <li>2019-11-11 00:00:00</li>
+                  <li class="_num">0012547884</li>
+                  <li class="_next">
+                    <a href="MyPageHistoryDetailView.html">주문 상세보기</a>
+                  </li>
+                </ul>
+                <!-- * 주문일시, 주문번호 정보라벨 E -->
+              </li>
+              <li class="l-grid-list l-col-1">
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) -->
+                <div class="dg-clothes-history-card type-cart type-detail ">
+                  <div class="in-content">
+                    <div class="inner-wrap">
+                      <div class="inner-box">
+                        <div class="status-title pd_12">
+                          <h3>환불완료</h3>
+                          <input
+                            type="checkbox"
+                            id="test12"
+                            class="status_more_btn display_none"
+                          />
+                          <label for="test12">신청내역 보기</label>
+                        </div>
+                        <h3 class="_name">
+                          [스토어명] 팝콘체크 롱코트 (2color) 길어지면
+                          자연스럽게 줄이 바뀌어 집니다
+                        </h3>
+                        <div class="_options">
+                          <figure class="dg-clothes-thumbnail">
+                            <a
+                              class="in-image"
+                              href="#"
+                              style="background-image: url('/images/example/ex-clothes-img2.png');"
+                            ></a>
+                          </figure>
+                          <div class="_in_col">
+                            <dl class="_op_category">
+                              <dd class="_op_list">
+                                <span>팔찌1 컬러 : 실버</span>
+                              </dd>
+                            </dl>
+                            <div class="_amount">
+                              <span>수량 : 1개</span>
+                            </div>
+                            <div class="_price mb-0">
+                              <span class="_prdt_price">19,800 원</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_price_wrap mb-0">
+                          <div class="_sale_price">
+                            <span>쿠폰 할인</span> <b>0 원</b>
+                          </div>
+                          <div class="_total_price">
+                            <span>총 상품금액</span> <b>18,000 원</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) E -->
+              </li>
+              <li class="l-grid-list l-col-1">
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) -->
+                <div class="dg-clothes-history-card type-cart type-detail ">
+                  <div class="in-content">
+                    <div class="inner-wrap _last">
+                      <div class="inner-box">
+                        <div class="status-title">
+                          <h3>환불거절</h3>
+                          <input
+                            type="checkbox"
+                            id="test12"
+                            class="status_more_btn display_none"
+                          />
+                          <label for="test12">신청내역 보기</label>
+                        </div>
+                        <h3 class="_name">
+                          [스토어명] 팝콘체크 롱코트 (2color) 길어지면
+                          자연스럽게 줄이 바뀌어 집니다
+                        </h3>
+                        <div class="_options">
+                          <figure class="dg-clothes-thumbnail">
+                            <a
+                              class="in-image"
+                              href="#"
+                              style="background-image: url('/images/example/ex-clothes-img2.png');"
+                            ></a>
+                          </figure>
+                          <div class="_in_col">
+                            <dl class="_op_category">
+                              <dd class="_op_list">
+                                <span>팔찌1 컬러 : 실버</span>
+                                <span>팔찌2 컬러 : 실버</span>
+                                <span
+                                  >각인문구/폰트 : 주문요청사항에
+                                  남겨주세요</span
+                                >
+                                <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                              </dd>
+                            </dl>
+                            <div class="_amount">
+                              <span>수량 : 1개</span>
+                            </div>
+                            <div class="_price mb-0">
+                              <span class="_prdt_price">19,800 원</span>
+                              <!-- 쿠폰할인 적용되었을때 배지 -->
+                              <span class="_sale_badge">쿠폰할인</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_price_wrap mb-0">
+                          <div class="_sale_price">
+                            <span>쿠폰 할인</span> <b>- 1,800 원</b>
+                          </div>
+                          <div class="_total_price">
+                            <span>총 상품금액</span> <b>18,000 원</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) E -->
+              </li>
+            </ul>
+            <ul class="l-grid-group">
+              <li class="l-grid-list l-col-1">
+                <!-- * 주문일시, 주문번호 정보라벨 -->
+                <ul class="dg-about-odnum-label">
+                  <li>2019-11-11 00:00:00</li>
+                  <li class="_num">0012547884</li>
+                  <li class="_next">
+                    <a href="MyPageHistoryDetailView.html">주문 상세보기</a>
+                  </li>
+                </ul>
+                <!-- * 주문일시, 주문번호 정보라벨 E -->
+              </li>
+              <li class="l-grid-list l-col-1">
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) -->
+                <div class="dg-clothes-history-card type-cart type-detail ">
+                  <div class="in-content">
+                    <div class="inner-wrap">
+                      <div class="inner-box">
+                        <div class="status-title pd_12">
+                          <h3>환불신청중</h3>
+                          <input
+                            type="checkbox"
+                            id="test12"
+                            class="status_more_btn display_none"
+                          />
+                          <label for="test12">신청내역 보기</label>
+                        </div>
+                        <h3 class="_name">
+                          [스토어명] 팝콘체크 롱코트 (2color) 길어지면
+                          자연스럽게 줄이 바뀌어 집니다
+                        </h3>
+                        <div class="_options">
+                          <figure class="dg-clothes-thumbnail">
+                            <a
+                              class="in-image"
+                              href="#"
+                              style="background-image: url('/images/example/ex-clothes-img2.png');"
+                            ></a>
+                          </figure>
+                          <div class="_in_col">
+                            <dl class="_op_category">
+                              <dd class="_op_list">
+                                <span>팔찌1 컬러 : 실버</span>
+                              </dd>
+                            </dl>
+                            <div class="_amount">
+                              <span>수량 : 1개</span>
+                            </div>
+                            <div class="_price mb-0">
+                              <span class="_prdt_price">19,800 원</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_price_wrap mb-0">
+                          <div class="_sale_price">
+                            <span>쿠폰 할인</span> <b>0 원</b>
+                          </div>
+                          <div class="_total_price">
+                            <span>총 상품금액</span> <b>18,000 원</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) E -->
+              </li>
+              <li class="l-grid-list l-col-1">
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) -->
+                <div class="dg-clothes-history-card type-cart type-detail ">
+                  <div class="in-content">
+                    <div class="inner-wrap _last">
+                      <div class="inner-box">
+                        <div class="status-title">
+                          <h3>취소완료</h3>
+                          <input
+                            type="checkbox"
+                            id="test12"
+                            class="status_more_btn display_none"
+                          />
+                          <label for="test12">신청내역 보기</label>
+                        </div>
+                        <h3 class="_name">
+                          [스토어명] 팝콘체크 롱코트 (2color) 길어지면
+                          자연스럽게 줄이 바뀌어 집니다
+                        </h3>
+                        <div class="_options">
+                          <figure class="dg-clothes-thumbnail">
+                            <a
+                              class="in-image"
+                              href="#"
+                              style="background-image: url('/images/example/ex-clothes-img2.png');"
+                            ></a>
+                          </figure>
+                          <div class="_in_col">
+                            <dl class="_op_category">
+                              <dd class="_op_list">
+                                <span>팔찌1 컬러 : 실버</span>
+                                <span>팔찌2 컬러 : 실버</span>
+                                <span
+                                  >각인문구/폰트 : 주문요청사항에
+                                  남겨주세요</span
+                                >
+                                <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                              </dd>
+                            </dl>
+                            <div class="_amount">
+                              <span>수량 : 1개</span>
+                            </div>
+                            <div class="_price mb-0">
+                              <span class="_prdt_price">19,800 원</span>
+                              <!-- 쿠폰할인 적용되었을때 배지 -->
+                              <span class="_sale_badge">쿠폰할인</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_price_wrap mb-0">
+                          <div class="_sale_price">
+                            <span>쿠폰 할인</span> <b>- 1,800 원</b>
+                          </div>
+                          <div class="_total_price">
+                            <span>총 상품금액</span> <b>18,000 원</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) E -->
+              </li>
+            </ul>
+          </div>
+          <!-- 주문 리스트 E -->
+          <div class="bot-enter"></div>
+        </article>
+      </div>
+      <!-- 1) 주문배송 E -->
+    </div>
+    <!-- content E -->
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

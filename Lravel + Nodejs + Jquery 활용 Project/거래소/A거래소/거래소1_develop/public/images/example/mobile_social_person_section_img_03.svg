@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="281" height="240" viewBox="0 0 281 240">
+  <g id="그룹_4088" data-name="그룹 4088" transform="translate(-19 -798)">
+    <line id="선_54" data-name="선 54" x2="279.5" transform="translate(20.5 798.5)" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+    <text id="수익률" transform="translate(252 823.415)" fill="#969696" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">수익률</tspan></text>
+    <line id="선_55" data-name="선 55" x2="279.5" transform="translate(20 839.5)" fill="none" stroke="#333" stroke-width="1"/>
+    <text id="포지션" transform="translate(140 823.415)" fill="#969696" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">포지션</tspan></text>
+    <text id="투자비중" transform="translate(195 823.415)" fill="#969696" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">투자비중</tspan></text>
+    <text id="코인명" transform="translate(47.936 823.415)" fill="#969696" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">코인명</tspan></text>
+    <rect id="사각형_292" data-name="사각형 292" width="279.5" height="65" transform="translate(20 840)" fill="#ffe8e8" opacity="0"/>
+    <text id="홀딩" transform="translate(140 878)" fill="#333" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">홀딩</tspan></text>
+    <text id="_30_" data-name="30%" transform="translate(203 878)" fill="#333" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">30%</tspan></text>
+    <text id="_21_" data-name="+ 21%" transform="translate(268 878)" fill="#ff6060" font-size="12" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700"><tspan x="-17.442" y="0">+ 21%</tspan></text>
+    <line id="선_56" data-name="선 56" x2="279.5" transform="translate(20 905.5)" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+    <text id="맨체스터_유나이티드" data-name="맨체스터 유나이티드" transform="translate(19 869)" fill="#333" font-size="13" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">맨체스터 유나이티드</tspan></text>
+    <text id="MNU" transform="translate(19 888)" fill="#333" font-size="13" font-family="SpoqaHanSans-Light, SpoqaHanSans" font-weight="300"><tspan x="0" y="0">MNU</tspan></text>
+    <rect id="사각형_292-2" data-name="사각형 292" width="279.5" height="65" transform="translate(20 906)" fill="#ffe8e8" opacity="0"/>
+    <text id="신규매수" transform="translate(140 944)" fill="#333" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">신규매수</tspan></text>
+    <text id="_30_2" data-name="30%" transform="translate(203 944)" fill="#333" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">30%</tspan></text>
+    <text id="_-_21_" data-name="- 21%" transform="translate(268 944)" fill="#6498ff" font-size="12" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700"><tspan x="-16.62" y="0">- 21%</tspan></text>
+    <line id="선_56-2" data-name="선 56" x2="279.5" transform="translate(20 971.5)" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+    <text id="맨체스터_유나이티드-2" data-name="맨체스터 유나이티드" transform="translate(19 935)" fill="#333" font-size="13" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">맨체스터 유나이티드</tspan></text>
+    <text id="MNU-2" data-name="MNU" transform="translate(19 954)" fill="#333" font-size="13" font-family="SpoqaHanSans-Light, SpoqaHanSans" font-weight="300"><tspan x="0" y="0">MNU</tspan></text>
+    <rect id="사각형_292-3" data-name="사각형 292" width="279.5" height="65" transform="translate(20 972)" fill="#ffe8e8" opacity="0"/>
+    <text id="매도완료" transform="translate(140 1010)" fill="#333" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">매도완료</tspan></text>
+    <text id="_30_3" data-name="30%" transform="translate(203 1010)" fill="#333" font-size="12" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">30%</tspan></text>
+    <text id="_21_2" data-name="+ 21%" transform="translate(268 1010)" fill="#ff6060" font-size="12" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700"><tspan x="-17.442" y="0">+ 21%</tspan></text>
+    <line id="선_56-3" data-name="선 56" x2="279.5" transform="translate(20.5 1037.5)" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+    <text id="맨체스터_유나이티드-3" data-name="맨체스터 유나이티드" transform="translate(19 1001)" fill="#333" font-size="13" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">맨체스터 유나이티드</tspan></text>
+    <text id="MNU-3" data-name="MNU" transform="translate(19 1020)" fill="#333" font-size="13" font-family="SpoqaHanSans-Light, SpoqaHanSans" font-weight="300"><tspan x="0" y="0">MNU</tspan></text>
+  </g>
+</svg>

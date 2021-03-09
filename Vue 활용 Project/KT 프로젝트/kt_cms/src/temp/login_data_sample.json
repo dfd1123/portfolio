@@ -1,0 +1,18 @@
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdmNfaWQiOlsiaWRjdGVzdDAwMSJdLCJ1c2VyX3V1aWQiOiI1YjI0MGY4NS0yODExLTQxZTMtODVmYi1iNWViODQwY2E3NGIiLCJ1c2VyX3BvcyI6bnVsbCwidXNlcl9wcm9maWxlLWltYWdlIjpudWxsLCJ1c2VyX25hbWUiOiJiZGlkY3drMDAxIiwidXNlcl9yc3BvZiI6bnVsbCwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTU3Njg0NTMxOSwibWVzc2FnZSI6IuygleyDgeyymOumrCDrkJjsl4jsirXri4jri6QuIiwianRpIjoiYzkzZTM4MmYtZDliZC00NjgwLTg3MjYtYmM5YzYwMWFkMjMyIiwiY2xpZW50X2lkIjoid29ya2VyYXBwMDEiLCJyZXNwb25zZUNvZGUiOiIyMDAifQ.Vesl5hpF4H1FLvYxoG3ZvQC-W_tFXo1v2yxLJs-PAZQ",
+  "token_type": "bearer",
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX3BvcyI6bnVsbCwidXNlcl9uYW1lIjoiYmRpZGN3azAwMSIsIm1lc3NhZ2UiOiLsoJXsg4Hsspjrpqwg65CY7JeI7Iq164uI64ukLiIsImNsaWVudF9pZCI6IndvcmtlcmFwcDAxIiwicmVzcG9uc2VDb2RlIjoiMjAwIiwic3ZjX2lkIjpbImlkY3Rlc3QwMDEiXSwidXNlcl91dWlkIjoiNWIyNDBmODUtMjgxMS00MWUzLTg1ZmItYjVlYjg0MGNhNzRiIiwidXNlcl9wcm9maWxlLWltYWdlIjpudWxsLCJ1c2VyX3JzcG9mIjpudWxsLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXRpIjoiYzkzZTM4MmYtZDliZC00NjgwLTg3MjYtYmM5YzYwMWFkMjMyIiwiZXhwIjoxNTc2ODQ1MzE5LCJqdGkiOiJiNzA4YzZhZS04NTEwLTQxYzUtYTMzNi1hMGRjMjgyYjhhMTQifQ.wLrv9dAtfKgYwA4L017eCO9Rn8I4w0LHL66oM47vt34",
+  "expires_in": 259200,
+  "scope": "read write",
+  "svc_id": [
+    "idctest001"
+  ],
+  "user_uuid": "5b240f85-2811-41e3-85fb-b5eb840ca74b",
+  "user_pos": null,
+  "user_profile-image": null,
+  "user_name": "bdidcwk001",
+  "user_rspof": null,
+  "message": "정상처리 되었습니다.",
+  "responseCode": "200",
+  "jti": "c93e382f-d9bd-4680-8726-bc9c601ad232"
+}

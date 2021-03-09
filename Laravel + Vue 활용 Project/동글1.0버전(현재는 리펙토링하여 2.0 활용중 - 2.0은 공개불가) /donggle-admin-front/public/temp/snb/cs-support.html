@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- header -->
+      <header id="admin-header">
+        <!-- 상단고정 헤더 -->
+        <div id="header-hd">
+          <div class="show-pc">
+            <!-- 상단 side navigation -->
+            <section class="hd-snb-bar">
+              <div class="in-store-profile">
+                <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+                <a href="#" target="_blank">
+                  <figure class="symbol-circle">
+                    <img
+                      src="/images/img/profile_admin.jpg"
+                      alt="profile image"
+                    />
+                  </figure>
+                  <h2 class="in-name">스토어명</h2>
+                  <img
+                    class="in-btn-img"
+                    src="/images/btn/btn_more.svg"
+                    alt="btn more"
+                  />
+                </a>
+              </div>
+
+              <div class="in-snb-group">
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">알림</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">스토어 문의</span>
+                </a>
+                <a href="../snb/cs-notice-main.html" class="in-snb-list">
+                  <span class="in-snb-name">고객센터</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">로그아웃</span>
+                </a>
+              </div>
+            </section>
+            <!-- END 상단 side navigation -->
+          </div>
+
+          <div class="show-mobile">
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <div class="hd-title-bar">
+              <div class="hd-title-bar-inner">
+                <div class="in-left-btn">
+                  <label for="mobile_show_gnb" class="in-label-btn">
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                  </label>
+                </div>
+
+                <div class="in-page-name">
+                  <h3 class="in-main">
+                    <span class="show-pc">고객센터</span>
+                    <span class="show-mobile">고객센터</span>
+                  </h3>
+                </div>
+                <div class="in-page-btn-group open-popup-btn-wrap">
+                  <!-- @@ 누르면 문의 작성하기 팝업 등장 -->
+                  <button class="mobile-btn-theme _write_popup_btn">작성하기</button>
+                </div>
+              </div>
+            </div>
+            <!-- FIXME: END -->
+          </div>
+        </div>
+        <!-- END 상단고정 헤더 -->
+
+        <input id="mobile_show_gnb" class="none" type="checkbox" />
+        <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+        <!-- 왼쪽 global navigation -->
+        <div id="header-gnb">
+          <section class="in-brand-con-box show-pc">
+            <h1 class="in-brand-logo">
+              <!-- TODO: 대시보드 메인으로 -->
+              <a href="../index.html">
+                <img
+                  src="/images/logo/logo_header_wh.svg"
+                  alt="image"
+                  class="in-logo"
+                />
+              </a>
+            </h1>
+          </section>
+
+          <section class="in-mobile-gnb-hd show-mobile">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#">
+                <figure class="symbol-circle">
+                  <img
+                    src="/images/img/profile_admin.jpg"
+                    alt="profile image"
+                  />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img
+                  class="in-btn-img"
+                  src="/images/btn/btn_more.svg"
+                  alt="btn more"
+                />
+              </a>
+            </div>
+
+            <label for="mobile_show_gnb" class="icon-close-btn">닫기</label>
+            <div class="inner-snb-group">
+              <a href="../index.html" class="icon-home-btn in-icon-btn"
+                ><i class="hide-text">홈</i></a
+              >
+              <!-- 새 알림 있으면 클래스 목록에 active 추가 -->
+              <a href="alarm-view.html" class="icon-alarm-btn in-icon-btn"
+                ><i class="hide-text">알림</i></a
+              >
+              <!-- 새 문의 있으면 클래스 목록에 active 추가 -->
+              <a href="inquiry-store-list.html" class="icon-contact-btn in-icon-btn"
+                ><i class="hide-text">문의</i></a
+              >
+            </div>
+
+            <div class="in-bottom-btns clearfix">
+              <a href="cs-notice-main.html" class="link-cs-btn">고객센터</a>
+              <a href="#">로그아웃</a>
+            </div>
+          </section>
+
+          <div class="in-gnb-group">
+            <a href="../gnb/setting-store.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_01.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_01_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">스토어 설정</span>
+            </a>
+            <a href="../gnb/check-order.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_02.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_02_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문상품 확인</span>
+            </a>
+            <a href="../gnb/history-order-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문내역</span>
+            </a>
+            <a href="../gnb/history-cancel-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">취소/환불 내역</span>
+            </a>
+            <a href="../gnb/manage-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_05.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_05_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품관리</span>
+            </a>
+            <a href="../gnb/inquiry-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_06.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_06_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품문의</span>
+            </a>
+            <a href="../gnb/manage-review.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_07.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_07_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">구매후기</span>
+            </a>
+            <a href="../gnb/sales-status.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_08.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_08_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">매출현황</span>
+            </a>
+          </div>
+        </div>
+        <!-- END 왼쪽 global navigation -->
+      </header>
+      <!-- END header -->
+
+      <!-- contents -->
+      <div id="admin-container" class="cs-container">
+        <div class="wrapper">
+          <!-- page content -->
+          <div id="page-cs-support-wrap" class="cs-content-wrap">
+            <div class="grid-line-group clearfix">
+              <!-- side navi -->
+                <!-- 활성화된 메뉴 _list 에 active 추가 -->
+                <div class="cs-side-navi">
+                  <div class="sidenav-title-group">
+                    <h2 class="in-title">고객센터</h2>
+                  </div>
+                  <article class="in-nav-section">
+                    <ul class="clearfix">
+                      <li class="_list">
+                        <a href="cs-notice-main.html">공지사항</a>
+                      </li>
+                      <li class="_list">
+                        <a href="cs-faq.html">자주묻는 질문</a>
+                      </li>
+                      <li class="_list active">
+                        <a href="cs-support.html">관리자1:1문의</a>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              <!-- side navi E -->
+              <!-- cs content - pc -->
+                <div class="panel-default-container show-pc">
+
+                  <section class="_cs_con_wrap _cs_title_con_wrap">
+                    <div class="panel-default-title type_02 show-pc">
+                      <h3>관리자 1:1문의
+                        <!-- @@ 누르면 문의 작성하기 팝업 등장 -->
+                        <button href="#" class="_write_popup_btn">문의하기</button></h3>
+                    </div>
+                    <!-- 등록된 문의가 없을 때 -->
+                    <div class="nothing-history">
+                      <div class="in-empty-icon">
+                        <img
+                          src="/images/icon/empty_inquiry.svg"
+                          alt="등록된 문의가 없습니다."
+                        />
+                      </div>
+                      <div class="in-empty-ment">등록된 문의가 없습니다.</div>
+                    </div>
+                    <!-- 등록된 문의가 없을 때 E -->
+                    <div class="panel-default">
+
+                      <!-- 등록된 문의가 있을 때 -->
+                      <!-- ._board_layout 에 .y-scroll 은 height 가 576px보다 높아지면 생김(보더때문) -->
+                      <ul class="_board_layout y-scroll">
+                        <!-- 답변 대기중 -->
+                        <li class="_cs_content _support_content _support_quastion clearfix">
+                          <div class="_title_wrap">
+                            <div class="in-store-profile">
+                              <div class="symbol-circle wi_48">
+                                <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                              </div>
+                            </div>
+                            <div class="_board_title_label">
+                              <span class="_name">동글 관리자 고객센터</span>
+                              <span class="_check _wait">답변대기</span>
+                              <span class="_date">2019-00-00</span>
+                              <span class="_title">질문 제목입니다.</span>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- 답변 대기중 E -->
+                        <!-- 답변 완료 -->
+                        <li class="_cs_content _support_content _support_quastion clearfix active">
+                          <div class="_title_wrap">
+                            <div class="in-store-profile">
+                              <div class="symbol-circle wi_48">
+                                <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                              </div>
+                            </div>
+                            <div class="_board_title_label">
+                              <span class="_name">동글 관리자 고객센터</span>
+                              <span class="_check">답변완료</span>
+                              <span class="_date">2019-00-00</span>
+                              <span class="_title">질문 제목입니다. 제목이 이 레이아웃 안에서는 ...으로 표시되게 바꿔주세요</span>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- 답변 완료 E -->
+                      </ul>
+                      <!-- 등록된 문의가 있을 때 E -->
+
+                    </div>
+                  </section>
+
+                  <section class="_cs_con_wrap _cs_desc_con_wrap">
+                    <div class="panel-default-title type_03">
+                      <h3 class="_with_profill">
+                        <div class="in-store-profile">
+                          <div class="symbol-circle">
+                            <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                          </div>
+                        </div>
+                        <span>동글 관리자 고객센터</spa>
+                      </h3>
+                    </div>
+                    <!-- 등록된 문의가 없을 때  -->
+                    <div class="nothing-history">
+                      <div class="in-empty-icon">
+                        <img
+                          src="/images/icon/empty_inquiry.svg"
+                          alt="등록된 문의가 없습니다."
+                        />
+                      </div>
+                      <div class="in-empty-ment">등록된 문의가 없습니다.</div>
+                    </div>
+                    <!-- 등록된 문의가 없을 때 E -->
+                    <div class="panel-default ">
+                      <!-- 등록된 문의가 있을 때 -->
+                      <ul class="_board_layout y-scroll">
+                        <li class="_cs_content _support_content _support_answer">
+                          <div class="_support_desc_wrap _quastion">
+                            <div class="_board_title_label _answer_title">
+                              <div class="_info">
+                                <span class="_name">스토어명</span>
+                                <span class="_date">2019-00-00</span>
+                              </div>
+                              <div class="re_title"><span>질문 제목입니다. 제목이 2줄이 되어도 모두 표시를 해주세요</span></div>
+                            </div>
+                            <div class="_support_desc">
+                              <p>문의 내용입니다.최소 높이를 초과하면 자연스럽게 높이가 늘어납니다. 어느 스토어에서 어떤걸 사려는데 주문을 받다 막히던데요 왜 그런거죠?</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="_cs_content _support_content _support_answer">
+                          <div class="_support_desc_wrap">
+                            <div class="_board_title_label _answer_title">
+                              <div class="_info"><span class="_name">동글 관리자 고객센터</span></div>
+                              <div class="re_title"><span>답변 대기중</span></div>
+                            </div>
+                            <div class="_support_desc">
+                              <p class="answer_desc _wite">답변 대기 중입니다.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="_cs_content _support_content _support_answer">
+                          <div class="_support_desc_wrap">
+                            <div class="_board_title_label _answer_title">
+                              <div class="_info"><span class="_name">동글 관리자 고객센터</span></div>
+                              <div class="re_title"><span>답변 제목입니다. 제목이 길어져 2줄이 되어도 모두 표시를 해주세요</span></div>
+                            </div>
+                            <div class="_support_desc">
+                              <p>문의해주신 상품에 관하여
+                                문의해주신 상품은 현재 품절중으로 확인되었습니다. 이후 추가 구매에 대한 계획이 있을 경우,
+                                동글 메시지를 통하여 연락드리겠습니다.
+                                최소 높이를 초과하면 자연스럽게 높이가 늘어납니다.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <!-- 등록된 문의가 있을 때 E -->
+                    </div>
+                  </section>
+                </div>
+              <!-- cs content - pc E -->
+              <!-- cs content - mobile -->
+                <div class="panel-default-container show-mobile">
+
+                  <section class="_cs_con_wrap _cs_board_wrap">
+                    <div class="panel-default-title type_02 show-pc">
+                      <h3>관리자 1:1 문의</h3>
+                    </div>
+                    <!-- 등록된 관리자 1:1 문의가 없을 때 -->
+                    <div class="nothing-history">
+                      <div class="in-empty-icon">
+                        <img
+                          src="/images/icon/empty_inquiry.svg"
+                          alt="등록된 관리자 1:1 문의가 없습니다."
+                        />
+                      </div>
+                      <div class="in-empty-ment">
+                        등록된 관리자 1:1 문의가 없습니다.
+                      </div>
+                    </div>
+                    <!-- 등록된 관리자 1:1 문의가 없을 때 E -->
+                    <div class="panel-default">
+                      <!-- 등록된 관리자 1:1 문의가 있을 때 -->
+                      <ul class="_board_layout">
+                        <li class="_cs_content cs_faq_content">
+                          <input
+                            type="checkbox"
+                            id="test"
+                            class="_board_title_box none"
+                          />
+                          <label for="test" class="_title_wrap">
+                            <div class="in-store-profile">
+                              <div class="symbol-circle">
+                                <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                              </div>
+                            </div>
+                            <div class="_board_title_label">
+                              <span class="_title">질문 제목입니다. 제목이 이 레이아웃 안에서는 ...으로 표시되게 바꿔주세요</span>
+                              <span class="_name">동글 관리자 고객센터</span>
+                              <span class="_date">2019-00-00</span>
+                              <span class="_check _wait">답변대기</span>
+                            </div>
+
+                          </label>
+                          <div class="_board_hidden">
+                            <div class="_board_content">
+                              <div class="_desc">
+                                <p class="re_title">
+                                  동글 관리자 1:1 문의 제목입니다. 제목이 길어도 줄이지않고 전부 보입니다.
+                                </p>
+                                <p class="_desc_q">
+                                  질문입니다.
+                                </p>
+                                <p class="_desc_a _wite">
+                                  답변 대기중
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="_cs_content cs_faq_content">
+                          <input
+                            type="checkbox"
+                            id="#"
+                            class="_board_title_box none"
+                          />
+                          <label for="#" class="_title_wrap">
+                            <div class="in-store-profile">
+                              <div class="symbol-circle">
+                                <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                              </div>
+                            </div>
+                            <div class="_board_title_label">
+                              <span class="_title">질문 제목입니다. 제목이 이 레이아웃 안에서는 ...으로 표시되게 바꿔주세요</span>
+                              <span class="_name">동글 관리자 고객센터</span>
+                              <span class="_date">2019-00-00</span>
+                              <span class="_check">답변완료</span>
+                            </div>
+
+                          </label>
+                          <div class="_board_hidden">
+                            <div class="_board_content">
+                              <div class="_desc">
+                                <p class="re_title">
+                                  동글 관리자 1:1 문의 제목입니다. 제목이 길어도 줄이지않고 전부 보입니다.
+                                </p>
+                                <p class="_desc_q">
+                                  질문입니다.
+                                </p>
+                                <p class="_desc_a">
+                                  답변입니다.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <!-- 등록된 관리자 1:1 문의가 있을 때 E -->
+                    </div>
+                  </section>
+                </div>
+              <!-- cs content - mobile E -->
+
+              <!-- @@ 문의 작성하기 팝업 popup-inquiry-write.html -->
+              <div class="popup-container bgc-none">
+                <div class="popup-bg"></div>
+                <div class="popup-content-wrap">
+                  <div class="popup-hd">
+                    <h1 class="popup-tit">관리자 1:1 문의 작성</h1>
+                    <button class="icon-close-btn-wh">닫기</button>
+                  </div>
+                  <!-- content -->
+                  <div class="popup-content popup-write-con">
+                    <section class="popup-content-profill">
+                      <h2 class="_with_profill">
+                        <div class="in-store-profile">
+                          <div class="symbol-circle">
+                            <img
+                              src="/images/img/profile_admin.jpg"
+                              alt="동글 로고"
+                              class="_imgtag"
+                            />
+                          </div>
+                          <span class="_name">동글 관리자 고객센터</span>
+                        </div>
+                      </h2>
+                    </section>
+                    <section class="popup-content-title">
+                      <h2 class="none ">문의사항</h2>
+                      <div class="in-desc">
+                        <input type="text" placeholder="제목" />
+                      </div>
+                    </section>
+                    <section class="popup-content-detail">
+                      <h2 class="none">상세내용</h2>
+                      <div class="in-desc">
+                        <textarea
+                          name="#"
+                          id="#"
+                          class="_txt"
+                          placeholder="내용"
+                        ></textarea>
+                      </div>
+                    </section>
+                  </div>
+                  <!-- content E -->
+                  <div class="popup-btn-wrap">
+                    <button class="square-md-btn btn-outline-gray close-btn">닫기</button>
+                    <button class="square-md-btn btn-gradient">작성완료</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 문의 작성하기 팝업 E -->
+            </div>
+          </div>
+          <!-- page content E -->
+        </div>
+        <div id="admin-footer" class="show-pc"></div>
+      </div>
+      <!-- END contents -->
+    </div>
+  </body>
+</html>

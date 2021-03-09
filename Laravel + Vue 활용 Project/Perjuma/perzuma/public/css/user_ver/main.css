@@ -1,0 +1,275 @@
+.main_btn_li_wrap{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background: url(/images/bg_main_tile.png);
+    background-size: 100% auto;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+}
+
+.main_btn_li_wrap .btn_li_content{
+    padding: 1.5rem 0;
+    padding-bottom: 1.8rem;
+    /*
+    height: 10.7rem;
+    box-sizing: content-box;
+    */
+}
+
+.main_btn_li_wrap .btn_li_content .main_btn_li{
+    width:100%;
+    margin-bottom: 1em;
+    cursor:pointer;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.main_btn_li_wrap .btn_li_content .main_btn_li>div{
+    border-radius: 46px;
+    height: 2.9em;
+    width: 78%;
+    min-width: 290px;
+    margin: 0 auto;
+    box-shadow: 0 6px 9px 0 rgba(198, 198, 198, 0.36);
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: left;
+    transition:background-color 0.3s;
+}
+
+.main_btn_li_wrap .btn_li_content .main_btn_li:hover>div{
+    background-color:#007bd2;
+}
+
+.main_btn_li_wrap .btn_li_content .main_btn_li>div:last-child{
+    margin-bottom:0;
+}
+
+.main_btn_li_wrap .btn_li_content .main_btn_li>div>div{
+    width: 100%;
+    padding-left: 64px;
+    overflow: hidden;
+    line-height: 1.5;
+    background-position-x: 25px;
+    background-position-y: center;
+    background-size: 1.5rem 1.5rem;
+}
+
+.icon_btn_estimate_off{
+    background:url('/images/icon_btn_estimate_off.svg') no-repeat;
+}
+
+.icon_btn_request_off{
+    background:url('/images/icon_btn_request_off.svg') no-repeat;
+}
+
+.icon_btn_check_off{    
+    background:url('/images/icon_btn_check_off.svg') no-repeat;
+}
+
+.main_btn_li_wrap .btn_li_content>div>div b{
+    font-size:1em;
+    color: #707070;
+    letter-spacing: -1.2px;
+    display:inline-block;
+    vertical-align: middle;
+    transition:color 0.3s;
+}
+
+.main_btn_li_wrap .btn_li_content>div>div span{
+    display:inline-block;
+    vertical-align: middle;
+    font-size:0.7em;
+    letter-spacing: -0.4px;
+    font-weight:400;
+    color: #5d5d5d;
+    padding-left: 13px;
+    transition:color 0.3s;
+}
+
+.main_btn_li_wrap .btn_li_content .main_btn_li:hover b, .main_btn_li_wrap .btn_li_content .main_btn_li:hover span{
+    color:#fff;
+}
+
+.main_btn_li_wrap .deco_bottom_img{
+    padding-top:3rem;
+    position: relative;
+}
+
+.main_btn_li_wrap .deco_bottom_img>img{
+    width:100%;
+}
+
+.main_btn_li_wrap .deco_bottom_img div.empty_bottom{
+    padding-bottom:1rem;
+    background:#fff;
+}
+
+.main_btn_li_wrap .deco_bottom_img div.perzuman_icon{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main_btn_li_wrap .deco_bottom_img div.perzuman_icon div{
+    max-width: 6rem;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main_btn_li_wrap .deco_bottom_img div.perzuman_icon div .perzuman_basic{
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main_btn_li_wrap .deco_bottom_img div.perzuman_icon div .perzuman_name{
+    width: 4rem;
+    position: absolute;
+    top: 0;
+    left: -4.5rem;
+}
+
+.main_two_btn{
+    margin: 0 auto;
+    padding-top: 14em;
+    padding-bottom: 7em;
+    width: 100%;
+    text-align: center;
+    background: url(/images/Tile_Background.png);
+    background-size: auto 87%;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+}
+
+.main_two_btn>div{
+    position: relative;
+    width: 42%;
+    margin: 0 6px;
+    display: inline-block;
+}
+
+.main_two_btn>div:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.main_two_btn>div>button{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    vertical-align: middle;
+    border-radius: 15px;
+    box-shadow: 0 13px 13px 0 rgba(198, 198, 198, 0.36);
+    background-color: #ffffff;
+    border: none;
+    outline:none;
+    transition: background 0.2s,color 0.2s;
+}
+
+.main_two_btn>div>button:hover{
+    background:#007bd2;
+}
+
+.main_two_btn>div>button img{
+    width: 1.8em;
+}
+
+.main_two_btn>div>button h2{
+    font-size: 1em;
+    color: #17334a;
+    font-weight: 700;
+    line-height: 2.06;
+    letter-spacing: 0;
+}
+
+.main_two_btn>div>button span{
+    font-size: 0.5em;
+    display: block;
+    color: #17334a;
+}
+
+.main_two_btn>div>button:hover h2, .main_two_btn>div>button:hover span{
+    color:#fff;
+}
+
+.recomend_company{
+    padding: 1.5em 1em;
+}
+
+.recomend_company>h2{
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+/* 업체추천 swiper 슬라이드 */
+
+.swiper-container {
+    width: 100%;
+    height: 100px;
+    margin: 20px auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #222;
+    width: 31%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper-slide img{
+    width:100%;
+}
+
+#recommend_slider ul li{
+    position: relative;
+}
+
+#recommend_slider ul li p{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing:-0.6px;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 0px 9px #222;
+}

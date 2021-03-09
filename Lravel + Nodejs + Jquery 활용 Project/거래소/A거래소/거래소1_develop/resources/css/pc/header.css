@@ -1,0 +1,300 @@
+/* header */
+.header{
+    width: 100%;
+    height: 116px;
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid #00b9ff;
+    position: relative;
+    z-index: 2;
+}
+
+.header_sub_menu{
+  width: 100%;
+  height: 116px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.main_header{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.0);
+  transition: all 0.5s;
+}
+
+/* 메인에서만 쓰이는 상단메뉴 배경 */
+.header_background{
+      background-color: rgba(0, 0, 0, 1);
+      transition: all 0.5s;
+  }
+
+.sub-menu-wrap{
+  height: 40px;
+  line-height: 40px;
+  background-color: #202020;
+}
+
+.sub_menu_back{
+  background-color: rgba(32, 32, 32,0.5);
+}
+
+.sub-menu-inner{
+  margin: 0 auto;
+  max-width: 1240px;
+  text-align: right;
+}
+
+.sub-menu-inner li {
+  display: inline-block;
+}
+
+.sub-menu-inner li a {
+  color: #fff;
+}
+
+.top_menu{
+    max-width:1240px;
+    width:100%;
+    height: 75px;
+    line-height: 75px;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 auto;
+    font-size: 15px;
+    padding-left: 200px;
+}
+
+.main_cs_menu{
+  width:100%;
+  height: 40px;
+  background-color: #202020;
+  text-align: right;
+}
+
+.cs_menu_list{
+  line-height: 1.46;
+  letter-spacing: -0.52px;
+}
+
+.cs_menu_list li:first-child{
+  margin-right:10px;
+}
+
+.cs_menu_list li{
+  padding: 7px 0 10px 10px;
+  display: inline-block;
+}
+
+.cs_menu_list > li > a{
+  color: #ffffff;
+  font-size: 11.5px;
+  transition: all 0.3s;
+}
+
+.cs_menu_list > li:hover > a{
+  color:#00b9ff;
+}
+
+.main_logo{
+  position: absolute;
+  top:0%;
+  left:0;
+}
+
+.main_menu{
+    width:100%;
+    height:100%;
+    line-height: 75px;
+}
+
+.main_menu > li{
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}
+
+.main_menu > li > a{
+    height: 100%;
+    display: block;
+    text-align: center;
+    color:#fff;
+    font-size: 15.5px;
+    letter-spacing: -0.6px;
+    padding: 0 14px;
+    transition: all 0.3s;
+}
+
+.main_menu > li:hover > a{
+  color:#00b9ff;
+}
+
+.sub_menu{
+  position: absolute;
+  left: -25px;
+  top: 102px;
+  z-index:9999;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+  margin-top: -28px;
+  width: 126px;
+  border-top: 3px solid #00b9ff;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 1.5px 0 rgba(136, 22, 22, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+.sub_location{
+  left:-38px;
+}
+
+.mb_sub_space{
+  margin-top:-2px;
+}
+
+
+
+.sub_menu > li{
+    width:100%;
+    height: 32px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.sub_menu > li > a{
+  font-family: 'Spoqa Han Sans Light';
+  color: #333;
+  font-size: 13.5px;
+  font-weight: 300;
+  line-height: 1.46;
+  letter-spacing: -0.52px;
+  text-align: center;
+  display: block;
+  height: 32px;
+  padding: 5px 8px;
+}
+
+.main_menu > li:hover .sub_menu{
+    opacity: 1;
+    visibility: visible;
+    display:block;
+}
+
+.sub_menu > li:hover > a{
+    font-weight: 600;
+    color:#1382CE;
+}
+
+.top_menu button{
+    width: 106px;
+    height: 47px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #00b9ff;
+    color: #00b9ff;
+    font-size: 15px;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    right: 17.8%;
+    transform: translateY(-50%);
+    display: inline-block;
+    transition: all 0.15s;
+}
+
+.top_menu button:hover{
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.15s;
+}
+
+.join_nav{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.join_nav li:first-child{
+    padding:0 23px 0 0;
+}
+
+.join_nav > li > a{
+  color:#fff;
+}
+
+.join_nav li{
+  float:left;
+}
+
+.after_login{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.after_login_info{
+    background-image: url(/images/btn_menu_arrow.svg);
+    background-position: right 52%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+.after_login_info a{
+  color: #fff;
+    font-family: 'Spoqa Han Sans Regular';
+    padding-right: 23px;
+    font-size: 15px;
+    line-height: 1.47;
+    font-weight: 100;
+}
+
+.after_login_info a b{
+    font-weight: 100;
+}
+
+.after_login_info > .login_sub_location{
+  left:15px;
+  top:77px;
+  margin-top:-4px;
+  z-index: 9999;
+}
+
+.after_login_info:hover .sub_menu.login_sub_location{
+  opacity: 1;
+  visibility: visible;
+  display:block;
+}
+
+
+.after_login_info > li {
+  position: relative;
+  height: 100%;
+  display: inline-block;
+}
+
+.after_login_info > li > a {
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 15.5px;
+  letter-spacing: -0.6px;
+  padding: 0 14px;
+  transition: all 0.3s;
+}
+
+
+
+
+header::after{
+  content: '';
+  display: block;
+  clear:both;
+}

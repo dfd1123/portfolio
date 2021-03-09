@@ -1,0 +1,41 @@
+/*
+    PAGES - 대메뉴선택결과
+*/
+
+#dg-gnb-choice-wrapper {
+  #_mini_quick_menu{
+    top:90px;
+  }
+  // 상품리스트 구역
+  .l-con-area {
+    padding-bottom: 100px;
+    .l-grid-group {
+      padding-top: 40px;
+    }
+  }
+}
+.dg-gnb-choice-group{
+  .dg-gnb-title-group{
+    position: relative;
+    letter-spacing: -1px;
+    .in-breadcrumb {
+      position: absolute;
+      bottom: 20px;
+      right: -8px;
+    }
+  }
+}
+
+.dg-gnb-title-group {
+  text-align: center;
+  padding: 4em 0 2em;
+  user-select: none;
+
+  .in-title {
+    @include fontType01(#{$px-30}rem);
+    margin-bottom: 10px;
+  }
+  .in-text {
+    @include fontType01(#{$px-16}em, #787878, 300);
+  }
+}

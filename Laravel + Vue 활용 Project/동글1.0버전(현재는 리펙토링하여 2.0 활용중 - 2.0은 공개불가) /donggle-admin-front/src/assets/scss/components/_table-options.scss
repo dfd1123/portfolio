@@ -1,0 +1,306 @@
+/* COMPONENTS - table-options
+   ========================================================================== */
+
+// 조건검색 제목
+.search-title {
+  @include font(18px, 400, $primary-color);
+
+  margin-bottom: 8px;
+}
+
+// 조건검색 (기간날짜 등)
+.search-option-bar {
+  background-color: $gray-lighter-02;
+  border-radius: 10px;
+  padding: 19px 20px;
+
+  .in-divider {
+    padding-bottom: 15px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .form-select {
+    min-width: 145px;
+    margin-right: 15px;
+  }
+}
+
+// 날짜선택
+.search-option-check-group {
+  @include inline-block;
+
+  margin-right: 15px;
+  user-select: none;
+
+  .in-tit {
+    @include font(15px);
+
+    display: inline-block;
+    padding-right: 6px;
+    user-select: auto;
+  }
+
+  .in-check-list {
+    display: inline-block;
+
+    & > * {
+      margin-right: 4px;
+    }
+
+    & > *:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// 기간선택
+.search-option-period {
+  @include inline-block;
+
+  .in-tit {
+    @include font(13px, 300);
+    @include inline-block;
+
+    margin-right: 5px;
+  }
+
+  .in-period {
+    @include inline-block;
+
+    .form-input-date {
+      width: 120px;
+      letter-spacing: 0;
+      font-weight: 400;
+    }
+
+    span {
+      @include font(13px, 300, $gray-md);
+      @include inline-block;
+
+      padding: 0 7px;
+    }
+
+    .icon-search-btn {
+      margin-left: 5px;
+    }
+  }
+}
+
+// 검색결과상태
+.search-status-bar {
+  @include set-relative;
+  height: 42px;
+  line-height: 42px;
+
+  .in-check-circle {
+    top: 2px;
+  }
+
+  .in-word-result {
+    @include font(15px, $c: $gray);
+
+    b {
+      @include font(inherit, bold, $primary-color);
+    }
+  }
+
+  .in-align-right {
+    @include set-absolute($t: 0, $r: 0);
+
+    min-width: 160px;
+    width: 10%;
+  }
+
+  .in-sorting {
+    @include set-clearfix;
+    @include inline-block;
+    @include font(13px, 300, $gray-md-03);
+
+    .type {
+      float: left;
+
+      .word {
+        border-right: 1px solid $gray-lighter;
+
+        padding: 0 13px;
+        color: $gray-md-03;
+        cursor: pointer;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 1;
+      }
+
+      &:first-child .word {
+        padding-left: 8px;
+      }
+
+      &:last-child .word {
+        border-right: 0;
+      }
+    }
+  }
+
+  .in-button-group{
+    @include inline-block;
+  }
+}
+
+// 기본검색결과
+.search-default-bar {
+  user-select: none;  
+  .form-select {
+    min-width: 146px;
+    margin-right: 5px;
+  }
+
+  .form-input-txt {
+    min-width: 324px;
+    margin-right: 5px;
+  }
+}
+
+// 분류탭
+.sorting-tab-bar {
+  @include set-relative;
+
+  width: 100%;
+  border-bottom: 1px solid $gray;
+  user-select: none;
+
+  .in-tab {
+    @include inline-block;
+    @include font(18px, 400, white);
+
+    position: relative;
+    width: 200px;
+    height: 54px;
+    background-color: $primary-color-03;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    -webkit-text-stroke: 0;
+
+    .inner {
+      @include set-flex;
+    }
+  }
+
+  .in-tab.active {
+    @include make-after {
+      @include set-absolute($b: -1px);
+
+      width: 100%;
+      height: 1px;
+      background-color: white;
+    }
+
+    border: 1px solid $gray;
+    border-bottom: 0;
+    background-color: white;
+    color: $primary-color;
+  }
+
+  .chck-box:checked + .in-tab {
+    @include make-after {
+      @include set-absolute($b: -1px);
+
+      width: 100%;
+      height: 1px;
+      background-color: white;
+    }
+
+    border: 1px solid $gray;
+    border-bottom: 0;
+    background-color: white;
+    color: $primary-color;
+  }
+}
+
+// pc: 조건검색 깨지는 구간
+// 주문내역에서 1441~1484, 1221~1298 + 스크롤바 17px
+@media all and (max-width:1500px) and (min-width:1441px){
+  .search-option-check-group{
+    display: block;
+  }
+  .search-option-period{
+    padding: 15px 0px 0px 0.5em;
+  }
+  .search-option-period ~ .btn-theme{
+    margin-top: 15px;
+  }
+}
+@media all and (max-width:1315px){
+  .search-option-check-group{
+    display: block;
+  }
+  .search-option-period{
+    padding: 15px 0px 0px 0.5em;
+  }
+  .search-option-period ~ .btn-theme{
+    margin-top: 15px;
+  }
+}
+
+// mobile
+@include media-mobile-version(ipad){
+  // 기본검색결과
+  .search-default-bar {
+    @include set-relative;
+
+    margin-bottom: 25px;
+    padding: 0px;
+    background-color: $gray-lighter-02;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .form-select {
+      float: left;
+      min-width: auto;
+      width: 25%;
+      border: 0px none;
+      border-right: 1px solid $gray-lighter-02;
+      border-radius: 0px;
+      margin: 6px 0px;
+      font-size: 13px;
+      background-position: calc(100% - 10px) 50%;
+    }
+    .form-input-txt {
+      float: left;
+      min-width: auto;
+      width: 75%;
+      border: 0px none;
+      border-radius: 0px;
+      margin: 6px 0px;
+      font-size: 13px;
+    }
+    .icon-search-btn {
+      @include set-absolute($t: 6px, $r: 0);
+      @include bg-img($path-icon, "icon-Search-pk.svg");
+      @include bg-option(auto, center);
+
+      min-width: auto;
+      width: 39px;
+      height: 42px;
+      padding: 0px;
+      background-color: transparent;
+    }
+    .icon-search-btn .icon-search {
+      display: none;
+    }
+  }
+}
+
+@include media-mobile-version(mobile-small) {
+  .search-default-bar {
+    .form-select {
+      padding: 0px 8px;
+      background-position: calc(100% - 8px);
+    }
+  }
+}

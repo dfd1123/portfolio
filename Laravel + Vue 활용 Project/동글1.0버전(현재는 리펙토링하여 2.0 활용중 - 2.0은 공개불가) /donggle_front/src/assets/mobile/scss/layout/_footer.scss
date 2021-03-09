@@ -1,0 +1,124 @@
+/*
+    LAYOUT - footer.scss
+*/
+
+// icon & logo image 삽입
+#dg-ft {
+  position: relative;
+  margin: 0px 0px 50px;
+  border-top: 1px solid $light_gray6;
+  padding: 22px 0px 115px;
+  text-transform: uppercase;
+  background-color: $light_gray5;
+  .dg-ft-wrap {
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  h2 {
+    float: left;
+    width: 25vw;
+    line-height: 1.4;
+    font-size: $f-18;
+    font-weight: 600;
+    color: $ft_text;
+  }
+  .dg-ft-sales-time {
+    float: right;
+    padding-top: 18px;
+    font-size: $f-11;
+    &:before {
+      content: "";
+      display: block;
+      margin: -13px 0px 13px;
+      width: 3em;
+      height: 1px;
+      background-color: $ft_text;
+    }
+    small {
+      line-height: 1.6;
+    }
+  }
+}
+.dg-ft-middle_wrap {
+  margin-top: 27px;
+  .dg-ft-logo {
+    float: left;
+    text-indent: -9999px;
+    width: 93px;
+    height: 24px;
+    @include bgimg(url($path-logo+"logo_footer.svg"));
+  }
+}
+.dg-ft-link_icon_wrap {
+  float: right;
+  .link_icon {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    margin-left: 6px;
+    text-indent: -9999px;
+  }
+  .link_icon_blog {
+    @include bgimg(url($path-btn+"btn_blog.svg"));
+    background-size: contain;
+  }
+  .link_icon_face {
+    @include bgimg(url($path-btn+"btn_face.svg"));
+    background-size: contain;
+  }
+  .link_icon_inst {
+    @include bgimg(url($path-btn+"btn_insta.svg"));
+    background-size: contain;
+  }
+  .link_icon_talk {
+    @include bgimg(url($path-btn+"btn_kakao.svg"));
+    background-size: contain;
+  }
+  .link_icon_tube {
+    @include bgimg(url($path-btn+"btn_youtube.svg"));
+    background-size: contain;
+  }
+}
+.dg-ft-bot_wrap {
+  padding-top: 23px;
+  color: $ft_text;
+  font-size: $f-12;
+  .dg-ft-company_info {
+    line-height: 1.7;
+    text-align: center;
+  }
+}
+.dg-ft-link_wrap {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  a {
+    display: inline-block;
+    padding: 0px 1em;
+    border-right: 1px solid $light_gray3;
+    color: $ft_text;
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
+/* galaxy s5 > */
+@media all and (max-width: 360px) and (min-width: 321px) {
+  #dg-ft h2 {
+    width: 30vw;
+  }
+}
+/* i phone 5 > */
+@media all and (max-width: 320px) {
+  #dg-ft h2 {
+    width: 30vw;
+    float: none;
+  }
+  #dg-ft .dg-ft-sales-time {
+    float: none;
+  }
+}

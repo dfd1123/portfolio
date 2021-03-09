@@ -1,0 +1,113 @@
+.loginbox{display:block;margin:0 auto;max-width:400px;text-align:center;padding:50px 0;min-height:600px;overflow:hidden;}
+.login_tabs input[type=radio] {position: absolute;top: -9999px;left: -9999px;}
+.login_tabs {width:100%;position: relative;padding: 0;margin: 0px auto;}
+.login_tabs li{display:inline-block;margin:0 3px auto;}
+.login_tabs label {display: block;width:91px;height:91px;background:#fff;border:1px solid #c1c1c1;border-radius:5px;color: #c1c1c1;font-size: 18px;font-weight: normal;cursor: pointer;position: relative;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;}
+.login_tabs label i{display:block;margin-top:25px;margin-bottom:10px;}
+.login_tabs label:hover {top: 0;}
+.login_tabs [id^=logintab]:checked + label {background: #fea803;border:1px dotted #b17501;color: white;top: 0;}
+.login_tabs [id^=logintab]:checked ~ [id^=logintab-content] {display: block;}
+.logintab-content{z-index: 2;color:#333;display: block;text-align: left;width: 100%;font-size: 20px;line-height: 140%;background: #fff;padding:40px 15px;left: 0;
+box-sizing: border-box;
+-webkit-animation-duration: 0.5s;
+-o-animation-duration: 0.5s;
+-moz-animation-duration: 0.5s;
+animation-duration: 0.5s;
+}
+
+input.required{width:100%;border:1px solid #d2d2d2;border-radius:5px;box-sizing:border-box;border-radius:5px;height:51px;margin-bottom:3px;line-height:51px;padding:10px;color:#222;font-size:13px;}
+.folder_check{display:block;overflow:hidden;padding:10px 0;}
+.folder_check input[type="checkbox"] {
+    display:none;border:none;
+}
+.folder_check > label{display:inline-block;cursor:pointer;font-size:13px;color:#222;border:none;width:auto;height:auto;}
+.folder_check input[type="checkbox"] + label span {
+    display:inline-block;
+	padding-right:5px;
+    width:21px;
+    height:21px;
+    margin:0;
+    vertical-align:middle;
+    background:url(/storage/image/homepage/ic_check_yoff.png) left top no-repeat;
+    cursor:pointer;
+}
+.folder_check input[type="checkbox"]:checked + label span {
+    background:url(/storage/image/homepage/ic_check_yon.png) 0px top no-repeat;
+}
+
+button.loginbt{display:block;text-align:center;line-height:51px;background:#413e70;color:#fff;font-size:15px;width:100%;border-radius:5px;border:none;}
+ul.etclog{padding:0;margin:0;width:100%;}
+ul.etclog li{float:left;position:relative;padding-right:10px;}
+ul.etclog li > a{display:block;color:#222;font-size:13px;font-family: 'Noto Sans KR', sans-serif;padding:10px 0;}
+ul.etclog li:nth-of-type(2){padding-left:15px;}
+ul.etclog li:nth-of-type(2):before{content:'';position:absolute;left:0;width:1px;height:10px;background:#ddd;margin-top:17px;}
+
+ul.snslogin{display:block;overflow:hidden;padding:20px 0;margin:0;width:100%;}
+ul.snslogin li{display:block;margin:0 auto;text-align:center;margin-bottom:5px;box-sizing:border-box;}
+ul.snslogin li a{display:block;width:100%;border-radius:5px;border:1px solid #d2d2d2;box-sizing:border-box;padding:10px 0;font-size:13px;color:#222222;}
+ul.snslogin li a i{display:inline-block;margin-right:5px;}
+
+
+.joinform{display:block;max-width:1200px;margin:0 auto;text-align:center;width:100%;padding:80px 30px 0 30px;box-sizing:border-box;margin-top:80px;margin-bottom:80px;overflow:hidden;font-family: 'Noto Sans KR', sans-serif;}
+.joinform .left{float:left;width:60%;margin-right:3%;border-right:1px dotted #ddd;}
+.joinform .right{float:right;width:36%;text-align:left;}
+.joinform .right .folder_check{padding:5px 0;}
+.joinform .right .folder_check ul{padding:0;margin:0;background:#fff;width:100%;box-sizing:border-box;overflow:hidden;padding:5px 20px;border:1px solid #e5e5e5;}
+.joinform .right .folder_check ul li{display:block;padding:7px 0;font-size:13px;}
+.joinform .right .folder_check ul li label.btn{position:absolute;right:0;top:7px;padding:5px 10px;color:#888;border:1px solid #888;font-size:12px;border-radius:5px;text-align:center;}
+.joinform .right .folder_check ul li label.btn:hover{background:#888;color:#fff;}
+.joinform .right .folder_check ul li:first-child{border-bottom:1px dotted #ddd;}
+.joinform .right .folder_check ul li:last-child{color:#999;}
+.joinform  h3{font-size:18px;color:#222222;display:block;margin-bottom:15px;font-weight:400;width:100%;}
+.joinform  h3 i{color:#413e70;display:inline-block;margin-right:10px;}
+.joinform  ul{padding:0;margin:0;padding-bottom:0px;margin-right:20px;overflow:hidden;}
+.joinform  ul li{display:block;margin-bottom:3px;position:relative;}
+.joinform  ul li input.required{height:41px;line-height:41px;font-size:13px;}
+.joinform  ul li a{display:inline-block;border-radius:5px;font-size:13px;}
+a.add_search{display:inline-block;width:18%;height:41px;line-height:41px;border:1px solid #b17501;background:#fea803;color:#fff;box-sizing:border-box;margin-left:3px;text-align:center;}
+button.add_search{display:inline-block;width:19%;height:41px;line-height:41px;border:1px solid #b17501;background:#fea803;color:#fff;box-sizing:border-box;margin-left:3px;text-align:center;}
+
+a.joinbt,
+button.joinbt{display:block;line-height:51px;background:#413e70;color:#fff;font-size:15px;width:100%;border-radius:5px;margin-top:5px;text-align:center;border:none;}
+
+input.cate[type="radio"] {
+    display:none;
+}
+input.cate[type="radio"] + label {
+	display:inline-block;cursor:pointer;
+	
+}
+
+input.cate[type="radio"] + label span {
+    display:inline-block;
+    vertical-align:middle;  
+    cursor:pointer;
+	color:#bfbfbf;
+	width:143px;
+	height:50px;text-align:center;
+	line-height:50px;
+	border:1px solid #d2d2d2;
+	font-size:15px;
+	background:#fff;
+}
+.joinform .right .folder_check ul li em {
+	width:85%;
+    display:inline-block;
+	    vertical-align:top;  
+}
+
+input.cate[type="radio"]:checked + label span {
+     border:1px solid #b17501;background:#fea803;color:#fff;
+}
+
+.service h2{display:block;margin:0 auto;text-align:center;font-size:20px;padding:30px 0;}
+.service p{display:block;color:#666;line-height:180%;text-align:left;font-size:13px;}
+
+.inp_with_btn{position:relative;}
+.inp_with_btn input{width:100%;padding-right:90px;}
+.inp_with_btn button.certify_btn{position: absolute; top: 3px; right: 3px; height: 35px; border: 1px solid #b17501; background: #fea803; color: #fff; padding: 0 14px; border-radius: 5px;}
+.inp_with_btn button.certify_btn.active{background:#413e70;border:1px solid #413e70;}	

@@ -1,0 +1,55 @@
+/*------------------------MAIN RESPONSIVE STYLE 메인 반응형 START------------------------*/
+
+@media all and (max-width: 1580px) {
+	.notice_bar_wrap .width_align{
+		padding: 0 100px 25px;
+	}
+
+	.main_login_group{
+		padding: 0 100px;
+	}
+
+}
+
+@media all and (max-width: 1280px) {
+
+	.main_login_group{
+		padding: 0;
+	}
+
+	.notice_bar_wrap .width_align{
+		padding: 0 0 30px;
+	}
+
+	.main_section_wrap_1 .text_box{
+		padding-left: 380px;
+	}
+
+	.main_section_wrap_1 .main_img1{
+		top: 50px;
+		left: 0;
+		width: 35%;
+	}
+
+	.main_table_wrap .coin_chart_tbl thead > tr > th:nth-child(1){
+		padding-left: 55px;
+	}
+
+	.main_table_wrap .coin_chart_tbl tbody > tr > td:nth-child(1){
+		padding: 10px 0 10px 65px;
+	}
+
+	.main_table_wrap .coin_chart_tbl tbody > tr > td.coin_td .coin_symbol{
+		left: 35px;
+	}
+
+}
+
+@media all and (max-width: 1080px) {
+
+	#main_container {
+		min-width: 100%;
+	}
+}
+
+/*------------------------MAIN RESPONSIVE STYLE 메인 반응형 END------------------------*/

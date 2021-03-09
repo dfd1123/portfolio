@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24">
+  <g id="그룹_3990" data-name="그룹 3990" transform="translate(0)">
+    <text id="COPY" transform="translate(42 19)" fill="#fff" font-size="16" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700"><tspan x="-21.4" y="0">COPY</tspan></text>
+    <g id="icon_copier_wh" transform="translate(0 5)">
+      <g id="사각형_1039" data-name="사각형 1039" fill="none" stroke="#fff" stroke-width="1">
+        <rect width="10.717" height="10.717" rx="3" stroke="none"/>
+        <rect x="0.5" y="0.5" width="9.717" height="9.717" rx="2.5" fill="none"/>
+      </g>
+      <g id="사각형_1040" data-name="사각형 1040" transform="translate(3.152 3.783)" fill="none" stroke="#fff" stroke-width="1">
+        <rect width="10.717" height="10.717" rx="3" stroke="none"/>
+        <rect x="0.5" y="0.5" width="9.717" height="9.717" rx="2.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,206 @@
+/*
+    BASE - helper.scss
+*/
+
+.clear_both:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.dg_blind {
+  position: absolute;
+  top: 0px;
+  left: -9999px;
+}
+.dg-content_center {
+  position: relative;
+  @include center(330px);
+}
+.display_none {
+  display: none;
+}
+.l_width_100 {
+  width: 100%;
+  margin: 0px;
+}
+.img_box {
+  > img {
+    width: 100%;
+  }
+}
+
+// 동그라미 심볼
+.symbol-circle {
+  @include makeCircle(34px);
+
+  user-select: none;
+
+  & ._imgtag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+    background-color: #fff;
+  }
+}
+
+//더보기, 스토어로가기버튼
+.in-more {
+  @include inlineBlockStyle(middle);
+
+  user-select: none;
+
+  & > span,
+  & > img {
+    @include inlineBlockStyle(middle);
+    position: relative;
+    transition: color 0.3s;
+    left: 0;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+  }
+
+  & > span {
+    @include fontType01(#{$px-16}rem);
+    padding-right: 5px;
+  }
+  &:hover > span {
+    color: #a134e8;
+  }
+  &:hover > img {
+    transition: all 0.2s;
+    transform: scale(1.1);
+  }
+}
+
+// 인기순~신상품순 등 분류버튼
+.in-sorting {
+  @include inlineBlockStyle(middle);
+  height: 54px;
+  width: 100%;
+  line-height: 54px;
+  padding: 0px 10px;
+  font-size: $f-13;
+  background-color: $white;
+  border-bottom: 1px solid $light_gray6;
+  &.scroll {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    z-index: 9;
+  }
+  ._type {
+    display: inline;
+    border-right: 1px solid $light_gray6;
+    &:last-child {
+      border-right: 0;
+    }
+    &:last-child .c {
+      padding-right: 0;
+    }
+    &.active .word {
+      color: $black;
+    }
+    .word:hover {
+      color: $black;
+    }
+    .word {
+      padding: 0 13px;
+      color: $light_gray7;
+    }
+    .word._blue {
+      color: $blue;
+    }
+  }
+}
+
+.sorting-checkbox:checked + li .word {
+  color: #333;
+}
+
+// 브레드크럼
+.in-breadcrumb-wrap {
+  height: 42px;
+  background-color: $black;
+}
+.in-breadcrumb {
+  margin: 0px auto;
+  width: fit-content;
+  padding: 9px 0px;
+  ._list {
+    @include fontType01($f-13, $weight: 400, $color: $gray);
+
+    display: inline-block;
+    padding: 0 11px;
+    position: relative;
+
+    &.active {
+      color: $white;
+      -webkit-text-shadow: none;
+      -webkit-text-stroke: 0;
+    }
+
+    &.active ._num {
+      background: $white;
+      color: $black;
+      border-color: $white;
+    }
+
+    ._num {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      border: 1px solid $gray;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 18px;
+      font-style: normal;
+      margin-right: 3px;
+    }
+    ._next {
+      @include position($t: 50%, $r: -5px);
+
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.in-breadcrumb.type01 {
+  ._list {
+    padding: 0 20px;
+    color: #b4b4b4;
+
+    a {
+      color: inherit;
+    }
+
+    ._next {
+      @include position($t: 55%);
+    }
+  }
+  ._list.active {
+    color: #333;
+  }
+}
+
+// margin
+@for $i from 10 through 100 {
+  .mb-#{$i} {
+    margin-bottom: (1 * $i) + px;
+  }
+}
+
+//scroll layout
+.over-y_scroll {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $light_gray2;
+  }
+}

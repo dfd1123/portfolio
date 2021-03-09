@@ -1,0 +1,509 @@
+/* PAGES - 메인 대시보드 페이지
+   ========================================================================== */
+// -------------------------------------------------------------------------- //
+// 메인페이지에서 사용되는 변수
+
+$page-main-margin: 20px;
+
+// -------------------------------------------------------------------------- //
+
+#page-main-wrap {
+  @include max-width(1920px, 100%);
+  @include set-center;
+
+  padding: layoutPc(page-wrap-pd-t) 0 layoutPc(page-wrap-pd-b);
+
+  .grid-line-group.first {
+    height: 531px;
+    margin-bottom: 35px;
+
+    .grid-col-01 {
+      width: 60%;
+      float: left;
+    }
+
+    .grid-col-02 {
+      width: calc(40% - #{$page-main-margin});
+      float: right;
+    }
+
+    .panel-con-02 {
+      margin-bottom: 35px;
+    }
+  }
+
+  .grid-line-group.second {
+    .grid-col {
+      width: 33.33%;
+      float: left;
+      padding-right: $page-main-margin;
+    }
+
+    .grid-col:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .panel-default-title .in-more {
+    @include set-absolute($t: 2px, $r: 0);
+  }
+}
+
+// 메인 그래프영역
+.main-graph-area {
+  height: 457px;
+  background-color: beige;
+}
+
+// 메인 조그만 패널
+.main-mini-panel-card {
+  @include common-panel-style;
+
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 30px 20px;
+  margin-bottom: 10px;
+  min-height: 80px;
+
+  &.type-thumb .inner {
+    padding-left: 56px;
+  }
+
+  .in-thumb {
+    $thumb-size: 48px;
+    @include rounded;
+    @include set-absolute($t: 3px, $l: 0);
+
+    width: $thumb-size;
+    height: $thumb-size;
+    overflow: hidden;
+    user-select: none;
+
+    img {
+      @include width-height-100;
+
+      object-fit: cover;
+      float: left;
+    }
+  }
+
+  .in-maintit {
+    @include font(0.875em, $c: $primary-color);
+    @include ellipse(1, 20px);
+
+    width: calc(100% - 55px);
+  }
+
+  .in-subtit {
+    @include font(0.75em, $c: $gray-md-03);
+    @include ellipse(1, 25px);
+
+    width: calc(100% - 125px);
+    padding-bottom: 7px;
+  }
+
+  .in-status {
+    @include set-absolute($t: 4px, $r: 0);
+    @include font(0.6em, $c: $gray-light);
+    @include rounded(30px);
+
+    background-color: $gray-lighter;
+    padding: 2px 10px;
+    user-select: none;
+
+    &.complt {
+      border: 1px solid $secondary-color;
+      background-color: white;
+      color: $secondary-color;
+    }
+  }
+
+  .in-datetime {
+    @include font(0.75em, 200, $gray-md-03);
+    @include set-absolute($b: 2px, $r: 1px);
+  }
+
+  .star-group {
+    @include set-absolute($t: 2px, $r: 0);
+  }
+}
+
+// 메인 우측 정보패널카드
+.main-info-panel-card {
+  @include common-panel-style;
+
+  width: 100%;
+  padding: 35px 30px;
+
+  .info-list {
+    @include set-clearfix;
+    @include set-relative;
+
+    border-bottom: 1px solid $gray-lighter;
+    height: 54px;
+    line-height: 54px;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .in-title {
+    @include font($em-15px, 400, $gray);
+
+    width: 120px;
+    float: left;
+
+    img {
+      @include inline-block;
+      @include set-relative($t: -2px);
+
+      margin-right: 6px;
+      user-select: none;
+    }
+
+    span {
+      @include inline-block;
+      @include set-relative;
+
+      line-height: 1;
+    }
+  }
+
+  .in-content {
+    @include font($em-20px, 400, $primary-color);
+
+    float: right;
+    width: calc(100% - 120px);
+
+    b {
+      padding-right: 5px;
+    }
+  }
+
+  .in-text-right {
+    @include set-absolute($t: 0, $r: 0);
+
+    &.minus {
+      color: $red;
+    }
+
+    &.minus b {
+      @include make-before("-") {
+        padding-right: 4px;
+      }
+    }
+    &.plus {
+      color: $blue;
+    }
+  }
+}
+
+// 메인 타블렛~모바일일 때 보이는 gnb영역
+.main-gnb-area {
+  @include rounded(10px);
+
+  background-color: $primary-color;
+  box-shadow: 0 4px 18px $purple-md-01;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  color: white;
+
+  .inner {
+    @include set-clearfix;
+    @include set-center;
+
+    width: calc(113px * 4);
+  }
+
+  .in-list {
+    @include set-flex($justify-con: center);
+
+    width: 113px;
+    height: 113px;
+    float: left;
+    flex-direction: column;
+  }
+
+  .in-word {
+    @include font(17px, 300, rgba(white, 0.5));
+
+    padding-top: 1.25em;
+  }
+}
+
+/* LAYOUT - header (반응형)
+   ========================================================================== */
+
+@include media-pc(13inch) {
+  #page-main-wrap {
+    .grid-line-group.first {
+      .grid-col-01 {
+        margin-bottom: 35px;
+        width: 100%;
+      }
+
+      .grid-col-02 {
+        width: 100%;
+        float: left;
+      }
+
+      .panel-con-02 {
+        width: calc(45% - 10px);
+        float: left;
+
+        .main-info-panel-card {
+          padding: 52px 17px;
+        }
+      }
+
+      .panel-con-03 {
+        width: calc(55% - 10px);
+        float: right;
+      }
+    }
+
+    .grid-line-group.second {
+      .grid-col-03 {
+        width: 26.5%;
+      }
+      .grid-col-04 {
+        width: 36.75%;
+      }
+      .grid-col-05 {
+        width: 36.75%;
+      }
+
+      .grid-col:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .main-info-panel-card {
+    padding: 25px 17px;
+
+    .in-title img {
+      margin-left: 10px;
+    }
+  }
+
+  .main-mini-panel-card {
+    padding: 15px 13px 20px;
+  }
+}
+
+@include media-mobile-version(ipad) {
+  #page-main-wrap {
+    padding: 20px 15px;
+
+    .mobile-page-title{
+      display: none !important;
+    }
+
+    .grid-line-group.first {
+      .panel-con-02 {
+        width: calc(40% - 10px);
+        float: left;
+      }
+      .panel-con-03 {
+        width: calc(60% - 10px);
+      }
+    }
+
+    .grid-line-group.second {
+      .grid-col {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .main-info-panel-card {
+    font-size: 14px;
+  }
+
+  .tablet-show-group {
+    display: block;
+  }
+}
+  
+@include media-mobile-version(galaxy-tab) {
+  #page-main-wrap {
+    .grid-line-group.first {
+      .grid-col-01 {
+        margin-bottom: 30px;
+      }
+
+      .grid-col-02 {
+        width: 100%;
+      }
+
+      .panel-con-02 {
+        width: 100%;
+        float: left;
+        margin-bottom: 30px;
+
+        .main-info-panel-card {
+          padding: 17px;
+        }
+      }
+
+      .panel-con-03 {
+        width: 100%;
+        float: left;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .main-info-panel-card {
+    padding: 17px;
+  }
+}
+
+@include media-mobile-version(mobile-only){
+  #page-main-wrap {
+    padding: 20px 0 5em;
+
+    .mobile-page-title {
+      display: block !important;
+      font-size: 22px;
+      text-align: center;
+      padding: 0.5em 0 1.25em;
+    }
+
+    .grid-col {
+      margin-bottom: 0 !important;
+    }
+
+    .grid-line-group.first{
+      .panel-con-01 {
+        .panel-default-title {
+          display: none;
+        }
+      }
+    }
+
+    .panel-default-container {
+      @include common-panel-style;
+
+      border-radius: 10px;
+      padding: 25px 10px 10px;
+      margin-bottom: 12px !important;
+
+      .panel-default {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+      }
+
+      .main-info-panel-card {
+        background-color: transparent;
+        box-shadow: none;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .main-mini-panel-card {
+        background-color: transparent;
+        box-shadow: none;
+
+        border-bottom: 1px solid #f0f0f0;
+        border-radius: 0;
+        padding: 10px 0;
+        min-height: 71px;
+        margin-bottom: 0;
+      }
+      .panel-default-title {
+        padding: 0;
+        margin: 0;
+
+        .in-mainname{
+          @include font(#{$em-18px}, $w: 600);
+        }
+      }
+    }
+
+    .panel-default-container.panel-con-04,
+    .panel-default-container.panel-con-05,
+    .panel-default-container.panel-con-06 {
+      padding-bottom: 25px;
+
+      .panel-default-title {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .star-group {
+      padding-left: 18px;
+
+      ._img {
+        @include bg-img($path-icon, "only-one-star.svg");
+        @include bg-option(contain, center);
+
+        top: 3px;
+        width: 18px;
+      }
+    }
+  }
+
+  .main-gnb-area {
+    padding: 20px 10px;
+    .inner {
+      width: 100%;
+    }
+    .in-list {
+      width: 25%;
+      height: 80px;
+    }
+    .in-word {
+      font-size: $em-13px;
+      padding-top: 0.85em;
+    }
+  }
+
+  .main-info-panel-card {
+    .in-content {
+      font-size: $em-16px;
+    }
+  }
+}
+
+@include media-mobile-version(mobile-small) {
+  #admin-container.main-container{
+    background: white;
+  }
+
+  #page-main-wrap{
+    .panel-default-container{
+      padding: 25px 0;
+      box-shadow: none;
+    }
+    .panel-default-container.panel-con-02,
+    .panel-default-container.panel-con-03 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .panel-default-container.panel-con-04{
+      padding-top: 0;
+    }
+    .panel-default-container.panel-con-04,
+    .panel-default-container.panel-con-05,
+    .panel-default-container.panel-con-06 {
+      padding-bottom: 0;
+    }
+  }
+
+  .main-info-panel-card {
+    .in-title {
+      width: 90px;
+    }
+    .in-title img{
+      margin-left: 0;
+    }
+    .in-content {
+      width: calc(100% - 90px);
+    }
+  }
+}

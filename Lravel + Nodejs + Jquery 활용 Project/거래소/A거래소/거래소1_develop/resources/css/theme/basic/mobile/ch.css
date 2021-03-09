@@ -1,0 +1,16 @@
+body{
+    letter-spacing: -0.4px;
+	font-family: "Nunito", 'Noto Sans SC', sans-serif;
+}
+
+
+/* --------p2p-------- */
+
+.p2p_list_group .list_in_con .buy_tit::before {
+    content: '买入';
+}
+.p2p_list_group .list_in_con .sell_tit::before {
+    content: '卖出';
+}
+
+/* --------p2p end-------- */

@@ -1,0 +1,14 @@
+header{position: relative;display:block;overflow:hidden;width:100%;margin:0 auto;text-align:center;min-height:270px;border-top:20px solid #f3be38;box-sizing: border-box}
+header h1{display:block;position:relative;margin:0 auto;text-align:center;overflow:hidden;padding:40px 0;}
+header h1 img{display:block;margin:0 auto;margin-bottom:10px;}
+header .select{position:absolute !important;top:32%;right:13%;}
+header .select select {font-size:17px;color:#222;font-weight:bold;}
+header #lnb{position:relative;margin:0 auto;text-align:center;width:100%;border-top:1px solid #9c9c9c;border-bottom:1px solid #9c9c9c;}
+header #lnb ul{padding:0px;margin:0px auto;text-align:center;width:100%;max-width:865px;display:block;overflow:hidden;}
+header #lnb ul li{float:left;width:20%;text-align:center;}
+header #lnb ul li a{display:block;color:#222;font-size:19px;padding:30px 0;font-weight:bold;}
+header #lnb ul li a:hover,
+header #lnb ul li a.on,
+header #lnb ul li a:active{font-weight:bold;color:#289ab9;}
+header #lnb > span{position:absolute;left:13%;top:27%;}
+header #lnb > span a{display:inline-block;margin-right:5px}

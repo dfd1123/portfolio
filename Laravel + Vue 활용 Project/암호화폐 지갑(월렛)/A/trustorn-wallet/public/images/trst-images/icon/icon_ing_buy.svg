@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90" viewBox="0 0 90 90">
+  <defs>
+    <filter id="타원_33" x="0" y="0" width="90" height="90" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#c3d7d7" flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon_ing_buy" transform="translate(-135 -77)">
+    <g id="icon_complete" transform="translate(0 -114.811)">
+      <g transform="matrix(1, 0, 0, 1, 135, 191.81)" filter="url(#타원_33)">
+        <g id="타원_33-2" data-name="타원 33" transform="translate(15 9)" fill="#fff" stroke="#19b4aa" stroke-miterlimit="10" stroke-width="2">
+          <circle cx="30" cy="30" r="30" stroke="none"/>
+          <circle cx="30" cy="30" r="29" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_75" data-name="그룹 75" transform="translate(355.284 230.837) rotate(180)">
+      <line id="선_92" data-name="선 92" y2="16.574" transform="translate(175 103.985)" fill="none" stroke="#19b4aa" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="패스_1938" data-name="패스 1938" d="M167.716,110.07,175,102.785l7.284,7.284" fill="none" stroke="#19b4aa" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="선_93" data-name="선 93" x2="14.569" transform="translate(167.716 126.837)" fill="none" stroke="#19b4aa" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

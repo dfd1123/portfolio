@@ -1,0 +1,24 @@
+{
+  "name": "ws-sub-spowide",
+  "version": "0.2.0",
+  "description": "ws-sub-spowide",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "debug": "set NODE_ENV=development&&nodemon --inspect=5859 ./index --watch ./ --delay 1.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "nodemon": "^1.19.2",
+    "prettier-eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "lodash": "^4.17.15",
+    "ws": "^7.1.2"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2"
+  }
+}

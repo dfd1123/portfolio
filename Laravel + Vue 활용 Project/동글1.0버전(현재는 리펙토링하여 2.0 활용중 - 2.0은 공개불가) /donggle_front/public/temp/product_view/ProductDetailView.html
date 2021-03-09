@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/ui.css" />
+</head>
+
+<body>
+  <!-- main top popup -->
+
+  <!-- header -->
+
+  <!-- content -->
+  <!--
+    _sale     품절이 아닐 때
+    _soldout  품절일 때
+
+    ._quick_menu ._soldout,
+    .in-pricedetail ._soldout
+      에 display:none
+
+    _fill     글이 있을 때
+    _empty    글이 없을 때
+
+    ._sell_review_wrap ._empty,
+    ._qna_wrap ._empty
+      에 display:none
+
+    리뷰에 이미지가 있을 떄
+    ._review_write_text._with_img
+
+    ._review_wrap > ._write_review
+    클릭시
+    .review_write_popup_wrapper
+    remove class .display_none
+
+    ._qna_wrap > ._write_review
+    클릭시
+    .qna_write_popup_wrapper
+    remove class .display_none
+
+    미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+
+    ._board_pager : pagination 자리
+   -->
+  <div id="dg-product-detail-view-wrapper">
+    <!-- 구매후기 작성 팝업 -->
+    <div class="_popup_wrapper _write_ppopup_wrapper review_write_popup_wrapper display_none">
+      <div class="_bg"></div>
+      <div class="_popup_wrap _popup_wrap_657">
+        <div class="_popup_title">
+          <h4>구매후기 작성<a href="#" class="_close_btn"> </a></h4>
+        </div>
+        <div class="_popup_content">
+          <!-- 상품 종류 E -->
+          <div class="_product_view">
+            <div class="_img_box">
+              <img src="/images/example/ex-clothes-img.png" alt="팝콘체크 롱코트">
+            </div>
+            <div class="_text">
+              <p class="_title">팝콘체크 롱코트(2color)</p>
+              <p class="_option">
+                팔찌1 컬러 : 실버 / 팔찌2 컬러 : 실버 / 각인 문구/폰트 : 주문 요청사항에 남겨주세요 / 뒷면 각인 시 선택 : 뒷면 각인 안함
+              </p>
+            </div>
+          </div>
+          <!-- 상품 종류 E -->
+          <!-- 에디터 대신 삽입 -->
+          <div class="_edter_wrap">
+            <p class="_img_edit">이미지 파일</p>
+            <input type="button" class="square-btn-outline _img_edit_btn" value="+ 이미지 첨부">
+            <textarea class="_editer" name="#" id="#"></textarea>
+          </div>
+          <!-- 에디터 대신 삽입 E -->
+          <!-- 별점 영역 -->
+          <div class="_star_score_wrap">
+            <h5>만족도 평가</h5>
+            <div class="_star_score">
+              <input type="radio" id="#" name="#" class="dg-input-checkbox display_none" />
+              <label for="#" class="dg-input-checkbox_label"></label>
+              <label for="#" class="dg-input-checkbox_text">
+                <div class="in-star-group star-05">
+                  <i class="_img"></i>
+                  <b class="_rate_txt"></b>
+                </div>
+              </label>
+            </div>
+            <div class="_star_score">
+              <input type="radio" id="#" name="#" class="dg-input-checkbox display_none" />
+              <label for="#" class="dg-input-checkbox_label"></label>
+              <label for="#" class="dg-input-checkbox_text">
+                <div class="in-star-group star-04">
+                  <i class="_img"></i>
+                  <b class="_rate_txt"></b>
+                </div>
+              </label>
+            </div>
+            <div class="_star_score">
+              <input type="radio" id="#" name="#" class="dg-input-checkbox display_none" />
+              <label for="#" class="dg-input-checkbox_label"></label>
+              <label for="#" class="dg-input-checkbox_text">
+                <div class="in-star-group star-03">
+                  <i class="_img"></i>
+                  <b class="_rate_txt"></b>
+                </div>
+              </label>
+            </div>
+            <div class="_star_score">
+              <input type="radio" id="#" name="#" class="dg-input-checkbox display_none" />
+              <label for="#" class="dg-input-checkbox_label"></label>
+              <label for="#" class="dg-input-checkbox_text">
+                <div class="in-star-group star-02">
+                  <i class="_img"></i>
+                  <b class="_rate_txt"></b>
+                </div>
+              </label>
+            </div>
+            <div class="_star_score">
+              <input type="radio" id="#" name="#" class="dg-input-checkbox display_none" />
+              <label for="#" class="dg-input-checkbox_label"></label>
+              <label for="#" class="dg-input-checkbox_text">
+                <div class="in-star-group star-01">
+                  <i class="_img"></i>
+                  <b class="_rate_txt"></b>
+                </div>
+              </label>
+            </div>
+          </div>
+          <!-- 별점 영역 E -->
+          <div class="dg-dubble_btn_wrap clear_both">
+            <a href="#" class="dg-btn_line dg-dubble_btn">닫기</a>
+            <a href="#" class="dg-btn_gra dg-dubble_btn">작성완료</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 구매후기 작성 팝업 E -->
+    <!-- 상품문의 작성 팝업 -->
+    <div class="_popup_wrapper _write_ppopup_wrapper qna_write_popup_wrapper display_none">
+      <div class="_bg"></div>
+      <div class="_popup_wrap _popup_wrap_657">
+        <div class="_popup_title">
+          <h4>상품문의 작성<a href="#" class="_close_btn"> </a></h4>
+        </div>
+        <div class="_popup_content">
+          <!-- 상품 종류 E -->
+          <div class="_product_view">
+            <div class="_img_box">
+              <img src="/images/example/ex-clothes-img.png" alt="팝콘체크 롱코트">
+            </div>
+            <div class="_text">
+              <p class="_title">팝콘체크 롱코트(2color)</p>
+              <p class="_option">
+                팔찌1 컬러 : 실버 / 팔찌2 컬러 : 실버 / 각인 문구/폰트 : 주문 요청사항에 남겨주세요 / 뒷면 각인 시 선택 : 뒷면 각인 안함
+              </p>
+            </div>
+          </div>
+          <!-- 상품 종류 E -->
+          <div class="_input_wrap">
+            <div class="_secret_letter">
+              <input type="checkbox" id="#" class="dg-input-checkbox display_none" />
+              <label for="#" class="dg-input-checkbox_label"></label>
+              <label for="#" class="dg-input-checkbox_text">비밀글</label>
+            </div>
+            <div class="dg_write write_mail">
+              <label for="#" class="dg_blind">이메일</label>
+              <input type="email" id="#" class="input_text_box" placeholder="이메일아이디" />
+              <p class="input_desc">
+                이메일을 입력하시면 답변 등록 시 답변이 이메일로 전송됩니다.
+              </p>
+            </div>
+            <div class="dg_write write_tel">
+              <label for="#" class="dg_blind">휴대폰번호</label>
+              <input type="tel" id="#" class="input_text_box" placeholder="휴대폰번호" maxlength="13" />
+              <p class="input_desc">
+                휴대폰번호를 입력하시면 답변등록 알림이 SMS로 전송됩니다.
+              </p>
+            </div>
+            <div class="dg_write write_title">
+              <label for="#" class="dg_blind">제목</label>
+              <input type="tel" id="#" class="input_text_box" placeholder="제목" maxlength="13" />
+            </div>
+          </div>
+          <!-- 에디터 대신 삽입 -->
+          <div class="_edter_wrap">
+            <textarea class="_editer" name="#" id="#"></textarea>
+          </div>
+          <!-- 에디터 대신 삽입 E -->
+          <div class="dg-dubble_btn_wrap clear_both">
+            <a href="#" class="dg-btn_line dg-dubble_btn">닫기</a>
+            <a href="#" class="dg-btn_gra dg-dubble_btn">작성완료</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 상품문의 작성 팝업 E -->
+    <div class="dg-content_center">
+      <!-- 미니 퀵메뉴 -->
+      <aside id="_mini_quick_menu">
+        <div class="_img_box">
+          <img src="/images/badge/badge_3.svg" alt="logo">
+        </div>
+        <h2 class="_title">#QUICK</h2>
+        <ul class="_mini_quick_menu_btn_wrap">
+          <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top">위로</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom">아래로</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- 미니 퀵메뉴 E -->
+      <!-- content1 -->
+      <section id="product_view" class="clear_both">
+        <h2 class="dg_blind">상품 자세히보기</h2>
+        <!-- con1 left -->
+        <div class="img-thumbnail">
+          <div class="img-thumbnail-big_wrap">
+            <img src="/images/img/product.jpg" alt="상품 사진">
+          </div>
+          <div class="img-thumbnail-thumbnail_wrap">
+            <div class="img-thumbnail-thumbnail">
+              <img src="/images/img/product.jpg" alt="상품 작은 사진">
+            </div>
+          </div>
+        </div>
+        <!-- con1 left E -->
+
+        <!-- con1 right -->
+        <div class="product-sell-info">
+          <div class="product-store-name-wrap">
+            <div class="symbol-circle">
+              <img src="/images/img/profile_store.jpg" alt="판매자" class="_imgtag">
+            </div>
+            <div class="product-store_name">판매자 이름</div>
+            <a href="#" class="rounded-btn-outline product-store_btn">스토어 홈</a>
+          </div>
+          <div class="product-sell-desc">
+            <h3>(겨울신상)컨트리 기모 하이웨스트 일자 바지 상품명 두줄이상 넘어갈때</h3>
+            <!-- heart -->
+            <figure class="dg-clothes-thumbnail dg-clothes-thumbup">
+              <input type="checkbox" class="heart-badge" id="test01">
+              <label class="heart-badge-label" for="test01">
+                <svg viewBox="467 392 58 57">
+                  <defs>
+                    <linearGradient id="heart-shape-gradient" x2="0.35" y2="1">
+                      <stop offset="0%" stop-color="var(--color-stop)" />
+                      <stop offset="100%" stop-color="var(--color-bot)" />
+                    </linearGradient>
+                  </defs>
+
+                  <g class="heart-Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                    <path
+                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                      class="heart-path" fill="#AAB8C2" />
+                    <circle class="main-circ" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+
+                    <g class="grp7" opacity="0" transform="translate(7 6)">
+                      <circle class="oval2" fill="#a134e8" cx="5" cy="6" r="2" />
+                      <circle class="oval1" fill="#fc4ead" cx="2" cy="2" r="2" />
+                    </g>
+
+                    <g class="grp6" opacity="0" transform="translate(0 28)">
+                      <circle class="oval1" fill="#fc4ead" cx="2" cy="7" r="2" />
+                      <circle class="oval2" fill="#ff62b9" cx="3" cy="2" r="2" />
+                    </g>
+
+                    <g class="grp3" opacity="0" transform="translate(52 28)">
+                      <circle class="oval2" fill="#a134e8" cx="2" cy="7" r="2" />
+                      <circle class="oval1" fill="#a134e8" cx="4" cy="2" r="2" />
+                    </g>
+
+                    <g class="grp2" opacity="0" transform="translate(44 6)">
+                      <circle class="oval2" fill="#a134e8" cx="5" cy="6" r="2" />
+                      <circle class="oval1" fill="#fc4ead" cx="2" cy="2" r="2" />
+                    </g>
+
+                    <g class="grp5" opacity="0" transform="translate(14 50)">
+                      <circle class="oval1" fill="#fc4ead" cx="6" cy="5" r="2" />
+                      <circle class="oval2" fill="#ff62b9" cx="2" cy="2" r="2" />
+                    </g>
+
+                    <g class="grp4" opacity="0" transform="translate(35 50)">
+                      <circle class="oval1" fill="#fc4ead" cx="2" cy="7" r="2" />
+                      <circle class="oval2" fill="#fc4ead" cx="3" cy="2" r="2" />
+                    </g>
+
+                    <g class="grp1" opacity="0" transform="translate(24)">
+                      <circle class="oval1" fill="#a134e8" cx="2.5" cy="3" r="2" />
+                      <circle class="oval2" fill="#a134e8" cx="7.5" cy="2" r="2" />
+                    </g>
+                  </g>
+                </svg>
+              </label>
+            </figure>
+            <!-- heart E -->
+            <span class="dg-like_number">찜 10</span>
+
+            <!-- 별점 영역 -->
+            <div class="product-sell-star_score">
+              <div class="product-sell-star_wrap">
+                <img src="/images/icon/icon_review.svg" alt="star icon">
+                <img src="/images/icon/icon_review.svg" alt="star icon">
+                <img src="/images/icon/icon_review.svg" alt="star icon">
+                <img src="/images/icon/icon_review.svg" alt="star icon">
+                <img src="/images/icon/icon_review_off.svg" alt="star icon">
+              </div>
+              <span>4.0</span>
+              <a href="ProductReviewDetail.html">10개 후기 보기</a>
+            </div>
+            <!-- 별점 영역 E -->
+          </div>
+
+          <!-- 가격+해시태그# -->
+          <div class="dg-clothes-list-card dg-clothes-detail">
+            <ul class="in-pricedetail">
+              <!-- 1 품절시 -->
+              <li class="_soldout">품절상품입니다.</li>
+              <!-- 1 품절시 E -->
+
+              <!-- 2 판매중 -->
+              <li class="_streetprice _sale">
+                <span>시중가</span><span>49,000원</span>
+              </li>
+              <li class="_finalprice _sale">
+                <span class="_pricename">동글가</span><b>37,800</b><span>원</span>
+              </li>
+              <li class="_streetprice _sale _streetpriceblack _delivery">
+                <span>배송비</span><span>3,000원</span>
+              </li>
+              <!-- 2 판매중 E -->
+
+              <li class="_hashlist">
+                <div class="_inner">
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>해시태그</span>
+                  </a>
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>태그</span>
+                  </a>
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>hashtag</span>
+                  </a>
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>해시태그</span>
+                  </a>
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>태그</span>
+                  </a>
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>hashtag</span>
+                  </a>
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>해시태그</span>
+                  </a>
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>태그</span>
+                  </a>
+                  <a href="#" class="rounded-list rounded-list-s">
+                    <span>hashtag</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 가격+해시태그# E -->
+
+          <!-- store info -->
+          <div class="store-info">
+            <ul class="_text">
+              <li>
+                <span class="_title">스토어/품번</span><span>판매스토어이름/1234567</span>
+              </li>
+              <li>
+                <span class="_title">성별</span><span>여자</span>
+              </li>
+              <li>
+                <span class="_title">제조국(원산지)</span><span>한국</span>
+              </li>
+              <li>
+                <span class="_title">누적구매수</span><span>212</span>
+              </li>
+            </ul>
+            <div>
+              <button class="rounded-btn-outline product-store_btn left-icon-btn left-icon-btn_store">스토어문의</button>
+              <button class="rounded-btn-outline product-store_btn left-icon-btn left-icon-btn_share">공유하기</button>
+            </div>
+          </div>
+          <!-- store info E -->
+
+          <!-- 품절상태에서 보이지 않기 -->
+          <!-- 옵션선택 -->
+          <div class="choice_product">
+            <h4>옵션선택</h4>
+            <select name="#" id="#">
+              <option value="#">[컬러]를 선택하세요</option>
+              <option value="#">레드</option>
+              <option value="">베이지</option>
+              <option value="#">블랙</option>
+            </select>
+            <select name="#" id="#">
+              <option value="#">[사이즈]를 선택하세요</option>
+              <option value="#">44</option>
+              <option value="#">55</option>
+              <option value="#">66</option>
+            </select>
+          </div>
+          <!-- 옵션선택 E -->
+
+          <!-- 선택한 옵션보기 -->
+          <div class="choice_option">
+            <div class="_name">
+              <span>커플시계 구매 유무 : 아라빅2 여성시계추가 (15%씩 할인) + 122, 750 원, 시계앞면 각인 : 각인 + 10,000원</span>
+            </div>
+            <div class="_amount clear_both">
+              <div class="_plusbtn"></div>
+              <input type="number" class="_number-input" maxlength="2" placeholder="1">
+              <div class="_minusbtn"></div>
+            </div>
+            <span class="_total_price">37,800원</span>
+            <div class="_close_btn"></div>
+          </div>
+          <!-- 선택한 옵션보기 E -->
+          <div class="dg-reg-end_btn_wrap clear_both">
+            <a href="#" class="dg-btn_line dg-dubble_btn">장바구니 담기</a>
+            <a href="#" class="dg-btn_gra dg-dubble_btn">구매하기</a>
+          </div>
+          <!-- 품절상태에서 보이지 않기 E -->
+        </div>
+        <!-- con1 right E -->
+      </section>
+    </div>
+    <!-- content2 -->
+    <section id="product_detail" class="clear_both">
+      <h2 class="dg_blind">상품정보보기</h2>
+      <!-- tab title gruop -->
+      <div class="dg-tab-title">
+        <div class="tab-title_wrap dg-content_center">
+          <ul class="tab-title_width">
+            <li><a href="#" class="tab-title_content active">상품정보</a></li>
+            <li><a href="#" class="tab-title_content">사용후기<span>(10)</span></a></li>
+            <li><a href="#" class="tab-title_content">상품문의<span>(5)</span></a></li>
+            <li><a href="#" class="tab-title_content">배송/교환/반품</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- tab title gruop E -->
+      <div class="product-detail_wrap clear_both dg-content_center">
+        <!-- con2 left -->
+        <div class="product-detail">
+
+          <section class="product-infomation">
+            <h3>섹션 너비 702px</h3>
+            <div>안녕하세요 동글입니다 :)<br>
+              2019년 겨울 신상이 나왔어요~!<br>
+              이번 신상은, 쭈리기모 트임맨투맨 입니다!<br>
+              날이 갑작스레 추워져서 지금 입으시기 좋은 기모맨투맨이랍니다 :)<br>
+              기타등등 사진도 드가고, 이미지 설명도 드가고, 상품설명도 드가고
+            </div>
+          </section>
+
+          <!-- 세탁, 원단 정보란 -->
+          <div class="_ect_detail_info_layer">
+            <table class="_ect_desc_layer">
+              <caption class="dg_blind">세탁 정보</caption>
+              <thead class="dg_blind">
+                <tr>
+                  <th class="_title">방법</th>
+                  <th class="_title">정보</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="_title">세탁방법</th>
+                  <td class="_desc">
+                    <span class="_text">손세탁</span>
+                    <span class="_text">드라이(클리닝)</span>
+                    <span class="_text">물세탁</span>
+                    <span class="_text">단독세탁</span>
+                    <span class="_text">울세탁</span>
+                    <span class="_text">표백제 사용금지</span>
+                    <span class="_text">다림질 금지</span>
+                    <span class="_text">세탁기 금지</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="_title">소재</th>
+                  <td class="_desc">
+                    <span class="_text">면</span>
+                    <span class="_text">폴리에스테르</span>
+                    <span class="_text">나일론</span>
+                    <span class="_text">레이온</span>
+                    <span class="_text">울</span>
+                    <span class="_text">아크릴</span>
+                    <span class="_text">린넨</span>
+                    <span class="_text">스판</span>
+                    <span class="_text">실크</span>
+                    <span class="_text">레더</span>
+                    <span class="_text">캐시미어</span>
+                    <span class="_text">알파카</span>
+                    <span class="_text">텐셀</span>
+                    <span class="_text">모달</span>
+                    <span class="_text">기타</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- 세탁, 원단 정보란 E -->
+
+          <!-- 기타 상세정보란 -->
+          <section class="_ect_desc_wrap">
+            <h3>기타 상세정보</h3>
+            <table class="_ect_desc_layer">
+              <caption class="dg_blind">기타 정보</caption>
+              <thead class="dg_blind">
+                <tr>
+                  <th class="_title">기능</th>
+                  <th class="_title">세부정보</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="_title">핏</th>
+                  <td class="_desc">
+                    <div class="_detail_info active">
+                      <p>슬림핏</p>
+                    </div>
+                    <div class="_detail_info">
+                      <p>보통핏</p>
+                    </div>
+                    <div class="_detail_info">
+                      <p>박시핏</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="_title">촉감</th>
+                  <td class="_desc">
+                    <div class="_detail_info">
+                      <p>부드러움</p>
+                    </div>
+                    <div class="_detail_info active">
+                      <p>보통</p>
+                    </div>
+                    <div class="_detail_info">
+                      <p>뻣뻣함</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="_title">신축성</th>
+                  <td class="_desc">
+                    <div class="_detail_info">
+                      <p>없음</p>
+                    </div>
+                    <div class="_detail_info">
+                      <p>보통</p>
+                    </div>
+                    <div class="_detail_info active">
+                      <p>좋음</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="_title">비침</th>
+                  <td class="_desc">
+                    <div class="_detail_info">
+                      <p>없음</p>
+                    </div>
+                    <div class="_detail_info active">
+                      <p>보통</p>
+                    </div>
+                    <div class="_detail_info">
+                      <p>있음</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="_title">두께</th>
+                  <td class="_desc">
+                    <div class="_detail_info active">
+                      <p>얇음</p>
+                    </div>
+                    <div class="_detail_info">
+                      <p>보통</p>
+                    </div>
+                    <div class="_detail_info">
+                      <p>두꺼움</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <!-- 기타 상세정보란 E -->
+
+          <!-- 구매후기 -->
+          <section class="_review_wrap _sell_review_wrap">
+            <h3>구매후기<span>(10)</span></h3>
+            <a href="#" class="in-more _with_title _write_review">
+              <span>구매후기 작성하기</span>
+              <img src="/images/btn/btn_write.svg" alt="btn">
+            </a>
+
+            <!-- 리뷰가 없을 때 -->
+            <div class="_empty">
+              <div class="_img_box">
+                <img src="/images/icon/empty_review.svg" alt="등록된 후기가 없습니다.">
+              </div>
+              <div class="_text">등록된 후기가 없습니다.</div>
+            </div>
+            <!-- 리뷰가 없을 때 E -->
+
+            <!-- 리뷰가 있을 때 -->
+            <div class="_fill">
+              <div class="_review">
+                <!-- review writer -->
+                <div class="_review_writer clear_both">
+                  <div class="symbol-circle">
+                    <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                  </div>
+                  <div class="_review_product_wrap">
+                    <!-- ※ 별 점수에 따라 star-05, star-04, star-03, star-02, star-01 클래스 추가 -->
+                    <div class="in-star-group star-04">
+                      <i class="_img"></i>
+                      <span class="_rate"></span>
+                      <b class="_rate_txt"></b>
+                    </div>
+                    <!-- ※ 별 점수에 따라 star-05, star-04, star-03, star-02, star-01 클래스 추가 END -->
+                    <div class="_review_writer_info">
+                      <span class="_name">닉네임</span>
+                      <span class="_number">NO.001</span>
+                      <span class="_date">2019-00-00</span>
+                      <span class="_comment">12</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- review writer E -->
+                <!-- review write -->
+                <div class="_review_write_wrap clear_both">
+                  <div class="_review_write_product">
+                    [구매옵션] 팔찌1 컬러 : 실버 / 팔찌2 컬러 : 실버 / 각인 문구 / 뒷면 각인 시 선택 : 뒷면 각인 안함
+                  </div>
+                  <div class="_review_write_text clear_both _with_img">
+                    <div class="_review_write_image">
+                      <img src="/images/img/product.jpg" alt="상품 리뷰 사진">
+                    </div>
+                    <p>
+                      크림색이랑 살구색 시켰는데 크림색은 딱 정말 따뜻해보이는예쁜 크림색이고 살구색은 고민좀 하다가
+                      겨울인데 다른옷이 너무 칙칙하니까 이거라도 밝은거 입을려고 시켰는데 진짜 상큼하고 이쁜색이에요!!
+                      그리고 저는 키 163정도인데 핏도 딱 적당하게 나오는거 같구 츄리닝이랑 같이 편하게 입을때에도 좋은 옷입니다!
+                      최대 세줄까지만 보이게 해주세요.
+                    </p>
+                  </div>
+                </div>
+                <!-- review write E -->
+
+              </div>
+              <div class="_review">
+                <!-- review writer -->
+                <div class="_review_writer clear_both">
+                  <div class="symbol-circle">
+                    <img src="/images/img/profile_admin.jpg" alt="동글 로고" class="_imgtag">
+                  </div>
+                  <div class="_review_product_wrap">
+                    <!-- ※ 별 점수에 따라 star-05, star-04, star-03, star-02, star-01 클래스 추가 -->
+                    <div class="in-star-group star-04">
+                      <i class="_img"></i>
+                      <span class="_rate"></span>
+                      <b class="_rate_txt"></b>
+                    </div>
+                    <!-- ※ 별 점수에 따라 star-05, star-04, star-03, star-02, star-01 클래스 추가 END -->
+                    <div class="_review_writer_info">
+                      <span class="_name">닉네임</span>
+                      <span class="_number">NO.001</span>
+                      <span class="_date">2019-00-00</span>
+                      <span class="_comment">12</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- review writer E -->
+                <!-- review write -->
+                <div class="_review_write_wrap">
+                  <div class="_review_write_product">
+                    [구매옵션] 팔찌1 컬러 : 실버 / 팔찌2 컬러 : 실버 / 각인 문구 / 뒷면 각인 시 선택 : 뒷면 각인 안함
+                  </div>
+                  <div class="_review_write_text clear_both">
+                    <p>
+                      크림색이랑 살구색 시켰는데 크림색은 딱 정말 따뜻해보이는예쁜 크림색이고 살구색은 고민좀 하다가
+                      겨울인데 다른옷이 너무 칙칙하니까 이거라도 밝은거 입을려고 시켰는데 진짜 상큼하고 이쁜색이에요!!
+                      그리고 저는 키 163정도인데 핏도 딱 적당하게 나오는거 같구 츄리닝이랑 같이 편하게 입을때에도 좋은 옷입니다!
+                      최대 세줄까지만 보이게 해주세요.크림색이랑 살구색 시켰는데 크림색은 딱 정말 따뜻해보이는예쁜 크림색이고 살구색은 고민좀 하다가
+                      겨울인데 다른옷이 너무 칙칙하니까 이거라도 밝은거 입을려고 시켰는데 진짜 상큼하고 이쁜색이에요!!
+                      그리고 저는 키 163정도인데 핏도 딱 적당하게 나오는거 같구 츄리닝이랑 같이 편하게 입을때에도 좋은 옷입니다!
+                      최대 세줄까지만 보이게 해주세요.
+                    </p>
+                  </div>
+                </div>
+                <!-- review write E -->
+
+              </div>
+              <!-- 리뷰가 있을 때 E -->
+              <div class="_board_pager">
+              </div>
+            </div>
+          </section>
+          <!-- 구매후기 E -->
+
+          <!-- 상품문의 -->
+          <section class="_qna_wrap">
+            <h3>상품문의<span>(5)</span></h3>
+            <a href="#" class="in-more _with_title">
+              <span>상품문의 작성하기</span>
+              <img src="/images/btn/btn_write.svg" alt="btn">
+            </a>
+
+            <!-- 상품문의가 없을 때 -->
+            <div class="_empty">
+              <div class="_img_box">
+                <img src="/images/icon/empty_inquiry.svg" alt="등록된 문의가 없습니다.">
+              </div>
+              <div class="_text">등록된 문의가 없습니다.</div>
+            </div>
+            <!-- 상품문의가 없을 때 E -->
+
+            <!-- 상품문의가 있을 때 -->
+            <div class="_board _fill">
+              <ul class="_board_layout _fill">
+                <li class="_inquire_content">
+                  <input type="checkbox" id="test1" class="_board_title_wrap display_none">
+                  <label for="test1" class="_board_title _answer">
+                    <div class="_btn _wait">답변대기</div>
+                    <div class="_title">제목입니다.</div>
+                    <span class="_writer">닉네임</span>
+                    <span class="_date">2019-00-00</span>
+                  </label>
+                  <div class="_board_content">
+                    <div class="_desc"><span>Q</span>내용입니다.</div>
+                  </div>
+                </li>
+                <li class="_inquire_content">
+                  <input type="checkbox" id="test2" class="_board_title_wrap display_none">
+                  <label for="test2" class="_board_title _answer">
+                    <div class="_btn _complete">답변완료</div>
+                    <div class="_title">제목입니다.</div>
+                    <span class="_writer">닉네임</span>
+                    <span class="_date">2019-00-00</span>
+                  </label>
+                  <div class="_board_content">
+                    <div class="_desc"><span>Q</span>내용입니다.</div>
+                    <div class="_desc _desc_answer"><span>A</span>답변입니다.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 상품문의가 있을 때 E -->
+            <div class="_board_pager">
+            </div>
+          </section>
+          <!-- 상품문의 E -->
+
+          <!-- 배송/교환/반품 -->
+          <section class="_return_wrap">
+            <h3>배송/교환/반품</h3>
+            <div class="_return">
+              <table class="_return_layer">
+                <caption class="dg_blind">배송/교환/반품 정보</caption>
+                <thead class="dg_blind">
+                  <tr>
+                    <th>제목</th>
+                    <th>내용</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="_return-title">배송정보</th>
+                    <td class="_return_text">
+                      """주중 10:00 AM~5:00 PM 주말,공휴일 휴무 /점심시간 12:30~13:30<br>
+                      택배사는 우체국 택배를 이용하고 있습니다.<br>
+                      도서산간 지역의 배송비 추가는 별도로 없습니다.<br>
+                      결제 후 평균 2~5일 소요될 수 있으며(주말,공휴일 제외) 거래처 상황에 따라 변동될 수 있습니다.<br>
+                      주문급증,인기상품의 경우 기본 배송기간 이상 소요될 수 있는 점 양해부탁드립니다.<br>
+                      기본 배송일 이상 혹은 품절된 상품은 개별 연락(알림톡,문자)드리고 있습니다.<br>
+                      ""대체 옵션이 없는 품절 상품은 빠른 처리를 도와드리기 위해<br>
+                      알림톡 연락 후 주문 취소 처리를 진행해드리고 있습니다."""
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="_return-title">교환/반품정보</th>
+                    <td class="_return_text">
+                      상품가치가 현저히 훼손된 경우를 제외한 모든 사유에 대해 환불이 가능합니다<br>
+                      환불요청 가능 기간은 상품 수령 후(배송완료 시점으로부터) 7일 이내입니다.<br>
+                      교환/환불이 발생하는 경우 그 원인을 제공한 자가 배송비를 부담합니다.<br>
+                      - 고객변심 : 최초배송비+반품배송비+(교환의 경우) 교환 배송비는 고객이 부담<br>
+                      - 판매자귀책 : 최초배송비+반품배송비+(교환의 경우) 교환 배송비는 판매자가 부담<br>
+                      다음의 경우는 예외적으로 교환 및 환불이 불가능합니다.<br>
+                      - 상품가치가 소비자의 귀책사유로 인해 현저하게 감소한 경우<br>
+                      - 소비자 과실로 인한 옷의 변색(예 : 착색, 화장품, 오염 등)<br>
+                      - 착용으로 인한 니트류 상품의 늘어남 발생 및 가죽 제품의 주름 발생<br>
+                      - 기타 착용 흔적 : 택 제거 등<br>
+                      - 구매확정된 주문의 경우<br>
+                      - 귀금속류의 경우는 소비자분쟁조정기준에 의거 교환만 가능합니다.<br>
+                      (단, 함량미달의 경우에는 환불이 가능함)<br>
+                      단순변심 반품/교환 요청 가능 기간은 상품 수령 후(배송완료 시점으로부터) 7일 이내이며 배송비는 고객 부담입니다.<br>
+                      (자동 회수 접수가 아니기때문에 우체국택배로 회수 접수 부탁드립니다.)<br>
+                      교환/반품 신청 후 장기간(2주 이상) 상품이 저희측에 도착하지 않을 경우 처리가 어려울 수 있습니다.<br>
+                      [단순 변심]<br>
+                      단순변심의 교환이나 반품의 경우 왕복 택배비(5,000원)를 아래의 계좌로 입금해주셔야 합니다.<br>
+                      [계좌정보 :입금 계좌 : 022-105089-04-069 기업은행 / 주식회사 브랜디 ]<br>
+                      *택배비 입금 시 성함과 휴대폰 뒷자리를(4자리)(ex-홍길동 5349)입력하시면 더 빠른 처리가 가능합니다.<br>
+                      상품의 하자 및 오배송으로 인한 교환/반품의 경우는 택배비가 발생되지 않습니다.<br>
+                      상품 하자가 있는 경우에는 상품을 공급받은 날부터 3개월 이내로서, 그 사실을 안 날 또는 알 수 있었던 날 부터 30일 이내 청약철회가 가능합니다.<br>
+                      [교환∙반품 방법]<br>
+                      *동봉된 교환∙반품 신청서를 참조하세요<br>
+                      [택배사 수거 접수 방법]<br>
+                      우체국 택배 (1588-1300 ARS 전화접수 >다이얼 1번> 다이얼 1번)<br>
+                      받아보신 상품 등기번호 입력하여 "착불"로 접수 해주시면 됩니다.<br>
+                      접수 후 평일기준 1~2일 내로 기사님 방문하시니, 상품 받으신 그대로 재포장 및 신청서 동봉하여 전달해 주세요<br>
+                      타 택배 이용시 반품 택배비는 고객님께서 선불로 부담하신 후 2,500원을 입금해주셔야 하며, 불량 및 오배송의 경우에도 직접 부담하셔야 합니다.<br>
+                      (추후 '환불요청'이 되어있지 않은 상품 도착시 반송 될 수 있으니 꼭 '환불요청' 상태로 변경해주시기 바랍니다)<br>
+                      고객센터(환불 및 배송문의) 1577-3452<br>
+                      영업시간 10:00-17:00 점심시간 12:30-13:30 (주말,공휴일 제외)<br>
+                      배송비 입금 계좌 : 0 2 2 - 1 0 5 0 8 9 - 0 4 - 0 6 9 기업은행 / 주식회사 브랜디<br>
+                      교환/반품 주소지 서울 중구 소공로70 브랜디 물류센터
+                    </td class="_return_text">
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- 배송/교환/반품 E -->
+
+        </div>
+        <!-- con2 left E -->
+
+        <!-- con2 right(퀵메뉴) -->
+        <div class="_quick_menu">
+          <div class="product-store-name-wrap">
+            <div class="symbol-circle">
+              <img src="/images/img/profile_store.jpg" alt="판매자" class="_imgtag">
+            </div>
+            <div class="product-store_name">판매자 이름</div>
+            <a href="#" class="rounded-btn-outline product-store_btn left-icon-btn left-icon-btn_store">스토어 문의</a>
+          </div>
+
+          <!-- 품절상태 -->
+          <div class="_soldout">
+            품절상품입니다.
+          </div>
+          <!-- 품절상태 E -->
+          <!-- 품절상태에서 보이지 않기 -->
+          <!-- 옵션선택 -->
+          <div class="choice_product _sale">
+            <h4>옵션선택</h4>
+            <select name="#" id="#">
+              <option value="#">[컬러]를 선택하세요</option>
+              <option value="#">레드</option>
+              <option value="">베이지</option>
+              <option value="#">블랙</option>
+            </select>
+            <select name="#" id="#">
+              <option value="#">[사이즈]를 선택하세요</option>
+              <option value="#">44</option>
+              <option value="#">55</option>
+              <option value="#">66</option>
+            </select>
+          </div>
+          <!-- 옵션선택 E -->
+          <!-- 선택한 옵션보기 -->
+          <div class="choice_option_wrap over-y_scroll">
+            <div class="choice_option _sale">
+              <div class="_name">
+                <span>커플시계 구매 유무 : 아라빅2 여성시계추가 (15%씩 할인) + 122, 750 원, 시계앞면 각인 : 각인 + 10,000원</span>
+                <span>커플시계 구매 유무 : 아라빅2 여성시계추가 (15%씩 할인) + 122, 750 원, 시계앞면 각인 : 각인 + 10,000원</span>
+              </div>
+              <div class="_amount clear_both">
+                <div class="_plusbtn"></div>
+                <input type="number" class="_number-input" maxlength="2" placeholder="1">
+                <div class="_minusbtn"></div>
+              </div>
+              <span class="_total_price">37,800원</span>
+              <div class="_close_btn"></div>
+            </div>
+            <div class="choice_option _sale">
+              <div class="_name">
+                <span>커플시계 구매 유무 : 아라빅2 여성시계추가 (15%씩 할인) + 122, 750 원, 시계앞면 각인 : 각인 + 10,000원</span>
+              </div>
+              <div class="_amount clear_both">
+                <div class="_plusbtn"></div>
+                <input type="number" class="_number-input" maxlength="2" placeholder="1">
+                <div class="_minusbtn"></div>
+              </div>
+              <span class="_total_price">37,800원</span>
+              <div class="_close_btn"></div>
+            </div>
+          </div>
+          <!-- 품절상태에서 보이지 않기 E -->
+
+          <div class="_quick_menu_bot">
+            <div class="_total clear_both">
+              <span class="_number">총 0개 + 배송비</span><span class="_price">1,999,220 원</span>
+            </div>
+            <!-- 선택한 옵션보기 E -->
+            <div class="dg-reg-end_btn_wrap clear_both">
+              <a href="#" class="dg-btn_line dg-dubble_btn dg-btn_width100">장바구니 담기</a>
+              <a href="#" class="dg-btn_gra dg-dubble_btn dg-btn_width100">구매하기</a>
+            </div>
+          </div>
+        </div>
+        <!-- con2 right E -->
+      </div>
+    </section>
+  </div>
+  <!-- content E -->
+
+  <!-- footer -->
+</body>
+
+</html>

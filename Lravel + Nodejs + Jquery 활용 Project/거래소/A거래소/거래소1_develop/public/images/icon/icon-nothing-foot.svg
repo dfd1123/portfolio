@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82.355" height="62.251" viewBox="0 0 82.355 62.251">
+  <g id="icon-nothing-foot" transform="translate(22520.355 -7299.749)">
+    <g id="그룹_3654" data-name="그룹 3654" transform="translate(-66.796 242.204)">
+      <g id="타원_110" data-name="타원 110" transform="translate(-22393.203 7097.796)" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="11" cy="11" r="11" stroke="none"/>
+        <circle cx="11" cy="11" r="10" fill="none"/>
+      </g>
+      <g id="그룹_3652" data-name="그룹 3652" transform="translate(-22386.43 7104.571)">
+        <line id="선_432" data-name="선 432" x2="8" y2="8" transform="translate(0.226 0.225)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+        <line id="선_433" data-name="선 433" x1="8" y2="8" transform="translate(0.226 0.225)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      </g>
+    </g>
+    <path id="field_soccer_football_field" data-name="field, soccer, football field" d="M61.365,8H3.381A1.381,1.381,0,0,0,2,9.381V50.8a1.381,1.381,0,0,0,1.381,1.381H61.365A1.381,1.381,0,0,0,62.745,50.8V9.381A1.381,1.381,0,0,0,61.365,8ZM30.992,35.415a5.5,5.5,0,0,1,0-10.652Zm2.761-10.652a5.5,5.5,0,0,1,0,10.652ZM4.761,21.806h5.522V38.372H4.761Zm0,19.328h6.9a1.381,1.381,0,0,0,1.381-1.381V20.425a1.381,1.381,0,0,0-1.381-1.381h-6.9V10.761H30.992V21.945a8.256,8.256,0,0,0,0,16.288V49.417H4.761Zm28.992,8.283V38.233a8.256,8.256,0,0,0,0-16.288V10.761H59.984v8.283h-6.9A1.381,1.381,0,0,0,51.7,20.425V39.753a1.381,1.381,0,0,0,1.381,1.381h6.9v8.283ZM59.984,38.372H54.462V21.806h5.522Z" transform="translate(-22522.355 7291.749)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+/*
+    LAYOUT - topbanner.scss
+*/
+
+// 이미지 추가하기
+.dg-main_popup {
+  min-height: 67px;
+  max-height: 91px;
+  text-align: center;
+  overflow: hidden;
+  background-size: auto 100%;
+  background-position: center center;
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  > img {
+    width: 100%;
+  }
+  &_all {
+    position: relative;
+    @include center(1060px);
+    text-align: center;
+    font-size: 2em;
+    color: $white;
+  }
+  &-close {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-indent: -9999px;
+  }
+  &-close:before,
+  &-close:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    height: 1px;
+    width: 15px;
+    background-color: $white;
+    transform: rotate(45deg);
+  }
+  &-close:after {
+    transform: rotate(135deg);
+  }
+}

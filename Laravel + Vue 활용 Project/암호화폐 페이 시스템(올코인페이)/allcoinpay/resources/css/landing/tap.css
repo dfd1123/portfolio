@@ -1,0 +1,457 @@
+@media all and (max-width: 1250px) {
+
+	/*글꼴 조절*/
+	html {
+		font-size: 9px;
+	}
+
+	/* pc_ver 숨김 처리 */
+	.online_or_offline.pc_ver {
+		display: none;
+	}
+
+	.right_picture {
+		display: none;
+	}
+
+	.middle_line.pc_ver {
+		display: none;
+	}
+
+	footer img.pc_ver {
+		display: none;
+	}
+
+	.offline_phone_wrap,
+	.allcoin_info,
+	.offline_phone_wrap .offline_phone_box img {
+		display: none;
+	}
+
+	.middle_line,
+	.phone_in_hand_wrap {
+		display: none;
+	}
+
+	/* section_1 start */
+	.slide_wrapper.next_advan .slide_con.slide_con_1 {
+		background-position: 40% 0;
+	}
+
+	.main_title {
+		top: 62%;
+		text-align: center;
+	}
+
+	.advantage_wrap {
+		display: block;
+		top: 0;
+		height: 100%;
+		padding: 12% 0;
+		box-sizing: border-box;
+	}
+
+	.advantage_wrap li {
+		display: block;
+		margin-bottom: 10%;
+	}
+
+
+	/* section_1 end */
+	/* section_2 start */
+	.online_or_offline.tap_ver {
+		display: block;
+		width: 100%;
+		position: absolute;
+		top: 7%;
+	}
+
+	.online_or_offline.tap_ver li {
+		width: 100%;
+		cursor: default;
+	}
+
+	.online_or_offline.tap_ver li p:nth-child(1) {
+		font-size: 2.9rem;
+	}
+
+	.online_or_offline.tap_ver li p:nth-child(2) {
+		font-size: 1.8rem;
+	}
+
+	.online_or_offline.tap_ver li:nth-child(2) p:nth-child(1) {
+		font-size: 1.5rem;
+		letter-spacing: -0.1rem;
+		background: #fff;
+		border-radius: 50px;
+		width: 180px;
+		margin: 0 auto;
+		border: 1px solid #9b9b9b;
+		color: #9b9b9b;
+		font-weight: 300;
+		padding: 5px 0;
+		margin-top: 25px;
+		cursor: pointer;
+	}
+
+	.all_wrap {
+		position: relative;
+		top: 22%;
+	}
+
+	.moniter_wrap {
+		width: 100%;
+		padding: 0;
+		height: unset;
+	}
+
+	.moniter_wrap .moniter_area {
+		float: inherit;
+		top: 0;
+		margin: 0 auto;
+	}
+
+	.moniter_wrap .phone_area {
+		top: 210px;
+		right: 630px;
+		width: 142px;
+		height: 280px;
+	}
+
+	.moniter_wrap .phone_area img.phone {
+		z-index: 6;
+	}
+
+	.middle_line .con_box.order_3 .noted_items {
+		left: 40px;
+		bottom: -200px;
+	}
+
+	.middle_line.tap_ver {
+		display: block;
+	}
+
+	.middle_line.tap_ver {
+		background: transparent;
+		z-index: 3;
+		box-sizing: border-box;
+		height: 100%;
+		top: 0;
+		margin-top: 50px;
+		position: relative;
+	}
+
+	.middle_line.tap_ver .con_box {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40%;
+		padding: 0;
+	}
+
+	/*오프라인*/
+	
+	.tap_offline_box_2{
+		position: absolute;
+		top: -3%;
+		width: 100%;
+	}
+	
+	.moniter_wrap.offline_mnt_wrap {
+		display: block;
+		text-align: center;
+		margin-bottom: 0px;
+		margin-top: 40px;
+	}
+
+	.moniter_wrap.offline_mnt_wrap img {
+		width: 25%;
+	}
+	
+	.moniter_wrap.offline_mnt_wrap img.phone_mini{
+		width: 20%;
+		position: relative;
+		left: 40px;
+		top: 20px
+	}
+	
+	.moniter_wrap.offline_mnt_wrap img.phone_zoom{
+		width: 25%;
+		position: relative;
+		left: -50px;
+	}
+
+	.offline_mnt_wrap span {
+		display: inline-block;
+		position: absolute;
+		top: 40%;
+		left: 44%;
+		color: #9448c8;
+		font-size: 1.6rem;
+		letter-spacing: -0.4rem;
+	}
+
+	.moniter_wrap.offline_mnt_wrap img:nth-child(3) {
+		margin-left: 7%;
+	}
+
+	/*section_2 end*/
+	/*section_3 start*/
+	.section_3 .left_area {
+		width: 100%;
+		bottom: -200px;
+	}
+
+	.cs_box {
+		width: 100%;
+		text-align: center;
+		top: 25vh;
+	}
+
+	.cs_box h3 {
+		margin-bottom: 60px;
+		margin-left: 0;
+		color: #333333;
+	}
+
+	.cs_box li {
+		text-align: left;
+		width: 260px;
+		margin: 0 auto;
+	}
+
+	.cs_box li:nth-child(3) {
+		margin: 50px auto;
+		margin-bottom: 70px;
+	}
+
+	/*section_3 end*/
+	/*footer start*/
+	footer {
+		padding: 30px 40px;
+	}
+
+	footer ul {
+		text-align: center !important;
+		height: unset !important;
+		position: relative;
+	}
+
+	footer ul:nth-child(2) {
+		padding-top: 0;
+		width: 70%;
+		padding-left: 0;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 30px;
+		float: inherit;
+	}
+
+	footer ul:nth-child(3) {
+		width: 100%;
+		position: absolute;
+		top: 125px;
+	}
+
+	footer img.tap_ver {
+		display: block;
+		top: 0;
+		left: 0;
+	}
+
+	footer ul li {
+		position: relative;
+		display: inline-block;
+	}
+
+	footer ul:nth-child(2) li:nth-child(1) {
+		display: inline-block;
+		width: 35px;
+	}
+
+	footer ul:nth-child(2) li:nth-child(1) img {
+		width: 100%;
+		top: -5px;
+	}
+
+	footer ul:nth-child(2) li:nth-child(2),
+	footer ul:nth-child(2) li:nth-child(3) {
+		padding-left: 15px;
+	}
+
+	footer ul:nth-child(2) li:nth-child(3) {
+		padding-left: 55px;
+	}
+
+	footer ul:nth-child(3) li {
+		position: relative;
+		top: -10px;
+		left: 0;
+	}
+
+	/*footer end */
+}
+
+/*아이패드 프로 버전*/
+
+@media all and (max-width: 1080px) {
+
+	/*section_2 start*/
+	.middle_line.tap_ver {
+		margin-top: 8%;
+	}
+	
+	.middle_line.tap_ver.offline{
+		margin-top: 11%;
+	}
+	
+	.tap_offline_box_2{
+		margin-top: 0px;
+	}
+	
+	.moniter_wrap.offline_mnt_wrap img.phone_zoom{
+		width: 30%;
+	}
+
+	/*section_2 end*/
+}
+
+/*아이패드 버전*/
+
+@media all and (max-width: 991px) {
+
+	/*section_1 start*/
+	.slide_wrapper.next_advan .slide_con.slide_con_2 {
+		background-size: 200% 100%;
+	}
+
+	.advantage_wrap {
+		padding: 20% 0;
+	}
+
+	.advantage_wrap li {
+		margin-bottom: 15%;
+	}
+
+	/*section_1 end*/
+	/* section_2 start */
+	.all_wrap {
+		top: 26%;
+	}
+
+	.moniter_wrap .moniter_area {
+		height: 400px;
+		margin-bottom: 12%;
+		left: 0;
+	}
+
+	.middle_line.tap_ver {
+		margin-top: 0;
+	}
+
+	.middle_line.tap_ver .con_box {
+		width: 55%;
+	}
+
+	.moniter_wrap {
+		top: 27%;
+		height: unset;
+	}
+
+	.moniter_wrap img.moniter {
+		width: 465px;
+		margin: 0 auto;
+		position: relative;
+		display: block;
+		padding-left: 20px;
+	}
+
+	.moniter_wrap .moniter_view {
+		width: 399px;
+		height: 250px;
+		top: 19px;
+		left: 116px;
+	}
+
+	.moniter_wrap .moniter_view img.online_hand {
+		width: 85%;
+		height: 527px;
+	}
+
+	.moniter_wrap .phone_area {
+		height: 237px;
+		top: 152px;
+		right: 420px;
+	}
+
+	.moniter_wrap .phone_area img.phone {
+		width: 132px;
+	}
+
+	.moniter_wrap .phone_area .phone_view img.phone_view_1_alert {
+		left: -20px;
+	}
+
+	.moniter_wrap .phone_area .phone_view img.phone_popup_end.hide {
+		left: 4px;
+	}
+
+	.moniter_wrap .phone_area .phone_view {
+		width: 90px;
+		height: 160px;
+		top: 26px;
+		left: 19px;
+	}
+
+	.middle_line .con_box.order_3 .noted_items {
+		opacity: 0;
+		transition: all 0.3s;
+		left: -20px;
+		bottom: 70px;
+	}
+
+	.middle_line .con_box.order_3 .noted_items .items:last-child {
+		margin-bottom: 0;
+	}
+
+	.tap_show_items {
+		display: block;
+		left: 50px;
+		bottom: 15px;
+	}
+
+	.tap_show_items u.red_color {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	.tap_show_items:hover {
+		transition: all 0.3s;
+		background: #f5f5f5;
+	}
+
+	#items_check:checked + .noted_items {
+		opacity: 1;
+		background: rgb(255, 255, 255);
+		padding: 10px;
+		box-shadow: 0 0px 25px rgba(57, 0, 112, 0.18);
+		border-radius: 5px;
+		transition: all 0.3s;
+	}
+	
+	.tap_offline_box_2{
+		top: -2vh;
+	}
+
+	/* section_2 end */
+	/* section_3 start */
+	.cs_box {
+		top: 20vh;
+	}
+
+	footer ul:nth-child(2) {
+		width: 100%;
+	}
+
+	/* section_3 end */
+}

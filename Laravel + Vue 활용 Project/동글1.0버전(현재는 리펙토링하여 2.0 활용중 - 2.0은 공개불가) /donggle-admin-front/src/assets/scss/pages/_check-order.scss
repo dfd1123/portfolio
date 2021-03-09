@@ -1,0 +1,290 @@
+/* PAGES - 주문상품 확인 페이지
+   ========================================================================== */
+// 모바일에서 필터 팝업에 관련된 레이아웃
+
+#page-check-order-wrap {
+  .table-area {
+    @include set-relative;
+
+    padding: 20px 10px 90px;
+
+    .search-default-bar {
+      margin-bottom: 30px;
+    }
+
+    .search-status-bar {
+      margin: 25px 0 13px;
+      .btn-outline-navy:before {
+        content: "선택한 상품 ";
+      }
+    }
+
+    .search-status-bar.type-last {
+      margin-top: 8px;
+    }
+
+    .nothing-history {
+      padding: 60px 0;
+    }
+  }
+
+  .btn-gray {
+    @include hover-eft {
+      background-color: $primary-color;
+    }
+
+    &:active {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+
+  .pager-wrap {
+    bottom: 20px;
+  }
+}
+
+.check-order-info {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 25px 0;
+
+  .in-caution {
+    @include font(13px, 300, $gray-md-03);
+
+    padding: 20px 0;
+    display: inline-block;
+  }
+}
+
+.check-order-info-cards {
+  @include set-flex($justify-con: space-between);
+  @include set-center;
+  @include max-width(925px, 100%);
+
+  text-align: center;
+
+  .in-card {
+    @include rounded(15px);
+    @include inline-block;
+    @include set-relative;
+
+    width: 30%;
+    color: white;
+    padding: 27px 0;
+
+    &:first-child {
+      background: linear-gradient(to right, #24bfb6, #39da9e);
+      box-shadow: 0 5px 15px rgba(#24bfb6, 0.3);
+    }
+
+    &:nth-child(2) {
+      background: linear-gradient(to right, #a134e8, #ff95fa);
+      box-shadow: 0 5px 15px rgba(#a134e8, 0.3);
+    }
+
+    &:nth-child(3) {
+      background: linear-gradient(to right, #9c56fe, #8ebfff);
+      box-shadow: 0 5px 15px rgba(#9c56fe, 0.3);
+    }
+  }
+
+  .in-subtit {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  .in-count {
+    @include font($em-34px, $w: bold);
+
+    b {
+      letter-spacing: 0.5px;
+      margin-right: 5px;
+    }
+
+    b:last-child {
+      margin-right: 0;
+    }
+  }
+
+  //호버시 등장하는 설명칸
+  .in-subdesc {
+    @include set-absol-left;
+
+    display: none;
+    top: 55px;
+    width: 66.66%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+    ._tit {
+      @include font(13px, 600, $pink);
+    }
+    ._desc {
+      @include font(12px, 300, $gray);
+    }
+  }
+  .in-card:hover .in-subdesc {
+    display: block;
+  }
+}
+
+//mobile
+@include media-mobile-version(ipad) {
+  .check-order-info {
+    background: linear-gradient(to right, #9c56fe, #8ebfff);
+    padding: 25px 10px 15px;
+
+    .in-caution {
+      padding: 0px;
+      color: white;
+      opacity: 0.6;
+    }
+  }
+
+  .check-order-info-cards {
+    .in-card:first-child,
+    .in-card:nth-child(2),
+    .in-card:nth-child(3) {
+      min-width: auto;
+      padding: 0px;
+      margin: 27px 0px;
+      background: transparent;
+      box-shadow: none;
+    }
+    .in-subtit {
+      font-size: 13px;
+    }
+    .in-count {
+      font-size: 20px;
+    }
+    .in-subdesc {
+      @include z-index(default);
+
+      transform: none;
+      left: 6vw;
+      width: 80vw;
+    }
+    .in-card:nth-child(2) .in-subdesc {
+      left: -27vw;
+    }
+    .in-card:nth-child(3) .in-subdesc {
+      left: -60vw;
+    }
+  }
+
+  #page-check-order-wrap {
+    .panel-default {
+      padding: 0px;
+    }
+  }
+
+  #page-check-order-wrap .table-area {
+    .sorting-tab-bar {
+      padding: 0 10px;
+      border: 0px none;
+      .in-tab {
+        width: calc(50% - 5px);
+        margin: 0px;
+        border-radius: 5px;
+        background-color: $gray-lighter-02;
+        color: $gray-md-03;
+        font-size: 15px;
+      }
+      .first-tab {
+        margin-right: 6px;
+      }
+      .chck-box:checked + .in-tab {
+        border: 0px none;
+        background-color: $primary-color-02;
+        font-weight: 600;
+        color: white;
+      }
+      .chck-box:checked + .in-tab:after {
+        content: none;
+      }
+    }
+
+    .search-status-bar {
+      margin: 25px 0px;
+      text-align: center;
+    }
+
+    .choice-status-bar {
+      margin-bottom: 0;
+    }
+
+    .search-status-bar .type-shadow {
+      box-shadow: none;
+      &:before {
+        content: none;
+      }
+    }
+    .show-mobile {
+      @include set-relative;
+    }
+    .go-top-btn {
+      @include hover-active-bg(white);
+    }
+  }
+
+  .search-status-bar {
+    .in-word-result {
+      font-size: 13px;
+    }
+  }
+
+  .order-list-wrap {
+    .in-product-order {
+      border-top: 1px solid $gray-lighter;
+      padding: 15px 11px;
+    }
+    .in-order-product {
+      margin-left: 6px;
+    }
+    .date-product-md {
+      @include font($s: 12px, $w: 200);
+
+      margin-left: 22px;
+      padding: 0px 0px 0px 90px;
+    }
+    .order-stat-btn-wrap {
+      margin-left: 30px;
+    }
+    .rounded-square-btn {
+      width: 100%;
+    }
+    .order-option {
+      float: left;
+      width: 70%;
+      line-height: 1.7;
+      padding: 20px 0px;
+    }
+    .order-ready {
+      float: right;
+      width: 30%;
+      line-height: 1.7;
+      text-align: right;
+      padding: 20px 0px;
+      ._pink {
+        @include font(13px, 600, $pink);
+      }
+      ._purple {
+        @include font(13px, 600, $primary-color-02);
+      }
+    }
+    .order-status {
+      @include font(13px, 500, $gray);
+
+      line-height: 1.9;
+      margin: 10px 0px 10px 30px;
+      .in-tit {
+        float: left;
+      }
+      .in-desc {
+        float: right;
+      }
+    }
+  }
+}

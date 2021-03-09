@@ -1,0 +1,53 @@
+/* COMPONENTS - input, select, textarea ...
+   ========================================================================== */
+// -------------------------------------------------------------------------- //
+// 공통 panel스타일
+
+@mixin common-panel-style($bg: white) {
+  @include rounded;
+  @include box-shadow($panel-shadow);
+
+  background-color: $bg;
+}
+
+// -------------------------------------------------------------------------- //
+
+.panel-default-container {
+  @include set-relative;
+}
+
+// panel default (일반 하얀색)
+.panel-default {
+  @include common-panel-style;
+
+  width: 100%;
+  min-height: 50px;
+  padding: 15px 20px;
+}
+
+// panel default title
+.panel-default-title {
+  width: 100%;
+  padding-bottom: 14px;
+  position: relative;
+
+  .in-mainname {
+    @include inline-block;
+    @include font(1.25em, 400, $primary-color);
+
+    letter-spacing: -0.5px;
+    padding-right: 10px;
+    user-select: none;
+  }
+
+  .in-subtxt {
+    @include inline-block;
+    @include font(0.8125em, 300, $gray-md-03);
+  }
+}
+
+// panel default content
+.panel-default-content {
+  @include set-relative;
+  @include set-clearfix;
+}

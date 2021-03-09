@@ -1,0 +1,111 @@
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.slide-fade02-enter-active {
+  transition: all 0.6s ease;
+}
+.slide-fade02-leave-active {
+  transition: all 0.6s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade02-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.slide-fadeup-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fadeup-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fadeup-enter, .slide-fadeup-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.slide-fadedown-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fadedown-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fadedown-enter, .slide-fadedown-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+.slide-up {
+  transition: all 0.25s;
+}
+.slide-up-enter-active {
+  transition: all 0.25s ease;
+}
+.slide-up-leave-active {
+  transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-up-enter,
+.slide-up-leave-active {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.todo-item-enter-active,
+.todo-item-leave-active {
+  transition: opacity ease 0.25s, transform ease-in-out 0.3s;
+  transform-origin: left center;
+}
+
+/* .todo-item-leave-active below version 2.1.8 */
+.todo-item-enter,
+.todo-item-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.todo-item-leave-active {
+  position: absolute;
+}
+
+.flip-list-enter,
+.flip-list-leave-to {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.flip-list-leave-active {
+  position: absolute;
+}
+
+@keyframes orangeAni {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -7.5px, 0) scale(0.9, 0.87);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -7.5px, 0);
+  }
+  100% {
+    transform: translate3d(0, -4px, 0);
+  }
+}

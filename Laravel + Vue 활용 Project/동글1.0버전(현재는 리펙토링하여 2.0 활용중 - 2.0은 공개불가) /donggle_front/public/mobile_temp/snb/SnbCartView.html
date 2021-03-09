@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+</head>
+
+<body>
+  <!--
+    header 자리
+  -->
+
+  <!-- content -->
+  <div id="dg-snb-cart-wrapper" class="dg-order-wrapper l-snb-wrapper">
+
+    <!-- 
+      주문하기와 동일한 레이아웃.
+      쿠폰 할인적용 팝업, 상품옵션변경 팝업도 존재 
+    -->
+    <!-- 1) 장바구니 단계 확인 구역 -->
+    <div class="l-con-area full">
+
+      <div class="l-con-article">
+
+        <div class="type02">
+          <div class="_page_title_wrap">
+            <h2>장바구니</h2>
+          </div>
+          <div class="in-breadcrumb-wrap">
+            <ul class="in-breadcrumb">
+              <li class="_list active">
+                <i class="_num">1</i>
+                <span>장바구니</span>
+                <img src="/images/mobile/icon/icon_breadcrumb_arrow.svg" alt="arrow" class="_next">
+              </li>
+              <li class="_list">
+                <i class="_num">2</i>
+                <span>주문/결제<span>
+                    <img src="/images/mobile/icon/icon_breadcrumb_arrow.svg" alt="arrow" class="_next">
+              </li>
+              <li class="_list">
+                <i class="_num">3</i>
+                <span>주문완료</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 1) 장바구니 단계 확인 구역 E -->
+
+        <div>
+
+          <div class="snb-cart-empty">
+            <!-- ※※※※ 장바구니 내역 없을 때 -->
+            <ul class="l-grid-group">
+  
+              <li class="l-grid-list l-col-1">
+                <div class="nothing-history">
+                  <img src="/images/icon/empty_cart.svg" alt="icon empty" class="in-empty-icon">
+                  <span class="in-empty-ment">장바구니 상품이 없습니다.</span>
+                </div>
+                <div class="dg-button-wrap dg-button-wrap--single">
+                  <a href="#" class="theme-btn-gradient btn-shadow">
+                    상품 둘러보기
+                  </a>
+                </div>
+              </li>
+  
+            </ul>
+            <!-- ※※※※ 장바구니 내역 없을 때 END -->
+      <!-- 2) ※※※※ 장바구니 내역 없을 때 : 최근 본 상품 -->
+          <section class="main-slide-wrap best-product-wrap">
+            <h2>최근 본 상품</h2>
+            <a href="#" class="in-more">
+              <span>더보기</span>
+              <img src="/images/btn/btn_more.svg" alt="btn" />
+            </a>
+            <div class="best-product-scroll">
+              <ul class="l-grid-group">
+                <!-- 갯수가 늘어나면 x축으로 스크롤 -->
+                <li class="l-grid-list">
+                  <!-- * 옷상품 카드 -->
+                  <div class="dg-clothes-list-card">
+                    <figure class="dg-clothes-thumbnail">
+                      <input type="checkbox" class="heart-badge" id="test01" />
+                      <label class="heart-badge-label" for="test01">
+                        <svg viewBox="467 392 58 57">
+                          <defs>
+                            <linearGradient
+                              id="heart-shape-gradient"
+                              x2="0.35"
+                              y2="1"
+                            >
+                              <stop
+                                offset="0%"
+                                stop-color="var(--color-stop)"
+                              ></stop>
+                              <stop
+                                offset="100%"
+                                stop-color="var(--color-bot)"
+                              ></stop>
+                            </linearGradient>
+                          </defs>
+  
+                          <g
+                            class="heart-Group"
+                            fill="none"
+                            fill-rule="evenodd"
+                            transform="translate(467 392)"
+                          >
+                            <path
+                              d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                              class="heart-path"
+                              fill="#AAB8C2"
+                            ></path>
+                            <circle
+                              class="main-circ"
+                              opacity="0"
+                              cx="29.5"
+                              cy="29.5"
+                              r="1.5"
+                            ></circle>
+  
+                            <g
+                              class="grp7"
+                              opacity="0"
+                              transform="translate(7 6)"
+                            >
+                              <circle
+                                class="oval2"
+                                fill="#a134e8"
+                                cx="5"
+                                cy="6"
+                                r="2"
+                              ></circle>
+                              <circle
+                                class="oval1"
+                                fill="#fc4ead"
+                                cx="2"
+                                cy="2"
+                                r="2"
+                              ></circle>
+                            </g>
+  
+                            <g
+                              class="grp6"
+                              opacity="0"
+                              transform="translate(0 28)"
+                            >
+                              <circle
+                                class="oval1"
+                                fill="#fc4ead"
+                                cx="2"
+                                cy="7"
+                                r="2"
+                              ></circle>
+                              <circle
+                                class="oval2"
+                                fill="#ff62b9"
+                                cx="3"
+                                cy="2"
+                                r="2"
+                              ></circle>
+                            </g>
+  
+                            <g
+                              class="grp3"
+                              opacity="0"
+                              transform="translate(52 28)"
+                            >
+                              <circle
+                                class="oval2"
+                                fill="#a134e8"
+                                cx="2"
+                                cy="7"
+                                r="2"
+                              ></circle>
+                              <circle
+                                class="oval1"
+                                fill="#a134e8"
+                                cx="4"
+                                cy="2"
+                                r="2"
+                              ></circle>
+                            </g>
+  
+                            <g
+                              class="grp2"
+                              opacity="0"
+                              transform="translate(44 6)"
+                            >
+                              <circle
+                                class="oval2"
+                                fill="#a134e8"
+                                cx="5"
+                                cy="6"
+                                r="2"
+                              ></circle>
+                              <circle
+                                class="oval1"
+                                fill="#fc4ead"
+                                cx="2"
+                                cy="2"
+                                r="2"
+                              ></circle>
+                            </g>
+  
+                            <g
+                              class="grp5"
+                              opacity="0"
+                              transform="translate(14 50)"
+                            >
+                              <circle
+                                class="oval1"
+                                fill="#fc4ead"
+                                cx="6"
+                                cy="5"
+                                r="2"
+                              ></circle>
+                              <circle
+                                class="oval2"
+                                fill="#ff62b9"
+                                cx="2"
+                                cy="2"
+                                r="2"
+                              ></circle>
+                            </g>
+  
+                            <g
+                              class="grp4"
+                              opacity="0"
+                              transform="translate(35 50)"
+                            >
+                              <circle
+                                class="oval1"
+                                fill="#fc4ead"
+                                cx="2"
+                                cy="7"
+                                r="2"
+                              ></circle>
+                              <circle
+                                class="oval2"
+                                fill="#fc4ead"
+                                cx="3"
+                                cy="2"
+                                r="2"
+                              ></circle>
+                            </g>
+  
+                            <g class="grp1" opacity="0" transform="translate(24)">
+                              <circle
+                                class="oval1"
+                                fill="#a134e8"
+                                cx="2.5"
+                                cy="3"
+                                r="2"
+                              ></circle>
+                              <circle
+                                class="oval2"
+                                fill="#a134e8"
+                                cx="7.5"
+                                cy="2"
+                                r="2"
+                              ></circle>
+                            </g>
+                          </g>
+                        </svg>
+                      </label>
+                      <a
+                        class="in-image"
+                        href="#"
+                        style="background-image: url('/images/example/ex-clothes-img2.png');"
+                      ></a>
+                    </figure>
+  
+                    <ul class="in-information">
+                      <li class="_category">아우터</li>
+                      <li class="_sellername">
+                        <a href="#">판매자명</a>
+                      </li>
+                      <li class="_name">
+                        <a href="#">하프 리본 트렌치코트</a>
+                      </li>
+                    </ul>
+  
+                    <ul class="in-pricedetail">
+                      <li class="_finalprice">
+                        <b>46,800</b>
+                        <img
+                          src="/images/icon/icon_review.svg"
+                          alt="star icon"
+                        /><span class="_rate">5.0</span>
+                      </li>
+                      <li class="_hashlist">
+                        <div class="_inner">
+                          <a href="#" class="rounded-list rounded-list-s">
+                            <span>흰색</span>
+                          </a>
+                          <a href="#" class="rounded-list rounded-list-s">
+                            <span>흰색</span>
+                          </a>
+                          <a href="#" class="rounded-list rounded-list-s">
+                            <span>길다란게 하나 가려지기</span>
+                          </a>
+                        </div>
+                        <div class="_hashlist-more">
+                          <input type="button" value="+" class="in-morebtn" />
+  
+                          <!-- 해시태그 팝업 -->
+                          <div class="_hashlist-con">
+                            <div class="_hashtag_bg"></div>
+                            <div class="_hashtag_wrap">
+                              <h3>해시태그</h3>
+                              <div class="hash-detail_title clear_both">
+                                <div class="hash-title_img_box">
+                                  <img
+                                    src="/images/img/product2.jpg"
+                                    alt="하프 리본 트렌치코트"
+                                  />
+                                </div>
+                                <h4>
+                                  <b>하프 리본 트렌치코트</b><br />
+                                  <span>스토어명 </span>
+                                </h4>
+                              </div>
+                              <div class="pink_tag_wrap">
+                                <a href="#" class="rounded-list rounded-list-s">
+                                  <span>글자수길면</span>
+                                </a>
+                                <a href="#" class="rounded-list rounded-list-s">
+                                  <span>흰색</span>
+                                </a>
+                                <a href="#" class="rounded-list rounded-list-s">
+                                  <span>롱코트</span>
+                                </a>
+                                <a href="#" class="rounded-list rounded-list-s">
+                                  <span>롱코트</span>
+                                </a>
+                                <a href="#" class="rounded-list rounded-list-s">
+                                  <span>흰색</span>
+                                </a>
+                                <a href="#" class="rounded-list rounded-list-s">
+                                  <span>롱코트</span>
+                                </a>
+                              </div>
+                              <div class="_view_more _hashtag_close">
+                                <button>닫기</button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- hashtag popup E -->
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- * 옷상품 카드 E -->
+                </li>
+              </ul>
+            </div>
+          </section>
+      <!-- 2) ※※※※ 장바구니 내역 없을 때 : 최근 본 상품 E -->
+          </div>
+
+          <!-- ※※※※ 장바구니 내역 있을 때 -->
+        <!-- 주문상품 리스트 -->
+        <div>
+
+          <ul class="l-grid-group">
+
+            <li class="l-grid-list l-col-1">
+              <!-- * 상단 전체선택-선택해제-선택상품 삭제 -->
+              <!-- 스르콜시 상단 고정 .in-sorting 에 .scroll -->
+              <ul class="in-sorting">
+                <li class="_type active">
+                  <input type="checkbox" id="test" class="dg-input-checkbox display_none" />
+                  <label for="test" class="dg-input-checkbox_label"></label>
+                  <label for="test" class="word">전체선택</label>
+                </li>
+                <li class="_type">
+                  <button type="button" class="word">선택해제</button>
+                </li>
+                <li class="_type">
+                  <button type="button" class="word _blue">선택상품 삭제</button>
+                </li>
+              </ul>
+              <!-- * 상단 전체선택-선택해제-선택상품 삭제 E -->
+            </li>
+
+            <li class="l-grid-list l-col-1">
+              <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) -->
+              <div class="dg-clothes-history-card type-cart type-detail ">
+                <div class="in-content">
+                  <div class="inner-wrap">
+                    <div class="inner-box">
+  
+                    <!-- ※ 인풋체크박스, 삭제버튼 추가 -->
+                    <input type="checkbox" id="test1" class="dg-input-checkbox display_none">
+                    <label for="test1" class="dg-input-checkbox_label"></label>
+                    <button class="_del_btn" type="button">
+                      <img src="/images/btn/btn_cancle_gr.svg" alt="button image">
+                    </button>
+                    <!-- ※ 인풋체크박스, 삭제버튼 추가 END -->
+  
+                    <h3 class="_name">
+                      <a href="#">[스토어명] 팝콘체크 롱코트 (2color) 길어지면 자연스럽게 줄이 바뀌어 집니다</a>
+                    </h3>
+                    <div class="_options">
+                      <figure class="dg-clothes-thumbnail">
+                        <a class="in-image" href="#" style="background-image: url('/images/example/ex-clothes-img2.png');"></a>
+                      </figure>
+                      <div class="_in_col">
+                        <dl class="_op_category">
+                          <dd class="_op_list">
+                            <span>팔찌1 컬러 : 실버</span>
+                            <span>팔찌2 컬러 : 실버</span>
+                            <span>각인문구/폰트 : 주문요청사항에 남겨주세요</span>
+                            <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                          </dd>
+                        </dl>
+                        <div class="_amount">
+                          <span>수량 : 1개</span>
+                        </div>
+                        <div class="_price mb-0">
+                          <span class="_prdt_price">19,800 원</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="_price_wrap mb-0">
+                      <div class="_sale_price"><span>쿠폰 할인</span> <b>0 원</b></div>
+                      <div class="_total_price"><span>총 상품금액</span> <b>18,000 원</b></div>
+                    </div>
+                    <div class="_edit_btn_wrap">
+                      <button type="button" class="rounded-btn-outline _edit_btn" onclick="alert('(팝업) 상품옵션 변경입니다.')">
+                        선택사항 수정
+                      </button>
+                      <button type="button" class="rounded-btn-outline _edit_btn _cu_btn" onclick="alert('(팝업) 쿠폰적용')">
+                        쿠폰적용
+                      </button>
+                    </div>
+                    <!-- ※ 주문요청사항 -->
+                    <input id="test-1" type="checkbox" class="order_request display_none">
+                    <label for="test-1" class="order_request_label">주문 요청사항 입력</label>
+                    <div class="_ask_textarea">
+                      <textarea placeholder="주문 요청사항을 입력해주세요." maxlength="500"></textarea>
+                      <span>0/500</span>
+                    </div>
+                    <!-- ※ 주문요청사항 END -->
+                  </div>
+                  </div>
+                  <div class="inner-wrap">
+                    <div class="inner-box">
+  
+                      <!-- ※ 인풋체크박스, 삭제버튼 추가 -->
+                      <input type="checkbox" id="test1" class="dg-input-checkbox display_none" />
+                      <label for="test1" class="dg-input-checkbox_label"></label>
+                      <button class="_del_btn" type="button">
+                        <img src="/images/btn/btn_cancle_gr.svg" alt="button image" />
+                      </button>
+                      <!-- ※ 인풋체크박스, 삭제버튼 추가 END -->
+  
+                      <h3 class="_name">
+                        <a href="#">[스토어명] 팝콘체크 롱코트 (2color) 길어지면 자연스럽게 줄이 바뀌어 집니다</a>
+                      </h3>
+                      <div class="_options">
+                        <figure class="dg-clothes-thumbnail">
+                          <a class="in-image" href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"></a>
+                        </figure>
+                        <div class="_in_col">
+                          <dl class="_op_category">
+                            <dd class="_op_list">
+                              <span>팔찌1 컬러 : 실버</span>
+                              <span>팔찌2 컬러 : 실버</span>
+                              <span>각인문구/폰트 : 주문요청사항에 남겨주세요</span>
+                              <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                            </dd>
+                          </dl>
+                          <div class="_amount">
+                            <span>수량 : 1개</span>
+                          </div>
+                          <div class="_price mb-0">
+                            <span class="_prdt_price">19,800 원</span>
+                            <!-- 쿠폰할인 적용되었을때 배지 -->
+                            <span class="_sale_badge">쿠폰할인</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_price_wrap mb-0">
+                        <div class="_sale_price"><span>쿠폰 할인</span> <b>- 1,800 원</b></div>
+                        <div class="_total_price"><span>총 상품금액</span> <b>18,000 원</b></div>
+                      </div>
+                      <div class="_edit_btn_wrap">
+                        <button type="button" class="rounded-btn-outline _edit_btn" onclick="alert('(팝업) 상품옵션 변경입니다.')">
+                          선택사항 수정
+                        </button>
+                        <button type="button" class="rounded-btn-outline _edit_btn _cu_btn" onclick="alert('(팝업) 쿠폰적용')">
+                          쿠폰적용
+                        </button>
+                      </div>
+                      <!-- ※ 주문요청사항 -->
+                      <input id="test-1" type="checkbox" class="order_request display_none">
+                      <label for="test-1" class="order_request_label">주문 요청사항 입력</label>
+                      <div class="_ask_textarea">
+                        <textarea placeholder="주문 요청사항을 입력해주세요." maxlength="500"></textarea>
+                        <span>0/500</span>
+                      </div>
+                      <!-- ※ 주문요청사항 END -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) E -->
+            </li>
+
+            <li class="l-grid-list l-col-1">
+              <!-- * 최종 가격 안내 -->
+              <div class="dg-final-price-label">
+                <span class="_delivry_price">배송비 <b class="_point_size">2,500 원</b></span>
+              </div>
+              <!-- * 최종 가격 안내 E -->
+            </li>
+
+          </ul>
+
+
+        </div>
+        <!-- 2) 예상 결제금액 -->
+        <div class="l-con-area full">
+    
+          <article class="l-con-article">
+    
+            <div class="l-con-title-group type02">
+              <h2 class="in-subject">예상 결제금액</h2>
+            </div>
+    
+              <!-- * 전체금액 안내 카드 -->
+              <div class="dg-total-price-card">
+                <ul class="in-price-infos">
+                  <li class="_col _col--base">
+                    <span class="_label">상품금액 합계</span>
+                    <b class="_prc"><i>3,850</i>원</b>
+                  </li>
+                  <li class="_col col--delivery">
+                    <span class="_label">묶음 배송비</span>
+                    <b class="_prc"><i>3,000</i>원</b>
+                  </li>
+                  <li class="_col col--sale">
+                    <span class="_label">할인금액</span>
+                    <b class="_prc"><i>-3,850</i>원</b>
+                  </li>
+                  <li class="_col _col--total">
+                    <span class="_label">예상 결제금액</span>
+                    <b class="_prc"><i>3,850</i>원</b>
+                  </li>
+                </ul>
+              </div>
+              <div class="in-guide-article">
+                <h5 class="_subject">배송준비기간 선택</h5>
+    
+                <div class="in-days">
+                  <div class="_days">
+                    <input type="radio" id="test001" name="day" class="dg-input-checkbox display_none" />
+                    <label for="test001" class="dg-input-checkbox_label"></label>
+                    <label for="test001">2일</label>
+                  </div>
+                  <div class="_days">
+                    <input type="radio" id="test002" name="day" class="dg-input-checkbox display_none" />
+                    <label for="test002" class="dg-input-checkbox_label"></label>
+                    <label for="test002">5일</label>
+                  </div>
+                  <div class="_days">
+                    <input type="radio" id="test003" name="day" class="dg-input-checkbox display_none" />
+                    <label for="test003" class="dg-input-checkbox_label"></label>
+                    <label for="test003">10일</label>
+                  </div>
+                </div>
+    
+                <p class="_paragraph">
+                  동글은 묶음 배송 서비스를 기본으로 제공하여 고객님의
+                  배송비용을 아껴드립니다.<br />다만 도매의 특성상 재고가 없을
+                  경우 상품 확보에 시일이 걸릴 수 있습니다.<br />아래에 보이는
+                  2일/5일/10일로 배송준비기간을 선택해 주시면, 선택한 기간 내에
+                  출고되지 못한 상품은 자동으로 주문취소 및 환불처리 됩니다.
+                </p>
+    
+              </div>
+              <!-- * 전체금액 안내 카드 E -->
+    
+          </article>
+    
+          <div class="dg-button-wrap dg-button-wrap--double dg-order-button-wrap clear_both">
+            <a href="/mobile_temp/order/OrderProcessView.html" class="theme-btn-gradient--dark _order_btn" onclick="alert('(스윗알럿)전체상품을 주문하시겠습니까?')">
+              전체상품 주문
+            </a>
+            <a href="/mobile_temp/order/OrderProcessView.html" class="theme-btn-gradient _order_btn" onclick="alert('(스윗알럿)선택상품만 주문하시겠습니까?')">
+              선택상품 주문
+            </a>
+          </div>
+    
+        </div>
+        <!-- 2) 예상 결제금액 E -->
+          <!-- ※※※※ 장바구니 내역 있을 때 END -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- content E -->
+
+  <!--
+    footer 자리
+  -->
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+/* LAYOUT - header
+   ========================================================================== */
+
+#admin-header {
+  @include set-fixed($t: 0, $l: 0);
+  @include z-index(header);
+
+  display: block;
+  width: 100%;
+  user-select: none;
+}
+
+// 상단고정 헤더
+#header-hd {
+  padding-left: layoutPc(hd-gnb-width);
+  width: 100%;
+}
+// END
+
+// 상단 side navigation
+.hd-snb-bar {
+  @include set-relative($t: 0, $l: 0);
+  @include box-shadow($hd-snb-shadow);
+  @include z-index(default);
+  @include set-flex($justify-con: space-between);
+
+  width: 100%;
+  height: layoutPc(hd-snb-bar-height);
+  padding: 0 layoutPc(container-pd);
+
+  background-color: #ffffff;
+}
+
+.symbol-circle {
+  user-select: none;
+  @include circle-size(40px) {
+    @include inline-block;
+
+    overflow: hidden;
+    position: relative;
+  }
+  img {
+    @include width-height-100;
+
+    object-fit: cover;
+    background-color: #fff;
+  }
+}
+
+.in-store-profile {
+  .symbol-circle {
+    @include circle-size(38px) {
+      @include inline-block;
+
+      overflow: hidden;
+      position: relative;
+    }
+    img {
+      @include width-height-100;
+
+      object-fit: cover;
+      background-color: #fff;
+    }
+  }
+
+  .in-name {
+    @include inline-block;
+    @include font($w: 400, $c: $gray);
+
+    padding: 0 2px 0 5px;
+  }
+
+  .in-btn-img {
+    @include inline-block;
+  }
+}
+
+.in-snb-group {
+  @include inline-block;
+
+  .in-snb-list {
+    @include set-relative;
+    @include inline-block;
+    @include font(15px, 400, $primary-color);
+
+    margin-right: 36px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .in-snb-list {
+    input[type="button"] {
+      @include form-tag-init {
+        @include font(inherit, inherit, inherit);
+      }
+    }
+  }
+}
+
+.in-snb-hidden {
+  @include set-absol-left;
+  @include z-index(modal);
+
+  display: none;
+  top: 2em;
+  width: 258px;
+  border: 1px solid $gray-light-03;
+  border-radius: 10px;
+  background-color: white;
+
+  &:before {
+    @include set-absol-left;
+
+    content: "";
+    top: -6px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid $gray-light-03;
+    border-left: 1px solid $gray-light-03;
+    transform: translateX(-50%) rotate(45deg);
+    background-color: white;
+  }
+  //alarm
+  > h2 {
+    @include font(11px, 500, $primary-color);
+
+    padding: 8px 0px;
+    text-align: center;
+  }
+
+  .hd-alarm-wrap {
+    border-top: 1px solid $gray-lighter;
+  }
+
+  .hd-alarm {
+    @include set-relative;
+
+    height: 70px;
+    padding: 15px 12px;
+  }
+
+  .hd-alarm .symbol-circle {
+    @include set-absol-top;
+
+    left: 15px;
+  }
+
+  .hd-alarm-desc_wrap {
+    padding-left: 50px;
+  }
+
+  .hd-alarm-desc {
+    @include set-relative;
+  }
+
+  ._from {
+    @include font($s: 12px, $c: $primary-color);
+
+    margin: 3px 0px;
+  }
+
+  ._date {
+    @include set-absolute($t: 0px, $r: 0px);
+    @include font(9px, 100, $gray-md-03);
+  }
+
+  ._text {
+    @include font($s: 10px, $c: $gray);
+  }
+
+  .hd-alarm.new ._from:after {
+    @include inline-block;
+    @include bg-img($path-icon, "icon_new.svg");
+    @include bg-option(auto, center);
+
+    content: "";
+    width: 28px;
+    height: 12px;
+    margin: 0px 5px;
+    vertical-align: middle;
+  }
+  .hd-alrim-allview > a {
+    @include font($s: 11px, $c: $gray-md-03);
+
+    display: block;
+    height: 50px;
+    border-top: 1px solid $gray-lighter;
+    line-height: 50px;
+    text-align: center;
+    &:hover {
+      color: $primary-color-01;
+    }
+  }
+  //cs
+  &.cs-content-wrap {
+    width: 100px;
+    padding: 15px 0px;
+
+    .cs-content > a {
+      @include font($s: 12px, $c: $gray);
+
+      display: block;
+      padding: 5px 0px;
+      text-align: center;
+    }
+    .cs-content > a:hover,
+    .cs-content > a:active {
+      color: $primary-color-01;
+    }
+  }
+}
+// END
+
+// 상단 타이틀바
+.hd-title-bar {
+  @include set-relative;
+  @include z-index(zero);
+  @include set-flex($justify-con: space-between);
+
+  width: 100%;
+  height: layoutPc(hd-title-bar-height);
+  padding: 0 layoutPc(container-pd);
+
+  background-color: white;
+
+  border-bottom: 1px solid $gray-lighter-01;
+}
+
+.hd-title-bar-inner {
+  @include width-height-100;
+  @include set-flex;
+
+  position: relative;
+
+  .in-left-btn {
+    @include set-absolute($t: 0, $l: 0);
+    @include set-flex($justify-con: left);
+
+    width: 40px;
+    height: 100%;
+  }
+
+  .in-label-btn {
+    width: 14px;
+    height: 12px;
+    display: inline-block;
+
+    .hbg {
+      width: 100%;
+      height: 2px;
+      background-color: $primary-color;
+      display: block;
+    }
+
+    .hbg:nth-child(2) {
+      margin: 3px 0;
+    }
+  }
+}
+
+.in-page-name {
+  @include font(22px, 400);
+
+  display: inline-block;
+
+  .in-main {
+    font-weight: inherit;
+    .in-stat {
+      @include font($s: 14px, $w: 400);
+    }
+    ._reason {
+      font-weight: 300;
+    }
+  }
+
+  b {
+    color: $secondary-color;
+    font-weight: bold;
+  }
+}
+
+.show-mobile .in-page-name {
+  .in-stat {
+    @include set-absol-left;
+
+    bottom: 2px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    ._reason {
+      font-size: 10px;
+    }
+  }
+}
+
+.in-page-btn-group {
+  & > * {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+// END
+
+/* LAYOUT - header (반응형)
+   ========================================================================== */
+
+@include media-pc(15inch) {
+  // 상단고정 헤더
+  #header-hd {
+    padding-left: layoutPc15(hd-gnb-width);
+  }
+  // END
+
+  // 상단 side navigation
+  .hd-snb-bar {
+    height: layoutPc15(hd-snb-bar-height);
+    padding: 0 layoutPc15(container-pd);
+  }
+
+  .in-snb-group {
+    .in-snb-list {
+      font-size: 13px;
+      margin-right: 24px;
+    }
+  }
+  // END
+
+  // 상단 타이틀바
+  .hd-title-bar {
+    height: layoutPc15(hd-title-bar-height);
+    padding: 0 layoutPc15(container-pd);
+  }
+
+  .in-page-name {
+    font-size: 18px;
+  }
+
+  .in-page-btn-group {
+    & > * {
+      height: 30px;
+      line-height: 30px;
+      min-width: 94px;
+      font-size: 14px;
+    }
+  }
+}
+
+@include media-mobile-version(ipad) {
+  // 상단고정 헤더
+  #header-hd {
+    padding-left: 0;
+  }
+  .detail-mobile-hd {
+    .in-left-btn {
+      display: none;
+    }
+    .icon-back-btn {
+      left: 0px;
+    }
+    .in-main {
+      @include font($s: 15px, $w: 600);
+    }
+  }
+  // END
+
+  // 상단 타이틀바
+  .hd-title-bar {
+    display: block;
+    height: layoutMobile(hd-title-bar-height);
+
+    .in-page-name b {
+      font-weight: 400;
+    }
+
+    .in-page-name .in-logo {
+      width: 6rem;
+      display: inline-block;
+      position: relative;
+      top: 3px;
+    }
+
+    .in-main {
+      @include font($s: 15px, $w: 600);
+    }
+    .in-page-btn-group {
+      @include set-absolute($t: 50%, $r: 0);
+
+      transform: translateY(-50%);
+    }
+    .mobile-btn-theme {
+      @include form-tag-init($bg: transparent);
+      @include font(12px, 600, $secondary-color);
+
+      min-width: unset;
+    }
+  }
+  // END
+}
+
+@include media-mobile-version(galaxy-tab) {
+}
+
+@include media-mobile-version(mobile-only) {
+  #admin-header.main-header {
+    .hd-title-bar {
+      border-bottom: 0;
+    }
+  }
+}

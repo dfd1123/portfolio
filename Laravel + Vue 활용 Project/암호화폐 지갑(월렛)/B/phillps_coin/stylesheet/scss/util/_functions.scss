@@ -1,0 +1,7 @@
+@function z($layer) {
+    @return map-get($z-indexes, $layer);
+}
+
+@function font($size){
+    @return map-get($font-sizes, $size);
+}

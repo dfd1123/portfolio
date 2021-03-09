@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <!-- 모바일 화면에서 필터검색 버튼을 통해 열리는 영역
+    -->
+    <div class="popup-container" style="display: block !important;">
+      <div class="popup-content-box">
+        <!-- popup header -->
+
+        <!-- 주문상태, 주문일자
+        : 주문내역 리스트, 취소/환불내역 리스트
+        -->
+        <div class="filter-popup-content">
+          <section class="filter_stat">
+            <h3 class="filter_section_title">주문상태</h3>
+            <div class="filter_btn_wrap">
+              <input id="example00-00" name="example00-group" type="radio" class="chck-box none">
+              <label for="example00-00"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                전체
+              </!DOCTYPE>
+              <input id="example00-01" name="example00-group" type="radio" class="chck-box none">
+              <label for="example00-01"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                주문신청
+              </!DOCTYPE>
+              <input id="example00-02" name="example00-group" type="radio" class="chck-box none">
+              <label for="example00-02"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                상품준비
+              </!DOCTYPE>
+              <input id="example00-03" name="example00-group" type="radio" class="chck-box none">
+              <label for="example00-03"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                배송중
+              </!DOCTYPE>
+              <input id="example00-04" name="example00-group" type="radio" class="chck-box none">
+              <label for="example00-04"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                배송완료
+              </!DOCTYPE>
+              <input id="example00-05" name="example00-group" type="radio" class="chck-box none">
+              <label for="example00-05"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                구매확정
+              </!DOCTYPE>
+            </div>
+          </section>
+          <section class="filter-order_date">
+            <h3 class="filter_section_title">주문일자</h3>
+            <div class="filter_btn_wrap">
+              <input id="example01-00" name="example01-group" type="radio" class="chck-box none">
+              <label for="example01-00"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                오늘
+              </!DOCTYPE>
+              <input id="example01-01" name="example01-group" type="radio" class="chck-box none">
+              <label for="example01-01"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                어제
+              </!DOCTYPE>
+              <input id="example01-02" name="example01-group" type="radio" class="chck-box none">
+              <label for="example01-02"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                이번주
+              </!DOCTYPE>
+              <input id="example01-03" name="example01-group" type="radio" class="chck-box none">
+              <label for="example01-03"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                지난주
+              </label>
+              <input id="example01-04" name="example01-group" type="radio" class="chck-box none">
+              <label for="example01-04"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                지난달
+              </label>
+              <input id="example01-05" name="example01-group" type="radio" class="chck-box none">
+              <label for="example01-05"
+                class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+              >
+                이번달
+              </label>
+            </div>
+          </section>
+          <!-- 주문상태, 주문일자 E -->
+
+          <!-- 기간입력 : 공통 -->
+          <section class="filter-input_date">
+            <h3 class="filter_section_title small_title">기간입력</h3>
+            <div class="filter_input_wrap clearfix">
+              <div class="date_start">
+                <input type="text" class="form-input-date" value="2019-11-21" />
+              </div>
+              <span class="swung-dash"> ~ </span>
+              <div class="date_end">
+                <input type="text" class="form-input-date" value="2019-11-21" />
+              </div>
+            </div>
+          </section>
+          <!-- 기간입력 E -->
+        </div>
+        <!-- 주문상태, 주문일자 E -->
+
+        <!-- popup footer -->
+      </div>
+    </div>
+  </body>
+</html>

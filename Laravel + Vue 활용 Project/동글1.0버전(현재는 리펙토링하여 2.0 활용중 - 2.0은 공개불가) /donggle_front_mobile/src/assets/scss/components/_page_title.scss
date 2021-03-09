@@ -1,0 +1,32 @@
+/*
+    COMPONENT - page title
+*/
+._page_title_wrap {
+  padding: 50px 0px 0px;
+  user-select: none;
+  > h2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid $light_gray6;
+    background-color: $white;
+    font-size: $f-16;
+    font-weight: 400;
+    text-align: center;
+    z-index: 9;
+  }
+  ._back_btn {
+    left: 0px;
+  }
+  ._cart_btn {
+    right: 0px;
+    width: 50px;
+    height: 49px;
+    border: 0px none;
+    background-size: 21px;
+    background-color: white;
+  }
+}

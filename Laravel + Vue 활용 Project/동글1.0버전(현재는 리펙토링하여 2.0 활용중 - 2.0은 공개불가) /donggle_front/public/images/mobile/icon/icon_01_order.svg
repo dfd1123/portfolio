@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.064" height="19.286" viewBox="0 0 35.064 19.286">
+  <g id="icon_01_order" transform="translate(-0.65 -0.65)">
+    <path id="패스_169" data-name="패스 169" d="M55.41,10.37v2.657h4.3" transform="translate(-27.997 -4.714)" fill="none" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="패스_170" data-name="패스 170" d="M13.509,30.651h-2.6V28.96" transform="translate(-4.993 -14.324)" fill="none" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="패스_171" data-name="패스 171" d="M10.91,2.062V1.25H28.639V16.327H19.427" transform="translate(-4.993)" fill="none" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="패스_172" data-name="패스 172" d="M53,29.391a2.961,2.961,0,1,1-2.961-2.961A2.965,2.965,0,0,1,53,29.391Z" transform="translate(-23.691 -13.016)" fill="#fff" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="패스_173" data-name="패스 173" d="M22.2,29.391a2.961,2.961,0,1,1-2.961-2.961A2.965,2.965,0,0,1,22.2,29.391Z" transform="translate(-7.769 -13.016)" fill="#fff" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="패스_174" data-name="패스 174" d="M53.933,19.153H59.3V14.235H56.952L55.228,6.39h-7.2" transform="translate(-24.182 -2.657)" fill="none" stroke="#3a3a3a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <line id="선_522" data-name="선 522" x2="7.889" transform="translate(1.25 4.008)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <line id="선_523" data-name="선 523" x2="3.995" transform="translate(2.134 6.844)" fill="none" stroke="#fc4ead" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <line id="선_524" data-name="선 524" x2="3.638" transform="translate(3.376 9.675)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+  </g>
+</svg>

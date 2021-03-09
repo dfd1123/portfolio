@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- header -->
+      <header id="admin-header">
+        <!-- 상단고정 헤더 -->
+        <div id="header-hd">
+          <div class="show-pc">
+            <!-- 상단 side navigation -->
+            <section class="hd-snb-bar">
+              <div class="in-store-profile">
+                <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+                <a href="#" target="_blank">
+                  <figure class="symbol-circle">
+                    <img
+                      src="/images/img/profile_admin.jpg"
+                      alt="profile image"
+                    />
+                  </figure>
+                  <h2 class="in-name">스토어명</h2>
+                  <img
+                    class="in-btn-img"
+                    src="/images/btn/btn_more.svg"
+                    alt="btn more"
+                  />
+                </a>
+              </div>
+
+              <div class="in-snb-group">
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">알림</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="../snb/inquiry-store-list.html" class="in-snb-list">
+                  <span class="in-snb-name">스토어 문의</span>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">고객센터</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">로그아웃</span>
+                </a>
+              </div>
+            </section>
+            <!-- END 상단 side navigation -->
+
+            <!-- 상단 타이틀바 -->
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <section class="hd-title-bar">
+              <div class="in-page-name">
+                <h3 class="in-main"><span>구매후기 리스트</span></h3>
+              </div>
+
+              <div class="in-page-btn-group">
+                <!-- @@ 누르면 구매후기 삭제요청 팝업 등장 -->
+                <button class="rounded-square-btn btn-theme">삭제요청</button>
+              </div>
+            </section>
+            <!-- FIXME: END -->
+            <!-- END 상단 타이틀바 -->
+          </div>
+
+          <div class="show-mobile">
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <div class="hd-title-bar">
+              <div class="hd-title-bar-inner">
+                <div class="in-left-btn">
+                  <label for="mobile_show_gnb" class="in-label-btn">
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                  </label>
+                </div>
+
+                <div class="in-page-name">
+                  <h3 class="in-main">
+                    <span>구매후기 리스트</span>
+                  </h3>
+                </div>
+
+                <div class="in-page-btn-group">
+                  <!-- @@ 누르면 구매후기 삭제요청 팝업 등장 -->
+                  <button class="mobile-btn-theme">삭제요청</button>
+                </div>
+              </div>
+              <!-- FIXME: END -->
+            </div>
+          </div>
+        </div>
+        <!-- END 상단고정 헤더 -->
+
+        <input id="mobile_show_gnb" class="none" type="checkbox" />
+        <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+        <!-- 왼쪽 global navigation -->
+        <div id="header-gnb">
+          <section class="in-brand-con-box show-pc">
+            <h1 class="in-brand-logo">
+              <!-- TODO: 대시보드 메인으로 -->
+              <a href="../index.html">
+                <img
+                  src="/images/logo/logo_header_wh.svg"
+                  alt="image"
+                  class="in-logo"
+                />
+              </a>
+            </h1>
+          </section>
+
+          <section class="in-mobile-gnb-hd show-mobile">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#">
+                <figure class="symbol-circle">
+                  <img
+                    src="/images/img/profile_admin.jpg"
+                    alt="profile image"
+                  />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img
+                  class="in-btn-img"
+                  src="/images/btn/btn_more.svg"
+                  alt="btn more"
+                />
+              </a>
+            </div>
+
+            <label for="mobile_show_gnb" class="icon-close-btn">닫기</label>
+            <div class="inner-snb-group">
+              <a href="../index.html" class="icon-home-btn in-icon-btn"
+                ><i class="hide-text">홈</i></a
+              >
+              <!-- 새 알림 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="../snb/alarm-view.html"
+                class="icon-alarm-btn in-icon-btn"
+                ><i class="hide-text">알림</i></a
+              >
+              <!-- 새 문의 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="../snb/inquiry-store-list.html"
+                class="icon-contact-btn in-icon-btn"
+                ><i class="hide-text">문의</i></a
+              >
+            </div>
+            <div class="in-bottom-btns clearfix">
+              <a href="../snb/cs-notice-main.html" class="link-cs-btn"
+                >고객센터</a
+              >
+              <a href="#">로그아웃</a>
+            </div>
+          </section>
+
+          <div class="in-gnb-group">
+            <a href="setting-store.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_01.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_01_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">스토어 설정</span>
+            </a>
+            <a href="check-order.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_02.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_02_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문상품 확인</span>
+            </a>
+            <a href="history-order-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문내역</span>
+            </a>
+            <a href="history-cancel-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">취소/환불 내역</span>
+            </a>
+            <a href="manage-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_05.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_05_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품관리</span>
+            </a>
+            <a href="inquiry-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_06.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_06_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품문의</span>
+            </a>
+            <a href="manage-review.html" class="in-gnb-list active">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_07.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_07_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">구매후기</span>
+            </a>
+            <a href="sales-status.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_08.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_08_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">매출현황</span>
+            </a>
+          </div>
+        </div>
+        <!-- END 왼쪽 global navigation -->
+      </header>
+      <!-- END header -->
+
+      <!-- contents -->
+      <div id="admin-container">
+        <div class="wrapper">
+          <!-- 모바일에서 .fixed_top 를 주면 탭버튼과 셀렉트들이 탑에 고정됨 -->
+          <div id="page-manage-review-wrap">
+            <div class="grid-line-group">
+              <div class="panel-default">
+                <div class="table-area">
+                  <div class="search-default-bar">
+                    <select class="form-select">
+                      <option value="0">상품명</option>
+                    </select>
+                    <input
+                      type="text"
+                      class="form-input-txt"
+                      placeholder="검색어 미입력시 필터로 연결됩니다."
+                    />
+                    <button
+                      type="button"
+                      class="rounded-square-btn btn-theme icon-search-btn"
+                    >
+                      <i class="icon-search">
+                        <img src="/images/icon/icon-search.svg" alt="" />
+                      </i>
+                    </button>
+                  </div>
+
+                  <div class="show-pc">
+                    <h5 class="search-title">조건검색</h5>
+                    <div class="search-option-bar">
+                      <div class="search-option-check-group">
+                        <span class="in-tit">작성기간</span>
+                        <div class="in-check-list">
+                          <input
+                            id="today"
+                            name="date-of-order"
+                            type="radio"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="today"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                            >오늘</label
+                          >
+                          <input
+                            id="yesterday"
+                            name="date-of-order"
+                            type="radio"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="yesterday"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                            >어제</label
+                          >
+                          <input
+                            id="this_week"
+                            name="date-of-order"
+                            type="radio"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="this_week"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                            >이번주</label
+                          >
+                          <input
+                            id="last_week"
+                            name="date-of-order"
+                            type="radio"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="last_week"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                            >지난주</label
+                          >
+                          <input
+                            id="last_month"
+                            name="date-of-order"
+                            type="radio"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="last_month"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                            >지난달</label
+                          >
+                          <input
+                            id="this_month"
+                            name="date-of-order"
+                            type="radio"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="this_month"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                            >이번달</label
+                          >
+                        </div>
+                      </div>
+                      <div class="search-option-period">
+                        <span class="in-tit">기간입력</span>
+                        <div class="in-period">
+                          <input
+                            type="text"
+                            class="form-input-date"
+                            placeholder="2019-00-00"
+                          />
+                          <span>~</span>
+                          <input
+                            type="text"
+                            class="form-input-date"
+                            placeholder="2019-00-00"
+                          />
+                          <button
+                            type="button"
+                            class="rounded-square-xs-btn btn-theme icon-search-btn"
+                          >
+                            <i class="icon-search">
+                              <img src="/images/icon/icon-search.svg" alt="" />
+                            </i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="search-status-bar">
+                      <span class="in-word-result"
+                        >총 <b>340</b>건의 내역이 검색되었습니다.</span
+                      >
+
+                      <select class="form-select in-align-right">
+                        <option value="0">최신순</option>
+                      </select>
+                    </div>
+
+                    <!-- 1) 테이블 -->
+                    <div class="tbl-wrapper">
+                      <div class="tbl-container">
+                        <table
+                          id="manage-review-tbl"
+                          class="tbl-default review-tbl"
+                        >
+                          <caption class="hide-text">
+                            [테이블] - 구매후기 리스트
+                          </caption>
+                          <colgroup>
+                            <col class="_num" />
+                            <col class="_name" />
+                            <col class="_desc" />
+                            <col class="_score" />
+                            <col class="_user" />
+                            <col class="_ip" />
+                            <col class="_date" />
+                            <col class="_view" />
+                          </colgroup>
+                          <thead class="tbl-default-head">
+                            <tr class="in-tr">
+                              <th>No.</th>
+                              <th>상품명</th>
+                              <th>내용</th>
+                              <th>평점</th>
+                              <th>작성자</th>
+                              <th>작성 IP</th>
+                              <th>작성 날짜</th>
+                              <th>보기</th>
+                            </tr>
+                          </thead>
+                          <tbody class="tbl-default-body">
+                            <!-- 없을 때 -->
+                            <tr
+                              class="in-tr in-nothing-tr"
+                              style="display: none;"
+                            >
+                              <td colspan="8">
+                                <div class="nothing-history">
+                                  <img
+                                    src="/images/icon/empty_board_m.svg"
+                                    alt="icon empty"
+                                    class="in-empty-icon"
+                                  />
+                                  <span class="in-empty-ment"
+                                    >내역이 없습니다.</span
+                                  >
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- END 없을 때 -->
+                            <tr class="in-tr">
+                              <td><i>000</i></td>
+                              <td class="ta-left">
+                                <div class="date-product-md">
+                                  <figure class="in-thumb">
+                                    <img
+                                      src="/images/img/product.jpg"
+                                      alt="product image"
+                                    />
+                                  </figure>
+                                  <span class="in-word"
+                                    >데일리 러빈 라운드넥 뽀송니트_4color</span
+                                  >
+                                </div>
+                              </td>
+                              <td class="ta-left">
+                                <span class="_ellipse">
+                                  후기내용입니다. 후기 내용 길이가 두줄 이상
+                                  넘어갈 때 이렇게 내려가주세요. 테이블에선 최대
+                                  2줄까지 만 ...
+                                </span>
+                              </td>
+                              <td>5.0</td>
+                              <td>홍길동</td>
+                              <td><i>192.168.0.1</i></td>
+                              <td><i>2019-00-00</i></td>
+                              <td>
+                                <a
+                                  href="#"
+                                  class="rounded-square-xs-btn btn-gray"
+                                  >보기</a
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- 1) END -->
+
+                    <!-- pagination -->
+                    <div class="not-mobile">
+                      <aside id="admin-pagination" class="pager-wrap clearfix">
+                        <div class="_pager_box _pager_left">
+                          <button class="_pager _left_db"></button>
+                          <button class="_pager _left_sg"></button>
+                        </div>
+                        <div class="_pager_box _pager_number">
+                          <button class="_pager active">1</button>
+                          <button class="_pager">2</button>
+                          <button class="_pager">3</button>
+                          <button class="_pager">4</button>
+                          <button class="_pager">5</button>
+                          <button class="_pager">6</button>
+                          <button class="_pager">7</button>
+                          <button class="_pager">8</button>
+                          <button class="_pager">9</button>
+                          <button class="_pager">10</button>
+                        </div>
+                        <div class="_pager_box _pager_right">
+                          <button class="_pager _right_sg"></button>
+                          <button class="_pager _right_db"></button>
+                        </div>
+                      </aside>
+                    </div>
+                    <!-- pagination E -->
+                  </div>
+
+                  <!-- mobile -->
+                  <div class="show-mobile">
+                    <div class="filter-search-wrapper">
+                      <div class="dg-filter-search_wrap">
+                        <h2>조건검색</h2>
+                        <button class="dg-filter-search-btn">조건검색</button>
+                      </div>
+                    </div>
+
+                    <div class="manage-review-wrapper">
+                      <ul class="manage-review-list-wrap">
+                        <li class="in-review">
+                          <!-- 링크영역 : 쇼핑몰 후기보기로 넘어감 -->
+                          <a href="#" class="review-list-link">
+                            <div class="clearfix">
+                              <div class="_review_num">
+                                001
+                              </div>
+                              <div class="_pd_name">
+                                스트레치 스웨이드 자켓
+                              </div>
+                              <div class="_star_score">
+                                <img
+                                  src="/images/icon/only-one-star.svg"
+                                  alt="star icon"
+                                />
+                                <span>4.9</span>
+                              </div>
+                            </div>
+                            <div class="_tit">리뷰제목입니다.</div>
+                            <ul class="_review_data">
+                              <li class="_user_name">홍길동</li>
+                              <li class="_ip_address">
+                                IP
+                                <span>123.456.7.8</span>
+                              </li>
+                              <li class="_date">
+                                작성
+                                <span>2020-00-00</span>
+                              </li>
+                            </ul>
+                          </a>
+                          <!-- 링크영역 E -->
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- 팝업 들어옴
+                    popup폴더의 filter_popup.html + filter_popup_writeform.html
+                    -->
+                    <div class="popup-container">
+                      <div class="popup-content-box">
+                        <!-- popup header -->
+                        <h2 class="filter-popup-title">
+                          조건검색
+                          <button type="button" class="icon-close-btn">
+                            닫기
+                          </button>
+                        </h2>
+                        <!-- popup header E -->
+
+                        <!-- popup content -->
+                        <div class="filter-popup-content">
+                          <section class="filter-write_date">
+                            <h3 class="filter_section_title">작성기간</h3>
+                            <div class="filter_btn_wrap">
+                              <button
+                                type="button"
+                                class="rounded-square-xs-btn btn-outline-gray-light"
+                              >
+                                오늘
+                              </button>
+                              <button
+                                type="button"
+                                class="rounded-square-xs-btn btn-outline-gray-light"
+                              >
+                                어제
+                              </button>
+                              <button
+                                type="button"
+                                class="rounded-square-xs-btn btn-outline-gray-light"
+                              >
+                                이번주
+                              </button>
+                              <button
+                                type="button"
+                                class="rounded-square-xs-btn btn-outline-gray-light"
+                              >
+                                지난주
+                              </button>
+                              <button
+                                type="button"
+                                class="rounded-square-xs-btn btn-outline-gray-light"
+                              >
+                                지난달
+                              </button>
+                              <button
+                                type="button"
+                                class="rounded-square-xs-btn btn-outline-gray-light"
+                              >
+                                이번달
+                              </button>
+                            </div>
+                          </section>
+                          <!-- 작성기간 E -->
+
+                          <!-- 기간입력 : 공통 -->
+                          <section class="filter-input_date">
+                            <h3 class="filter_section_title small_title">
+                              기간입력
+                            </h3>
+                            <div class="filter_input_wrap clearfix">
+                              <div class="date_start">
+                                <input
+                                  type="text"
+                                  class="form-input-date"
+                                  value="2019-11-21"
+                                />
+                              </div>
+                              <span class="swung-dash"> ~ </span>
+                              <div class="date_end">
+                                <input
+                                  type="text"
+                                  class="form-input-date"
+                                  value="2019-11-21"
+                                />
+                              </div>
+                            </div>
+                          </section>
+                          <!-- 기간입력 E -->
+                        </div>
+                        <!-- popup content E -->
+
+                        <!-- popup footer -->
+                        <div class="icon-search-btn-wrap">
+                          <button
+                            type="button"
+                            class="rounded-square-xs-btn btn-theme icon-search-btn"
+                          >
+                            <i class="icon-search">
+                              <img
+                                src="/images/icon/icon-search.svg"
+                                alt="search"
+                              />
+                            </i>
+                          </button>
+                        </div>
+                        <!-- popup footer E -->
+                      </div>
+                    </div>
+                    <!-- 팝업 E -->
+                  </div>
+                  <!-- mobile E -->
+
+                  <!-- @@ 구매후기 삭제요청 팝업 popup-review-delete.html -->
+                  <div class="popup-container bgc-none">
+                    <div class="popup-bg"></div>
+                    <div class="popup-content-wrap">
+                      <div class="popup-hd">
+                        <h1 class="popup-tit">구매후기 삭제요청</h1>
+                        <button class="icon-close-btn-wh">닫기</button>
+                      </div>
+                      <!-- content -->
+                      <div class="popup-content popup-delete-con">
+                        <section class="popup-content-number">
+                          <h2 class="in-tit">후기 No.</h2>
+                          <div class="in-desc">
+                            <input type="number" placeholder="게시글 번호" />
+                          </div>
+                        </section>
+                        <section class="popup-content-reason">
+                          <h2 class="in-tit">삭제 요청 사유</h2>
+                          <div class="in-desc">
+                            <select class="form-select">
+                              <option value="0">폭언 및 부적절한 언행</option>
+                            </select>
+                          </div>
+                        </section>
+                        <section class="popup-content-detail">
+                          <h2 class="in-tit">상세내용</h2>
+                          <div class="in-desc">
+                            <textarea name="#" id="#" class="_txt"></textarea>
+                          </div>
+                        </section>
+                      </div>
+                      <!-- content E -->
+                      <div class="popup-btn-wrap">
+                        <button
+                          class="square-md-btn btn-outline-gray close-btn"
+                        >
+                          닫기
+                        </button>
+                        <button class="square-md-btn btn-gradient">
+                          삭제요청
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 구매후기 삭제요청 팝업 E -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="admin-footer">
+          <span class="in-copyright">Copyrights © <i>Donggle</i></span>
+          <div class="in-company-info">
+            <span>회사명 : ㈜동글</span>
+            <span>대표이사 : OOO</span>
+            <span>사업자등록번호 : 220-88-93187</span>
+            <span>통신판매업신고 : 2016-서울강남-00359</span>
+            <span>호스팅사업자 : (주)동글</span>
+            <span class="in-address"
+              >주소 : (06223) 서울특별시 강남구 테헤란로 32길 26 청송빌딩</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- END contents -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,527 @@
+/* panel */
+
+/* -- basic panel */
+
+.basic_panel{
+
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+
+    &--none-pd{
+        padding: 0;
+    }
+
+    &__title{
+        @include fontStyle('default', 500, $color: $brand-color);
+        letter-spacing: -0.5px;
+        margin-bottom: 7px;
+    }
+
+    &__title-label{
+        @include bgStyle(100%, 50%, 13px);
+        width: 100%;
+        display: inline-block;
+        background-image: url($base-url-btn+'arrow_bt_light.png');
+    }
+
+    &__contents{
+        @include fontStyle('default', 400, $color: $mid-gray-01);
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__input-group{
+
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        &--email{
+
+            .basic_panel__input{
+                width: 45%;
+                margin: 0;
+                line-height: normal;
+            }
+
+            .special_character{
+                width: 5%;
+                line-height: 30px;
+            }
+            
+            .domain_select_group{
+                width: 50%;
+                height: 30px;
+                position: relative;
+            }
+
+            .domain_select_group select,
+            .domain_select_group input{
+                @include position(absolute, 0, 0);
+                width: 100%;
+                height: 100%;
+            }
+
+            .domain_select_group input{
+                display: none;
+            }
+
+            .basic_panel__small-text{
+                width: 100%;
+            }
+
+        }
+
+        &--certify{
+            
+            display: inline-block;
+            position: relative;
+
+            .basic_panel__input{
+                width: 100%;
+                margin: 0;
+                padding: 4px 7px;
+                line-height: normal;
+            }
+
+            .btn_mini{
+                @include position(absolute, $b: 0, $r: 0);
+            }
+            
+        }
+
+    }
+
+    &__small-text{
+        margin-top: 2px;
+        font-size: 14px;
+        @include responsive('tablet_pad'){
+            font-size: 12px;
+        }
+        @include responsive('mobile'){
+            font-size: 10px;
+        }
+        font-weight: 300;
+        color: $mid-gray-02;
+    }
+
+    &__input{
+        @include inputDefaultRemove(0, #fff);
+        width: 100%;
+        padding: 4px 7px;
+        margin: 5px 0;
+        line-height: normal;
+    }
+
+    &__input01{
+        @include placeholder{
+            color: #8b8b8b;
+            font-weight: 200;
+        }
+        height: 30px;
+        border-bottom: 1px solid black;
+        color: $mid-gray-00;
+        line-height: normal;
+    }
+
+    &__slct{
+        @include bgStyle(100%, 50%, 12px);
+        height: 30px;
+        border-bottom: 1px solid black;
+        color: #8b8b8b;
+        background-image: url($base-url-btn+'mini_arrow_bt_dark.png');
+        line-height: normal;
+    }
+
+    &__txt-line{
+        @include fontStyle('basic-m', 300, black);
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding: 5px;
+        line-height: normal;
+    }
+
+    &__textarea{
+        @include inputDefaultRemove();
+        width: 100%;
+        min-height: 52px;
+        resize: none;
+        font-weight: 300;
+        font-size: 0.9em;
+        line-height: 26px;
+        padding: 0;
+        background: linear-gradient(to top, transparent, $border-color-01 1px, transparent 0px);
+        background-size: 100% 26px;
+    }
+
+}
+
+/* -- end basic panel */
+
+/* -- dark panel */
+
+.basic_panel--dark{
+
+    width: 100%;
+    border-radius: 0;
+    background-color: black;
+    padding: 0;
+    margin-bottom: 1.2rem;
+
+    &__title{
+        @include fontStyle('basic-l', 500, $color: #dfdfdf);
+        letter-spacing: -0.5px;
+        border-bottom: 2px solid #dfdfdf;
+        padding-bottom: 5px;
+    }
+
+    &__contents{
+        @include fontStyle('default', 400, $color: $mid-gray-01);
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__input-group{
+
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        &--email{
+
+            .basic_panel__input{
+                width: 45%;
+                margin: 0;
+            }
+
+            .special_character{
+                width: 5%;
+                line-height: 30px;
+            }
+            
+            .domain_select_group{
+                width: 50%;
+                height: 30px;
+                position: relative;
+            }
+
+            .domain_select_group select,
+            .domain_select_group input{
+                @include position(absolute, 0, 0);
+                width: 100%;
+                height: 100%;
+            }
+
+            .domain_select_group input{
+                display: none;
+            }
+
+        }
+
+    }
+
+    &__input{
+        @include inputDefaultRemove(0, #fff);
+        width: 100%;
+        padding: 4px 7px;
+        margin: 5px 0;
+    }
+
+    &__input01{
+        @include placeholder{
+            color: #8b8b8b;
+            font-weight: 200;
+        }
+        height: 30px;
+        border-bottom: 1px solid black;
+        color: $mid-gray-00;
+        
+    }
+
+    &__slct{
+        @include bgStyle(100%, 50%, 12px);
+        height: 30px;
+        border-bottom: 1px solid black;
+        color: #8b8b8b;
+        background-image: url($base-url-btn+'mini_arrow_bt_dark.png');
+    }
+
+}
+
+/* -- dark panel */
+
+
+/* -- etc(caution list) */
+
+.caution-group{
+    font-size: 1.2rem;
+
+    &__title{
+        color: $brand-color;
+        margin-bottom: 5px;
+    }
+}
+
+.caution_list{
+
+    font-size: 14px;
+    line-height: 23px;
+
+    @include responsive('tablet_pad'){
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    @include responsive('mobile'){
+        font-size: 10px;
+        line-height: 17px;
+    }
+
+    font-weight: 200;
+    color: #8b8b8b;
+
+}
+
+.send__adrs-sch{
+
+    padding-top: 15px;
+
+    &__btn{
+
+        @include buttonDefaultRemove();
+        color: $white;
+        font: {
+            size: 11px;
+            weight: 200;
+        }
+
+        .icon{
+            @include bgStyle($size: 20px);
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            margin: 0 auto 9px;
+            border-radius: 50%;
+            background-color: #333333;
+        }
+
+        .icon--qr{
+            background-size: 23px;
+            background-image: url($base-url-icon+'qr_light.png');
+        }
+
+        .icon--direct{
+            background-image: url($base-url-icon+'write_light.png');
+        }
+
+        &:active{
+
+            .icon{
+                background-color: $brand-color;
+            }
+
+        }
+
+    }
+}
+
+.send__person-info{
+    padding-top: 15px;
+
+    &--nothing{
+        padding-bottom: 15px;
+    }
+}
+
+.table_type01{
+
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+
+    &--border-top{
+        border-top: 2px solid #dfdfdf;
+    }
+
+    &__tr{
+        border-bottom: 1px solid $border-color-01;
+    }
+
+    &__tr--direct-input{
+        .table_type01__td{
+            position: relative;
+            vertical-align: middle;
+        }
+        .table_type01__input{
+            width: 100%;
+            padding-right: 2rem;
+            height: 100%;
+            line-height: normal !important;
+        }
+        .tbl_unit{
+            @include position(absolute, 50%, $r: 0);
+            @include translate(0, -50%);
+        }
+    }
+
+    &__th{
+        width: 25%;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    &__th--big{
+        font: {
+            size: 1.2em;
+            weight: 300;
+        }
+        color: $white;
+    }
+
+    &__td{
+        width: 80%;
+        text-align: right;
+        vertical-align: middle;
+        padding: 6px 0;
+    }
+
+    &__td--big{
+        font: {
+            size: 1.2em;
+            weight: 300;
+        }
+        color: $white;
+    }
+
+    .btn_mini01{
+        padding: 4px 15px;
+    }
+
+    &__input{
+        @include inputDefaultRemove();
+        text-align: right;
+        color: $mid-gray-01;
+    }
+
+    .tbl_unit{
+        color: $brand-color;
+        text-transform: uppercase;
+    }
+
+    .plus_fee{
+        position: relative;
+        display: inline-block;
+        &:after{
+            position: absolute;
+            display: inline-block;
+            content: '(부가세 포함)';
+            width: calc(100% + 10px);
+            right: -85px;
+            @include responsive('mobile'){
+                right: -75px;
+            }
+        }
+    }
+
+}
+
+.table_type02{
+
+    @include fontStyle('basic', 200, #fff);
+    width: 100%;
+    border-collapse: collapse;
+
+    &__th{
+        width: 25%;
+        text-align: left;
+        vertical-align: top;
+        padding: 5px 0;
+        color: $mid-gray-01;
+    }
+
+    &__td{
+        width: 80%;
+        text-align: left;
+        vertical-align: top;
+        padding: 4px 0;
+        word-break: break-all;
+    }
+
+    .btn_mini01{
+        padding: 4px 15px;
+    }
+
+    &__input{
+        @include inputDefaultRemove();
+        text-align: right;
+        color: $mid-gray-01;
+    }
+
+    .tbl_unit{
+        color: $brand-color;
+        text-transform: uppercase;
+    }
+
+}
+
+.table_type03{
+    font: {
+        size: 0.8em;
+        weight: 500;
+    }
+    color: $black;
+    width: 100%;
+    border-collapse: collapse;
+
+    &__tr{
+        border-bottom: 1px solid $border-color-02;
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+
+    &__th{
+        width: 25%;
+        text-align: left;
+        vertical-align: top;
+        padding: 15px 0 0 10px;
+        color: $brand-color;
+    }
+
+    &__td{
+        width: 80%;
+        text-align: left;
+        vertical-align: top;
+        padding: 15px 15px 15px 0;
+        word-break: break-all;
+        line-height: 1.5;
+    }
+
+    .btn_mini01{
+        padding: 4px 15px;
+    }
+
+    &__input{
+        @include inputDefaultRemove();
+        text-align: right;
+        color: $mid-gray-01;
+    }
+
+    .tbl_unit{
+        color: $brand-color;
+        text-transform: uppercase;
+    }
+
+}
+
+/* -- end etc(caution list) */
+
+/* end panel */

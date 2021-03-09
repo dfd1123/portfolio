@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="138.137" viewBox="0 0 375 138.137">
+  <g id="그룹_3839" data-name="그룹 3839" transform="translate(0 -108)">
+    <g id="그룹_3838" data-name="그룹 3838">
+      <g id="bg_wave_bottom" transform="translate(-1 -460.251)">
+        <path id="교차_5" data-name="교차 5" d="M0,132.632V62.7c42.788,2.607,150.507,4.937,226.213-29.842C277.043,9.507,333.227,1.937,375,0V132.632Z" transform="translate(1 573.755)" fill="#ffdb83" opacity="0.4"/>
+        <path id="교차_4" data-name="교차 4" d="M0,126.852V27.582C38.5,13.044,83.208,0,119.667,0,198.085,0,239.982,49.04,375,58.494v68.359Z" transform="translate(1 579.535)" fill="#ffdb83" opacity="0.3"/>
+        <path id="교차_6" data-name="교차 6" d="M0,138V2.06c55.545-8.024,113.569,8.485,160.47,30.549C179.721,41.666,196.88,53,214.43,63.87c21.9,13.559,45.053,23.89,74.261,35.015,14.085,5.364,61.266,13.634,86.309,16.662V138Z" transform="translate(1 568.251)" fill="#ffdb83" opacity="0.4"/>
+      </g>
+    </g>
+  </g>
+</svg>

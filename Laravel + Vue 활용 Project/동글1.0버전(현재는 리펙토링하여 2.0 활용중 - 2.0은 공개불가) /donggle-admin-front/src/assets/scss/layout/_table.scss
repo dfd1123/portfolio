@@ -1,0 +1,573 @@
+/* LAYOUT - tbl
+   ========================================================================== */
+
+.tbl-wrapper {
+  width: 100%;
+  font-size: 16px;
+}
+
+.tbl-container {
+  @include set-relative;
+  width: 100%;
+}
+
+// table style 02 (카테고리-상품명 복합 th)
+.tbl-container.type-02 {
+  .in-tr {
+    height: 30px;
+  }
+
+  .in-first-tr {
+    border-bottom: 1px solid $gray-lighter;
+
+    &:nth-last-child(2) {
+      border-bottom: 0;
+    }
+  }
+
+  .in-second-tr {
+    border-bottom: 1px solid $gray-lighter;
+
+    &:last-child {
+      border-top: 1px solid $gray-lighter;
+      border-bottom: 0;
+    }
+
+    td {
+      padding: 23px 5px;
+    }
+  }
+}
+
+.tbl-default {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid $gray-md-04;
+  border-bottom: 1px solid $gray-md-04;
+
+  th,
+  td {
+    vertical-align: middle;
+    border-right: 1px solid $gray-lighter;
+    text-align: center;
+
+    &:last-child {
+      border-right: 0;
+      > a{
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  th {
+    @include font(0.813em, 300, $gray-md-03);
+
+    border-bottom: 1px solid $gray-lighter;
+    padding: 0px 5px;
+
+    .etc {
+      @include font(9px, inherit, #ff8a8a);
+
+      display: block;
+    }
+  }
+
+  td {
+    @include font(0.875em, 300, $gray);
+
+    padding: 20px 5px;
+    i {
+      letter-spacing: 0.1px;
+      padding: 0 10px;
+    }
+  }
+
+  .ta-left {
+    text-align: left;
+  }
+
+  .ta-right {
+    text-align: right;
+  }
+}
+
+// thead
+.tbl-default-head {
+  background-color: $gray-lighter-02;
+
+  .in-tr {
+    height: 50px;
+  }
+}
+
+// tfoot
+.tbl-default-foot {
+  @include font(0.875em, bold, $primary-color);
+
+  background-color: #f8f8ff;
+  border-top: 1px solid $gray-md-03;
+
+  td {
+    @include font(inherit, inherit, inherit);
+  }
+}
+
+// tbody
+.tbl-default-body {
+  width: 100%;
+
+  .in-tr {
+    @include hover-eft {
+      background-color: $gray-lighter-02;
+    }
+
+    width: 100%;
+    height: 95px;
+    border-bottom: 1px solid $gray-lighter;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .in-tr.in-nothing-tr {
+    @include hover-eft {
+      background-color: unset;
+    }
+  }
+}
+
+// 데이터셀 - 상품(썸네일큰거)
+.date-product-md {
+  padding: 0 10px 0 90px;
+  position: relative;
+
+  .in-thumb {
+    $thumb-size: 70px;
+    @include rounded;
+    @include inline-block;
+    @include set-absolute($t: 50%, $l: 10px);
+
+    width: $thumb-size;
+    height: $thumb-size;
+    overflow: hidden;
+    display: inline-block;
+    transform: translateY(-50%);
+    user-select: none;
+
+    img {
+      @include width-height-100;
+
+      object-fit: cover;
+      float: left;
+    }
+  }
+  .in-word {
+    @include inline-block;
+    @include ellipse(1, 20px);
+  }
+}
+
+// 데이터셀 - 상품(썸네일작은것)
+.date-product-xs {
+  padding: 0 10px 0 70px;
+  position: relative;
+
+  .in-thumb {
+    $thumb-size: 50px;
+    @include rounded;
+    @include inline-block;
+    @include set-absolute($t: 50%, $l: 10px);
+
+    width: $thumb-size;
+    height: $thumb-size;
+    overflow: hidden;
+    display: inline-block;
+    transform: translateY(-50%);
+    user-select: none;
+
+    img {
+      @include width-height-100;
+
+      object-fit: cover;
+      float: left;
+    }
+  }
+  .in-word {
+    @include inline-block;
+    @include ellipse(1, 20px);
+  }
+}
+
+// 데이터셀 - 상태
+.date-status {
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+// 데이터셀 - 셀렉트
+.date-status-slct {
+  .form-select {
+    width: 90px;
+    background-position: calc(100% - 8px) 50%;
+  }
+}
+
+// 데이터셀 - 버튼들
+.date-double-btn {
+  & > * {
+    display: block;
+    margin: 0 auto 5px;
+    max-width: 75px;
+  }
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// 상세보기 레이아웃
+.detail_tbl {
+  td {
+    i {
+      padding: 0px 10px 0px 0px;
+    }
+  }
+  ._num {
+    width: 15%;
+  }
+  ._date {
+    width: 15%;
+  }
+  ._stat {
+    width: 14%;
+  }
+  ._price,
+  ._cou_sale,
+  ._user_sale,
+  ._total {
+    width: 14%;
+  }
+}
+
+//취소환불 리스트
+.cancel-tbl {
+  ._order_num {
+    width: 13%;
+  }
+  ._date {
+    width: 11%;
+  }
+  ._stat {
+    width: 6%;
+  }
+  ._num {
+    width: 4%;
+  }
+  ._price {
+    width: 11%;
+  }
+  ._cu_sale {
+    width: 11%;
+  }
+  ._user_sale {
+    width: 11%;
+  }
+  ._total {
+    width: 11%;
+  }
+  ._cancel_date {
+    width: 11%;
+  }
+  ._view {
+    width: 11%;
+  }
+}
+
+//주문내역 리스트
+.order-tbl {
+  ._order_num {
+    width: 15%;
+  }
+  ._date {
+    width: 11%;
+  }
+  ._stat {
+    width: 11%;
+  }
+  ._num {
+    width: 7%;
+  }
+  ._price {
+    width: 12%;
+  }
+  ._cou_sale {
+    width: 12%;
+  }
+  ._user_sale {
+    width: 12%;
+  }
+  ._total {
+    width: 10%;
+  }
+  ._view {
+    width: 10%;
+  }
+}
+
+// 주문확인
+.order-ck-tbl {
+  td {
+    i {
+      padding: 0px;
+    }
+  }
+  ._chck {
+    width: 4%;
+  }
+  ._name {
+    width: 26%;
+  }
+  ._color {
+    width: 14%;
+  }
+  ._size {
+    width: 4%;
+  }
+  ._num {
+    width: 4%;
+  }
+  ._date {
+    width: 13%;
+  }
+  ._d-day {
+    width: 12%;
+  }
+  ._stat {
+    width: 13%;
+  }
+  ._ready {
+    width: 10%;
+  }
+}
+
+//상품문의
+.inquiry-p-tbl {
+  ._chck {
+    width: 4%;
+  }
+  ._name {
+    width: 25%;
+  }
+  ._title {
+    width: 25%;
+  }
+  ._answer {
+    width: 6%;
+  }
+  ._user {
+    width: 6%;
+  }
+  ._date {
+    width: 11%;
+  }
+  ._a_date {
+    width: 11%;
+  }
+  ._view {
+    width: 12%;
+  }
+}
+
+//구매후기
+.review-tbl {
+  td {
+    i {
+      padding: 0px;
+    }
+  }
+  ._ellipse {
+    @include ellipse(1, 20px);
+  }
+  ._num {
+    width: 4%;
+  }
+  ._name {
+    width: 23%;
+  }
+  ._desc {
+    width: 30%;
+  }
+  ._score {
+    width: 4%;
+  }
+  ._user {
+    width: 6%;
+  }
+  ._ip {
+    width: 10%;
+  }
+  ._date {
+    width: 11%;
+  }
+  ._view {
+    width: 12%;
+  }
+}
+
+//삼품관리
+.manage-p-tbl {
+  td {
+    i {
+      padding: 0px;
+      padding-right: 5px;
+    }
+  }
+  ._chck {
+    width: 4%;
+  }
+  ._p_num {
+    width: 7%;
+  }
+  ._category {
+    width: 30%;
+  }
+  ._nm_price {
+    width: 4%;
+  }
+  ._price {
+    width: 10%;
+  }
+  ._sale {
+    width: 10%;
+  }
+  ._dg_price {
+    width: 10%;
+  }
+  ._click {
+    width: 7%;
+  }
+  ._stat {
+    width: 8%;
+  }
+  ._manage {
+    width: 10%;
+  }
+  .pd_0 {
+    padding: 0px;
+  }
+}
+
+//스토어문의
+.inquiry-store-tbl {
+  ._chck {
+    width: 4%;
+  }
+  ._title {
+    width: 48%;
+  }
+  ._a_stat {
+    width: 8%;
+  }
+  ._user {
+    width: 6%;
+  }
+  ._date {
+    width: 11%;
+  }
+  ._a_date {
+    width: 11%;
+  }
+  ._view {
+    width: 12%;
+  }
+}
+
+//매출현황
+.sale-stat-tbl {
+  ._order_num {
+    width: 16%;
+  }
+  ._same {
+    width: 12%;
+  }
+}
+
+@include media-pc(smallmidium) {
+  .tbl-default {
+    ._date {
+      width: 8%;
+    }
+    ._a_date {
+      width: 8%;
+    }
+    ._cancel_date {
+      width: 8%;
+    }
+  }
+  .cancel-tbl {
+    ._order_num {
+      width: 16%;
+    }
+    ._stat {
+      width: 9%;
+    }
+  }
+  .order-tbl {
+    ._view {
+      width: 13%;
+    }
+  }
+  .order-ck-tbl {
+    ._name {
+      width: 31%;
+    }
+  }
+
+  .inquiry-p-tbl {
+    ._title {
+      width: 30%;
+    }
+    ._user {
+      width: 7%;
+    }
+  }
+
+  .review-tbl {
+    ._name {
+      width: 26%;
+    }
+  }
+
+  .inquiry-store-tbl {
+    ._title {
+      width: 50%;
+    }
+    ._a_stat {
+      width: 12%;
+    }
+  }
+  .manage-p-tbl {
+    td {
+      padding: 20px 2px;
+    }
+  }
+}
+
+@include media-pc(small) {
+  .detail_tbl {
+    ._num {
+      width: 13%;
+    }
+    ._stat {
+      width: 13%;
+    }
+    ._price,
+    ._cou_sale,
+    ._user_sale,
+    ._total {
+      width: 15%;
+    }
+  }
+}

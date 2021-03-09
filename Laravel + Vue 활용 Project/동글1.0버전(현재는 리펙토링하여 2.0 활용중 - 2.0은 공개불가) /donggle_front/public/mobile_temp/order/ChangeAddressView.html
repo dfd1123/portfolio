@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-change-address-wrapper" class="l-ordercancel-wrapper">
+      <!-- 1) 주문내역들 -->
+      <div class="l-con-area dg-cancel-product-group full">
+        <article class="l-con-article">
+          <div class="_page_title_wrap">
+            <h2>
+              배송지 변경
+              <a href="#" class="_back_btn">뒤로가기</a>
+            </h2>
+          </div>
+
+          <!-- 취소신청 리스트 -->
+          <div>
+            <ul class="l-grid-group">
+              <li class="l-grid-list l-col-1">
+                <!-- * 주문일시, 주문번호 정보라벨 -->
+                <ul class="dg-about-odnum-label">
+                  <li>2019-11-11 00:00:00</li>
+                  <li class="_num">0012547884</li>
+                </ul>
+                <!-- * 주문일시, 주문번호 정보라벨 E -->
+              </li>
+              <li class="l-grid-list l-col-1">
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) -->
+                <div class="dg-clothes-history-card type-cart type-detail ">
+                  <div class="in-content">
+                    <div class="inner-wrap">
+                      <div class="inner-box">
+                        <h3 class="_name">
+                          <a href="#"
+                            >[스토어명] 팝콘체크 롱코트 (2color) 길어지면
+                            자연스럽게 줄이 바뀌어 집니다</a
+                          >
+                        </h3>
+                        <div class="_options">
+                          <figure class="dg-clothes-thumbnail">
+                            <a
+                              class="in-image"
+                              href="#"
+                              style="background-image: url('/images/example/ex-clothes-img2.png');"
+                            ></a>
+                          </figure>
+                          <div class="_in_col">
+                            <dl class="_op_category">
+                              <dd class="_op_list">
+                                <span>팔찌1 컬러 : 실버</span>
+                              </dd>
+                            </dl>
+                            <div class="_amount">
+                              <span>수량 : 1개</span>
+                            </div>
+                            <div class="_price mb-0">
+                              <span class="_prdt_price">19,800 원</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_price_wrap mb-0">
+                          <div class="_sale_price">
+                            <span>쿠폰 할인</span> <b>0 원</b>
+                          </div>
+                          <div class="_total_price">
+                            <span>총 상품금액</span> <b>18,000 원</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inner-wrap">
+                      <div class="inner-box">
+                        <h3 class="_name">
+                          <a href="#"
+                            >[스토어명] 팝콘체크 롱코트 (2color) 길어지면
+                            자연스럽게 줄이 바뀌어 집니다</a
+                          >
+                        </h3>
+                        <div class="_options">
+                          <figure class="dg-clothes-thumbnail">
+                            <a
+                              class="in-image"
+                              href="#"
+                              style="background-image: url('/images/example/ex-clothes-img2.png');"
+                            ></a>
+                          </figure>
+                          <div class="_in_col">
+                            <dl class="_op_category">
+                              <dd class="_op_list">
+                                <span>팔찌1 컬러 : 실버</span>
+                                <span>팔찌2 컬러 : 실버</span>
+                                <span
+                                  >각인문구/폰트 : 주문요청사항에
+                                  남겨주세요</span
+                                >
+                                <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                              </dd>
+                            </dl>
+                            <div class="_amount">
+                              <span>수량 : 1개</span>
+                            </div>
+                            <div class="_price mb-0">
+                              <span class="_prdt_price">19,800 원</span>
+                              <!-- 쿠폰할인 적용되었을때 배지 -->
+                              <span class="_sale_badge">쿠폰할인</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_price_wrap mb-0">
+                          <div class="_sale_price">
+                            <span>쿠폰 할인</span> <b>- 1,800 원</b>
+                          </div>
+                          <div class="_total_price">
+                            <span>총 상품금액</span> <b>18,000 원</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) E -->
+              </li>
+
+              <li class="l-grid-list l-col-1">
+                <!-- * 최종 가격 안내 -->
+                <div class="dg-final-price-label">
+                  <span class="_delivry_price"
+                    >배송비 <b class="_point_size">2,500 원</b></span
+                  >
+                </div>
+                <!-- * 최종 가격 안내 E -->
+              </li>
+            </ul>
+          </div>
+          <!-- 취소신청 리스트 E -->
+        </article>
+      </div>
+      <!-- 1) 주문내역들 구역 E -->
+
+      <!-- 2) 주문정보들 -->
+      <div class="dg-order-info-group clear_both">
+        <!-- 좌측 정보 -->
+        <div class="in-detail-info">
+          <!-- [1] 현재 배송지 -->
+          <article class="l-con-article">
+            <h4 class="in-subject">현재 배송지</h4>
+            <ul class="in-information">
+              <li class="_list _info">
+                <p class="_txt _name">김동글</p>
+              </li>
+              <li class="_list _info _address">
+                <p class="_txt _add">서울특별시 강남구 테헤란로 241길</p>
+              </li>
+              <li class="_list _info _address">
+                <p class="_txt _add">광일프라자 16층 비씨디플랫폼</p>
+              </li>
+              <li class="_list _info _address">
+                <p class="_txt _add">12345</p>
+              </li>
+              <li class="_list _info">
+                <p class="_txt _gray">010-0000-0000</p>
+              </li>
+            </ul>
+          </article>
+          <!-- [1] E -->
+
+          <!-- [2] 배송지 정보 -->
+          <article class="l-con-article">
+            <h4 class="in-subject">
+              <span>변경할 배송지 정보</span>
+              <div class="_etc_buttons clear_both">
+                <button type="button" class="square-btn-outline active">
+                  1
+                </button>
+                <button type="button" class="square-btn-outline">2</button>
+                <button type="button" class="square-btn-outline">3</button>
+              </div>
+            </h4>
+            <ul class="in-information">
+              <li class="_list">
+                <span class="_label">이름</span>
+                <div class="_input_group">
+                  <input
+                    type="text"
+                    class="_input"
+                    placeholder="이름을 입력하세요."
+                  />
+                </div>
+              </li>
+              <li class="_list">
+                <span class="_label">전화번호</span>
+                <div class="_input_group">
+                  <input
+                    type="tel"
+                    class="_input"
+                    placeholder="전화번호를 입력하세요."
+                  />
+                </div>
+              </li>
+              <li class="_list _list--post">
+                <span class="_label">우편번호</span>
+                <div class="_input_group">
+                  <input type="text" class="_input" placeholder="우편번호" />
+                  <button
+                    type="button"
+                    class="square-btn-outline"
+                    onclick="alert('(기능) 주소찾기 기능입니다.')"
+                  >
+                    주소찾기
+                  </button>
+                </div>
+              </li>
+              <li class="_list">
+                <span class="_label">기본주소</span>
+                <div class="_input_group">
+                  <input
+                    type="text"
+                    class="_input"
+                    placeholder="기본주소를 입력하세요."
+                  />
+                </div>
+              </li>
+              <li class="_list">
+                <span class="_label">상세주소</span>
+                <div class="_input_group">
+                  <input
+                    type="text"
+                    class="_input"
+                    placeholder="상세주소를 입력하세요."
+                  />
+                </div>
+              </li>
+              <li class="_list _list--textarea">
+                <span class="_label">배송 요청사항</span>
+                <div class="_input_group">
+                  <textarea
+                    class="_textarea"
+                    placeholder="배송시 요청사항을 작성해주세요"
+                  ></textarea>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <!-- [4] E -->
+        </div>
+        <!-- 좌측 정보 E -->
+
+        <!-- 우측 배송지 변경카드 -->
+        <div class="in-pay-info">
+          <!-- [1] 배송지 변경 -->
+          <article class="l-con-article change-address_end">
+            <h4 class="in-subject dg_blind">배송지 변경</h4>
+            <div class="in-text-group">
+              <p>
+                [변경할 배송지 정보]에 입력하신 정보로<br />배송지를
+                변경하시겠습니까?
+              </p>
+            </div>
+            <button
+              type="button"
+              class="theme-btn-gradient btn-shadow"
+              onclick="confirm('(스윗알럿)변경하시겠습니까?')"
+            >
+              변경하기
+            </button>
+          </article>
+          <!-- [1] E -->
+        </div>
+        <!-- 우측 취소 정보 E -->
+      </div>
+      <!-- 2) 주문정보들 E -->
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

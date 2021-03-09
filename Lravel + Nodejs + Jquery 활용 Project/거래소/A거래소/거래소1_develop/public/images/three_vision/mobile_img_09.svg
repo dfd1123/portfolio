@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="376" height="265" viewBox="0 0 376 265">
+  <defs>
+    <filter id="사각형_1552" x="0" y="109" width="103" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1553" x="0" y="140" width="103" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-2"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1554" x="0" y="171" width="103" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-3"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1555" x="0" y="201" width="103" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-4"/>
+      <feFlood flood-color="#00b9ff" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1556" x="90" y="109" width="105" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-5"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1557" x="90" y="140" width="105" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-6"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1558" x="90" y="171" width="105" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-7"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1559" x="90" y="201" width="105" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-8"/>
+      <feFlood flood-color="#969696" flood-opacity="0.09"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1556-2" x="182" y="109" width="104" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-9"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1557-2" x="182" y="140" width="104" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-10"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1558-2" x="182" y="171" width="104" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-11"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1559-2" x="182" y="201" width="104" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-12"/>
+      <feFlood flood-color="#00b9ff" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1556-3" x="273" y="109" width="103" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-13"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1557-3" x="273" y="140" width="103" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-14"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1558-3" x="273" y="171" width="103" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-15"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur-15"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_1559-3" x="273" y="201" width="103" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-16"/>
+      <feFlood flood-color="#969696" flood-opacity="0.063"/>
+      <feComposite operator="in" in2="blur-16"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="mobile_img_09" transform="translate(8 -13417)">
+    <text id="System_Process" data-name="System Process" transform="translate(145 13430)" fill="#7e7e7e" font-size="11" font-family="SpoqaHanSans-Light, SpoqaHanSans" font-weight="300" letter-spacing="-0.04em"><tspan x="0" y="0">System Process</tspan></text>
+    <rect id="사각형_1551" data-name="사각형 1551" width="360" height="222" transform="translate(0 13450)" fill="#f8f8f8"/>
+    <rect id="사각형_1550" data-name="사각형 1550" width="360" height="69" transform="translate(0 13450)" fill="#00b9ff"/>
+    <g id="그룹_4429" data-name="그룹 4429" transform="translate(24.765 13469.117)">
+      <circle id="타원_153" data-name="타원 153" cx="10" cy="10" r="10" transform="translate(0.235 -0.118)" fill="#fff" opacity="0.15"/>
+      <ellipse id="타원_152" data-name="타원 152" cx="7.5" cy="7" rx="7.5" ry="7" transform="translate(2.235 2.882)" fill="#fff" opacity="0.3"/>
+      <circle id="타원_151" data-name="타원 151" cx="2.5" cy="2.5" r="2.5" transform="translate(7.235 6.882)" fill="#fff"/>
+    </g>
+    <g id="그룹_4431" data-name="그룹 4431" transform="translate(122.824 13469.117)">
+      <circle id="타원_153-2" data-name="타원 153" cx="10" cy="10" r="10" transform="translate(0.176 -0.118)" fill="#fff" opacity="0.15"/>
+      <circle id="타원_152-2" data-name="타원 152" cx="7" cy="7" r="7" transform="translate(3.176 2.882)" fill="#fff" opacity="0.3"/>
+      <circle id="타원_151-2" data-name="타원 151" cx="2.5" cy="2.5" r="2.5" transform="translate(8.176 6.882)" fill="#fff"/>
+    </g>
+    <g id="그룹_4432" data-name="그룹 4432" transform="translate(221.765 13469.117)">
+      <circle id="타원_153-3" data-name="타원 153" cx="10" cy="10" r="10" transform="translate(0.235 -0.118)" fill="#fff" opacity="0.15"/>
+      <circle id="타원_152-3" data-name="타원 152" cx="7" cy="7" r="7" transform="translate(3.235 2.882)" fill="#fff" opacity="0.3"/>
+      <circle id="타원_151-3" data-name="타원 151" cx="2.5" cy="2.5" r="2.5" transform="translate(8.235 6.882)" fill="#fff"/>
+    </g>
+    <text id="사전절차" transform="translate(23 13504)" fill="#fff" font-size="9" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">사전절차</tspan></text>
+    <text id="마케팅_유튜브_" data-name="마케팅(유튜브)" transform="translate(106 13504)" fill="#fff" font-size="9" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">마케팅(유튜브)</tspan></text>
+    <text id="운영사_컨택" data-name="운영사 컨택" transform="translate(211 13504)" fill="#fff" font-size="9" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">운영사 컨택</tspan></text>
+    <line id="선_504" data-name="선 504" x2="292.649" transform="translate(34.936 13479.027)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="5"/>
+    <g id="그룹_4430" data-name="그룹 4430" transform="translate(317.706 13469.117)">
+      <circle id="타원_153-4" data-name="타원 153" cx="10" cy="10" r="10" transform="translate(0.294 -0.118)" fill="#fff" opacity="0.15"/>
+      <circle id="타원_152-4" data-name="타원 152" cx="7" cy="7" r="7" transform="translate(2.294 2.882)" fill="#fff" opacity="0.3"/>
+      <ellipse id="타원_151-4" data-name="타원 151" cx="3" cy="2.5" rx="3" ry="2.5" transform="translate(7.294 6.882)" fill="#fff"/>
+    </g>
+    <text id="판매_관리" data-name="판매 관리" transform="translate(304 13504)" fill="#fff" font-size="9" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">판매 관리</tspan></text>
+    <g id="그룹_4445" data-name="그룹 4445" transform="translate(-50.194 -91.676)">
+      <g id="그룹_4434" data-name="그룹 4434" transform="translate(63 13627)">
+        <g transform="matrix(1, 0, 0, 1, -20.81, -118.32)" filter="url(#사각형_1552)">
+          <path id="사각형_1552-2" data-name="사각형 1552" d="M11,0H50.379A10.621,10.621,0,0,1,61,10.621V11A11,11,0,0,1,50,22H11A11,11,0,0,1,0,11v0A11,11,0,0,1,11,0Z" transform="translate(21 118)" fill="#fff"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -20.81, -118.32)" filter="url(#사각형_1553)">
+          <path id="사각형_1553-2" data-name="사각형 1553" d="M10.5,0H50.862A10.138,10.138,0,0,1,61,10.138V10.5A10.5,10.5,0,0,1,50.5,21h-40A10.5,10.5,0,0,1,0,10.5v0A10.5,10.5,0,0,1,10.5,0Z" transform="translate(21 149)" fill="#fff"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -20.81, -118.32)" filter="url(#사각형_1554)">
+          <path id="사각형_1554-2" data-name="사각형 1554" d="M10.5,0H50.862A10.138,10.138,0,0,1,61,10.138V10.5A10.5,10.5,0,0,1,50.5,21h-40A10.5,10.5,0,0,1,0,10.5v0A10.5,10.5,0,0,1,10.5,0Z" transform="translate(21 180)" fill="#fff"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -20.81, -118.32)" filter="url(#사각형_1555)">
+          <path id="사각형_1555-2" data-name="사각형 1555" d="M11,0H50.379A10.621,10.621,0,0,1,61,10.621V11A11,11,0,0,1,50,22H11A11,11,0,0,1,0,11v0A11,11,0,0,1,11,0Z" transform="translate(21 210)" fill="#00b9ff"/>
+        </g>
+        <text id="인플루언서_발굴" data-name="인플루언서 발굴" transform="translate(12.194 12.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">인플루언서 발굴</tspan></text>
+        <text id="인플루언서_교육" data-name="인플루언서 교육" transform="translate(12.194 42.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">인플루언서 교육</tspan></text>
+        <text id="스포츠_중계_기획" data-name="스포츠 중계 기획" transform="translate(11.194 73.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">스포츠 중계 기획</tspan></text>
+        <text id="중계_스트리밍" data-name="중계 스트리밍" transform="translate(14.194 104.676)" fill="#fff" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">중계 스트리밍</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1556)">
+        <path id="사각형_1556-4" data-name="사각형 1556" d="M11,0H52.379A10.621,10.621,0,0,1,63,10.621V11A11,11,0,0,1,52,22H11A11,11,0,0,1,0,11v0A11,11,0,0,1,11,0Z" transform="translate(111 118)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1557)">
+        <path id="사각형_1557-4" data-name="사각형 1557" d="M10.5,0H52.862A10.138,10.138,0,0,1,63,10.138V10.5A10.5,10.5,0,0,1,52.5,21h-42A10.5,10.5,0,0,1,0,10.5v0A10.5,10.5,0,0,1,10.5,0Z" transform="translate(111 149)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1558)">
+        <path id="사각형_1558-4" data-name="사각형 1558" d="M10.5,0H52.862A10.138,10.138,0,0,1,63,10.138V10.5A10.5,10.5,0,0,1,52.5,21h-42A10.5,10.5,0,0,1,0,10.5v0A10.5,10.5,0,0,1,10.5,0Z" transform="translate(111 180)" fill="#00b9ff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1559)">
+        <path id="사각형_1559-4" data-name="사각형 1559" d="M11,0H52.379A10.621,10.621,0,0,1,63,10.621V11A11,11,0,0,1,52,22H11A11,11,0,0,1,0,11v0A11,11,0,0,1,11,0Z" transform="translate(111 210)" fill="#fff"/>
+      </g>
+      <text id="중계_방송_편집" data-name="중계 방송 편집" transform="translate(168.194 13639.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">중계 방송 편집</tspan></text>
+      <text id="마케팅_진행_SNS_" data-name="마케팅 진행 (SNS)" transform="translate(163.194 13669.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">마케팅 진행 (SNS)</tspan></text>
+      <text id="유튜브_영상_제작" data-name="유튜브 영상 제작" transform="translate(165.194 13700.676)" fill="#fff" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">유튜브 영상 제작</tspan></text>
+      <text id="유튜브_업로드" data-name="유튜브 업로드" transform="translate(169.194 13731.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">유튜브 업로드</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1556-2)">
+        <path id="사각형_1556-5" data-name="사각형 1556" d="M11,0H51.379A10.621,10.621,0,0,1,62,10.621V11A11,11,0,0,1,51,22H11A11,11,0,0,1,0,11v0A11,11,0,0,1,11,0Z" transform="translate(203 118)" fill="#00b9ff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1557-2)">
+        <path id="사각형_1557-5" data-name="사각형 1557" d="M10.5,0H51.862A10.138,10.138,0,0,1,62,10.138V10.5A10.5,10.5,0,0,1,51.5,21h-41A10.5,10.5,0,0,1,0,10.5v0A10.5,10.5,0,0,1,10.5,0Z" transform="translate(203 149)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1558-2)">
+        <path id="사각형_1558-5" data-name="사각형 1558" d="M10.5,0H51.862A10.138,10.138,0,0,1,62,10.138V10.5A10.5,10.5,0,0,1,51.5,21h-41A10.5,10.5,0,0,1,0,10.5v0A10.5,10.5,0,0,1,10.5,0Z" transform="translate(203 180)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1559-2)">
+        <path id="사각형_1559-5" data-name="사각형 1559" d="M11,0H51.379A10.621,10.621,0,0,1,62,10.621V11A11,11,0,0,1,51,22H11A11,11,0,0,1,0,11v0A11,11,0,0,1,11,0Z" transform="translate(203 210)" fill="#00b9ff"/>
+      </g>
+      <text id="광고주_협업사_연계" data-name="광고주, 협업사 연계" transform="translate(253.194 13639.676)" fill="#fff" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">광고주, 협업사 연계</tspan></text>
+      <text id="유튜브_LIVE_커머스" data-name="유튜브 LIVE 커머스" transform="translate(254.194 13669.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">유튜브 LIVE 커머스</tspan></text>
+      <text id="스트리밍_채널_추가" data-name="스트리밍 채널 추가" transform="translate(254.194 13700.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">스트리밍 채널 추가</tspan></text>
+      <text id="스트리머_브랜딩" data-name="스트리머 브랜딩" transform="translate(256.194 13731.676)" fill="#fff" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">스트리머 브랜딩</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1556-3)">
+        <path id="사각형_1556-6" data-name="사각형 1556" d="M11,0H50.379A10.621,10.621,0,0,1,61,10.621V11A11,11,0,0,1,50,22H11A11,11,0,0,1,0,11v0A11,11,0,0,1,11,0Z" transform="translate(294 118)" fill="#00b9ff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1557-3)">
+        <path id="사각형_1557-6" data-name="사각형 1557" d="M10.5,0H50.862A10.138,10.138,0,0,1,61,10.138V10.5A10.5,10.5,0,0,1,50.5,21h-40A10.5,10.5,0,0,1,0,10.5v0A10.5,10.5,0,0,1,10.5,0Z" transform="translate(294 149)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1558-3)">
+        <path id="사각형_1558-6" data-name="사각형 1558" d="M10.5,0H50.862A10.138,10.138,0,0,1,61,10.138V10.5A10.5,10.5,0,0,1,50.5,21h-40A10.5,10.5,0,0,1,0,10.5v0A10.5,10.5,0,0,1,10.5,0Z" transform="translate(294 180)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 42.19, 13508.68)" filter="url(#사각형_1559-3)">
+        <path id="사각형_1559-6" data-name="사각형 1559" d="M11,0H50.379A10.621,10.621,0,0,1,61,10.621V11A11,11,0,0,1,50,22H11A11,11,0,0,1,0,11v0A11,11,0,0,1,11,0Z" transform="translate(294 210)" fill="#fff"/>
+      </g>
+      <path id="패스_2488" data-name="패스 2488" d="M4326,11744.457h9.794v-91.75h9.575" transform="translate(-4197.271 1985.209)" fill="none" stroke="#acacac" stroke-width="1" stroke-dasharray="5"/>
+      <path id="패스_2489" data-name="패스 2489" d="M4326,11713.873h9.794v-61.166h9.575" transform="translate(-4105.521 1985.209)" fill="none" stroke="#acacac" stroke-width="1" stroke-dasharray="5"/>
+      <path id="패스_2490" data-name="패스 2490" d="M4326,11744.457h9.794v-91.75h9.575" transform="translate(-4014.516 1985.209)" fill="none" stroke="#acacac" stroke-width="1" stroke-dasharray="5"/>
+      <path id="다각형_27" data-name="다각형 27" d="M2.5,0,5,4H0Z" transform="translate(151.194 13635.676) rotate(90)" fill="#acacac"/>
+      <path id="다각형_28" data-name="다각형 28" d="M2.5,0,5,4H0Z" transform="translate(242.194 13635.676) rotate(90)" fill="#acacac"/>
+      <path id="다각형_29" data-name="다각형 29" d="M2.5,0,5,5H0Z" transform="translate(333.194 13635.676) rotate(90)" fill="#acacac"/>
+      <text id="온라인_모니터링" data-name="온라인 모니터링" transform="translate(348.194 13639.676)" fill="#fff" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">온라인 모니터링</tspan></text>
+      <text id="프로모션_실시" data-name="프로모션 실시" transform="translate(350.194 13669.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">프로모션 실시</tspan></text>
+      <text id="각종_오프라인_행사" data-name="각종 오프라인 행사" transform="translate(344.194 13700.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">각종 오프라인 행사</tspan></text>
+      <text id="굿즈_쇼핑몰_연계" data-name="굿즈, 쇼핑몰 연계" transform="translate(346.194 13731.676)" fill="#414141" font-size="5" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">굿즈, 쇼핑몰 연계</tspan></text>
+    </g>
+  </g>
+</svg>

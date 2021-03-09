@@ -1,0 +1,775 @@
+@import "../helpers/mixin";
+
+//팝업 공통스타일
+.popup {
+    @include maxWidth1024;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    min-height: 100%;
+    z-index: 90;
+
+    &--modal {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 0 1.2rem;
+    }
+
+    &__inner {
+        @include position($b: -10%, $l: 50%, $transX: -50%, $transY: 0);
+        @include paddingLeftRight2rem;
+        width: 95%;
+        height: 70%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        background-color: #fff;
+        box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.3);
+        padding-top: 100px;
+        transition-delay: 0.05s;
+        transition-duration: 0.25s;
+        opacity: 0;
+        z-index: -999;
+        overflow-x: hidden;
+        color: $navy-color;
+
+        .inline {
+            font-size: 0.85em;
+        }
+
+        &__btn-close {
+            @include position($t: 0, $l: 50%, $transX: -50%, $transY: 0);
+            @include fontStyle($parent-normal-font, bold, #dee3e6);
+            padding-top: 50px;
+            width: 80%;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        &__field {
+            height: 100%;
+            width: 100%;
+            font-size: $parent-normal-font;
+            padding: 0;
+            position: relative;
+        }
+
+        &__field .button {
+            position: absolute;
+            bottom: 5vh;
+            left: 0;
+        }
+        
+        &__field .button.button--relative {
+          position: relative;
+          bottom: 0;
+          left: 0;
+        }
+
+        .button.is-active {
+            @include navyButton;
+
+            &:active {
+                background-color: darken($navy-color, 5%);
+            }
+        }
+
+        .button.button--outline.is-active{
+            background-color: #fff;
+            color: #00DBD8;
+            border-color: #00DBD8;
+            -webkit-box-shadow: 0 5px 11px rgba(0, 219, 216, 0.15);
+            box-shadow: 0 5px 11px rgba(0, 219, 216, 0.15);
+        }
+    }
+
+    &__inner--not-pd {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__inner.is-active {
+        @include position($b: 0, $l: 50%, $transX: -50%, $transY: 0);
+        width: 95%;
+        height: 95%;
+        transition-delay: 0.05s;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+        z-index: 995;
+    }
+
+    &__inner--02 {
+        z-index: 999;
+        bottom: -100%;
+    }
+
+    .input-group {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        height: 3rem;
+        font-size: 0.85em;
+        &__input {
+            @include fontStyle(inherit, 200, $navy-color);
+            @include iosInput;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-bottom: 1px solid #e1e6ea;
+            outline: none;
+            padding-left: 7px;
+            display: inline-block;
+            line-height: 3rem;
+            &::placeholder {
+                color: rgba($navy-color, 0.3);
+            }
+        }
+    }
+    
+    .field__align{
+        margin-bottom: 10px;
+    }
+
+    .date-group{
+
+        width: 100%;
+        padding: 0 2rem;
+        color: $navy-color;
+        border-top: 1px solid #E1E6EA;
+
+        .inline {
+            font-size: 0.7em;
+            margin: 1.5rem 0;
+            color: inherit;
+        }
+        
+        .button {
+            width: 86.5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        em {
+            color: inherit;
+        }
+
+    }
+
+}
+
+//회원가입 약관동의 팝업
+.popup--sign-up {
+    padding-top: $hd-title-height;
+
+    &--01 {
+        position: absolute;
+        background-color: $bg-01-color;
+        right: -100%;
+        opacity: 0;
+        transition: all 0.5s;
+        transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+
+        .hd-title--01 {
+            background-color: #f4f7f9;
+        }
+
+        .button {
+            @include buttonStyle(55px, 4.5rem, #dedede, 1.5rem);
+            background-color: #fff;
+        }
+
+        .button.is-active {
+            color: #fff;
+            background-color: $main-color;
+        }
+    }
+
+    &--02 {
+        background-color: #fff;
+    }
+}
+
+//여행상품 리뷰보기 팝업
+.popup--review {
+    position: absolute;
+    @include fontStyle($parent-normal-font, 300, $navy-color);
+    background-color: #fff;
+    padding-top: 7.5rem;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+
+    &__hd {
+        @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+        height: 7.5rem;
+        font-size: 21px;
+        width: 100%;
+        padding: 1.3rem 2rem 0;
+
+        .rating-stars__group {
+            font-size: 23px;
+        }
+
+        .rating-stars__stars {
+            font-size: 26px;
+        }
+
+        .rating-stars__average {
+            top: -6px;
+        }
+    }
+
+    &__scroll-area {
+        @include scrollArea(100%);
+        padding-bottom: 8rem;
+    }
+
+    &__group {
+        @include paddingLeftRight2rem;
+    }
+
+    &__tit {
+        @include fontStyle(inherit, bold, black);
+        margin-bottom: 8px;
+        letter-spacing: -1px;
+    }
+
+    &__list {
+        padding: 1rem 0 2rem;
+        border-bottom: 1px solid $border-color;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__list__text {
+        @include fontStyle(0.75em, 200, inherit);
+        line-height: 1.6;
+    }
+
+    &__list--nothing {
+        padding: 3rem 0;
+        text-align: center;
+        border: 0;
+
+        img {
+            width: 45px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        span {
+            @include fontStyle(0.75em, 200, inherit);
+        }
+    }
+
+    .user-list {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.8rem 2rem 1rem 5.2rem;
+        margin-bottom: 1rem;
+
+        &__thum {
+            @include position($t: 50%, $l: 0, $transX: 0, $transY: -50%);
+            @include bgStyle(cover);
+            width: 4.5rem;
+            height: 4.5rem;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: $bg-01-color;
+        }
+
+        &__name {
+            width: 100%;
+            font-weight: bold;
+            font-size: 0.95em;
+            margin-bottom: 7px;
+        }
+
+        &__date {
+            @include fontStyle($normal-small-font, 200, $light-blue-02-color);
+        }
+    }
+
+    &__btn {
+        @include btFixedBtn;
+        bottom: 2rem;
+        .button {
+            @include navyButton;
+        }
+    }
+}
+
+//메세지 보관함 팝업
+.popup--msg {
+    position: absolute;
+    background-color: #fff;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+//플래너버전 팝업
+.popup--plnr-nav01 {
+    $hd-title-height: 4.5rem;
+    width: 100%;
+    padding-top: $hd-title-height;
+    position: absolute;
+    height: calc(100% - 6rem);
+    min-height: unset;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s;
+    .hd-title--04 {
+        height: $hd-title-height;
+    }
+    &__scroll-area {
+        @include scrollArea(100%);
+        background-color: #f8f8f8;
+        padding-bottom: 8rem;
+    }
+}
+
+//리뷰 작성하기 팝업
+.popup--review-write {
+    &__scroll-area {
+        overflow-y: scroll;
+        font-size: 15px;
+        width: 100%;
+        height: calc(100% - 7.5rem);
+    }
+
+    .rating-stars__group {
+        font-size: 30px;
+    }
+
+    .rating-stars__stars {
+        font-size: 25px;
+    }
+
+    .review-pup {
+        &__textarea {
+            width: 100%;
+            margin-top: 15px;
+
+            textarea {
+                @include iosInput;
+                @include fontStyle(inherit, 300, $navy-color);
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #b8c3ce;
+                padding: 10px;
+                resize: none;
+                line-height: 1.4;
+
+                &::placeholder {
+                    color: $light-blue-02-color;
+                }
+            }
+        }
+
+        &__pictures {
+            margin: 15px 0;
+        }
+
+        &__btn {
+            width: 100%;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            padding: 0 2rem;
+        }
+    }
+}
+
+//사진더보기 형식 팝업
+.popup--more-view {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    bottom: -100%;
+    top: unset;
+    transition: all 0.3s;
+    opacity: 0;
+
+    .hd-title {
+        @include fontStyle(17px, 300, #fff);
+        background-color: rgba(0, 0, 0, 0.6);
+        position: relative;
+        top: 0;
+        transform: unset;
+    }
+
+    .hd-title__center {
+        font-size: $normal-small-font;
+        font-weight: inherit;
+        line-height: 3.5rem;
+    }
+
+    .more-view-pagination {
+        @include position($b: 0.5rem, $l: 0, $transX: 0, $transY: 0);
+        display: inline-block;
+        height: 20px;
+        transform: unset;
+        line-height: 20px;
+        font-size: 10px;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .more-view {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+
+        &__list {
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__btn {
+            &--prev {
+                background-image: url(/img/btn/btn-viewbtn-prev.svg);
+            }
+            &--next {
+                background-image: url(/img/btn/btn-viewbtn-next.svg);
+            }
+        }
+    }
+}
+
+//포트폴리오사진 더보기 팝업
+#pplio_more_view_popup {
+
+    .hd-title__left-btn {
+        font-size: $normal-small-font;
+        color: inherit;
+        width: 5rem;
+    }
+
+    .pplio-text {
+        @include position($b: 0, $l: 0, $transX: 0, $transY: 0);
+        width: 100%;
+        height: 90px;
+        background-color: black;
+        z-index: 5;
+        padding: 0 15px;
+
+        &__paragraph {
+            @include fontStyle(13px, 300, inherit);
+            padding: 15px 0;
+            overflow: scroll;
+            height: 100%;
+            line-height: 19px;
+        }
+
+        &__paragraph--edit {
+            @include bgStyle(17px);
+            @include fontStyle(15px, 200, rgba(255, 255, 255, 0.3));
+            height: 40px;
+            border-bottom: 1px solid #fff;
+            line-height: 40px;
+            padding: 0 5px;
+            background-image: url(/img/icon/icon-edit-wh.svg);
+            background-position: 98% 50%;
+            user-select: none;
+        }
+    }
+
+    .pplio-bubble {
+        width: 100%;
+        padding: 0 2rem;
+        font-size: 18px;
+        position: relative;
+        z-index: 5;
+        margin-top: 20px;
+        display: none;
+
+        &__group {
+            opacity: 0;
+            background-color: #fff;
+            position: relative;
+            border-radius: 5px;
+            &::after {
+                @include position(
+                    $b: -17px,
+                    $l: 50%,
+                    $transX: -50%,
+                    $transY: 0
+                );
+                border: 9px solid transparent;
+                border-top: 9px solid #fff;
+                content: "";
+                width: 0;
+            }
+        }
+
+        &__hd {
+            height: 40px;
+            width: 100%;
+            position: relative;
+            padding: 0 10px;
+
+            &__btn {
+                background: transparent;
+                border: 0;
+                border-radius: 0;
+                line-height: 40px;
+                width: 60px;
+                &--left {
+                    @include fontStyle(0.9em, 400, rgba(#262626, 0.3));
+                    @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+                }
+                &--right {
+                    @include fontStyle(0.9em, 400, #007aff);
+                    @include position($t: 0, $r: 0, $transX: 0, $transY: 0);
+                }
+            }
+
+            &__center {
+                @include fontStyle(0.9em, bold, #262626);
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                line-height: 40px;
+                border-bottom: 1px solid rgba(38, 38, 38, 0.1);
+            }
+
+            &__textarea {
+                padding: 0;
+
+                textarea {
+                    width: 100%;
+                    border: 0;
+                    display: inline-block;
+                    resize: none;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    outline: none;
+                    font-size: 0.75em;
+                    line-height: 1.5;
+                    height: 140px;
+                }
+            }
+        }
+    }
+
+    .pplio-bubble.is-active {
+        display: block;
+
+        .pplio-bubble__group {
+            animation-delay: 0.2s;
+            animation-name: bubble;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+//포트폴리오 사진추가 팝업
+.popup--input-pplio{
+    
+    bottom: -100%;
+    top: unset;
+    transition: all 0.3s;
+    opacity: 0;
+
+    background-color: #fff;
+    padding-top: $hd-title-height;
+    font-size: $parent-normal-font;
+    padding-bottom: 11.5rem;
+
+    .hd-title{
+        position: absolute;
+    }
+
+    .input-group{
+        margin-top: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .input-group__input{
+        border-color: $navy-color;
+    }
+
+    .input-pplio-pic{
+        
+        @include scrollArea(calc(100% - 4.5rem));
+        padding: 15px 2rem;
+        
+        &__btns{
+
+            @include position($b: 0, $l: 0, $transX: 0, $transY: 0);
+            z-index: 1;
+            width: 100%;
+            padding: 1.5rem 2rem 3rem;
+            text-align: center;
+            font-size: 14px;
+            border-top: 1px solid #E1E6EA;
+            height: 11.5rem;
+
+            &__amount{
+                font-size: 1.1em;
+                color: $navy-color;
+                margin-bottom: 15px;
+                display: inline-block;
+            }
+
+            .button{
+                background-color: #00244C;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            }
+
+        }
+
+    }
+
+    .review__pictures-list--file{
+        @include bgStyle(13px);
+        background-position: 50% 23px;
+        background-image: url(/img/icon/icon-add-mint.svg);
+        @include sm{
+            background-position: 50% 13px;
+        }
+    }
+
+    .review__pictures-list__span{
+        color: #7E7E7E;
+    }
+
+    .review__pictures-list{
+
+        margin-right: 8px;
+        margin-bottom: 8px;
+
+        @include sm{
+            width: 59px;
+            height: 59px;
+        }
+
+    }
+
+    .review__pictures-list:nth-child(5n){
+        @include mediaCustom(400){
+            margin-right: 0;
+        }
+        @include xsm{
+            margin-right: 8px;
+        }
+    }
+
+}
+
+//여행상품 등록하기 팝업
+.popup--product{
+    
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+    background-color: #fff;
+    font-size: $parent-normal-font;
+
+    &__scroll-area{
+        @include scrollArea(100%);
+        padding-bottom: 8rem;
+    }
+
+    .wrapper--product__btn{
+        bottom: 30px;
+    }
+
+    &__textarea {
+        width: 100%;
+        margin-top: 15px;
+
+        textarea {
+            @include iosInput;
+            @include fontStyle(inherit, 300, $navy-color);
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #b8c3ce;
+            padding: 10px;
+            resize: none;
+            line-height: 1.4;
+            height: 100px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 5px;
+
+            &::placeholder {
+                color: $light-blue-02-color;
+            }
+        }
+    }
+
+}
+
+// 오른쪽에서 왼쪽 나타나기
+.popup--sign-up.is-active,
+.popup--review.is-active,
+.popup--msg.is-active,
+.popup--plnr-nav01.is-active,
+.popup--product.is-active {
+    opacity: 1;
+    right: 0;
+    transition: all 0.2s;
+    transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+//아래에서 위로 나타나기
+.popup--pplio.is-active,
+.popup--more-view.is-active,
+.popup--input-pplio.is-active {
+    bottom: 0;
+    transition: all 0.25s;
+    opacity: 1;
+}
+
+@keyframes bubble {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+// 팝업 유지보수 0826~
+
+.popup_bt_fixed_btn_wrap{
+    @include btFixedBtn;
+    left: 0;
+    bottom: 5vh;
+}
+
+.popup_bt_fixed_btn_wrap .button{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.popup_scroll_y_wrap{
+    padding-bottom: 5vh;
+    overflow-y: scroll;
+}
+
+#prdt_review_btn_popup{
+    position: fixed;
+}
+
+.mg_tb_20{
+  margin: 20px 0;
+}

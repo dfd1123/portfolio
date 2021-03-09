@@ -1,0 +1,93 @@
+/*
+    COMPONENT - donggle review history component
+*/
+.dg-review-history-card {
+  .dg-clothes-thumbnail {
+    @include position($t: 0, $l: 0);
+    width: 90px;
+    height: 90px;
+
+    .in-image {
+      border-radius: 0;
+    }
+  }
+  .in-content .inner-box {
+    width: 100%;
+    position: relative;
+    padding-left: 108px;
+  }
+  .in-content {
+    padding: 22px 17px 17px;
+    margin-top: -1px;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    min-height: 196px;
+
+    ._informations {
+      @include fontType01(#{$px-13}em);
+
+      margin-bottom: 13px;
+    }
+    ._informations li {
+      @include inlineBlockStyle(middle);
+
+      line-height: 1;
+    }
+    ._informations li:first-child {
+      padding-right: 10px;
+      border-right: 1px solid $light_gray6;
+    }
+    ._informations li a {
+      @include fontType01(inherit, #787878, 200);
+    }
+    ._informations li a:before {
+      @include inlineBlockStyle(middle);
+      @include fontType01(#{$px-13}em, $black, 400);
+
+      position: relative;
+      top: -1px;
+    }
+    ._informations ._sellername a:before {
+      @include makePseudo("스토어명");
+
+      padding-left: 0;
+      padding-right: 8px;
+    }
+    ._informations ._prdtnum a:before {
+      @include makePseudo("품번");
+
+      padding: 0 8px;
+    }
+    ._name {
+      @include fontType01(#{$px-19}em, $weight: 400);
+
+      margin: 8px 0 3px;
+      line-height: 1.5;
+    }
+  }
+
+  // 리뷰날짜
+  ._date {
+    @include fontType01(#{$px-11}em, #787878, 100);
+
+    letter-spacing: 0.2px;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 13px;
+    border-bottom: 1px solid $light_gray6;
+  }
+
+  // 제품 리뷰관련 별점
+  .in-star-group {
+    @include position($t: 0, $r: 0);
+  }
+
+  // 리뷰내용
+  ._review_detail {
+    padding: 10px 0 0;
+  }
+  ._review_detail p {
+    @include fontType01(#{$px-13}em, $weight: 300);
+    @include ellipse(3, 20px);
+  }
+}

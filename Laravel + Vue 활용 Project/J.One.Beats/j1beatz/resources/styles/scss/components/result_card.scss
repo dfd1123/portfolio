@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+/* 
+    --------------------------------------------------------------------
+            * result_card component *
+    --------------------------------------------------------------------
+*/
+
+//태그 검색결과카드들, 비트정보에 추천올라오는 결과카드들
+
+.result-card {
+  width: 215px;
+  display: inline-block;
+
+  .tag-album-thumb {
+    @include backgroundBasic(cover);
+
+    width: 100%;
+    height: 214px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  dl {
+    padding: 0 13px;
+  }
+
+  dt {
+    @include fontStyle(1.4rem, 600);
+    margin: 15px 0 5px 0;
+  }
+
+  ._pd_name {
+    color: rgba(51, 51, 51, 0.5);
+    margin-bottom: 15px;
+  }
+
+  ._tags {
+    width: 100%;
+    display: inline-block;
+    height: 75px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+  }
+
+  ._tags span {
+    @include fontStyle(15px, 400);
+    color: #636363;
+    display: inline-block;
+    margin-right: 7px;
+    margin-bottom: 7px;
+
+    &::before {
+      content: "#";
+    }
+  }
+}

@@ -1,0 +1,300 @@
+/*------------------------SUPPORT 고객센터 START------------------------*/
+
+/*고객센터 공통스타일 start*/
+.cs_wrap.board_st_wrap .board_st_inner{
+	padding: 40px 0;
+}
+/*고객센터 공통스타일 end*/
+
+/*고객센터 공통 테이블 스타일 start*/
+.cs_table_wrap .cs_table{
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+}
+
+.cs_table_wrap .table_label{
+    border-bottom: 1px solid #000000;
+}
+
+.cs_table_wrap .table_label thead > tr > th{
+	color: #000000;
+	width: 10%;
+}
+
+.cs_table_wrap .table_label thead > tr > th:nth-child(2),
+.cs_table_wrap .cs_table tbody > tr > td:nth-child(2){
+	text-align: left;
+	width: 65%;
+}
+
+.cs_table_wrap .table_label thead > tr > th:nth-child(4),
+.cs_table_wrap .cs_table tbody > tr > td:nth-child(4){
+	width: 15%;
+}
+
+.cs_table_wrap .cs_table tbody > tr{
+    border: 1px solid #f0f0f0;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.cs_table_wrap .cs_table tbody > tr > td{
+    padding: 12px 0;
+    color: #474846;
+    font-size: 14px;
+    width: 10%;
+    text-align: center;
+	width: 10%;
+}
+
+.cs_table_wrap .cs_table tbody > tr > td a{
+	width: 100%; height: 100%;
+	display: block;
+}
+
+.cs_table_wrap .cs_table tbody > tr > td:nth-child(2):hover a{
+	color: #48413b;
+	font-weight: bold;
+}
+/*고객센터 공통 테이블 스타일 end */
+
+/*공지사항-1:1문의 글 보기 start*/
+.cs_table_view .panel_subject{
+    border-bottom: 1px solid #000000;
+    padding: 5px 18px 11px;
+    position: relative;
+}
+
+.cs_table_view .panel_subject .subjt{
+    font-size: 18px;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.cs_table_view .panel_subject .reporting_date{
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+    font-size: 13px;
+    color: #787878;
+    height: 30px;
+    padding: 5px 0;
+}
+
+.cs_table_view .panel_subject .reporting_date .rpt_author{
+	border-right: 1px solid #dddddd;
+}
+
+.cs_table_view .panel_subject .reporting_date span{
+	color: #474846;
+}
+
+/* 이벤트 뷰페이지 제목의 시작시간~종료시간 스타일 start */
+
+.cs_table_view .panel_subject .right_date_line{
+	width: 100%; 
+	text-align: right; position: absolute; 
+	font-size: 12px; right: 15px; 
+	top: -17px;
+}
+
+/* 이벤트 뷰페이지 제목의 시작시간~종료시간 스타일 end */
+
+.cs_table_view .panel_content{
+    font-size: 13px;
+    padding: 20px 15px;
+    overflow-y: scroll;
+    min-height: 400px;
+    height: 540px;
+    line-height: 190%;
+}
+
+.cs_table_view .panel_footer{
+    border-top: 1px solid #dddddd;
+}
+
+.cs_table_view .panel_footer .panel_ft_list{
+    border-bottom: 1px solid #f0f0f0;
+    display: table;
+    width: 100%;
+    height: 37px;
+    cursor: pointer;
+}
+
+.cs_table_view .panel_footer .panel_ft_list .ft_label{
+    vertical-align: middle;
+    background: #f5f5f5;
+    font-size: 14px;
+    display: table-cell;
+    color: #474846;
+    text-align: center;
+    width: 140px;
+}
+
+.cs_table_view .panel_footer .panel_ft_list .ft_subjt{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px;
+    text-align: center;
+}
+
+.cs_table_view .panel_footer .panel_ft_list:hover a{
+    text-decoration: underline;
+}
+
+.cs_table_view .text-right .btn_style{
+    width: 90px;
+    font-size: 13px;
+    height: calc(2rem + 1px);
+    outline: none;
+}
+/*공지사항-1:1문의 글 보기 end*/
+
+/*faq start*/
+.faq_tab_group{border-top: 1px solid black;}
+
+.faq_tab_group .faq_tab{
+    width: 100%;
+    position: relative;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.faq_tab_group .faq_tab input[type="radio"]{
+	display: none;
+}
+
+.faq_tab_group .faq_tab label{
+    width: 100%;
+    height: 45px;
+    display: table;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.faq_tab_group .faq_tab .tab_content{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+	transition: max-height 1s;
+	position: relative;
+}
+
+.faq_tab_group .faq_tab input[type="radio"]:checked ~ .tab_content{
+	max-height: 200em;
+	transition: max-height 1s;
+	border-top: 1px solid #f0f0f0;
+}
+
+.faq_tab_group .faq_tab .tab_content i{
+    color: #ff5a5a;
+    font-size: 20px;
+    position: absolute;
+    left: 148px;
+    top: 32px;
+}
+
+.faq_tab_group .faq_tab .tab_content .tab_answer_box{
+	padding: 30px 50px 30px 175px;
+    line-height: 190%;
+    font-size: 13px;
+}
+
+.faq_tab_group .faq_tab label .faq_type{
+    display: table-cell;
+    background: #f5f5f5;
+    width: 15%;
+    text-align: center;
+    color: #787878;
+    vertical-align: middle;
+}
+
+.faq_tab_group .faq_tab label .faq_tit{
+	color: #474846;
+	text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 15px;
+}
+
+.faq_tab_group .faq_tab label:hover .faq_tit{
+	color: #48413b;
+	font-weight: bold;
+}
+/*faq end*/
+
+/*1:1문의 목록 start*/
+.cs_table_view .panel_content.qna_content {
+    overflow: unset;
+    height: auto;
+    min-height: 150px;
+}
+
+.cs_table_view .panel_content.question_content {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cs_table_view .panel_content.answer_content{
+    border-bottom: 1px solid #dddddd;
+    padding: 0;
+    min-height: 50px;
+}
+
+.cs_table_view .panel_content.answer_content .answer_box{
+    padding-left: 25px;
+    position: relative;
+}
+
+.cs_table_view .panel_content.answer_content i{
+	color: #ff5a5a; 
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 37px;
+}
+.cs_table_view .panel_content.answer_content i.not_i{
+    color: #464a58;
+    position: relative;
+    top: 3px;
+    left: -3px;
+}
+
+.cs_table_view .panel_content.answer_content .answer_box .answer_p{
+    text-align: left;
+    padding: 35px 25px;
+    position: relative;
+}
+
+.cs_table_view .panel_content.answer_content .answer_box .answer_p.nothing_p{
+    text-align: center;
+}
+
+.cs_table_wrap.qna_table_wrap .table_label thead > tr > th{
+    width: 10%;
+}
+
+.cs_table_wrap.qna_table_wrap .table_label thead > tr > th:nth-child(2){
+    width: 60%;
+}
+
+.cs_table_wrap.qna_table_wrap .cs_table tbody > tr > td{
+    width: 10%;
+}
+
+.cs_table_wrap.qna_table_wrap .cs_table tbody > tr > td:nth-child(2){
+    width: 60%;
+}
+
+.cs_table_wrap.qna_table_wrap .cs_table tbody > tr > td .wait_ans{
+    color: #ff4646;
+}
+
+.cs_table_wrap.qna_table_wrap .cs_table tbody > tr > td .complete_ans{
+    color: #4378ff;
+}
+/*1:1문의 목록 end*/
+
+/*------------------------SUPPORT 고객센터 END------------------------*/

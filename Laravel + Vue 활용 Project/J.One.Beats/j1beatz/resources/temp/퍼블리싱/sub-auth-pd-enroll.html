@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>J1beats-main</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="제이원비츠" />
+        <meta property="og:description" content="제이원비츠 설명입니다." />
+        <!-- ↓오픈그래프 썸네일 이미지는 만들어놨지만, path방식이 아닌 url방식으로 해야 보인다고 하네욤 우선 이미지 경로라도 적어놓겠습니다~ -->
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="음악플랫폼, 제이원비츠">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="scss/j1beat-ui.css">
+
+        <!--TODO:페이지별 css-->
+        <link rel="stylesheet" href="scss/pages/sub-page-auth.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--TODO:END-->
+
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+    
+
+    </head>
+
+    <body>
+
+        <div id="app">
+
+            <!-- 메인 컨텐츠 -->
+            <div id="wrap">
+                
+                <section class="section sub-section">
+
+                    <article class="j1beatz-hd">
+
+                        <h3 class="none">제목 및 아티스트 및 태그 검색하기</h3>
+
+                        <fieldset class="j1beatz-hd-sch-field">
+                            <input type="text" placeholder="제목/아티스트/#태그 검색">
+                            <button type="button"><span class="none">검색버튼</span></button>
+                        </fieldset>
+
+                        <div class="j1beatz-hd-cs-field">
+                            <h3>고객센터</h3>
+                            <div class="cs-btns">
+                                <a href="#" class="cs-btn cs-btn-blg"><span class="none">블로그</span></a>
+                                <a href="#" class="cs-btn cs-btn-kkt"><span class="none">카카오톡</span></a>
+                                <a href="#" class="cs-btn cs-btn-insta"><span class="none">인스타그램</span></a>
+                                <a href="#" class="cs-btn cs-btn-ytb"><span class="none">유튜브</span></a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!--TODO:-->
+                    <div class="page-contents-wrapper">
+                        
+                        <!-- FIXME: 프로듀서 프로필 등록 첫번째 -->
+                        <div class="sub-page-auth sub-page-auth-pd-profile __enroll">
+
+                            <div class="sub-page-auth-title">
+                                <h2>프로듀서 프로필 등록</h2>
+                                <span>프로듀서 회원가입</span>
+                            </div>
+
+                            <div class="sub-page-auth-panel">
+
+                                <div class="certify-good">
+                                    <p><b>프로듀서 회원가입</b>이 완료되었습니다.</p>
+                                    <span>프로듀서 프로필 등록을 완료하세요.<br>운영자의 프로필 검수 후, 프로듀서 회원 활동이 가능합니다.<br><br><a href="#" role="button"><b>다음에 하기></b></a></span>
+                                </div>
+
+                                <div class="member-mail-guide">
+                                    <span>제이원비츠 회원아이디</span>
+                                    <p>j1beatz@naver.com</p>
+                                </div>
+
+                                <div class="pd-profile-enroll-thumbnail">
+                                    <button type="button">
+                                        <img src="img/icon/icon-edit-white.svg" alt="사진등록 아이콘">
+                                        <span>사진등록</span>
+                                    </button>
+                                </div>
+                                
+                                <div class="in-title in-title-mini_ver">
+                                    <h3 class="in-title-name">프로듀서 활동명</h3>
+                                </div>
+                                
+                                <div class="auth-input_form _double-chck">
+                                    <input type="text">
+                                    <button type="button" class="btn btn-certify-mini">중복검사</button>
+                                </div> 
+                                
+                                <div class="in-title in-title-mini_ver">
+                                    <h3 class="in-title-name">주요 분위기 선택</h3>
+                                    <span class="in-title-ment">최대 3개까지 가능합니다.</span>
+                                </div>
+
+                                <div class="main-mood-genre-choice">
+
+                                    <input type="checkbox" id="main-mood-1-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-2-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-3-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-4-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-5-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-6-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-7-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-8-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-9-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-10-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-11-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-12-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-13-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-14-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-15-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-16-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-17-check" class="none-input">
+                                    <input type="checkbox" id="main-mood-18-check" class="none-input">
+
+                                    <ul>
+
+                                        <li class="mood-genre-choice-btn main-mood-1">
+                                            <label for="main-mood-1-check">
+                                                <span>격렬</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-2">
+                                            <label for="main-mood-2-check">
+                                                <span>웅장한</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-3">
+                                            <label for="main-mood-3-check">
+                                                <span>긴장</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-4">
+                                            <label for="main-mood-4-check">
+                                                <span>몽환적인</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-5">
+                                            <label for="main-mood-5-check">
+                                                <span>신비</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-6">
+                                            <label for="main-mood-6-check">
+                                                <span>신나는</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-7">
+                                            <label for="main-mood-7-check">
+                                                <span>기쁜</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-8">
+                                            <label for="main-mood-8-check">
+                                                <span>행복</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-9">
+                                            <label for="main-mood-9-check">
+                                                <span>사랑스러운</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-10">
+                                            <label for="main-mood-10-check">
+                                                <span>귀여운</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-11">
+                                            <label for="main-mood-11-check">
+                                                <span>섹시</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-12">
+                                            <label for="main-mood-12-check">
+                                                <span>고독한</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-13">
+                                            <label for="main-mood-13-check">
+                                                <span>경건한</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-14">
+                                            <label for="main-mood-14-check">
+                                                <span>우울한</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-15">
+                                            <label for="main-mood-15-check">
+                                                <span>슬픈</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-16">
+                                            <label for="main-mood-16-check">
+                                                <span>불안한</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-17">
+                                            <label for="main-mood-17-check">
+                                                <span>무서운</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-mood-18">
+                                            <label for="main-mood-18-check">
+                                                <span>차분한</span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                
+                                <div class="in-title in-title-mini_ver">
+                                    <h3 class="in-title-name">주요 장르 선택</h3>
+                                    <span class="in-title-ment">선택 개수 제한이 없습니다.</span>
+                                </div>
+
+                                <div class="main-mood-genre-choice">
+
+                                    <input type="checkbox" id="main-genre-1-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-2-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-3-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-4-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-5-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-6-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-7-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-8-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-9-check" class="none-input">
+                                    <input type="checkbox" id="main-genre-10-check" class="none-input">
+
+                                    <ul>
+
+                                        <li class="mood-genre-choice-btn main-genre-1">
+                                            <label for="main-genre-1-check">
+                                                <span>trap</span>
+                                            </label>
+                                        </li>
+                                    
+                                        <li class="mood-genre-choice-btn main-genre-2">
+                                            <label for="main-genre-2-check">
+                                                <span>boombap</span>
+                                            </label>
+                                        </li>
+                                    
+                                        <li class="mood-genre-choice-btn main-genre-3">
+                                            <label for="main-genre-3-check">
+                                                <span>old school</span>
+                                            </label>
+                                        </li>
+                                    
+                                        <li class="mood-genre-choice-btn main-genre-4">
+                                            <label for="main-genre-4-check">
+                                                <span>jazz</span>
+                                            </label>
+                                        </li>
+                                    
+                                        <li class="mood-genre-choice-btn main-genre-5">
+                                            <label for="main-genre-5-check">
+                                                <span>soul</span>
+                                            </label>
+                                        </li>
+                                        
+                                        <li class="mood-genre-choice-btn main-genre-6">
+                                            <label for="main-genre-6-check">
+                                                <span>R&B</span>
+                                            </label>
+                                        </li>
+
+                                        <li class="mood-genre-choice-btn main-genre-7">
+                                            <label for="main-genre-7-check">
+                                                <span>pop</span>
+                                            </label>
+                                        </li>
+
+                                        <li class="mood-genre-choice-btn main-genre-8">
+                                            <label for="main-genre-8-check">
+                                                <span>EDM</span>
+                                            </label>
+                                        </li>
+
+                                        <li class="mood-genre-choice-btn main-genre-9">
+                                            <label for="main-genre-9-check">
+                                                <span>Reggae</span>
+                                            </label>
+                                        </li>
+
+                                        <li class="mood-genre-choice-btn main-genre-10">
+                                            <label for="main-genre-10-check">
+                                                <span>rock</span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                
+                                <div class="in-title in-title-mini_ver">
+                                    <h3 class="in-title-name">본인 제작 비트 첨부</h3>
+                                    <span class="in-title-ment">MP3, WAV 파일 첨부</span>
+                                </div>
+                                
+                                <div class="auth-input_form _input-beat">
+                                    <input type="text">
+                                    <button type="button" class="btn btn-certify-mini">파일첨부</button>
+                                </div> 
+
+                                <span class="pd-profile-caution">* 첨부하신 파일은 프로듀서 검수용 확인 후 삭제되며, 운영자 측에서 보관하지 않습니다.</span>
+
+                                <button class="btn btn-complete">프로필 등록 완료</button>
+
+                            </div>
+
+                        </div>
+                        <!-- FIXME: 프로듀서 프로필 등록 첫번째 END -->
+
+                        <!-- FIXME: 회원가입 과정 (분위기 선택 추가) -->
+                        <div class="sub-page-auth sub-page-auth-join__mood-choice">
+
+                            <div class="sub-page-auth-title">
+                                <h2>회원가입</h2>
+                                <span>아티스트 회원가입</span>
+                            </div>
+
+                            <div class="sub-page-auth-panel">
+
+                                <div class="mood-choice-container">
+                                    <h4 class="con_tit">원하시는 비트의 <b>분위기</b>를 선택해주세요.<span>(최대 3개 선택 가능)</span></h4>
+
+                                    <div class="mood-choice-slider" data-mcs-theme="minimal">
+                                        <ul class="mood-choice__group">
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_01.jpg);">
+                                                    <span>격렬</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_02.jpg);">
+                                                    <span>웅장한</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_03.jpg);">
+                                                    <span>긴장</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_04.jpg);">
+                                                    <span>몽환적인</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_05.jpg);">
+                                                    <span>신비</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_06.jpg);">
+                                                    <span>신나는</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_07.jpg);">
+                                                    <span>기쁜</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_08.jpg);">
+                                                    <span>행복</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_09.jpg);">
+                                                    <span>사랑스러운</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_10.jpg);">
+                                                    <span>귀여운</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_11.jpg);">
+                                                    <span>섹시</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_12.jpg);">
+                                                    <span>고독한</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_13.jpg);">
+                                                    <span>경건한</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_14.jpg);">
+                                                    <span>우울한</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_15.jpg);">
+                                                    <span>슬픈</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_16.jpg);">
+                                                    <span>불안한</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_17.jpg);">
+                                                    <span>무서운</span>
+                                                </div>
+                                            </li>
+                                            <li class="mood-choice__list">
+                                                <div class="_bg" style="background-image: url(img/imgs/mood_18.jpg);">
+                                                    <span>차분한</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="btn_group">
+                                    <button class="btn">회원가입 완료</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- FIXME: 회원가입 과정 (분위기 선택 추가) END -->
+
+                        <div class="sub-page-auth sub-page-auth-pd-profile __complete">
+
+                            <div class="sub-page-auth-title">
+                                <h2>프로듀서 프로필 등록</h2>
+                                <span>프로듀서 회원가입</span>
+                            </div>
+
+                            <div class="sub-page-auth-panel">
+
+                                <div class="certify-good">
+                                    <img src="img/icon/certify-good.svg" alt="certify complete">
+                                    <p><b>프로듀서 프로필 등록</b>이 완료되었습니다.</p>
+
+                                    <span>운영자의 프로필 검수 후, 프로듀서 회원 활동이 가능합니다.</span>
+                                </div>
+
+                                <div class="pd-profile-complt">
+
+                                    <figure>
+                                        <figcaption class="none">프로듀서 썸네일</figcaption>
+                                    </figure>
+
+                                    <dl>
+                                        <dt>랄랄라라</dt>
+                                        <dd><b>분위기</b><em>고독한</em><em>경건한</em><em>우울한</em></dd>
+                                        <dd><b>장르</b><em>trap</em><em>trap</em><em>boombap</em><em>R&B</em><em>boombap</em></dd>
+                                    </dl>
+
+                                </div>
+
+                                <button class="btn btn-complete">홈으로</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--TODO:END-->
+
+                </section>
+
+            </div>
+            <!-- //메인 컨텐츠 -->
+            
+        </div>
+
+    </body>
+</html>

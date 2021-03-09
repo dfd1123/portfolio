@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+/* 
+    --------------------------------------------------------------------
+            * sub_page_form_style component *
+            //입력패널 및 입력폼 스타일
+    --------------------------------------------------------------------
+*/
+
+// 공통 - 입력폼스타일에 패널스타일
+
+.sub-page-form-panel {
+  max-width: 600px;
+  border-radius: 30px;
+  border: 1px solid #cccccc;
+  padding: 40px 30px;
+  margin: 0 auto;
+
+  .in-title {
+    font-size: 18px;
+    padding: 0;
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+}
+
+// 공통 - 입력폼스타일에 폼스타일
+
+.sub-input_form {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+
+  &._mail {
+    display: flex;
+
+    input {
+      width: 45%;
+    }
+
+    span {
+      width: 5%;
+      line-height: 45px;
+      color: #727272;
+      font-size: 20px;
+    }
+
+    select {
+      @include inputStyle();
+      width: 50%;
+    }
+  }
+
+  input {
+    @include inputStyle();
+  }
+
+  &._pw-alert {
+    &:after {
+      @include beforeAfterSelector(auto, auto, transparent, $t: 50%, $r: 5px);
+      transform: translateY(-50%);
+      font-size: 14px;
+    }
+
+    &-able {
+      &:after {
+        content: "비밀번호가 일치합니다.";
+        color: rgba(106, 126, 255, 0.8);
+      }
+
+      input {
+        border-color: rgba(106, 126, 255, 0.8);
+      }
+    }
+
+    &-disable {
+      &:after {
+        content: "비밀번호가 일치하지 않습니다.";
+        color: rgba(255, 103, 103, 0.8);
+      }
+
+      input {
+        border-color: rgba(255, 103, 103, 0.8);
+      }
+    }
+  }
+}
+
+// 공통 - 입력폼스타일에 인증 버튼
+
+.btn-certify {
+  @include buttonStyle(5px, 50px, #cccccc, #fff, 1.1rem);
+  width: 160px;
+  display: block;
+  margin-right: auto;
+
+  &-mini {
+    @include buttonStyle(5px, 47px, #cccccc, #fff, 1.1rem);
+    width: 100px;
+    margin: auto;
+
+    &:hover {
+      background-color: #333333;
+    }
+  }
+
+  &.active {
+    @include buttonStyle(5px, 50px, $theme-button01-color, #fff, 1.1rem);
+  }
+
+  &:hover {
+    background-color: #333333;
+  }
+}

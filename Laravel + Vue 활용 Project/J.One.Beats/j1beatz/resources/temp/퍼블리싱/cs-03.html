@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>J1beats-main</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="제이원비츠" />
+        <meta property="og:description" content="제이원비츠 설명입니다." />
+        <!-- ↓오픈그래프 썸네일 이미지는 만들어놨지만, path방식이 아닌 url방식으로 해야 보인다고 하네욤 우선 이미지 경로라도 적어놓겠습니다~ -->
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="음악플랫폼, 제이원비츠">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="scss/j1beat-ui.css">
+
+        <!--TODO:페이지별 css-->
+        <link rel="stylesheet" href="scss/pages/sub-page-cs.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--TODO:END-->
+
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+    
+
+    </head>
+
+    <body>
+
+        <div id="app">
+
+            <!-- 메인 컨텐츠 -->
+            <div id="wrap">
+                
+                <section class="section sub-section">
+
+                    <!--TODO:이용권정보, 장바구니, 고객센터, 마이페이지일 때 j1beatz-hd에 bg_gray_ver 클래스추가-->
+                    <article class="j1beatz-hd bg_gray_ver">
+
+                        <h3 class="none">제목 및 아티스트 및 태그 검색하기</h3>
+
+                        <fieldset class="j1beatz-hd-sch-field">
+                            <input type="text" placeholder="제목/아티스트/#태그 검색">
+                            <button type="button"><span class="none">검색버튼</span></button>
+                        </fieldset>
+
+                        <div class="j1beatz-hd-cs-field">
+                            <h3>고객센터</h3>
+                            <div class="cs-btns">
+                                <a href="#" class="cs-btn cs-btn-blg"><span class="none">블로그</span></a>
+                                <a href="#" class="cs-btn cs-btn-kkt"><span class="none">카카오톡</span></a>
+                                <a href="#" class="cs-btn cs-btn-insta"><span class="none">인스타그램</span></a>
+                                <a href="#" class="cs-btn cs-btn-ytb"><span class="none">유튜브</span></a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <!--TODO:END-->
+                    
+                    <!--TODO:이용권정보, 장바구니, 고객센터, 마이페이지일 때 아래 제목스타일 추가-->
+                    <div class="sub-page-large-title">
+                        <h2 class="sub-page-large-title-name">고객센터</h2>
+                    </div>
+                    <div class="sub-page-large-tab">
+                        <div class="tab-menu tab-menu-alink">
+                            <ul>
+                                <li class="tab-menu-list"><a href="#" role="button">공지사항</a></li>
+                                <li class="tab-menu-list"><a href="#" role="button">FAQ</a></li>
+                                <li class="tab-menu-list active"><a href="#" role="button">1:1문의</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--TODO:END-->
+
+                    <div class="page-contents-wrapper">
+
+                        <div class="sub-page-cs">
+
+                            <section class="sub-page-cs-03">
+
+                                <h3 class="none">1:1문의</h3>
+
+                                <div class="cs-ask-category">
+                                    <label>문의유형</label>
+                                    <select class="select-style">
+                                        <option value="회원가입">회원가입</option>
+                                        <option value="분류1">분류1</option>
+                                        <option value="분류2">분류2</option>
+                                    </select>
+                                </div>
+
+                                <div class="cs-ask-contents">
+                                    <textarea cols="30" rows="8"></textarea>
+                                </div>
+
+                                <div class="cs-ask-input_file">
+
+                                    <button type="button" class="btn btn-input">이미지 첨부</button>
+                                    
+                                    <ul>
+                                        <li class="cs-ask-input_file-list">
+                                            <span>파일명.png</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="cs-ask-caution">
+                                    
+                                    <span class="_caution-img">이미지 파일(jpg,png)를 총 3개까지 첨부 가능합니다.</span>
+                                    <p class="_caution-info">문의하신 내용에 대한 원인파악 및 원활한 상담을 위해 이메일, 휴대폰 번호, 첨부이미지, 문의내용 등을 수집합니다. <br>수집된 개인정보는 문의 내용 처리 및 고객 불만의 해결을 위해 사용되며, 관련 법령에 따라 3년간 보관 후 삭제됩니다.</p>
+
+                                </div>
+
+                                <button type="submit" class="btn btn-complete">문의하기</button>
+
+                                <div class="cs-ask-history">
+
+                                    <div class="in-title">
+                                        <h3 class="in-title-name">나의 문의내역</h3>
+                                        <span class="in-title-right in-title-right-del"><a href="#" role="button">삭제</a></span>
+                                    </div>
+                                    
+                                    <div class="cs-board">
+
+                                        <div class="cs-board-thead">
+
+                                            <span class="_check">
+                                                <input type="checkbox" id="check-all-ask" class="input-style-01">
+                                                <label for="check-all-ask"><span class="none">문의 전체선택</span></label>
+                                            </span>
+                                            <span class="_category">문의유형</span>
+                                            <span class="_subject">문의내용</span>
+                                            <span class="_data">작성일</span>
+                                            <span class="_answer">답변여부</span>
+
+                                        </div>
+
+                                        <div class="cs-board-tab">
+
+                                            <input type="checkbox" name="check-ask-tab" id="check-ask-tab-1" class="none-input">
+
+                                            <label for="check-ask-tab-1" class="_label">
+
+                                                <span class="_check">
+                                                    <input type="checkbox" id="check-this-ask1" class="input-style-01">
+                                                    <label for="check-this-ask1"><span class="none">문의 개별선택</span></label>
+                                                </span>
+                                                <span class="_category">문의유형</span>
+                                                <span class="_subject">1:1문의 제목입니다.</span>
+                                                <span class="_data">2019. 00. 00</span>
+                                                <span class="_answer __no">대기</span>
+
+                                            </label>
+
+                                            <div class="cs-board-tab-view">
+                                                <p class="_contents">1:1문의 내용입니다.</p>
+                                                <div class="_contents answer-contents"><p class="answer_paragraph">1:1문의 답변입니다.</p></div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cs-board-tab">
+
+                                            <input type="checkbox" name="check-ask-tab" id="check-ask-tab-2" class="none-input">
+
+                                            <label for="check-ask-tab-2" class="_label">
+
+                                                <span class="_check">
+                                                    <input type="checkbox" id="check-this-ask2" class="input-style-01">
+                                                    <label for="check-this-ask2"><span class="none">문의 개별선택</span></label>
+                                                </span>
+                                                <span class="_category">문의유형</span>
+                                                <span class="_subject">1:1문의 제목입니다.</span>
+                                                <span class="_data">2019. 00. 00</span>
+                                                <span class="_answer __no">대기</span>
+
+                                            </label>
+
+                                            <div class="cs-board-tab-view">
+                                                <p class="_contents">1:1문의 내용입니다.</p>
+                                                <div class="_contents answer-contents"><p class="answer_paragraph">1:1문의 답변입니다.</p></div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="cs-board-tab">
+
+                                            <input type="checkbox" name="check-ask-tab" id="check-ask-tab-3" class="none-input">
+
+                                            <label for="check-ask-tab-3" class="_label">
+
+                                                <span class="_check">
+                                                    <input type="checkbox" id="check-this-ask3" class="input-style-01">
+                                                    <label for="check-this-ask3"><span class="none">문의 개별선택</span></label>
+                                                </span>
+                                                <span class="_category">문의유형</span>
+                                                <span class="_subject">1:1문의 제목입니다.</span>
+                                                <span class="_data">2019. 00. 00</span>
+                                                <span class="_answer __yes">완료</span>
+
+                                            </label>
+
+                                            <div class="cs-board-tab-view">
+                                                <p class="_contents">1:1문의 내용입니다.</p>
+                                                <div class="_contents answer-contents"><p class="answer_paragraph">1:1문의 답변입니다.</p></div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                        </div>
+                        
+                    </div>
+
+                </section>
+
+            </div>
+            <!-- //메인 컨텐츠 -->
+        
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,225 @@
+/* colors */
+
+$main-color: #00DBD8;
+$bg-01-color: #F4F7F9;
+$navy-color: #00244C;
+$light-blue-color: #CAD4DD;
+$gray-color: #B0B5B9;
+$light-blue-02-color: #99B1CB;
+$border-color: #E1E6EA;
+$darken-mint-color: #00A8AE;
+$sky-blue-color: #00B1DC;
+
+/* font-size */
+
+$parent-normal-font: 18px;
+$small-font: 0.68em;
+$normal-font: 0.9em;
+$normal-small-font: 0.85em;
+
+/* unit */
+
+$hd-title-height: 4.5rem;
+
+/* responsive */
+
+$screen-xsm-min: 325px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin xsm {
+  @media (max-width: #{$screen-xsm-min}) {
+    @content;
+  } 
+}
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  } 
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+/* mix-in */
+
+@mixin mediaCustom($screen) {
+  @media (max-width: $screen+"px") {
+    @content;
+  }
+}
+
+@mixin bgStyle($bgSize) {
+  background-size: $bgSize;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin position(
+  $t: null,
+  $r: null,
+  $b: null,
+  $l: null,
+  $transX: null,
+  $transY: null
+) {
+  position: absolute;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+  transform: translate($transX, $transY);
+}
+ 
+@mixin beforeSelector($width, $height, $bgcolor) {
+  &::before {
+    content: "";
+    width: $width;
+    height: $height;
+    display: inline-block;
+    background: $bgcolor;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@mixin buttonStyle($radius, $height, $font-color, $font-size){
+
+  height: $height;
+  line-height: $height;
+  border: 0;
+  border-radius: $radius;
+  color: $font-color;
+  font-size: $font-size;
+
+}
+
+@mixin navyButton{
+
+    background-color: $navy-color;
+    color: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+
+    &:active{
+        background-color: darken($navy-color, 5%);
+    }
+
+}
+
+@mixin textareaStyle{
+
+    border: 0;
+    box-shadow: none;
+    display: block;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    resize: none;
+    height: 195px;
+    width: 100%;
+    background: linear-gradient(to top, transparent, #d1d1d1 1px, transparent 0px);
+    background-size: unset;
+    outline: none;
+
+}
+
+@mixin textareaStyle02{
+
+    border: 0;
+    box-shadow: none;
+    display: block;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    resize: none;
+    height: 130px;
+    width: 100%;
+    background: linear-gradient(to top, transparent, #00244C 1px, transparent 0px);
+    background-size: unset;
+    outline: none;
+
+}
+
+
+@mixin fontStyle($size: null, $weight: 400, $color: $navy-color){
+
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+
+}
+
+@mixin iosInput{
+
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+
+}
+
+@mixin maxWidth1024{
+
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+
+}
+
+@mixin paddingLeftRight2rem{
+
+  width: 100%;
+  padding: 0 2rem;
+
+}
+
+@mixin scrollArea($height){
+
+    width: 100%;
+    height: $height;
+    overflow-y: scroll;
+
+}
+
+@mixin textOverflow($line){
+
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+@mixin btFixedBtn{
+
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 8rem;
+    text-align: center;
+    padding: 0 2rem;
+    z-index: 5;
+
+}

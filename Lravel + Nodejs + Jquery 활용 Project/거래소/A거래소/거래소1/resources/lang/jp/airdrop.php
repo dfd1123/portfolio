@@ -1,0 +1,37 @@
+<?php
+
+return [
+
+'airdrop' => 'Airdrop管理',
+'airadd' => 'Airdrop管理',
+'title' =>'タイトル',
+'kind' => 'コインの種類',
+'work' => '業務の状況',
+'who' => '誰',
+'join' => '会員登録',
+'otp' => 'OTP認証時',
+'first' => '最初コイン取引時',
+'twice' => '重複支給するかどうか',
+'once' => '一度だけ',
+'jook' => '続き',
+'no' => 'お支払い金額',
+'all' => '全体数',
+'date' => '期間',
+'add' => '期',
+'cancel' => 'キャンセル',
+'wrongdate' => '無効な日付形式です。',
+'airdroplist' => 'Airdropリスト', 
+'moneykind' => '貨幣の種類',
+'ingyeo' => '残りの数量',
+'start' => '開始日',
+'ending' => '終了日',
+'active' => '状態',
+'set' => '設定',
+'soon' => '予定',
+'close' => '終了',
+'mc' => '進行',
+'empty' => 'Airdropが存在しません。',
+'update' => 'に更新された情報です。',
+'edit' => '編集',
+
+];

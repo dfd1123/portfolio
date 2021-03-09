@@ -1,0 +1,368 @@
+/* COMPONENTS - buttons
+   ========================================================================== */
+
+// 버튼 모양
+.rounded-square-btn {
+  @include inline-block;
+  @include form-tag-init($pd: 0 15px, $rounded: 5px);
+  @include font(15px, $w: 400);
+
+  min-width: 104px;
+  height: layoutPc(rounded-square-btn-height);
+  line-height: layoutPc(rounded-square-btn-height);
+  text-align: center;
+  user-select: none;
+}
+
+.rounded-square-xs-btn {
+  @include inline-block;
+  @include form-tag-init($pd: 0 13px, $rounded: 5px);
+  @include font(13px, $w: 400);
+
+  min-width: 70px;
+  height: layoutPc(rounded-square-xs-btn-height);
+  line-height: layoutPc(rounded-square-xs-btn-height);
+  text-align: center;
+  user-select: none;
+}
+
+// 테마(분홍 버튼) 추가삭제가능
+.deletable-btn {
+  @include inline-block;
+  @include set-relative;
+  @include form-tag-init($rounded: 30px, $bg: $secondary-color);
+  @include font(13px);
+
+  cursor: default;
+  height: layoutPc(deletable-btn-height);
+  line-height: layoutPc(deletable-btn-height);
+  min-width: 60px;
+  text-align: left;
+  padding: 0 17px;
+  padding-right: 34px;
+
+  .in-word {
+    @include inline-block;
+    @include set-relative($t: -2px);
+
+    line-height: 1;
+  }
+
+  .icon-del {
+    @include inline-block;
+    @include set-absol-top;
+    @include hover-eft {
+      opacity: 0.8;
+    }
+
+    right: 12px;
+    padding-left: 8px;
+    line-height: 1;
+    cursor: pointer;
+  }
+}
+
+// 팝업버튼
+.square-md-btn {
+  @include inline-block;
+  @include form-tag-init;
+  @include font(16px);
+
+  min-width: 206px;
+  height: layoutPc(square-md-btn-height);
+  line-height: layoutPc(square-md-btn-height);
+  text-align: center;
+  user-select: none;
+}
+
+.square-lg-btn {
+  @include inline-block;
+  @include form-tag-init;
+  @include font(18px);
+
+  min-width: 150px;
+  height: layoutPc(square-lg-btn-height);
+  line-height: layoutPc(square-lg-btn-height);
+  text-align: center;
+  user-select: none;
+
+  &.type-shadow {
+    box-shadow: 0 5px 7px rgba($pink, 0.2);
+  }
+}
+
+.file-download-btn {
+  @include bg-img($path-btn, "btn_down_pink.svg");
+  @include bg-option($s: 12px, $p: calc(100% - 15px) 11px);
+  @include form-tag-init($pd: 5px 55px 11px, $rounded: 5px);
+  @include inline-block;
+  @include set-relative;
+
+  background-color: $gray-lighter-02;
+  border: 1px solid $gray-lighter;
+  min-width: 340px;
+  min-height: 35px;
+  text-align: left;
+  line-height: 1;
+
+  .in-icon {
+    @include set-absolute($t: 11px, $l: 20px);
+
+    user-select: none;
+  }
+
+  .in-filename {
+    @include font(12px, 400, $gray);
+  }
+}
+
+// 버튼컬러
+.btn-theme {
+  background-color: $secondary-color;
+  color: white;
+}
+
+.btn-mild {
+  background-color: $primary-color-02;
+  color: white;
+}
+
+.btn-gray {
+  background-color: $gray;
+  color: white;
+}
+
+.btn-gray-light {
+  background-color: $gray-light-01;
+  color: $gray-md;
+}
+
+.btn-navy {
+  background-color: $primary-color;
+  color: white;
+}
+
+.btn-mint {
+  background-color: $mint;
+  color: white;
+}
+
+.btn-black {
+  background-color: $black;
+  color: white;
+}
+
+.btn-outline-navy {
+  background-color: white;
+  border: 1px solid $purple-dark;
+  color: $purple-dark;
+  font-size: 13px;
+
+  &.type-shadow {
+    box-shadow: 0 4px 6px rgba(black, 0.08);
+  }
+
+  &.rounded-square-xs-btn {
+    line-height: 28px;
+  }
+}
+
+.btn-outline-gray {
+  background-color: white;
+  border: 1px solid $gray-md-02;
+  color: $gray-md;
+}
+
+.btn-outline-gray-md {
+  background-color: white;
+  border: 1px solid $gray-md-04;
+  color: $gray-md-04;
+}
+
+.btn-outline-gray-light {
+  background-color: white;
+  border: 1px solid $gray-lighter;
+  color: $gray-md-03;
+}
+
+.btn-gradient {
+  @include gradient(to left, $primary-gradient-start, $primary-gradient-end);
+  color: white;
+}
+
+// 버튼유형들
+.icon-search-btn {
+  .icon-search {
+    @include set-clearfix;
+    @include set-relative($t: 2px);
+  }
+}
+
+.icon-excel-down-btn {
+  @include bg-img($path-btn, "btn_down_wh.svg");
+  @include bg-option($s: 12px, $p: calc(100% - 15px));
+
+  padding-right: 35px;
+}
+
+.icon-back-btn {
+  @include set-absol-top;
+  @include bg-option(auto, left center);
+  @include bg-img($path-btn, "btn_back.svg");
+
+  left: 0px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+}
+
+.icon-close-btn-wh {
+  @include set-absol-top;
+  @include bg-option(14px, left center);
+  @include bg-img($path-btn, "btn_close_wh.svg");
+
+  right: 0px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+}
+
+.icon-close-btn {
+  @include set-absol-top;
+  @include bg-option(14px, left center);
+  @include bg-img($path-btn, "btn_close.svg");
+
+  right: 0px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+}
+
+._write_popup_btn {
+  @include set-absol-top;
+  @include bg-option(auto, center);
+  @include bg-img($path-btn, "btn_write.svg");
+
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.icon-home-btn {
+  @include bg-option(auto, center);
+  @include bg-img($path-btn, "btn_home.svg");
+
+  display: block;
+  width: 30px;
+  height: 50px;
+  text-indent: -9999px;
+}
+
+.icon-alarm-btn {
+  @include bg-option(auto, center);
+  @include bg-img($path-btn, "btn_alarm.svg");
+
+  display: block;
+  width: 30px;
+  height: 50px;
+  text-indent: -9999px;
+
+  &.active {
+    @include bg-img($path-btn, "btn_alarm_new.svg");
+  }
+}
+
+.icon-contact-btn {
+  @include bg-option(auto, center);
+  @include bg-img($path-btn, "btn_contact.svg");
+
+  display: block;
+  width: 30px;
+  height: 50px;
+  text-indent: -9999px;
+
+  &.active {
+    @include bg-img($path-btn, "btn_contact_new.svg");
+  }
+}
+
+.go-top-btn {
+  @include set-fixed($b: 15px, $r: 15px);
+  @include bg-img($path-btn, "btn_top.svg");
+  @include bg-option(auto, center);
+
+  width: 42px;
+  height: 42px;
+  border: 1px solid $gray-lighter-02;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: white;
+  text-indent: -9999px;
+}
+
+.sales-stat-down-btn {
+  @include bg-img($path-btn, "btn_down_pink.svg");
+  @include bg-option(auto, right center);
+
+  text-indent: -9999px;
+}
+
+.more-view-btn {
+  @include inline-block;
+  @include form-tag-init($pd: 0 15px, $rounded: 5px);
+  @include font(15px, $w: 400);
+
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  color: #3c3c64;
+  margin: 10px auto;
+  box-shadow: 0 4px 6px rgba(black, 0.07);
+  user-select: none;
+
+  .in-arrow-icon {
+    @include inline-block;
+
+    width: 12px;
+    margin-right: 5px;
+  }
+
+  span {
+    @include inline-block;
+  }
+}
+
+
+/* 더보기 버튼 20-03-31 */
+.view-more-btn {
+  margin: 0px;
+  border-top: 1px solid $gray-lighter;
+  > button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 0px none;
+    outline: none;
+    background-color: white;
+    font-size: $em-11px;
+    color: $gray-md-03;
+    text-align: center;
+    user-select: none;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .more-view-btn {
+    display: block;
+    max-width: 90%;
+  }
+}

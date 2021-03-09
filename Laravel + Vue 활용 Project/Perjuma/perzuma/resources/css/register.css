@@ -1,0 +1,134 @@
+.estimate_request_wrap{
+    width:100%;
+}
+.sqm_wrap{
+    padding: 1rem 0 0 0;
+}
+.request_box{
+    width:85%;
+    margin:0 auto;
+    background:#fff;
+    margin-bottom: 1em;
+}
+.request_box p{
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    margin-bottom: 0.7em;
+    font-size: 1em;
+    color: #a0a5af;
+}
+.request_box p em{
+    font-size:11px;
+    margin-left:10px;
+}
+
+.input_div{
+    width: 100%;
+    padding: 0 0.1em;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.input_div input{
+    border: none;
+    width: 100%;
+    font-size: 0.95em;
+    color: #a0a5af;
+    border-bottom: #d5dcea 1px solid;
+    padding: 0.6em 0.4em;
+    box-sizing: border-box;
+    outline:none;
+}
+
+.input_div .title{
+    color: #939aa7;
+}
+.input_div .name{
+    border:none;
+    background: transparent;
+    width:100%;
+}
+.input_div .name:focus{
+    border-bottom:1px solid #a0a5af !important;
+}
+
+.input_div .blue_button{
+    float: right;
+    color: #00a2ff;
+    border: none;
+    background-color: transparent;
+    font-size: 0.8em;
+    position: absolute;
+    top: 1em;
+    right: 0.3em;
+    z-index: 1;
+    outline:none;
+}
+.input_div .gray_button{
+    color: #a0a5af;
+    border: none;
+    background-color: transparent;
+    font-size: 0.9em;
+    position: absolute;
+    top: 1em;
+    right: 0.5em;
+    z-index: 1;
+}
+.request_box .certification_ment{
+    text-align:right;
+    font-size:11px;
+    margin:0 28px;
+    width:auto;
+    padding:5px 0;
+    min-width: inherit;
+}
+
+.regist1_div{
+        width:100%;
+        background:#fff;
+        padding: 1.5em 0;
+}
+.regist1_div p{
+    width: 84%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto 12px;
+    color: #a0a5af;
+}
+.regist1_div span{
+    color:#939aa7;
+}
+.add_img_wrap .title{
+    color:#939aa7;
+    font-size:15px;
+    min-width: inherit;
+    margin:0 0 10px 0;
+}
+.add_img_wrap .content{
+    color:#bbbbbb;
+    font-size:12px;
+    min-width: inherit;
+    margin:0;
+}
+
+#sub_hd{
+    background:#fff;
+    border-bottom:1px solid #e8e8e8;
+}
+
+#sub_hd .center_hd h1{
+    color:#007bd2;
+}
+
+#sub_hd .left_hd{
+    display:none;
+}
+
+#sub_hd .right_hd{
+    background: url(/images/btn_close_bl.svg) no-repeat;
+    background-position: center center;
+    background-size: 1.8em;
+    width: 1.3em;
+    height: 1.3em;
+}

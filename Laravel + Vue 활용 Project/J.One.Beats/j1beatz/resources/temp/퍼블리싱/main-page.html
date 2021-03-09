@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>J1beats-main</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"
+    />
+
+    <!-- Open graph -->
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="제이원비츠" />
+    <meta property="og:description" content="제이원비츠 설명입니다." />
+    <!-- ↓오픈그래프 썸네일 이미지는 만들어놨지만, path방식이 아닌 url방식으로 해야 보인다고 하네욤 우선 이미지 경로라도 적어놓겠습니다~ -->
+    <meta property="og:image" content="img/meta_image.png" />
+    <meta name="keyword" content="음악플랫폼, 제이원비츠" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="scss/j1beat-ui.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <!-- FIXME: swiper css 삽입 -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- END FIXME: swiper css 삽입 -->
+
+    <!--TODO:페이지별 css-->
+    <link rel="stylesheet" href="scss/pages/main-page.css" />
+    <!--TODO:END-->
+
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- 공통 js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <!-- FIXME: swiper js 삽입 -->
+    <script src="js/swiper.min.js"></script>
+    <!-- END FIXME: swiper js 삽입 -->
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- 좌측고정 네비게이션 -->
+      <input type="checkbox" id="check-header-btn" class="none-input" />
+      <header id="header" class="header">
+        <h1 class="logo">
+          <a href="#">
+            <img src="img/logo/logo_dark.svg" alt="j1beats logo" />
+          </a>
+        </h1>
+
+        <div class="header-scroll-area">
+          <div id="gnb01" class="gnb01">
+            <nav id="gnb1_navigation" class="gnb01-nav">
+              <ul>
+                <li class="gnb01-list active-msg">
+                  <a href="#">
+                    <span class="icon btn_01_mypage"></span>
+                    <span class="tt">마이페이지</span>
+                  </a>
+                </li>
+                <li class="gnb01-list">
+                  <a href="#">
+                    <span class="icon btn_02_cart"></span>
+                    <span class="tt">장바구니</span>
+                  </a>
+                </li>
+                <li class="gnb01-list">
+                  <a href="#">
+                    <span class="icon btn_03_follow"></span>
+                    <span class="tt">팔로우</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="gnb01-lnb">
+              <!-- 마이페이지 -->
+              <div class="gnb01-lnb-con __mypage">
+                <!-- CASE 1) 비회원인 경우 -->
+                <div class="case_1" style="display: none;">
+                  <a href="#" class="btn btn-01" role="button">로그인</a>
+                  <ul class="lnb01 before_login">
+                    <li><a href="#" role="button">회원가입</a></li>
+                    <li><a href="#" role="button">이용권 정보</a></li>
+                  </ul>
+                </div>
+                <!-- end CASE 1 -->
+
+                <!-- CASE 2) 회원인 경우 -->
+                <div class="case_2">
+                  <div class="my_info">
+                    <p class="my_id">j1beatz@j1beatz.com</p>
+                    <div class="my_using">
+                      사용중인 이용권이 없습니다.<br />
+                      <button type="button" class="btn">이용권 구매하기</button>
+                    </div>
+                  </div>
+                  <ul class="lnb01 after_login">
+                    <li><a href="#">이용권 관리</a></li>
+                    <li><a href="#">주문내역</a></li>
+                    <li><a href="#">마이앨범</a></li>
+                    <li><a href="#">이벤트/쿠폰</a></li>
+                    <li class="active-msg"><a href="#">알림 메세지</a></li>
+                    <li><a href="#">나의 정보관리</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                  </ul>
+                </div>
+                <!-- end CASE 2 -->
+              </div>
+              <!-- end 마이페이지 -->
+
+              <!-- 장바구니 -->
+              <div class="gnb01-lnb-con __cart">
+                <!-- CASE 1) 장바구니 물량없을 떄 -->
+                <div class="case_1" style="display: none;">
+                  <span>담은 곡이 없습니다.</span>
+                </div>
+                <!-- end CASE 1 -->
+
+                <!-- CASE 2 ) 장바구니 담겼을 때 -->
+                <div class="case_2">
+                  <div class="more_info">
+                    <span class="left">총 <em>5</em>곡</span>
+                    <span class="right"
+                      ><a href="./cart-01.html">자세히 ></a></span
+                    >
+                  </div>
+                  <ul class="lnb02 beat-ul">
+                    <li class="beat-ul-list">
+                      <input
+                        type="checkbox"
+                        id="check-orderlist1"
+                        class="input-style-02"
+                      />
+                      <label for="check-orderlist1">
+                        <span class="none">장바구니 리스트 담기</span>
+                      </label>
+                      <label>
+                        <img
+                          src="img/example/ex_fliker.jpg"
+                          alt="thumnail image"
+                          class="thumb-mini"
+                          style="background-image: url(img/example/ex_fliker.jpg);"
+                        />
+                        <span class="song_title">fliker (Feat.EK)</span>
+                        <small>odee</small>
+                      </label>
+                    </li>
+                    <li class="beat-ul-list">
+                      <input
+                        type="checkbox"
+                        id="check-orderlist2"
+                        class="input-style-02"
+                      />
+                      <label for="check-orderlist2">
+                        <span class="none">장바구니 리스트 담기</span>
+                      </label>
+                      <label>
+                        <img
+                          src="img/example/ex_fliker.jpg"
+                          alt="thumnail image"
+                          class="thumb-mini"
+                          style="background-image: url(img/example/ex_fliker.jpg);"
+                        />
+                        <span class="song_title">fliker (Feat.EK)</span>
+                        <small>odee</small>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <input type="button" class="btn btn-02" value="선택삭제" />
+                    <a href="#" class="btn btn-01" role="button">선택구매</a>
+                  </div>
+                </div>
+                <!-- end CASE 2 -->
+              </div>
+              <!-- end 장바구니 -->
+
+              <!-- 팔로우 -->
+              <div class="gnb01-lnb-con __flw">
+                <!-- CASE 1 ) 프로듀서 없을 때 -->
+                <div class="pd_no" style="display: none;">
+                  <span>팔로우한 프로듀서가 없습니다.</span>
+                </div>
+                <!-- end CASE 1 -->
+
+                <!-- CASE 2 ) 프로듀서 있을 때 -->
+                <div class="pd_yes">
+                  <div class="more_info">
+                    <span class="left">총 <em>5</em>명의 프로듀서</span>
+                  </div>
+                  <ul class="lnb02">
+                    <li>
+                      <a href="#">
+                        <img
+                          src="img/example/ex_fliker.jpg"
+                          alt="thumnail image"
+                          class="thumb-mini"
+                          style="background-image: url(img/example/ex_fliker.jpg);"
+                        />
+                        <span class="pd_name">fliker (Feat.EK)</span>
+                      </a>
+                    </li>
+                    <li class="active-new">
+                      <a href="#">
+                        <img
+                          src="img/example/ex_fliker.jpg"
+                          alt="thumnail image"
+                          class="thumb-mini"
+                          style="background-image: url(img/example/ex_fliker.jpg);"
+                        />
+                        <span class="pd_name">fliker (Feat.EK)</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="img/example/ex_fliker.jpg"
+                          alt="thumnail image"
+                          class="thumb-mini"
+                          style="background-image: url(img/example/ex_fliker.jpg);"
+                        />
+                        <span class="pd_name">fliker (Feat.EK)</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="img/example/ex_fliker.jpg"
+                          alt="thumnail image"
+                          class="thumb-mini"
+                          style="background-image: url(img/example/ex_fliker.jpg);"
+                        />
+                        <span class="pd_name">fliker (Feat.EK)</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="img/example/ex_fliker.jpg"
+                          alt="thumnail image"
+                          class="thumb-mini"
+                          style="background-image: url(img/example/ex_fliker.jpg);"
+                        />
+                        <span class="pd_name">fliker (Feat.EK)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end CASE 2 -->
+              </div>
+            </div>
+          </div>
+
+          <div class="gnb02">
+            <nav class="gnb02-nav">
+              <ul>
+                <li class="gnb02-list">
+                  <a href="#">실시간 TOP 100</a>
+                </li>
+
+                <li class="gnb02-list gnb02-list-more">
+                  <input type="checkbox" id="mood_check" class="none-input" />
+                  <label for="mood_check">분위기</label>
+                  <ul
+                    class="gnb02-lnb _scroll-area"
+                    id="lnb_mood"
+                    data-mcs-theme="minimal"
+                  ></ul>
+                </li>
+
+                <li class="gnb02-list gnb02-list-more">
+                  <input type="checkbox" id="genre_check" class="none-input" />
+                  <label for="genre_check">장르</label>
+                  <ul
+                    class="gnb02-lnb _scroll-area"
+                    id="lnb_genre"
+                    data-mcs-theme="minimal"
+                  ></ul>
+                </li>
+
+                <li class="gnb02-list">
+                  <a href="#">프로듀서</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <label for="check-header-btn" class="header-btn">
+          <img src="img/btn/btn-header-menu.svg" alt="header menu ribbon" />
+        </label>
+      </header>
+      <!-- //좌측고정 네비게이션 -->
+
+      <!-- 우측고정 재생목록 -->
+      <aside id="playlist" class="playlist">
+        <button class="ctrl-btn ctrl-btn-close" type="button">
+          <span class="none">닫기버튼</span>
+        </button>
+
+        <h2>재생목록<a href="#" role="button">편집취소</a></h2>
+
+        <div class="playlist-sch-bar">
+          <fieldset>
+            <input type="text" placeholder="재생목록 검색" />
+            <button type="button" class="btn-sch-icon">
+              <span class="none">검색버튼</span>
+            </button>
+          </fieldset>
+          <span class="right_edit">편집</span>
+        </div>
+
+        <div class="playlist-del-bar">
+          <fieldset>
+            <input type="checkbox" id="check-all-list" class="input-style-01" />
+            <label for="check-all-list"
+              ><span class="none">곡 전체선택</span></label
+            >
+            <label for="check-all-list">선택</label>
+
+            <a href="#" role="button">완료</a>
+          </fieldset>
+        </div>
+
+        <div class="playlist-inner">
+          <section class="playlist-inner-wrapper">
+            <h3 class="none">플레이리스트</h3>
+
+            <ul
+              class="playlist-inner-container beat-ul"
+              id="playlist_container"
+            >
+              <li class="beat-ul-list">
+                <input
+                  type="checkbox"
+                  id="check-this-list1"
+                  class="input-style-01"
+                />
+                <label for="check-this-list1"></label>
+                <!-- 썸네일, 제목, 가수 -->
+                <div class="thumb-mini-outer">
+                  <img src="img/example/ex_fliker.jpg" alt="thumnail image" />
+                </div>
+                <span class="song_title">fliker (Feat.EK)</span>
+                <small>odee</small>
+                <!-- 썸네일, 제목, 가수 end -->
+
+                <!-- 앨범추가버튼, 구매버튼 -->
+                <div class="mini-btns">
+                  <span class="mini-btn mini-album-btn">
+                    <em class="none">앨범담기</em>
+                  </span>
+                  <span class="mini-btn mini-buy-btn">
+                    <em class="none">구매하기</em>
+                  </span>
+                </div>
+                <!-- 앨범추가버튼, 구매버튼 end -->
+
+                <!-- 더보기버튼 -->
+                <div class="mini-btn mini-dot3-btn">
+                  <em class="none">더보기</em>
+                  <span class="beat-pd-info-view">
+                    <a href="#">비트정보</a>
+                    <a href="#">프로듀서 정보</a>
+                  </span>
+                </div>
+                <!-- 더보기버튼 end -->
+
+                <div class="del-btn">
+                  <em class="none">삭제하기</em>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+      <!-- //우측고정 재생목록 -->
+
+      <!-- 메인 컨텐츠 -->
+      <div id="wrap">
+        <!--TODO:메인일때는 main-section / 서브일때는 sub-section-->
+        <section role="main" class="section main-section">
+          <article class="j1beatz-hd">
+            <h3 class="none">제목 및 아티스트 및 태그 검색하기</h3>
+
+            <fieldset class="j1beatz-hd-sch-field">
+              <input type="text" placeholder="제목/아티스트/#태그 검색" />
+              <button type="button"><span class="none">검색버튼</span></button>
+            </fieldset>
+
+            <div class="j1beatz-hd-cs-field">
+              <h3>고객센터</h3>
+              <div class="cs-btns">
+                <a href="#" class="cs-btn cs-btn-blg"
+                  ><span class="none">블로그</span></a
+                >
+                <a href="#" class="cs-btn cs-btn-kkt"
+                  ><span class="none">카카오톡</span></a
+                >
+                <a href="#" class="cs-btn cs-btn-insta"
+                  ><span class="none">인스타그램</span></a
+                >
+                <a href="#" class="cs-btn cs-btn-ytb"
+                  ><span class="none">유튜브</span></a
+                >
+              </div>
+            </div>
+          </article>
+
+          <div class="page-contents-wrapper">
+            <article class="main-panel-article">
+              <h3 class="none">광고 배너 리스트</h3>
+
+              <ul class="main-panel-advertise" id="advertise-slick">
+                <li class="_list">
+                  <div
+                    class="_banner"
+                    style="background-image: url(img/imgs/j1_banner.png);"
+                  ></div>
+                </li>
+                <li class="_list">
+                  <div
+                    class="_banner"
+                    style="background-image: url(img/imgs/j1_banner.png);"
+                  ></div>
+                </li>
+                <li class="_list">
+                  <div
+                    class="_banner"
+                    style="background-image: url(img/imgs/j1_banner.png);"
+                  ></div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="main-panel-article">
+              <div class="in-title">
+                <h3 class="in-title-name">분위기</h3>
+                <span class="in-title-ment">총 3개까지 선택가능합니다.</span>
+                <span class="in-title-right">편집</span>
+              </div>
+
+              <!-- FIXME: swiper에 맞게 html 구조수정 -->
+              <div class="swiper-container main-panel-choice_mood__wrapper">
+                  <ul class="main-panel-choice_mood swiper-wrapper" id="mood-slick">
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_01.jpg);" class="main-panel-choice_mood__div">
+                        <span>격렬</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_02.jpg);" class="main-panel-choice_mood__div">
+                        <span>웅장한</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_03.jpg);" class="main-panel-choice_mood__div">
+                        <span>긴장</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_04.jpg);" class="main-panel-choice_mood__div">
+                        <span>몽환적인</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_05.jpg);" class="main-panel-choice_mood__div">
+                        <span>신비</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_06.jpg);" class="main-panel-choice_mood__div">
+                        <span>신나는</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_07.jpg);" class="main-panel-choice_mood__div">
+                        <span>기쁜</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_08.jpg);" class="main-panel-choice_mood__div">
+                        <span>행복</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_09.jpg);" class="main-panel-choice_mood__div">
+                        <span>사랑스러운</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_10.jpg);" class="main-panel-choice_mood__div">
+                        <span>귀여운</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_11.jpg);" class="main-panel-choice_mood__div">
+                        <span>섹시</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_12.jpg);" class="main-panel-choice_mood__div">
+                        <span>고독한</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_13.jpg);" class="main-panel-choice_mood__div">
+                        <span>경건한</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_14.jpg);" class="main-panel-choice_mood__div">
+                        <span>우울한</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_15.jpg);" class="main-panel-choice_mood__div">
+                        <span>슬픈</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_16.jpg);" class="main-panel-choice_mood__div">
+                        <span>불안한</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_17.jpg);" class="main-panel-choice_mood__div">
+                        <span>무서운</span>
+                      </div>
+                    </li>
+                    <li class="swiper-slide main-panel-choice_mood__list">
+                      <div style="background-image: url(img/imgs/mood_18.jpg);" class="main-panel-choice_mood__div">
+                        <span>차불한</span>
+                      </div>
+                    </li>
+                  </ul>
+              </div>
+              <!-- END FIXME: swiper에 맞게 html 구조수정 -->
+            </article>
+
+            <article class="main-panel-article">
+              <div class="in-title">
+                <h3 class="in-title-name">분위기별 top 50</h3>
+                <span class="in_choice_mood">웅장한</span>
+                <span class="in_choice_mood">몽환적인</span>
+              </div>
+
+              <div class="beat_chart_list">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="th-check">
+                        <div>
+                          <input
+                            type="checkbox"
+                            title="곡 전체선택"
+                            id="check-all-song"
+                            class="input-style-01"
+                          />
+                          <label for="check-all-song">
+                            <span class="none">곡 전체선택하기</span>
+                          </label>
+                        </div>
+                      </th>
+                      <th class="th-rank">
+                        <div>순위</div>
+                      </th>
+                      <th class="th-rank_info">
+                        <div class="none">상승/하락폭</div>
+                      </th>
+                      <th class="th-song">
+                        <div>곡</div>
+                      </th>
+                      <th class="th-pd">
+                        <div>프로듀서</div>
+                      </th>
+                      <th class="th-mood">
+                        <div>분위기</div>
+                      </th>
+                      <th class="th-genre">
+                        <div>장르</div>
+                      </th>
+                      <th class="th-play">
+                        <div>듣기</div>
+                      </th>
+                      <th class="th-list">
+                        <div>재생목록</div>
+                      </th>
+                      <th class="th-share">
+                        <div>공유</div>
+                      </th>
+                      <th class="th-like">
+                        <div>좋아요</div>
+                      </th>
+                      <th class="th-more">
+                        <div>더보기</div>
+                      </th>
+                      <th class="th-cart">
+                        <div>장바구니</div>
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+
+                <div class="chart_scroll_area">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="td-check">
+                          <div>
+                            <input
+                              type="checkbox"
+                              title="곡 개별선택"
+                              id="check-each-song1"
+                              class="input-style-01"
+                            />
+                            <label for="check-each-song1">
+                              <span class="none">곡 개별선택하기</span>
+                            </label>
+                          </div>
+                        </td>
+                        <td class="td-rank">
+                          <div>1</div>
+                        </td>
+                        <td class="td-rank_info">
+                          <div>-</div>
+                        </td>
+                        <td class="td-song">
+                          <div class="c-song-title">
+                            <span
+                              class="thumb-mini"
+                              style="background-image: url(img/example/ex_fliker.jpg);"
+                              ><span class="none">썸네일</span></span
+                            >
+                            <span>music title</span>
+                          </div>
+                        </td>
+                        <td class="td-pd">
+                          <div>producer name</div>
+                        </td>
+                        <td class="td-mood">
+                          <div>격렬한</div>
+                        </td>
+                        <td class="td-genre">
+                          <div>Boombap</div>
+                        </td>
+                        <td class="td-play">
+                          <button
+                            type="button"
+                            class="chart-ctrl-btn chart-ctrl-btn-play"
+                          >
+                            <span class="none">듣기 재생</span>
+                          </button>
+                        </td>
+                        <td class="td-list">
+                          <button
+                            type="button"
+                            class="chart-ctrl-btn chart-ctrl-btn-list"
+                          >
+                            <span class="none">재생목록 담기</span>
+                          </button>
+                        </td>
+                        <td class="td-share">
+                          <button
+                            type="button"
+                            class="chart-ctrl-btn chart-ctrl-btn-share"
+                          >
+                            <span class="none">공유</span>
+                          </button>
+                        </td>
+                        <td class="td-like">
+                          <div>
+                            <button
+                              type="button"
+                              class="chart-ctrl-btn chart-ctrl-btn-like"
+                            >
+                              <span class="none">좋아요</span>
+                            </button>
+                            <em>100</em>
+                          </div>
+                        </td>
+                        <td class="td-more">
+                          <div>
+                            <!-- 더보기버튼 -->
+                            <button
+                              type="button"
+                              class="chart-ctrl-btn chart-ctrl-btn-more"
+                            >
+                              <span class="none">더보기</span>
+                            </button>
+                            <span class="beat-pd-info-view">
+                              <a href="#">비트정보</a>
+                              <a href="#">프로듀서 정보</a>
+                            </span>
+                            <!-- 더보기버튼 end -->
+                          </div>
+                        </td>
+                        <td class="td-cart">
+                          <div>
+                            <button type="button" class="chart-ctrl-btn-cart">
+                              <span class="none">가격</span>
+                              <span class="chart-ctrl-btn"></span>
+                              <b>23,000</b>원
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+
+            <article class="main-panel-article">
+              <div class="in-title">
+                <h3 class="in-title-name">프로듀서 best 10</h3>
+                <span class="in-title-right in-title-right-more-dark"
+                  ><a href="#" role="button">전체보기 ></a></span
+                >
+              </div>
+
+              <div class="producer-container swiper-container">
+                <ul
+                  class="main-panel-producer_list _slick_panel swiper-wrapper"
+                >
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="producer-card swiper-slide">
+                    <a href="#">
+                      <div
+                        class="producer-card-thumbnail"
+                        style="background-image: url(img/imgs/img_producer.jpeg);"
+                      >
+                        <span class="none">프로듀서 썸네일</span>
+                        <span class="producer-card-ranking"></span>
+                      </div>
+                      <p class="producer-card-name">producer name</p>
+                      <ul class="producer-card-summing_up">
+                        <li>
+                          <b>like</b>
+                          <em>3k</em>
+                        </li>
+                        <li>
+                          <b>follow</b>
+                          <em>300</em>
+                        </li>
+                        <li>
+                          <b>buy</b>
+                          <em>2347</em>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
+                
+                <div class="swiper-button swiper-button-next"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+              </div>
+            </article>
+          </div>
+
+          <article class="j1beatz-ft">
+            <footer class="j1beatz-ft-inner">
+              <h4>제이원비츠<br />j1beatz</h4>
+              <address>
+                <span>대표 김형민, 박지석</span>
+                <span>사업자등록번호 803-02-01042</span>
+                <span>주소 서울특별시 강북구 도봉로 369, 4층 9-31호</span>
+                <span>Mail j1beatz@naver.com</span>
+              </address>
+              <small>Copyrightⓒ J1BEATZ All right reserved</small>
+            </footer>
+          </article>
+        </section>
+        <!--TODO:END 메인일때는 main-section / 서브일때는 sub-section-->
+      </div>
+      <!-- //메인 컨텐츠 -->
+
+      <!-- 하단고정 재생바 -->
+      <div id="playbar" class="playbar">
+        <section class="playbar-inner">
+          <h3 class="none">재생하기</h3>
+
+          <div class="playbar-info01">
+            <div
+              class="thumb"
+              style="background-image: url(img/example/ex_fliker.jpg)"
+            >
+              <span class="none">앨범제목</span>
+            </div>
+            <div class="title_singer_info">
+              <p class="title">Flicker (Feat.EK)</p>
+              <p class="artist">ODEE</p>
+            </div>
+          </div>
+
+          <div class="playbar-control-area">
+            <div class="playbar-btns">
+              <button type="button" class="ctrl-btn-repeat ctrl-btn">
+                <span class="none">반복 재생</span>
+              </button>
+              <button type="button" class="ctrl-btn-prv-play ctrl-btn">
+                <span class="none">이전곡 재생</span>
+              </button>
+              <button type="button" class="ctrl-btn-list-play ctrl-btn">
+                <span class="none">현재곡 재생</span>
+              </button>
+              <button type="button" class="ctrl-btn-next-play ctrl-btn">
+                <span class="none">다음곡 재생</span>
+              </button>
+              <button type="button" class="ctrl-btn-shuffle ctrl-btn">
+                <span class="none">셔틀 설정</span>
+              </button>
+            </div>
+            <div class="playbar-time">
+              <span class="current_time time">00:00</span>
+              <div class="playbar-time-progress-range">
+                <input type="range" min="0" max="100" value="0" />
+                <span
+                  class="playbar-time-progress-bar"
+                  style="width: 10%;"
+                ></span>
+              </div>
+              <span class="all_time time">00:00</span>
+            </div>
+          </div>
+
+          <div class="playbar-info02">
+            <button type="button" class="ctrl-btn-like-song ctrl-btn"></button>
+            <button
+              type="button"
+              class="ctrl-btn-volume-ctrl ctrl-btn"
+            ></button>
+            <button type="button" class="ctrl-btn-show-list ctrl-btn"></button>
+            <button type="button" class="btn-buy btn btn-01">구매하기</button>
+            <span class="volume-ctrl-panel">
+                <span class="volume-ctrl-panel__inner">
+                    <input type="range" min="0" max="100" value="0" />
+                    <span class="volume-ctrl-progress-bar" style="width: 10%;"></span>
+                </span>
+            </span>
+          </div>
+        </section>
+
+        <div class="playbar-option-bar option-bar">
+          <div class="option-disable">
+            <p>
+              <b>사용중인 이용권이 없습니다.</b><br /><span
+                >이용권을 구매하여 전곡을 감상해보세요.</span
+              >
+            </p>
+            <button type="button" class="btn _buy_btn">이용권 구매하기</button>
+            <button type="button" class="_x_btn">X</button>
+          </div>
+
+          <div class="option-able">
+            <span class="option-total-song-amount"><b>100</b>곡</span>
+            <button type="button" class="option-btn option-btn-all_no">
+              전체해제
+            </button>
+            <button type="button" class="option-btn option-btn-play">
+              듣기
+            </button>
+            <button type="button" class="option-btn option-btn-list">
+              재생목록
+            </button>
+            <button type="button" class="option-btn option-btn-cart">
+              장바구니
+            </button>
+            <button type="button" class="option-btn option-btn-share">
+              공유하기
+            </button>
+            <button type="button" class="option-btn option-btn-album">
+              마이앨범
+            </button>
+          </div>
+        </div>
+
+        <div class="playlist-option-bar option-bar">
+          <div class="option-able">
+            <span class="option-total-song-amount"><b>100</b>곡</span>
+            <button type="button" class="option-btn option-btn-all_no">
+              전체해제
+            </button>
+            <button type="button" class="option-btn option-btn-cart">
+              장바구니
+            </button>
+            <button type="button" class="option-btn option-btn-del">
+              선택삭제
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- //하단고정 재생바 -->
+
+      <!-- 팝업 레이어 -->
+      <div class="black-overlay"></div>
+      <div class="popup-layer">
+        <!-- <div class="popup-login popup-01">
+                    <h4 class="none">로그인 권유 팝업</h4>
+                    <div class="popup-layer-txt"><b>로그인</b>이 필요한 서비스입니다.<br>로그인 하시겠습니까?</div>
+                    <div class="btn-group _double">
+                        <button type="button" class="btn btn-02">취소</button>
+                        <button type="button" class="btn btn-01">로그인하기</button>
+                    </div>
+                    <button type="button" class="popup-layer-close-btn"><span class="none">팝업 닫기버튼</span></button>
+                </div> -->
+
+        <!-- 아이디찾기 경고 -->
+        <!-- <div class="popup-findid popup-01">
+                    <h4 class="popup-layer-title">아이디 찾기</h4>
+                    <div class="popup-layer-txt">제이원비츠에 등록되지 않은 회원정보입니다.<br>등록된 정보를 정확하게 입력해주세요.</div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-01">확인</button>
+                    </div>
+                    <button type="button" class="popup-layer-close-btn"><span class="none">팝업 닫기버튼</span></button>
+                </div> -->
+
+        <!-- 이메일인증 확인  -->
+        <!-- <div class="popup-mailcertify popup-01">
+                    <h4 class="popup-layer-title">이메일 인증</h4>
+                    <div class="member-mail-guide">
+                        <p>j1beatz@naver.com</p>
+                    </div>
+                    <div class="popup-layer-txt _small">입력하신 이메일로 인증메일이 전송되었습니다.<br>전송된 메일에서 인증완료 버튼을 누르시면 인증이 완료됩니다.</div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-01">확인</button>
+                    </div>
+                    <button type="button" class="popup-layer-close-btn"><span class="none">팝업 닫기버튼</span></button>
+                </div> -->
+
+        <!-- 1:1문의 삭제 확인 -->
+        <!-- <div class="popup-del_ask popup-01">
+                    <h4 class="popup-layer-title">1:1 문의</h4>
+                    <div class="popup-layer-txt">선택한 나의 문의내역을<br>삭제하시겠습니까?</div>
+                    <div class="btn-group _double">
+                        <button type="button" class="btn btn-02">취소</button>
+                        <button type="button" class="btn btn-01">삭제하기</button>
+                    </div>
+                    <button type="button" class="popup-layer-close-btn"><span class="none">팝업 닫기버튼</span></button>
+                </div> -->
+
+        <!-- 중복검사 경고 -->
+        <!-- <div class="popup-doublecheck popup-01">
+                    <h4 class="popup-layer-title">중복검사</h4>
+                    <div class="popup-layer-txt">중복된 활동명입니다.<br>새로운 활동명을 입력하세요.</div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-01">확인</button>
+                    </div>
+                    <button type="button" class="popup-layer-close-btn"><span class="none">팝업 닫기버튼</span></button>
+                </div> -->
+
+        <!-- 프로듀서 등록 검수 경고 -->
+        <!-- <div class="popup-pdenrollcheck popup-01">
+                    <h4 class="none">프로듀서 등록 검수 진행 중</h4>
+                    <div class="popup-layer-txt"><b>닉네임</b>&nbsp;<b>님</b>은 현재<br>프로듀서 등록 검수 진행 중입니다.</div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-01">확인</button>
+                    </div>
+                    <button type="button" class="popup-layer-close-btn"><span class="none">팝업 닫기버튼</span></button>
+                </div> -->
+
+        <!-- 마이앨범 등록 -->
+        <!-- <div class="popup-myalbumchoice popup-01">
+          <h4 class="popup-layer-title">마이앨범</h4>
+          <div class="popup-layer-txt">
+            <div class="label-select-group">
+              <span class="select-folder-label">폴더선택</span>
+              <div class="select-folder">
+                <label for="check-show-folder-list" class="_label">
+                  <em>폴더명</em>
+                </label>
+
+                <input
+                  type="checkbox"
+                  id="check-show-folder-list"
+                  class="none-input"
+                />
+                <ul class="select-folder-group">
+                  <li class="select-folder-list">폴더명</li>
+                  <li class="select-folder-list">폴더명</li>
+                  <li class="select-folder-list">폴더명</li>
+                  <li class="select-folder-list _create_btn">
+                    + 새 폴더 만들기
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="label-select-group">
+              <span class="select-folder-label">새 폴더</span>
+              <div class="select-folder">
+                <input
+                  type="text"
+                  placeholder="폴더명을 입력하세요."
+                  class="_input"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="btn-group _double">
+            <button type="button" class="btn btn-02">취소</button>
+            <button type="button" class="btn btn-01">추가하기</button>
+          </div>
+          <button type="button" class="popup-layer-close-btn">
+            <span class="none">팝업 닫기버튼</span>
+          </button>
+        </div> -->
+
+        <!-- 이용권 정보 팝업 -->
+        <!-- <div class="popup-ticketinfo popup-02">
+                    <h4 class="popup-layer-title _another">이용권 정보</h4>
+                    <div class="popup-layer-txt">
+                        <div class="ticket-info-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>　</th>
+                                        <th>basic</th>
+                                        <th>deluxe</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>가격</td>
+                                        <td>3,600원<br><b>(이용중)</b></td>
+                                        <td>20,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>시그니처 사운드<br><em>(보이스 태그)</em></td>
+                                        <td>O</td>
+                                        <td>X</td>
+                                    </tr>
+                                    <tr>
+                                        <td>포맷</td>
+                                        <td>mp3</td>
+                                        <td>wav</td>
+                                    </tr>
+                                    <tr>
+                                        <td>음원발매</td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                    </tr>
+                                    <tr>
+                                        <td>수익성 공연<br><em>(방송)</em></td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                    </tr>
+                                    <tr>
+                                        <td>유튜브 업로드</td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                    </tr>
+                                    <tr>
+                                        <td>유튜브 수익창출</td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                    </tr>
+                                    <tr>
+                                        <td>리믹스 및 편곡</td>
+                                        <td>X</td>
+                                        <td>X</td>
+                                    </tr>
+                                    <tr>
+                                        <td>구매 후 판매</td>
+                                        <td>불특정 다수에게 지속 판매</td>
+                                        <td>불특정 다수에게 지속 판매</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="button" class="popup-layer-close-btn"><span class="none">팝업 닫기버튼</span></button>
+                </div> -->
+      </div>
+      <!-- //팝업 레이어 -->
+      <div class="loader-bar">Loading...</div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        var advertise_slick = $("#advertise-slick");
+        var mood_slick = $("#mood-slick");
+        var producer_slick = $("#producer-slick");
+
+        advertise_slick.slick({
+          //autoplay: true,
+          centerMode: true,
+          variableWidth: true,
+          slidesToShow: 2,
+          slidesToSlide: 1,
+          swipeToSlide: true,
+          autoplay: true,
+          dots: true
+        });
+
+
+        producer_slick.slick({
+          variableWidth: true,
+          centerMode: true,
+          slidesToShow: 5,
+          slidesToSlide: 1,
+          swipeToSlide: true,
+          autoplay: true
+        });
+
+        // FIXME: swiper 초기화
+        var mySwiper = new Swiper ('.swiper-container', {
+          grabCursor: true,
+          autoplay: {
+                    delay: 1000,
+                    preventInteractionOnTransition: true,
+                    disableOnInteraction: false
+                },
+            loop: true,
+            slidesPerView: "auto",
+            loopedSlides: 0
+        })
+        // END FIXME: swiper 초기화
+
+      });
+    </script>
+  </body>
+</html>

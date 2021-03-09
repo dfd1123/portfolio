@@ -1,0 +1,721 @@
+/*------------------------P2P 스타일 START------------------------*/
+
+/* ------------------------공통스타일 start------------------------ */
+
+/* 광고배너 영역 */
+.p2p_ico_wrap.board_st_wrap .board_st_inner{
+    padding: 25px 0;
+}
+/* //광고배너 영역 */
+
+/* 장외거래 리스트~거래 진행정보의 코인정보 공통스타일 */
+.p2p_ico_wrap .list_in_con{
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.13);
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+
+.p2p_ico_wrap .have_coin_check{
+    position: relative;
+    background-image: url(/storage/image/homepage/p2p_icon/check.svg);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.p2p_ico_wrap .have_coin_check a{
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 4px 3px rgba(0,0,0,0.1);
+    width: 57px;
+    font-size: 10px;
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 3px;
+    right: 0;
+    top: 13px;
+}
+
+.p2p_ico_wrap .have_coin_check:hover,
+.p2p_ico_wrap .have_coin_check a:active{
+    background-color: #f5f5f5;
+}
+
+.p2p_ico_wrap .have_coin_check:hover a{
+    display: block;
+}
+
+.p2p_ico_wrap .have_coin_check a:hover{
+    background: #f7f7f7;   
+}
+
+.p2p_ico_wrap .list_in_con .tit{
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+
+.p2p_ico_wrap .list_in_con .etc_info{
+    display: inline-block;
+    font-size: 11px;
+    color: #787878;
+}
+
+.p2p_ico_wrap .list_in_con .info_1{
+    position: relative;
+    width: 100%;
+    padding-left: 35px;
+}
+
+.p2p_ico_wrap .list_in_con .info_1 .coin_symbol{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+.p2p_ico_wrap .list_in_con .info_1 .coin_name{
+    font-size: 14px;
+    color: #474846;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.p2p_ico_wrap .list_in_con .info_1 .coin_name_eng{
+    color: #787878;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.p2p_ico_wrap .list_in_con .info_2{
+    font-size: 13px;
+}
+
+.p2p_ico_wrap .list_in_con .info_2 label{
+    color: #787878;
+    font-size: 11px;
+}
+
+.p2p_ico_wrap .list_in_con .info_2 .currency{
+    color: #787878;
+    text-transform: uppercase;
+}
+/* // 장외거래 리스트~거래 진행정보의 코인정보 공통스타일 */
+
+/* p2p 팝업 (장외거래등록, 구매신청, 판매신청) */
+.p2p_modal_popup label{
+    width: 15%;
+    font-size: 13px;
+    line-height: 37px;
+}
+
+.p2p_modal_popup .form-group{
+    display: flex;
+}
+
+.p2p_modal_popup .form-control-group{
+    display: flex;
+    width: 100%;
+}
+
+.p2p_modal_popup .form-control-group .currency{
+    text-transform: uppercase;
+    color: #787878;
+}
+
+.p2p_modal_popup .form-group textarea{
+    height: 150px;
+}
+
+.p2p_modal_popup select.coin_type_slc{
+    text-transform: uppercase;
+}
+
+.p2p_modal_popup .small_slc{
+    width: 35%;
+}
+
+.p2p_modal_popup .coin_type_choiced{
+    border-color: #474846;
+    width: 25%;
+    text-align: center;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.p2p_modal_popup .p2p_type_btn{
+    background: #f5f5f5;
+    width: 100%;
+    color: #787878;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#p2p_type_buy:checked + .p2pTypebuy{
+    background: #ff4646;
+    color: #fff;
+}
+
+#p2p_type_sell:checked + .p2pTypesell{
+    background: #4378ff;
+    color: #fff;
+}
+
+.p2p_modal_popup .form-control.not_border{
+    border: 0;
+    color: #474846;
+    background: transparent;
+}
+
+.p2p_modal_popup .form-control.not_border:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* //p2p 팝업 (장외거래등록, 구매신청, 판매신청)  */
+
+/* ------------------------공통스타일 end------------------------ */
+
+/* ------------------------1. p2p장외거래------------------------  */
+
+.p2p_list_group{
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.p2p_list_group .list_in_con{
+    padding: 13px 15px;
+	width: 32%;
+	margin-right: 2%;
+}
+
+.p2p_list_group .list_in_con:nth-child(3n){
+	margin-right: 0;
+}
+
+/* 검색바 */
+.p2p_sch_bar{
+    background: #f5f5f5;
+    padding: 20px 70px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.p2p_sch_bar .form-group{
+    margin-bottom: 0;
+	display: flex;
+	position: relative;
+}
+
+.p2p_sch_bar .form-group select{
+    width: 35%;
+    border-color: #dddddd;
+}
+
+.p2p_sch_bar .form-group input{
+	border-color: #dddddd;
+}
+
+.p2p_sch_bar .form-group button{
+    width: 120px;
+}
+/* //검색바 */
+
+/* 구매~판매박스들 */
+.p2p_list_group .list_in_con .hd{
+    width: 100%;
+    height: 50px;
+}
+
+.p2p_list_group .list_in_con .hd .del_btn{
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    font-size: 10px;
+    border: 0;
+    background: transparent;
+    color: #ff4646;
+    outline: none;
+    cursor: pointer;
+}
+
+.p2p_list_group .list_in_con .hd .del_btn:hover{
+    text-decoration: underline;
+}
+
+.p2p_list_group .list_in_con .tit{
+    float: left;
+    padding: 25px 0 0 5px;
+}
+
+.p2p_list_group .list_in_con .buy_tit{
+    color: #ff4646;
+}
+
+.p2p_list_group .list_in_con .sell_tit{
+    color: #4378ff;
+}
+
+.p2p_list_group .list_in_con .tit:before{
+    display: block;
+    position: absolute;
+    top: 3px;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 3px;
+    padding: 1px 5px;
+    left: 5px;
+    width: 40px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.p2p_list_group .list_in_con .buy_tit:before{
+	content: '구매';
+	background: #ff4646;
+}
+
+.p2p_list_group .list_in_con .sell_tit:before{
+	content: '판매';
+	background: #4378ff;
+}
+
+.p2p_list_group .list_in_con .etc_info{
+    float: right;
+    text-align: right;
+    padding-top: 12px;
+}
+
+.p2p_list_group .list_in_con .etc_info span{
+	width: 100%; display: block;
+}
+
+.p2p_list_group .list_in_con .info_1{
+    border-bottom: 1px solid #dddddd;
+    height: 50px;
+    border-top: 1px solid #dddddd;
+    padding: 12px 0 0 35px;
+}
+
+.p2p_list_group .list_in_con .info_1 .coin_symbol{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+
+.p2p_list_group .list_in_con .info_1 .coin_name{
+    line-height: 1;
+    float: left;
+    width: 100%;
+}
+
+.p2p_list_group .list_in_con .info_1 .coin_name_eng{
+    width: 100%;
+    float: left;
+    text-indent: 2px;
+}
+
+.p2p_list_group .list_in_con .info_1 .have_coin_check{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.p2p_list_group .list_in_con .info_2{
+    padding: 10px 0 10px 5px;
+}
+
+.p2p_list_group .list_in_con .info_3 textarea{
+    width: 100%;
+    line-height: 16px;
+    font-size: 11px;
+    border-radius: 5px;
+    border-color: #dddddd;
+    padding: 10px;
+    height: 70px;
+    resize: none;
+    outline: none;
+}
+
+.p2p_list_group .list_in_con button{
+    font-size: 13px;
+}
+
+.p2p_list_group .list_in_con button.not_active_btn{
+    background: #aaaaaa;
+    box-shadow: none;
+    outline: none;
+}
+/* //구매~판매박스들 */
+
+/* ------------------------//1. p2p장외거래------------------------  */
+
+/* ------------------------2. p2p 거래 진행정보------------------------ */
+
+.p2p_onpro_wrap .list_in_con {
+    padding: 8px 20px 18px 20px;
+    display: flex;
+}
+
+/* 왼쪽 코인정보들 */
+
+.p2p_onpro_wrap .list_in_con .in_left_con{
+    width: 30%;
+}
+
+.p2p_onpro_wrap .list_in_con .hd{
+    position: relative;
+}
+
+.p2p_onpro_wrap .list_in_con .have_coin_check{
+    top: 7px;
+}
+
+.p2p_onpro_wrap .list_in_con .have_coin_check a{
+    right: -40px;
+    z-index: 1;
+}
+
+.p2p_onpro_wrap .list_in_con .coin_in_check{
+    position: relative;
+    font-size: 11px;
+    padding: 6px 10px;
+    top: -5px;
+    left: 10px;
+    box-shadow: none;
+}
+
+.p2p_onpro_wrap .list_in_con .tit{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.p2p_onpro_wrap .list_in_con .etc_info u{
+    font-size: 9px;
+    text-decoration: none;
+}
+
+/* //왼쪽 코인정보들 */
+
+/* 오른쪽 진행정보들 */
+
+.p2p_onpro_wrap .list_in_con .in_right_con{
+    width: 70%;
+}
+
+.p2p_onpro_wrap .list_in_con .status_icon{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    display: block;
+    border-radius: 50%;
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+
+.p2p_onpro_wrap .list_in_con .status_tit{
+    color: #dddddd;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.p2p_onpro_wrap .list_in_con .step_ment{
+    position: absolute;
+    bottom: 0;
+    background: #28283c;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+    word-break: break-all;
+    text-align: center;
+    width: 110%;
+    display: none;
+}
+
+.p2p_onpro_wrap .list_in_con .step_ment:before{
+    content: '';
+    position: absolute;
+    border: 6px solid transparent;
+    border-bottom: 6px solid #28283c;
+    width: 12px;
+    top: -12px;
+}
+
+.p2p_onpro_wrap .list_in_con .step_ment span{
+    font-size: 11px;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul{
+    display: flex;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(1){
+    text-align: left;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(1) .status_icon {
+    margin-right: auto;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(2){
+    text-align: center;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(2) .status_icon {
+    margin: auto;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(3){
+    text-align: right;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(3) .status_icon {
+    margin-left: auto !important;
+    margin: 0;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(3) .status_tit{
+    width: 60px;
+    text-align: center;
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(1) .status_icon{    
+    background-image: url(/storage/image/homepage/p2p_icon/01_deposit_gray.svg);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(2) .status_icon{
+    background-image: url(/storage/image/homepage/p2p_icon/02_withdraw_gray.svg);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(3) .status_icon{
+    background-image: url(/storage/image/homepage/p2p_icon/03_calculate_gray.svg);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(1) .step_ment{
+    left: 0;
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(1) .step_ment:before{
+    left: 20px;
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(2) .step_ment{
+    width: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(2) .step_ment:before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(3) .step_ment{
+    width: 150%;
+    right: 0;
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(3) .step_ment:before{
+    right: 20px;
+}
+
+.p2p_onpro_wrap .list_in_con li .status_tit .complt{
+    display: none;
+}
+
+/* 진행중인 화살표 */
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(1):after,
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(3):before{
+    content: '▶▶▶▶';
+    position: absolute;
+    transform: translateY(-50%);
+    top: 20%;
+    color: #e6e6e6;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(1):after{
+    right: 0;
+}
+
+.p2p_onpro_wrap .list_in_con .in_right_con ul li:nth-child(3):before{
+    left: 0;
+}
+
+/* //진행중인 화살표 */
+
+/* ☆ 진행중일 때 active 적용 (2단계) */
+.p2p_onpro_wrap .list_in_con li.active .status_icon{    
+    background-color: #4aa4a4;
+    border-color: #4aa4a4;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.13);
+}
+
+.p2p_onpro_wrap .list_in_con li.active .status_tit{  
+    color: #4aa4a4;
+}
+
+.p2p_onpro_wrap .list_in_con li.active .status_tit .ing{
+    display: block;
+}
+
+.p2p_onpro_wrap .list_in_con li.active .step_ment{
+    display: block;
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(1).active .status_icon{    
+    background-image: url(/storage/image/homepage/p2p_icon/01_deposit_ing.svg);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(2).active .status_icon{    
+    background-image: url(/storage/image/homepage/p2p_icon/02_withdraw_ing.svg);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(3).active .status_icon{    
+    background-image: url(/storage/image/homepage/p2p_icon/03_calculate_ing.svg);
+}
+/* //☆ 진행중일 때 active 적용 (2단계) */
+
+/* ☆☆ 완료일 때 complt 적용 (3단계) */
+.p2p_onpro_wrap .list_in_con li.active.complt .status_icon{
+    background-color: #fff;
+    border-color: rgba(74,164,164,0.5);
+    box-shadow: none;
+}
+
+.p2p_onpro_wrap .list_in_con li.active.complt .status_tit{  
+    color: rgba(74,164,164,0.5);
+}
+
+.p2p_onpro_wrap .list_in_con li.active.complt .step_ment{
+    display: none;
+}
+
+.p2p_onpro_wrap .list_in_con li.active.complt .status_tit .ing{
+    display: none;
+}
+
+.p2p_onpro_wrap .list_in_con li.active.complt .status_tit .complt{
+    display: block;
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(1).active.complt .status_icon{    
+    background-image: url(/storage/image/homepage/p2p_icon/01_deposit_comp.svg);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(2).active.complt .status_icon{    
+    background-image: url(/storage/image/homepage/p2p_icon/02_withdraw_comp.svg);
+}
+
+.p2p_onpro_wrap .list_in_con li:nth-child(3).active.complt .status_icon{    
+    background-image: url(/storage/image/homepage/p2p_icon/03_calculate_comp.svg);
+}
+/* //☆☆ 완료일 때 complt 적용 (3단계) */
+
+/* //오른쪽 진행정보들 */
+
+/* ------------------------//2. p2p 거래 진행정보------------------------ */
+
+/* ------------------------3. p2p 거래완료내역------------------------ */
+
+.p2p_table_wrap{
+    background: #fff;
+    border: 1px solid #dddddd;
+    min-height: 200px;
+}
+
+.p2p_table_wrap .table_label{
+    border-bottom: 1px solid #dddddd;
+}
+
+.p2p_table_wrap .table_label thead>tr>th{
+    text-align: center;
+}
+
+.p2p_table_wrap .table_label thead>tr>th:nth-child(1){
+    width: 13%;
+}
+.p2p_table_wrap .table_label thead>tr>th:nth-child(2){
+    width: 16%;
+}
+.p2p_table_wrap .table_label thead>tr>th:nth-child(3){
+    width: 21%;
+}
+.p2p_table_wrap .table_label thead>tr>th:nth-child(4){
+    width: 21%;
+}
+.p2p_table_wrap .table_label thead>tr>th:nth-child(5){
+    width: 13%;
+}
+.p2p_table_wrap .table_label thead>tr>th:nth-child(6){
+    width: 16%;
+}
+
+.p2p_table_wrap .coin_chart_tbl tbody>tr>td{
+    text-align: center;
+    font-size: 12px;
+}
+
+.p2p_table_wrap .coin_chart_tbl tbody>tr.p2p_type-buy td:nth-child(1){
+    color: #ff4646;
+    font-weight: bold;
+}
+
+.p2p_table_wrap .coin_chart_tbl tbody>tr.p2p_type-sell td:nth-child(1){
+    color: #4378ff;
+    font-weight: bold;
+}
+
+.p2p_table_wrap .coin_chart_tbl tbody>tr>td:nth-child(1){
+    width: 13%;
+}
+.p2p_table_wrap .coin_chart_tbl tbody>tr>td:nth-child(2){
+    width: 16%;
+    text-align: left;
+}
+.p2p_table_wrap .coin_chart_tbl tbody>tr>td:nth-child(3),
+.p2p_table_wrap .coin_chart_tbl tbody>tr>td:nth-child(4){
+    width: 21%;
+    text-align: right;
+    padding-right: 20px;
+}
+.p2p_table_wrap .coin_chart_tbl tbody>tr>td:nth-child(5){
+    width: 13%;
+}
+.p2p_table_wrap .coin_chart_tbl tbody>tr>td:nth-child(6){
+    width: 16%;
+}
+
+/* ------------------------//3. p2p 거래완료내역------------------------ */
+
+/*------------------------P2P 스타일 END------------------------*/

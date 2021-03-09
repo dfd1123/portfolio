@@ -1,0 +1,266 @@
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/* 
+    ----------------- 
+        array 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+.playbar {
+  width: 100%;
+  height: 135px;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0%;
+  position: fixed;
+  z-index: 200;
+  min-width: 1024px;
+}
+
+.playbar-inner {
+  width: 90%;
+  min-width: 1370px;
+  max-width: 1920px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+.playbar-info01 {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  padding-left: 92px;
+}
+
+.playbar-info01 .title_singer_info {
+  color: #fff;
+  margin-top: 15px;
+}
+
+.playbar-info01 .title_singer_info .title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.playbar-info01 .title_singer_info .artist {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 100;
+  margin-top: 5px;
+}
+
+.playbar-info02 {
+  position: absolute;
+  top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 0;
+}
+
+.playbar-info02 .btn-01 {
+  padding: 0 20px;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.playbar-control-area {
+  text-align: center;
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  min-width: 700px;
+  max-width: 960px;
+}
+
+.playbar-control-area .playbar-time {
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+}
+
+.playbar-control-area .ctrl-btn {
+  margin: 0 20px;
+}
+
+.playbar-btns {
+  padding: 25px 0 10px;
+}
+
+.ctrl-btn {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/btn/control_btn01.svg");
+}
+
+.ctrl-btn-repeat {
+  background-position: 0 0;
+}
+
+.ctrl-btn-repeat.active {
+  background-position: -60px 0;
+}
+
+.ctrl-btn-prv-play {
+  background-position: -120px 0;
+}
+
+.ctrl-btn-list-play {
+  background-position: -240px 0;
+}
+
+.ctrl-btn-list-palse {
+  background-position: -180px 0;
+}
+
+.ctrl-btn-next-play {
+  background-position: -300px 0;
+}
+
+.ctrl-btn-shuffle {
+  background-position: 0 -120px;
+}
+
+.ctrl-btn-shuffle.active {
+  background-position: -60px -120px;
+}
+
+.ctrl-btn-like-song {
+  background-position: -120px -117px;
+}
+
+.ctrl-btn-like-song.active {
+  background-position: -180px -117px;
+}
+
+.ctrl-btn-volume-ctrl {
+  background-position: 0 -60px;
+}
+
+.ctrl-btn-volume-ctrl.active {
+  background-position: -60px -60px;
+}
+
+.ctrl-btn-show-list {
+  background-position: -120px -58px;
+}
+
+.ctrl-btn-show-list.active {
+  background-position: -180px -58px;
+}
+
+.ctrl-btn-close {
+  background-position: -300px -120px;
+  position: absolute;
+  top: 20px;
+  right: 7px;
+}
+
+.ctrl-btn:hover {
+  opacity: 0.6;
+}
+
+.volume-ctrl-panel {
+  position: absolute;
+  top: -61px;
+  left: 60px;
+  background-color: black;
+  display: block;
+  z-index: 10;
+  padding: 10px 30px;
+  border-radius: 15px;
+  width: 230px;
+}
+
+.volume-ctrl-panel [type="range"] {
+  padding: 0;
+}
+
+.volume-ctrl-panel__inner {
+  display: inline-block;
+  position: relative;
+}
+
+.volume-ctrl-panel .volume-ctrl-progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #fff;
+  height: 5px;
+}
+
+.playbar-time-progress-range {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.playbar-time-progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  height: 5px;
+  background-color: #fff;
+}
+
+.playbar-time .current_time {
+  margin-right: 30px;
+  color: #fff;
+}
+
+.playbar-time .all_time {
+  color: #bc9bff;
+  margin-left: 30px;
+}
+
+.playbar-option-bar {
+  z-index: 5;
+}
+
+.playlist-option-bar.option-bar {
+  width: 530px;
+  right: 0;
+  left: unset;
+  z-index: 3;
+}
+
+.playlist-option-bar .option-able {
+  display: block;
+}
+/*# sourceMappingURL=bottom-playbar.css.map */

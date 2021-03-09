@@ -1,0 +1,1208 @@
+/*------------------------MARKET 거래소 페이지 스타일 START------------------------*/
+
+/*------------① news start------------*/
+
+.ntc_bar {
+	width: 100%;
+	height: 40px;
+	background: #f0f0f0;
+	position: relative;
+	padding: 10px 0;
+}
+
+.ntc_bar .ntc_bar_mask {
+	overflow: hidden;
+	height: 100%;
+}
+
+.ntc_bar .ntc_ul {
+	max-width: 1250px;
+	margin: 0 auto;
+	text-align: center;
+	height: 100%;
+	position: relative;
+}
+
+.ntc_bar .ntc_ul li {
+	font-size: 13px;
+	width: 100%;
+	height: 100%;
+}
+
+.ntc_bar .ntc_ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.ntc_bar .ntc_ul li .tit {
+	border-right: 1px solid #dddddd;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+.ntc_bar .ntc_ul li:hover .tit {
+	font-weight: bold;
+}
+
+.ntc_bar .ntc_ul li:hover .ntc_tit {
+	text-decoration: underline;
+}
+
+.ntc_bar .close_btn {
+	width: 40px;
+	height: 100%;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.ntc_bar .close_btn span {
+	width: 20px;
+	height: 1px;
+	display: inline-block;
+	background: black;
+	transform: rotate(45deg);
+	position: relative;
+	top: 0;
+	left: 10px;
+}
+
+.ntc_bar .close_btn span:after {
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: black;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(-90deg);
+}
+
+.ntc_bar.active {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	right: 13px;
+	top: -42px;
+	padding: 5px 13px;
+	z-index: 5;
+	border-radius: 5px;
+}
+
+.ntc_bar.active:hover {
+	background: rgba(240,240,240,0.9);
+}
+
+.ntc_bar.active:active {
+	background: rgba(240,240,240,0.8);
+}
+
+.ntc_bar.active .close_btn span {
+	transform: none;
+	width: 10px;
+	top: 3px;
+	transition: all 0.2s;
+	position: absolute;
+	top: 15px;
+}
+
+.ntc_bar.active .close_btn span:before {
+	width: 15px;
+	height: 1px;
+	position: absolute;
+	background: black;
+	top: -5px;
+	content: '';
+	transition: all 0.2s;
+}
+
+.ntc_bar.active .close_btn span:after {
+	transform: none;
+	top: 5px;
+	width: 15px;
+	transition: all 0.2s;
+}
+
+.ntc_bar.active .ntc_show {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	transition: all 0.2s;
+}
+
+.ntc_bar.active .close_btn {
+	width: 40px;
+	right: 0;
+}
+
+.ntc_bar.active .ntc_ul {
+	display: none;
+	transition: all 0.2s;
+}
+
+.ntc_bar .ntc_next, .ntc_bar .ntc_show {
+	display: none;
+}
+
+.ntc_bar.active .ntc_bar_mask {
+	display: none;
+}
+
+/*------------① news end------------*/
+
+/*------------② market main container start------------*/
+
+/*--②-1 .trans_wrap .left_con ~ .trans_wrap .center_con ~ .trans_wrap .right_con common style*/
+.trans_wrap {
+	width: 100%;
+	position: relative;
+}
+
+.trans_wrap .trans_inner {
+	max-width: 1920px;
+	margin: auto;
+	padding: 15px 0;
+}
+
+.trans_wrap .trans_con {
+	width: 98%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.trans_wrap .left_con, .trans_wrap .right_con {
+	width: 365px;
+}
+
+.trans_wrap .center_con {
+	width: 60%;
+	margin: 0 15px;
+}
+
+.trans_wrap .tit {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #dddddd;
+}
+
+.trans_wrap .tit h6 {
+	font-size: 13px;
+	padding: 7px 0;
+	color: #474846;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.trans_wrap .tit .table_label {
+	width: 100%;
+	border-top: 1px solid #dddddd;
+}
+
+.trans_wrap .tit .table_label th {
+	width: 33%;
+	font-weight: 500;
+	font-size: 12px;
+	color: #787878;
+	padding: 4px 0;
+}
+
+.trans_wrap .tit .table_label th:first-child {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.trans_wrap .tit .table_label th:last-child {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.trans_wrap .table_in_box, .trans_wrap .table_in_box > tbody {
+	width: 100%;
+	position: relative;
+}
+
+.trans_wrap .table_in_box tr {
+	border-bottom: 1px solid #f0f0f0;
+	position: relative;
+	width: 100%;
+	height: 45px;
+	border-left: 1px solid transparent;
+	cursor: pointer;
+}
+
+.coin_list_table tr{
+	height:48px;
+}
+
+.trans_wrap .table_in_box tr:hover {
+	background: #fafafa;
+}
+
+.trans_wrap .table_in_box tr td {
+	vertical-align: middle;
+	font-size: 13px;
+	width: 33%;
+	text-align: center;
+}
+/*--//②-1 .trans_wrap .left_con ~ .trans_wrap .center_con ~ .trans_wrap .right_con common style*/
+
+/*--②-2 .trans_wrap .left_con(호가창) style*/
+/*common*/
+.trans_wrap .left_con {
+	border: 1px solid #dddddd;
+	background: #fff;
+	position: relative;
+}
+.trans_wrap .left_con .btn_list {
+	position: absolute;
+	top: 4px;
+	left: 5px;
+}
+.trans_wrap .left_con .btn_list li {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #dcdcdc;
+	overflow: hidden;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+.trans_wrap .left_con .btn_list li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.trans_wrap .left_con .btn_list li:hover {
+	border-color: #ffdc00;
+}
+.trans_wrap .left_con .wait_wrap {
+	height: 355px;
+	transition: all ease .5s;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	position: relative;
+	overflow-y: hidden;
+}
+.trans_wrap .left_con .total_box {
+	background: #f1f3f6;
+	text-align: center;
+	border: 1px solid #dddddd;
+	font-size: 15px;
+	padding: 7px 0;
+	color: #474846;
+	font-weight: bold;
+}
+.trans_wrap .both_table tr td:nth-child(1) {
+	text-align: left;
+	padding-left: 20px;
+}
+.trans_wrap .both_table tr td:nth-child(3) {
+	text-align: right;
+	padding-right: 20px;
+	position: relative;
+}
+.trans_wrap .both_table tr td span {
+	position: relative;
+	z-index: 1;
+}
+.trans_wrap .left_con .both_table .per_bar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 45px;
+	opacity: .4;
+}
+/*//common*/
+
+/*.up_wrap.wait_wrap*/
+.trans_wrap .left_con .up_wrap {
+	background-image: url(/storage/image/homepage/wait_bg-01.svg);
+}
+.trans_wrap .left_con .up_wrap .up_table {
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #f0f0f0;
+}
+.trans_wrap .left_con .up_wrap .up_table td:nth-child(1) {
+	border: 1px solid #2e4ee1;
+}
+.trans_wrap .both_table.up_table .per_bar {
+	background: #b3caff;
+}
+.trans_wrap .table_in_box.up_table tr:hover {
+	background: rgba(179,202,255,0.3);
+}
+.trans_wrap .table_in_box.up_table tr:active {
+	background: rgba(179,202,255,0.5);
+}
+/*//.up_wrap.wait_wrap*/
+
+/*.down_wrap.wait_wrap*/
+.trans_wrap .left_con .down_wrap {
+	background-image: url(/storage/image/homepage/wait_bg-02.svg);
+}
+.trans_wrap .left_con .down_wrap .down_table td:nth-child(1) {
+	border: 1px solid #ff0000;
+}
+.trans_wrap .both_table.down_table .per_bar {
+	background: #ffdfdf;
+}
+.trans_wrap .table_in_box.down_table tr:hover {
+	background: rgba(255,223,223,0.3);
+}
+.trans_wrap .table_in_box.down_table tr:active {
+	background: rgba(255,223,223,0.5);
+}
+/*//.down_wrap.wait_wrap*/
+/*--//②-2 .trans_wrap .left_con(호가창) style*/
+
+/*--②-3 .trans_wrap .right_con(코인목록, 거래기록) style*/
+/*common*/
+.trans_wrap .right_con {
+	height: 100%;
+}
+.trans_wrap .right_con .scl_wrap {
+	height: 338px;
+	width: 100%;
+	overflow-y: scroll;
+	transition: all 0.3s;
+}
+.trans_wrap .right_con .inner_box {
+	border: 1px solid #dddddd;
+	background: #fff;
+}
+.trans_wrap .right_con_inbox-1 .tit .table_label th:first-child {
+	padding-left: 30px;
+}
+/*//common*/
+
+/*.right_con_inbox-1 (코인목록)*/
+.trans_wrap .right_con_inbox-1.active .scl_wrap {
+	height: 135px;
+	transition: all .3s;
+}
+.trans_wrap .tit .coin_sch_bar {
+	height: 33px;
+	position: relative;
+}
+.trans_wrap .tit .coin_sch_bar input {
+	border: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 1px;
+	left: 0;
+	outline: none;
+	border-bottom: 1px solid #dddddd;
+	padding-left: 35px;
+	background: url(/storage/image/homepage/icon/sch_icon.svg) no-repeat 10px center;
+	background-size: 15px;
+	font-size: 12px;
+	color: #474846;
+	font-weight: 600;
+}
+.trans_wrap .tit .coin_sch_bar input:focus {
+	border: 1px solid #ffdc00;
+	top: 0;
+	outline: none;
+}
+.trans_wrap .coin_table tr td:nth-child(1) {
+	padding-left: 45px;
+	position: relative;
+	text-align: left;
+}
+.trans_wrap .coin_table tr td:nth-child(1):before {
+	width: 6px;
+	height: 45px;
+	content: '';
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.trans_wrap .coin_table tr td:nth-child(1) i {
+	color: #dddddd;
+	position: absolute;
+	top: 18px;
+	left: 15px;
+	transition: all 0.2s;
+}
+.trans_wrap .coin_table tr td:nth-child(1) p {
+	margin-top: 7px;
+	line-height: 1;
+}
+.trans_wrap .coin_table tr td:nth-child(1) .coin_img {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    width: 20px;
+    height: 20px;
+}
+.trans_wrap .coin_table tr td:nth-child(1) span {
+	font-size: 10px;
+	color: #787878;
+	letter-spacing: .3px;
+}
+.trans_wrap .coin_table tr td:nth-child(2) {
+	text-align: center;
+}
+.trans_wrap .coin_table tr td:nth-child(3) {
+	text-align: right;
+	padding-right: 20px;
+}
+.trans_wrap .coin_table tr:hover {
+	background: #fafafa;
+	border-left: 1px solid #f0f0f0;
+}
+.trans_wrap .coin_table tr:active {
+	background: #efefef;
+	border-left: 1px solid #f1f1f1;
+}
+.trans_wrap .coin_table tr:hover td:nth-child(1):before {
+	background: #ffdc00;
+	transition: all 0.2s;
+}
+.trans_wrap .coin_table tr:active td:nth-child(1):before {
+	background: #75bfbf;
+	transition: all 0.2s;
+}
+
+/* // 0404 코인목록 마켓리스트 탭 추가 시작 */
+
+.trans_wrap .market_list_tab{
+    display: flex;
+    width: 100%;
+    height: 30px;
+	line-height: 30px;
+	color: #787878;
+	border-bottom: 1px solid #dddddd;
+}
+
+.trans_wrap .market_list_tab li{
+	width: 50%;
+	border-right: 1px solid #dddddd;
+}
+
+.trans_wrap .market_list_tab li:last-child{
+	border: 0;
+}
+
+.trans_wrap .market_list_tab li label{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.trans_wrap .market_list_tab li label:active{
+	background-color: #fafafa;
+}
+
+.trans_wrap .market_list_tab li.active label{
+	border-bottom: 2px solid #ffdc00;
+	background-color: #f7f7f7;
+}
+
+.trans_wrap .coin_table-2,
+.trans_wrap .coin_table-3{
+	display: none;
+}
+
+#usdc_market_list:checked ~ .coin_table-1{
+	display: table;
+}
+
+#usdc_market_list:checked ~ .coin_table-2,
+#usdc_market_list:checked ~ .coin_table-3,
+#usdc_market_list:checked ~ .coin_table-4{
+	display: none;
+}
+
+#btc_market_list:checked ~ .coin_table-2{
+	display: table;
+}
+
+#btc_market_list:checked ~ .coin_table-1,
+#btc_market_list:checked ~ .coin_table-3,
+#btc_market_list:checked ~ .coin_table-4{
+	display: none;
+}
+
+#eth_market_list:checked ~ .coin_table-3{
+	display: table;
+}
+
+#eth_market_list:checked ~ .coin_table-1,
+#eth_market_list:checked ~ .coin_table-2,
+#eth_market_list:checked ~ .coin_table-4{
+	display: none;
+}
+
+#krw_market_list:checked ~ .coin_table-4{
+	display: table;
+}
+
+#krw_market_list:checked ~ .coin_table-1,
+#krw_market_list:checked ~ .coin_table-2,
+#krw_market_list:checked ~ .coin_table-3{
+	display: none;
+}
+
+/* // 0404 코인목록 마켓리스트 탭 추가 끝 */
+
+/*//.right_con_inbox-1 (코인목록)*/
+
+/*.right_con_inbox-2 (거래기록)*/
+.trans_wrap .right_con_inbox-2 {
+	margin-top: 15px;
+}
+.trans_wrap .right_con_inbox-2.active .scl_wrap {
+	height: 555px;
+	transition: all 0.3s;
+}
+.trans_wrap .trans_record tr td:nth-child(2) {
+	border-left: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+}
+.trans_wrap .trans_record tr:hover {
+	font-weight: bold;
+}
+.trans_wrap .right_con_inbox-2 .tit {
+	position: relative;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn {
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	line-height: 1;
+	right: 0;
+	cursor: pointer;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn:hover span:before, .trans_wrap .right_con_inbox-2 .toggle_btn:hover span:after {
+	background: #ffdc00;
+	transition: all 0.3s;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn:active span:before, .trans_wrap .right_con_inbox-2 .toggle_btn:active span:after {
+	background: #62a3a3;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn span {
+	position: relative;
+	width: 14px;
+	display: inline-block;
+	top: 0;
+	left: 0;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn span:before, .trans_wrap .right_con_inbox-2 .toggle_btn span:after {
+	width: 8px;
+	height: 1px;
+	background: #555555;
+	content: '';
+	position: absolute;
+	top: 0;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn span:before {
+	left: 0;
+	transform: rotate(-45deg);
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn span:after {
+	right: 0;
+	transform: rotate(45deg);
+}
+.trans_wrap .right_con_inbox-2.active .toggle_btn {
+	transform: rotate(180deg);
+	transition: all 0.3s;
+	top: 0;
+}
+.trans_wrap .trans_record tr.red {
+	background: rgba(255,223,223,0.2);
+}
+.trans_wrap .trans_record tr.blue {
+	background: rgba(179,202,255,0.2);
+}
+.trans_wrap .trans_record tr.red td:nth-child(2n-1), .trans_wrap .trans_record tr.blue td:nth-child(2n-1) {
+	color: black;
+}
+/*//.right_con_inbox-2 (거래기록)*/
+/*--//②-3 .trans_wrap .right_con(코인목록, 거래기록) style*/
+
+/*--②-4 .trans_wrap .center_con(코인상태바, 차트, 구매-판매박스) style*/
+/*common*/
+.trans_wrap .center_con u, .trans_wrap .center_con em {
+	text-decoration: none;
+	font-style: normal;
+}
+.trans_wrap .center_con .currency {
+	font-size: 16px;
+    font-weight: bold;
+    color: #777;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/*//common*/
+
+/*.trans_hd (coin state bar-코인상태바)*/
+.trans_wrap .center_con .trans_hd {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 15px;
+}
+.trans_wrap .center_con .trans_hd .coin_state_1 {
+	float: left;
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 15px 0 15px 20px;
+	height: 100%;
+}
+.trans_wrap .center_con .coin_state_1 .in_cell span {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+.trans_wrap .center_con .coin_state_1 .c_name {
+	font-size: 19px;
+	font-weight: bold;
+	color: #474846;
+}
+.trans_wrap .center_con .coin_state_1 .c_name_eng {
+	font-size: 15px;
+	color: #969696;
+	letter-spacing: 0.2px;
+}
+.trans_wrap .center_con .coin_state_1 .coin_num_data span:nth-child(1) {
+	font-size: 19px;
+	font-weight: 500;
+}
+.trans_wrap .center_con .coin_state_1 .coin_num_data span:nth-child(1) b {
+	font-weight: 500;
+}
+.trans_wrap .center_con .coin_state_2 {
+	float: right;
+	width: 65%;
+	height: 100%;
+	background-color: #fff;
+	border: 1px solid #dddddd;
+}
+.trans_wrap .center_con .coin_state_2 u {
+	font-size: 13px !important;
+}
+.trans_wrap .center_con .coin_state_2 ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+.trans_wrap .center_con .coin_state_2 ul li {
+	width: 50%;
+	height: 50%;
+	padding: 8px 10px;
+	font-size: 13px;
+	color: #787878;
+}
+.trans_wrap .center_con .coin_state_2 ul li.border_r {
+	border-right: 1px solid #f0f0f0;
+}
+.trans_wrap .center_con .coin_state_2 ul li.border_b {
+	border-bottom: 1px solid #f0f0f0;
+}
+.align_right {
+	float: right;
+	display: inline-block;
+}
+.align_right b {
+	color: #474846;
+}
+.align_right u {
+	font-size: 13px !important;
+	text-decoration: none;
+	font-style: normal;
+}
+/*//.trans_hd (coin state bar-코인상태바)*/
+
+/*.chart_con (chart area-트레이딩 뷰 차트영역)*/
+.trans_wrap .center_con .trans_chart_wrap {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #dddddd;
+	overflow: hidden;
+}
+.trans_wrap .center_con .chart_con {
+	height: 410px;
+	width: 100%;
+	position: relative;
+}
+/*//.chart_con (chart area-트레이딩 뷰 차트영역)*/
+
+/*.deal_con (trans con-구매 판매창) 제목*/
+.trans_wrap .center_con .deal_wrap {
+	height: 315px;
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+.trans_wrap .center_con .deal_wrap .deal_con {
+	height: 100%;
+	width: 50%;
+}
+.trans_wrap .center_con .deal_wrap .deal_con.coin_buy_con {
+	border-right: 1px solid #dddddd;
+}
+.trans_wrap .center_con .deal_con .tit {
+	border-color: #f0f0f0;
+	text-align: center;
+}
+.trans_wrap .center_con .deal_con .tit span, .trans_wrap .center_con .choice_option_tit span {
+	display: inline-block;
+	width: 150px;
+	font-weight: bold;
+	color: #474846;
+	font-size: 15px;
+	padding: 11px 0;
+	position: relative;
+}
+.trans_wrap .center_con .tit span:after {
+	content: '';
+	width: 150px;
+	height: 2.5px;
+	background-color: #ff0000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.trans_wrap .center_con .coin_buy_con .tit span:after {
+	background-color: #ff0000;
+}
+.trans_wrap .center_con .coin_sell_con .tit span:after {
+	background-color: #2e4eff;
+}
+.trans_wrap .center_con .deal_con .balance_state {
+	text-align: center;
+	font-size: 13px;
+	color: #787878;
+	padding: 12px 0;
+}
+.trans_wrap .center_con .choice_option_tit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 47px;
+	border-bottom: 1px solid #f0f0f0;
+	z-index: 1;
+	cursor: pointer;
+	display: none;
+}
+.trans_wrap .center_con .choice_option_tit ul {
+	width: 100%;
+	display: flex;
+}
+.trans_wrap .center_con .choice_option_tit li {
+	width: 50%;
+}
+.trans_wrap .center_con .choice_option_tit li:first-child {
+	border-right: 1px solid #f0f0f0;
+}
+.trans_wrap .center_con .choice_option_tit li:hover {
+	background: rgba(0,0,0,0.05);
+}
+.trans_wrap .center_con .choice_option_tit li:active {
+	background: rgba(0,0,0,0.1);
+}
+.trans_wrap .choice_option_tit .tit {
+	border-bottom: 0;
+}
+.trans_wrap .center_con .choice_option_tit .option_li span {
+	color: rgba(0,0,0,0.3);
+}
+.trans_wrap .center_con .choice_option_tit .option_li span:after {
+	background: rgba(0,0,0,0.3);
+}
+.trans_wrap .center_con .choice_option_tit .option_li.active span {
+	color: #474846;
+}
+.trans_wrap .center_con .choice_option_tit .option_li.buy_color.active span:after {
+	background-color: #ff0000;
+}
+.trans_wrap .center_con .choice_option_tit .option_li.sell_color.active span:after {
+	background-color: #2e4eff;
+}
+/*//.deal_con (trans con-구매 판매창) 제목*/
+
+/*.deal_con (trans con-구매 판매창)*/
+.trans_wrap .center_con .buysell_wrap {
+	padding: 0 10px;
+}
+.trans_wrap .center_con .buysell_table {
+	width: 100%;
+	position: relative;
+}
+.trans_wrap .center_con .buysell_table td {
+	position: relative;
+	padding-left: 35px;
+	width: 100%;
+}
+.trans_wrap .center_con .buysell_table tr:last-child td {
+	padding-left: 0;
+}
+.trans_wrap .center_con .buysell_table .label {
+	position: absolute;
+	top: 18px;
+	left: 0;
+	font-size: 13px;
+	color: #787878;
+	font-weight: 500;
+}
+.trans_wrap .center_con .buysell_table .buysell_input {
+	height: 40px;
+	margin: 6px 0;
+	position: relative;
+}
+.trans_wrap .center_con .buysell_table .buysell_input .updown_btn {
+	background: #fff;
+	position: absolute;
+	right: 0;
+	border: 1px solid #dddddd;
+	width: 30px;
+	text-align: center;
+	color: #555555;
+	height: 21px;
+	cursor: pointer;
+	background-size: 7px;
+	background-repeat: no-repeat;
+	background-position: center;
+	line-height: 1;
+}
+.trans_wrap .center_con .buysell_table .buysell_input .up_btn {
+	top: 0;
+	font-size: 90%;
+	background-image: url(/storage/image/homepage/icon/plu-min-01.svg);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .up_btn:hover {
+	background-color: rgba(255,70,70,0.1);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .up_btn:active {
+	background-color: rgba(255,70,70,0.2);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .down_btn {
+	bottom: 0;
+	background-image: url(/storage/image/homepage/icon/plu-min-02.svg);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .down_btn:hover {
+	background-color: rgba(67,120,255,0.1);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .down_btn:active {
+	background-color: rgba(67,120,255,0.2);
+}
+.trans_wrap .center_con .buysell_table .buysell_input input {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	border: 1px solid #dddddd;
+    font-weight: bold;
+    padding-right: 90px;
+    text-align: right;
+}
+.trans_wrap .center_con .buysell_table ul {
+	display: flex;
+	justify-content: space-between;
+}
+.trans_wrap .center_con .buysell_table ul li {
+	display: inline-block;
+	width: 19%;
+	margin-top: 5px;
+}
+.trans_wrap .center_con .buysell_table ul li button {
+	width: 100%;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 5px 0;
+	background: #fff;
+	color: #555555;
+	outline: none;
+	cursor: pointer;
+}
+.trans_wrap .center_con .buysell_table ul li button:hover {
+	border-color: #ffdc00;
+}
+.trans_wrap .center_con .buysell_table ul li button:active {
+	background: rgba(0,0,0,0.1);
+}
+.trans_wrap .center_con .buysell_table input:focus {
+	outline: none;
+	border: 1px solid #ffdc00;
+}
+.trans_wrap .center_con .buysell_table .total_sum_wrap {
+	width: 70%;
+	height: 55px;
+	background: #f5f5f5;
+	position: relative;
+	float: left;
+	padding: 12px 15px 0;
+	font-size: 20px;
+	text-align: right;
+	color: #474846;
+	margin-top: 20px;
+}
+
+.trans_wrap .center_con .buysell_table .total_sum_wrap p{
+	width: 100%; height: 100%;
+}
+
+.trans_wrap .center_con .total_sum_wrap .label {
+	left: 10px;
+}
+.trans_wrap .center_con .buysell_price .currency {
+	right: 40px !important;
+}
+.trans_wrap .center_con .buysell_input .currency {
+	position: absolute;
+	right: 35px;
+	top: 8px;
+    color: #999;
+    font-weight: bold;
+}
+.trans_wrap .center_con .buysell_table .buysell_btn {
+	position: relative;
+	width: 28%;
+	height: 55px;
+	float: right;
+	margin-left: 2%;
+	margin-top: 20px;
+}
+.trans_wrap .center_con .buysell_table .buysell_btn button {
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table .buysell_btn a {
+	border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 17px 0;
+    transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table .buy_btn button {
+	background-color: #ff4646;
+}
+.trans_wrap .center_con .buysell_table .buy_btn button:hover {
+	background-color: #c83030;
+	transition: all 0.1s;
+}
+.trans_wrap .center_con .buysell_table .buy_btn button:active {
+	background-color: #d83b3b;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,0.3);
+	transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table .sell_btn button {
+	background-color: #4378ff;
+}
+.trans_wrap .center_con .buysell_table .sell_btn button:hover {
+	background-color: #396def;
+	transition: all 0.1s;
+}
+.trans_wrap .center_con .buysell_table .sell_btn button:active {
+	background-color: #4378ff;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,0.3);
+	transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table button.not_active_btn {
+	background-color: #aaa;
+}
+.trans_wrap .center_con .buysell_table button.not_active_btn:hover {
+	background-color: #777;
+	transition: all 0.1s;
+}
+.trans_wrap .center_con .buysell_table button.not_active_btn:active {
+	background-color: #777;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,0.3);
+	transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table a.not_active_btn {
+	background-color: #aaa;
+}
+.trans_wrap .center_con .buysell_table a.not_active_btn:hover {
+	background-color: #777;
+	transition: all 0.1s;
+}
+.trans_wrap .center_con .buysell_table a.not_active_btn:active {
+	background-color: #777;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,0.3);
+	transition: all 0.2s;
+}
+/*//.deal_con (trans con-구매 판매창)*/
+/*--//②-4 .trans_wrap .center_con(코인상태바, 차트, 구매-판매박스) style*/
+
+/*------------② market main container end------------*/
+
+/*------------③ wait arder, 24h transaction hisotry start------------*/
+
+/*--③-1 .trans_tbl_con common*/
+.trans_wrap .trans_tbl_con {
+	width: 98%;
+	margin: 15px auto;
+	background: #fff;
+	border: 1px solid #dddddd;
+	height: auto;
+	color: #474846;
+	font-size: 15px;
+}
+
+.trans_wrap .trans_tbl_con h1 {
+	padding: 13px;
+	border-bottom: 1px solid #dddddd;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.trans_wrap .trans_tbl_con .trans_tbl {
+	width: 100%;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head th:nth-child(1), .trans_wrap .trans_tbl_con .tbl_head th:nth-child(2), .trans_wrap .trans_tbl_con .tbl_body td:nth-child(1), .trans_wrap .trans_tbl_con .tbl_body td:nth-child(2) {
+	text-align: left;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head {
+	border-bottom: 1px solid #dddddd;
+	font-size: 13px;
+	font-size: 12px;
+	color: #787878;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head th {
+	font-weight: 500;
+	padding: 6px 12px;
+	text-align: center;
+}
+
+.trans_wrap .trans_tbl_con .tbl_body td {
+	font-size: 13px;
+	padding: 8px 12px;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	height: 60px;
+}
+
+.trans_wrap .trans_tbl_con .tbl_body tr {
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.trans_wrap .trans_tbl_con .tbl_body tr:last-child {
+	border: 0;
+}
+
+.trans_wrap .trans_tbl_con .tbl_body tr:nth-child(even) {
+	background-color: rgba(245,245,245,0.5);
+}
+/*--//③-1 .trans_tbl_con common*/
+
+/*--③-2 .trans_tbl_con_1 .tbl_body button*/
+.trans_wrap .trans_tbl_con_1 .tbl_body td:last-child button {
+	margin-top: 5px;
+	border: 0;
+	padding: 5px 15px;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	cursor: pointer;
+	background: transparent;
+	color: #555555;
+	font-size: 11px;
+	outline: none;
+}
+
+.trans_wrap .trans_tbl_con_1 .tbl_body td:last-child button:hover {
+	border-color: #ffdc00;
+}
+
+.trans_wrap .trans_tbl_con_1 .tbl_body td:last-child button:active {
+	background: rgba(0,0,0,0.1);
+}
+/*--//③-2 .trans_tbl_con_1 .tbl_body button*/
+
+#trade_list tr.sell{
+	background: rgba(179,202,255,0.2);
+}
+
+#trade_list tr.sell td:nth-child(1){
+	color: #2e4dff;
+}
+
+#trade_list tr.buy{
+	background: rgba(255,223,223,0.2);
+}
+
+#trade_list tr.buy td:nth-child(1){
+	color: #ff0000;
+}
+
+/* 호가창 애니메이션 */
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+.cell {
+	display: inline-block;
+	border: 1px solid transparent;
+	padding: 10px
+}
+
+.cell-blink {
+animation: cell-blink 1s linear 1;
+}
+
+@keyframes cell-blink {
+	100% {
+		border: 1px solid transparent;
+	}
+}
+
+.row-blink {
+animation: row-blink 0.75s linear 1;
+}
+
+@keyframes row-blink {
+	100% {
+		background-color: transparent;
+	}
+}
+
+/*------------wait arder, 24h transaction hisotry end------------*/
+
+/*------------------------MARKET 거래소 페이지 스타일 END------------------------*/

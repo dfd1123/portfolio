@@ -1,0 +1,7 @@
+.sub_category{display:block;width:100%;background:#fff;border-bottom:1px dotted #ddd;}
+
+.sub_category .cate-container {}
+.sub_category .cate-container {transition-duration: 0ms;transform: translate3d(-150px, 0px, 0px);}
+.sub_category .cate-container  .iccate { font-size:14px;margin:0 auto;text-align:center;margin-right:0px !important;white-space:nowrap;min-width:80px}
+.sub_category .cate-container  a{display:block;color:#222;padding:10px 0;}
+.sub_category .cate-container  a.active{border-bottom:2px solid #e30404;color:#e30404;}

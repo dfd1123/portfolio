@@ -1,0 +1,98 @@
+/*------------------------MARKET RESPONSIVE STYLE 거래소 페이지 반응형 START------------------------*/
+
+@media all and (max-width: 1750px) {
+
+	/*.trans_wrap .center_con .trans_hd (coin state bar-코인상태바)*/
+	.trans_wrap .center_con .trans_hd .coin_state_1 {
+		width: 45%;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_2 {
+		width: 55%;
+	}
+	/*//.trans_wrap .center_con .trans_hd (coin state bar-코인상태바)*/
+}
+
+@media all and (max-width: 1650px) {
+
+	/*.trans_wrap .center_con .trans_hd (coin state bar-코인상태바)*/
+	.trans_wrap .center_con .trans_hd .coin_state_1 {
+		width: 100%;
+		padding-top: 0;
+		padding-left: 0;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_2 {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.trans_wrap .center_con .coin_state_1 .coin_name {
+		width: 50%;
+	}
+
+	.trans_wrap .center_con .coin_state_1 .coin_name span {
+		text-align: right;
+		padding-right: 20px;
+	}
+	/*//.trans_wrap .center_con .trans_hd (coin state bar-코인상태바)*/
+
+	/*.trans_wrap .center_con .chart_con (chart area-트레이딩 뷰 차트영역)*/
+	.trans_wrap .center_con .chart_con {
+		height: 345px;
+	}
+	/*//.trans_wrap .center_con .chart_con (chart area-트레이딩 뷰 차트영역)*/
+}
+
+@media all and (min-width: 1581px) {
+
+	/*.trans_wrap .center_con .deal_wrap .deal_con (trans con-구매 판매창)*/
+	.trans_wrap .center_con .deal_wrap .deal_con.coin_buy_con, .trans_wrap .center_con .deal_wrap .deal_con.coin_sell_con {
+		display: block !important;
+	}
+	/*//.trans_wrap .center_con .deal_wrap .deal_con (trans con-구매 판매창)*/
+}
+
+@media all and (max-width: 1580px) {
+
+	/*.ntc_bar (news bar-공지사항 위로 움직이는 영역)*/
+	.ntc_bar.active .ntc_show {
+		display: none;
+	}
+	.ntc_bar.active, .ntc_bar.active .close_btn {
+		width: 35px;
+	}
+	.ntc_bar.active .close_btn span {
+		right: 15px !important;
+	}
+	/*//.ntc_bar (news bar-공지사항 위로 움직이는 영역)*/
+
+	/*.trans_wrap .center_con .deal_wrap .deal_con (trans con-구매 판매창)*/
+	.trans_wrap .center_con .deal_wrap {
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.trans_wrap .center_con .deal_wrap .deal_con {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 50px;
+	}
+	.trans_wrap .center_con .choice_option_tit {
+		display: block;
+	}
+	.trans_wrap .center_con .deal_con .tit, .trans_wrap .center_con .deal_wrap .deal_con.coin_sell_con {
+		display: none;
+	}
+	.trans_wrap .center_con .deal_wrap .deal_con.coin_buy_con {
+		border-right: 0;
+	}
+	.trans_wrap .center_con {
+		width: 50%;
+		margin: 0 10px;
+	}
+	.trans_wrap .left_con, .trans_wrap .right_con {
+		width: 25%;
+	}
+	/*//.trans_wrap .center_con .deal_wrap .deal_con (trans con-구매 판매창)*/
+}
+
+/*------------------------MARKET RESPONSIVE STYLE 거래소 페이지 반응형 END------------------------*/

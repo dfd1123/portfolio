@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="31.591" viewBox="0 0 34 31.591">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0699ff"/>
+      <stop offset="1" stop-color="#1268ff"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_132" data-name="그룹 132" transform="translate(-1596 -179.409)">
+    <ellipse id="타원_31" data-name="타원 31" cx="15.5" cy="1.5" rx="15.5" ry="1.5" transform="translate(1599 208)" fill="#f4f4f4"/>
+    <g id="그룹_131" data-name="그룹 131" transform="translate(415.825 -496.753)">
+      <path id="패스_103" data-name="패스 103" d="M1213.173,681.443h-23.839l-1.075-3.744a2.377,2.377,0,0,0-2.215-1.537h-4.757a1.111,1.111,0,0,0,0,2.222h4.757c.063,0,.115.032.108.01l1.043,3.639,3.328,14.422a4.231,4.231,0,0,0,4.122,3.279h12.916a4.069,4.069,0,0,0,4.008-3.365l2.448-13.922A.856.856,0,0,0,1213.173,681.443Z" transform="translate(0)" fill="url(#linear-gradient)"/>
+      <g id="그룹_130" data-name="그룹 130" transform="translate(1192.605 685.865)" opacity="0.14">
+        <path id="패스_104" data-name="패스 104" d="M1196.134,695.8a1.156,1.156,0,0,1-1.133-.928l-1.371-6.836a1.157,1.157,0,1,1,2.268-.455l1.371,6.835a1.158,1.158,0,0,1-.907,1.362A1.141,1.141,0,0,1,1196.134,695.8Z" transform="translate(-1193.607 -686.647)" fill="#fff"/>
+        <path id="패스_105" data-name="패스 105" d="M1201.523,695.984a1.157,1.157,0,0,1-1.134-.929l-1.37-6.836a1.157,1.157,0,0,1,2.268-.455l1.37,6.836a1.157,1.157,0,0,1-.906,1.362A1.213,1.213,0,0,1,1201.523,695.984Z" transform="translate(-1194.009 -686.661)" fill="#fff"/>
+        <path id="패스_106" data-name="패스 106" d="M1206.911,696.172a1.156,1.156,0,0,1-1.133-.928l-1.37-6.835a1.157,1.157,0,1,1,2.269-.455l1.37,6.834a1.157,1.157,0,0,1-.906,1.362A1.144,1.144,0,0,1,1206.911,696.172Z" transform="translate(-1194.411 -686.675)" fill="#fff"/>
+      </g>
+      <circle id="타원_29" data-name="타원 29" cx="2.58" cy="2.58" r="2.58" transform="translate(1189.973 700.889)" fill="url(#linear-gradient)"/>
+      <circle id="타원_30" data-name="타원 30" cx="2.58" cy="2.58" r="2.58" transform="translate(1206.657 700.889)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-mypage-coupon-list-wrapper" class="mypage-coupon-list-wrapper">
+      <!-- 쿠폰적용상품 팝업 -->
+      <div class="_popup_wrapper _coupon_popup_wrapper display_none">
+        <div class="_bg"></div>
+        <div class="_popup_wrap">
+          <div class="_popup_title">
+            <h4>쿠폰 적용상품<button type="button" class="_close_btn"> </button></h4>
+          </div>
+          <div class="_popup_content">
+            <!-- 팝업 타이틀 -->
+            <div class="_title">
+              <h5>2019년 가을맞이 1,000원 할인</h5>
+              <p class="_date">2019-00-00 ~ 2010-00-00</p>
+            </div>
+            <!-- 팝업 타이틀 E -->
+            <div class="l-con-title-group dg-list-lineup_wrap">
+              <select name="#" id="#" class="dg-list-lineup">
+                <option value="#">인기순</option>
+                <option value="#">신상품 순</option>
+                <option value="#">낮은 가격 순</option>
+                <option value="#">높은 가격 순</option>
+                <option value="#">상품평 순</option>
+              </select>
+            </div>
+            <!-- 정렬 셀렉트 E -->
+            <div class="l-con-area">
+              <div class="l-con-article">
+                <div class="l-contents-group">
+                  <ul class="l-grid-group">
+                    <li class="l-grid-list l-col-2">
+                      <!-- * 옷상품 카드 -->
+                      <div class="dg-clothes-list-card">
+                        <figure class="dg-clothes-thumbnail">
+                          <input
+                            type="checkbox"
+                            class="heart-badge"
+                            id="test01"
+                          />
+                          <label class="heart-badge-label" for="test01">
+                            <svg viewBox="467 392 58 57">
+                              <defs>
+                                <linearGradient
+                                  id="heart-shape-gradient"
+                                  x2="0.35"
+                                  y2="1"
+                                >
+                                  <stop
+                                    offset="0%"
+                                    stop-color="var(--color-stop)"
+                                  ></stop>
+                                  <stop
+                                    offset="100%"
+                                    stop-color="var(--color-bot)"
+                                  ></stop>
+                                </linearGradient>
+                              </defs>
+
+                              <g
+                                class="heart-Group"
+                                fill="none"
+                                fill-rule="evenodd"
+                                transform="translate(467 392)"
+                              >
+                                <path
+                                  d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                  class="heart-path"
+                                  fill="#AAB8C2"
+                                ></path>
+                                <circle
+                                  class="main-circ"
+                                  opacity="0"
+                                  cx="29.5"
+                                  cy="29.5"
+                                  r="1.5"
+                                ></circle>
+
+                                <g
+                                  class="grp7"
+                                  opacity="0"
+                                  transform="translate(7 6)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="5"
+                                    cy="6"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp6"
+                                  opacity="0"
+                                  transform="translate(0 28)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#ff62b9"
+                                    cx="3"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp3"
+                                  opacity="0"
+                                  transform="translate(52 28)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#a134e8"
+                                    cx="4"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp2"
+                                  opacity="0"
+                                  transform="translate(44 6)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="5"
+                                    cy="6"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp5"
+                                  opacity="0"
+                                  transform="translate(14 50)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="6"
+                                    cy="5"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#ff62b9"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp4"
+                                  opacity="0"
+                                  transform="translate(35 50)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#fc4ead"
+                                    cx="3"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp1"
+                                  opacity="0"
+                                  transform="translate(24)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#a134e8"
+                                    cx="2.5"
+                                    cy="3"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="7.5"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+                              </g>
+                            </svg>
+                          </label>
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="in-information">
+                          <li class="_category">아우터</li>
+                          <li class="_sellername">
+                            <a href="#">판매자명</a>
+                          </li>
+                          <li class="_name">
+                            <a href="#">하프 리본 트렌치코트</a>
+                          </li>
+                        </ul>
+                        <ul class="in-pricedetail">
+                          <li class="_finalprice">
+                            <b>46,800</b>
+                            <img
+                              src="/images/icon/icon_review.svg"
+                              alt="star icon"
+                            /><span class="_rate">5.0</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- * 옷상품 카드 E -->
+                    </li>
+                    <li class="l-grid-list l-col-2">
+                      <!-- * 옷상품 카드 -->
+                      <div class="dg-clothes-list-card">
+                        <figure class="dg-clothes-thumbnail">
+                          <input
+                            type="checkbox"
+                            class="heart-badge"
+                            id="test01"
+                          />
+                          <label class="heart-badge-label" for="test01">
+                            <svg viewBox="467 392 58 57">
+                              <defs>
+                                <linearGradient
+                                  id="heart-shape-gradient"
+                                  x2="0.35"
+                                  y2="1"
+                                >
+                                  <stop
+                                    offset="0%"
+                                    stop-color="var(--color-stop)"
+                                  ></stop>
+                                  <stop
+                                    offset="100%"
+                                    stop-color="var(--color-bot)"
+                                  ></stop>
+                                </linearGradient>
+                              </defs>
+
+                              <g
+                                class="heart-Group"
+                                fill="none"
+                                fill-rule="evenodd"
+                                transform="translate(467 392)"
+                              >
+                                <path
+                                  d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                  class="heart-path"
+                                  fill="#AAB8C2"
+                                ></path>
+                                <circle
+                                  class="main-circ"
+                                  opacity="0"
+                                  cx="29.5"
+                                  cy="29.5"
+                                  r="1.5"
+                                ></circle>
+
+                                <g
+                                  class="grp7"
+                                  opacity="0"
+                                  transform="translate(7 6)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="5"
+                                    cy="6"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp6"
+                                  opacity="0"
+                                  transform="translate(0 28)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#ff62b9"
+                                    cx="3"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp3"
+                                  opacity="0"
+                                  transform="translate(52 28)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#a134e8"
+                                    cx="4"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp2"
+                                  opacity="0"
+                                  transform="translate(44 6)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="5"
+                                    cy="6"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp5"
+                                  opacity="0"
+                                  transform="translate(14 50)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="6"
+                                    cy="5"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#ff62b9"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp4"
+                                  opacity="0"
+                                  transform="translate(35 50)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#fc4ead"
+                                    cx="3"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp1"
+                                  opacity="0"
+                                  transform="translate(24)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#a134e8"
+                                    cx="2.5"
+                                    cy="3"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="7.5"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+                              </g>
+                            </svg>
+                          </label>
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="in-information">
+                          <li class="_category">아우터</li>
+                          <li class="_sellername">
+                            <a href="#">판매자명</a>
+                          </li>
+                          <li class="_name">
+                            <a href="#">하프 리본 트렌치코트</a>
+                          </li>
+                        </ul>
+                        <ul class="in-pricedetail">
+                          <li class="_finalprice">
+                            <b>46,800</b>
+                            <img
+                              src="/images/icon/icon_review.svg"
+                              alt="star icon"
+                            /><span class="_rate">5.0</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- * 옷상품 카드 E -->
+                    </li>
+                    <li class="l-grid-list l-col-2">
+                      <!-- * 옷상품 카드 -->
+                      <div class="dg-clothes-list-card">
+                        <figure class="dg-clothes-thumbnail">
+                          <input
+                            type="checkbox"
+                            class="heart-badge"
+                            id="test01"
+                          />
+                          <label class="heart-badge-label" for="test01">
+                            <svg viewBox="467 392 58 57">
+                              <defs>
+                                <linearGradient
+                                  id="heart-shape-gradient"
+                                  x2="0.35"
+                                  y2="1"
+                                >
+                                  <stop
+                                    offset="0%"
+                                    stop-color="var(--color-stop)"
+                                  ></stop>
+                                  <stop
+                                    offset="100%"
+                                    stop-color="var(--color-bot)"
+                                  ></stop>
+                                </linearGradient>
+                              </defs>
+
+                              <g
+                                class="heart-Group"
+                                fill="none"
+                                fill-rule="evenodd"
+                                transform="translate(467 392)"
+                              >
+                                <path
+                                  d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                  class="heart-path"
+                                  fill="#AAB8C2"
+                                ></path>
+                                <circle
+                                  class="main-circ"
+                                  opacity="0"
+                                  cx="29.5"
+                                  cy="29.5"
+                                  r="1.5"
+                                ></circle>
+
+                                <g
+                                  class="grp7"
+                                  opacity="0"
+                                  transform="translate(7 6)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="5"
+                                    cy="6"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp6"
+                                  opacity="0"
+                                  transform="translate(0 28)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#ff62b9"
+                                    cx="3"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp3"
+                                  opacity="0"
+                                  transform="translate(52 28)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#a134e8"
+                                    cx="4"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp2"
+                                  opacity="0"
+                                  transform="translate(44 6)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="5"
+                                    cy="6"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp5"
+                                  opacity="0"
+                                  transform="translate(14 50)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="6"
+                                    cy="5"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#ff62b9"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp4"
+                                  opacity="0"
+                                  transform="translate(35 50)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#fc4ead"
+                                    cx="3"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp1"
+                                  opacity="0"
+                                  transform="translate(24)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#a134e8"
+                                    cx="2.5"
+                                    cy="3"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="7.5"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+                              </g>
+                            </svg>
+                          </label>
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="in-information">
+                          <li class="_category">아우터</li>
+                          <li class="_sellername">
+                            <a href="#">판매자명</a>
+                          </li>
+                          <li class="_name">
+                            <a href="#">하프 리본 트렌치코트</a>
+                          </li>
+                        </ul>
+                        <ul class="in-pricedetail">
+                          <li class="_finalprice">
+                            <b>46,800</b>
+                            <img
+                              src="/images/icon/icon_review.svg"
+                              alt="star icon"
+                            /><span class="_rate">5.0</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- * 옷상품 카드 E -->
+                    </li>
+                    <li class="l-grid-list l-col-2">
+                      <!-- * 옷상품 카드 -->
+                      <div class="dg-clothes-list-card">
+                        <figure class="dg-clothes-thumbnail">
+                          <input
+                            type="checkbox"
+                            class="heart-badge"
+                            id="test01"
+                          />
+                          <label class="heart-badge-label" for="test01">
+                            <svg viewBox="467 392 58 57">
+                              <defs>
+                                <linearGradient
+                                  id="heart-shape-gradient"
+                                  x2="0.35"
+                                  y2="1"
+                                >
+                                  <stop
+                                    offset="0%"
+                                    stop-color="var(--color-stop)"
+                                  ></stop>
+                                  <stop
+                                    offset="100%"
+                                    stop-color="var(--color-bot)"
+                                  ></stop>
+                                </linearGradient>
+                              </defs>
+
+                              <g
+                                class="heart-Group"
+                                fill="none"
+                                fill-rule="evenodd"
+                                transform="translate(467 392)"
+                              >
+                                <path
+                                  d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                  class="heart-path"
+                                  fill="#AAB8C2"
+                                ></path>
+                                <circle
+                                  class="main-circ"
+                                  opacity="0"
+                                  cx="29.5"
+                                  cy="29.5"
+                                  r="1.5"
+                                ></circle>
+
+                                <g
+                                  class="grp7"
+                                  opacity="0"
+                                  transform="translate(7 6)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="5"
+                                    cy="6"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp6"
+                                  opacity="0"
+                                  transform="translate(0 28)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#ff62b9"
+                                    cx="3"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp3"
+                                  opacity="0"
+                                  transform="translate(52 28)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#a134e8"
+                                    cx="4"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp2"
+                                  opacity="0"
+                                  transform="translate(44 6)"
+                                >
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="5"
+                                    cy="6"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp5"
+                                  opacity="0"
+                                  transform="translate(14 50)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="6"
+                                    cy="5"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#ff62b9"
+                                    cx="2"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp4"
+                                  opacity="0"
+                                  transform="translate(35 50)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#fc4ead"
+                                    cx="2"
+                                    cy="7"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#fc4ead"
+                                    cx="3"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+
+                                <g
+                                  class="grp1"
+                                  opacity="0"
+                                  transform="translate(24)"
+                                >
+                                  <circle
+                                    class="oval1"
+                                    fill="#a134e8"
+                                    cx="2.5"
+                                    cy="3"
+                                    r="2"
+                                  ></circle>
+                                  <circle
+                                    class="oval2"
+                                    fill="#a134e8"
+                                    cx="7.5"
+                                    cy="2"
+                                    r="2"
+                                  ></circle>
+                                </g>
+                              </g>
+                            </svg>
+                          </label>
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="in-information">
+                          <li class="_category">아우터</li>
+                          <li class="_sellername">
+                            <a href="#">판매자명</a>
+                          </li>
+                          <li class="_name">
+                            <a href="#">하프 리본 트렌치코트</a>
+                          </li>
+                        </ul>
+                        <ul class="in-pricedetail">
+                          <li class="_finalprice">
+                            <b>46,800</b>
+                            <img
+                              src="/images/icon/icon_review.svg"
+                              alt="star icon"
+                            /><span class="_rate">5.0</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- * 옷상품 카드 E -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 상품목록 E -->
+          </div>
+        </div>
+      </div>
+      <!-- 쿠폰적용상품 팝업 E -->
+      <!-- * 마이페이지 헤더 -->
+      <div class="_page_title_wrap">
+        <h2>
+          쿠폰함
+          <a href="#" class="_back_btn">뒤로가기</a>
+        </h2>
+        <div class="second_title clear_both">
+          <a href="MyPageCouponListView.html" class="active">내 쿠폰함</a>
+          <a href="MyPageCouponZoneView.html">쿠폰받기</a>
+          <a href="MyPageCouponHistoryView.html">쿠폰 사용내역</a>
+        </div>
+      </div>
+      <!-- * 마이페이지 헤더 -->
+
+      <div class="l-mypage-contents">
+        <!-- 1) 내 쿠폰함 -->
+        <div class="l-con-area">
+          <div class="l-con-article">
+            <div>
+              <!-- 0. 쿠폰코드 분류 -->
+              <div class="dg-coupon-sorting-bar">
+                <ul class="in-sorting clear_both">
+                  <li class="_type active">
+                    <button type="button" class="word">최신순</button>
+                  </li>
+                  <li class="_type">
+                    <button type="button" class="word">할인순</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 0. 쿠폰코드 분류 E -->
+
+              <!-- 1. 제공된 쿠폰이 없을 때 -->
+              <div class="nothing-history">
+                <img
+                  src="/images/icon/empty_coupon.svg"
+                  alt="icon empty"
+                  class="in-empty-icon"
+                />
+                <span class="in-empty-ment">제공된 쿠폰이 없습니다.</span>
+              </div>
+              <!-- 1. 제공된 쿠폰이 없을 때 E -->
+
+              <!-- 2. 제공된 쿠폰이 있을 때 -->
+              <ul class="l-grid-group coupon_layout">
+                <li class="l-grid-list">
+                  <!-- * 쿠폰컴퍼넌트 -->
+                  <div class="dg-coupon-card">
+                    <div class="dg-coupon-card-inner">
+                      <div class="in-information">
+                        <h5 class="_tit">
+                          할인쿠폰 제목은 1줄 이상 넘어가면 이렇게 됩니다
+                        </h5>
+                        <ul class="_desc">
+                          <li>2019-11-14 ~ 2019-12-14</li>
+                          <li><span>전체상품 사용 가능</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 쿠폰컴퍼넌트 E -->
+                </li>
+                <li class="l-grid-list">
+                  <!-- * 쿠폰컴퍼넌트 -->
+                  <div class="dg-coupon-card">
+                    <div class="dg-coupon-card-inner">
+                      <div class="in-information">
+                        <h5 class="_tit">
+                          할인쿠폰 제목은 1줄 이상 넘어가면 이렇게 됩니다
+                        </h5>
+                        <ul class="_desc">
+                          <li>2019-11-14 ~ 2019-12-14</li>
+                          <li>
+                            <span>일부상품 사용 가능</span
+                            ><button class="rounded-btn-outline">
+                              적용상품보기
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 쿠폰컴퍼넌트 E -->
+                </li>
+                <li class="l-grid-list">
+                  <!-- * 쿠폰컴퍼넌트 -->
+                  <div class="dg-coupon-card">
+                    <div class="dg-coupon-card-inner">
+                      <div class="in-information">
+                        <h5 class="_tit">
+                          할인쿠폰 제목은 1줄 이상 넘어가면 이렇게 됩니다
+                        </h5>
+                        <ul class="_desc">
+                          <li>2019-11-14 ~ 2019-12-14</li>
+                          <li><span>전체상품 사용 가능</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 쿠폰컴퍼넌트 E -->
+                </li>
+                <li class="l-grid-list">
+                  <!-- * 쿠폰컴퍼넌트 -->
+                  <div class="dg-coupon-card">
+                    <div class="dg-coupon-card-inner">
+                      <div class="in-information">
+                        <h5 class="_tit">
+                          할인쿠폰 제목은 1줄 이상 넘어가면 이렇게 됩니다
+                        </h5>
+                        <ul class="_desc">
+                          <li>2019-11-14 ~ 2019-12-14</li>
+                          <li><span>전체상품 사용 가능</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 쿠폰컴퍼넌트 E -->
+                </li>
+              </ul>
+              <!-- 2. 제공된 쿠폰이 있을 때 E -->
+            </div>
+          </div>
+        </div>
+        <!-- 1) 내 쿠폰함 E -->
+      </div>
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

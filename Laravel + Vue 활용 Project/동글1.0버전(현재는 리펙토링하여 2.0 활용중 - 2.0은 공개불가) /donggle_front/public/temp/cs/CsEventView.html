@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/ui.css" />
+</head>
+
+<body>
+  <!--
+    header 자리
+  -->
+
+  <!-- content -->
+  <div id="dg-cs-event-wrapper" class="dg-cs-wrapper">
+
+    <div class="l-cs-contents">
+      <!-- 
+      미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+     -->
+      <!-- 미니 퀵메뉴 -->
+      <aside id="_mini_quick_menu">
+        <div class="_img_box">
+          <img src="/images/badge/badge_3.svg" alt="logo">
+        </div>
+        <h2 class="_title">#QUICK</h2>
+        <ul class="_mini_quick_menu_btn_wrap">
+          <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top">위로</a></li>
+          <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom">아래로</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- 미니 퀵메뉴 E -->
+
+      <!-- 활성화된 메뉴 _list 에 active 추가 -->
+      <div class="l-side-navi">
+        <div class="l-con-title-group type01 mb-10">
+          <h2 class="in-subject">고객센터</h2>
+        </div>
+        <article class="in-nav-section">
+          <ul>
+            <li class="_list">
+              <a href="CsNoticeView.html">공지사항</a>
+            </li>
+            <li class="_list">
+              <a href="CsFaqView.html">자주묻는 질문</a>
+            </li>
+            <li class="_list">
+              <a href="CsSupportView.html">1:1 문의</a>
+            </li>
+            <li class="_list active">
+              <a href="CsEventView.html">이벤트</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="l-con-area">
+        <!-- 
+          ._board_pager : pagination 자리
+          
+          등록된 글이 없을 때: ._event_wrap ._empty 에 .display_none 삭제,
+                              ._event_wrap ._fill 에 .display_none
+         -->
+        <!-- 1) 이벤트  -->
+        <div class="l-con-article">
+          <section class="_cs_wrap _event_wrap">
+            <h3>이벤트</h3>
+            <!-- 등록된 이벤트가 있을 때 -->
+            <div class="_board">
+              <!-- 등록된 이벤트가 없을 때 -->
+              <div class="_empty display_none">
+                <div class="_img_box">
+                  <img src="/images/icon/empty_board.svg" alt="등록된 게시글이 없습니다.">
+                </div>
+                <div class="_text">등록된 게시글이 없습니다.</div>
+              </div>
+              <!-- 등록된 이벤트가 없을 때 E -->
+              <ul class="_board_layout _cs_layout _fill">
+                <li class="_cs_content">
+                  <div class="_board_title_label">
+                    <span class="_number">000</span>
+                    <span class="_check _ing">진행중</span>
+                    <span class="_title">동글 이벤트 제목입니다.</span>
+                    <span class="_term">2019-00-00 ~ 2019-00-00</span>
+                  </div>
+                  <a href="CsEventPost.html" class="link"> </a>
+                </li>
+                <li class="_cs_content">
+                  <div class="_board_title_label">
+                    <span class="_number">000</span>
+                    <span class="_check">종료</span>
+                    <span class="_title">동글 이벤트 제목입니다.</span>
+                    <span class="_term">2019-00-00 ~ 2019-00-00</span>
+                  </div>
+                  <a href="CsEventPost.html" class="link"> </a>
+                </li>
+                <li class="_cs_content">
+                  <div class="_board_title_label">
+                    <span class="_number">000</span>
+                    <span class="_check">종료</span>
+                    <span class="_title">동글 이벤트 제목입니다.</span>
+                    <span class="_term">2019-00-00 ~ 2019-00-00</span>
+                  </div>
+                  <a href="CsEventPost.html" class="link"> </a>
+                </li>
+              </ul>
+              <!-- 페이지 -->
+              <!-- 
+                숫자가 3자리수가 되면
+                ._event_wrap ._pager > a 에 padding:0px
+               -->
+              <div class="_board_pager">
+              </div>
+              <!-- 페이지 E -->
+            </div>
+            <!-- 등록된 이벤트가 있을 때 E -->
+          </section>
+        </div>
+        <!-- 1) 이벤트 E -->
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- content E -->
+
+  <!--
+    footer 자리
+  -->
+</body>
+
+</html>

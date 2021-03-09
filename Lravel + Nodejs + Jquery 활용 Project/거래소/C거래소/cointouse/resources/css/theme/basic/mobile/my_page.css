@@ -1,0 +1,496 @@
+/* ----------start 모바일버전 마이페이지 스타일---------- */
+
+/* 공통속성 */
+.m_mypage_wrap{
+    height: calc(100% - 40px);
+}
+
+.mypage_msg{
+    font-size: 0.75rem;
+    color: #787878;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.lv_certifi_after{
+    text-align: center;
+}
+
+.m_mypage_wrap-2 .big_tit,
+.m_mypage_wrap-lvup .big_tit{
+    font-size: 0.9rem;
+}
+
+.m_mypage_wrap-2 .complit_icon,
+.m_mypage_wrap-lvup .complit_icon{
+    width: 80px;
+}
+
+
+/* //공통속성 */
+
+/* ----------알림설정---------- */
+.m_mypage_wrap-1{
+    padding-bottom: 50px;
+}
+
+.m_mypage_wrap-1 .alarm_div{
+    font-size: 0.8rem;
+    padding: 20px;
+}
+
+.m_mypage_wrap-1 .alarm_div .alarm_group{
+    display: inline-block; float: right;
+}
+
+.m_mypage_wrap-1 .abslt_btn{
+    background: #28283c;
+}
+
+/* ----------//알림설정---------- */
+
+/* 보안인증 start */
+
+.m_mypage_wrap-lvup {
+    padding: 20px 75px;
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.m_mypage_wrap-lvup .mobile_certify_code_wrap{
+    text-align: left;
+}
+
+.m_mypage_wrap-lvup .mobile_certify_code_wrap .certifi_form_input{
+    width: 98%;
+}
+
+@media all and (max-width: 610px){
+    
+    .m_mypage_wrap-lvup{
+        width: 100%;
+        padding: 0 20px;
+        padding-bottom: 30px
+    }
+    
+    .security_set_group .certifi_form_group{
+        flex-wrap: wrap;
+    }
+    
+    .certifi_form_group .certifi_form_input{
+        margin-right: 0 !important;
+    }
+    
+    .m_mypage_wrap-lvup .mobile_certify_code_wrap .certifi_form_input{
+        width: 100%;
+    }
+    
+}
+
+.m_mypage_wrap-lvup .title{
+    line-height: 25px;
+    font-size: 0.8rem;
+    font-size: 0.75rem;
+    color: #787878;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.security_set_group .boan_level_wrap{
+    display: block;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con{
+    width: 95px;
+    height: 95px;
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 55px 0 30px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 31%;
+    background-size: 20px;
+    position: relative;
+    font-size: 0.75rem;
+    color: #a0a0a0;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1){
+    background-image: url(/storage/image/homepage/icon/level_icon1_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(2){
+    background-image: url(/storage/image/homepage/icon/level_icon2_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .second.boan_level_con:nth-child(1){
+    background-image: url(/storage/image/homepage/icon/level_icon3_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .second.boan_level_con:nth-child(2){
+    background-image: url(/storage/image/homepage/icon/level_icon4_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con.active{
+    color: #474846;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.2);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1).active{
+    background-image: url(/storage/image/homepage/icon/level_icon1_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(2).active{
+    background-image: url(/storage/image/homepage/icon/level_icon2_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .second.boan_level_con:nth-child(1).active{
+    background-image: url(/storage/image/homepage/icon/level_icon3_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .second.boan_level_con:nth-child(2).active{
+    background-image: url(/storage/image/homepage/icon/level_icon4_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .info_list {
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.75rem;
+    color: #787878;
+    text-align: left;
+}
+
+.mypage_inner .complit_icon{
+    width: 105px;
+}
+
+.resend_btn{
+    width: 100px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 3px 0;
+}
+
+
+/* 보안인증 end */
+
+/* ----------보안강화---------- */
+
+.m_mypage_wrap-2 .mypage_msg{
+    color: #333333;
+}
+
+.m_mypage_wrap-2 .tit{
+    display: inline-block;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.m_mypage_wrap-2 .top_qr_box{
+    background: #f5f5f5;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.m_mypage_wrap-2 .qr_box{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.m_mypage_wrap-2 .qr_box img{
+    width: 100%;
+    height: 100%;
+}
+
+.m_mypage_wrap-2 .otp_div{
+    padding: 15px 20px 20px;
+}
+
+.m_mypage_wrap-2 .otp_setting_group{
+    text-align: center;
+    padding: 0 20px 20px;
+    font-size: 0.75rem;
+}
+
+.m_mypage_wrap-2 .download_btn{
+    text-align: center;
+    font-size: 12px;
+    padding: 0 13px;
+    background: #fff;
+    border: 1px solid #474846;
+    color: #474846; 
+    outline: none;
+    width: 100%;
+}
+
+.m_mypage_wrap-2 .download_btn b{
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.m_mypage_wrap-2 .download_btn:hover{
+    border-color: #ffdc00;
+    color: #ffdc00;
+    background: #fff;outline: none;
+}
+
+.m_mypage_wrap-2 .small_ment.boxing{
+    font-size: 0.75rem;
+    width: 85%;
+    margin: 0 auto;
+    padding: 11px 15px;
+}
+
+.m_mypage_wrap-2 .small_ment.boxing b{
+    color: #ffdc00;
+}
+
+/* ----------//보안강화---------- */
+
+/* ----------락리워드---------- */
+
+/* 잠금중-잠금해제중-잠금가능 상태창 */
+.m_mypage_wrap-3 .lock_indicator{
+    background: #f5f5f5;
+    padding: 5px 20px;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul{
+    width: 100%; 
+    height: 100%;
+    display: block;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul li{
+    width: 100%;
+    font-size: 0.75rem;
+    color: #474846;
+    height: 30px;
+    line-height: 28px;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul li p{
+    display: inline-block;
+    float: left;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul li .amount_span{
+    float: right;
+    color: #0fa5a5;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.m_mypage_wrap-3 .lock_indicator ul li .amount_span .currency{
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding-left: 5px;
+}
+
+/* //잠금중-잠금해제중-잠금가능 상태창 */
+
+/* 코인수량, 잠금-잠금해제 버튼 담은 div */
+.m_mypage_wrap-3 .lock_div{
+    padding: 10px 20px 20px;
+}
+/* //코인수량, 잠금-잠금해제 버튼 담은 div */
+
+/* 코인수량 */
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar label{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    color: #ffdc00;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar input{
+    width: 100%;
+    font-size: 1rem;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    text-align: right;
+    padding: 0px 4px 0 80px;
+    outline: none;
+    border-radius: 0;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar input::placeholder{
+    color: #969696;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar input:focus{
+    border-color: #ffdc00;
+    outline: none;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .coin_amount_bar select.form-control{
+    width: 40%;
+    text-transform: uppercase;
+}
+/* //코인수량 */
+
+/* 잠금-잠금해제 버튼 */
+.m_mypage_wrap-3 .lock_reward_hd .svgicon{
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    position: relative;
+    left: -4px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .svgicon + span{
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .svgicon.lock_icon{
+	background-image: url(/storage/image/homepage/icon/icon_lock.svg);
+}
+
+.m_mypage_wrap-3 .lock_reward_hd .svgicon.unlock_icon{
+	background-image: url(/storage/image/homepage/icon/unlock.svg);
+}
+/* //잠금-잠금해제 버튼 */
+
+/* 락리워드 내역 */
+.m_mypage_wrap-3 .lock_reward_group .label{
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding: 0 0px 5px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.m_mypage_wrap-3 .lock_reward_group .lock_history_tab{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    margin: 13px 0;
+}
+
+.m_mypage_wrap-3 .lock_reward_group .lock_history_tab ul{
+    width: 100%; height: 100%;
+}
+
+.m_mypage_wrap-3 .lock_history_tab li {
+    width: 50%;
+    border: 1px solid #dddddd;
+    float: left;
+    height: 100%;
+    line-height: 40px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.m_mypage_wrap-3 .lock_history_tab li.active{
+    border-color: #ffdc00;
+}
+
+.m_mypage_wrap-3 .lock_history_table .table_label{
+    border: 1px solid #dddddd;
+    border-right: 0;
+    border-left: 0;
+}
+
+.m_mypage_wrap-3 .lock_history_table .table_label thead > tr > th{
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_1 .table_label thead > tr > th:nth-child(1),
+.m_mypage_wrap-3 .lock_history_table.table_1 .table_label thead > tr > th:nth-child(2){
+    width: 30%;
+}
+.m_mypage_wrap-3 .lock_history_table.table_1 .table_label thead > tr > th:nth-child(3){
+    width: 40%;
+}
+
+.m_mypage_wrap-3 .lock_history_table .coin_chart_tbl tbody > tr:last-child{
+    border-color: #dddddd;
+}
+
+.m_mypage_wrap-3 .lock_history_table .coin_chart_tbl tbody > tr > td{
+    text-align: center;
+    color: #474846;
+    padding: 15px 0;
+    font-size: 0.73rem;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(1),
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    width: 30%;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(3){
+    width: 40%;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr.lock_status > td:nth-child(1){
+    font-weight: bold;
+    color: #ff4646;
+}
+.m_mypage_wrap-3 .lock_history_table.table_1 .coin_chart_tbl tbody > tr.unlock_status > td:nth-child(1){
+    font-weight: bold;
+    color: #4378ff;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_2 .table_label thead > tr > th:nth-child(1),
+.m_mypage_wrap-3 .lock_history_table.table_2 .table_label thead > tr > th:nth-child(2){
+    width: 50%;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(1),
+.m_mypage_wrap-3 .lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    width: 50%;
+}
+
+.m_mypage_wrap-3 .lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    border-right: 1px solid #dddddd;
+}
+
+/* //락리워드 내역 */
+
+/* ----------//락리워드---------- */
+
+/* ----------비밀번호 변경---------- */
+.m_mypage_wrap-4{
+    padding: 0 20px;
+}
+
+/* ----------//비밀번호 변경---------- */
+
+/* ----------end 모바일버전 마이페이지 스타일---------- */

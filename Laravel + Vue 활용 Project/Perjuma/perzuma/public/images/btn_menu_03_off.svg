@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.541" height="54.076" viewBox="0 0 39.541 54.076">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-3{fill:#91ccfd;stroke:#adb3bc;stroke-linejoin:round;stroke-width:2.5px}.cls-2,.cls-3{fill:#fff;stroke-linecap:round}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="btn_menu_03_off" transform="translate(.041)">
+        <g id="레이어_1" data-name="레이어 1">
+            <rect id="사각형_286" width="23.081" height="23.081" class="cls-1" data-name="사각형 286" rx="4.687" transform="translate(2.548 1.25)"/>
+            <path id="패스_2329" d="M17.465 33.45v-20.9a3.465 3.465 0 0 0-6.929 0v29.163l-2.285-8.574c-1.144-1.969-2-2.539-4.162-2.585a2.7 2.7 0 0 0-2.748 3.465L3.816 44.61a23.785 23.785 0 0 0 3.067 8.217" class="cls-2" data-name="패스 2329"/>
+            <path id="패스_2330" d="M21.793 24.559a10.957 10.957 0 0 1 2.407 6.858v2.318" class="cls-3" data-name="패스 2330"/>
+            <path id="패스_2331" d="M27.909 24.046a10.957 10.957 0 0 1 2.85 7.371v2.318" class="cls-3" data-name="패스 2331"/>
+            <path id="패스_2332" d="M35.318 28.035a10.957 10.957 0 0 1 2.849 7.371l.083 5.819a32.788 32.788 0 0 1-2.121 11.595" class="cls-3" data-name="패스 2332"/>
+        </g>
+    </g>
+</svg>

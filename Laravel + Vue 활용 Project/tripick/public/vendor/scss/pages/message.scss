@@ -1,0 +1,614 @@
+@import "../helpers/mixin";
+
+$message-card-pd-tb: 2rem;
+
+.wrapper--msg{
+
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+
+    &__scroll-area{
+        @include scrollArea(100%);
+    }
+
+    &-view{
+
+        padding-top: $hd-title-height;
+        padding-bottom: 5.5rem;
+
+        .hd-title{
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .wrapper--msg__scroll-area{
+            background-color: #F9FAFC;
+            padding-bottom: 10rem;
+        }
+
+        .user-message__name{
+            font-weight: 400;
+            position: relative;
+                
+            &:before{
+                @include position($t: 50%, $l: -15px, $transX: 0, $transY: -50%);
+                content: '';
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                border-radius: 50%;
+                background-color: $main-color;
+            }
+
+        }
+
+    }
+
+    &-store{
+
+        padding-top: $hd-title-height;
+
+        .hd-title{
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .is-edit{
+            display: none;
+        }
+
+    }
+
+}
+
+.hd-title__sch {
+
+    height: 5.5rem;
+
+}
+
+.user-list{
+
+    @include paddingLeftRight2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__thum{
+
+        @include position($t: 50%, $l: 0, $transX: 0, $transY: -50%);
+        @include bgStyle(cover);
+        width: 4.5rem;
+        height: 4.5rem;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $bg-01-color;
+        transition: all 0.3s;
+
+    }
+
+    &__name{
+
+        width: 100%;
+        font-weight: bold;
+        font-size: 0.95em;
+        margin-bottom: 7px;
+
+    }
+
+    &__date{
+
+        @include fontStyle(11px, 200, $light-blue-02-color);
+        @include position($t: 2.3rem, $r: 0, $transX: 0, $transY: 0);
+
+        &--yester{
+            display: inline-block;
+            padding-right: 8px;
+        }
+
+    }
+
+    &__msg{
+        @include fontStyle(0.7em, 200, $light-blue-02-color);
+        @include textOverflow(1);
+        padding-right: 50px;
+    }
+
+    &__badge{
+        
+        @include position($r: 8px, $b: 1.6rem, $transX: 0, $transY: 0%);
+        @include fontStyle($small-font, bold, #fff);
+        width: 20px;
+        height: 20px;
+        background-color: $main-color;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 20px;
+        text-align: center;
+
+    }
+    
+    &:active{
+
+        background-color: #F4F7F9;
+
+    }
+
+    &:last-child .user-message__card{
+        border-bottom: 0;
+    }
+
+}
+
+.user-message{
+
+    &__group{
+        font-size: 18px;
+
+    }
+
+    &__thum{
+
+        &.is-active:after{
+
+            @include position($b: 0, $r: 0, $transX: 0, $transY: 0);
+            content: '';
+            width: 11px;
+            height: 11px;
+            background-color: $main-color;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            display: inline-block;
+            transition: all 0.3s;
+
+        }
+
+    }
+
+    &__card{
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #ECF1F5;
+        padding: $message-card-pd-tb 0 $message-card-pd-tb 5.5rem;
+        transition: all 0.3s;
+
+    }
+
+    &__type,
+    &__local{
+        @include fontStyle(0.75em, 400, $sky-blue-color);
+    }
+
+    &__local{
+        &:before{
+            content: '·';
+            padding-right: 5px;
+            font-weight: bold;
+        }
+    }
+
+    &__check{
+        @include position($t: 50%, $l: 0, $transX: 0, $transY: -50%);
+    }
+
+    &__check-label{
+        @include position($t: 50%, $l: 0, $transX: 0, $transY: -50%);
+        opacity: 0;
+    }
+
+    &__btns{
+
+        padding: 1.5rem 2rem 3rem;
+        text-align: center;
+        font-size: 14px;
+
+        &__amount{
+            font-size: 1.1em;
+            color: $navy-color;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .button{
+            background-color: #00244C;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+    }
+
+}
+
+.wrapper--msg-store.is-edit-mode{
+
+    .is-not-edit{
+        display: none;
+    }
+
+    .is-edit{
+        display: block;
+    }
+
+    .user-message__check-label{
+        opacity: 1;
+        left: 5px;
+        transition: all 0.5s;
+    }
+
+    .user-list__thum{
+        left: 3rem;
+        transition: all 0.3s;
+    }
+
+    .user-message__card{
+        padding: 2rem 0 2rem 8.5rem;
+        transition: all 0.3s;
+    }
+
+    .user-message__group{
+        border-bottom: 1px solid $border-color;
+        transition: all 0.3s;
+    }
+    
+}
+
+.user-msg-view{
+
+    padding: 2rem 2rem 5em;
+    position: relative;
+
+    &__list{
+        &--send{
+            text-align: right;
+            
+            .user-msg-view__bubble{
+                background-color: $navy-color;
+                margin-left: auto;
+                border-top-right-radius: 0;
+            }
+
+            .user-msg-view__bubble--final{
+                background-color: #fff;
+                text-align: left;
+                width: 100%;
+                color: #4E4B40;
+                padding-top: 1rem;
+                    
+                .user-msg-view__date{
+                    @include position($b: -25px, $l: 20px, $transX: 0, $transY: 0);
+                }
+                    
+            }
+            
+            .user-msg-view__bubble-text{
+                color: #fff;
+            }
+
+            .user-msg-view__date{
+                @include position($b: 3px, $l: -55px, $transX: 0, $transY: 0);
+            }
+
+        }
+        &--receive{
+            text-align: left;
+            
+            .user-msg-view__bubble{
+                background-color: #fff;
+                margin-right: auto;
+                border-top-left-radius: 0;
+            }
+            
+            .user-msg-view__bubble-text{
+                color: $navy-color;
+            }
+            .user-msg-view__date{
+                @include position($b: 3px, $r: -55px, $transX: 0, $transY: 0);
+            }
+        }
+    }
+    .user-list__thum{
+        position: relative;
+        transform: unset;
+        background-color: $light-blue-02-color;
+        margin-bottom: 10px;
+    }
+    &__bubble{
+        padding: 1.45rem 2rem;
+        width: 70%;
+        display: block;
+        position: relative;
+        border-radius: 30px;
+        margin-bottom: 23px;
+    }
+    &__bubble-text{
+        line-height: 1.45;
+        font-size: 13px;
+        text-align: left;
+    }
+    &__date{
+        @include fontStyle(11px, 200, $light-blue-02-color);
+        text-align: left;
+    }
+    &__store{
+        @include bgStyle(70%);
+        @include position($t: -35px, $l: 50%, $transX: -50%, $transY: 0);
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background-color: transparent;
+        background-image: url(/img/btn/btn-save-light-blue.svg);
+        outline: none;
+    }
+    
+    ._caution{
+        @include position($t: -80px, $l: -66px, $transX: 0, $transY: 0);
+        @include fontStyle(13px, 400, #fff);
+        background-color: #00DBD8;
+        width: 162px;
+        padding: 11px 0;
+        border-radius: 12px;
+        text-align: center;
+        display: none;
+
+        &:after{
+            @include position($b: -10px, $l: 51%, $transX: 0, $transY: 0);
+            content: '';
+            display: inline-block;
+            border: 5px solid transparent;
+            border-top: 5px solid $main-color;
+            width: 0;
+        }
+
+        @include sm{
+            font-size: 11px;
+            width: 140px;
+            left: -55px;
+        }
+
+        @include xsm{
+            font-size: 10px;
+            width: 120px;
+            left: -40px;
+        }
+    }
+}
+
+.user-msg-alarm{
+    
+    @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+    @include fontStyle(15px, 100, #fff);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    z-index: 3;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 13px;
+    opacity: 0;
+
+    &__btn{
+        @include bgStyle(10px);
+        @include position($t: 0, $r: 0, $transX: 0, $transY: 0);
+        display: inline-block;
+        width: 40px;
+        height: 100%;
+        background-image: url(/img/btn/btn-close-wh.svg);
+    }
+
+}
+
+.final-card{
+
+    &__title{
+        @include bgStyle(25px);
+        @include fontStyle($parent-normal-font, bold, inherit);
+        padding: 15px 10px 15px 34px;
+        background-image: url(/img/icon/icon-final-coin.svg);
+        background-position: left;
+    }
+
+    &__info{
+    
+        &__list{    
+            border-top: 1px solid rgba(240, 205, 92, 0.5);
+            padding: 13px 10px;
+            font-size: 14px;
+            text-align: right;
+            position: relative;
+        }
+        &__label{
+            @include fontStyle(16px, 400, inherit);
+            @include position($t: 13px, $l: 10px, $transX: 0, $transY: 0);
+            text-align: left;
+        }
+    
+        &__line{    
+            @include fontStyle(13px, 300, rgba(#4E4B40, 0.5));
+            display: inline-block;
+            line-height: 1.7;
+            text-align: right;
+            width: 100%;
+            padding-left: 65px;
+        }
+
+        &__price{
+            @include fontStyle(20px, bold, inherit);
+        }
+
+    }
+
+    &__btns{
+        text-align: right;
+        padding: 5px 10px;
+    }
+    &__btn{
+        @include fontStyle(16px, 200, #fff);
+        background-color: #FFCC24;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(255, 193, 29, 0.37);
+        padding: 7px 15px;
+    }
+    
+}
+
+.bt-fixed-request{
+    position: fixed;
+    z-index: 5;
+    bottom: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    &__btn{
+        @include bgStyle(30px);
+        @include fontStyle($parent-normal-font, 400, #4E4B40);
+        background-color: #fff;
+        border: 0;
+        border-radius: 30px;
+        padding: 16px 16px 16px 57px;
+        background-image: url(/img/icon/icon-final-coin.svg);
+        background-position: 16px 50%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
+        outline: none;
+        &:active{
+            background-color: darken(#fff, 5%);
+        }
+    }
+    &__caution{
+        display: block;
+        color: rgba(#4E4B40, 0.5);
+    }
+}
+
+.bt-fixed-msg{
+    @include maxWidth1024;
+    width: 100%;
+    height: 5.5rem;
+    background-color: #ECF1F5;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    padding: 1rem 60px 1rem 2rem;
+
+    &__input{
+        
+        @include iosInput;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 30px;
+        padding: 0 1.5rem;
+        outline: none;
+        &::placeholder{
+            color: #cccccc;
+        }
+        &:focus{
+            border: 1px solid $border-color;
+        }
+    }
+    &__btn{
+        @include bgStyle(30px);
+        @include position($t: 0, $r: 0, $transX: 0, $transY: 0);
+        width: 60px;
+        height: 100%;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        background-image: url(/img/btn/btn-msg-send.svg);
+        background-position: 10px 50%;
+    }
+}
+
+// 팝업
+.request-pay{
+    &__input-group{
+        @include bgStyle(30px);
+        margin-top: 15px;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        background-image: url(/img/icon/icon-money.svg);
+        height: 4.5rem;
+        background-position: 0 50%;
+    }
+
+    &__input-group_null{
+        @include bgStyle(30px);
+        margin-top: 15px;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        background-image: unset;
+        height: 4.5rem;
+        background-position: 0 50%;
+    }
+
+    &__input-group ~ .inline--left.second{
+        margin: 2rem 0 1.2rem;
+    }
+
+    &__input{
+        @include fontStyle($normal-font, 300, $navy-color);
+        @include iosInput;
+        width: 100%;
+        height: 100%;
+        padding-left: 40px;
+        padding-right: 30px;
+        text-align: right;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid $navy-color;
+        font-size: $normal-font;
+        outline: none;
+        &::placeholder{
+            color: rgba($navy-color, 0.3);
+        }
+    }
+    &__unit{
+        @include position($t: 50%, $r: 5px, $transX: 0, $transY: -50%);
+    }
+
+    &__textarea {
+        width: 100%;
+
+        textarea{
+            outline: none;
+            font-size: 14px;
+            font-weight: 300;
+            color: #00244C;
+            border: 0;
+            box-shadow: none;
+            display: block;
+            line-height: 32px;
+            margin: 0;
+            padding: 0;
+            resize: none;
+            height: 65px;
+            width: 55%;
+            background: linear-gradient(to top, transparent, #00244C 1px, transparent 0px);
+            background-size: 100% 32px;
+            font-weight: 400;
+        }
+
+    }
+
+}
+
+
+@keyframes showFade{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

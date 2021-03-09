@@ -1,0 +1,183 @@
+/* ----------start 모바일버전 내자산 스타일---------- */
+
+/* 공통속성 */
+.m_myasset_wrap{
+    width: 100%;
+    height: 100%;
+}
+
+/* //공통속성 */
+
+/* 검색 */
+.m_myasset_wrap .sch_bar{
+    height: 45px;
+}
+
+.m_myasset_wrap .con_2 .sch_bar,
+.m_myasset_wrap .con_3 .sch_bar{
+    border-bottom: 1px solid #ffdc00;
+}
+
+.m_myasset_wrap .sch_bar label{
+    line-height: 45px;
+}
+
+.m_myasset_wrap .coin_sch_bar i{
+    top: 12px;
+}
+
+/* //검색 */
+
+/* 내 자산 상태 */
+.m_myasset_wrap .status_bar .total_ast{    
+    height: 80px;
+    padding: 10px 15px;
+}
+
+.m_myasset_wrap .my_ast_list{
+    display: flex; width: 100%;
+    flex-wrap: wrap; height: 125px;
+    background: #f7f7f7;
+    padding: 0 12px;
+}
+
+.m_myasset_wrap .my_ast_list li{
+    width: 50%; text-align: right;
+}
+
+.m_myasset_wrap .my_ast_list li label{
+    font-size: 0.7rem;
+    color: #787878;
+    width: 100%;
+    display: inline-block;
+}
+
+.m_myasset_wrap .my_ast_list li span{
+    font-size: 0.9rem;
+}
+
+.m_myasset_wrap .my_ast_list li .currency{
+    color: #333333;
+    font-weight: bold; margin-left: 5px;
+}
+
+.m_myasset_wrap .bottom_wrap{
+    height: calc(100% - 41px);
+    background: #fff;
+}
+
+/* //내 자산 상태 */
+
+.m_myasset_wrap .con_box{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#my_coin_check:checked ~ .con_1{
+    display: block;
+}
+
+#trans_hitr_check:checked ~ .con_2{
+    display: block;
+}
+
+#trans_hitr_check:checked ~ .con_1{
+    display: none;
+}
+
+#not_trans_check:checked ~ .con_3{
+    display: block;
+}
+
+#not_trans_check:checked ~ .con_1{
+    display: none;
+}
+
+.m_myasset_wrap .con_1{
+    display: block;
+}
+
+.m_myasset_wrap .con_1 .scrl_wrap{
+    height: calc(100% - 40px);
+}
+
+.m_myasset_wrap .con_2 .scrl_wrap{
+    height: calc(100% - 40px);
+}
+
+.m_myasset_wrap .con_3 .scrl_wrap{
+    height: calc(100% - 40px);
+}
+
+.my_coin_list_con .my_ast_list{
+    background: #fff;
+}
+
+.my_coin_list_con .hd{
+    padding: 10px 15px;
+}
+
+.my_coin_list_con .hd:active{
+    background-color: #f7f7f7;
+}
+
+.my_coin_list_con .dp_table_cell._left{
+    width: 45%;
+    border-right: 1px solid #f0f0f0;
+    padding-left: 32px;
+}
+
+.my_coin_list_con .dp_table_cell._left .coin_symbol{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.my_coin_list_con .dp_table_cell._left p{
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.my_coin_list_con .dp_table_cell._left .currency{
+    font-size: 0.8rem;
+}
+
+.my_coin_list_con .dp_table_cell._left i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+}
+
+.my_coin_list_con .dp_table_cell._right{
+    width: 55%;
+    text-align: right;
+    letter-spacing: 0;
+}
+
+.my_coin_list_con .dp_table_cell._right p{
+    font-size: 0.7rem;
+    color: #787878;
+    line-height: 1;
+}
+
+.my_coin_list_con .dp_table_cell._right .point_clr_1{
+    font-size: 1.15rem;
+}
+
+.my_coin_list_con .dp_table_cell._right .currency{
+    font-size: 0.75rem;
+    color: black;
+}
+
+.m_myasset_wrap .con_3 .history_st .con button{
+    position: relative;
+    right: 0;
+}
+
+
+/* ----------end 모바일버전 내자산 스타일---------- */

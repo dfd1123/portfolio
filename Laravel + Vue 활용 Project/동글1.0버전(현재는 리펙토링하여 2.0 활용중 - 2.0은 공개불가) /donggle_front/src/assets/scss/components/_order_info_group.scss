@@ -1,0 +1,194 @@
+.dg-order-info-group {
+  padding: 0 11px;
+
+  // 좌측 정보
+  .in-detail-info {
+    float: left;
+    width: calc(60% - 20px);
+
+    .l-con-article {
+      margin-bottom: 30px;
+    }
+
+    .in-subject {
+      @include fontType01(#{$px-18}rem, $weight: bold);
+
+      border-bottom: 1px solid #333;
+      padding: 7px 0;
+      position: relative;
+      user-select: none;
+    }
+
+    .in-subject ._etc_ment {
+      @include position($r: 0, $b: 10px);
+      @include fontType01(#{$px-13}rem, $weight: 200, $color: #787878);
+    }
+
+    .in-information {
+      padding: 10px 0;
+      border-bottom: 1px solid $light_gray6;
+    }
+
+    ._list {
+      padding-left: 100px;
+      position: relative;
+      line-height: 1.6;
+      margin: 7px 0;
+    }
+
+    ._list--reason {
+      padding-left: 0;
+      margin: 0;
+    }
+
+    ._list ._label {
+      @include fontType01(#{$px-13}em);
+      @include position($t: 50%, $l: 0);
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+
+    ._list ._txt {
+      @include fontType01(#{$px-15}em, $weight: 300);
+    }
+
+    ._list ._txt.num {
+      letter-spacing: 0.3px;
+    }
+
+    .wait {
+      color: #ff5656;
+    }
+    .ing {
+      color: $purple;
+    }
+    .complt {
+      color: #3482e8;
+    }
+
+    .in-reason-detail {
+      padding: 10px 0 0 32px;
+    }
+    ._rd_subject {
+      @include fontType01(#{$px-18}rem, $weight: 500);
+
+      margin-bottom: 10px;
+    }
+    ._rd_textarea {
+      margin-bottom: 12px;
+      text-align: right;
+    }
+    ._rd_textarea textarea {
+      @include fontType01(13px);
+      @include fontType02(-0.2px, 1.7);
+
+      width: 100%;
+      resize: none;
+      min-height: 130px;
+      border: 1px solid $light_gray6;
+      padding: 10px;
+      border-radius: 0;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      outline: none;
+
+      &:focus {
+        border-color: #333;
+      }
+    }
+    ._rd_textarea span {
+      @include fontType01(#{$px-13}rem, $weight: 300, $color: #c8c8c8);
+    }
+    ._rd_etc_ment {
+      @include fontType01(#{$px-13}rem, $weight: 300, $color: #787878);
+    }
+
+    .in-account-info span {
+      @include fontType01(#{$px-13}rem, $weight: 300, $color: #787878);
+    }
+
+    .in-account-info span i {
+      font-style: normal;
+    }
+
+    .in-account-info .nothing {
+      color: #c8c8c8;
+    }
+
+    .in-account-info {
+      padding: 15px 15px 0;
+    }
+
+    .in-account-info .rounded-btn-outline {
+      @include fontType01(#{$px-10}rem, $weight: 300, $color: #787878);
+      height: 18px;
+      min-width: 55px;
+      padding: 0;
+      border-color: #c8c8c8;
+      margin-left: 5px;
+    }
+  }
+  // 좌측 정보 E
+
+  // 우측 정보카드
+  .in-pay-info {
+    float: right;
+    width: 40%;
+    max-width: 405px;
+    border: 2px solid #333333;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    .l-con-article {
+      padding: 70px 23px 34px;
+    }
+    .in-subject {
+      @include position($t: 0, $l: 0);
+      @include fontType01(18px, $color: white);
+      @include fontType02(0, 56px);
+
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+      user-select: none;
+    }
+
+    .in-information {
+      padding: 10px 0 15px;
+      border-bottom: 1px solid #c8c8c8;
+      margin-bottom: 40px;
+    }
+    ._list {
+      padding-left: 100px;
+      position: relative;
+      line-height: 1.6;
+      margin: 7px 0;
+    }
+    ._list ._label {
+      @include fontType01(#{$px-13}em);
+      @include position($t: 50%, $l: 0);
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+    ._list .verti_top {
+      top: 3px;
+      transform: translateY(0);
+    }
+    ._list ._txt {
+      @include fontType01(#{$px-15}rem, $weight: 300);
+    }
+    ._list--expire ._txt {
+      @include fontType01(#{$px-13}rem, $color: #787878);
+    }
+    ._list--expire b {
+      @include fontType02(0, 1);
+      color: #ff5656;
+    }
+  }
+  // 우측 정보카드
+}

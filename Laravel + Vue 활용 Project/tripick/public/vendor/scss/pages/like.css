@@ -1,0 +1,105 @@
+/* colors */
+/* font-size */
+/* unit */
+/* responsive */
+/* mix-in */
+.wrapper--like {
+  width: 100%;
+  padding-top: 13rem;
+  padding-bottom: 6rem;
+}
+
+.wrapper--like__scroll-area {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.user-list {
+  width: 100%;
+  padding: 0 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user-list__thum {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #F4F7F9;
+}
+
+.user-list__name {
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.95em;
+  margin-bottom: 7px;
+}
+
+.user-list__msg {
+  font-size: 0.7em;
+  font-weight: 200;
+  color: #00244C;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-right: 50px;
+}
+
+.user-list:active {
+  background-color: #F4F7F9;
+}
+
+.user-like__group {
+  font-size: 18px;
+}
+
+.user-like__card {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ECF1F5;
+  padding: 1.7rem 0 1.7rem 5.5rem;
+}
+
+.user-like__type {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: #00B1DC;
+}
+
+.user-like__list--nothing .user-like__card {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.user-like__list--nothing .icon {
+  display: block;
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.user-like__list--nothing .caution {
+  display: block;
+  width: 100%;
+  color: #00cada;
+  font-size: 0.85em;
+}

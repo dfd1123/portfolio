@@ -1,0 +1,17 @@
+@import '../../static/stylesheets/Root.scss';
+.enroll-coupon {
+    margin-top: 48px;
+    height: calc(100vh - 48px);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+html {
+    body {
+        :global(.MuiDialog-root) {
+            z-index: $level0 !important;
+        }
+    }
+}

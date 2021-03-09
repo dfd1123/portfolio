@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+</head>
+
+<body>
+  <!--
+    header 자리
+  -->
+
+  <!-- content -->
+  <div id="dg-order-complete-wrapper" class="dg-order-wrapper dg-order-complete-wrapper">
+
+    <!-- 1) 주문완료창 -->
+    <div class="l-con-area full">
+
+      <div class="l-con-article">
+
+        <div class="type02">
+          <div class="_page_title_wrap">
+            <h2>
+              주문완료
+              <a href="#" class="_home_btn">홈으로</a>
+            </h2>
+          </div>
+          <div class="in-breadcrumb-wrap">
+            <ul class="in-breadcrumb">
+              <li class="_list">
+                <i class="_num">1</i>
+                <span>주문상품 확인</span>
+                <img src="/images/mobile/icon/icon_breadcrumb_arrow.svg" alt="arrow" class="_next">
+              </li>
+              <li class="_list">
+                <i class="_num">2</i>
+                <span>주문/결제<span>
+                    <img src="/images/mobile/icon/icon_breadcrumb_arrow.svg" alt="arrow" class="_next">
+              </li>
+              <li class="_list active">
+                <i class="_num">3</i>
+                <span>주문완료</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="l-contents-group">
+
+          <!-- * 주문상태 안내 카드 -->
+          <div class="dg-order-status-card">
+            <div class="in-icon">
+              <img src="/images/icon/icon_complete.svg" alt="complete icon">
+            </div>
+            <h2 class="in-status-tit">주문이 완료되었습니다.</h2>
+            <p class="in-status-desc">'홍길동' 고객님 저희 동글에서 구매를 해주셔서 감사합니다.<br>아래 주문상세내역서는 마이페이지 > '주문내역 조회'에서 확인 가능합니다.</p>
+
+            <!-- ※ 결제수단 무통장 입금으로 했을 시에 보여야함 -->
+            <div class="in-paytype-bank">
+              <strong class="_tit">무통장 입금(가상계좌) 정보</strong>
+              <ul class="_box">
+                <li class="_bank"><b>국민은행</b><span>574402-01-257836</span><span>김동글</span></li>
+                <li class="_expire"><span>계좌 유효 기간 :</span><b>2019년 00월 00일 00시 00분 00초</b></li>
+              </ul>
+            </div>
+            <!-- ※ 결제수단 무통장 입금으로 했을 시에 보여야함 END -->
+          <!-- * 싱글버튼 -->
+          <div class="dg-button-wrap dg-button-wrap--single">
+            <a href="#" class="theme-btn-dark" onclick="alert('페이지 이동')">
+              쇼핑 계속하기
+            </a>
+          </div>
+          <!-- * 싱글버튼 E -->
+          </div>
+          <!-- * 주문상태 안내 카드 E -->
+        </div>
+
+      </div>
+
+    </div>
+    <!-- 1) 주문완료창 E -->
+
+    <!-- 2) 주문상세내역 구역 -->
+    <div class="l-con-area full">
+
+      <div>
+
+        <!-- 주문상품 리스트 -->
+        <div class="ordered-list-group_wrap ">
+
+          <ul class="l-grid-group ordered-list-group">
+
+            <input id="test-1" type="checkbox" class="order_check display_none">
+            <label for="test-1" class="order_check_label">주문 상세내역</label>
+            <li class="l-grid-list l-col-1">
+              <!-- * 소제목 -->
+              <div class="_title">
+                <span>주문상품</span>
+              </div>
+              <!-- * 소제목 E -->
+            </li>
+
+            <li class="l-grid-list l-col-1">
+              <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) -->
+              <div class="dg-clothes-history-card type-cart type-detail ">
+                <div class="in-content">
+                  <div class="inner-wrap">
+                    <div class="inner-box">
+  
+                    <h3 class="_name">
+                      <a href="#">[스토어명] 팝콘체크 롱코트 (2color) 길어지면 그냥 자연스럽게 줄이 바뀌어 집니다</a>
+                    </h3>
+                    <div class="_options">
+                      <figure class="dg-clothes-thumbnail">
+                        <a class="in-image" href="#" style="background-image: url('/images/example/ex-clothes-img2.png');"></a>
+                      </figure>
+                      <div class="_in_col">
+                        <dl class="_op_category">
+                          <dd class="_op_list">
+                            <span>팔찌1 컬러 : 실버</span>
+                          </dd>
+                        </dl>
+                        <div class="_amount">
+                          <span>수량 : 1개</span>
+                        </div>
+                        <div class="_price mb-0">
+                          <span class="_prdt_price">19,800 원</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="_price_wrap">
+                      <div class="_sale_price"><span>쿠폰 할인</span> <b>0 원</b></div>
+                      <div class="_total_price"><span>총 상품금액</span> <b>18,000 원</b></div>
+                    </div>
+                    <!-- ※ 주문요청사항 -->
+                      <div class="order_request_wrap">
+                        <p class="_title">주문 요청사항</p>
+                        <p class="_ask_check">깨지지않게 잘 부탁드립니다.</p>
+                      </div>
+                    <!-- ※ 주문요청사항 END -->
+                  </div>
+                  </div>
+                  <div class="inner-wrap">
+                    <div class="inner-box">
+  
+                      <h3 class="_name">
+                        <a href="#">[스토어명] 팝콘체크 롱코트 (2color) 길어지면 자연스럽게 줄이 바뀌어 집니다</a>
+                      </h3>
+                      <div class="_options">
+                        <figure class="dg-clothes-thumbnail">
+                          <a class="in-image" href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"></a>
+                        </figure>
+                        <div class="_in_col">
+                          <dl class="_op_category">
+                            <dd class="_op_list">
+                              <span>팔찌1 컬러 : 실버</span>
+                              <span>팔찌2 컬러 : 실버</span>
+                              <span>각인문구/폰트 : 주문요청사항에 남겨주세요</span>
+                              <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                            </dd>
+                          </dl>
+                          <div class="_amount">
+                            <span>수량 : 1개</span>
+                          </div>
+                          <div class="_price mb-0">
+                            <span class="_prdt_price">19,800 원</span>
+                            <!-- 쿠폰할인 적용되었을때 배지 -->
+                            <span class="_sale_badge">쿠폰할인</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_price_wrap mb-0">
+                        <div class="_sale_price"><span>쿠폰 할인</span> <b>- 1,800 원</b></div>
+                        <div class="_total_price"><span>총 상품금액</span> <b>18,000 원</b></div>
+                      </div>
+                      <!-- ※ 주문요청사항 -->
+                      <div class="order_request_wrap">
+                        <p class="_title">주문 요청사항</p>
+                        <p class="_ask_check">깨지지않게 잘 부탁드립니다.</p>
+                      </div>
+                      <!-- ※ 주문요청사항 END -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- * 상품내역 카드 (type-cart, type-detail 클래스 추가) E -->
+            </li>
+
+            <li class="l-grid-list l-col-1">
+              <!-- * 최종 가격 안내 -->
+              <div class="in-pay-info">
+                <div class="dg-final-price-label">
+                  <h4 class="in-subject">결제금액</h4>
+                  <div class="dg-total-price-card">
+                    <ul class="in-price-infos">
+                      <li class="_col _col--base">
+                        <span class="_label _black">상품금액 합계</span>
+                        <b class="_prc"><i>3,850</i>원</b>
+                      </li>
+                      <li class="_col col--delivery">
+                        <span class="_label">배송비</span>
+                        <b class="_prc _gray"><i>3,000</i>원</b>
+                      </li>
+                      <li class="_col col--sale">
+                        <span class="_label">총 할인금액</span>
+                        <b class="_prc"><i>-3,850</i>원</b>
+                      </li>
+                      <li class="_col _col--total">
+                        <span class="_label _black _total">최종 결제금액</span>
+                        <b class="_prc"><i>3,850</i>원</b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- * 최종 가격 안내 E -->
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- 주문상품 리스트 E -->
+
+      </div>
+
+    </div>
+    <!-- 2) 주문상세내역 구역 E -->
+
+    <!-- 3) 주문정보들 -->
+    <div class="dg-order-info-group clear_both">
+
+      <!-- 배송 정보 -->
+      <div class="in-detail-info">
+        
+        <div class="ordered-list-group_wrap">
+
+          <ul class="l-grid-group ordered-list-group">
+
+            <input id="test-2" type="checkbox" class="order_check display_none">
+            <label for="test-2" class="order_check_label">배송정보</label>
+            <li class="l-grid-list l-col-1">
+              <!-- [1] 주문고객 정보 -->
+              <article class="l-con-article">
+                <h4 class="in-subject">주문고객</h4>
+                <ul class="in-information">
+                  <li class="_list _info">
+                    <p class="_txt _name">김동글</p>
+                  </li>
+                  <li class="_list _info">
+                    <p class="_txt _gray">010-0000-0000</p>
+                  </li>
+                  <li class="_list _info">
+                    <p class="_txt _gray">donggle@donggle.com</p>
+                  </li>
+                </ul>
+              </article>
+              <!-- [1] E -->
+            </li>
+            <li class="l-grid-list l-col-1">
+        <!-- [2] 배송지 정보 -->
+        <article class="l-con-article">
+          <h4 class="in-subject">배송지</h4>
+          <ul class="in-information">
+            <li class="_list _info">
+              <p class="_txt _name">김동글</p>
+            </li>
+            <li class="_list _info _address">
+              <p class="_txt  _add">서울특별시 강남구 테헤란로 241길</p>
+            </li>
+            <li class="_list _info _address">
+              <p class="_txt _add">광일프라자 16층 비씨디플랫폼</p>
+            </li>
+            <li class="_list _info _address">
+              <p class="_txt _add">12345</p>
+            </li>
+            <li class="_list _info">
+              <p class="_txt _gray">010-0000-0000</p>
+            </li>
+          </ul>
+        </article>
+        <!-- [2] E -->
+            </li>
+            <li class="l-grid-list l-col-1">
+              <!-- [3] 배송정보 -->
+              <article class="l-con-article">
+                <h4 class="in-subject">배송정보</h4>
+                <ul class="in-information">
+                  <li class="_list _deli">
+                    <span class="_label">배송준비기간</span>
+                    <p class="_txt">5일</p>
+                  </li>
+                  <li class="_list _deli">
+                    <span class="_label">배송요청사항</span>
+                    <p class="_txt">안전배송 부탁드립니다.</p>
+                  </li>
+                </ul>
+              </article>
+              <!-- [3] E -->
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+      <!-- 배송 정보 E -->
+
+      <!-- 결제 정보 -->
+      <div class="in-pay-info">
+
+        <div class="in-detail-info">
+        
+          <div class="ordered-list-group_wrap">
+  
+            <ul class="l-grid-group ordered-list-group">
+  
+              <input id="test-3" type="checkbox" class="order_check display_none">
+              <label for="test-3" class="order_check_label">결제정보</label>
+              <li class="l-grid-list l-col-1">
+               <!-- [1] 결제 정보 -->
+        <article class="l-con-article">
+          <h4 class="dg_blind">결제정보</h4>
+          <ul class="in-information">
+            <li class="_list">
+              <span class="_label">주문번호</span>
+              <p class="_txt">0103403540</p>
+            </li>
+            <li class="_list">
+              <span class="_label">주문일시</span>
+              <p class="_txt">2019-11-12 16:47:22</p>
+            </li>
+            <li class="_list">
+              <span class="_label">결제방식</span>
+              <p class="_txt">무통장입금 (가상계좌)</p>
+            </li>
+            <li class="_list">
+              <span class="_label">최종 결제금액</span>
+              <p class="_txt">52,500원</p>
+            </li>
+            <li class="_list">
+              <span class="_label">입금자명</span>
+              <p class="_txt">김동글</p>
+            </li>
+            <li class="_list">
+              <span class="_label verti_top">입금계좌</span>
+              <p class="_txt"><b>국민은행</b><br />574402-01-257836 김동글</p>
+            </li>
+            <li class="_list _list--expire">
+              <p class="_txt">
+                계좌 유효 기간:<br /><b>2019년 00월 00일 00시 00분 00초</b>
+              </p>
+            </li>
+          </ul>
+          <a href="/mobile_temp/cancel_order/ApplyCancelView.html" class="theme-btn-gradient btn-shadow" onclick="alert('(스윗알럿) 주문을 취소하시겠습니까?')">주문
+            취소하기</a>
+        </article>
+        <!-- [1] E -->
+              </li>
+  
+            </ul>
+  
+          </div>
+        </div>
+        
+
+      </div>
+      <!-- 결제 정보 E -->
+
+    </div>
+    <!-- 3) 주문정보들 E -->
+
+  </div>
+  <!-- content E -->
+
+  <!--
+    footer 자리
+  -->
+</body>
+
+</html>

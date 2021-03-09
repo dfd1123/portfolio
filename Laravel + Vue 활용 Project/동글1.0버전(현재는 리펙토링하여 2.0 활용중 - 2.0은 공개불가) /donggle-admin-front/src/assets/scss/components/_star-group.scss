@@ -1,0 +1,78 @@
+/* BASE - 별점그룹
+   ========================================================================== */
+
+// 별점
+.star-group {
+  display: inline-block;
+  font-size: 16px;
+  padding-left: 93px;
+  position: relative;
+  height: 15px;
+  line-height: 15px;
+
+  ._img {
+    @include inline-block;
+    @include set-absolute($t: 2px, $l: 0);
+
+    width: 91px;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+  }
+
+  ._rate {
+    @include inline-block;
+    @include font(0.75em, 400, #333);
+
+    padding: 0 1.5px 0 3px;
+  }
+
+  ._rate_txt {
+    @include inline-block;
+    @include font(10px, 400, #3482e8);
+  }
+}
+
+@for $i from 1 through 5 {
+  .star-group.star-0#{$i} ._img {
+    @include bg-img($path-icon, "icon_star_0" + $i + ".svg");
+  }
+
+  /*
+  .star-group.star-0#{$i} ._rate {
+    @include make-before($i + ".0");
+  }
+  */
+
+  @if $i == 1 {
+    .star-group.star-0#{$i} ._rate_txt {
+      @include make-before("매우불만") {
+        color: #ff5656;
+      }
+    }
+  }
+
+  @if $i == 2 {
+    .star-group.star-0#{$i} ._rate_txt {
+      @include make-before("불만");
+    }
+  }
+
+  @if $i == 3 {
+    .star-group.star-0#{$i} ._rate_txt {
+      @include make-before("보통");
+    }
+  }
+
+  @if $i == 4 {
+    .star-group.star-0#{$i} ._rate_txt {
+      @include make-before("만족");
+    }
+  }
+
+  @if $i == 5 {
+    .star-group.star-0#{$i} ._rate_txt {
+      @include make-before("매우만족");
+    }
+  }
+}

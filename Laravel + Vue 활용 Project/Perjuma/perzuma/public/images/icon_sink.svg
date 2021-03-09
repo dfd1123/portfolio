@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_sink" width="113" height="73" viewBox="0 0 113 73">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-1,.cls-2,.cls-3{stroke:#adb3bc;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}.cls-2{fill:#fff}.cls-3{fill:#91ccfd}
+        </style>
+    </defs>
+    <g id="레이어_1" data-name="레이어 1">
+        <rect id="사각형_293" width="110" height="70" class="cls-1" data-name="사각형 293" rx="10" transform="translate(1.5 1.5)"/>
+        <path id="패스_2362" d="M38.125 23.5H52.25a5 5 0 0 1 5 5v28a5 5 0 0 1-5 5h-37a5 5 0 0 1-5-5v-28a5 5 0 0 1 5-5h13.625" class="cls-1" data-name="패스 2362"/>
+        <rect id="사각형_294" width="8" height="22" class="cls-2" data-name="사각형 294" rx="2" transform="translate(29.75 11.5)"/>
+        <path id="사각형_295" d="M0 0h8v6H0z" class="cls-3" data-name="사각형 295" transform="translate(16.75 11.5)"/>
+        <path id="사각형_296" d="M0 0h8v6H0z" class="cls-3" data-name="사각형 296" transform="translate(42.75 11.5)"/>
+        <path id="선_46" d="M0 0h34" class="cls-1" data-name="선 46" transform="translate(68.25 24.5)"/>
+        <path id="선_47" d="M0 0h34" class="cls-1" data-name="선 47" transform="translate(68.25 36.833)"/>
+        <path id="선_48" d="M0 0h34" class="cls-1" data-name="선 48" transform="translate(68.25 49.167)"/>
+        <path id="선_49" d="M0 0h34" class="cls-1" data-name="선 49" transform="translate(68.25 61.5)"/>
+    </g>
+</svg>

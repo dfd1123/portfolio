@@ -1,0 +1,58 @@
+/* 스토어 탭메뉴 */
+.m_tab_list_store ul li{
+    padding: 0 5px;
+}
+/* end 스토어 탭메뉴 */
+
+/* 스토어 */
+
+#store_wrapper .hd_container{
+    background-image: url(/images/bg/img_bg_store_bk.png);
+}
+
+#store_wrapper .hd_container .tit_group {
+    color: #fff;
+    letter-spacing: -1px;
+    padding-top: 65px;
+}
+
+#store_wrapper .hd_container ._text{
+    line-height: 1.4;
+}
+
+#store_wrapper .store_intro_section ._inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#store_wrapper .text_group{
+    position: relative;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+#store_wrapper .store_intro_section .text_group ._tit {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+}
+
+#store_wrapper .store_intro_section .text_group ._text {
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+}
+
+#store_wrapper .store_intro_section img {
+    width: 100%;
+}
+
+#store_wrapper .store_intro_section--bg {
+    background-color: #F8F8F8;
+}
+
+/* end 스토어 */

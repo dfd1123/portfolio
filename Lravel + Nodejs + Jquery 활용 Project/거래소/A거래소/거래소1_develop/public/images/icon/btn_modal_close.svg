@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="28" height="28" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="btn_modal_close" clip-path="url(#clip-path)">
+    <rect id="사각형_844" data-name="사각형 844" width="28" height="28" fill="#fff" opacity="0"/>
+    <path id="btn_modal_close-2" data-name="btn_modal_close" d="M441.367,607.631l-7.884-7.9-7.885,7.9a1.24,1.24,0,0,1-1.752-1.755l7.885-7.9-7.885-7.9a1.24,1.24,0,0,1,1.752-1.756l7.885,7.9,7.884-7.9a1.241,1.241,0,0,1,1.753,1.756l-7.885,7.9,7.885,7.9a1.24,1.24,0,1,1-1.753,1.755Z" transform="translate(-419.483 -583.956)" fill="#333"/>
+  </g>
+</svg>

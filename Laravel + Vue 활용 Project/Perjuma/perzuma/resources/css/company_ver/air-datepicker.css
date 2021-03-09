@@ -1,0 +1,40 @@
+#datepick .datepicker-inline .datepicker{
+    border: none;
+    box-shadow: none;
+    position: static;
+    left: auto;
+    right: auto;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    width: 80%;
+    margin:0 auto;
+}
+
+#datepick .datepicker--nav{
+    border:none;
+}
+
+#datepick .datepicker--cell{
+    height: 39px;
+}
+
+#datepick .datepicker--day-name{
+    font-size: .9em;
+    color:#888;
+    padding: 7px 0;
+}
+
+#datepick .datepicker--cell.-disabled-{
+    color: #ddd;
+}
+
+#datepick .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade-{
+    color: #eee;
+}
+
+#datepick .datepicker--nav-action path {
+    fill: none;
+    stroke: #222;
+    stroke-width: 2px;
+}

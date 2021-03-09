@@ -1,0 +1,1015 @@
+@import "../helpers/mixin";
+
+.wrapper--mypage{
+
+    padding-top: $hd-title-height;
+
+    &01{
+        padding-top: 6.5rem;
+    }
+
+    &01 .hd-title--05{
+        height: 6.5rem;
+    }
+
+    &01 .wrapper--mypage__scroll-area{
+        width: 100%;
+        height: calc( 100% - 6.5rem);
+        overflow-y: scroll;
+    }
+
+    &__scroll-area{
+        width: 100%;
+        height: calc( 100% - 6rem);
+        overflow-y: scroll;
+    }
+
+    &-review{
+        font-size: 16px;
+
+        &__scroll-area{
+            height: calc(100% - 10rem);
+            overflow-y: scroll; 
+            padding-bottom: 2rem;
+        }
+
+    }
+
+}
+
+// 리스트
+
+.mypage_list {
+
+    padding: 0 2rem;
+    
+    .in_version{
+        @include fontStyle(0.8em, 400, #CAD4DD);
+        float: right;
+        position: relative;
+        top: 2px;
+        em{
+            color: $navy-color;
+        }
+    }
+
+    &:active,
+    &_section.first:active{
+        background-color: #F4F7F9;
+    }
+
+    &.mypage_list_tit:active,
+    &.mypage_alarm_set_list:active{
+        background-color: unset;
+    }
+
+    a{
+        @include fontStyle(0.95em, 300, $navy-color);
+        display: inline-block;
+        width: 100%;
+        padding: 12px 0;
+        position: relative;
+    }
+
+    &_section{
+        @include fontStyle(16px, 300, $navy-color);
+        margin-bottom: 10px;
+        position: relative;
+        padding: 10px 0;
+    }
+
+    &_section.first{
+        .mypage_list_tit{
+            padding-top: 10px;
+            margin-bottom: 0;
+        }
+        .mypage_list a{
+            @include fontStyle(0.85em, 400, inherit);
+            padding: 8px 0 10px;
+        }
+    }
+
+    &_section.last{
+
+        margin-top: -10px;
+
+        .mypage_list a {
+            border-bottom: 0;
+            color: rgba(0,36,76,0.45);
+        }
+
+        &:after{
+            display: none;
+        }
+
+    }
+
+    &_section::after{
+        @include position($b: 0, $l: 50%, $transX: -50%, $transY: 0);
+        content: '';
+        width: calc(100% - 4rem);
+        height: 1px;
+        background: $border-color;
+    }
+
+    &_tit{
+        margin-bottom: 10px;
+
+        h3{
+            @include fontStyle(1.25em, 400, inherit);
+        }
+        span {
+            @include fontStyle(0.75em, 400, rgba(0,36,76,0.45));
+            padding-left: 7px;
+        }
+
+    }
+
+    &_button {
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+
+        .button{
+            @include buttonStyle(55px, 3.5rem, #fff, 1.4rem);
+            background-color: $main-color;
+        }
+
+    }
+
+}
+
+.mypage_alarm_set_list>a:after{
+    @include position($r: 0, $t: 50%, $transX: 0, $transY: -50%);
+    content: '';
+    color: transparent;
+    border: {
+        top: 7px solid #00DBD8;
+        bottom: 7px solid;
+        left: 6px solid;
+        right: 6px solid;
+    }
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+.mypage_alarm_group {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    display: none;
+}
+.mypage_alarm_list {
+    height: 47px;
+    line-height: 47px;
+    position: relative;
+    font-size: 0.85em;
+    font-weight: 400;
+    border-bottom: 1px solid #EAECED;
+
+    &:last-child{
+        border-bottom: 0;
+    }
+}
+
+// end
+
+
+/* 온오프switch */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 50%;
+    margin-top: -17px;
+    right: 0;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: .4s;
+    border: 3px solid #ebebeb;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    transition: .4s;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.13);
+}
+
+input:checked + .slider {
+    background-color: #00DBD8;
+    border-color: #00DBD8;
+}
+
+input:focus + .slider {
+    background-color: #00DBD8;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/* //온오프switch */
+
+// 회원정보 수정하기
+#mypage_edit_info_popup h3{
+    font-weight: 600;
+    color: $navy-color;
+}
+
+.info_edit_profile {
+    margin: 0 0 2rem;
+    text-align: center;
+
+    &__image {
+        @include bgStyle(3.5rem);
+
+        $circle-size: 7rem;
+        width: $circle-size;
+        height: $circle-size;
+        border-radius: 50%;
+        background-color: $main-color;
+        display: inline-block;
+        font-size: $parent-normal-font;
+        background-image: url(/img/logo/logo-symbol-tripik-opacity.svg);
+        position: relative;
+
+        &::after {
+            @include bgStyle(cover);
+            @include position($r: 0, $b: 0, $transX: 0, $transY: 0);
+            $circle-size: 2.5rem;
+
+            content: "";
+            display: inline-block;
+            width: $circle-size;
+            height: $circle-size;
+            background-image: url("/img/icon/icon-picture-mini.svg");
+        }
+    }
+
+    &__caption {
+        @include fontStyle($small-font, 800, #fff);
+        margin-top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.info_edit_fieldset {
+
+    padding: 0;
+
+    &__group {
+        font-size: $parent-normal-font;
+        @include xsm{
+            font-size: 16px;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        height: 2.5em;
+        position: relative;
+
+        &__label {
+            @include position($t: 50%, $l: 7px, $transX: 0, $transY: -50%);
+            @include fontStyle(0.75em, 400, $light-blue-02-color);
+        }
+
+        &__input {
+            @include iosInput;
+            @include fontStyle(0.75em, 400, $navy-color);
+            outline: none;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: 0;
+            border-bottom: 1px solid $border-color;
+            padding-left: 8rem;
+
+            &:focus {
+                border-color: $main-color;
+            }
+
+            &::placeholder {
+                color: rgba(#99b1cb, 0.3);
+            }
+        }
+    }
+
+    &--phone {
+        margin-top: 3rem;
+
+        &__button {
+            @include buttonStyle(5px, 2rem, #fff, $small-font);
+            @include position($t: 50%, $r: 0, $transX: 0, $transY: -50%);
+            width: 8rem;
+        }
+        &__button.is-active{
+            background-color: $main-color !important;
+            box-shadow: none !important;
+        }
+
+        &__input {
+            padding-left: 7px;
+        }
+
+        &__certify {
+            font-size: $normal-font;
+            padding-left: calc(0.75em + 7px);
+            padding-top: 0.5em;
+        }
+
+        &__certify__count {
+            @include fontStyle($normal-small-font, 400, $navy-color);
+        }
+
+        &__certify__caution {
+            color: rgba(#99b1cb, 0.3);
+        }
+
+        &__certify.is-active .info_edit_fieldset--phone__certify__count {
+            color: $main-color;
+        }
+    }
+}
+
+.info_edit_button{
+    height: 45px;
+    line-height: 45px;
+    margin-top: 25px;
+}
+
+.info_edit_button{
+    background-color: #00DBD8;
+}
+
+// end 회원정보 수정
+
+// 플래너 예약관리
+
+.list_style{
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+    &_tit{
+        font-size: 1.2em;
+        height: 2.5rem;
+        @include xsm{
+            font-size: 1em;
+        }
+    }
+    &_sorting {
+        position: relative;
+        top: 0;
+        right: 0;
+        font-size: 0.8em;
+        height: 2.5rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;    
+
+        ._chck{
+            padding-right: 5px;
+        }
+        ._chck:last-child{
+            padding-right: 0;
+        }
+    }
+}
+
+.user-list{
+
+    @include paddingLeftRight2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &.my_reserva_plnr_list {
+        padding-right: 0;
+        background: #F4F7F9;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    &__thum{
+
+        @include position($t: 12px, $l: 13px, $transX: 0, $transY: 0);
+        @include bgStyle(cover);
+        width: 4.5rem;
+        height: 4.5rem;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #d1d1d1;
+        transition: all 0.3s;
+
+    }
+
+    &__name{
+
+        width: 100%;
+        font-weight: bold;
+        font-size: 0.95em;
+        margin-bottom: 7px;
+        margin-top: 5px;
+
+    }
+
+    &__type{
+        font-size: 0.75em;
+        font-weight: 400;
+        color: #00B1DC;
+    }
+
+    &__msg{
+        @include fontStyle(0.8em, 300, $navy-color);
+        @include textOverflow(1);
+    }
+    
+    &:active{
+
+        background-color: #F4F7F9;
+
+    }
+
+    &:last-child .user-message__card{
+        border-bottom: 0;
+    }
+
+}
+
+.my_reserva_plnr_group {
+    height: calc(100% - 6.5rem);
+    overflow-y: scroll;
+}
+
+.my_reserva_plnr_list {
+    padding-right: 0;
+    background: #F4F7F9;
+    padding: 20px 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+    &--hd{
+        padding: 0 10px 0 5.5rem;
+        height: 4.5rem;
+        margin-bottom: 10px;
+    }
+    &--bt{
+        width: 100%;
+    }
+
+}
+.my_reserva_label {
+    padding: 10px 0;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 0.95em;
+    color: #4E4B40;
+    font-weight: bold;
+    padding-left: 40px;
+    letter-spacing: -0.5px;
+    background-image: url(/img/icon/icon-final-coin.svg);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    ._tit {
+        display: inline-block;
+        padding-right: 5px;
+        border-right: 1px solid #cccccc;
+        margin-right: 4px;
+    }
+    ._btn {
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+        font-size: 0.85em;
+        color: #00244C;
+        font-weight: 300;
+    }
+    @include xsm{
+        padding-left: 0;
+        padding: 10px;
+        background-image: unset;
+        text-align: center;
+        font-size: 0.85em;
+    }
+}
+
+.my_reserva_review_btn{
+    background-color: #00DBD8;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
+
+    &:active{
+        background-color: darken($main-color, 5%);
+    }
+}
+// end 플래너 예약관리
+
+// 최종결제내역
+
+.payment_final {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    color: #4E4B40;
+}
+
+.final-card{
+
+    &__info{
+        border-bottom: 1px solid rgba(240, 205, 92, 0.5);
+        padding-bottom: 20px;
+    }
+
+    &__title{
+        @include bgStyle(25px);
+        @include fontStyle($parent-normal-font, bold, inherit);
+        padding: 15px 10px 15px 34px;
+        background-image: url(/img/icon/icon-final-coin.svg);
+        background-position: left;
+    }
+
+    &__info{
+    
+        &__list{    
+            border-top: 1px solid rgba(240, 205, 92, 0.5);
+            padding: 13px 10px;
+            font-size: 14px;
+            text-align: right;
+            position: relative;
+        }
+        &__label{
+            @include fontStyle(16px, 400, inherit);
+            @include position($t: 13px, $l: 10px, $transX: 0, $transY: 0);
+            text-align: left;
+        }
+    
+        &__line{    
+            @include fontStyle(13px, 300, rgba(#4E4B40, 0.5));
+            display: inline-block;
+            line-height: 1.7;
+            text-align: right;
+            width: 100%;
+            padding-left: 65px;
+        }
+
+        &__price{
+            @include fontStyle(20px, bold, inherit);
+        }
+
+    }
+
+    &__btns{
+        text-align: right;
+        padding: 5px 10px;
+    }
+    &__btn{
+        @include fontStyle(16px, 200, #fff);
+        background-color: #FFCC24;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 0 3px 16px rgba(255,193,29,0.47);
+        padding: 7px 15px;
+    }
+
+    &__btn:first-child{
+        margin-right: 8px;
+    }
+
+    &__btn:last-child{
+        margin-right: 0;
+    }
+    
+}
+
+.info_detail_btn{
+    @include buttonStyle(0, 40px, $navy-color, 14px);
+    text-align: left;
+    margin: 10px 0 23px;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    &:after{
+        @include position($t: 40%, $r: 10px, $transX: -50%, $transY: 0);
+        display: inline-block;
+        content: '';
+        width: 7px;
+        height: 7px;
+        border: {
+            top: 2px solid;
+            right: 2px solid;
+        }
+        color: $main-color;
+        transform: rotate(135deg) translateX(-50%);
+    }
+    &:active{
+        background-color: #f8f8f8;
+    }
+}
+
+.info_detail_view{
+    font-size: 18px;
+    display: none;
+}
+
+.trip-info-detail{
+
+    @include fontStyle($normal-small-font, inherit, $navy-color);
+
+    &__title{
+
+        @include fontStyle($parent-normal-font, 400, #dee3e6);
+        margin-bottom: 0.8rem;
+        
+    }
+
+    &__option {
+        
+        @include fontStyle(13px, 300, $sky-blue-color);
+        background-color: rgba(#00D8D8, 0.1);
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        margin-left: 10px;
+
+    }
+
+    &__ul{
+
+    margin-bottom: 1.5rem;
+    font-size: $normal-small-font;
+
+    }
+
+    &__list{
+
+    border-bottom: 1px solid $border-color;
+    padding: 0.8rem 0.5rem;
+
+        &:last-child{
+            border: 0;
+        }
+
+    }
+
+    &__label {
+        @include fontStyle(inherit, 300, $light-blue-02-color);
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    &__textarea{
+
+        padding: 2rem;
+        background-color: rgba(233, 233, 233, 0.3);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 3rem;
+
+        textarea{
+
+            @include fontStyle(13px, 300, $navy-color);
+            @include textareaStyle;
+
+            &::placeholder{
+
+                color: rgba(#4F5256, 0.3);
+
+            }
+
+        }
+
+    }
+
+}
+
+// end 최종결제내역
+
+// 개인정보 처리방침, 서비스 이용약관
+
+.terms_style{
+    @include fontStyle(16px, 400, $navy-color);
+    padding: 2rem;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+
+    p{
+        font-size: 0.9em;
+        margin-bottom: 2rem;
+    }
+
+    h3{
+        font-size: 1.1em;
+        margin-bottom: 2.5rem;
+    }
+
+    h4{
+        margin-bottom: 1rem;
+    }
+
+    .pl_p{
+        padding-left: 2rem;
+    }
+
+}
+
+// end 개인정보 처리방침, 서비스 이용약관
+
+// 공지사항
+
+.notice_group {
+    font-size: 16px;
+}
+
+.notice_list {
+    position: relative;
+
+    &:first-child ._panel{
+        border-top: 0;
+    }
+
+    &:after{
+        @include position($r: 2rem, $t: 35px, $transX: 0, $transY: 0);
+        content: '';
+        color: transparent;
+        border: {
+            top: 7px solid #00DBD8;
+            bottom: 7px solid;
+            left: 6px solid;
+            right: 6px solid;
+        }
+        display: inline-block;
+        width: 0;
+        height: 0;
+    }
+
+    &.is-show:after{
+        @include position($r: 2rem, $t: 25px, $transX: 0, $transY: 0);
+        border: {
+            bottom: 7px solid #00DBD8;
+            top: 7px solid;
+            left: 6px solid;
+            right: 6px solid;
+        }
+    }
+
+    ._panel{
+        padding: 1.5rem 2rem;
+        border: {
+            bottom: 1px solid $border-color;
+        }
+    }
+
+    ._tit {
+        font-size: 0.9em;
+    }
+    
+    ._date {
+        display: inline-block;
+        width: 100%;
+        font-size: 0.75em;
+        color: #8D8D8D;
+    }
+
+    ._contents{
+        padding: 2rem 2.5rem;
+        line-height: 1.6;
+        font-size: 0.8em;
+        display: none;
+        border-bottom: 1px solid $border-color;
+    }
+
+}
+
+// end 공지사항
+
+// 리뷰
+
+.mypage_review_tit{
+    height: 4rem;
+    padding: 0 2rem;
+    line-height: 4rem;
+    font-size: 1.25em;
+    color: $navy-color;
+}
+
+
+.trip-review{
+
+    &__list{
+
+        padding: 1rem 2rem 0;
+        position: relative;
+        font-size: 18px;
+
+        &:last-child{
+
+            border-bottom: 0;
+
+        }
+
+        .user-list__date{
+            font-size: 0.68em;
+            font-weight: 200;
+            color: #6a6a6a;
+        }
+
+        .user-list{
+            padding: 1rem 2rem 1rem 5.5rem;
+            margin-bottom: 10px;
+        }
+
+        .user-list__thum{
+            left: 0;
+        }
+
+        .rating-stars__group{
+    
+            @include position($r: 0, $b: 1.1rem, $transX: 0, $transY: 0);
+    
+        }
+
+        .my_review_go_btn{
+            @include buttonStyle(5px, 32px, #fff, 0.75em);
+            margin-top: 10px;
+            background-color: $main-color;
+            padding: 0 10px;
+            margin: 8px 0 15px;
+        }
+
+        .my_review_go_btn:active{
+            background-color: darken($main-color, 5%);
+        }
+
+        &-card{
+            border-bottom: 1px solid $border-color;
+        }
+
+        &:last-child .trip-review__list-card{
+            border-bottom: 0;
+        }
+
+    }
+
+    &__list__btns{
+
+        @include position($r: 2rem, $t: 1.5rem, $transX: 0, $transY: 0);
+        font-size: $small-font;
+
+    }
+
+    &__list__btn{
+
+        @include fontStyle(inherit, 100, #6A6A6A);
+        border: 0;
+        background-color: transparent;
+        border-right: 1px solid $border-color;
+
+
+        &:last-of-type{
+            border-right: 0;
+        }
+
+    }
+
+    &__list__text{
+
+        @include fontStyle(0.75em, 200, inherit);
+        @include textOverflow(2);
+        line-height: 1.6;
+
+    }
+
+    &__list--nothing{
+
+        padding: 3rem 0;
+        text-align: center;
+        border: 0;
+
+        img{
+
+            width: 45px;
+            display: block;
+            margin: 0 auto 10px;
+
+        }
+
+        span{
+
+            @include fontStyle(0.75em, 200, inherit);
+
+        }
+
+    }
+
+}
+
+// end 리뷰
+
+// 탈퇴
+
+.mypage_withdraw {
+
+    width: 100%;
+    font-size: 18px;
+    padding: 0 2rem;
+    color: #00244C;
+
+    h3 {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 20px 0 20px;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    &_section{
+        padding: 20px 0;
+        line-height: 1.45;
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 0px;
+    }
+
+    &_section.first{
+
+        .mypage_withdraw_text {
+            padding-left: 10px;
+            position: relative;
+            margin-bottom: 6px;
+            font-weight: 400;
+        }
+        
+        .mypage_withdraw_text:before {
+            content: '-';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    }
+
+    &_section.last{
+        padding: 10px 0;
+        border-bottom: 0;
+        .mypage_withdraw_text {
+            font-weight: 500;
+            color: #B0B5B9;
+            font-size: 0.9em;
+        }
+        .mypage_withdraw_text label:last-child {
+            padding-left: 5px;
+        }
+    }
+
+    &_tit{
+        font-weight: bold;
+        margin-bottom: 17px;
+    }
+
+    &_text{
+        font-size: 0.85em;
+        display: inline-block;
+        width: 100%;
+        letter-spacing: -0.3px;
+        font-weight: 300;
+        margin-bottom: 9px;
+    }
+
+    &_button {
+        margin-bottom: 30px;
+        .button{
+            @include buttonStyle(55px, 3.5rem, #fff, 1.4rem);
+            background-color: $main-color;
+        }
+    }
+
+}
+
+// end 탈퇴

@@ -1,0 +1,58 @@
+.icon_prev {
+  background-image: iconPrev(272720);
+}
+
+.icon_close {
+  background-image: iconClose(272720);
+}
+
+.icon_weather {
+  @include bgStyle(0, 0, contain);
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  &.cloudy {
+    // 구름낀
+    background-image: iconWeatherCloud();
+  }
+  &.ordinary {
+    // 보통날씨
+    background-image: iconWeatherOrdinary();
+  }
+  &.rainy {
+    // 비오는
+    background-image: iconWeatherRainy();
+    @include position(relative, $t: 9px);
+    height: 29px;
+  }
+  &.snowy {
+    // 눈오는
+    background-image: iconWeatherSnowy();
+    @include position(relative, $t: 5px);
+    height: 25px;
+  }
+  &.lightening {
+    // 번개
+    background-image: iconWeatherLightening();
+    @include position(relative, $t: 9px);
+    height: 29px;
+  }
+  &.bright {
+    // 해 쨍쨍
+    background-image: iconWeatherBright();
+    @include position(relative, $t: 4px, $l: 2px);
+    height: 29px;
+  }
+  &.windy {
+    // 바람부는
+    background-image: iconWeatherWindy();
+    @include position(relative, $t: 4px, $l: 1px);
+    height: 26px;
+  }
+}
+
+.icon_del_word {
+  line-height: $g-page_title_height;
+  color: $gray-03;
+  font-size: 15px;
+}

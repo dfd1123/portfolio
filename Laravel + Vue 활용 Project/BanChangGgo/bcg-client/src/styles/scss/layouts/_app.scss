@@ -1,0 +1,44 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-higlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+}
+
+#app {
+  @include pushAuto;
+  width: 100%;
+  max-width: 1024px;
+  min-height: 100%;
+  word-break: keep-all;
+  -webkit-overflow-scrolling: touch;
+}
+
+// TODO 추후 삭제 or 재선택
+// .vtimeselector__box__item {
+//   padding: 0.4em 0;
+//   font-size: 0.8em !important;
+//   transition: all 0.2s;
+//   opacity: 0.8;
+// }
+
+// .timeselector__box__item--is-selected {
+//   background-color: $theme-02 !important;
+//   border-radius: 5px;
+//   font-size: 1em !important;
+//   opacity: 1 !important;
+// }
+
+// .vtimeselector__clear {
+//   display: none !important;
+// }

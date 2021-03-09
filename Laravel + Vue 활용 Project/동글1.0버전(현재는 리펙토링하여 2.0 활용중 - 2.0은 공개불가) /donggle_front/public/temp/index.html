@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/ui.css" />
+    <script src="/js/nicepay.js"></script>
+  </head>
+
+  <body>
+    <!-- main top popup -->
+    <div class="dg-main_popup">
+      <img
+        alt="지금 동글 가입하면 반값 할인"
+        src="/images/img/donggle_ad_banner/banner_ad.png"
+      />
+      <a href="#" class="dg-main_popup-close">팝업닫기</a>
+      <div class="dg-main_popup_all"></div>
+    </div>
+    <!-- main top popup E -->
+
+    <!--
+    #gd-hd 에 ._scroll 생길 때 헤더 디자인이 변함
+    .dg-gradation_search_btn에 .active 생길 때, 검색영역이 등장
+    .dg-gradation_search_btn 이 .active되었을 때, body에 overflow:hidden
+   -->
+
+    <!-- header -->
+    <header id="dg-hd">
+      <div class="dg-hd-con1_wrap">
+        <div class="dg-content_center clear_both">
+          <!-- content float -->
+          <h1 class="dg-hd-logo">donggle</h1>
+          <div class="dg-hd-best_search_wrap">
+            <small>인기검색어</small>
+            <div class="best-search">
+              <div class="best_num">
+                10.
+                <span>10번째 인기검색어</span>
+              </div>
+
+              <!-- popup best search -->
+              <div class="best-search_hover clear_both">
+                <h2><span>실시간 인기 검색어</span></h2>
+                <ul class="best-search_best best-search_best10">
+                  <li><a href="#">01.검색어</a></li>
+                  <li><a href="#">02.검색어</a></li>
+                  <li><a href="#">03.검색어</a></li>
+                  <li><a href="#">04.검색어</a></li>
+                  <li><a href="#">05.검색어</a></li>
+                  <li><a href="#">06.검색어</a></li>
+                  <li><a href="#">07.검색어</a></li>
+                  <li><a href="#">08.검색어</a></li>
+                  <li><a href="#">09.검색어</a></li>
+                  <li><a href="#">10.검색어</a></li>
+                </ul>
+                <ul class="best-search_best best-search_best20">
+                  <li><a href="#">11.검색어</a></li>
+                  <li><a href="#">12.검색어</a></li>
+                  <li><a href="#">13.검색어</a></li>
+                  <li><a href="#">14.검색어</a></li>
+                  <li><a href="#">15.검색어</a></li>
+                  <li><a href="#">16.검색어</a></li>
+                  <li><a href="#">17.검색어</a></li>
+                  <li><a href="#">18.검색어</a></li>
+                  <li><a href="#">19.검색어</a></li>
+                  <li><a href="#">20.검색어</a></li>
+                </ul>
+              </div>
+              <!-- popup best search E -->
+            </div>
+          </div>
+          <div class="dg-hd-my_menu">
+            <a href="#" class="logout_menu top_menu top_menu_login">로그인</a>
+            <a href="#" class="logout_menu top_menu top_menu_reg">회원가입</a>
+            <span class="login_menu top_menu top_menu_name">
+              <b>김동글 </b>
+              님<br />
+              <span>비기너</span>
+            </span>
+            <a href="#" class="login_menu top_menu top_menu_logout">로그아웃</a>
+            <a href="#" class="top_menu top_menu_cs">고객센터</a>
+            <div href="#" class="login_menu top_menu top_menu_alrim">
+              <div for="dg-hd-alrim" class="dg-hd-alrim_label">
+                알림
+
+                <!-- top menu popup -->
+                <div class="dg-hd-popup_wrap dg-hd-popup_alrim_wrap">
+                  <h2>알림</h2>
+                  <div class="dg-hd-popup dg-hd-popup_alrim clear_both new">
+                    <div class="dg-hd-popup-logo dg-hd-popup_alrim-logo">
+                      donggle
+                    </div>
+                    <div class="dg-hd-popup-desc dg-hd-popup_alrim-desc">
+                      <!-- <div class="alrim-desc_sort">쿠폰</div> -->
+                      <div class="alrim-desc_from">알림발신인</div>
+                      <div class="alrim-desc_date">2019-10-10</div>
+                      <div class="alrim-desc_text">
+                        신규가입감사 할인쿠폰이 발급되었습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dg-hd-popup dg-hd-popup_alrim clear_both new">
+                    <div class="dg-hd-popup-logo dg-hd-popup_alrim-logo">
+                      donggle
+                    </div>
+                    <div class="dg-hd-popup-desc dg-hd-popup_alrim-desc">
+                      <!-- <div class="alrim-desc_sort">쿠폰</div> -->
+                      <div class="alrim-desc_from">알림발신인</div>
+                      <div class="alrim-desc_date">2019-10-10</div>
+                      <div class="alrim-desc_text">
+                        신규가입감사 할인쿠폰이 발급되었습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dg-hd-popup dg-hd-popup_alrim clear_both">
+                    <div class="dg-hd-popup-logo dg-hd-popup_alrim-logo">
+                      donggle
+                    </div>
+                    <div class="dg-hd-popup-desc dg-hd-popup_alrim-desc">
+                      <!-- <div class="alrim-desc_sort">쿠폰</div> -->
+                      <div class="alrim-desc_from">알림발신인</div>
+                      <div class="alrim-desc_date">2019-10-10</div>
+                      <div class="alrim-desc_text">
+                        신규가입감사 할인쿠폰이 발급되었습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dg-hd-popup dg-hd-popup_alrim clear_both">
+                    <div class="dg-hd-popup-logo dg-hd-popup_alrim-logo">
+                      donggle
+                    </div>
+                    <div class="dg-hd-popup-desc dg-hd-popup_alrim-desc">
+                      <!-- <div class="alrim-desc_sort">쿠폰</div> -->
+                      <div class="alrim-desc_from">알림발신인</div>
+                      <div class="alrim-desc_date">2019-10-10</div>
+                      <div class="alrim-desc_text">
+                        신규가입감사 할인쿠폰이 발급되었습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dg-hd-popup-allview dg-hd-popup_alrim-allview">
+                    <a href="#">+ 전체보기</a>
+                  </div>
+                </div>
+                <!-- top menu popup E -->
+              </div>
+            </div>
+            <a href="#" class="top_menu top_menu_my">마이페이지</a>
+            <a href="#" class="top_menu top_menu_order">장바구니</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- black bar search -->
+      <div class="dg-black_bar_search_wrap">
+        <form method="GET">
+          <label class="dg_blind">검색</label>
+          <input
+            class="dg-black_bar-search"
+            type="text"
+            placeholder="검색어 미입력시 필터로 연결됩니다."
+          />
+          <div class="dg-black_bar-search-bar"></div>
+          <button class="dg-black_bar-search_btn"></button>
+        </form>
+      </div>
+      <!-- black bar search E -->
+
+      <!-- main gnb -->
+      <div class="dg-main_category_wrap">
+        <div class="dg-content_center dg-main_category">
+          < class="dg-main_category_link">
+            <a href="#" class="dg-main_category_a dg-category_label"
+              >카테고리</a
+            >
+            <a href="#" class="dg-main_category_a">인기상품(BEST)</a>
+            <a href="#" class="dg-main_category_a">주간신상(Weekly new)</a>
+            <a href="#" class="dg-main_category_a">국내자체제작</a>
+            <a href="#" class="dg-main_category_a">오늘 출발(예정)</a>
+            <a href="#" class="dg-main_category_a dg-main_category_a_last"
+              >실시간 퀵출발(예정)</a
+            >
+            <a href="#" class="dg-gradation_search_btn dg-btn_gra"> </a>
+
+            <!-- gradiant search popup -->
+            <div class="dg-gradi_search_wrap">
+              <form method="GET">
+                <label class="dg_blind">검색</label>
+                <input
+                  class="dg-black_bar-search"
+                  type="text"
+                  placeholder="검색어 미입력시 필터로 연결됩니다."
+                />
+                <div class="#"></div>
+                <button class="#"></button>
+              </form>
+              <a href="#" class="dg-search_gra_close_btn">close</a>
+            </div>
+            <!-- gradiant search popup E -->
+
+            <!-- category -->
+            <div class="dg-category">
+              <ul class="clear_both over-y_scroll">
+                <li class="dg-category_main dg-category_main01">
+                  <a href="#">아우터</a>
+                  <ul class="dg-category_sub dg-category_sub01 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">아우터</h2></li>
+                    <li><a href="#">자켓</a></li>
+                    <li><a href="#">가디건</a></li>
+                    <li><a href="#">점퍼</a></li>
+                    <li><a href="#">야상</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">코트</a></li>
+                    <li><a href="#">패딩</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main02">
+                  <a href="#">상의</a>
+                  <ul class="dg-category_sub dg-category_sub02 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">상의</h2></li>
+                    <li><a href="#">티셔츠</a></li>
+                    <li><a href="#">니트 / 스웨터</a></li>
+                    <li><a href="#">셔츠/남방</a></li>
+                    <li><a href="#">맨투맨</a></li>
+                    <li><a href="#">후드</a></li>
+                    <li><a href="#">블라우스</a></li>
+                    <li><a href="#">민소매 / 나시</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main03">
+                  <a href="#">팬츠</a>
+                  <ul class="dg-category_sub dg-category_sub03 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">팬츠</h2></li>
+                    <li><a href="#">일자바지</a></li>
+                    <li><a href="#">슬렉스팬츠</a></li>
+                    <li><a href="#">반바지</a></li>
+                    <li><a href="#">와이드팬츠</a></li>
+                    <li><a href="#">스키니팬츠</a></li>
+                    <li><a href="#">부츠컷팬츠</a></li>
+                    <li><a href="#">조거팬츠</a></li>
+                    <li><a href="#">치마바지</a></li>
+                    <li><a href="#">멜빵바지</a></li>
+                    <li><a href="#">크롭팬츠</a></li>
+                    <li><a href="#">배기팬츠</a></li>
+                    <li><a href="#">레깅스</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main04">
+                  <a href="#">스커트</a>
+                  <ul class="dg-category_sub dg-category_sub04 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">스커트</h2></li>
+                    <li><a href="#">롱스커트</a></li>
+                    <li><a href="#">미디스커트</a></li>
+                    <li><a href="#">미니스커트</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main05">
+                  <a href="#">원피스/세트</a>
+                  <ul class="dg-category_sub dg-category_sub05 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">원피스/세트</h2></li>
+                    <li><a href="#">미니원피스</a></li>
+                    <li><a href="#">미디원피스</a></li>
+                    <li><a href="#">롱원피스</a></li>
+                    <li><a href="#">투피스 / 세트</a></li>
+                    <li><a href="#">점프수트</a></li>
+                    <li><a href="#">시밀러룩</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main06">
+                  <a href="#">신발</a>
+                  <ul class="dg-category_sub dg-category_sub06 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">신발</h2></li>
+                    <li><a href="#">힐</a></li>
+                    <li><a href="#">단화</a></li>
+                    <li><a href="#">부츠</a></li>
+                    <li><a href="#">워커</a></li>
+                    <li><a href="#">운동화</a></li>
+                    <li><a href="#">샌들</a></li>
+                    <li><a href="#">슬리퍼 / 쪼리</a></li>
+                    <li><a href="#">웨딩슈즈</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main07">
+                  <a href="#">가방</a>
+                  <ul class="dg-category_sub dg-category_sub07 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">가방</h2></li>
+                    <li><a href="#">숄더백</a></li>
+                    <li><a href="#">크로스백</a></li>
+                    <li><a href="#">토트백</a></li>
+                    <li><a href="#">클러치</a></li>
+                    <li><a href="#">미니백</a></li>
+                    <li><a href="#">백팩</a></li>
+                    <li><a href="#">파우치</a></li>
+                    <li><a href="#">지갑</a></li>
+                    <li><a href="#">에코백 / 캔버스</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main08">
+                  <a href="#">악세사리</a>
+                  <ul class="dg-category_sub dg-category_sub08 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">악세사리</h2></li>
+                    <li><a href="#">귀걸이</a></li>
+                    <li><a href="#">목걸이</a></li>
+                    <li><a href="#">반지</a></li>
+                    <li><a href="#">팔찌</a></li>
+                    <li><a href="#">발찌</a></li>
+                    <li><a href="#">헤어 악세사리</a></li>
+                    <li><a href="#">커플 악세사리</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main09">
+                  <a href="#">패션소품</a>
+                  <ul class="dg-category_sub dg-category_sub09 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">패션소품</h2></li>
+                    <li><a href="#">휴대폰 케이스</a></li>
+                    <li><a href="#">양말</a></li>
+                    <li><a href="#">모자 / 장갑</a></li>
+                    <li><a href="#">타이즈 / 스타킹</a></li>
+                    <li><a href="#">스카프 / 머플러</a></li>
+                    <li><a href="#">시켸</a></li>
+                    <li><a href="#">벨트</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main10">
+                  <a href="#">비치웨어</a>
+                  <ul class="dg-category_sub dg-category_sub10 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">비치웨어</h2></li>
+                    <li><a href="#">비키니</a></li>
+                    <li><a href="#">모노키니</a></li>
+                    <li><a href="#">래쉬가드</a></li>
+                    <li><a href="#">비치원피스</a></li>
+                    <li><a href="#">비치상의</a></li>
+                    <li><a href="#">비치팬츠</a></li>
+                    <li><a href="#">커플웨어</a></li>
+                    <li><a href="#">빅사이즈</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main11">
+                  <a href="#">란제리/파자마</a>
+                  <ul class="dg-category_sub dg-category_sub11 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">란제리/파자마</h2></li>
+                    <li><a href="#">파자마 / 홈웨어</a></li>
+                    <li><a href="#">브라</a></li>
+                    <li><a href="#">팬티</a></li>
+                    <li><a href="#">속옷 세트</a></li>
+                    <li><a href="#">슬립</a></li>
+                    <li><a href="#">속바지</a></li>
+                    <li><a href="#">속옷소품</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main12">
+                  <a href="#">트레이닝</a>
+                  <ul class="dg-category_sub dg-category_sub12 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">트레이닝</h2></li>
+                    <li><a href="#">트레이닝 상의</a></li>
+                    <li><a href="#">트레이닝 하의</a></li>
+                    <li><a href="#">트레이닝 세트</a></li>
+                  </ul>
+                </li>
+                <li class="dg-category_main dg-category_main13">
+                  <a href="#">빅사이즈</a>
+                  <ul class="dg-category_sub dg-category_sub13 over-y_scroll">
+                    <li><h2 class="dg-category_sub_title">빅사이즈</h2></li>
+                    <li><a href="#">아우터</a></li>
+                    <li><a href="#">상의</a></li>
+                    <li><a href="#">하의</a></li>
+                    <li><a href="#">원피스</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- category E -->
+          </div>
+        </div>
+      </div>
+      <!-- main gnb E -->
+    </header>
+    <!-- header E -->
+
+    <!-- content -->
+    <!-- content E -->
+
+    <!-- footer -->
+    <footer id="dg-ft">
+      <div class="dg-content_center">
+        <!-- footer top -->
+        <div class="dg-ft-top_wrap clear_both">
+          <h2>고객센터 1588-0000</h2>
+          <div class="dg-ft-sales-time">
+            <small>
+              영엉시간 : 10:00~19:00(주말, 공휴일 제외)<br />
+              점심시간 : 12:00~13:30
+            </small>
+          </div>
+          <div class="dg-ft-link_icon_wrap clear_both">
+            <a href="#" class="link_icon link_icon_blog">blog</a>
+            <a href="#" class="link_icon link_icon_face">facebook</a>
+            <a href="#" class="link_icon link_icon_inst">insargram</a>
+            <a href="#" class="link_icon link_icon_talk">kakaotalk</a>
+            <a href="#" class="link_icon link_icon_tube">youtube</a>
+          </div>
+        </div>
+        <!-- footer top E -->
+
+        <!-- footer bottom -->
+        <div class="dg-ft-bot_wrap clear_both">
+          <div class="dg-ft-logo">logo</div>
+          <div class="dg-ft-company_info">
+            회사명 : ㈜동글 | 대표이사 : OOO | 사업자등록번호 : 220-88-93187 |
+            통신판매업신고 : 2016-서울강남-00359 | 호스팅사업자 : (주)동글<br />
+            주소 : (06223) 서울특별시 강남구 테헤란로 32길 26 청송빌딩
+          </div>
+          <div class="dg-ft-link_wrap">
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이용약관</a>
+            <a href="#">회사소개</a>
+            <a href="#">입점문의</a>
+          </div>
+        </div>
+        <!-- footer bottom E -->
+      </div>
+    </footer>
+    <!-- footer E -->
+  </body>
+</html>

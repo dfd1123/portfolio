@@ -1,0 +1,362 @@
+@import "../helpers/mixin";
+
+.wrapper--find{
+    
+    padding-top: 4.5rem;
+    font-size: 18px;
+
+    .hd-title__left-btn--home-wh{
+        width: 5.5rem;
+        height: 4.5rem;
+    }
+
+    .hd-title--03{
+        position: fixed;
+    }
+
+    &__scroll-area{
+        width: 100%;
+        height: calc(100% - 4rem);
+        overflow-y: scroll;
+        padding: 2rem 0;
+    }
+
+    &__scroll-area.active{
+        height: calc(100% - 5.5rem);
+    }
+
+    &__scroll-area02{
+        width: 100%;
+        padding: 2rem 0 0;
+        height: calc(100% - 5.5rem);
+        overflow-y: scroll;
+
+        .find_friend_list{
+            margin-bottom: 10px;
+        }
+
+    }
+
+    // .bt-fixed-msg{
+    //     top: unset;
+    //     bottom: -5.5rem;
+    //     transition: all 0.2s;
+    // }
+
+    // .bt-fixed-msg.active{
+    //     bottom: 0;
+    //     transition: all 0.2s;
+    // }
+
+}
+
+.find_friend{
+
+    &_group{
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    &_group ._thumb{
+        @include bgStyle(cover);
+        @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+        width: 3.2em;
+        height: 3.2em;
+        background-color: antiquewhite;
+        border-radius: 50%;
+    }
+
+    &_group ._name {
+        @include fontStyle(1em, bold, $navy-color);
+        padding-left: 65px;
+        padding-top: 7px;
+        @include xsm{
+            padding-top: 0;
+            padding-left: 71px;
+        }
+    }
+
+    &_group ._text{
+        @include fontStyle(0.85em, 300, $navy-color);
+        padding: 10px 0 10px;
+        line-height: 1.5;
+        letter-spacing: -0.7px;
+    }
+
+    &_list{
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    &_sch{
+        // height: 4rem;
+        padding: 1rem 2rem 0 2rem;
+        
+        input {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-bottom: 1px solid #00BBDA;
+            height: 35px;
+            font-size: 1.3rem;
+            outline: none;
+            padding-left: 33px;
+            color: $navy-color;
+            background-image: url(/img/icon/icon-sch-gray.svg);
+            background-size: 23px;
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+        }
+
+        input::placeholder{
+            color: #DFE7ED;
+        }
+        
+    }
+
+}
+
+.before_desc {
+
+    position: relative;
+    font-size: 16px;
+
+    ._date {
+        @include fontStyle(0.7em, 300, #6A6A6A);
+        @include xsm{
+            padding-left: 71px;
+        }
+        width: 100%;
+        display: inline-block;
+        padding-left: 65px;
+        padding-bottom: 7px;
+        letter-spacing: 0.3px;
+
+        &_hits, &_cmt {
+            @include fontStyle(inherit, 400, #000000);
+        }
+
+    }
+
+    ._date em{
+        display: inline-block;
+        line-height: 15px;
+        border-right: 1px solid #c1c1c1;
+        margin-right: 10px;
+        padding-right: 10px;
+    
+        &:last-child{
+            margin-right: 0;
+            padding-right: 0;
+            border-right: 0;
+        }
+        
+        &._date_time{
+            @include xsm{
+                width: 100%;
+                margin-right: 0;
+                padding-right: 0;
+                border-right: 0;
+                padding: 5px 0;
+            }
+        }
+
+    }
+
+    ._text{
+        @include textOverflow(2);
+        line-height: 20px;
+        font-size: 13px;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+}
+
+.after_desc{
+
+    font-size: 16px;
+    margin-top: 15px;
+    display: block;
+    border-top: 1px solid $border-color;
+
+    ._tit {
+        @include fontStyle(0.95em, 800, $main-color);
+        text-transform: uppercase;
+        padding-top: 18px;
+    }
+
+    ._name {
+        padding-left: 0;
+    }
+
+    ._btn {
+        @include fontStyle(0.9em, 300, $navy-color);
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        padding: 10px 0;
+    }
+
+    ._text{
+        line-height: 1.7;
+    }
+
+}
+
+.comments_group {
+    background-color: #F4F8FC;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px 21px;
+}
+
+._status_recomment {
+    @include fontStyle(inherit, 300, $navy-color);
+    background-color: transparent;
+    border: 0;
+    font-size: 13px;
+    border-radius: 0;
+}
+
+
+.comment{
+
+    &_list {
+        padding-left: 50px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    &_list ._thumb {
+        @include bgStyle(cover);
+        @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+        background-color: antiquewhite;
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+    }
+
+    &_list ._status {
+        @include fontStyle(13px, 300, rgba(0, 36, 76, 0.45));
+        padding: 0;
+        padding: 8px 0 8px 13px;
+    }
+
+    &_list ._bubble{
+
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 7px 18px;
+        color: #00244C;
+
+        ._name{
+            font-size: 15px;
+            font-weight: bold;
+            padding-top: 7px;
+        }
+
+        ._text {
+            padding-top: 5px;
+            line-height: 20px;
+            font-size: 13px;
+        }
+
+    }
+
+    &_status {
+        @include fontStyle(0.9em, 300, rgba(0, 36, 76, 0.45));
+        padding: 10px 0;
+    }
+    
+    &_status_btn {
+        @include fontStyle(inherit, 300, $navy-color);
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+
+}
+
+.recomment_list{
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.recomment_group{
+    position: relative;
+    margin-bottom: 15px;
+
+    .before_recmt{
+        position: relative;
+        height: 2em;
+        padding-left: 45px;
+        line-height: 2em;
+        margin: 5px 0;
+
+        ._sentence {
+            font-size: 13px;
+            color: rgba($navy-color, 0.4);
+        }
+        ._sentence em{
+            color: $navy-color;
+        }
+
+    }
+
+    .after_recmt{
+        position: relative;
+        margin: 10px 0 0;
+        display: none;
+
+        .comment_list{
+            margin: 0;
+        }
+
+    }
+
+}
+
+
+.bt-fixed-msg{
+    @include maxWidth1024;
+    width: 100%;
+    height: 5.5rem;
+    background-color: #ECF1F5;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    padding: 1rem 60px 1rem 2rem;
+    font-size: 1.2rem;
+
+    &__input{
+        
+        @include iosInput;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 30px;
+        padding: 0 1.5rem;
+        outline: none;
+        &::placeholder{
+            color: #cccccc;
+        }
+        &:focus{
+            border: 1px solid $border-color;
+        }
+    }
+    &__btn{
+        @include bgStyle(30px);
+        @include position($t: 0, $r: 0, $transX: 0, $transY: 0);
+        width: 60px;
+        height: 100%;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        background-image: url(/img/btn/btn-msg-send.svg);
+        background-position: 10px 50%;
+    }
+}

@@ -1,0 +1,101 @@
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+
+@mixin viewSize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin backgroundBasic($bg-size-type) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $bg-size-type;
+}
+
+@mixin thumnail($width, $height) {
+  @include backgroundBasic(cover);
+  width: $width;
+  height: $height;
+  border-radius: $width/2.8;
+  position: absolute;
+}
+
+@mixin sectionStyle {
+  width: 100%;
+  min-height: 100%;
+  padding: 0 0 $theme-playbar-height $theme-hd-width;
+}
+
+@mixin buttonStyle(
+  $btn-radius: 30px,
+  $btn-height: 45px,
+  $btn-color: #7e2aff,
+  $btn-txt-color: #fff,
+  $font-size: 0.95rem
+) {
+  border-radius: $btn-radius;
+  line-height: $btn-height;
+  height: $btn-height;
+  background-color: $btn-color;
+  color: $btn-txt-color;
+  font-size: $font-size;
+
+  &:hover {
+    background-color: darken($btn-color, 10%);
+  }
+}
+
+@mixin inputStyle {
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+  padding: 0.25rem 0.5rem;
+  height: 45px;
+  width: 100%;
+  outline: none;
+
+  &:focus {
+    border-color: $theme-button01-color;
+  }
+}
+
+@mixin fontStyle($size: null, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin alignWidthStyle($width, $mt: 0, $mb: 0) {
+  width: $width;
+  margin: $mt auto $mb auto;
+}
+
+@mixin position($p: absolute, $t: null, $b: null, $l: null, $r: null) {
+  position: $p;
+  top: $t;
+  bottom: $b;
+  left: $l;
+  right: $r;
+}
+
+@mixin beforeAfterSelector(
+  $w,
+  $h,
+  $bg-color,
+  $t: null,
+  $b: null,
+  $l: null,
+  $r: null
+) {
+  content: "";
+  width: $w;
+  height: $h;
+  background-color: $bg-color;
+  position: absolute;
+  top: $t;
+  bottom: $b;
+  left: $l;
+  right: $r;
+  display: inline-block;
+}

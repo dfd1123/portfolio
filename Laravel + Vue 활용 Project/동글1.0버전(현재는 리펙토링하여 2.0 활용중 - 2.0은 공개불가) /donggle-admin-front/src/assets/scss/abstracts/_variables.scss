@@ -1,0 +1,155 @@
+// @type Font
+$path-font: "/font/";
+$path-images: "/images/";
+$path-img: "/images/img/";
+$path-btn: "/images/btn/";
+$path-icon: "/images/icon/";
+$path-logo: "/images/logo/";
+
+// @type Color
+
+// ------------ purple ------------ //
+$purple-dark: #3c3c64;
+$purple: #a134e8;
+$purple-md: #b081d2;
+$purple-md-01: #d4ccff;
+
+$purple-mild: #6969b9;
+$purple-mild-01: #7f63f4;
+$purple-mild-02: #d9d9ee;
+
+// ------------ gray ------------ //
+$black: #333333;
+$gray: #6a707e;
+$gray-01: #898989;
+$gray-md: #787878;
+$gray-md-01: #777777;
+$gray-md-02: #b4b4b4;
+$gray-md-03: #abafb3;
+$gray-md-04: #bec3c8;
+$gray-light: #c8c8c8;
+$gray-light-01: #dddfe1;
+$gray-light-02: #cccccc;
+$gray-light-03: #dcdcdc;
+$gray-lighter: #f0f0f0;
+$gray-lighter-01: #e6e6e6;
+$gray-lighter-02: #fafafa;
+$gray-lighter-03: #f5f5f5;
+
+// ------------ etc color ------------ //
+$pink: #fc4ead;
+$mint: #28b2a9;
+$blue: #3482e8;
+$red: #ff5656;
+
+// @type Color set (gray계열, purple빼고 여기 사용)
+// ------------ theme color set ------------ //
+$primary-gradient-start: $pink;
+$primary-gradient-end: $purple;
+$primary-color: $purple-dark;
+$primary-color-01: $purple;
+$primary-color-02: $purple-mild;
+$primary-color-03: $purple-mild-02;
+$secondary-color: $pink;
+
+$color-bg: $gray-lighter-02;
+
+$color-blue: $blue;
+$color-red: $red;
+
+$color-shadow: rgba(black, 0.05);
+$color-shadow-01: rgba($gray-md-01, 0.1);
+
+$color-rounded-btn-01: $secondary-color;
+$color-rounded-btn-02: $primary-color-02;
+
+// @type Shadow
+$navi-shadow: 2px 0 6px $color-shadow;
+$panel-shadow: 1.5px 2.6px 10px $color-shadow-01;
+$hd-snb-shadow: 0 3px 6px $color-shadow;
+
+// @type Font
+$theme-font: "Spoqa", "Arial", "sans-serif";
+
+// @type zindexes
+$z-indexes: (
+  "nav": 12000,
+  "modal": 11000,
+  "overlay": 850,
+  "header": 10000,
+  "sideNav": 9,
+  "fixed_top": 5,
+  "default": 1,
+  "minus": -1,
+  "zero": 0
+);
+
+// @type em font
+$em-8px: 0.5em;
+$em-9px: 0.563em;
+$em-10px: 0.625em;
+$em-11px: 0.688em;
+$em-12px: 0.75em;
+$em-13px: 0.813em;
+$em-14px: 0.875em;
+$em-15px: 0.938em;
+$em-16px: 1em;
+$em-17px: 1.063em;
+$em-18px: 1.125em;
+$em-19px: 1.188em;
+$em-20px: 1.25em;
+$em-21px: 1.313em;
+$em-22px: 1.375em;
+$em-23px: 1.438em;
+$em-24px: 1.5em;
+$em-34px: 2.125em;
+
+// @type Layout unit
+$pc-layout: (
+  "hd-gnb-width": 320px,
+  "hd-snb-bar-height": 75px,
+  "hd-title-bar-height": 70px,
+  "container-pd": 32px,
+  "ft-height": 100px,
+  "rounded-square-btn-height": 42px,
+  "rounded-square-xs-btn-height": 30px,
+  "deletable-btn-height": 30px,
+  "square-md-btn-height": 46px,
+  "square-lg-btn-height": 54px,
+  "page-wrap-pd-t": 10px,
+  "page-wrap-pd-b": 150px
+);
+
+$pc-15inch-layout: (
+  "hd-gnb-width": 160px,
+  "hd-snb-bar-height": 60px,
+  "hd-title-bar-height": 50px,
+  "container-pd": 20px,
+  "ft-height": 100px
+);
+
+$tablet-layout: (
+  "hd-gnb-width": 305px,
+  "hd-snb-bar-height": 0px,
+  "hd-title-bar-height": 50px,
+  "container-pd": 20px,
+  "ft-height": 100px,
+  "page-wrap-pd-t": 5px,
+  "page-wrap-pd-b": 100px
+);
+
+$tab-layout: (
+  "hd-gnb-width": 305px,
+  "hd-snb-bar-height": 0px,
+  "hd-title-bar-height": 50px,
+  "container-pd": 20px,
+  "ft-height": 100px
+);
+
+$mobile-basic-layout: (
+  "hd-gnb-width": 280px,
+  "hd-snb-bar-height": 0px,
+  "hd-title-bar-height": 3.125rem,
+  "container-pd": 20px,
+  "ft-height": 120px
+);

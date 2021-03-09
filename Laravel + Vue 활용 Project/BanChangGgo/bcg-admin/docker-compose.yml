@@ -1,0 +1,18 @@
+version: '3.0'
+
+services:
+
+  jenkins:
+    container_name : jenkins-server
+    environment:
+      - JENKINS_OPTS="--prefix=/jenkins"
+    restart: always
+    user: root
+    image : dedfcca6934d
+    volumes :
+      -  "/home/jenkins/jenkins_home:/var/jenkins_home"
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+
+

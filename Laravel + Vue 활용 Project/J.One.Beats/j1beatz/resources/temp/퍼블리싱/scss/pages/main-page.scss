@@ -1,0 +1,298 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+@import "../components/producer_card.scss";
+@import "../components/beatz_chart.scss";
+
+/* 
+    --------------------------------------------------------------------
+
+        INDEX 메인페이지
+
+            00. 공통 
+            01. 메인 광고패널 
+            02. 메인 분위기선택패널 
+            03. 메인 프로듀서 best패널 
+        
+    --------------------------------------------------------------------
+*/
+
+// 00. 공통
+
+// 메인 패널 그룹핑
+
+.main-panel-article {
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+}
+
+.main-section {
+  .page-contents-wrapper {
+    padding: 50px 0 35px;
+  }
+
+  .in-title,
+  .beat_chart_list {
+    padding: 0 30px;
+  }
+
+  .in-title-right {
+    right: 30px;
+  }
+
+  input[type="checkbox"].checkbox-style02 {
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      border: 1px solid #cccccc;
+      box-sizing: border-box;
+    }
+
+    &:checked:before {
+      background-color: #000;
+      border: 5px solid #7e2aff;
+    }
+  }
+}
+
+// 01. 메인 광고패널
+
+.main-panel-advertise {
+  height: 350px;
+  width: 100%;
+  background-color: transparent;
+
+  ._list {
+    width: 5%;
+    height: 260px;
+    display: inline-block;
+    padding: 0 8px;
+    margin: 0 10px;
+
+    & > ._banner {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      margin-top: 20px;
+      background-position: center;
+      background-size: 140%;
+      opacity: 0.5;
+    }
+  }
+
+  ._list.slick-center {
+    height: 300px;
+
+    & > ._banner {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  &:before {
+    @include beforeAfterSelector(15%, 100%, $bg-color: null, $t: 0, $l: 0);
+    background: linear-gradient(to right, rgba(27, 27, 56, 0.92), transparent);
+    z-index: 1;
+  }
+
+  &:after {
+    @include beforeAfterSelector(15%, 100%, $bg-color: null, $t: 0, $r: 0);
+    background: linear-gradient(to left, rgba(27, 27, 56, 0.92), transparent);
+    z-index: 1;
+  }
+
+  .slick-arrow {
+    @include backgroundBasic(contain);
+    width: 18px;
+    height: 50px;
+    z-index: 5;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .slick-prev {
+    left: 30%;
+
+    background-image: url($G-path-img-btn+"slick-arrow-01-prev.svg");
+
+    &:before {
+      content: "";
+    }
+  }
+
+  .slick-next {
+    right: 30%;
+
+    background-image: url($G-path-img-btn+"slick-arrow-01-next.svg");
+
+    &:before {
+      content: "";
+    }
+  }
+
+  .slick-dots li {
+    width: 110px;
+    height: 20px;
+    margin: 0 2px;
+
+    button {
+      width: 100%;
+      height: 20px;
+    }
+  }
+
+  .slick-dots li button:before {
+    width: 100%;
+    height: 4px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .slick-dots li.slick-active button:before {
+    background-color: #7e2aff;
+  }
+
+  .slick-dots li button:hover:before,
+  .slick-dots li button:focus:before {
+    opacity: 0.5;
+  }
+}
+
+// 02. 메인 분위기선택패널
+// FIXME: swiper에 맞게 scss수정 
+.main-panel-choice_mood {
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+
+  &__list {
+    width: 280px;
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 0 8px;
+    margin-bottom: 40px;
+    
+  }
+
+  &__div {
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &:before {
+      @include beforeAfterSelector(
+        100%,
+        100%,
+        rgba(0, 0, 0, 0.3),
+        $t: 0,
+        $l: 0
+      );
+      display: block;
+      border-radius: 30px;
+
+    }
+
+    &:hover {
+      border: 3px solid rgba(188, 155, 255, 0.712);
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+  }
+
+}
+
+.main-panel-choice_mood__wrapper{
+
+  &:before {
+    @include beforeAfterSelector(13%, 100%, $bg-color: null, $t: 0, $l: 0);
+    background: linear-gradient(to right, rgba(27, 27, 56, 0.92), transparent);
+    z-index: 2;
+  }
+
+  &:after {
+    @include beforeAfterSelector(13%, 100%, $bg-color: null, $t: 0, $r: 0);
+    background: linear-gradient(to left, rgba(27, 27, 56, 0.92), transparent);
+    z-index: 2;
+  }
+
+}
+// END FIXME: swiper에 맞게 scss수정 
+
+// 03. 메인 프로듀서 best패널
+
+.producer-container{
+    
+    &:before {
+      @include beforeAfterSelector(13%, 100%, $bg-color: null, $t: 0, $l: 0);
+      background: linear-gradient(to right, rgba(27, 27, 56, 0.92), transparent);
+      z-index: 2;
+    }
+  
+    &:after {
+      @include beforeAfterSelector(13%, 100%, $bg-color: null, $t: 0, $r: 0);
+      background: linear-gradient(to left, rgba(27, 27, 56, 0.9), transparent);
+      display: block;
+      clear: both;
+      z-index: 1;
+    }
+  
+    .swiper-button{
+      width: 60px;
+      height: 60px;
+      background-size: contain;
+    }
+  
+    .swiper-button-prev{
+      left: 20px;
+      background-image: url($G-path-img-btn+'slick-arrow-02-prev.svg');
+    }
+    
+    .swiper-button-next{
+      right: 20px;
+      background-image: url($G-path-img-btn+'slick-arrow-02-next.svg');
+  
+      &:hover{
+          opacity: 0.8;
+      }
+    }
+  
+  }
+  
+  .main-panel-producer_list {
+    width: 100%;
+    position: relative;
+  
+    .producer-card {
+      margin: 0 15px;
+    }
+  }

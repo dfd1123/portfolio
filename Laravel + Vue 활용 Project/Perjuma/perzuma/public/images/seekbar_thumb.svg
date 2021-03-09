@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#d1d1d1}.cls-1,.cls-2{stroke-width:1.5px}.cls-2,.cls-4{fill:none}.cls-2{stroke:#d7d7d7}.cls-3{stroke:none}.cls-5{filter:url(#타원_318)}
+        </style>
+        <filter id="타원_318" width="75" height="75" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="4"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".082"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="그룹_445" data-name="그룹 445" transform="translate(-142 -457)">
+        <g class="cls-5" transform="translate(142 457)">
+            <g id="타원_318-2" class="cls-1" data-name="타원 318" transform="translate(9 5)">
+                <circle cx="28.5" cy="28.5" r="28.5" class="cls-3"/>
+                <circle cx="28.5" cy="28.5" r="27.75" class="cls-4"/>
+            </g>
+        </g>
+        <path id="선_61" d="M0 0v18" class="cls-2" data-name="선 61" transform="translate(169 482)"/>
+        <path id="선_63" d="M0 0v18" class="cls-2" data-name="선 63" transform="translate(180 482)"/>
+        <path id="선_64" d="M0 0v18" class="cls-2" data-name="선 64" transform="translate(191 482)"/>
+    </g>
+</svg>

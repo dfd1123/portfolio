@@ -1,0 +1,261 @@
+.register_wrap{
+    background:#f5f5f5;
+}
+
+.register_wrap .register_con{
+    padding:94px 0;
+}
+
+.register_wrap .register_con .register_box{
+    width: 600px;
+    background:#fff;
+    border: solid 1px #dcdcdc;
+    margin:0 auto;
+    padding:60px;
+}
+
+.register_wrap .register_con .register_box .form_wrap .blue_label{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.72px;
+    text-align: left;
+    color: #00b9ff;
+    padding-top: 20px;
+}
+
+.register_wrap .register_con .register_box>h2{
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.48;
+    letter-spacing: -1.6px;
+    text-align: center;
+    color: #333333;
+}
+
+.register_wrap .register_con .register_box>ul{
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom:31px;
+}
+
+.register_wrap .register_con .register_box>ul li{
+    float: left;
+    width: 50%;
+    padding: 10px 0;
+    border-bottom: solid 1px #dcdcdc;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.64px;
+    text-align: center;
+    color: #333333;
+    cursor: pointer;
+}
+
+.register_wrap .register_con .register_box>ul li.active{
+    font-weight:700;
+    border-bottom:2px solid #00b9ff;
+    padding: 9.5px 0;
+}
+
+.reg_inp{
+    position: relative;
+    margin: 20px 0;
+}
+
+.reg_inp>label{
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.reg_inp>div{
+    position: relative;
+}
+
+.reg_inp>div.check_btn_div{
+    width:100%;
+    padding-right: 95px;
+}
+
+.reg_inp>span{
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #ababab;
+    margin-top:15.5px;
+    display:block;
+}
+
+.reg_inp>div input[type="text"],.reg_inp>div input[type="password"],.reg_inp>div input[type="email"]{
+    width: 100%;
+    height: 42px;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    transition:border 0.5s;
+}
+
+.reg_inp>div input[type="text"]:focus,.reg_inp>div input[type="password"]:focus,.reg_inp>div input[type="email"]:focus{
+    border-bottom:1px solid #00b9ff;
+}
+
+.reg_inp>div button{
+    width: 80px;
+    height: 42px;
+    border: solid 1px #00b9ff;
+    background:#fff;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: center;
+    color: #00b9ff;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index: 2;
+    cursor: pointer;
+    transition:border 0.2s;
+}
+
+.reg_inp>div button:hover{
+    border: solid 3px #00b9ff;
+}
+
+.reg_inp .password_correct_status{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: right;
+}
+
+.reg_inp .password_correct_status>span.correct{
+    color: #6498ff;
+}
+
+.reg_inp .password_correct_status>span.incorrect{
+    color: #ff6060;
+}
+
+.register_agree_box{
+    margin-top: 70px;
+    padding-top: 20px;
+    border-top: 1px solid #00b9ff;
+}
+
+.register_agree_box .register_agree_inp{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #717171;
+    margin:29.5px 0;
+    float: none;
+}
+
+.register_agree_box .register_agree_inp label:before{
+    margin-right:10px;
+}
+
+.register_agree_box .register_agree_inp p{
+    display:block;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+    margin-bottom:8.5px;
+}
+
+.register_agree_box .register_agree_inp .checkbox_label{
+    margin-right: 5px;
+}
+
+.register_agree_box .register_agree_inp a{
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #00b9ff;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.register_wrap button[type="submit"], .register_wrap button.submit{
+    width:100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #ffffff;
+    margin-top:30px;
+    background-image: linear-gradient(to right, #00b9ff, #4375ff);
+}
+
+.register_wrap .complete_img{
+    text-align: center;
+    margin: 30px 0 35px;
+}
+
+.register_wrap .reg_complete_ments{
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.72px;
+    text-align: center;
+    color: #717171;
+    margin: 25px 0;
+}

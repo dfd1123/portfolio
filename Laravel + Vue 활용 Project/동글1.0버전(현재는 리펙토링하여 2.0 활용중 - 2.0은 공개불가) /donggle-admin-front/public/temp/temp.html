@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 ui component</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+    <style>
+      #ui-component-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 0;
+      }
+
+      .component-section {
+        padding: 40px 0;
+        border-bottom: 1px solid #c8c8c8;
+        padding: 15px 30px;
+        border: 1px solid #f0f0f0;
+        margin-bottom: 90px;
+      }
+
+      .component-section > h1 {
+        font-size: 25px;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+        margin-bottom: 20px;
+      }
+
+      .inner-section {
+        margin-bottom: 35px;
+      }
+
+      .inner-section > h2 {
+        font-weight: 500;
+        color: #777777;
+        margin-bottom: 12px;
+        font-size: 14px;
+        padding-left: 12px;
+        position: relative;
+      }
+
+      .inner-section > h2:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: #777777;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        border-radius: 50%;
+        margin-top: -2.5px;
+      }
+
+      .inner-section > div {
+        padding: 20px;
+        background-color: #f7f7f7;
+      }
+
+      .ex-input-label {
+        font-size: 12.5px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 140px;
+      }
+
+      .in-divider {
+        padding-bottom: 20px;
+      }
+
+      .in-divider:last-child {
+        padding-bottom: 0;
+      }
+
+      .temp-div {
+        background-color: #f0f0f0;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      .temp-div:last-child {
+        margin-bottom: 0;
+      }
+
+      .search-option-bar,
+      .search-status-bar,
+      .sorting-tab-bar {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="ui-component-wrapper">
+      <section class="component-section">
+        <h1>component - button</h1>
+
+        <div class="inner-section">
+          <h2>상단 타이틀바 버튼들</h2>
+          <div>
+            <a href="#" role="button" class="rounded-square-btn btn-theme"
+              >저장</a
+            >
+            <label for="#" class="rounded-square-btn btn-theme">등록완료</label>
+            <button type="button" class="rounded-square-btn btn-mild">
+              목록으로
+            </button>
+            <input
+              type="button"
+              class="rounded-square-btn btn-theme"
+              value="답변완료"
+            />
+            <button type="button" class="rounded-square-btn btn-theme">
+              삭제요청
+            </button>
+            <button
+              type="button"
+              class="rounded-square-btn btn-theme icon-excel-down-btn"
+            >
+              엑셀파일 다운로드
+            </button>
+          </div>
+        </div>
+        <div class="inner-section">
+          <h2>기타 버튼들</h2>
+          <div>
+            <button type="button" class="rounded-square-btn btn-gray">
+              옵션목록 생성
+            </button>
+            <button type="button" class="rounded-square-btn btn-outline-navy">
+              인증하기
+            </button>
+            <button
+              type="button"
+              class="rounded-square-xs-btn btn-theme icon-search-btn"
+            >
+              <i class="icon-search">
+                <img src="/images/icon/icon-search.svg" alt="" />
+              </i>
+            </button>
+          </div>
+        </div>
+        <div class="inner-section">
+          <h2>삭제가능한 버튼들</h2>
+          <div>
+            <span class="deletable-btn btn-mild">
+              <span class="in-word">네온핑크</span>
+              <i class="icon-del">
+                <img src="/images/btn/btn_close_wh.svg" alt="del btn" />
+              </i>
+            </span>
+            <button type="button" class="deletable-btn btn-theme">
+              <span class="in-word">블랙블랙블랙 내이름은 블랙</span>
+              <i class="icon-del">
+                <img src="/images/btn/btn_close_wh.svg" alt="del btn" />
+              </i>
+            </button>
+          </div>
+        </div>
+        <div class="inner-section">
+          <h2>그라데이션버튼들</h2>
+          <div>
+            <a href="#" class="square-lg-btn type-shadow btn-gradient">목록</a>
+            <a href="#" class="square-md-btn btn-outline-gray">닫기</a>
+            <a href="#" class="square-md-btn btn-gradient">삭제요청</a>
+          </div>
+        </div>
+        <div class="inner-section">
+          <h2>기타 작은버튼들</h2>
+          <div>
+            <button
+              type="button"
+              class="rounded-square-xs-btn btn-outline-gray-light"
+            >
+              민트
+            </button>
+            <button type="button" class="rounded-square-xs-btn btn-navy">
+              네온핑크
+            </button>
+            <button type="button" class="rounded-square-xs-btn btn-navy">
+              준비완료
+            </button>
+            <button type="button" class="rounded-square-xs-btn btn-mint">
+              수정
+            </button>
+            <button type="button" class="rounded-square-xs-btn btn-gray">
+              사유보기
+            </button>
+            <button
+              type="button"
+              class="rounded-square-xs-btn btn-outline-navy type-shadow"
+            >
+              선택한 상품 준비 완료
+            </button>
+          </div>
+        </div>
+        <div class="inner-section">
+          <h2>기타 첨부파일다운로드 버튼</h2>
+          <label class="file-download-btn">
+            <img
+              class="in-icon"
+              src="/images/icon/icon_folder.svg"
+              alt="folder icon"
+            />
+            <span class="in-filename">첨부파일명_길어지면 늘어나게.jpg</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="component-section">
+        <h1>component - panel</h1>
+
+        <div class="inner-section">
+          <h2>일반 패널 스타일</h2>
+          <div>
+            <div class="panel-default"></div>
+          </div>
+        </div>
+
+        <div class="inner-section">
+          <h2>일반 패널 스타일(제목형)</h2>
+          <div>
+            <div class="panel-default-container">
+              <div class="panel-default-title">
+                <h4 class="in-mainname">사업자 정보</h4>
+                <span class="in-subtxt"
+                  >※ 허위 정보를 등록할 시 강력히 처벌합니다.</span
+                >
+              </div>
+              <div class="panel-default"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-section">
+          <h2>미니패널 스타일</h2>
+          <div>
+            <!-- 스토어 문의 -->
+            <div class="main-mini-panel-card">
+              <div class="inner">
+                <span class="in-subtit">데일리 흑청와이드 데님팬츠_3color</span>
+                <p class="in-maintit">
+                  문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                  말줄임표해주세요~
+                </p>
+                <span class="in-status">답변대기</span>
+                <span class="in-datetime">1시간전</span>
+              </div>
+            </div>
+            <!-- END -->
+            <!-- 상품문의 답변대기 -->
+            <div class="main-mini-panel-card type-thumb">
+              <div class="inner">
+                <figure class="in-thumb">
+                  <img src="/images/img/product.jpg" alt="product image" />
+                </figure>
+                <span class="in-subtit">데일리 흑청와이드 데님팬츠_3color</span>
+                <p class="in-maintit">
+                  문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                  말줄임표해주세요~
+                </p>
+                <span class="in-status">답변대기</span>
+                <span class="in-datetime">1시간전</span>
+              </div>
+            </div>
+            <!-- END -->
+            <!-- 상품문의 답변완료 -->
+            <div class="main-mini-panel-card type-thumb">
+              <div class="inner">
+                <figure class="in-thumb">
+                  <img src="/images/img/product.jpg" alt="product image" />
+                </figure>
+                <span class="in-subtit">데일리 흑청와이드 데님팬츠_3color</span>
+                <p class="in-maintit">
+                  문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                  말줄임표해주세요~
+                </p>
+                <span class="in-status complt">답변완료</span>
+                <span class="in-datetime">1시간전</span>
+              </div>
+            </div>
+            <!-- END -->
+            <!-- 구매후기 -->
+            <div class="main-mini-panel-card type-thumb">
+              <div class="inner">
+                <figure class="in-thumb">
+                  <img src="/images/img/product.jpg" alt="product image" />
+                </figure>
+                <span class="in-subtit">데일리 흑청와이드 데님팬츠_3color</span>
+                <p class="in-maintit">
+                  후기 내용입니다. 후기 내용입니다. 어느정도 길어질시
+                  말줄임표해주세요~
+                </p>
+                <div class="star-group star-04">
+                  <i class="_img"></i>
+                  <span class="_rate"></span>
+                </div>
+                <span class="in-datetime">1시간전</span>
+              </div>
+            </div>
+            <!-- END -->
+          </div>
+        </div>
+        <div class="inner-section">
+          <h2>정보패널 스타일</h2>
+          <div>
+            <div class="main-info-panel-card" style="margin-bottom: 10px;">
+              <ul class="inner">
+                <li class="info-list">
+                  <div class="in-title">
+                    <img src="/images/icon/icon_02.svg" alt="icon" />
+                    <span>주문수</span>
+                  </div>
+                  <div class="in-content">
+                    <p><b>111</b><span>건</span></p>
+                  </div>
+                </li>
+                <li class="info-list">
+                  <div class="in-title">
+                    <img src="/images/icon/icon_03.svg" alt="icon" />
+                    <span>취소/환불</span>
+                  </div>
+                  <div class="in-content">
+                    <p><b>3</b><span>건</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="main-info-panel-card">
+              <ul class="inner">
+                <li class="info-list">
+                  <div class="in-title">
+                    <img src="/images/icon/icon_02.svg" alt="icon" />
+                    <span>주문수</span>
+                  </div>
+                  <div class="in-content">
+                    <p><b>111</b><span>건</span></p>
+                    <p class="in-text-right plus">
+                      <b>3,000,000</b><span>원</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="info-list">
+                  <div class="in-title">
+                    <img src="/images/icon/icon_03.svg" alt="icon" />
+                    <span>취소/환불</span>
+                  </div>
+                  <div class="in-content">
+                    <p><b>3</b><span>건</span></p>
+                    <p class="in-text-right minus">
+                      <b>90,000</b><span>원</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="info-list">
+                  <div class="in-title">
+                    <img src="/images/icon/icon_profit.svg" alt="icon" />
+                    <span>예상매출</span>
+                  </div>
+                  <div class="in-content">
+                    <p><b>50,000</b><span>건</span></p>
+                    <p class="in-text-right"><b>3,000,000</b><span>원</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="component-section">
+        <h1>component - input, select, textarea, checkbox-label</h1>
+
+        <div class="inner-section">
+          <h2>input</h2>
+          <div>
+            <div class="panel-default">
+              <div class="in-divider">
+                <span class="ex-input-label">type="text"</span>
+                <input
+                  type="text"
+                  class="form-input-txt"
+                  placeholder="상품명을 입력해주세요 (10~40자)"
+                />
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">type="date"</span>
+                <input
+                  type="text"
+                  class="form-input-date"
+                  value="2019-11-21"
+                  style="width: 125px;"
+                />
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">type="number"</span>
+                <input
+                  type="number"
+                  class="form-input-txt"
+                  placeholder="수량입력"
+                />
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">type="tel"</span>
+                <input
+                  type="tel"
+                  class="form-input-txt"
+                  placeholder="전화번호 입력"
+                />
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">type="email"</span>
+                <input
+                  type="email"
+                  class="form-input-txt"
+                  placeholder="이메일 입력"
+                />
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">type="search"</span>
+                <input
+                  type="search"
+                  class="form-input-search"
+                  placeholder="검색어 입력"
+                />
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">type="button"</span>
+                <input
+                  type="button"
+                  class="rounded-square-btn btn-outline-navy"
+                  value="인증하기"
+                />
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">type="file"</span>
+                <input id="file" class="none" type="file" />
+                <label for="file" class="rounded-square-btn btn-outline-navy"
+                  >이미지 업로드</label
+                >
+                <div class="form-upload-img-area type-circle">
+                  <!-- <img src="/images/img/product.jpg" alt="upload image"> -->
+                </div>
+                <label for="file" class="form-upload-img-area type-circle">
+                  <img src="/images/img/product.jpg" alt="upload image" />
+                </label>
+                <div
+                  class="form-upload-img-area type-square"
+                  style="width: 200px; height: 100px;"
+                >
+                  <!-- <img src="/images/img/product.jpg" alt="upload image"> -->
+                </div>
+                <label
+                  for="file"
+                  class="form-upload-img-area type-square"
+                  style="width: 200px; height: 100px;"
+                >
+                  <!-- <img src="/images/img/product.jpg" alt="upload image"> -->
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-section">
+          <h2>select, textarea</h2>
+          <div>
+            <div class="panel-default">
+              <div class="in-divider">
+                <span class="ex-input-label">type="text"</span>
+                <select name="#" id="#" class="form-select">
+                  <option value="0">은행 선택</option>
+                  <option value="1">국민은행</option>
+                  <option value="2">최신순</option>
+                  <option value="3">등록일순</option>
+                </select>
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">type="text"</span>
+                <div class="form-textarea">
+                  <p>
+                    취소/환불 상세내용<br />
+                    글의 양 만큼<br />
+                    높이 늘어남<br />
+                    취소/환불 상세내용<br />
+                    글의 양 만큼<br />
+                    높이 늘어남 최소 148px
+                  </p>
+                </div>
+              </div>
+              <div class="in-divider">
+                <label for="checkbox" class="ex-input-label"
+                  >type="checkbox"</label
+                >
+                <input id="checkbox" type="checkbox" class="chck-box none" />
+                <label for="checkbox" class="check-gradi-circle"></label>
+              </div>
+              <div class="in-divider">
+                <label for="radio01" class="ex-input-label">type="radio"</label>
+                <input
+                  id="radio01"
+                  name="radio-type"
+                  type="radio"
+                  class="chck-box none"
+                />
+                <label for="radio01" class="check-gradi-circle"></label>
+                <input
+                  id="radio02"
+                  name="radio-type"
+                  type="radio"
+                  class="chck-box none"
+                />
+                <label for="radio02" class="check-gradi-circle"></label>
+              </div>
+              <div class="in-divider">
+                <span class="ex-input-label">checkbox label</span>
+                <input id="checkbox01" type="checkbox" class="chck-box none" />
+                <label
+                  for="checkbox01"
+                  class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                  >손세탁</label
+                >
+                <input id="checkbox02" type="checkbox" class="chck-box none" />
+                <label
+                  for="checkbox02"
+                  class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                  >드라이 (클리닝)</label
+                >
+                <input id="checkbox03" type="checkbox" class="chck-box none" />
+                <label
+                  for="checkbox03"
+                  class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                  >어제</label
+                >
+                <input id="checkbox04" type="checkbox" class="chck-box none" />
+                <label
+                  for="checkbox04"
+                  class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                  >이번주</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="component-section">
+        <h1>component - form style</h1>
+
+        <div class="inner-section">
+          <h2>form style 01</h2>
+          <div>
+            <div class="panel-default">
+              <div class="form-wrapper">
+                <fieldset class="form-container type-01">
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">업체명</label>
+                    <div class="form-align-input">
+                      <input
+                        type="text"
+                        class="form-input-txt"
+                        placeholder="동글스토어"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit"
+                      >동글 브랜드네임</label
+                    >
+                    <div class="form-align-input type-certi">
+                      <div class="in-group">
+                        <input
+                          type="text"
+                          class="form-input-txt"
+                          placeholder="동글스토어"
+                        />
+                        <input
+                          type="button"
+                          class="rounded-square-btn btn-outline-navy"
+                          value="인증하기"
+                        />
+                      </div>
+                      <span class="form-caution"
+                        >스토어에서는 업체가명으로 노출됩니다.</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">은행명</label>
+                    <div class="form-align-input">
+                      <select name="#" id="#" class="form-select">
+                        <option value="0">은행 선택</option>
+                        <option value="1">국민은행</option>
+                        <option value="2">최신순</option>
+                        <option value="3">등록일순</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">프로필 이미지</label>
+                    <div class="form-align-input type-img">
+                      <input id="ex-file" type="file" class="none" />
+                      <label
+                        for="ex-file"
+                        class="rounded-square-btn btn-outline-navy"
+                        >이미지 업로드</label
+                      >
+                      <span class="form-caution"
+                        >프로필 이미지는 80*80px 사이즈의 JPG, PNG 파일을
+                        권장합니다.</span
+                      >
+
+                      <div class="form-upload-img-area type-circle">
+                        <!-- <img src="/images/img/product.jpg" alt="upload image"> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">대표 이미지</label>
+                    <div class="form-align-input type-img">
+                      <input id="ex-file" type="file" class="none" />
+                      <label
+                        for="ex-file"
+                        class="rounded-square-btn btn-outline-navy"
+                        >이미지 업로드</label
+                      >
+                      <span class="form-caution"
+                        >대표 이미지는 842*422px 사이즈의 JPG, PNG 파일을
+                        권장합니다.</span
+                      >
+
+                      <div class="form-upload-img-area type-square">
+                        <!-- <img src="/images/img/product.jpg" alt="upload image"> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">매장 인사글</label>
+                    <div class="form-align-input">
+                      <textarea
+                        name="#"
+                        id="#"
+                        cols="30"
+                        rows="10"
+                        class="form-textarea"
+                      ></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-section">
+          <h2>form style 02</h2>
+          <div>
+            <div class="panel-default">
+              <div class="form-wrapper">
+                <fieldset class="form-container type-02">
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">상품 카테고리</label>
+                    <div class="form-align-input">
+                      <select name="#" id="#" class="form-select">
+                        <option value="0">1차 카테고리 선택</option>
+                        <option value="1">국민은행</option>
+                        <option value="2">최신순</option>
+                        <option value="3">등록일순</option>
+                      </select>
+                      <select name="#" id="#" class="form-select">
+                        <option value="0">2차 카테고리 선택</option>
+                        <option value="1">국민은행</option>
+                        <option value="2">최신순</option>
+                        <option value="3">등록일순</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">상품 해시태그</label>
+                    <div class="form-align-input">
+                      <div class="in-group">
+                        <input
+                          type="text"
+                          class="form-input-txt"
+                          placeholder="찾으시는 색상이 없는 경우 직접 입력해서 추가해주세요."
+                        />
+                        <input
+                          type="button"
+                          class="rounded-square-btn btn-outline-navy"
+                          value="추가"
+                        />
+                      </div>
+
+                      <span class="form-caution"
+                        >해시태그는 최대 6개까지 추가 가능합니다.</span
+                      >
+
+                      <div class="temp-div">
+                        <span>추가한 태그</span>
+                        <div>
+                          <span class="deletable-btn btn-theme">
+                            <span class="in-word">네온핑크</span>
+                            <i class="icon-del">
+                              <img
+                                src="/images/btn/btn_close_wh.svg"
+                                alt="del btn"
+                              />
+                            </i>
+                          </span>
+                          <span class="deletable-btn btn-theme">
+                            <span class="in-word">네온핑크</span>
+                            <i class="icon-del">
+                              <img
+                                src="/images/btn/btn_close_wh.svg"
+                                alt="del btn"
+                              />
+                            </i>
+                          </span>
+                          <span class="deletable-btn btn-theme">
+                            <span class="in-word">네온핑크</span>
+                            <i class="icon-del">
+                              <img
+                                src="/images/btn/btn_close_wh.svg"
+                                alt="del btn"
+                              />
+                            </i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">상품명</label>
+                    <div class="form-align-input">
+                      <input
+                        type="text"
+                        class="form-input-txt"
+                        placeholder="상품명을 입력해주세요 (10~40자)"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit"
+                      >상품 이미지 등록</label
+                    >
+                    <div class="form-align-input">
+                      <div class="temp-div">상품이미지등록하는 곳</div>
+                    </div>
+                  </div>
+
+                  <div class="form-align type-group">
+                    <div class="in-grid">
+                      <div class="in-grid-align">
+                        <label for="#" class="form-align-tit">단가</label>
+                        <div class="form-align-input">
+                          <input
+                            type="text"
+                            class="form-input-txt"
+                            placeholder="공급가액을 입력하세요. (VAT 미포함)"
+                          />
+                          <span class="form-caution"
+                            >부가세가 포함되지 않은 공급가액으로
+                            입력해주세요.</span
+                          >
+                        </div>
+                      </div>
+                      <div class="in-grid-align">
+                        <label for="#" class="form-align-tit">시중가</label>
+                        <div class="form-align-input">
+                          <input
+                            type="text"
+                            class="form-input-txt"
+                            placeholder="공급가액을 입력하세요. (VAT 미포함)"
+                          />
+                          <span class="form-caution"
+                            >시중가는 단가의 두배 가격으로 자동
+                            입력됩니다.</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="in-grid">
+                      <div class="temp-div">동글가 입력하는 카드</div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">배송준비기간</label>
+                    <div class="form-align-input">
+                      <select name="#" id="#" class="form-select">
+                        <option value="0">은행 선택</option>
+                        <option value="1">국민은행</option>
+                        <option value="2">최신순</option>
+                        <option value="3">등록일순</option>
+                      </select>
+                      <span class="form-caution"
+                        >상품 준비에 평균적으로 걸리는 시일을
+                        선택해주세요.</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">색상 선택</label>
+                    <div class="form-align-input type-color">
+                      <div class="in-group">
+                        <input
+                          type="text"
+                          class="form-input-txt"
+                          placeholder="찾으시는 색상이 없는 경우 직접 입력해서 추가해주세요."
+                        />
+                        <input
+                          type="button"
+                          class="rounded-square-btn btn-outline-navy"
+                          value="추가"
+                        />
+                      </div>
+
+                      <div class="temp-div">
+                        <span>색깔 모음 컨테이너</span>
+                        <input
+                          id="color01"
+                          type="checkbox"
+                          class="chck-box none"
+                        />
+                        <label
+                          for="color01"
+                          class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                          >블랙</label
+                        >
+
+                        <input
+                          id="color02"
+                          type="checkbox"
+                          class="chck-box none"
+                        />
+                        <label
+                          for="color02"
+                          class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                          >화이트</label
+                        >
+
+                        <input
+                          id="color03"
+                          type="checkbox"
+                          class="chck-box none"
+                        />
+                        <label
+                          for="color03"
+                          class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                          >아이보리</label
+                        >
+
+                        <input
+                          id="color04"
+                          type="checkbox"
+                          class="chck-box none"
+                        />
+                        <label
+                          for="color04"
+                          class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                          >베이지</label
+                        >
+
+                        <input
+                          id="color05"
+                          type="checkbox"
+                          class="chck-box none"
+                        />
+                        <label
+                          for="color05"
+                          class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                          >메란지</label
+                        >
+                      </div>
+
+                      <div class="temp-div">
+                        <span>선택한 색상</span>
+                        <div>
+                          <span class="deletable-btn btn-mild">
+                            <span class="in-word">네온핑크</span>
+                            <i class="icon-del">
+                              <img
+                                src="/images/btn/btn_close_wh.svg"
+                                alt="del btn"
+                              />
+                            </i>
+                          </span>
+                          <span class="deletable-btn btn-mild">
+                            <span class="in-word">네온핑크</span>
+                            <i class="icon-del">
+                              <img
+                                src="/images/btn/btn_close_wh.svg"
+                                alt="del btn"
+                              />
+                            </i>
+                          </span>
+                          <span class="deletable-btn btn-mild">
+                            <span class="in-word">네온핑크</span>
+                            <i class="icon-del">
+                              <img
+                                src="/images/btn/btn_close_wh.svg"
+                                alt="del btn"
+                              />
+                            </i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit"
+                      >사이즈 범위 지정</label
+                    >
+                    <div class="form-align-input">
+                      <div class="temp-div">사이즈범위지정</div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">선택옵션 등록</label>
+                    <div class="form-align-input">
+                      <div class="temp-div">사이즈범위지정</div>
+                      <div class="temp-div">사이즈범위지정</div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">세탁 방법</label>
+                    <div class="form-align-input">
+                      <div class="temp-div">
+                        <span>세탁 방법 단추들</span>
+                        <div>
+                          <input
+                            id="clean01"
+                            type="checkbox"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="clean01"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                            >손세탁</label
+                          >
+                          <input
+                            id="clean02"
+                            type="checkbox"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="clean02"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                            >드라이 (클리닝)</label
+                          >
+                          <input
+                            id="clean03"
+                            type="checkbox"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="clean03"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                            >물세탁</label
+                          >
+                          <input
+                            id="clean04"
+                            type="checkbox"
+                            class="chck-box none"
+                          />
+                          <label
+                            for="clean04"
+                            class="rounded-square-xs-btn btn-outline-gray-light check-navy"
+                            >표백제 사용금지</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">기타 상세정보</label>
+                    <div class="form-align-input">
+                      <div class="temp-div">
+                        기타상세정보 고르는 컨테이너
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit"
+                      >상품 상세설명 (PC 버전)</label
+                    >
+                    <div class="form-align-input">
+                      <div class="temp-div">
+                        텍스트에디터넣을 공간
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit"
+                      >상품 상세설명 (Mobile 버전)<span class="form-caution"
+                        >모바일 버전을 입력하지 않으면 PC버전으로
+                        노출됩니다.</span
+                      ></label
+                    >
+
+                    <div class="form-align-input">
+                      <div class="temp-div">
+                        텍스트에디터넣을 공간
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-section">
+          <h2>form style 03</h2>
+          <div>
+            <div class="panel-default">
+              <div class="form-wrapper">
+                <fieldset class="form-container type-03">
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">문의자</label>
+                    <div class="form-align-input">
+                      <p class="in-text">홍길동</p>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">문의자 이메일</label>
+                    <div class="form-align-input">
+                      <p class="in-text">donggle@donggle.com</p>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">문의자 폰번호</label>
+                    <div class="form-align-input">
+                      <p class="in-text">010-0000-0000</p>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">문의 날짜</label>
+                    <div class="form-align-input">
+                      <div class="in-text">2019년 00월 00일 00 : 00 : 00</div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">제목</label>
+                    <div class="form-align-input">
+                      <div class="in-text">문의 제목</div>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <label for="#" class="form-align-tit">문의내용</label>
+                    <div class="form-align-input">
+                      <p class="in-text">
+                        문의내용입니다. 내용 분량만큼 테이블 높이 늘어나게
+                        해주세요. 최소높이 200px
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="form-align">
+                    <div class="in-grid-align">
+                      <label for="#" class="form-align-tit">답변</label>
+                      <div class="form-align-input">
+                        <div class="temp-div in-editor">
+                          에디터 들어갈 곳
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="component-section">
+        <h1>component - table style</h1>
+
+        <div class="inner-section">
+          <h2>table style 01</h2>
+          <div>
+            <div class="panel-default">
+              <div class="in-divider">
+                <div class="tbl-wrapper">
+                  <div class="tbl-container">
+                    <table class="tbl-default">
+                      <caption class="hide-text">
+                        테이블
+                      </caption>
+                      <thead class="tbl-default-head">
+                        <tr class="in-tr">
+                          <th>선택</th>
+                          <th>상품명</th>
+                          <th>컬러</th>
+                          <th>사이즈</th>
+                          <th>주문일</th>
+                          <th>출고상태</th>
+                          <th>준비상태</th>
+                          <th>판매상태</th>
+                          <th>판매상태</th>
+                          <th>관리</th>
+                        </tr>
+                      </thead>
+                      <tbody class="tbl-default-body">
+                        <tr class="in-tr">
+                          <td>
+                            <input
+                              id="td-checkbox"
+                              type="checkbox"
+                              class="chck-box none"
+                            />
+                            <label
+                              for="td-checkbox"
+                              class="check-gradi-circle"
+                            ></label>
+                          </td>
+                          <td class="ta-left">
+                            <div class="date-product-md">
+                              <figure class="in-thumb">
+                                <img
+                                  src="/images/img/product.jpg"
+                                  alt="product image"
+                                />
+                              </figure>
+                              <span class="in-word"
+                                >데일리 러빈 라운드넥 뽀송니트_4color</span
+                              >
+                            </div>
+                          </td>
+                          <td>색상이름 두줄이상</td>
+                          <td>M</td>
+                          <td><i>2010-00-00</i></td>
+                          <td>-</td>
+                          <td>
+                            <div class="date-status">
+                              <span>준비 중</span>
+                              <input
+                                type="button"
+                                class="rounded-square-xs-btn btn-navy"
+                                value="준비 완료"
+                              />
+                            </div>
+                          </td>
+                          <td>
+                            <div class="date-status-slct">
+                              <select class="form-select">
+                                <option value="0">정상</option>
+                                <option value="1">품절</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="date-status">
+                              <span>노출 중지</span>
+                              <input
+                                type="button"
+                                class="rounded-square-xs-btn btn-gray"
+                                value="사유 보기"
+                              />
+                            </div>
+                          </td>
+                          <td>
+                            <div class="date-double-btn">
+                              <input
+                                type="button"
+                                class="rounded-square-xs-btn btn-mint"
+                                value="수정"
+                              />
+                              <input
+                                type="button"
+                                class="rounded-square-xs-btn btn-gray"
+                                value="보기"
+                              />
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="in-divider">
+                <div class="tbl-wrapper">
+                  <div class="tbl-container type-02">
+                    <table class="tbl-default">
+                      <caption class="hide-text">
+                        테이블
+                      </caption>
+                      <thead class="tbl-default-head">
+                        <tr class="in-tr">
+                          <th rowspan="2">선택</th>
+                          <th rowspan="2">품번</th>
+                          <th>카테고리</th>
+                          <th rowspan="2">시중가</th>
+                          <th rowspan="2">판매가</th>
+                        </tr>
+                        <tr class="in-tr">
+                          <th>상품명</th>
+                        </tr>
+                      </thead>
+                      <tbody class="tbl-default-body">
+                        <tr class="in-first-tr">
+                          <td rowspan="2">
+                            <input
+                              id="td-checkbox01"
+                              type="checkbox"
+                              class="chck-box none"
+                            />
+                            <label
+                              for="td-checkbox01"
+                              class="check-gradi-circle"
+                            ></label>
+                          </td>
+                          <td rowspan="2">2154745</td>
+                          <td>상의 > 아우터 > 패딩</td>
+                          <td rowspan="2">130,000 원</td>
+                          <td rowspan="2">100,000 원</td>
+                        </tr>
+                        <tr class="in-second-tr">
+                          <td class="ta-left">
+                            <div class="date-product-xs">
+                              <figure class="in-thumb">
+                                <img
+                                  src="/images/img/product.jpg"
+                                  alt="product image"
+                                />
+                              </figure>
+                              <span class="in-word"
+                                >데일리 러빈 라운드넥 뽀송니트_4color</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="in-first-tr">
+                          <td rowspan="2">
+                            <input
+                              id="td-checkbox02"
+                              type="checkbox"
+                              class="chck-box none"
+                            />
+                            <label
+                              for="td-checkbox02"
+                              class="check-gradi-circle"
+                            ></label>
+                          </td>
+                          <td rowspan="2">2154745</td>
+                          <td>상의 > 아우터 > 패딩</td>
+                          <td rowspan="2">130,000 원</td>
+                          <td rowspan="2">100,000 원</td>
+                        </tr>
+                        <tr class="in-second-tr">
+                          <td class="ta-left">
+                            <div class="date-product-xs">
+                              <figure class="in-thumb">
+                                <img
+                                  src="/images/img/product.jpg"
+                                  alt="product image"
+                                />
+                              </figure>
+                              <span class="in-word"
+                                >데일리 러빈 라운드넥 뽀송니트_4color</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="in-first-tr">
+                          <td rowspan="2">
+                            <input
+                              id="td-checkbox03"
+                              type="checkbox"
+                              class="chck-box none"
+                            />
+                            <label
+                              for="td-checkbox03"
+                              class="check-gradi-circle"
+                            ></label>
+                          </td>
+                          <td rowspan="2">2154745</td>
+                          <td>상의 > 아우터 > 패딩</td>
+                          <td rowspan="2">130,000 원</td>
+                          <td rowspan="2">100,000 원</td>
+                        </tr>
+                        <tr class="in-second-tr">
+                          <td class="ta-left">
+                            <div class="date-product-xs">
+                              <figure class="in-thumb">
+                                <img
+                                  src="/images/img/product.jpg"
+                                  alt="product image"
+                                />
+                              </figure>
+                              <span class="in-word"
+                                >데일리 러빈 라운드넥 뽀송니트_4color</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-section">
+          <h2>table style 02</h2>
+          <div>
+            <div class="panel-default">
+              <div class="tbl-wrapper">
+                <div class="tbl-container">
+                  <table class="tbl-default">
+                    <caption class="hide-text">
+                      테이블
+                    </caption>
+                    <thead class="tbl-default-head">
+                      <tr class="in-tr">
+                        <th>주문번호</th>
+                        <th>주문자</th>
+                        <th>주문합계</th>
+                        <th>취소/환불</th>
+                        <th>미수금</th>
+                        <th>
+                          <span>매출액</span>
+                          <b class="etc">(단가+부가세+수수료)</b>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tfoot class="tbl-default-foot">
+                      <tr class="in-tr">
+                        <td>합계</td>
+                        <td>10</td>
+                        <td class="ta-right">
+                          <i>15,015,400</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>50,000</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>12,759,110</i>
+                        </td>
+                      </tr>
+                    </tfoot>
+                    <tbody class="tbl-default-body">
+                      <tr class="in-tr">
+                        <td>
+                          <i>20191116-17492364</i>
+                        </td>
+                        <td>
+                          <i>홍길동</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>206,100</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                      </tr>
+                      <tr class="in-tr">
+                        <td>
+                          <i>20191116-17492364</i>
+                        </td>
+                        <td>
+                          <i>홍길동</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>206,100</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                      </tr>
+                      <tr class="in-tr">
+                        <td>
+                          <i>20191116-17492364</i>
+                        </td>
+                        <td>
+                          <i>홍길동</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>206,100</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                        <td class="ta-right">
+                          <i>10,000</i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="component-section">
+        <h1>component - table option bar</h1>
+
+        <div class="inner-section">
+          <h2>search option bar</h2>
+
+          <div>
+            <div class="panel-default">
+              <h5 class="search-title">조건검색</h5>
+              <div class="search-option-bar">
+                <div class="search-option-check-group">
+                  <span class="in-tit">작성날짜</span>
+                  <div class="in-check-list">
+                    <input
+                      id="daycheck01"
+                      type="checkbox"
+                      class="chck-box none"
+                    />
+                    <label
+                      for="daycheck01"
+                      class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                      >어제</label
+                    >
+                    <input
+                      id="daycheck02"
+                      type="checkbox"
+                      class="chck-box none"
+                    />
+                    <label
+                      for="daycheck02"
+                      class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                      >어제</label
+                    >
+                    <input
+                      id="daycheck03"
+                      type="checkbox"
+                      class="chck-box none"
+                    />
+                    <label
+                      for="daycheck03"
+                      class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                      >어제</label
+                    >
+                    <input
+                      id="daycheck03"
+                      type="checkbox"
+                      class="chck-box none"
+                    />
+                    <label
+                      for="daycheck03"
+                      class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                      >어제</label
+                    >
+                  </div>
+                </div>
+                <div class="search-option-period">
+                  <span class="in-tit">기간입력</span>
+                  <div class="in-period">
+                    <input
+                      type="text"
+                      class="form-input-date"
+                      placeholder="2019-00-00"
+                    />
+                    <span>~</span>
+                    <input
+                      type="text"
+                      class="form-input-date"
+                      placeholder="2019-00-00"
+                    />
+                    <button
+                      type="button"
+                      class="rounded-square-xs-btn btn-theme icon-search-btn"
+                    >
+                      <i class="icon-search">
+                        <img src="/images/icon/icon-search.svg" alt="" />
+                      </i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-option-bar">
+                <div class="in-divider">
+                  <div class="search-option-check-group">
+                    <span class="in-tit">작성날짜</span>
+                    <div class="in-check-list">
+                      <input
+                        id="daycheck01"
+                        type="checkbox"
+                        class="chck-box none"
+                      />
+                      <label
+                        for="daycheck01"
+                        class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                        >어제</label
+                      >
+                      <input
+                        id="daycheck02"
+                        type="checkbox"
+                        class="chck-box none"
+                      />
+                      <label
+                        for="daycheck02"
+                        class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                        >어제</label
+                      >
+                      <input
+                        id="daycheck03"
+                        type="checkbox"
+                        class="chck-box none"
+                      />
+                      <label
+                        for="daycheck03"
+                        class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                        >어제</label
+                      >
+                      <input
+                        id="daycheck03"
+                        type="checkbox"
+                        class="chck-box none"
+                      />
+                      <label
+                        for="daycheck03"
+                        class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                        >어제</label
+                      >
+                    </div>
+                  </div>
+                  <div class="search-option-period">
+                    <span class="in-tit">기간입력</span>
+                    <div class="in-period">
+                      <input
+                        type="text"
+                        class="form-input-date"
+                        placeholder="2019-00-00"
+                      />
+                      <span>~</span>
+                      <input
+                        type="text"
+                        class="form-input-date"
+                        placeholder="2019-00-00"
+                      />
+                      <button
+                        type="button"
+                        class="rounded-square-xs-btn btn-theme icon-search-btn"
+                      >
+                        <i class="icon-search">
+                          <img src="/images/icon/icon-search.svg" alt="" />
+                        </i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="in-divider">
+                  <div class="search-option-check-group">
+                    <span class="in-tit">작성날짜</span>
+                    <div class="in-check-list">
+                      <input
+                        id="daycheck01"
+                        type="checkbox"
+                        class="chck-box none"
+                      />
+                      <label
+                        for="daycheck01"
+                        class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                        >어제</label
+                      >
+                      <input
+                        id="daycheck02"
+                        type="checkbox"
+                        class="chck-box none"
+                      />
+                      <label
+                        for="daycheck02"
+                        class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                        >어제</label
+                      >
+                      <input
+                        id="daycheck03"
+                        type="checkbox"
+                        class="chck-box none"
+                      />
+                      <label
+                        for="daycheck03"
+                        class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                        >어제</label
+                      >
+                      <input
+                        id="daycheck03"
+                        type="checkbox"
+                        class="chck-box none"
+                      />
+                      <label
+                        for="daycheck03"
+                        class="rounded-square-xs-btn btn-outline-gray-light check-outline-navy"
+                        >어제</label
+                      >
+                    </div>
+                  </div>
+                  <div class="search-option-period">
+                    <span class="in-tit">기간입력</span>
+                    <div class="in-period">
+                      <input
+                        type="text"
+                        class="form-input-date"
+                        placeholder="2019-00-00"
+                      />
+                      <span>~</span>
+                      <input
+                        type="text"
+                        class="form-input-date"
+                        placeholder="2019-00-00"
+                      />
+                      <button
+                        type="button"
+                        class="rounded-square-xs-btn btn-theme icon-search-btn"
+                      >
+                        <i class="icon-search">
+                          <img src="/images/icon/icon-search.svg" alt="" />
+                        </i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-option-bar">
+                <select class="form-select">
+                  <option value="0">일간</option>
+                  <option value="1">주간</option>
+                </select>
+                <div class="search-option-period">
+                  <span class="in-tit">기간입력</span>
+                  <div class="in-period">
+                    <input
+                      type="text"
+                      class="form-input-date"
+                      placeholder="2019-00-00"
+                    />
+                    <span>~</span>
+                    <input
+                      type="text"
+                      class="form-input-date"
+                      placeholder="2019-00-00"
+                    />
+                    <button
+                      type="button"
+                      class="rounded-square-xs-btn btn-theme icon-search-btn"
+                    >
+                      <i class="icon-search">
+                        <img src="/images/icon/icon-search.svg" alt="" />
+                      </i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-option-bar">
+                <select class="form-select">
+                  <option value="0">일간</option>
+                  <option value="1">주간</option>
+                </select>
+                <div class="search-option-period">
+                  <span class="in-tit">기간입력</span>
+                  <div class="in-period">
+                    <input
+                      type="text"
+                      class="form-input-date"
+                      placeholder="2019-00-00"
+                    />
+                    <button
+                      type="button"
+                      class="rounded-square-xs-btn btn-theme icon-search-btn"
+                    >
+                      <i class="icon-search">
+                        <img src="/images/icon/icon-search.svg" alt="" />
+                      </i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-section">
+          <h2>search default bar</h2>
+
+          <div>
+            <div class="panel-default">
+              <div class="search-default-bar">
+                <select class="form-select">
+                  <option value="0">상품명</option>
+                </select>
+                <input
+                  type="text"
+                  class="form-input-txt"
+                  placeholder="검색어 미입력시 필터로 연결됩니다."
+                />
+                <button
+                  type="button"
+                  class="rounded-square-btn btn-theme icon-search-btn"
+                >
+                  <i class="icon-search">
+                    <img src="/images/icon/icon-search.svg" alt="" />
+                  </i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-section">
+          <h2>search status bar</h2>
+
+          <div>
+            <div class="panel-default">
+              <div class="search-status-bar">
+                <span class="in-word-result"
+                  >총 <b>340</b>건의 내역이 검색되었습니다.</span
+                >
+
+                <select class="form-select in-align-right">
+                  <option value="0">최신순</option>
+                </select>
+              </div>
+
+              <div class="search-status-bar">
+                <input type="checkbox" id="test" class="chck-box none" />
+                <label
+                  for="test"
+                  class="check-gradi-circle in-check-circle"
+                ></label>
+
+                <ul class="in-sorting">
+                  <li class="type active">
+                    <label for="test" class="word">전체선택</label>
+                  </li>
+                  <li class="type">
+                    <label for="test" class="word">선택해제</label>
+                  </li>
+                </ul>
+
+                <input
+                  type="button"
+                  class="rounded-square-xs-btn btn-outline-navy type-shadow"
+                  value="선택한 상품 준비 완료"
+                />
+
+                <select class="form-select in-align-right">
+                  <option value="0">납품마감 잔여일 순</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="component-section">
+        <h1>component - etc</h1>
+
+        <div class="inner-section">
+          <h2>tab bar</h2>
+
+          <div>
+            <div class="default-panel">
+              <div class="sorting-tab-bar">
+                <div class="in-tab">
+                  <div class="inner">
+                    <span>주문별</span>
+                  </div>
+                </div>
+                <div class="in-tab active">
+                  <div class="inner">
+                    <span>납품마감일 별</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sorting-tab-bar">
+                <input
+                  type="radio"
+                  id="tab01"
+                  name="tab-bar"
+                  class="chck-box none"
+                  checked
+                />
+                <label for="tab01" class="in-tab">
+                  <div class="inner">
+                    <span>주문별</span>
+                  </div>
+                </label>
+                <input
+                  type="radio"
+                  id="tab02"
+                  name="tab-bar"
+                  class="chck-box none"
+                />
+                <label for="tab02" class="in-tab">
+                  <div class="inner">
+                    <span>납품마감일 별</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-section">
+          <h2>nothing history</h2>
+
+          <div>
+            <div class="nothing-history">
+              <img
+                src="/images/icon/empty_board_m.svg"
+                alt="icon empty"
+                class="in-empty-icon"
+              />
+              <span class="in-empty-ment">내역이 없습니다.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

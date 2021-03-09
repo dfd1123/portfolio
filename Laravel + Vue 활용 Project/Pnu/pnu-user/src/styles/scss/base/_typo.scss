@@ -1,0 +1,31 @@
+@font-face{
+    font-family:"Spoqa";
+    src:url(/client/assets/font/Spoqa_Han_Sans_Regular.woff);
+    font-weight:500;
+}
+@font-face{
+    font-family:"Spoqa";
+    src:url(/client/assets/font/Spoqa_Han_Sans_Bold.woff);
+    font-weight:700;
+}
+@font-face{
+    font-family:"Spoqa";
+    src:url(/client/assets/font/Spoqa_Han_Sans_Light.woff);
+    font-weight:300;
+}
+@font-face{
+    font-family:"Spoqa";
+    src:url(/client/assets/font/Spoqa_Han_Sans_Thin.woff);
+    font-weight:100;
+}
+body{
+    font-family:'Spoqa Han Sans', 'Arial', 'Sans-serif';
+    word-break:keep-all;
+    font-size:14px;
+    color:$black;
+}
+@media all and (min-width:768px) {
+    body{
+        font-size:18px;
+    }
+}

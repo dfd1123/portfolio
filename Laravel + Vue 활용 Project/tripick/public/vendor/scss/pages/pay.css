@@ -1,0 +1,220 @@
+/* colors */
+/* font-size */
+/* unit */
+/* responsive */
+/* mix-in */
+.wrapper--pay {
+  background-color: #F8F8F8;
+  padding-top: 4.5rem;
+  height: auto;
+}
+
+.wrapper--pay .hd-title--04 {
+  height: 4.5rem;
+}
+
+.wrapper--pay .wrapper--inner {
+  padding-top: 2rem;
+}
+
+.wrapper--pay__btn {
+  margin: 2.5em 0 3em;
+}
+
+.wrapper--pay__btn .button {
+  background-color: #00244c;
+}
+
+.calcul_card {
+  font-size: 14px;
+  font-weight: 400;
+  color: #00244C;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.calcul_card_tit {
+  font-weight: bold;
+  padding: 20px 10px 0;
+}
+
+.calcul_card_amt {
+  padding: 0 10px;
+  width: 100%;
+  height: 3.5rem;
+  margin-bottom: 12px;
+}
+
+.calcul_card_amt input {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00244C;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #00DBD8;
+}
+
+.calcul_card_amt input::-webkit-input-placeholder {
+  color: rgba(0, 36, 76, 0.3);
+}
+
+.calcul_card_amt input:-ms-input-placeholder {
+  color: rgba(0, 36, 76, 0.3);
+}
+
+.calcul_card_amt input::-ms-input-placeholder {
+  color: rgba(0, 36, 76, 0.3);
+}
+
+.calcul_card_amt input::placeholder {
+  color: rgba(0, 36, 76, 0.3);
+}
+
+.calcul_card_caution {
+  line-height: 1;
+  padding-left: 10px;
+  line-height: normal;
+  margin-bottom: 4px;
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.calcul_card_caution.last {
+  color: rgba(0, 36, 76, 0.5);
+  margin-top: 4px;
+}
+
+.calcul_card_btn {
+  background-color: #00DBD8;
+  border-radius: 5px;
+  height: 4rem;
+  line-height: 4rem;
+  margin-top: 50px;
+}
+
+.pay_horizen_line {
+  margin-bottom: 15px;
+}
+
+.pay_horizen_line:last-child {
+  margin-bottom: 0;
+}
+
+.pay_label_tit {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.pay_input_form_group {
+  position: relative;
+}
+
+.pay_input_form {
+  color: #00244C;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.8em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 40px;
+  background-color: transparent;
+  line-height: normal;
+}
+
+.border_bt {
+  border-bottom: 1px solid #DFE5E8;
+  padding-right: 77px;
+}
+
+.border_bt:focus {
+  border-color: #00dbd8;
+}
+
+.pay_mini_btn {
+  background-color: #00dbd8;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 0.9em;
+  padding: 5px 8px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.pay_price_type_con {
+  padding: 2rem 0.5rem 0;
+  color: #00244C;
+  font-size: 14px;
+}
+
+.pay_total_price .pay_input_form {
+  background-size: 31px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+  font-weight: bold;
+  border-bottom: 1px solid #00244C;
+  background-image: url(/img/icon/icon-money.svg);
+  height: 47px;
+}
+
+.pay_total_price {
+  margin-bottom: 25px;
+}
+
+.pay_type_btn_group {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 0;
+<<<<<<< HEAD
+  flex-wrap: wrap;
+=======
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> 4c5305abb3638331fef8e7ae8a3244a42cac84a9
+}
+
+.pay_type_btn_group input[type="radio"] {
+  display: none;
+}
+
+.pay_type_btn {
+  border-radius: 3px;
+  border: 1px solid #00244c;
+  color: #00244C;
+  opacity: 0.5;
+  width: 47%;
+  text-align: center;
+  height: 32px;
+  line-height: 30px;
+  max-width: 140px;
+  margin: 3px;
+  font-weight: 400;
+  background-color: white;
+}
+
+.pay_type_btn.active {
+  border: 2px solid #00dbd8;
+  opacity: 1;
+  line-height: 28px;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}

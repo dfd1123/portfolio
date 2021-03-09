@@ -1,0 +1,93 @@
+/* 제목들어가는 hd 공통 */
+
+.hd_container{
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hd_container .tit_group{
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.hd_container ._tit{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: -3px;
+}
+
+.hd_container ._text {
+    font-size: 19px;
+    margin: 15px 0 25px;
+}
+
+/* end 제목들어가는 hd 공통 */
+
+/* store 인트로 */
+
+#store_wrapper .hd_container{
+    background-image: url(/images/bg/img_bg_store_bk.png);
+}
+
+#store_wrapper .hd_container .tit_group {
+    color: #fff;
+    letter-spacing: -1px;
+    padding-top: 65px;
+}
+
+#store_wrapper .hd_container ._text{
+    line-height: 1.4;
+}
+
+#store_wrapper .store_intro_section ._inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#store_wrapper .store_intro_section .text_group {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    right: 0;
+    padding-left: 25px;
+}
+
+#store_wrapper .store_intro_section .text_group ._tit {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+}
+
+#store_wrapper .store_intro_section .text_group ._text {
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+}
+
+#store_wrapper .store_intro_section img {
+    float: left;
+}
+
+#store_wrapper .store_intro_section--bg {
+    background-color: #F8F8F8;
+}
+
+#store_wrapper .store_intro_section.store_intro_section--bg .text_group {
+    left: 0;
+    right: unset;
+    padding: 0;
+}
+
+#store_wrapper .store_intro_section.store_intro_section--bg img {
+    float: right;
+}
+
+/* end store 인트로 */

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>philips pay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="stylesheet/scss/vendors/normalize-custom.css">
+        <link rel="stylesheet" href="css/common.css">
+
+        <!-- 개별 css -->
+        <link rel="stylesheet" href="css/mymenu.css">
+        <link rel="stylesheet" href="css/mymenu_02.css">
+        
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="app" class="app">
+            
+            <!-- 헤더 -->
+            <header class="header header--type01">
+                <button type="button" class="header__btn header__btn--left header__btn--close" onClick="location.href='./03_main_make_wallet(after).html'">
+                    <b class="hide-text">닫기</b>
+                </button>
+                <h1 class="header__center">고객센터</h1>
+            </header>
+            <!-- end 헤더 -->
+            <!-- 컨텐츠 -->
+            <div class="content_wrapper">
+                <!-- 각 페이지마다 다른 컨테이너 -->
+                <div class="container container--mymenu container--mymenu02">
+                    <div class="mymenu__hd-btns">
+                        <button type="button" class="mymenu__hd-btn" onClick="location.href='./05-1_mymenu_01.html'">공지사항</button>
+                        <button type="button" class="mymenu__hd-btn active" onClick="location.href='./05-2_mymenu_02(list_write).html'">1:1문의</button>
+                    </div>
+                    <div class="mymenu__view-wrapper">
+                        <button class="mymenu__qna-write-btn" onclick="popup_open('#popup_qna_write')">1:1 문의하기</button>
+                        <div class="mymenu__qna-hd">나의 문의내역</div>
+                        <ul class="mymenu__view">
+                            <li class="mymenu__view-list" onclick="popup_open('#popup_qna01_view')">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 문의하기</h5>
+                                <p class="info"><span class="date">2018-00-00</span><span class="status ing">대기중</span></p>
+                            </li>
+                            <li class="mymenu__view-list" onclick="popup_open('#popup_qna02_view')">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 문의하기</h5>
+                                <p class="info"><span class="date">2018-00-00</span><span class="status complt">완료</span></p>
+                            </li>
+                            <li class="mymenu__view-list" onclick="popup_open('#popup_qna01_view')">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 문의하기</h5>
+                                <p class="info"><span class="date">2018-00-00</span><span class="status ing">대기중</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pop-up pop-up--light">
+                        <div class="pop-up__wrapper" id="popup_qna01_view">
+                            <header class="header header--type02">
+                                <button type="button" class="header__btn header__btn--left header__btn--close-dark" onClick="popup_close(this)">
+                                    <b class="hide-text">닫기</b>
+                                </button>
+                                <h1 class="header__center">1:1문의</h1>
+                            </header>
+                            <div class="container container--mymenu">
+                                <div class="mymenu__view-hd">
+                                    <span class="num">01</span>
+                                    <h5 class="title">필립스 코인 문의하기1</h5>
+                                    <p class="info"><span class="date">2018-00-00</span><span class="status ing">대기중</span></p>
+                                </div>
+                                <div class="mymenu__qna-view">
+                                    <p>문의하기 내용입니다.</p>
+                                </div>
+                                <!-- <div class="mymenu__qna-view--complt">
+                                    <div class="q-con">
+                                        <p>문의하기 내용입니다.</p>
+                                    </div>
+                                    <div class="a-con">
+                                        <div class="mymenu__view-hd">
+                                            <span class="num">01</span>
+                                            <h5 class="title">[답변] 필립스 코인 문의하기1</h5>
+                                            <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                                        </div>
+                                        <div class="qna-contents">
+                                            <p>답변 내용입니다.</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="mymenu__qna-btns">
+                                    <div class="mymenu__qna-btns--double-btn">
+                                        <button type="button" class="mymenu__qna-btn">수정하기</button>
+                                        <button type="button" class="mymenu__qna-btn" onClick="alert_popup('#alert_chck_del_qna')">삭제하기</button>
+                                    </div>
+                                    <!-- <div class="mymenu__qna-btns--single-btn">
+                                        <button type="button" class="mymenu__qna-btn">삭제하기</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop-up__wrapper" id="popup_qna02_view">
+                            <header class="header header--type02">
+                                <button type="button" class="header__btn header__btn--left header__btn--close-dark" onClick="popup_close(this)">
+                                    <b class="hide-text">닫기</b>
+                                </button>
+                                <h1 class="header__center">1:1문의</h1>
+                            </header>
+                            <div class="container container--mymenu">
+                                <div class="mymenu__view-hd">
+                                    <span class="num">01</span>
+                                    <h5 class="title">필립스 코인 문의하기1</h5>
+                                    <p class="info"><span class="date">2018-00-00</span><span class="status ing">대기중</span></p>
+                                </div>
+                                <!-- <div class="mymenu__qna-view">
+                                    <p>문의하기 내용입니다.</p>
+                                </div> -->
+                                <div class="mymenu__qna-view--complt">
+                                    <div class="q-con">
+                                        <p>문의하기 내용입니다.</p>
+                                    </div>
+                                    <div class="a-con">
+                                        <div class="mymenu__view-hd">
+                                            <span class="num">01</span>
+                                            <h5 class="title">[답변] 필립스 코인 문의하기1</h5>
+                                            <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                                        </div>
+                                        <div class="qna-contents">
+                                            <p>답변 내용입니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mymenu__qna-btns">
+                                    <!-- <div class="mymenu__qna-btns--double-btn">
+                                        <button type="button" class="mymenu__qna-btn">수정하기</button>
+                                        <button type="button" class="mymenu__qna-btn">삭제하기</button>
+                                    </div> -->
+                                    <div class="mymenu__qna-btns--single-btn">
+                                        <button type="button" class="mymenu__qna-btn" onClick="alert_popup('#alert_chck_del_qna')">삭제하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up">
+                        <div class="pop-up__wrapper" id="popup_qna_write">
+                            <header class="header header--type01">
+                                <button type="button" class="header__btn header__btn--left header__btn--close" onClick="alert_popup('#alert_chck_cancel_qna')">
+                                    <b class="hide-text">닫기</b>
+                                </button>
+                                <h1 class="header__center">1:1문의</h1>
+                            </header>
+                            <div class="container container--mymenu container--mymenu02-1">
+
+                                <div class="basic_panel">
+                                    <h2 class="basic_panel__title">제목</h2>
+                                    <div class="basic_panel__contents qna__form-group">
+                                        <input type="text" class="basic_panel__input basic_panel__txt-line" placeholder="문의사항 제목">
+                                    </div>
+                                </div>
+
+                                <div class="basic_panel">
+                                    <h2 class="basic_panel__title">내용</h2>
+                                    <div class="basic_panel__contents qna__form-group">
+                                        <textarea class="basic_panel__textarea"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="bt-fix-btn">
+                                    <button type="button" id="qna_write_btn" disabled class="btn_solid btn_solid01_disable" onclick="alert_popup('#alert_chck_write_qna')">다음</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end 각 페이지마다 다른 컨테이너 -->
+            </div>
+            <!-- end 컨텐츠  -->
+
+            <!-- alert 팝업 까만배경 -->
+            <div class="alert_black_overlay"></div>
+            <!-- end alert 팝업 까만배경 -->
+            <!-- alert 팝업 보이는 영역 -->
+            <div class="alert_popup_overlay">
+                <table class="alert_popup_tbl" id="alert_chck_cancel_qna">
+                    <tbody>
+                        <tr>
+                            <td class="alert_popup_tbl_td">
+                                <div class="alert_popup">
+                                    <span class="alert_popup_icon">
+                                        <img src="img/icon/pop_signal.png" alt="alert pop icon">
+                                    </span>
+                                    <p class="alert_popup_txt">작성을 취소하시겠습니까?</p>
+                                    <div class="alert_popup_btns">
+                                        <button type="button" class="alert_popup_btn alert_popup_btn01" onclick="alert_modal_overlay()">아니요</button>
+                                        <button type="button" class="alert_popup_btn alert_popup_btn02" onclick="alert_modal_overlay(); popup_close('#popup_qna_write .header__btn--close')">예</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="alert_popup_tbl" id="alert_chck_write_qna">
+                    <tbody>
+                        <tr>
+                            <td class="alert_popup_tbl_td">
+                                <div class="alert_popup">
+                                    <span class="alert_popup_icon">
+                                        <img src="img/icon/pop_signal.png" alt="alert pop icon">
+                                    </span>
+                                    <p class="alert_popup_txt">문의사항을 등록하시겠습니까?</p>
+                                    <div class="alert_popup_btns">
+                                        <button type="button" class="alert_popup_btn alert_popup_btn01" onclick="alert_modal_overlay()">아니요</button>
+                                        <button type="button" class="alert_popup_btn alert_popup_btn02">예</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="alert_popup_tbl" id="alert_chck_del_qna">
+                    <tbody>
+                        <tr>
+                            <td class="alert_popup_tbl_td">
+                                <div class="alert_popup">
+                                    <span class="alert_popup_icon">
+                                        <img src="img/icon/pop_signal.png" alt="alert pop icon">
+                                    </span>
+                                    <p class="alert_popup_txt">문의사항을 삭제하시겠습니까?</p>
+                                    <div class="alert_popup_btns">
+                                        <button type="button" class="alert_popup_btn alert_popup_btn01" onclick="alert_modal_overlay()">아니요</button>
+                                        <button type="button" class="alert_popup_btn alert_popup_btn02">예</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end alert 팝업 보이는 영역 -->
+        </div>
+        
+        <script>
+        
+            // 팝업페이지 소스
+            function popup_open(name){
+                $(name).parents('.pop-up').show();
+                $(name).addClass('popup_open');
+            }
+            
+            function popup_close(name){
+                $('.pop-up').fadeOut(100);
+                $(name).parents('.pop-up__wrapper').delay(1000).removeClass('popup_open');
+            }
+            // 팝업페이지 소스
+            
+            //alert 팝업 소스
+            $('.alert_popup_overlay').click(function(e){
+                
+                var thisclassname = $(e.target).attr('class');
+                if(thisclassname == 'alert_popup_tbl_td'){
+                    alert_modal_overlay();
+                }
+        
+            }) // 1. 까만배경 클릭할 떄 alert팝업 꺼짐
+            
+            function alert_popup(name){
+            
+                $('.alert_black_overlay').fadeIn(100);
+                $('.alert_popup_overlay').fadeIn(100);
+                $(name).fadeIn();
+                $(name).find('.alert_popup').addClass('alert_popup_visible');
+                
+            } // 2. 까만배경열리고, 보이는 영역 보이고, alert팝업 효과주기 
+        
+            function alert_modal_overlay(){
+                
+                $('.alert_popup_overlay').find('.alert_popup_visible').removeClass('alert_popup_visible');
+                $('.alert_popup_overlay').fadeOut(400);
+                $('.alert_popup_tbl').fadeOut();
+                $('.alert_black_overlay').fadeOut(500);
+        
+            } // 3. 보이는 영역 애니메이션 해제되고, 까만배경 닫히고, 보이는 영역 사라지기
+            //alert 팝업 소스
+            
+            // 1:1문의하기 제목과 내용 다입력하면 버튼활성화
+            $('.qna__form-group input,.qna__form-group textarea').change(function(){
+
+                var title_val = $('.qna__form-group input').val();
+                var con_val = $('.qna__form-group textarea').val();
+
+                if( title_val !== '' && con_val !== '' ){
+                    $('#qna_write_btn').attr('disabled', false).addClass('active');
+                }else{
+                    $('#qna_write_btn').attr('disabled', true).removeClass('active');
+                }
+
+            })
+            //end
+
+        </script>
+
+    </body>
+</html>

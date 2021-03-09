@@ -1,0 +1,252 @@
+#app{
+    background: url(/images/bg_main_tile.png);
+    background-size: 100% auto;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+}
+
+#sub_hd2 {
+    background: rgba(11, 115, 210, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 17;
+}
+
+#content {
+    padding: 0 0 !important;
+    padding-top: 0 !important;
+    min-height: 0 !important;
+    background: url(/images/bg_main_tile.png);
+    background-size: 100% auto;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    position: relative;
+    z-index: 17;
+}
+
+.estimate_manage_wrap{
+    position:relative;
+}
+
+.estimate_manage_wrap .estimate_manage_content {
+    position: absolute;
+    top: 4.9em;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+}
+
+.estimate_manage_wrap .estimate_manage_content .estimate_manage_box{
+    width:90%;
+    margin:0 auto;
+    background:#fff;
+    border-radius: 15px;
+    padding: 1.5em 0;
+    box-shadow: 0px 3px 19px 0 rgba(122, 122, 122, 0.31);
+}
+
+.estimate_manage_content .request_daedline{
+    width: 100%;
+    padding: 0.7rem 2.3rem;
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin:1rem 0;
+    overflow:hidden;
+}
+
+.estimate_manage_content .request_daedline span{
+    font-size:0.95rem;
+    line-height: 1.28;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #6c7077;
+}
+
+.estimate_manage_content .request_daedline span:first-child{
+    float:left;
+}
+
+.estimate_manage_content .request_daedline span:last-child{
+    float:right;
+}
+
+.estimate_list_wrap{
+    margin-bottom: 1.5rem;
+}
+
+.estimate_list_li{
+    border-bottom: 1px solid #cbcbcb;
+    height: 100px;
+    background: url(/images/logo_empty.svg) no-repeat center center;
+    background-color: #fff;
+    background-size: 100px;
+}
+
+.estimate_list_li>div{
+    background-color: #fff;
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+.estimate_list_li>div.disabled{
+    background-color: #f9f9f9;
+}
+
+.estimate_list_li>div.disabled>div{
+    opacity:0.5;
+}
+
+.estimate_list_li>div .contract_kind{
+    position: absolute;
+    top: 29px;
+    right: 14px;
+    z-index: 2;
+    width: 79px;
+    height:36px;
+    display: none;
+}
+
+.estimate_list_li>div.contract .contract_kind{
+    display:block;
+}
+
+.estimate_list_li>div.contract .contract_kind span{
+    font-size: 0.8em;
+    padding: 7px 14px;
+    line-height: 1.77;
+    letter-spacing: -0.44px;
+    border-radius: 35px;
+    max-height:36px;
+    display:none;
+}
+
+.estimate_list_li>div.contract.ok .contract_kind span.ok{
+    color:#fff;
+    background-color: #df4900;
+    display:block;
+}
+
+.estimate_list_li>div.contract.wait .contract_kind span.wait{
+    color: #007bd2;
+    border: solid 1px #007bd2;
+    background-color: #ffffff;
+    display:block;
+}
+
+.estimate_list_li>div.contract.deposit_wait .contract_kind span.deposit_wait{
+    color: #007bd2;
+    border: solid 1px #007bd2;
+    background-color: #ffffff;
+    display:block;
+}
+
+.estimate_list_li>div.contract.end .contract_kind span.end{
+    color: #aaa;
+    border: solid 1px #bbb;
+    background-color: #ffffff;
+    display:block;
+}
+
+.estimate_list_li>div .estimate_company_img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 2;
+    box-shadow: 0px 3px 11px 0 rgba(198, 198, 198, 0.61);
+}
+
+.estimate_list_li>div .estimate_company_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.estimate_list_li>div .estimate_company_infor{
+    padding: 18.5px 0;
+    padding-left: 108px;
+}
+
+.estimate_list_li>div.contract .estimate_company_infor{
+    padding:28px 0;
+    padding-left: 108px;
+}
+
+.estimate_list_li>div .estimate_company_infor h3{
+    font-size: 0.95em;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: -0.56px;
+    text-align: left;
+    color: #4f5256;
+}
+
+.estimate_list_li>div .estimate_company_infor ul{
+    overflow: hidden;
+    padding-bottom: 2px;
+}
+
+.estimate_list_li>div.contract .estimate_company_infor ul{
+    display:none;
+}
+
+.estimate_list_li>div .estimate_company_infor ul li{
+    float: left;
+    font-size: 0.7em;
+    line-height: 1.77;
+    letter-spacing: -0.44px;
+    color: #4f5256;
+    width: 68px;
+    position: relative;
+}
+
+.estimate_list_li>div .estimate_company_infor ul li:last-child{
+    width:auto;
+}
+
+.estimate_list_li>div .estimate_company_infor ul li:after{
+    content:"";
+    width:1px;
+    height:9px;
+    background:#9a9a9a;
+    display:block;
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    z-index: 1;
+}
+
+.estimate_list_li>div .estimate_company_infor ul li:last-child:after{
+    display:none;
+}
+
+.estimate_list_li>div .estimate_company_infor ul li:last-child i{
+    font-size: 0.9em;
+    margin-right: 2px;
+}
+
+.estimate_list_li>div .estimate_company_infor ul li span{
+    color: #007bd2;
+}
+
+.estimate_list_li>div .estimate_company_infor p{
+    font-size: 1.1em;
+    line-height: 1.22;
+    letter-spacing: -0.64px;
+    text-align: left;
+    color: #2b2b2b;
+}
+
+.estimate_list_li>div.contract .estimate_company_infor p{
+    font-size:0.8em;
+    line-height: 1.77;
+    letter-spacing: -0.44px;
+    text-align: left;
+    color: #2b2b2b;
+}

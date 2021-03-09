@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+	font-family: 'Nunito','Spoqa Han Sans Regular',sans-serif;
+	letter-spacing: -.52px;
+}
+
+.ntc_tab_list.m_tab_list ul.w-120{
+	width: 100%;
+}

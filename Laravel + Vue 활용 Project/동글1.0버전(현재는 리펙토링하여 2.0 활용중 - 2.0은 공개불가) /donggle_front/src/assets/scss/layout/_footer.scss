@@ -1,0 +1,114 @@
+/*
+    LAYOUT - footer.scss
+*/
+
+// icon & logo image 삽입
+#dg-ft {
+  border-top: 1px solid $light_gray6;
+  padding: 50px 0px;
+  text-transform: uppercase;
+  background-color: $white;
+  a {
+    color: $gray;
+  }
+  h2 {
+    float: left;
+    width: auto;
+    padding-right: 30px;
+    line-height: 1.4;
+    font-size: 1.56em;
+    font-weight: bold;
+    color: $ft_text;
+  }
+  .dg-ft-sales-time {
+    float: left;
+    padding-top: 2.3em;
+    font-size: 0.75em;
+    &:before {
+      content: "";
+      display: block;
+      margin: -13px 0px 13px;
+      width: 3em;
+      height: 1px;
+      background-color: $ft_text;
+    }
+    small {
+      line-height: 1.6;
+    }
+  }
+}
+.dg-ft-link_icon_wrap {
+  float: right;
+  padding-top: 2.3em;
+  // text-indent:-9999px;
+  .link_icon {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    text-indent: -9999px;
+  }
+  .link_icon_tube {
+    @include bgimg(url($path-btn+"btn_youtube.svg"));
+
+    display: none;
+    background-size: contain;
+  }
+  .link_icon_talk {
+    @include bgimg(url($path-btn+"btn_kakao.svg"));
+
+    display: none;
+    background-size: contain;
+  }
+  .link_icon_inst {
+    @include bgimg(url($path-btn+"btn_insta.svg"));
+
+    background-size: contain;
+  }
+  .link_icon_blog {
+    @include bgimg(url($path-btn+"btn_blog.svg"));
+
+    margin: 0px 22px 0px 16px;
+    background-size: contain;
+  }
+  .link_icon_face {
+    @include bgimg(url($path-btn+"btn_face.svg"));
+
+    margin: 0px 0px 0px 13px;
+    background-size: contain;
+  }
+  .link_icon_twitter{
+    @include bgimg(url($path-btn+"btn_twitter.svg"));
+    
+    background-size: contain;
+  }
+}
+
+.dg-ft-bot_wrap {
+  margin-top: 20px;
+  border-top: 1px solid $light_gray3;
+  padding-top: 23px;
+  color: $ft_text;
+  font-size: 0.75em;
+  .dg-ft-company_info {
+    line-height: 1.7;
+  }
+  .dg-ft-logo {
+    text-indent: -9999px;
+    width: 93px;
+    height: 24px;
+    margin-bottom: 10px;
+    @include bgimg(url($path-logo+"logo_footer.svg"));
+  }
+}
+.dg-ft-link_wrap {
+  a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: 1px solid $light_gray3;
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}

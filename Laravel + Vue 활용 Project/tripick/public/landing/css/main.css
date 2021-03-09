@@ -1,0 +1,688 @@
+@charset 'utf-8';
+/*common*/
+.next_arrow{
+    display:none;
+    position:fixed;
+    bottom:66px;
+    left:50%;
+    width:29px;
+    height:43px;
+    transform:translate(-50%);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-image:url(../img/common/scroll_arrow.svg);
+    z-index:999;
+}
+.next_arrow.active{
+    display:block;
+}
+.bg_airplane{
+    position: absolute;
+    width:63px;
+    height:45px;
+    transform:scale(0.6);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-image:url(../img/common/icon_airplane.svg);
+}
+.bg_cloud{
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:cover;
+}
+/*common E*/
+
+/*header*/
+#t_hd{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:400px;
+    height:100%;
+    padding:93px 0px 0px 120px;
+    z-index:9990;
+}
+
+h1 a{
+    display:block;
+    width:277px;
+    height:65px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:left top;
+    text-indent:-9999px;
+}
+.logo{
+    background-image:url(../img/common/header_logo.svg);
+}
+#t_gnb{
+    position: absolute;
+    bottom:88px;
+    left:142px;
+}
+#t_gnb:before{
+    content:'';
+    display:block;
+    position: absolute;
+    top:49px;
+    left:5.5px;
+    width:1px;
+    height:180px;
+    background-color:#fff;
+}
+.gnb_icon{
+    margin-left:-3px;
+    width:18px;
+    height:25px;
+    background-image:url(../img/common/nav_icon_symbol.svg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:left top;
+}
+#t_gnb a{
+    position: relative;
+    display:block;
+    margin:5px 0px;
+    padding:10px 8px;
+    color:#fff;
+    font-weight:300;
+    text-indent:20px;
+    letter-spacing: -1px;
+}
+#t_gnb a:before{
+    content:'';
+    display:block;
+    position: absolute;
+    top:14px;
+    left:0px;
+    width:13px;
+    height:13px;
+    border-radius:50%;
+    background-color:#fff;
+}
+
+/*hd color change*/
+#t_hd.logowhite .logo{
+    background-image:url(../img/common/header_logo_wh.svg);
+}
+#t_hd.white #t_gnb:before{
+    background-color:#505050;
+}
+#t_hd.white a{
+    color:#a0a0a0;
+}
+#t_hd.white a:before{
+    background-color:#D9D9D9;
+}
+#t_hd.navy a{
+    color:#315681;
+}
+#t_hd.navy #t_gnb:before{
+    background-color:#213F62;
+}
+#t_hd.navy a:before{
+    background-color:#315681;
+}
+
+#t_gnb a.active:before, #t_hd.white a.active:before, #t_hd.navy a.active:before{
+    background-color:#00dbdb;
+}
+#t_gnb a:hover,#t_gnb a:focus,#t_gnb a.active,
+#t_hd.white a:hover, #t_hd.white a:focus, #t_hd.white a.active,
+#t_hd.navy a:hover,#t_hd.navy a:focus,#t_hd.navy a.active{
+    color:#00dbdb;
+    font-weight:700;
+}
+/*header E*/
+
+/*main*/
+#t_main{
+    padding-left:300px;
+}
+.onlybg{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    transform:teranslate(-50%);
+    background-image:url(../img/main/bg_01.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:left top;
+    opacity:0;
+}
+.ani_h2{
+    opacity:0;
+    margin-left:-20px;
+}
+.text_ani{
+    display: block;
+    float: left;
+    margin-top:-30px;
+    opacity:0;
+}
+.main--appdown_wrap{
+    margin-top:55px; 
+}
+.main--appdown__btn{
+    display:inline-block;
+    width:221px;
+    height:65px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    text-indent:-9999px;
+}
+.main--appdown__btn1{
+    margin-right:7px;
+    background-image:url(../img/main/icon_gp.png);
+}
+.main--appdown__btn2{
+    background-image:url(../img/main/icon_as.png);
+}
+/*main E*/
+
+/*app소개1*/
+#t_appdown1{
+    padding-left:375px;
+    background-image:url(../img/appinfo01/bg_sky.png);
+    background-size:130%;
+    background-position:left bottom; 
+}
+#t_appdown1 h2{
+    margin-bottom:35px;
+}
+.t_appdown1--travel_wrap{
+    width:370px;
+}
+.tab__title{
+    float:left;
+    font-size:1.9em;
+    padding:7px 0px;
+    border-bottom:3px none #00dbdb;
+    letter-spacing:-3px;
+    transition:0.3s;
+}
+.tab__title a{
+    color:#c1c1c1;
+    z-index:90;
+    letter-spacing: -1px;
+}
+.tab__title.active{
+    border-bottom:3px solid #00dbdb;
+}
+.tab__title.active a{
+    color:#212121;
+}
+.tab1__title2,.tab2__title2{
+    margin-left:20px;
+}
+.travel--tab__desc{
+    display:none;
+    margin-top:57px;
+    font-size:1.38em;
+    letter-spacing:-2px;
+}
+.travel--tab__desc.active{
+    display:block;
+    z-index:90;
+}
+.tab__text{
+    line-height:1.5em;
+    letter-spacing: -0.5px;
+    font-weight:100;
+}
+.tab__img{
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    width: 39%;
+    height: 95%;
+    background-position:right bottom;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.tab__img1{
+    display:none;
+}
+.tab__img1.active{
+    display:block;
+}
+.tab__img1_1{
+    background-image:url(../img/appinfo01/img_mockup_01.png)
+}
+.tab__img1_2{
+    background-image:url(../img/appinfo01/img_mockup_02.png)
+}
+/*bg영역*/
+.bg_circle{
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.cir__bag{
+    background-image:url(../img/appinfo01/icon_01.svg);
+    width:131px;
+    height:131px;
+    top: 1%;
+    left: 65%;
+}
+.cir__hum{
+    background-image:url(../img/appinfo01/icon_02.svg);
+    width: 96px;
+    height: 96px;
+    top: 13%;
+    left: 59%;
+}
+.cir__cal{
+    background-image:url(../img/appinfo01/icon_03.svg);
+    width:134px;
+    height:134px;
+    top:19%;
+    left:51%;
+}
+.cir__map{
+    background-image:url(../img/appinfo01/icon_04.svg);
+    width:131px;
+    height:131px;
+    top: 34%;
+    left: 56%;
+}
+#t_appdown1 .bg_cloud{
+    position:absolute;
+    bottom:-140px;
+    right:0px;
+    width:60%;
+    height:441px;
+    background-image:url(../img/appinfo01/bg_cloud.svg);
+}
+#t_appdown1 .bg_airplane{
+    bottom: 150px;
+    right: 850px;
+}
+/*app소개1 E*/
+
+/*app소개2*/
+#t_appdown2{
+    padding-left:375px;
+    background-color:#00244C;
+    color:#fff;
+}
+#t_appdown2 h2{
+    margin-bottom:35px;
+}
+#t_appdown2 .tab__title a{
+    color:#315681;
+}
+#t_appdown2 .tab__title.active{
+    border-bottom:3px solid #00dbdb;
+}
+#t_appdown2 .tab__title.active a{
+    color:#fff;
+}
+.t_appdown2--travel_wrap{
+    width:265px;
+}
+/*tab img numcount*/
+.tab__img--wrap{
+    position: absolute;
+    top: 18%;
+    right:20%;
+}
+.tab__img--ms,.tab__img--bg{
+    margin-bottom:-1px;
+    background-repeat:no-repeat;
+    background-size:110%;
+    background-position:center;
+}
+.tab__img--ms{
+    position: absolute;
+    right: -100px;
+    width:450px;
+    height:121px;
+    opacity:0;
+}
+.tab__img--ms1{
+    top: -46px;
+    background-image:url(../img/appinfo02/img_01.png);
+}
+.tab__img--ms2{
+    top: 84px;
+    background-image:url(../img/appinfo02/img_02.png);
+}
+.tab__img--ms3{
+    top: 214px;
+    background-image:url(../img/appinfo02/img_03.png);
+}
+.tab__img--ms4{
+    top: 344px;
+    background-image:url(../img/appinfo02/img_04.png);
+}
+.tab__img--ms5{
+    top: 474px;
+    background-image:url(../img/appinfo02/img_05.png);
+}
+
+.tab__img--ms p{
+    position: absolute;
+}
+.tr_name{
+    top: 29px;
+    left: 164px;
+    font-weight:700;
+    font-size:0.81rem;
+    color:#00244C;
+}
+.tr_form{
+    top: 18px;
+    left: 208px;
+    margin: 13px 0px;
+    font-size:0.625rem;
+    color:#00B1DC;
+}
+.tr_pl_info{
+    top: 54px;
+    left: 165px;
+    font-size:0.75rem;
+    color:#00244C;
+}
+.tr_prace{
+    top: 76px;
+    left: 165px;
+    font-size:0.937rem;
+    font-weight:700;
+    color:#00244C;
+}
+.tr_won{
+    top: 77px;
+    left: 217px;
+    font-size:0.81rem;
+    color:#00244C;
+}
+.tr_star{
+    top: 72px;
+    left: 375px;
+    font-size:0.937rem;
+    color:#00244C;
+}
+.tab__img--ms1 .tr_star{
+    top:71px;
+}
+.tab__img--ms2 .tr_star{
+    top:75px;
+}
+
+.tr_allprace{
+    display: block;
+    margin: 34% 0% 0% 68%;
+    color:#4E4B40;
+}
+.tr_allprace .tr_prace{
+    font-weight:700;
+    font-size:0.98em;
+}
+.tab__img--bg{
+    width:450px;
+    height:655px;
+    margin-top: 100px;
+    background-image:url(../img/appinfo02/img_chat_bg.png);
+    opacity:0;
+}
+.tab__img1{
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center 500px;
+}
+.tab__img--pl{
+    width:63px;
+    height:63px;
+}
+.tab__img--pl1{
+    top: 80px;
+    left: 40px;
+    background-image:url(../img/appinfo02/img_chat_01.png);
+}
+.tab__img--sb1{
+    top: 155px;
+    left: 29px;
+    width: 365px;
+    height: 100px;
+    background-image:url(../img/appinfo02/img_chat_02.png);
+}
+.tab__img--pl2{
+    top: 265px;
+    right: 40px;
+    background-image:url(../img/appinfo02/img_chat_03.png);
+}
+.tab__img--sb2{
+    top: 265px;
+    right: 110px;
+    width: 410px;
+    height: 261px;
+    background-image:url(../img/appinfo02/img_chat_04.png);
+}
+/*bg img 영역*/
+#t_appdown2 .bg_cloud{
+    position:absolute;
+    bottom:-40px;
+    right:0px;
+    width:66.666%;
+    height:358px;
+    background-size:100%;
+    background-image:url(../img/appinfo02/bg_cloud.svg);
+}
+#t_appdown2 .bg_airplane{
+    bottom: 170px;
+    right: 950px;
+}
+/*app소개2 E*/
+
+/*app소개3*/
+#t_appdown3{
+    padding-left:375px;
+    background-image:url(../img/appinfo03/bg_04.png);
+    color:#fff;
+}
+#t_appdown3 h2{
+    font-weight:700;
+}
+.app3_con{
+    margin-top:45px;
+    line-height:1.5em;
+    font-size:1.38em;
+    font-weight:100;
+    letter-spacing: -1px;
+}
+/*bg img 영역*/
+.bgimg__bg{
+    position: absolute;
+    top: 3%;
+    right:20%;
+    width:567px;
+    height:924px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-image:url(../img/appinfo03/img_01.png);
+    opacity:0;
+}
+.bgimg__pop{
+    position: absolute;
+    top: 32%;
+    right: 19.8%;
+    width:457px;
+    height:330px;
+    transform:scale(0);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-image:url(../img/appinfo03/img_02.png);
+}
+#t_appdown3 .bg_cloud{
+    position:absolute;
+    bottom:-40px;
+    right:0px;
+    width:66.666%;
+    height:270px;
+    background-image:url(../img/appinfo03/bg_cloud.svg);
+}#t_appdown3 .bg_airplane {
+    bottom: 60px;
+    right: 1020px;
+}
+/*app소개3 E*/
+
+/*플래너가입*/
+#t_plannerreg{
+    background-image:url(../img/plannerreg/bg_05.png);
+    padding-left:375px;
+}
+.plan--title{
+    color:#fff;
+}
+.fain{
+    opacity:0;
+}
+.fain_1{
+    font-size:2.25rem;
+    vertical-align: bottom;
+    letter-spacing: -3px;
+}
+.fain_3{
+    display:inline-block;
+    color:#00dbdb;
+    transform:scale(0.9);
+}
+.fain_4{
+    margin-left: -19px;
+}
+.btn--ghost{
+    display:block;
+    width:208px;
+    margin-top:30px;
+    border:1px solid #fff;
+    border-radius: 5px;
+    padding:22px;
+    box-sizing:border-box;
+    font-size:1.19em;
+    color:#fff;
+    opacity:0;
+}
+.btn--ghost:hover, .btn--ghost:focus, .btn--ghost.active{
+    color:#00244C;
+    background-color:#fff;
+}
+.form__planner{
+    position: absolute;
+    top:15%;
+    right:10%;
+    width:475px;
+    border-radius:15px;
+    padding:50px 43px;
+    background-color:#fff;
+    opacity:0;
+}
+.form__planner h3{
+    width:180px;
+    margin:0px auto 35px;
+    padding: 10px 0px 0px 40px;
+    background-image:url(../img/common/nav_icon_symbol.svg);
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size:14%;
+    font-size:1.9em;
+    letter-spacing: -2px;
+}
+.form__planner input{
+    width:390px;
+    height:63px;
+    margin-bottom:12px;
+    border-radius:32px;
+    box-sizing: border-box;
+    font-size:1.13em;
+    color:#2C2C2C;
+    text-indent: 23px;
+}
+.in_textbox{
+    background-color:#F0F7F7;
+    border:1px solid #D3E8E8;
+}
+.in_textbox:focus,.in_textbox:hover{
+    border-color:#00dbdb;
+}
+input::placeholder{
+    color:#bfcece;
+}
+.plan_btn{
+    width:390px;
+    height:63px;
+    margin: 20px 0px;
+    border:0px none;
+    outline:0px none;
+    border-radius:33px;
+    background-color:#00244c;
+    font-size:1.5em;
+    color:#fff;
+    box-shadow:0px 7px 12px rgba(0,0,0,0.16);
+    cursor:pointer;
+}
+.plan_btn:hover, .plan_btn:focus, .plan_btn.active{
+    color:#00dbdb;
+}
+#t_plannerreg .bg_airplane{
+    bottom: -45px;
+    right: 1170px;
+}
+/*플래너가입 E*/
+
+/*footer*/
+.tr_ft{
+    margin-top:12px;
+    font-size:1rem;
+}
+.tr_ft small{
+    float:left;
+    margin-left: 60px;
+    border-right: 1px solid #D3E8E8;
+    padding-right: 24px;
+    line-height:1.5em;
+    color:#A8A8A8;
+    text-align:right;
+}
+.tr_sns{
+    float:right;
+    margin-right:10px;
+}
+.tr_sns a{
+    display:inline-block;
+    width:47px;
+    height:47px;
+    margin:0px 5px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    text-indent:-9999px;
+}
+.tr_nb{
+    background-image:url(../img/plannerreg/icon_01_off.svg);
+}
+.tr_is{
+    background-image:url(../img/plannerreg/icon_02_off.svg);
+}
+.tr_fb{
+    background-image:url(../img/plannerreg/icon_03_off.svg);
+}
+.tr_nb:hover, .tr_nb:focus, .tr_nb.active{
+    background-image:url(../img/plannerreg/icon_01_on.svg);
+}
+.tr_is:hover, .tr_is:focus, .tr_is.active{
+    background-image:url(../img/plannerreg/icon_02_on.svg);
+}
+.tr_fb:hover, .tr_fb:focus, .tr_fb.active{
+    background-image:url(../img/plannerreg/icon_03_on.svg);
+}
+/*footer E*/

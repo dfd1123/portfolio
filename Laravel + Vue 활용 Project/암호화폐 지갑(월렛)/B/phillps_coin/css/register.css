@@ -1,0 +1,19 @@
+/* register */
+.container--register {
+    height: 100%;
+    padding-bottom: 90px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 20px;
+    max-width: 40rem;
+}
+
+.register__agree-list {
+    font-size: 0.85em;
+    line-height: 2;
+}
+
+.register__agree-list .chck_style:checked ~ label {
+    color: #535353;
+}
+/* end register */

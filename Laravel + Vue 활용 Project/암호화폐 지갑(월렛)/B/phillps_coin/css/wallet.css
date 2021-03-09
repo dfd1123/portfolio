@@ -1,0 +1,144 @@
+/* wallet common */
+.wallet__etc-info {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: black;
+    width: 100%;
+    background: #F4F4F4;
+    display: inline-block;
+    word-break: break-all;
+    padding: 10px 13px;
+    color: black;
+}
+
+.wallet__history {
+    padding: 15px 0;
+}
+
+.wallet__history__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 25rem;
+    margin: 0 auto 15px;
+}
+
+.wallet__history__btn {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border: 0;
+    outline: none;
+    background-color: #333333;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 300;
+    padding: 7px 30px;
+}
+
+.wallet__history__btn.active {
+    border-color: #fff;
+}
+
+.wallet__history__tbl {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.wallet__history__tbl-scrl {
+    height: calc( (74px * 5) + 1px);
+    padding-bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 576px) {
+    .wallet__history__tbl-scrl {
+    height: calc( (72px * 5) + 1px);
+    padding-bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    }
+}
+
+.wallet__history__tbl th {
+    font-size: 0.75em;
+    font-weight: 300;
+    color: #fff;
+    background-color: #333;
+    padding: 5px 0;
+    border-top: 2px solid #DFDFDF;
+    border-bottom: 2px solid #DFDFDF;
+}
+
+.wallet__history__tbl th:nth-child(1) {
+    width: 15%;
+}
+
+.wallet__history__tbl th:nth-child(2) {
+    width: 35%;
+}
+
+.wallet__history__tbl th:nth-child(3) {
+    width: 25%;
+}
+
+.wallet__history__tbl th:nth-child(4) {
+    width: 25%;
+}
+
+.wallet__history__tbl td {
+    font-size: 0.75em;
+    font-weight: 200;
+    color: #fff;
+    border: 1px solid #999999;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px 5px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+.wallet__history__tbl td:nth-child(1) {
+    width: 15%;
+}
+
+.wallet__history__tbl td:nth-child(2) {
+    width: 35%;
+}
+
+.wallet__history__tbl td:nth-child(3) {
+    width: 25%;
+}
+
+.wallet__history__tbl td:nth-child(4) {
+    width: 25%;
+}
+
+.wallet__history__tbl td .btn_mini02 {
+    margin-top: 3px;
+}
+
+.wallet__history__tr {
+    height: 74px;
+}
+
+@media (max-width: 576px) {
+    .wallet__history__tr {
+    height: 72px;
+    }
+}
+
+.wallet__history__tr--in .status {
+    font-weight: 500;
+    color: #2e87c8;
+}
+
+.wallet__history__tr--out .status {
+    font-weight: 500;
+    color: #ff0000;
+}
+/* end wallet common */

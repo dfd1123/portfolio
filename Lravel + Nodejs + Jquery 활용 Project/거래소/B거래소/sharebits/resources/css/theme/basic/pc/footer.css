@@ -1,0 +1,24 @@
+/*------------------------FOOTER 푸터 스타일 START------------------------*/
+
+.footer {
+	background: #f1f1f1;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.footer .logo {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	left: -5px;
+}
+
+.footer .copyright {
+	color: #6b6e79;
+	font-size: 12px;
+	letter-spacing: 0;
+}
+
+/*------------------------FOOTER 푸터 스타일 END------------------------*/

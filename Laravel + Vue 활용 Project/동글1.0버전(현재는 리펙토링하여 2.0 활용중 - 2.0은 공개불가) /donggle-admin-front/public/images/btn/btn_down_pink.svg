@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+  <g id="btn_down_pink" transform="translate(-2256 2998)">
+    <g id="그룹_3971" data-name="그룹 3971" transform="translate(0.75)">
+      <line id="선_649" data-name="선 649" x2="4" y2="4" transform="translate(2256.5 -2992.5)" fill="none" stroke="#fc4ead" stroke-linecap="round" stroke-width="1.1"/>
+      <line id="선_650" data-name="선 650" x1="4" y2="4" transform="translate(2260.5 -2992.5)" fill="none" stroke="#fc4ead" stroke-linecap="round" stroke-width="1.1"/>
+      <line id="선_651" data-name="선 651" y2="8.5" transform="translate(2260.5 -2997.5)" fill="none" stroke="#fc4ead" stroke-linecap="round" stroke-width="1"/>
+    </g>
+    <line id="선_652" data-name="선 652" x2="10" transform="translate(2256.5 -2986.5)" fill="none" stroke="#fc4ead" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+/* 
+    --------------------------------------------------------------------
+            * beatz_chart component *
+    --------------------------------------------------------------------
+*/
+
+// 메인에 나오는 기본 비트차트 (dark ver.)
+
+.beat_chart_list {
+  width: 100%;
+
+  table {
+    font-size: 18px;
+
+    thead th:first-child {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    thead th:last-child {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    thead div {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    tbody div {
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    tbody .c-song-title {
+      height: 3.3em;
+      display: flex;
+      align-items: center;
+      padding-left: 4em;
+    }
+
+    tbody .c-song-title span {
+      color: #fff;
+    }
+
+    tbody .c-song-title .thumb-mini {
+      top: 0;
+      left: 0;
+      transform: none;
+      background-color: ghostwhite;
+    }
+
+    tbody tr:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    th {
+      padding: 11px 0;
+      font-size: 0.85em;
+      background-color: rgba(0, 0, 0, 0.3);
+      vertical-align: middle;
+    }
+
+    td {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      vertical-align: middle;
+      height: 5.5em;
+      text-align: center;
+    }
+
+    th.th-check,
+    td.td-check {
+      width: 3%;
+    }
+
+    th.th-rank,
+    td.td-rank {
+      width: 5%;
+    }
+
+    th.th-rank_info,
+    td.td-rank_info {
+      width: 4%;
+    }
+
+    th.th-song,
+    td.td-song {
+      width: 20%;
+      text-align: left;
+    }
+
+    th.th-pd,
+    td.td-pd {
+      width: 10%;
+    }
+
+    th.th-mood,
+    td.td-mood {
+      width: 8%;
+    }
+
+    th.th-genre,
+    td.td-genre {
+      width: 11%;
+    }
+
+    th.th-play,
+    td.td-play {
+      width: 5%;
+    }
+
+    th.th-list,
+    td.td-list {
+      width: 5%;
+    }
+
+    th.th-share,
+    td.td-share {
+      width: 5%;
+    }
+
+    th.th-like,
+    td.td-like {
+      width: 6%;
+    }
+
+    th.th-more,
+    td.td-more {
+      width: 4%;
+    }
+
+    th.th-cart,
+    td.td-cart {
+      width: 14%;
+    }
+  }
+}
+
+// 차트 컨트롤 버튼
+
+.chart-ctrl-btn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url($G-path-img-btn+"control_btn02.svg");
+  cursor: pointer;
+
+  &-play {
+    background-position: 0 0;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &-palse {
+    background-position: -30px 0;
+  }
+
+  &-list {
+    background-position: -60px 0;
+
+    &:hover {
+      background-position: -90px 0;
+    }
+  }
+
+  &-share {
+    background-position: -120px 0;
+
+    &:hover {
+      background-position: -150px 0;
+    }
+  }
+
+  &-like {
+    background-position: -180px 0;
+
+    &:hover {
+      background-position: -210px 0;
+    }
+
+    &.active {
+      background-position: -210px 0;
+    }
+  }
+
+  &-like + em {
+    color: #fff;
+    font-size: 0.85em;
+    position: relative;
+    top: -8px;
+    left: 3px;
+  }
+
+  &-more {
+    background-position: 0 -30px;
+
+    &:hover {
+      background-position: -30px -30px;
+    }
+  }
+
+  &-cart {
+    width: auto;
+    border-radius: 10px;
+    background-color: #7300df;
+    color: #fff;
+    border: 0;
+    height: 2.2em;
+    position: relative;
+    line-height: 2.2em;
+    padding: 0 0.7em 0 2.8em;
+    cursor: pointer;
+
+    .chart-ctrl-btn {
+      position: absolute;
+      top: 4px;
+      left: 12px;
+      background-position: -60px -30px;
+    }
+
+    b {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: darken(#7300df, 10%);
+    }
+  }
+}
+
+// 서브에 나오는 비트차트
+
+.sub-section .beat_chart_list {
+  table {
+    th {
+      border-top: 2px solid #dcdcdc;
+      border-bottom: 1px solid #dcdcdc;
+      background-color: transparent;
+    }
+
+    thead div {
+      color: rgba(51, 51, 51, 0.5);
+    }
+
+    tbody div {
+      color: #333333;
+    }
+
+    tbody tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    td {
+      border-bottom: 1px solid rgba(112, 112, 112, 0.13);
+    }
+
+    tbody .c-song-title span {
+      color: #333333;
+    }
+  }
+}
+
+// 서브페이지 차트 컨트롤버튼
+
+.sub-section .chart-ctrl-btn {
+  background-image: url($G-path-img-btn+"control_btn02-dark.svg");
+
+  &-like + em {
+    color: rgba(51, 51, 51, 0.45);
+  }
+}

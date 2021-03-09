@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+/* 
+    --------------------------------------------------------------------
+            * cart_chart component *
+    --------------------------------------------------------------------
+*/
+
+// 장바구니 관련 비트차트
+
+.cart_chart_list {
+  width: 100%;
+
+  table {
+    font-size: 16px;
+
+    thead div {
+      color: rgba(51, 51, 51, 0.5);
+    }
+
+    tbody div {
+      color: #333333;
+      text-align: center;
+      position: relative;
+      font-weight: 500;
+    }
+
+    tbody tr:hover {
+      background-color: #f9f9f9;
+
+      td.td-license span {
+        opacity: 1;
+      }
+    }
+
+    tbody .c-song-title {
+      height: 3.3em;
+      display: flex;
+      align-items: center;
+      padding-left: 4em;
+    }
+
+    tbody .c-song-title-info {
+      width: 100%;
+      text-align: left;
+      line-height: 1.2;
+      padding-left: 7px;
+    }
+
+    tbody .c-song-title-info b {
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+
+    tbody .c-song-title-info span {
+      color: rgba(51, 51, 51, 0.5);
+    }
+
+    tbody .c-song-title .thumb-mini {
+      top: 0;
+      left: 0;
+      transform: none;
+      background-color: ghostwhite;
+    }
+
+    th {
+      border-top: 2px solid #dcdcdc;
+      border-bottom: 1px solid #dcdcdc;
+      background-color: transparent;
+      padding: 11px 0;
+      font-size: 0.85em;
+      vertical-align: middle;
+    }
+
+    td {
+      border-bottom: 1px solid rgba(112, 112, 112, 0.13);
+      vertical-align: middle;
+      height: 5.5em;
+      text-align: center;
+    }
+
+    th.th-check,
+    td.td-check {
+      width: 5%;
+    }
+
+    th.th-song,
+    td.td-song {
+      width: 40%;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    th.th-file_type,
+    td.td-file_type {
+      width: 12%;
+    }
+
+    th.th-license,
+    td.td-license {
+      width: 20%;
+    }
+
+    td.td-license {
+      span {
+        font-weight: bold;
+        text-decoration: underline;
+        color: $theme-button01-color;
+        opacity: 0.5;
+        text-transform: uppercase;
+      }
+    }
+
+    th.th-price,
+    td.td-price {
+      width: 15%;
+    }
+
+    td.td-price {
+      div {
+        font-size: 17px;
+      }
+
+      b {
+        padding-right: 5px;
+      }
+    }
+
+    th.th-del,
+    td.td-del {
+      width: 8%;
+    }
+
+    th.th-order_data,
+    td.td-order_data {
+      width: 13%;
+    }
+
+    th.th-pay_type,
+    td.td-pay_type {
+      width: 13%;
+    }
+
+    th.th-download,
+    td.td-download {
+      width: 20%;
+    }
+  }
+}
+
+// 차트 컨트롤 버튼
+
+.chart-ctrl-btn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+// 서브페이지 차트 컨트롤버튼
+
+.sub-section .chart-ctrl-btn {
+
+  &-del {
+    background-image: url($G-path-img-btn+"not_sprite/ctrl_btn_mini_del_off.svg");
+
+    &:hover {
+        background-image: url($G-path-img-btn+"not_sprite/ctrl_btn_mini_del_on.svg");
+    }
+  }
+}
+
+// 순위변동
+
+.rank_info{
+
+    &__triangle{
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 7px solid transparent;
+        position: relative;
+    }
+
+    em{
+        margin-left: 5px;
+        font-size: 13px;
+    }
+
+    &--up{
+        .rank_info__triangle{
+            border-bottom: 8px solid $red-color;
+        }
+        em{
+            color: $red-color;
+        }
+    }
+    &--down{
+        .rank_info__triangle{
+            border-bottom: 8px solid $blue-color;
+            position: relative;
+            top: 7px;
+            transform: rotate(180deg);
+        }
+        em{
+            color: $blue-color;
+        }
+    }
+}

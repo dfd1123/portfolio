@@ -1,0 +1,68 @@
+
+@mixin focus-animate {
+    transition-property: border;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    &:focus {
+        border-color: #222;
+    }
+}
+
+.input-box {
+    width: 100%;
+    height: 48px;
+    background-color: #f9f9f9;
+    padding: 0 10px;
+    font-size: 1.167rem; // 14px;
+    font-weight: 400; // Regular
+    margin-bottom: 12px;
+    &::placeholder {
+        font-size: 1.167rem; // 14px;
+        font-weight: 400; // Regular
+        color: #ccc;
+    }
+}
+
+.input-radius {
+    width: 100%;
+    height: 48px;
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    border-radius: 100px;
+    padding: 0 18px;
+    outline: none;
+}
+
+.input-bar {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 12px;
+    @include focus-animate();
+}
+
+.verify-box {
+    width: 85%;
+    height: 48px;
+    background-color: #f9f9f9;
+    padding: 0 10px;
+    font-size: 1.167rem; // 14px;
+    font-weight: 400; // Regular
+}
+
+.input-box-right {
+    width: 100%;
+    height: 48px;
+    background-color: #f9f9f9;
+    padding: 0 10px;
+    font-size: 1.167rem; // 14px;
+    font-weight: 400; // Regular
+    margin-bottom: 12px;
+    text-align: right;
+    &::placeholder {
+        font-size: 1.167rem; // 14px;
+        font-weight: 400; // Regular
+        color: #ccc;
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.591" height="21.885" viewBox="0 0 25.591 21.885">
+  <g id="ctrl_btn_mini_list_on" transform="translate(0.75 0.75)">
+    <line id="선_11" data-name="선 11" x2="24.091" fill="none" stroke="#7e2aff" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="선_12" data-name="선 12" x2="24.091" transform="translate(0 8.339)" fill="none" stroke="#7e2aff" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="선_13" data-name="선 13" x2="10.192" transform="translate(0 16.679)" fill="none" stroke="#7e2aff" stroke-linecap="round" stroke-width="1.5"/>
+    <g id="그룹_45" data-name="그룹 45" transform="translate(15.752 12.972)">
+      <line id="선_14" data-name="선 14" x2="7.413" transform="translate(0 3.706)" fill="none" stroke="#7e2aff" stroke-linecap="round" stroke-width="1.5"/>
+      <line id="선_15" data-name="선 15" y2="7.413" transform="translate(3.706)" fill="none" stroke="#7e2aff" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

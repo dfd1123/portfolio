@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="btn_comment" width="49" height="49" viewBox="0 0 49 49">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="레이어_1" data-name="레이어 1" transform="translate(1 1)">
+        <path id="패스_2363" d="M37.4 1L4.707 33.69 1 48l14.31-3.707L48 11.6z" class="cls-1" data-name="패스 2363" transform="translate(-1 -1)"/>
+        <path id="선_50" d="M0 0l8.798 8.798" class="cls-1" data-name="선 50" transform="translate(33.437 4.765)"/>
+        <path id="선_51" d="M0 0l8.798 8.798" class="cls-1" data-name="선 51" transform="translate(3.535 34.851)"/>
+    </g>
+</svg>

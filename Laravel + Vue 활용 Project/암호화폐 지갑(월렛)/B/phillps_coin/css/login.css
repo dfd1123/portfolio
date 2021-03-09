@@ -1,0 +1,44 @@
+/* login */
+.container--login {
+    text-align: center;
+    max-width: 30rem;
+}
+
+.container--login .btn_solid {
+    margin-top: 20px;
+}
+
+.login__symbol {
+    max-width: 10rem;
+    width: 40%;
+    margin: 30px auto 15px;
+}
+
+.login__ment {
+    font-size: 1em;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.login__ment em {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.login__option {
+    font-size: 0.75em;
+    color: #444444;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.login__option a {
+    color: #cccccc;
+    padding: 0 18px;
+}
+
+/* end login */

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#64e196"/>
+      <stop offset="1" stop-color="#19b4aa"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_check" transform="translate(-150.132 -309.691)">
+    <g id="타원_49" data-name="타원 49" transform="translate(153.132 312.691)" stroke="#fff" stroke-miterlimit="10" stroke-width="3" fill="url(#linear-gradient)">
+      <ellipse cx="21" cy="21" rx="21" ry="21" stroke="none"/>
+      <ellipse cx="21" cy="21" rx="22.5" ry="22.5" fill="none"/>
+    </g>
+    <path id="패스_1947" data-name="패스 1947" d="M165.292,334.145l6.167,7.163,13.25-13.5" transform="translate(-0.868 -0.868)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

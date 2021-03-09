@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- header -->
+      <!-- detail 페이지만 detail-mobile-hd 클래스 추가 -->
+      <header id="admin-header" class="detail-mobile-hd">
+        <!-- 상단고정 헤더 -->
+        <div id="header-hd">
+          <div class="show-pc">
+            <!-- 상단 side navigation -->
+            <section class="hd-snb-bar">
+              <div class="in-store-profile">
+                <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+                <a href="#" target="_blank">
+                  <figure class="symbol-circle">
+                    <img
+                      src="/images/img/profile_admin.jpg"
+                      alt="profile image"
+                    />
+                  </figure>
+                  <h2 class="in-name">스토어명</h2>
+                  <img
+                    class="in-btn-img"
+                    src="/images/btn/btn_more.svg"
+                    alt="btn more"
+                  />
+                </a>
+              </div>
+
+              <div class="in-snb-group">
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">알림</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="../snb/inquiry-store-list.html" class="in-snb-list">
+                  <span class="in-snb-name">스토어 문의</span>
+                </a>
+                <a href="../snb/cs-notice-main.html" class="in-snb-list">
+                  <span class="in-snb-name">고객센터</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">로그아웃</span>
+                </a>
+              </div>
+            </section>
+            <!-- END 상단 side navigation -->
+
+            <!-- 상단 타이틀바 -->
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <section class="hd-title-bar">
+              <div class="in-page-name">
+                <h3 class="in-main"><span>주문내역 상세보기</span></h3>
+              </div>
+
+              <div class="in-page-btn-group">
+                <a
+                  href="history-order-list.html"
+                  class="rounded-square-btn btn-mild"
+                  >목록으로</a
+                >
+              </div>
+            </section>
+            <!-- FIXME: END -->
+            <!-- END 상단 타이틀바 -->
+          </div>
+
+          <div class="show-mobile">
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <div class="hd-title-bar">
+              <div class="hd-title-bar-inner">
+                <div class="in-left-btn">
+                  <label for="mobile_show_gnb" class="in-label-btn">
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                  </label>
+                </div>
+
+                <div class="in-page-name">
+                  <h3 class="in-main">
+                    <span>주문내역 상세보기</span>
+                    <a
+                      href="history-order-list.html"
+                      class="icon-back-btn"
+                      >뒤로가기</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- FIXME: END -->
+          </div>
+        </div>
+        <!-- END 상단고정 헤더 -->
+
+        <input id="mobile_show_gnb" class="none" type="checkbox" />
+        <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+        <!-- 왼쪽 global navigation -->
+        <div id="header-gnb">
+          <section class="in-brand-con-box show-pc">
+            <h1 class="in-brand-logo">
+              <!-- TODO: 대시보드 메인으로 -->
+              <a href="../index.html">
+                <img
+                  src="/images/logo/logo_header_wh.svg"
+                  alt="image"
+                  class="in-logo"
+                />
+              </a>
+            </h1>
+          </section>
+
+          <section class="in-mobile-gnb-hd show-mobile">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#">
+                <figure class="symbol-circle">
+                  <img
+                    src="/images/img/profile_admin.jpg"
+                    alt="profile image"
+                  />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img
+                  class="in-btn-img"
+                  src="/images/btn/btn_more.svg"
+                  alt="btn more"
+                />
+              </a>
+            </div>
+
+            <label for="mobile_show_gnb" class="icon-close-btn">닫기</label>
+            <div class="inner-snb-group">
+              <a href="../index.html" class="icon-home-btn in-icon-btn"
+                ><i class="hide-text">홈</i></a
+              >
+              <!-- 새 알림 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="../snb/alarm-view.html"
+                class="icon-alarm-btn in-icon-btn"
+                ><i class="hide-text">알림</i></a
+              >
+              <!-- 새 문의 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="../snb/inquiry-store-list.html"
+                class="icon-contact-btn in-icon-btn"
+                ><i class="hide-text">문의</i></a
+              >
+            </div>
+            <div class="in-bottom-btns clearfix">
+              <a href="../snb/cs-notice-main.html" class="link-cs-btn"
+                >고객센터</a
+              >
+              <a href="#">로그아웃</a>
+            </div>
+          </section>
+
+          <div class="in-gnb-group">
+            <a href="setting-store.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_01.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_01_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">스토어 설정</span>
+            </a>
+            <a href="check-order.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_02.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_02_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문상품 확인</span>
+            </a>
+            <a href="history-order-list.html" class="in-gnb-list active">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문내역</span>
+            </a>
+            <a href="history-cancel-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">취소/환불 내역</span>
+            </a>
+            <a href="manage-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_05.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_05_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품관리</span>
+            </a>
+            <a href="inquiry-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_06.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_06_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품문의</span>
+            </a>
+            <a href="manage-review.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_07.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_07_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">구매후기</span>
+            </a>
+            <a href="sales-status.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_08.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_08_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">매출현황</span>
+            </a>
+          </div>
+        </div>
+        <!-- END 왼쪽 global navigation -->
+      </header>
+      <!-- END header -->
+
+      <!-- contents -->
+      <div id="admin-container" class="detail-container">
+        <div class="wrapper">
+          <div id="page-history-order-detail-wrap">
+            <div class="grid-line-group first">
+              <div class="panel-default-container">
+                <div class="panel-default-title">
+                  <h4 class="in-mainname">주문상품</h4>
+                </div>
+                <div class="panel-default gray-panel">
+                  <div class="inner-section">
+                    <div class="inner-panel-title">
+                      <span class="in-title"
+                        >현재 주문상태<b class="_txt _deli">배송중</b></span
+                      >
+                      <span class="in-title"
+                        >주문일시<b class="_txt"
+                          >2020년 02월 02일 02:02 (월)</b
+                        ></span
+                      >
+                      <span class="in-title"
+                        >상품금액 합계<b class="_txt"
+                          >90,000원(배송비 미포함)</b
+                        ></span
+                      >
+                    </div>
+                    <div>
+                      <!-- 주문상품 카드 -->
+                      <div class="main-mini-panel-card type-thumb">
+                        <div class="inner">
+                          <figure class="in-thumb">
+                            <img
+                              src="/images/img/product.jpg"
+                              alt="product image"
+                            />
+                          </figure>
+                          <div class="in-txt-box">
+                            <span class="in-subtit"
+                              ><b class="_title">품번</b>123456789</span
+                            >
+                            <p class="in-maintit">
+                              울 50%) 뽀송 브이넥 크롭니트_5color
+                            </p>
+                            <span class="in-subtit in-option"
+                              ><b class="_title">옵션</b>핑크 / M</span
+                            >
+                            <div class="in-total">
+                              <p class="in-number">수량 <b>1 개</b></p>
+                              <p class="in-price">30,000원</p>
+                            </div>
+                            <div class="in-coupon btn-outline-gray-md">
+                              적용된 쿠폰이 없습니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- END -->
+                      <!-- 주문상품 카드 - 쿠폰적용 -->
+                      <div class="main-mini-panel-card type-thumb">
+                        <div class="inner">
+                          <figure class="in-thumb">
+                            <img
+                              src="/images/img/product.jpg"
+                              alt="product image"
+                            />
+                          </figure>
+                          <div class="in-txt-box">
+                            <span class="in-subtit"
+                              ><b class="_title">품번</b>123456789</span
+                            >
+                            <p class="in-maintit">
+                              울 50%) 뽀송 브이넥 크롭니트_5color
+                            </p>
+                            <span class="in-subtit in-option"
+                              ><b class="_title">옵션</b>핑크 / M</span
+                            >
+                            <div class="in-total">
+                              <p class="in-number">수량 <b>1 개</b></p>
+                              <p class="in-price">30,000원</p>
+                            </div>
+                            <div class="in-coupon btn-theme">
+                              2020 새해맞이 50% 할인 쿠폰 적용
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- END -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-line-group second order-info-group">
+              <div class="panel-default-container">
+                <div class="panel-default-title">
+                  <h4 class="in-mainname">주문결제 내역</h4>
+                </div>
+                <div class="panel-default">
+                  <div class="tbl-wrapper">
+                    <div class="tbl-container">
+                      <table
+                        id="history_order_detail_tbl"
+                        class="tbl-default detail_tbl"
+                      >
+                        <caption class="hide-text">
+                          [테이블] - 주문건 주문결제내역
+                        </caption>
+                        <thead class="tbl-default-head">
+                          <tr class="in-tr">
+                            <th class="_num">주문번호</th>
+                            <th class="_date">주문일시</th>
+                            <th class="stat">주문상태</th>
+                            <th class="_price">상품금액 합계</th>
+                            <th class="_cou_sale">쿠폰 할인금액</th>
+                            <th class="_user_sale">회원등급 할인금액</th>
+                            <th class="_total">최종 결제금액</th>
+                          </tr>
+                        </thead>
+                        <tbody class="tbl-default-body">
+                          <tr class="in-tr">
+                            <td class="_num"><i>20191116-17492364</i></td>
+                            <td class="_date"><i>2019-00-00</i></td>
+                            <td class="_stat">무통장 입금 (가상계좌)</td>
+                            <td class="_price"><i>30,000</i>원</td>
+                            <td class="_cou_sale">-<i>3,000</i>원</td>
+                            <td class="_user_sale">-<i>1,000</i>원</td>
+                            <td class="_total"><i>28,000</i>원</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <ul class="mobile-wrapper">
+                    <li class="line_desc clearfix">
+                      <p class="_title _order_num">주문번호</p>
+                      <p class="_txt _order_num">20191116-17492364</p>
+                    </li>
+                    <li class="line_desc clearfix">
+                      <p class="_title">주문일시</p>
+                      <p class="_txt">2020-02-02</p>
+                    </li>
+                    <li class="line_desc clearfix">
+                      <p class="_title">주문상태</p>
+                      <p class="_txt">무통장 입금 (가상계좌)</p>
+                    </li>
+                    <li class="line_desc clearfix">
+                      <p class="_title">상품금액합계</p>
+                      <p class="_txt">90,000 원</p>
+                    </li>
+                    <li class="line_desc clearfix">
+                      <p class="_title">쿠폰 할인금액</p>
+                      <p class="_txt">-1,000 원</p>
+                    </li>
+                    <li class="line_desc clearfix">
+                      <p class="_title">회원등급 할인금액</p>
+                      <p class="_txt">-1,000 원</p>
+                    </li>
+                    <li class="line_desc clearfix">
+                      <p class="_title">총 결제금액</p>
+                      <p class="_txt"><b>88,000</b> 원</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="admin-footer" class="not-mobile">
+          <span class="in-copyright">Copyrights © <i>Donggle</i></span>
+          <div class="in-company-info">
+            <span>회사명 : ㈜동글</span>
+            <span>대표이사 : OOO</span>
+            <span>사업자등록번호 : 220-88-93187</span>
+            <span>통신판매업신고 : 2016-서울강남-00359</span>
+            <span>호스팅사업자 : (주)동글</span>
+            <span class="in-address"
+              >주소 : (06223) 서울특별시 강남구 테헤란로 32길 26 청송빌딩</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- END contents -->
+    </div>
+  </body>
+</html>

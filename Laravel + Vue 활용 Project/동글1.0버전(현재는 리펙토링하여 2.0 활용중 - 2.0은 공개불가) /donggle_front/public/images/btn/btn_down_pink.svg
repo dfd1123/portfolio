@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11.5" viewBox="0 0 11 11.5">
+  <g id="btn_down_pink" transform="translate(-1005.5 -909)">
+    <path id="Path" d="M7.333,0,3.667,3.667,0,0" transform="translate(1007.218 913.976)" fill="none" stroke="#fc4ead" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="선_543" data-name="선 543" y2="8" transform="translate(1011 909.5)" fill="none" stroke="#fc4ead" stroke-linecap="round" stroke-width="1"/>
+    <line id="선_544" data-name="선 544" x2="10" transform="translate(1006 920)" fill="none" stroke="#fc4ead" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

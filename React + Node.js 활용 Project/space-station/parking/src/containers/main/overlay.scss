@@ -1,0 +1,47 @@
+
+.custom-overlay {
+    // bottom:35px;
+    // left:50px;
+    position: relative;
+    border-radius: 6px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color:#777;
+    width: 100px;
+    // width: 
+    height: 50px;
+    background-size: 130px 100px;
+    background-position: center;
+    background-image: url('../../static/asset/svg/main/marker2.svg');
+    span{
+        position: absolute;
+        left: 63.5%;
+        top:30%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.arrive-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 64px;
+    min-height: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+
+    position: relative;
+    float: left;
+    pointer-events: none;
+    background-size: contain;
+    background: no-repeat;
+    background-position: center;
+    background-image: url('../../static/asset/svg/main/arrive.svg');
+    span{
+        position: absolute;
+        top:13%;
+    }
+}

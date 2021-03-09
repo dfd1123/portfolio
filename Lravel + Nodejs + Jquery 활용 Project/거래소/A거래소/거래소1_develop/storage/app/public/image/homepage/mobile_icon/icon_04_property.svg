@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.901" height="17.182" viewBox="0 0 19.901 17.182">
+  <g id="icon_05_property" transform="translate(-20 -101.001)">
+    <g id="그룹_3514" data-name="그룹 3514" transform="translate(24.521 106.877)">
+      <line id="선_152" data-name="선 152" x2="9.946" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <line id="선_153" data-name="선 153" x2="5.425" transform="translate(0 3.617)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    </g>
+    <g id="레이어_2" data-name="레이어 2" transform="translate(20 100.999)">
+      <g id="레이어_1" data-name="레이어 1">
+        <rect id="사각형_939" data-name="사각형 939" width="11.026" height="6.436" rx="2" transform="translate(8.875 5.377)" fill="#00b9ff"/>
+        <path id="패스_1859" data-name="패스 1859" d="M10.535,12.982a2.828,2.828,0,0,1-2.828-2.82V7.037a2.828,2.828,0,0,1,2.828-2.8h7.528V1.694A1.694,1.694,0,0,0,16.369,0H1.694A1.694,1.694,0,0,0,0,1.694v13.8a1.694,1.694,0,0,0,1.694,1.694H16.369a1.694,1.694,0,0,0,1.694-1.694V12.948Z" fill="#00b9ff"/>
+        <ellipse id="타원_48" data-name="타원 48" cx="1.169" cy="1.169" rx="1.169" ry="1.169" transform="translate(11.255 7.427)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

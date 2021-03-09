@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="icon_empty" transform="translate(-144 -322.388)">
+    <g id="그룹_33" data-name="그룹 33">
+      <path id="패스_79" data-name="패스 79" d="M184.4,362.788v5.1H160.7v-30.7h23.7v10.9" fill="none" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="그룹_32" data-name="그룹 32">
+        <circle id="타원_23" data-name="타원 23" cx="8.7" cy="8.7" r="8.7" transform="translate(171.2 346.688)" fill="#f0f0f0" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_45" data-name="선 45" x1="8.3" y1="8.3" transform="translate(186 361.288)" fill="none" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="선_46" data-name="선 46" x1="4.8" y1="4.7" transform="translate(189.5 364.888)" fill="none" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="4"/>
+        <g id="그룹_31" data-name="그룹 31">
+          <line id="선_47" data-name="선 47" x1="5" y2="5.1" transform="translate(177.4 352.888)" fill="none" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="2"/>
+          <line id="선_48" data-name="선 48" x2="5" y2="5.1" transform="translate(177.4 352.888)" fill="none" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+      <line id="선_49" data-name="선 49" x2="15.2" transform="translate(165 342.688)" fill="none" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_50" data-name="선 50" x2="9.1" transform="translate(165 349.188)" fill="none" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_51" data-name="선 51" x2="6.2" transform="translate(165 355.588)" fill="none" stroke="#b4b4b4" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="그룹_34" data-name="그룹 34">
+      <path id="패스_80" data-name="패스 80" d="M175,324.388a29,29,0,1,1-29,29,29.021,29.021,0,0,1,29-29m0-2a31,31,0,1,0,31,31,31.027,31.027,0,0,0-31-31Z" fill="#b4b4b4"/>
+    </g>
+  </g>
+</svg>

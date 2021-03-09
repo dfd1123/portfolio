@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_btn_check_off" width="37" height="48" viewBox="0 0 37 48">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-width:2px}.cls-1{stroke:#bfc9d1}.cls-1,.cls-3{stroke-linejoin:round}.cls-2,.cls-3{stroke:#80c0ff}.cls-2{stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="레이어_1" data-name="레이어 1">
+        <path id="사각형_280" d="M0 0h35v46H0z" class="cls-1" data-name="사각형 280" transform="translate(1 1)"/>
+        <path id="사각형_281" d="M0 0h15v7H0z" class="cls-1" data-name="사각형 281" transform="translate(11 1)"/>
+        <path id="선_19" d="M0 0h21" class="cls-2" data-name="선 19" transform="translate(8 16)"/>
+        <path id="선_20" d="M0 0h21" class="cls-2" data-name="선 20" transform="translate(8 23)"/>
+        <path id="선_21" d="M0 0h8" class="cls-2" data-name="선 21" transform="translate(8 30)"/>
+        <path id="패스_2317" d="M19 35l4 4 6-9" class="cls-3" data-name="패스 2317"/>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+호가창 조회
+[{"market":"usd","type":"orderbook","coins":["btc","eth"]}]
+
+시세정보 조회
+[{"market":"usd","type":"ticker","coins":["btc","eth"]}]
+
+시세정보 조회(특정 마켓, 모든 코인)
+[{"market":"usd","type":"ticker"}]
+
+시세정보 조회(모든 마켓, 특정 코인)
+[{"type":"ticker","coins":["btc","eth"]}]
+
+시세정보 조회(모든 마켓, 모든 코인)
+[{"type":"ticker"}]
+
+거래내역 조회
+[{"market":"usd","type":"trade","coins":["btc","eth"]}]

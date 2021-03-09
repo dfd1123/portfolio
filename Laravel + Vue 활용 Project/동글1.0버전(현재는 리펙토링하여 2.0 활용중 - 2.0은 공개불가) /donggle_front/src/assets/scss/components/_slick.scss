@@ -1,0 +1,89 @@
+.slick-dots {
+  position: absolute;
+  top: -81px;
+  left: -253px;
+  bottom: auto;
+  display: block;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 0px;
+    padding: 0;
+    cursor: pointer;
+
+    &.slick-active button:before {
+      color: $purple;
+    }
+
+    &:active button:before {
+      color: $purple;
+    }
+
+    button:before {
+      font-family: slick;
+      font-size: 12px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      content: "•";
+      text-align: center;
+      opacity: 0.25;
+      color: #aaa;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+
+//메인 슬라이더
+#dg-home-wrapper {
+  .slick-dotted.slick-slider {
+    margin-bottom: 0px;
+  }
+  .l-contents-group {
+    .slick-list {
+      // 해시태그영역이 메인에서 잘리는걸 방지
+      padding-bottom: 90px;
+    }
+  }
+  .best-store-main-lists {
+    .slick-list {
+      padding-bottom: 60px;
+    }
+  }
+}
+.slick-dots {
+  left: 0px;
+  text-align: left;
+}
+.best-main-lists {
+  .slick-dots {
+    margin-left: 11em;
+  }
+}
+.popular-main-lists {
+  .slick-dots {
+    margin-left: 15em;
+  }
+}
+.today-new-main-lists {
+  .slick-dots {
+    margin-left: 9em;
+  }
+}
+.best-store-main-lists {
+  .slick-dots {
+    margin-left: 8em;
+  }
+}

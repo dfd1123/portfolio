@@ -1,0 +1,213 @@
+/* PAGES - 취소/환불내역 페이지
+   ========================================================================== */
+
+#page-history-cancel-list-wrap {
+  .table-area {
+    @include set-relative;
+
+    padding: 20px 10px 115px;
+
+    .search-default-bar {
+      margin-bottom: 30px;
+    }
+
+    .search-status-bar {
+      margin: 25px 0 13px;
+    }
+
+    .search-status-bar.type-last {
+      margin-top: 8px;
+    }
+
+    .nothing-history {
+      padding: 60px 0;
+    }
+  }
+
+  .search-option-check-group {
+    .in-check-list > * {
+      min-width: 80px;
+    }
+  }
+
+  .tbl-default {
+    .ta-right {
+      padding-right: 20px;
+    }
+    td i {
+      letter-spacing: 0.1px;
+      padding: 0 4px;
+    }
+  }
+
+  .tbl-default-body {
+    .in-tr {
+      height: 70px;
+    }
+  }
+
+  .btn-gray {
+    @include hover-eft {
+      background-color: $primary-color;
+    }
+
+    &:active {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+
+  .pager-wrap {
+    bottom: 25px;
+  }
+}
+
+#page-history-cancel-detail-wrap {
+  padding: 10px 0;
+
+  .grid-line-group.first {
+    margin-bottom: 35px;
+  }
+
+  .grid-line-group.second {
+    margin-bottom: 35px;
+
+    .panel-default {
+      padding: 30px 20px;
+    }
+
+    .in-divider {
+      padding: 15px 0px;
+    }
+
+    .in-detail {
+      border-top: 1px solid $gray-lighter;
+    }
+
+    .ex-input-label {
+      @include font($s: 15px, $c: $gray);
+      display: block;
+      float: left;
+      width: 130px;
+      padding-top: 10px;
+    }
+
+    .form-textarea {
+      float: left;
+      min-width: 267px;
+    }
+
+    .in-detail .form-textarea {
+      width: calc(100% - 130px);
+      min-height: 148px;
+    }
+  }
+
+  .grid-line-group.third {
+    .panel-default {
+      padding: 40px 30px;
+    }
+
+    .tbl-default {
+      border-bottom: 1px solid $gray-lighter;
+    }
+
+    .tbl-default-body .in-tr {
+      @include hover-eft {
+        background-color: unset;
+      }
+
+      height: 70px;
+    }
+  }
+}
+
+// 모바일 테이블대체 리스트
+.tbl-list-wrapper {
+  .order-date {
+    ._cancel_desc {
+      @include font(11px, 100, $gray-md-03);
+
+      height: 25px;
+      line-height: 25px;
+      margin: 0px 0px 10px;
+      border-radius: 5px;
+      background-color: $gray-lighter-02;
+      text-align: center;
+    }
+    ._cancel_date {
+      margin: 0px 5px;
+      font-weight: 500;
+      letter-spacing: 0px;
+    }
+  }
+}
+
+//주문내역 페이지 모바일화면
+@include media-mobile-version(ipad) {
+  #page-history-cancel-list-wrap {
+    .panel-default {
+      min-height: calc(100vh - 0px - 50px - 100px);
+      padding: 0px;
+    }
+  }
+
+  #page-history-cancel-list-wrap .table-area {
+    .search-default-bar {
+      margin-bottom: 0;
+    }
+    .search-status-bar {
+      margin: 30px 0px;
+      text-align: center;
+    }
+  }
+}
+
+@include media-mobile-version(galaxy-tab) {
+  #page-history-cancel-detail-wrap {
+    .tbl-wrapper {
+      display: none;
+    }
+  }
+}
+
+//디테일페이지 반응형 모바일화면
+@include media-mobile-version(mobile-only) {
+  #page-history-cancel-detail-wrap {
+    .panel-default-title {
+      margin-bottom: 20px;
+      padding: 0px 20px;
+      .in-mainname {
+        @include font($s: 18px, $w: 600);
+      }
+    }
+    .grid-line-group {
+      &.first {
+        padding-bottom: 30px;
+        border-bottom: 6px solid $gray-lighter-02;
+      }
+      &.second .panel-default,
+      &.third .panel-default {
+        padding: 0px 20px;
+        box-shadow: none;
+      }
+    }
+    .grid-line-group.second {
+      padding-bottom: 30px;
+      border-bottom: 6px solid #fafafa;
+      .in-divider {
+        padding: 0px;
+      }
+      .in-detail {
+        border: 0px none;
+      }
+      .ex-input-label {
+        width: 100%;
+        padding: 0px 0px 10px;
+      }
+      .in-detail .form-textarea {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

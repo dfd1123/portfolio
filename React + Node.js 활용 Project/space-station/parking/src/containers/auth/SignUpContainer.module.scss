@@ -1,0 +1,72 @@
+@import '../../static/stylesheets/Root.scss';
+
+.container {
+    padding: $padding;
+
+    @include container($pd-top);
+
+    .input-wrapper {
+        margin-bottom: 20px;
+
+        .password-check {
+            color: #953120;
+            height: 0px;
+            transition: height 0.3s ease-in-out;
+        }
+
+        .apear {
+            height: 30px;
+        }
+
+        .same {
+            color: #2966b4;
+        }
+    }
+
+    .input-wrapper:first-child {
+        margin-top: 20px;
+    }
+
+    .input-title {
+        font-size: 1.16rem;
+        font-weight: bold;
+        color: #999;
+        margin-bottom: 8px;
+    }
+
+    .select-wrapper {
+        text-align: center;
+        width: 100%;
+
+        .select-item {
+            position: relative;
+            width: 30%;
+            height: 48px;
+            display: inline-block;
+
+            .select {
+                width: 100%;
+                height: 100%;
+                padding: 5px 10px;
+                border: 1px solid #ebebeb;
+                font-size: 1.33rem;
+            }
+
+            & > svg {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+            }
+        }
+
+        .select-item:first-child {
+            width: 40%;
+        }
+    }
+
+    .check-box-wrapper {
+        position: relative;
+        margin-bottom: 200px;
+    }
+}

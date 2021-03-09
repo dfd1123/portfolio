@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="btn_next_round" transform="translate(-293 -189)">
+    <g id="타원_118" data-name="타원 118" transform="translate(293 189)" fill="none" stroke="#c8c8c8" stroke-width="1">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+    <path id="btn_next" d="M9.9,0,4.949,5.443,0,0" transform="translate(304.501 207.397) rotate(-90)" fill="none" stroke="#c8c8c8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+  </g>
+</svg>

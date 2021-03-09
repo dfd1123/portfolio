@@ -1,0 +1,28 @@
+{
+    "name": "exchange-scanner",
+    "version": "1.1.2",
+    "description": "exchange-scanner",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "debug": "set NODE_ENV=development&&nodemon --inspect=5859 ./index --watch ./ --delay 1.5"
+    },
+    "dependencies": {
+        "axios": "^0.18.1",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "decimal.js": "^10.2.0",
+        "dotenv": "^8.1.0",
+        "express": "^4.17.1",
+        "reconnecting-websocket": "^4.1.10",
+        "uuid": "^3.3.3",
+        "ws": "^6.2.1"
+    },
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb-base": "^13.2.0",
+        "eslint-plugin-import": "^2.18.2",
+        "i": "^0.3.6",
+        "nodemon": "^1.19.1"
+    }
+}

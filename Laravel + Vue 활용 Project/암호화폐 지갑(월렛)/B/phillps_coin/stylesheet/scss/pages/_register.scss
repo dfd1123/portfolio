@@ -1,0 +1,24 @@
+/* register */
+.container--register{
+    
+    @include scrollyArea();
+    padding-top: 20px;
+    max-width: 40rem;
+
+}
+
+.register{
+    
+    &__agree-list{
+        font-size: 0.85em;
+        line-height: 2;
+
+        .chck_style:checked ~ label{
+            color: $mid-gray-00;
+        }
+
+    }
+
+}
+
+/* end register */

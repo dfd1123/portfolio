@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #343434;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  padding: 5px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.ps_blind {
+  position: absolute;
+  top: 0px;
+  left: -9999px;
+}
+
+.bg-color {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F8F8F8;
+  z-index: -1;
+}
+
+.display_none {
+  display: none;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url(../font/Spoqa_Han_Sans_Regular.woff);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url(../font/Spoqa_Han_Sans_Bold.woff);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url(../font/Spoqa_Han_Sans_Light.woff);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url(../font/Spoqa_Han_Sans_Thin.woff);
+  font-weight: 100;
+}
+
+body {
+  font-family: 'spoqa', 'Arial', 'sans-serif';
+  word-break: keep-all;
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #343434;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+#login {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  margin: 0px auto;
+  letter-spacing: -0.5px;
+}
+
+.pusan--logo {
+  text-indent: -9999px;
+  background-image: url(/client/assets/img/login/login_symbol.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40vw;
+  height: 40vw;
+  background-position: center 43%;
+  background-size: 90%;
+  margin: 50px auto;
+}
+
+.pusan--login {
+  max-width: 80%;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+.pusan--login .login--user {
+  color: #C6CEDC;
+  font-size: 0.8em;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pusan--login .login--user.on {
+  opacity: 1;
+}
+
+.pusan--login .login_text_box {
+  display: block;
+  width: 100%;
+  border: 0px none;
+  border-bottom: 1px solid #333;
+  outline: 0px none;
+  padding: 10px 0px;
+  color: #32323C;
+}
+
+.pusan--login .login_text_box::-webkit-input-placeholder {
+  color: #C6CEDC;
+}
+
+.pusan--login .login_text_box:-ms-input-placeholder {
+  color: #C6CEDC;
+}
+
+.pusan--login .login_text_box::-ms-input-placeholder {
+  color: #C6CEDC;
+}
+
+.pusan--login .login_text_box::placeholder {
+  color: #C6CEDC;
+}
+
+.pusan--login .login_text_box.active {
+  border-color: #003F8F;
+}
+
+.pusan--login a {
+  display: block;
+  margin: 10px 0px 28px;
+  text-align: right;
+  font-size: 0.8em;
+  color: #00862F;
+}
+
+.pusan--login__btn {
+  display: block;
+  width: 80%;
+  display: block;
+  border-radius: 30px;
+  background-color: #003F8F;
+  color: #fff;
+  text-align: center;
+  margin: 0px auto;
+  border: 0px none;
+  padding: 20px 0px;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 5px 15px rgba(110, 160, 255, 0.35);
+          box-shadow: 0px 5px 15px rgba(110, 160, 255, 0.35);
+}
+
+.pusan--login__btn:hover, .pusan--login__btn:focus, .pusan--login__btn.active {
+  background-color: #00295c;
+}
+
+.pusan--join h2 {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-align: center;
+  color: #99B1CB;
+}
+
+.pusan--join h2 a {
+  color: #00862F;
+  margin-left: 1em;
+}

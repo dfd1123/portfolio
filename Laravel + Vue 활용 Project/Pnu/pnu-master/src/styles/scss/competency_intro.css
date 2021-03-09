@@ -1,0 +1,258 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #343434;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  padding: 5px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.ps_blind {
+  position: absolute;
+  top: 0px;
+  left: -9999px;
+}
+
+.bg-color {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F8F8F8;
+  z-index: -1;
+}
+
+.display_none {
+  display: none;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url(../font/Spoqa_Han_Sans_Regular.woff);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url(../font/Spoqa_Han_Sans_Bold.woff);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url(../font/Spoqa_Han_Sans_Light.woff);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Spoqa";
+  src: url(../font/Spoqa_Han_Sans_Thin.woff);
+  font-weight: 100;
+}
+
+body {
+  font-family: 'spoqa', 'Arial', 'sans-serif';
+  word-break: keep-all;
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #343434;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+#cp--hd {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 4.2em;
+  padding: 1.5em 5%;
+  color: #fff;
+  z-index: 9999;
+}
+
+#cp--hd:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#cp--hd a {
+  display: block;
+  float: left;
+  width: 5%;
+  height: 16px;
+  background-image: url(/client/assets/img/competency/btn_prev_wh.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+}
+
+#cp--hd a.off {
+  display: none;
+}
+
+#cp--hd h1 {
+  float: left;
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+#cp--hd h1.intro__title {
+  margin: 0px 5%;
+}
+
+._competency {
+  position: relative;
+  padding-top: 7.5em;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/client/assets/img/competency/bg_blue.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+._competency a {
+  color: #fff;
+}
+
+.onlybgcolorwh {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: -99;
+}
+
+.competency--title {
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.competency--title .title__number {
+  position: absolute;
+  top: 7.6rem;
+  left: 5%;
+  font-size: 3.66em;
+  font-weight: 700;
+  color: #2B64AF;
+  opacity: 0.5;
+}
+
+.competency--title .title__en {
+  position: relative;
+  font-size: 1.33em;
+  font-weight: 300;
+  margin-top: 2.8em;
+}
+
+.competency--title .title__ko {
+  margin: 0.8em 0px;
+  font-size: 1.73em;
+  font-weight: 700;
+}
+
+.competency--desc {
+  max-width: 90%;
+  margin: 0px auto;
+  margin-top: 2.7em;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.competency--morebtn {
+  display: inline-block;
+  margin-top: 1.6em;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 2em;
+  padding: 0.7em 2.8em 0.7em 1.5em;
+  background-image: url(/client/assets/img/competency/btn_more.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 137px center;
+  background-size: 6%;
+  font-size: 0.86em;
+}
+
+#start__btnwrap {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 4.33em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+}
+
+#start__btnwrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1em 0px;
+  font-size: 1.33em;
+}

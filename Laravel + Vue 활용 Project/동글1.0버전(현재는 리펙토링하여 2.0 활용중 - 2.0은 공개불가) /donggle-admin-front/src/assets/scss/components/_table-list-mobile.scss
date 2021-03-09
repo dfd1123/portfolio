@@ -1,0 +1,83 @@
+/* COMPONENT - 테이블 모바일전환
+   ========================================================================== */
+
+@include media-mobile-version(ipad) {
+  .filter-search-result {
+    @include font(13px, 400, $gray);
+    padding: 30px 0px;
+    text-align: center;
+    ._num {
+      @include font(13px, 600, $primary-color);
+    }
+  }
+  .inquiry-list-wrap {
+    .in-inquiry {
+      border-bottom: 1px solid $gray-lighter;
+      padding: 14px 12px;
+    }
+    .inquiry-list-choice {
+      @include set-relative;
+      @include z-index(default);
+    }
+    .check-gradi-circle {
+      @include set-absolute($t: 0px, $l: 0px);
+    }
+    .inquiry-list-link {
+      @include set-relative;
+
+      display: block;
+      margin-left: 40px;
+      line-height: 1.4;
+    }
+  }
+  .inquiry-list-link {
+    ._badge {
+      @include font($s: 11px, $w: 500);
+
+      display: block;
+      float: left;
+      width: 54px;
+      min-width: auto;
+      height: 25px;
+      line-height: 25px;
+      padding: 0px;
+      text-align: center;
+    }
+    ._badge._noanswer {
+      background-color: $gray-lighter-03;
+      color: $gray-light;
+    }
+    ._pd_name {
+      @include ellipse(1, 25px);
+      @include font(12px, 500, $gray);
+
+      float: left;
+      width: calc(100% - 54px);
+      padding-left: 8px;
+    }
+    ._tit {
+      @include ellipse(1, 16px);
+      @include font(15px, 500, $gray);
+
+      margin: 10px 0px;
+    }
+    ._inquiry_date {
+      @include font(12px, 300, $gray-md-03);
+
+      > li {
+        display: inline-block;
+      }
+      > li > span {
+        padding-left: 3.5px;
+      }
+    }
+    ._user_name {
+      border-right: 1px solid $gray-lighter;
+      padding-right: 10px;
+      font-weight: 400;
+    }
+    ._q_date {
+      padding: 0px 10px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+/* 
+    PAGEs - cancel_order.scss
+ */
+// 배송지 변경: order/changeAddressView.html
+.l-ordercancel-wrapper {
+  .dg-about-odnum-label {
+    margin: 0px 0px 10px;
+    padding: 0px 20px;
+    border-bottom: 1px solid $light_gray2;
+    color: $gray;
+    > li {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      font-size: $px-12 + rem;
+    }
+    ._num {
+      margin-left: 8px;
+      font-weight: 700;
+    }
+  }
+  .dg-clothes-history-card .in-content ._name {
+    padding: 0px;
+    > a {
+      display: block;
+    }
+  }
+  .dg-clothes-history-card .dg-clothes-thumbnail {
+    margin-left: 0px;
+  }
+  .dg-clothes-history-card .inner-wrap {
+    padding: 5px 20px;
+  }
+  .dg-clothes-history-card .in-content ._price_wrap {
+    margin: 10px 0px 15px;
+  }
+}
+.change-address_end {
+  margin: 46px 0px;
+  padding: 0px 20px;
+  text-align: center;
+  .in-text-group {
+    margin: 46px 0px;
+    line-height: 1.5;
+    font-size: $f-15;
+    color: $gray;
+  }
+  .theme-btn-gradient {
+    font-size: $f-16;
+  }
+}
+//주문취소 및 환불
+.l-ordercancel-wrapper {
+  ._etc_ment {
+    border: 0px none;
+    padding: 8px 0px 0px;
+    font-size: $px-11 + rem;
+  }
+  .dg-cancel-product-group .l-con-article {
+    padding-bottom: 0px;
+  }
+  .dg-order-info-group .in-detail-info .l-con-article .in-subject {
+    margin: 20px 0px 10px;
+  }
+  .dg-order-info-group .in-detail-info .in-reason-detail {
+    padding: 0px;
+  }
+  .dg-order-info-group .in-detail-info ._rd_subject {
+    font-size: $f-13;
+  }
+  .dg-order-info-group .in-detail-info ._rd_textarea {
+    font-size: $f-13;
+  }
+}
+._rd_textarea > textarea::placeholder {
+  font-weight: 200;
+  color: $light_gray2;
+}
+.in-account-info {
+  padding: 0px 20px;
+  > span {
+    font-size: $f-13;
+    font-weight: 200;
+    color: $gray;
+  }
+  .rounded-btn-outline {
+    width: 55px;
+    min-width: auto;
+    height: 18px;
+    line-height: 18px;
+    margin: 0px 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: $f-10;
+    color: $gray;
+  }
+}
+/* i phone 5 이하 */
+@media all and (max-width: 320px) {
+  .in-account-info .rounded-btn-outline {
+    margin: 0px 3px;
+  }
+}
+
+/* i pad */
+@media all and (max-width: 768px) and (min-width: 415px) {
+  .l-ordercancel-wrapper .dg-clothes-history-card .dg-clothes-thumbnail {
+    width: 238px;
+  }
+}
+
+/* i pad pro */
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  .l-ordercancel-wrapper .dg-clothes-history-card .dg-clothes-thumbnail {
+    width: 242px;
+  }
+}

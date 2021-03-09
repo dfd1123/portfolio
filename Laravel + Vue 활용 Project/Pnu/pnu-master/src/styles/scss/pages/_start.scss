@@ -1,0 +1,65 @@
+#pusan--start{
+    @include bgimg(url(/client/assets/img/output/bg_campus.jpg));
+    background-position:center bottom;
+    .onlybg{
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,0.05);
+    }
+    .start--center{
+        @include center(90%);
+        ._title{
+            padding:40px 0px 20px;
+            line-height:1.5;
+            font-size:$f-14;
+            color:$white;
+            > p{
+                font-size:$f-26;
+            }
+            > small{
+                font-size:$f-18;
+                font-weight:400;
+                opacity:0.6;
+            }
+        }
+    }
+}
+.start--start{
+    @include bgimg(url(/client/assets/img/output/Main_icon_01.svg));
+}
+.start--result{
+    @include bgimg(url(/client/assets/img/output/Main_icon_02.svg));
+}
+.startbox{
+    position:relative;
+    width:100%;
+    margin:15px auto;
+    border-radius:8px;
+    padding:30px 0px 30px 27%;
+    background-color:$white;
+    background-position:25px center;
+    background-size:13%;
+    p{
+        font-weight:200;
+        font-size:0.933em;
+    }
+    .text--title{
+        font-weight:700;
+        font-size:1.6rem;
+        margin:6px 0px;
+    }
+}
+.start__btn{
+    position:absolute;
+    top:50%;
+    right:9%;
+    transform:translateY(-50%);
+    @include btn_form(#dcdcdc,#f8f8f8,50%);
+    width:15vw;
+    height:15vw;
+    line-height:15vw;
+    &:hover, &:focus{
+        background-color:$c_btn;
+        color:$text;
+    }
+}

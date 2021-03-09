@@ -1,0 +1,296 @@
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/* 
+    ----------------- 
+        array 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+/* 
+    --------------------------------------------------------------------
+            * beatz_chart component *
+    --------------------------------------------------------------------
+*/
+.beat_chart_list {
+  width: 100%;
+}
+
+.beat_chart_list table {
+  font-size: 18px;
+}
+
+.beat_chart_list table thead th:first-child {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.beat_chart_list table thead th:last-child {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.beat_chart_list table thead div {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.beat_chart_list table tbody div {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.beat_chart_list table tbody .c-song-title {
+  height: 3.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 4em;
+}
+
+.beat_chart_list table tbody .c-song-title span {
+  color: #fff;
+}
+
+.beat_chart_list table tbody .c-song-title .thumb-mini {
+  top: 0;
+  left: 0;
+  -webkit-transform: none;
+          transform: none;
+  background-color: ghostwhite;
+}
+
+.beat_chart_list table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.beat_chart_list table th {
+  padding: 11px 0;
+  font-size: 0.85em;
+  background-color: rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+}
+
+.beat_chart_list table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  vertical-align: middle;
+  height: 5.5em;
+  text-align: center;
+}
+
+.beat_chart_list table th.th-check,
+.beat_chart_list table td.td-check {
+  width: 3%;
+}
+
+.beat_chart_list table th.th-rank,
+.beat_chart_list table td.td-rank {
+  width: 5%;
+}
+
+.beat_chart_list table th.th-rank_info,
+.beat_chart_list table td.td-rank_info {
+  width: 4%;
+}
+
+.beat_chart_list table th.th-song,
+.beat_chart_list table td.td-song {
+  width: 20%;
+  text-align: left;
+}
+
+.beat_chart_list table th.th-pd,
+.beat_chart_list table td.td-pd {
+  width: 10%;
+}
+
+.beat_chart_list table th.th-mood,
+.beat_chart_list table td.td-mood {
+  width: 8%;
+}
+
+.beat_chart_list table th.th-genre,
+.beat_chart_list table td.td-genre {
+  width: 11%;
+}
+
+.beat_chart_list table th.th-play,
+.beat_chart_list table td.td-play {
+  width: 5%;
+}
+
+.beat_chart_list table th.th-list,
+.beat_chart_list table td.td-list {
+  width: 5%;
+}
+
+.beat_chart_list table th.th-share,
+.beat_chart_list table td.td-share {
+  width: 5%;
+}
+
+.beat_chart_list table th.th-like,
+.beat_chart_list table td.td-like {
+  width: 6%;
+}
+
+.beat_chart_list table th.th-more,
+.beat_chart_list table td.td-more {
+  width: 4%;
+}
+
+.beat_chart_list table th.th-cart,
+.beat_chart_list table td.td-cart {
+  width: 14%;
+}
+
+.chart-ctrl-btn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url("../../img/btn/control_btn02.svg");
+  cursor: pointer;
+}
+
+.chart-ctrl-btn-play {
+  background-position: 0 0;
+}
+
+.chart-ctrl-btn-play:hover {
+  opacity: 0.5;
+}
+
+.chart-ctrl-btn-palse {
+  background-position: -30px 0;
+}
+
+.chart-ctrl-btn-list {
+  background-position: -60px 0;
+}
+
+.chart-ctrl-btn-list:hover {
+  background-position: -90px 0;
+}
+
+.chart-ctrl-btn-share {
+  background-position: -120px 0;
+}
+
+.chart-ctrl-btn-share:hover {
+  background-position: -150px 0;
+}
+
+.chart-ctrl-btn-like {
+  background-position: -180px 0;
+}
+
+.chart-ctrl-btn-like:hover {
+  background-position: -210px 0;
+}
+
+.chart-ctrl-btn-like.active {
+  background-position: -210px 0;
+}
+
+.chart-ctrl-btn-like + em {
+  color: #fff;
+  font-size: 0.85em;
+  position: relative;
+  top: -8px;
+  left: 3px;
+}
+
+.chart-ctrl-btn-more {
+  background-position: 0 -30px;
+}
+
+.chart-ctrl-btn-more:hover {
+  background-position: -30px -30px;
+}
+
+.chart-ctrl-btn-cart {
+  width: auto;
+  border-radius: 10px;
+  background-color: #7300df;
+  color: #fff;
+  border: 0;
+  height: 2.2em;
+  position: relative;
+  line-height: 2.2em;
+  padding: 0 0.7em 0 2.8em;
+  cursor: pointer;
+}
+
+.chart-ctrl-btn-cart .chart-ctrl-btn {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  background-position: -60px -30px;
+}
+
+.chart-ctrl-btn-cart b {
+  font-weight: bold;
+  color: #fff;
+}
+
+.chart-ctrl-btn-cart:hover {
+  background-color: #5900ac;
+}
+
+.sub-section .beat_chart_list table th {
+  border-top: 2px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  background-color: transparent;
+}
+
+.sub-section .beat_chart_list table thead div {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.sub-section .beat_chart_list table tbody div {
+  color: #333333;
+}
+
+.sub-section .beat_chart_list table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.sub-section .beat_chart_list table td {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.13);
+}
+
+.sub-section .beat_chart_list table tbody .c-song-title span {
+  color: #333333;
+}
+
+.sub-section .chart-ctrl-btn {
+  background-image: url("../../img/btn/control_btn02-dark.svg");
+}
+
+.sub-section .chart-ctrl-btn-like + em {
+  color: rgba(51, 51, 51, 0.45);
+}
+/*# sourceMappingURL=beatz_chart.css.map */

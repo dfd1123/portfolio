@@ -1,0 +1,71 @@
+@extends('admin.layouts.app')
+
+@section('content')
+
+<!-- Breadcrumbs-->
+<ol class="breadcrumb tsa-top-tit">
+	<li class="breadcrumb-item active">
+	{{ __('admin_qna.inq')}}
+	</li>
+</ol>
+
+<div class="card mb-3 tsa-card">
+	<div class="card-header">
+	{{ __('admin_qna.ansedit')}}
+	</div>
+	<div class="card-body">
+		<form method="post" action="{{route('admin.qna_answer_update',$qna->id)}}">
+			@csrf
+			<div class="table-responsive tsa-event-table">
+				<table class="table table-bordered cate_adm_table" width="100%" cellspacing="0">
+					<tbody>
+						<tr>
+							<th style="width:10%;">{{ __('admin_qna.tt')}}</th>
+							<td>
+								{{$qna->title}}
+							</td>
+						</tr>
+						<tr>
+							<th style="width:10%;">작성자(사용자계정)</th>
+							<td>
+								{{$qna->createdby}}
+							</td>
+						</tr>
+						<tr>
+							<th style="width:10%;">{{ __('admin_qna.con')}}</th>
+							<td>
+                            {!! $qna->description !!}
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+            <div>
+                <h5>{{ __('admin_qna.answer2')}}</h5>
+                <textarea rows="15" name="description" id="editor" class="form-control" required="required">{!! $qna_answer->description !!}</textarea>
+            </div>
+			<div class="mint_btn_group">
+				<button type="submit" class="btn btn-default mint_btn">
+				{{ __('admin_qna.answer4')}}
+				</button>
+				<button type="button" class="btn btn-default mint_btn" onclick="location.href='{{route('admin.qna_list',$qna->country)}}'">
+				{{ __('admin_qna.con')}}
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script>
+	$('#editor')
+		.summernote({
+			height: 350,
+			lang: 'ko-KR',
+			disableDragAndDrop: true
+		});
+	$('.note-editing-area').css('word-break', 'break-all');
+	$('.note-group-select-from-files').css('display', 'none');
+</script>
+
+@endsection
+

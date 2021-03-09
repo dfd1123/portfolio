@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 
+    --------------------------------------------------------------------
+            * mood_genre_btns component *
+    --------------------------------------------------------------------
+*/
+
+// 분위기 or 장르 고르는 선택버튼들
+
+.mood-genre-choice {
+  width: 100%;
+  margin: 10px 0;
+
+  &-inner {
+    width: 100%;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &-list {
+    text-align: left;
+  }
+
+  &-btn {
+    display: inline-block;
+    border: 1px solid #bdb4cc;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: all 0.2s;
+    margin-bottom: 10px;
+
+    label {
+      padding: 0.45em 1em;
+      display: inline-block;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    span {
+      color: #bdb4cc;
+    }
+  }
+}

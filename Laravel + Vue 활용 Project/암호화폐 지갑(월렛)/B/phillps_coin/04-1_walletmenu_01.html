@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>philips pay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="stylesheet/scss/vendors/normalize-custom.css">
+        <link rel="stylesheet" href="css/common.css">
+
+        <!-- 개별 css -->
+        <link rel="stylesheet" href="css/wallet.css">
+        <link rel="stylesheet" href="css/wallet_01.css">
+        
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="app" class="app">
+
+            <!-- 헤더 -->
+            <header class="header header--type01">
+                <button type="button" class="header__btn header__btn--left header__btn--prev" onClick="location.href='./03_main_make_wallet(after).html'">
+                    <b class="hide-text">이전버튼</b>
+                </button>
+                <h1 class="header__center">보내기</h1>
+            </header>
+            <!-- end 헤더 -->
+            <!-- 컨텐츠 -->
+            <div class="content_wrapper">
+                <!-- 각 페이지마다 다른 컨테이너 -->
+                <div class="container container--wallet01">
+                    <div class="scrl-wrap">
+                        <div class="basic_panel">
+                            <h2 class="basic_panel__title">사용지갑</h2>
+                            <div class="basic_panel__contents">
+                                <span class="wallet__etc-info wallet__adress">ETH - Pdgkd123G213d fd1321F3EF</span>
+                            </div>
+                        </div>
+                        <div class="basic_panel--dark">
+                            <h2 class="basic_panel--dark__title">보낼수량</h2>
+                            <div class="basic_panel--dark__contents">
+                                <table class="table_type01">
+                                    <tr class="table_type01__tr">
+                                        <th class="table_type01__th">보유수량</th>
+                                        <td class="table_type01__td">
+                                            <span>0000.0000</span>
+                                            <em class="tbl_unit">eth</em>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_type01__tr table_type01__tr--direct-input">
+                                        <th class="table_type01__th">
+                                            <button type="button" class="btn_mini btn_mini01">최대</button>
+                                        </th>
+                                        <td class="table_type01__td">
+                                            <input type="text" placeholder="0" class="table_type01__input">
+                                            <em class="tbl_unit">eth</em>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <h2 class="basic_panel--dark__title">지갑주소 검색</h2>
+                            <div class="basic_panel--dark__contents">
+                                <div class="send__adrs-sch">
+                                    <button type="button" class="send__adrs-sch__btn">
+                                        <i class="icon icon--qr"></i>
+                                        <span>qr코드 스캔</span>
+                                    </button>
+                                    <button type="button" class="send__adrs-sch__btn" onClick="popup_open('#popup_adrs_direct')">
+                                        <i class="icon icon--direct"></i>
+                                        <span>직접입력</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <h2 class="basic_panel--dark__title">수령자 정보</h2>
+                            <div class="basic_panel--dark__contents">
+                                <div class="send__person-info">
+                                    <!-- 정보 입력되지 않았을 때 -->
+                                    <p class="send__person-info--nothing">정보가 입력되지 않았습니다.</p>
+                                    <!-- //end -->
+                                    <!-- 정보 입력됐을 때 -->
+                                    <div class="send__person-info--thing">
+                                        <table class="table_type02">
+                                            <tr class="table_type02__tr">
+                                                <th class="table_type02__th">이름</th>
+                                                <td class="table_type02__td">김의순</td>
+                                            </tr>
+                                            <tr class="table_type02__tr">
+                                                <th class="table_type02__th">아이디</th>
+                                                <td class="table_type02__td">dkdlel@dkdlel.com</td>
+                                            </tr>
+                                            <tr class="table_type02__tr">
+                                                <th class="table_type02__th">지갑주소</th>
+                                                <td class="table_type02__td table_type02__td-adrs">wekjrweiolkfredikmaiszoldfjwerhguiowerfu8iwoesdnih</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- //end -->
+                                </div>
+                                <div class="caution-group">
+                                    <h3 class="caution-group__title">유의사항</h3>
+                                    <p class="caution_list">※ 코인을 전송한 이후에는 취소가 불가능합니다.</p>
+                                    <p class="caution_list">※ 코인 전송에 따른 손실에 대해 필립스코인은 책임지지 않습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bt-fix-btn">
+                        <button type="button" class="btn_solid btn_solid02" onclick="alert_popup('#alert_chck_send_coin')">보내기</button>
+                    </div>
+
+                    <div class="pop-up">
+                        <div class="pop-up__wrapper" id="popup_adrs_direct">
+                            <header class="header header--type01">
+                                <button type="button" class="header__btn header__btn--left header__btn--prev" onClick="popup_close(this)">
+                                    <b class="hide-text">닫기</b>
+                                </button>
+                                <h1 class="header__center">지갑주소 직접입력</h1>
+                            </header>
+                            <div class="container">
+                                <div class="basic_panel">
+                                    <h2 class="basic_panel__title">지갑주소 입력</h2>
+                                    <div class="basic_panel__contents">
+                                        <textarea class="basic_panel__textarea" id="adrs_textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bt-fix-btn">
+                                <button type="button" class="btn_solid btn_solid02_disable" disabled id="adrs_submit" onClick="alert_popup('#alert_nothing_wlt_adrs')">입력완료</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end 각 페이지마다 다른 컨테이너 -->
+            </div>
+            <!-- end 컨텐츠  -->
+
+            <!-- alert 팝업 까만배경 -->
+            <div class="alert_black_overlay"></div>
+            <!-- end alert 팝업 까만배경 -->
+            <!-- alert 팝업 보이는 영역 -->
+            <div class="alert_popup_overlay">
+                <table class="alert_popup_tbl" id="alert_chck_send_coin">
+                    <tbody>
+                        <tr>
+                            <td class="alert_popup_tbl_td">
+                                <div class="alert_popup">
+                                    <span class="alert_popup_icon">
+                                        <img src="img/icon/pop_send.png" alt="alert pop icon">
+                                    </span>
+                                    <p class="alert_popup_txt">김의순님에게 0000.0000 <em class="unit">eth</em>코인을<br>전송하시겠습니까?</p>
+                                    <div class="alert_popup_btns">
+                                        <button type="button" class="alert_popup_btn alert_popup_btn01">아니요</button>
+                                        <button type="button" class="alert_popup_btn alert_popup_btn02">예</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="alert_popup_tbl" id="alert_nothing_wlt_adrs">
+                    <tbody>
+                        <tr>
+                            <td class="alert_popup_tbl_td">
+                                <div class="alert_popup">
+                                    <span class="alert_popup_icon">
+                                        <img src="img/icon/pop_signal.png" alt="alert pop icon">
+                                    </span>
+                                    <p class="alert_popup_txt">해당 지갑주소의 정보가 없습니다.</p>
+                                    <button type="button" class="alert_popup_btn alert_popup_btn02" onclick="alert_modal_overlay();">닫기</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end alert 팝업 보이는 영역 -->
+        </div>
+
+        <script>
+        
+            // 팝업페이지 소스
+            function popup_open(name){
+                $(name).parents('.pop-up').show();
+                $(name).addClass('popup_open');
+            }
+            
+            function popup_close(name){
+                $('.pop-up').fadeOut(100);
+                $(name).parents('.pop-up__wrapper').delay(1000).removeClass('popup_open');
+            }
+            // 팝업페이지 소스
+
+            $(function(){
+
+                // 지갑주소 다입력하면 버튼활성화
+                $('#adrs_textarea').change(function(){
+
+                    var thisVal = $(this).val();
+                    if( thisVal !== ''){
+                        $('#popup_adrs_direct .btn_solid02_disable').attr('disabled', false).addClass('active');
+                    }else{
+                        $('#popup_adrs_direct .btn_solid02_disable').attr('disabled', true).removeClass('active');
+                    }
+
+                })
+                // end
+
+            })
+            
+            //alert 팝업 소스
+            $('.alert_popup_overlay').click(function(e){
+                
+                var thisclassname = $(e.target).attr('class');
+                if(thisclassname == 'alert_popup_tbl_td'){
+                    alert_modal_overlay();
+                }
+        
+            }) // 1. 까만배경 클릭할 떄 alert팝업 꺼짐
+            
+            function alert_popup(name){
+            
+                $('.alert_black_overlay').fadeIn(100);
+                $('.alert_popup_overlay').fadeIn(100);
+                $(name).fadeIn();
+                $(name).find('.alert_popup').addClass('alert_popup_visible');
+                
+            } // 2. 까만배경열리고, 보이는 영역 보이고, alert팝업 효과주기 
+        
+            function alert_modal_overlay(){
+                
+                $('.alert_popup_overlay').find('.alert_popup_visible').removeClass('alert_popup_visible');
+                $('.alert_popup_overlay').fadeOut(400);
+                $('.alert_popup_tbl').fadeOut();
+                $('.alert_black_overlay').fadeOut(500);
+        
+            } // 3. 보이는 영역 애니메이션 해제되고, 까만배경 닫히고, 보이는 영역 사라지기
+            //alert 팝업 소스
+
+        </script>
+
+    </body>
+
+</html>

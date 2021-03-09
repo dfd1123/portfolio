@@ -1,0 +1,107 @@
+.estimate_request_wrap{
+    width:100%;
+}
+.sqm_wrap{
+    padding: 1rem 0 0 0;
+}
+.request_box{
+    width:90%;
+    margin:0 auto;
+    background:#fff;
+}
+.request_box p{
+    width: 84%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto 21px;
+    color: #a0a5af;
+}
+.request_box p em{
+    font-size:11px;
+    margin-left:10px;
+}
+
+.input_div{
+    width: 84%;
+    margin: 0px auto 12px;
+    color: #a0a5af;
+    border-bottom: #d5dcea 1px solid;
+}
+
+.input_div input{
+    padding: 11px;
+}
+
+.input_div .title{
+    color: #939aa7;
+}
+.input_div .name{
+    border:none;
+    background: transparent;
+    width:100%;
+}
+.input_div .name:focus{
+    border-bottom:1px solid #a0a5af !important;
+}
+.input_div input{
+    border: transparent;
+    
+    padding: 0.5em;
+}
+.input_div input:focus{
+    outline: none;
+    border: none !important;
+    box-shadow: none;
+}
+
+.input_div .blue_button{
+    float:right;
+    color:#00a2ff;
+    border:none;
+    background-color:transparent;
+    font-size: 11px;
+}
+.input_div .gray_button{
+    float:right;
+    color:#a0a5af;
+    border:none;
+    background-color:transparent;
+    font-size: 13px;
+    padding:5px 10px;
+}
+.request_box .certification_ment{
+    text-align:right;
+    font-size:11px;
+    margin:0 28px;
+    width:auto;
+    padding:5px 0;
+    min-width: inherit;
+}
+
+.regist1_div{
+        width:100%;
+        background:#fff;
+        padding: 1.5em 0;
+}
+.regist1_div p{
+    width: 84%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto 12px;
+    color: #a0a5af;
+}
+.regist1_div span{
+    color:#939aa7;
+}
+.add_img_wrap .title{
+    color:#939aa7;
+    font-size:15px;
+    min-width: inherit;
+    margin:0 0 10px 0;
+}
+.add_img_wrap .content{
+    color:#bbbbbb;
+    font-size:12px;
+    min-width: inherit;
+    margin:0;
+}

@@ -1,0 +1,1630 @@
+@import "../helpers/mixin";
+
+.wrapper--planner {
+    
+    padding-top: $hd-title-height;
+    padding-bottom: 6rem;
+
+    &__scroll-area {
+        @include scrollArea(100%);
+        padding-bottom: 8rem;
+    }
+
+    color: $navy-color;
+
+    &__btn{
+        position: relative;
+        bottom: 0;
+        padding: 0;
+        border-top: 0;
+        padding-bottom: 2rem;
+        border-top: 0;
+        .button{
+            @include navyButton;
+        }
+
+        .button--ask{
+            color: $main-color;
+        }
+
+        .button--apply{
+            color: #fff;
+        }
+
+    }
+
+    &__btn_02{
+        padding: 0 2rem;
+        bottom: 6.5rem;
+        z-index: 1;
+    }
+
+    &-status{
+        overflow: hidden;
+
+        &__container{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+    }
+
+}
+
+.plnr {
+    font-size: $parent-normal-font;
+    color: $navy-color;
+
+    &-picture {
+
+        height: 12rem;
+        position: relative;
+
+        &__bg {
+
+            @include bgStyle(cover);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+
+        }
+        
+        &__bg:before{
+
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.47;
+
+        }
+
+        &__bg__caution{
+
+            font-size: 0.85em;
+            color: #fff;
+            font-weight: 100;
+            padding: 10px 10px 10px;
+            display: inline-block;
+            line-height: 1.5;
+            position: absolute;
+            bottom: 55px;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        &__profile {
+            
+            @include bgStyle(cover);
+            @include position($b: -4rem, $l: 50%, $transX: -50%, $transY: 0);
+            width: 8rem;
+            height: 8rem;
+            background-color: #f4f7f9;
+            border-radius: 50%;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+
+            &--set{
+                
+                @include bgStyle(55%);
+                background-image: url(/img/logo/logo-full-tripik-white.svg);
+
+            }
+        }
+
+        .plnr-grade{
+
+            @include bgStyle(contain);
+            position: absolute;
+            bottom: 0;
+            right: -5px;
+            width: 45px;
+            height: 50px;
+            display: inline-block;
+
+            &--01{
+
+                background-image: url(/img/icon/icon-grade-01.svg);
+
+            }
+
+            &--02{
+
+                background-image: url(/img/icon/icon-grade-02.svg);
+
+            }
+
+            &--03{
+
+                background-image: url(/img/icon/icon-grade-03.svg);
+
+            }
+
+        }
+
+    }
+
+    &-info {
+
+        padding-top: 5rem;
+        text-align: center;
+        position: relative;
+
+        &__type {
+            color: $sky-blue-color;
+            font-size: $normal-small-font;
+        }
+
+        &__type.is-set{
+            @include bgStyle(10px);
+            background-image: url(/img/icon/icon-arrow-bottom-navy.svg);
+            display: inline-block;
+            padding-right: 17px;
+            background-position: 100% 50%;
+        }
+
+        &__name {
+            @include fontStyle(1.2em, bold, inherit);
+            @include paddingLeftRight2rem;
+            margin: 0.3rem 0;
+        }
+
+        &__name.is-set{
+
+            @include fontStyle(1.2em, bold, inherit);
+            border: 0;
+            text-align: center;
+            width: 100%;
+
+            &:after{
+                @include bgStyle(80%);
+                width: 28px;
+                height: 23px;
+                display: inline-block;
+                content: '';
+                background-image: url(/img/icon/icon-edit-gray.svg);
+                position: relative;
+                top: 2px;
+            }
+
+        }
+
+        &__score {
+            text-align: center;
+            margin: 1.8rem 0 2rem;
+        }
+
+        &__score__list {
+            text-align: center;
+            display: inline-block;
+            margin: 0 13px;
+        }
+
+        &__score__list .rating {
+            font-size: inherit;
+        }
+
+        &__num {
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        &__label {
+            @include fontStyle(0.75em, 200, inherit);
+        }
+
+    }
+
+    &-like{
+
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        font-size: 0.85em;
+        display: inline-block;
+        background-image: url(/img/icon/icon-like-off.svg);
+        padding-right: 28px;
+        background-size: 52%;
+        background-repeat: no-repeat;
+        background-position: right center;
+
+    }
+
+    #check_like_plnr:checked + .plnr-like{
+
+        background-image: url(/img/icon/icon-like-on.svg);
+
+    }
+
+    &-estimate {
+        @include fontStyle($normal-font, 300, #fff);
+
+        width: 90%;
+        max-width: 350px;
+        display: block;
+        margin: 1rem auto;
+        background-color: #00beda;
+        border-radius: 5px;
+        padding: 0.9rem 1.5rem;
+        text-align: right;
+        position: relative;
+
+        &__label {
+            @include position($t: 50%, $l: 0, $transX: 0, $transY: -50%);
+            padding: 0 1.5rem;
+            border-right: 1px solid #fff;
+        }
+
+        &__price {
+            @include fontStyle(1.3em, bold, inherit);
+            margin-right: 5px;
+        }
+    }
+
+    &-intro {
+
+        font-size: 17px;
+        margin: 1.7rem 0;
+        padding: 0 2rem;
+        text-align: center;
+
+        &__text {
+            @include fontStyle($normal-small-font, 100, inherit);
+            line-height: 1.4;
+        }
+
+        &.is-set{
+
+            margin: 3rem 0 4rem;
+
+            .plnr-intro__text{
+                color: rgba(#262626, 0.3);
+                display: inline-block;
+            }
+
+            .plnr-intro__text:before{
+                @include bgStyle(80%);
+                content: '';
+                background-image: url(/img/icon/icon-add-navy.svg);
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                position: relative;
+                top: 2px;
+                margin-right: 5px;
+            }
+
+        }
+
+    }
+
+    
+
+}
+
+.plnr-category {
+    @include fontStyle(17px, inherit, inherit);
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid #f4f7f9;
+    position: relative;
+    margin-top: 2.5rem;
+
+    &__list {
+
+        @include fontStyle(0.75em, inherit, inherit);
+        text-align: center;
+        display: inline-block;
+        width: 23%;
+        border-right: 1px solid $border-color;
+
+        label {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:last-of-type {
+            border-right: 0;
+        }
+
+    }
+
+    &__icon {
+        @include bgStyle(contain);
+        display: block;
+        width: 37px;
+        height: 37px;
+        margin: 0 auto 10px;
+
+        &--01 {
+            @include bgStyle(90%);
+            background-image: url(/img/btn/btn-category-01home_off.svg);
+        }
+
+        &--02 {
+            background-image: url(/img/btn/btn-category-02product_off.svg);
+        }
+
+        &--03 {
+            background-image: url(/img/btn/btn-category-03pplio_off.svg);
+        }
+
+        &--04 {
+            @include bgStyle(90%);
+            background-image: url(/img/btn/btn-category-04review_off.svg);
+        }
+    }
+
+    &__list.is-active {
+
+        .plnr-category__icon--01 {
+            background-image: url(/img/btn/btn-category-01home_on.svg);
+        }
+
+        .plnr-category__icon--02 {
+            background-image: url(/img/btn/btn-category-02product_on.svg);
+        }
+
+        .plnr-category__icon--03 {
+            background-image: url(/img/btn/btn-category-03pplio_on.svg);
+        }
+
+        .plnr-category__icon--04 {
+            background-image: url(/img/btn/btn-category-04review_on.svg);
+        }
+    }
+
+    &__indicator {
+        height: 3px;
+        background-color: $main-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.3s;
+    }
+}
+
+@for $i from 1 to 5 {
+    #check_plnr_info_0#{$i}:checked
+        ~ .plnr-contents-wrapper
+        .plnr-contents--0#{$i} {
+        display: block;
+    }
+}
+
+.plnr-contents {
+
+    @include paddingLeftRight2rem;
+    display: none;
+    font-size: $parent-normal-font;
+
+    &--01,
+    &--03 {
+        padding-top: 1.8rem;
+    }
+
+    &--02{
+
+        padding-top: 2.5rem;
+
+    }
+
+    &--04{
+        padding-top: 3rem;
+        padding-right: 0;
+    }
+
+    &__tit {
+        padding: 1.5rem 0 0.8rem;
+        font-weight: 300;
+    }
+
+    &__amount{
+        font-size: $small-font;
+        padding-left: 5px;
+    }
+
+}
+
+.plnr-certify {
+    background-color: $bg-01-color;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    margin-bottom: 2rem;
+
+    &__step {
+        display: inline-block;
+        position: relative;
+        font-size: 0.85em;
+        width: 25%;
+        font-weight: 100;
+        padding-top: 5px;
+
+        &:before {
+            width: 11px;
+            height: 11px;
+            background-color: $light-blue-color;
+            border-radius: 50%;
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:nth-child(2):after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 200%;
+            height: 2px;
+            background-color: #cad4dd;
+            top: -15px;
+            left: -50%;
+        }
+
+        &.is-checked {
+            font-weight: 500;
+        }
+
+        &.is-checked:before {
+            @include bgStyle(40%);
+            width: 30px;
+            height: 30px;
+            top: -30px;
+            background-image: url(/img/icon/icon-check-complt-light.svg);
+            background-color: $main-color;
+            z-index: 1;
+        }
+
+        &__btn {
+            background-size: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            top: -30px;
+            background-image: url(/img/icon/icon-add-light.svg);
+            background-color: #cad4dd;
+            z-index: 2;
+            border-radius: 50%;
+            position: absolute;
+            border: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.plnr-grade-panel{
+
+    padding: 3rem 0;
+    border: 1px solid #E1E6EA;
+    border-left: 0;
+    border-right: 0;
+    position: relative;
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+    /* height: 9rem; */
+    font-size: 15px;
+    line-height: 1.4;
+
+    .plnr-grade{
+
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #F4F7F9;
+
+        &--02{
+
+            @include bgStyle(contain);
+            background-image: url(/img/icon/icon-desc-grade-02.svg);
+
+        }
+
+    }
+
+    .plnr-grade-btn{
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        font-size: 0.68em;
+        background-color: #F4F7F9;
+        border: 0;
+        padding: 0.8em;
+        border-radius: 30px;
+        color: #00244C;
+
+        @include xsm{
+            bottom: 15px;
+            top: unset;
+            transform: unset;
+        }
+
+    }
+
+}
+
+.plnr-desc{
+
+    font-size: 17px;
+    border-bottom: 1px solid $border-color;
+
+    &:nth-last-child(2){
+
+        border-bottom: 0;
+
+    }
+
+    &__group {
+        padding-bottom: 1.5rem;
+
+    }
+
+    &__list {
+        font-size: 0.85em;
+        padding-left: 12px;
+        line-height: 1.8;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 4px;
+            height: 4px;
+            border: 1px solid $main-color;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+
+    }
+
+    &__input {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        height: 2.5rem;
+
+        input{
+
+            @include iosInput;
+            width: 100%;
+            font-size: 0.85em;
+            padding-left: 12px;
+            line-height: 1.8;
+            border: 0;
+            border-bottom: 1px solid $navy-color;
+            padding-left: 25px;
+            height: 100%;
+            outline: none;
+
+            &::placeholder{
+
+                color: $light-blue-color;
+
+            }
+
+        }
+
+        input.pd_l_none{
+            padding-left: 12px;
+        }
+
+        .plus-btn{
+
+            @include bgStyle(40%);
+            width: 25px;
+            height: 100%;
+            background-color: transparent;
+            background-image: url(/img/icon/icon-add-mint.svg);
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 0;
+
+        }
+
+        .minus-btn{
+            @include bgStyle(40%);
+            width: 25px;
+            height: 100%;
+            background-color: transparent;
+            background-image: url(/img/icon/icon-minus-navy.svg);
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 0;
+        }
+
+    }
+
+    &__input.mb_10{
+        
+        margin-bottom: 8px;
+
+        &:first-child{
+            margin-bottom: 15px;
+        
+            input{
+                border-bottom: 1px solid rgba($navy-color, 0.5);
+            }
+            
+        }
+
+    }
+
+}
+
+.trip-product,
+.plnr-pplio{
+
+    &__group{
+        
+        overflow: hidden;
+
+    }
+
+    &__list {
+
+        width: 48%;
+        float: left;
+        margin-right: 3%;
+        margin-bottom: 20px;
+
+        &:nth-child(2n){
+
+            margin-right: 0;
+
+        }
+
+        .rating-stars__total{
+
+            font-size: 0.75em;
+            position: relative;
+            top: -3px;
+            padding-left: 5px;
+
+        }
+
+        .rating-stars__group {
+            margin-top: 1rem;
+        }
+
+    }
+
+    &__etc {
+
+        @include fontStyle($small-font, 100, #899BAF);
+        margin-bottom: 0.7rem;
+        display: inline-block;
+
+    }
+
+    &__tit{
+
+        @include fontStyle(0.75em, 400, inherit);
+        @include textOverflow(3);
+        line-height: 1.5;
+
+    }
+
+    &__thum {
+
+        @include bgStyle(cover);
+        width: 100%;
+        height: 10rem;
+        background-color: $light-blue-color;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+
+    }
+
+}
+
+.plnr-option{
+
+    &__admit{
+
+        @include fontStyle(0.75em, 100, $navy-color);
+        background-color: $bg-01-color;
+        text-align: center;
+        padding: 2rem 1rem;
+        border-radius: 5px;
+        line-height: 1.3;
+
+    }
+        
+    .plnr-trip-product__admit--after{
+
+        @include fontStyle(0.75em, 100, $navy-color);
+        text-align: center;
+        margin-bottom: 20px;
+
+        p{
+            padding: 1rem 0 1.5rem;
+        }
+
+        .button{
+
+            @include buttonStyle(50px, 42px, #fff, 16px);
+            background-color: $main-color;
+
+        }
+
+    }
+        
+    .plnr-pplio-admit{
+
+        &--after{
+
+            @include fontStyle(0.75em, 100, $navy-color);
+    
+            .button{
+    
+                @include buttonStyle(50px, 30px, #fff, 0.9em);
+                background-color: $main-color;
+    
+            }
+
+        }
+
+        &__card{
+
+            width: 47%;
+            height: 13rem;
+            border-radius: 5px;
+            border: 1px solid $border-color;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:active{
+
+                background-color: darken(#fff, 2.5%);
+
+            }
+
+        }
+
+        &__text{
+
+            color: #7E7E7E;
+
+            &:before{
+
+                @include bgStyle(cover);
+                content: '';
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                background-image: url(/img/icon/icon-add-mint.svg);
+                margin-right: 5px;
+
+            }
+
+        }
+
+    }
+
+}
+
+.plnr-pplio{
+
+    &__thum{
+
+        height: 13rem;
+
+    }
+
+}
+
+.plnr-review__wrapper{
+
+    .review__pictures-list{
+        @include bgStyle(cover);
+        width: 140px;
+        height: 140px;
+    }
+
+}
+
+.plnr-review-pic{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.plnr-review-hd{
+
+    position: relative;
+    padding-bottom: 1.5rem;
+    padding-right: 2rem;
+
+    .rating-stars__stars{
+        font-size: 21px;
+    }
+
+    .rating-stars__average{
+        font-size: 1em;
+    }
+
+    .button{
+
+        @include buttonStyle(50px, 42px, #fff, 16px);
+        background-color: $main-color;
+        margin-top: 1.5rem;
+    
+
+    }
+
+    &__tit{
+
+        font-size: $normal-font;
+        padding-bottom: 12px;
+        display: inline-block;
+
+    }
+
+    &__select{
+
+        @include bgStyle(10px);
+        @include position($t: 0, $r: 2rem, $transX: 0, $transY: 0);
+        border: 0;
+        box-shadow: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        font-size: 0.75em;
+        padding: 4px;
+        color: $navy-color;
+        background-image: url(/img/icon/icon-arrow-bottom-navy.svg);
+        background-position: 90% 50%;
+        padding-right: 30px;
+
+    }
+
+}
+
+.user-list{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem 1rem 5.2rem;
+
+    &__thum{
+
+        @include position($t: 50%, $l: 0, $transX: 0, $transY: -50%);
+        @include bgStyle(contain);
+        width: 4.5rem;
+        height: 4.5rem;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $bg-01-color;
+
+    }
+
+    &__name{
+
+        width: 100%;
+        font-weight: bold;
+        font-size: 0.95em;
+        margin-bottom: 7px;
+
+    }
+
+    &__date{
+
+        @include fontStyle($small-font, 200, #6a6a6a);
+
+    }
+
+    .rating-stars__group{
+
+        @include position($r: 2rem, $b: 0.8rem, $transX: 0, $transY: 0);
+
+    }
+
+}
+
+.trip-review{
+
+    &__list{
+
+        padding: 1rem 0 2rem;
+        position: relative;
+
+        &:last-child{
+
+            border-bottom: 0;
+
+        }
+
+        &:before{
+            @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+            width: calc(100% - 2rem);
+            height: 1px;
+            content: '';
+            background-color: #E1E6EA;
+        }
+
+    }
+
+    &__list__btns{
+
+        @include position($r: 2rem, $t: 1.5rem, $transX: 0, $transY: 0);
+        font-size: $small-font;
+
+    }
+
+    &__list__btn{
+
+        @include fontStyle(inherit, 100, #6A6A6A);
+        border: 0;
+        background-color: transparent;
+        border-right: 1px solid $border-color;
+
+
+        &:last-of-type{
+            border-right: 0;
+        }
+
+    }
+
+    &__list__text{
+
+        @include fontStyle(0.75em, 200, inherit);
+        line-height: 1.6;
+        padding-right: 2rem;
+
+    }
+
+    &__list--nothing{
+
+        padding: 3rem 0;
+        text-align: center;
+        border: 0;
+
+        img{
+
+            width: 45px;
+            display: block;
+            margin: 0 auto 10px;
+
+        }
+
+        span{
+
+            @include fontStyle(0.75em, 200, inherit);
+
+        }
+
+    }
+
+}
+
+.plnr-ani{
+
+    
+    &__earth{
+
+        @include position ($b: 0, $l: -2.5%, $transX: 0, $transY: 0);
+
+        background: linear-gradient(to top, #00BCDB, #00BCDB, #00D3D9, #00DBD8);
+        width: 105%;
+        height: 65vh;
+        border-top-left-radius: 46%;
+        border-top-right-radius: 46%;
+        opacity: 0;
+        z-index: 0;
+        animation-delay: 0.5s;
+        animation-name: earthAni;
+        animation-duration: 1.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        @include beforeSelector(110%, 50%, linear-gradient(to top, transparent, rgba(255, 255, 255, 0.7)));
+        border-top-left-radius: 46%;
+        border-top-right-radius: 46%;
+
+        &__img{
+
+            position: absolute;
+            width: 25%;
+
+        }
+
+        &__img01{
+
+            @include position($t: 10%, $l: 8%, $transX: 5%, $transY: -50%);
+            opacity: 0;
+            animation: transAni 2s 0.8s 1 forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        }
+
+        &__img02{
+
+            @include position($t: 30%, $l: 30%, $transX: -5%, $transY: -50%);
+            opacity: 0;
+            animation: transAni 2.5s 0.8s 1 forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        }
+
+        &__img03{
+
+            @include position($t: 10%, $r: 10%, $transX: 20%, $transY: -50%);
+            opacity: 0;
+            animation: transAni 2.8s 0.8s 1 forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        }
+
+        &__img04{
+
+            width: 100%;
+            @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+
+        }
+
+        @include sm{
+
+            height: 45vh;
+
+        }
+
+        &__point{
+
+            @include position($t: -17vh, $l: 0, $transX: 0, $transY: 0);
+            width: 100%;
+            text-align: center;
+            height: 10vh;
+
+        }
+
+        &__point-symbol{
+
+            @include sm{
+
+                width: 30px;
+
+            }
+
+        }
+
+        &__point-dot{
+
+            @include position($b: -3vh, $l: 50%, $transX: -50%, $transY: 0);
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: $main-color;
+
+        }
+
+    }
+
+}
+
+@keyframes earthAni{
+
+    0%{
+
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+        opacity: 0;
+        bottom: -30vh;
+
+    }
+
+    45%{
+
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        opacity: 0.3;
+
+    }
+    100%{
+
+        opacity: 1;
+        bottom: -25vh;
+
+    }
+
+}
+
+@keyframes transAni{
+
+    100%{
+
+        transform: none;
+        opacity: 1;
+
+    }
+
+}
+
+.plnr-apply-status{
+    
+    @include fontStyle(19px, 300, #262626);
+    padding: 4rem 1rem 0 3rem;
+
+    &__tit{
+
+        @include fontStyle(1.2em, bold, inherit);
+
+    }
+
+    &__text{
+
+        @include fontStyle(0.75em, inherit, inherit);
+        line-height: 1.4;
+        padding: 1.5rem 0 2rem;
+
+    }
+
+    &__button{
+
+        @include buttonStyle(40px, 50px, #262626, $normal-small-font);
+        padding: 0 2rem;
+        background-color: #fff;
+        box-shadow: 0 8px 15px rgba(#00244C, 0.2);
+
+    }
+
+}
+
+// edit version
+input[name="check-plnr-type"]:checked + label{
+    background-color: #fff;
+    color: $main-color;
+    border-color: $main-color;
+    box-shadow: 0 5px 11px rgba(0, 219, 216, 0.15);
+}
+
+// 개인 및 업체분류
+#check_plnr_type_popup{
+    font-size: 18px;
+    .inline--center{
+        margin-bottom: 30px;
+    }
+    .button--outline{
+        margin-bottom: 15px;
+    }
+}
+
+// 플래너명, 소개글 입력
+#check_plnrname_popup{
+    .caution{
+        font-size: $normal-small-font;
+        display: inline-block;
+        &--disable{
+            color: #FF5757
+        }
+        &--able{
+            color: #00B1DC;
+        }
+    }
+    
+    .intro__textarea{
+
+        padding: 1rem 0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 3rem;
+
+        textarea{
+
+            @include fontStyle($normal-small-font, 300, $navy-color);
+            @include textareaStyle02;
+            padding: 0 7px;
+
+            &::placeholder{
+
+                color: rgba(#4F5256, 0.3);
+
+            }
+
+        }
+
+    }
+}
+
+#check_certify_popup{
+
+    .inline--left{
+        margin-bottom: 20px;
+    }
+
+    .certify__tit {
+        @include fontStyle(17px, 400, inherit);
+        em{
+        @include fontStyle($small-font, 200, inherit);
+        margin-left: 5px;
+        }
+    }
+
+    .certify__thumbnail{
+        &-group{
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        &-group:after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+        &-list{
+            @include bgStyle(20px);
+            position: relative;
+            background-position: 50% 25px;
+            width: 95px;
+            height: 95px;
+            border: 1px solid #E0DFDF;
+            border-radius: 7px;
+            float: left;
+            margin-right: 10px;
+            background-image: url(/img/icon/icon-add-mint.svg);
+            overflow: hidden;
+            margin-bottom: 10px;
+            label{
+                @include bgStyle(cover);
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+            }
+            &:active{
+                background-color: darken(#fff, 5%);
+            }
+            &__span{
+                @include position($b: 20px, $l: 0, $transX: 0, $transY: 0);
+                @include fontStyle(0.75em, 300, #7E7E7E);
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                z-index: 0;
+            }
+        }
+        &-list.is-filled{
+            @include bgStyle(cover);
+            .certify__thumbnail-list__span{
+                display: none;
+            }
+        }
+        
+    }
+}
+
+.user-msg-alarm{
+    
+    @include position($t: 4.5rem, $l: 0, $transX: 0, $transY: 0);
+    @include fontStyle(15px, 100, #fff);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    z-index: 11;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 13px;
+    opacity: 1;
+
+    &__btn{
+        @include bgStyle(10px);
+        @include position($t: 0, $r: 0, $transX: 0, $transY: 0);
+        display: inline-block;
+        width: 40px;
+        height: 100%;
+        background-image: url(/img/btn/btn-close-wh.svg);
+    }
+
+}
+
+// 플래너 여행상품 등록할 떄 레이아웃
+.wrapper--product{
+
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6rem;
+
+    &__scroll-area{
+        @include scrollArea(100%);
+        padding-bottom: 8rem;
+    }
+
+    .wrapper--inner{
+        @include fontStyle($parent-normal-font, 300, $navy-color);
+        padding-bottom: 3rem;
+    }
+
+    &__btn{
+        @include btFixedBtn;
+        .button{
+            @include navyButton;
+        }
+    }
+
+}
+
+// 여행상품 썸네일
+.prdt-bg {
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+
+    .hd-title__left-btn--prev-wh{
+        z-index: 5;
+    }
+
+    &:before{
+        @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+        width: 100%;
+        height: 35%;
+        content: '';
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+        display: inline-block;
+        z-index: 5;
+    }
+
+    &-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__list{
+        @include bgStyle(cover);
+    }
+
+    &__button {
+        @include position($r: 1.5rem, $b: 1.5rem, $transX: 0, $transY: 0);
+        width: 3rem;
+        height: 3rem;
+        border-radius: 60%;
+        background-color: #fff;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+        label{
+            @include bgStyle(50%);
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            background-image: url(/img/btn/btn-picture-navy.svg);
+        }
+    }
+
+    &__pagination{
+
+        @include position($b: 13px, $l: 50%, $transX: -50%, $transY: 0);
+        width: 50px;
+        margin: 0 auto;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        height: 1.5rem;
+        z-index: 5;
+        font-size: 10px;
+        border-radius: 30px;
+
+        .swiper-pagination{
+            width: 100%;
+            height: 100%;
+            line-height: 1.5rem;
+            top: 0;
+        }
+
+    }
+}
+
+// 여행상품 메인정보
+.prdt-main-info{
+    padding: 3rem 0;
+
+    &__etc {
+        @include fontStyle(0.75em, inherit, #899BAF);
+        margin-bottom: 0;
+        width: 100%;
+        display: inline-block;
+    }
+
+    input.prdt-main-info__etc{
+
+        @include iosInput;
+        border: 0;
+        &::placeholder{
+            color: #899BAF;
+        }
+    }
+
+    &__tit{
+        @include fontStyle(1.2em, 500, inherit);
+        @include textOverflow(3);
+        line-height: 1.4;
+        padding-top: 10px;
+        padding-right: 20%;
+        margin-bottom: 0.5rem;
+    }
+
+    &__tit.is-set{
+        color: rgba(#00244C, 0.3);
+    }
+
+    &__local{
+        @include bgStyle(10px);
+        @include fontStyle($normal-small-font, 500, rgba(#00244C, 0.5));
+        display: inline-block;
+        background-image: url(/img/icon/icon-local-light-blue.svg);
+        background-position: 0 50%;
+        padding-left: 15px;
+    }
+    &__text{
+        @include fontStyle($normal-small-font, 200, rgba(#00244C, 0.5));
+        line-height: 1.6;
+        margin-top: 2.5rem;
+    }
+}
+
+//여행상품 서브정보
+.prdt-sub-info{
+    fieldset{
+        padding: 0;
+        margin-bottom: 2.5rem;
+    }
+    &__tit{
+        @include fontStyle(1.05em, 500, inherit);
+        margin-bottom: 5px;
+        &:before{
+            @include bgStyle(contain);
+            content: '';
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: relative;
+            top: 4px;
+            margin-right: 2px;
+        }
+
+        &--01{
+            &:before{
+                background-image: url(/img/icon/icon-course-navy.svg);
+            }
+        }
+        &--02{
+            &:before{
+                background-image: url(/img/icon/icon-date-navy.svg);
+            }
+        }
+        &--03{
+            &:before{
+                background-image: url(/img/icon/icon-pin-navy.svg);
+            }
+        }
+        &--04{
+            &:before{
+                background-size: 78%;
+                background-image: url(/img/icon/icon-info-navy.svg);
+            }
+        }
+    }
+    &__input-group{
+        width: 100%;
+        position: relative;
+        margin-top: 0.5rem;
+
+        .plus-btn{
+            @include bgStyle(40%);
+            width: 25px;
+            height: 100%;
+            background-color: transparent;
+            background-image: url(/img/icon/icon-add-navy.svg);
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 0;
+        }
+    }
+    &__input,
+    &__span{
+        @include fontStyle(0.75em, 200, $navy-color);
+        @include iosInput;
+        width: 100%;
+        border: 0;
+        padding: 1rem 0.5rem;
+        border-bottom: 1px solid #DFE5E8;
+        outline: none;
+        line-height: 1.4;
+    }
+    &__span{
+        display: inline-block;
+    }
+    &__input{
+        padding-left: 30px;
+        width: 100%;
+        display: inline-block;
+        color: rgba(#00244C, 0.3);
+        font-size: $normal-small-font;
+    }
+}
+
+
+#plnr-reg-form{
+    height: 100%;
+}
+
+.wrapper--planner_reg{
+    padding-bottom: 0;
+
+    .wrapper--planner__scroll-area{
+        height: calc(100% - 6rem);
+        padding-bottom: 0;
+    }
+
+    .wrapper--planner__scroll-area.active{
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    .bt-fixed-nav{
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+// 10-21 플래너 상품 등록 사진 삭제 버튼 */
+.prdt-bg__edit{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    width: 3rem;
+    height: 3rem;
+    border-radius:50%;
+    background-color:rgba(0, 0, 0, 0.2);
+    &:before,&:after{
+        content:'';
+        width:1px;
+        height:1.3rem;
+        position: absolute;
+        top:30%;
+        right:50%;
+        background-color:#fff;
+    }
+    &:before{
+        transform:skew(-45deg);
+    }
+    &:after{
+        transform:skew(45deg);
+    }
+}
+
+// end 10-21

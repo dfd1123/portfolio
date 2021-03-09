@@ -1,0 +1,45 @@
+/* 
+    --------------------------------------------------------------------
+            * mood_genre_btns component *
+    --------------------------------------------------------------------
+*/
+.mood-genre-choice {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.mood-genre-choice-inner {
+  width: 100%;
+}
+
+.mood-genre-choice-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mood-genre-choice-list {
+  text-align: left;
+}
+
+.mood-genre-choice-btn {
+  display: inline-block;
+  border: 1px solid #bdb4cc;
+  border-radius: 20px;
+  margin-right: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+}
+
+.mood-genre-choice-btn label {
+  padding: 0.45em 1em;
+  display: inline-block;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mood-genre-choice-btn span {
+  color: #bdb4cc;
+}
+/*# sourceMappingURL=mood_genre_btns.css.map */

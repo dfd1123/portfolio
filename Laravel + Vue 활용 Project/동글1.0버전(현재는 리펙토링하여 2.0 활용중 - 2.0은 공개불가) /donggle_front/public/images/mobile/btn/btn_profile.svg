@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.938" height="19.223" viewBox="0 0 19.938 19.223">
+  <g id="btn_profile" transform="translate(-228.662 -37.9)">
+    <path id="Path" d="M13.231,10.992,6.014,0,0,8.244" transform="translate(229.5 45.056)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="Path-2" data-name="Path" d="M7.136,6.229V4.672L3.14,0,0,3.3" transform="translate(240.005 48.529)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <path id="Path-3" data-name="Path" d="M17.641,14.787a1.877,1.877,0,0,1-1.764,1.972H1.764A1.877,1.877,0,0,1,0,14.787V1.972A1.877,1.877,0,0,1,1.764,0H7.056" transform="translate(229.5 39.764)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+    <g id="그룹_3744" data-name="그룹 3744" transform="translate(-11 1)">
+      <line id="선_629" data-name="선 629" y2="7" transform="translate(255.5 37.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="1.2"/>
+      <line id="선_630" data-name="선 630" y2="7" transform="translate(259 41) rotate(90)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

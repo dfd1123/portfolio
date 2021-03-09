@@ -1,0 +1,92 @@
+
+.corporation_box{
+    margin:1em;
+        border-radius:6px;
+        overflow:hidden;
+        background:#fff;
+        box-shadow: 0px 13px 16px 0 rgba(36, 36, 36, 0.08);
+    }
+.corporation_box .comment_hd{
+        overflow:hidden;
+    }
+.corporation_box .comment_hd em{
+    margin-left:0.3em;
+        font-size:0.5em;
+    }
+
+.corporation_box .comment_hd>div{
+        width: 50%;
+        float: left;
+        text-align: center;
+        line-height: 1.39;
+        letter-spacing: -0.56px;
+        text-align: center;
+        font-size: 1em;
+        color: #4f5256;
+        padding: 10px 0;
+        border-bottom:1px solid #8e8e8e;
+    }
+
+.corporation_box .comment_hd>div.active{
+        border-bottom:2px solid #222;
+        padding-bottom:9px;
+        font-weight:700;
+    }
+.corporation_box .comment_wrap{
+        padding:1em;
+        max-height:434px;
+        overflow:auto;
+    }
+
+.corporation_box .comment_wrap ul li{
+        padding:1.5em 1em;
+        background-color: #fff;
+        position:relative;
+    }
+
+.corporation_box .comment_wrap ul li:nth-child(even){
+        background-color: #f8f8f8;
+    }
+
+.corporation_box .comment_wrap ul li h3{
+        line-height: 1;
+        letter-spacing: -0.5px;
+        font-size:0.95em;
+        color: #5d5d5d;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        word-wrap:normal;
+        overflow:hidden;
+        width: 100%;
+        display: inline-flex;
+    }
+.corporation_box .comment_wrap ul li .star{
+    display:inline-flex;
+    height:0.8em;
+
+    }
+.corporation_box .comment_wrap ul li.new h3{
+        padding-left:21px;
+        background:url('/images/icon_alarm_new.svg') no-repeat;
+        width: 70%;
+        display: inline-flex;
+    }
+
+.corporation_box .comment_wrap ul li span{
+        font-size: 0.8em;
+        letter-spacing: -0.34px;
+        color: #adadad;
+        margin: 0.8em 0;
+        display: block;
+    }
+
+.corporation_box .comment_wrap ul li p{
+        font-size: 0.8em;
+        letter-spacing: -0.34px;
+        color: #2b2b2b;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        width: 100%;
+        overflow: hidden; 
+    }

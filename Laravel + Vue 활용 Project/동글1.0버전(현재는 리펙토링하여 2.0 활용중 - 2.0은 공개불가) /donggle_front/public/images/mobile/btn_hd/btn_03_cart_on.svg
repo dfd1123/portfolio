@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="22.5" viewBox="0 0 22.5 22.5">
+  <g id="btn_03_cart_on" transform="translate(0.75 0.75)">
+    <path id="Path" d="M.01,0h19L17.591,9.859H0Z" transform="translate(1.99 2.641)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path-2" data-name="Path" d="M0,0H2V2.641" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path-3" data-name="Path" d="M3.165,6A3.165,3.165,0,0,1,0,2.835V0" transform="translate(2 12.5)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path-4" data-name="Path" d="M4.472,2.5h0A2.486,2.486,0,1,1,6.958,5,2.608,2.608,0,0,1,4.472,2.5Z" transform="translate(10.137 16)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path-5" data-name="Path" d="M2.486,5A2.5,2.5,0,1,1,4.972,2.5,2.493,2.493,0,0,1,2.486,5Z" transform="translate(5.166 16)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

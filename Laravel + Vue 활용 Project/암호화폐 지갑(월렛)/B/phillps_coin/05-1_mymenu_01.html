@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>philips pay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="stylesheet/scss/vendors/normalize-custom.css">
+        <link rel="stylesheet" href="css/common.css">
+
+        <!-- 개별 css -->
+        <link rel="stylesheet" href="css/mymenu.css">
+        <link rel="stylesheet" href="css/mymenu_01.css">
+        
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="app" class="app">
+            
+            <!-- 헤더 -->
+            <header class="header header--type01">
+                <button type="button" class="header__btn header__btn--left header__btn--close" onClick="location.href='./03_main_make_wallet(after).html'">
+                    <b class="hide-text">닫기</b>
+                </button>
+                <h1 class="header__center">고객센터</h1>
+            </header>
+            <!-- end 헤더 -->
+            <!-- 컨텐츠 -->
+            <div class="content_wrapper">
+                <!-- 각 페이지마다 다른 컨테이너 -->
+                <div class="container container--mymenu">
+                    <div class="mymenu__hd-btns">
+                        <button type="button" class="mymenu__hd-btn active" onClick="location.href='./05-1_mymenu_01.html'">공지사항</button>
+                        <button type="button" class="mymenu__hd-btn" onClick="location.href='./05-2_mymenu_02(list_write).html'">1:1문의</button>
+                    </div>
+                    <div class="mymenu__view-wrapper">
+                        <ul class="mymenu__view">
+                            <li class="mymenu__view-list" onclick="popup_open('#popup_notice_view')">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 공지사항1</h5>
+                                <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                            </li>
+                            <li class="mymenu__view-list">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 공지사항1</h5>
+                                <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                            </li>
+                            <li class="mymenu__view-list">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 공지사항1</h5>
+                                <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                            </li>
+                            <li class="mymenu__view-list">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 공지사항1</h5>
+                                <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                            </li>
+                            <li class="mymenu__view-list">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 공지사항1</h5>
+                                <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                            </li>
+                            <li class="mymenu__view-list">
+                                <span class="num">01</span>
+                                <h5 class="title">필립스 코인 공지사항1</h5>
+                                <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pop-up pop-up--light">
+                        <div class="pop-up__wrapper" id="popup_notice_view">
+                            <header class="header header--type02">
+                                <button type="button" class="header__btn header__btn--left header__btn--close-dark" onClick="popup_close(this)">
+                                    <b class="hide-text">닫기</b>
+                                </button>
+                                <h1 class="header__center">공지사항</h1>
+                            </header>
+                            <div class="container container--mymenu">
+                                <div class="mymenu__view-hd">
+                                    <span class="num">01</span>
+                                    <h5 class="title">필립스 코인 공지사항1</h5>
+                                    <p class="info"><span class="date">2018-00-00 관리자</span></p>
+                                </div>
+                                <div class="mymenu__ntc-view">
+                                    <p>공지사항 내용입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end 각 페이지마다 다른 컨테이너 -->
+            </div>
+            <!-- end 컨텐츠  -->
+        </div>
+        
+        <script>
+        
+            // 팝업페이지 소스
+            function popup_open(name){
+                $(name).parents('.pop-up').show();
+                $(name).addClass('popup_open');
+            }
+            
+            function popup_close(name){
+                $('.pop-up').fadeOut(100);
+                $(name).parents('.pop-up__wrapper').delay(1000).removeClass('popup_open');
+            }
+            // 팝업페이지 소스
+
+        </script>
+    
+
+    </body>
+
+</html>

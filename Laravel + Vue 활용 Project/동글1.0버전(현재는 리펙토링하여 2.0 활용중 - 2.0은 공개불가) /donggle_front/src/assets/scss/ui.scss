@@ -1,0 +1,124 @@
+@charset 'utf-8';
+
+// 1. 변수, 함수 등 utility
+@import "./utility/variables";
+@import "./utility/mixin";
+@import "./utility/function";
+
+/* ======== 1. base, typo, helper(클래스) ======== */
+@import "./base/base";
+@import "./base/typo";
+@import "./base/helper";
+/* ======== 1. END ======== */
+
+/* ======== 2. components ======== */
+
+// 좋아요 하트버튼
+@import "./components/heart_badge";
+
+//기본 버튼 디자인
+@import "./components/button";
+
+//기본 인풋 디자인
+@import "./components/input";
+
+// 옷상품 카드
+@import "./components/clothes_list_card";
+
+// 상품내역 카드
+@import "./components/clothes_history_card";
+
+// 상품리뷰내역 카드
+@import "./components/review_history_card";
+
+// 주문정보들 (좌측-우측카드) 레이아웃
+// 사용한 페이지: 주문취소신청, 환불신청, 배송지변경, 주문/결제, 주문완료, 주문상세내역 (6페이지)
+@import "./components/order_info_group";
+
+// 검색옵션 구역
+// 사용한 페이지: 카테고리선택, 통합검색결과
+@import "./components/filter_search_group";
+
+// 리뷰
+@import "./components/review";
+
+// 페이지네이션
+@import "./components/pager";
+
+// 고객센터 게시판
+@import "./components/board";
+
+// 쿠폰
+// 사용한 페이지: 내 쿠폰함, 쿠폰받기
+@import "./components/coupon_card";
+
+// 내역없을 때 레이아웃
+@import "./components/empty";
+
+// 별점 그룹 (1점부터 5점)
+// 사용한 페이지: 최근본상품, 나의구매후기, 구매후기 작성하기, 상품리뷰상세보기, 상품상세보기 (5페이지)
+@import "./components/star_group";
+
+//팝업 레이아웃
+@import "./components/popup";
+
+// SLICK SLIDER
+@import "./components/slick";
+/* ======== 2. END ======== */
+
+/* ======== 3. layout ======== */
+@import "./layout/layout";
+@import "./layout/topbenner";
+@import "./layout/header";
+@import "./layout/footer";
+/* ======== 3. END ======== */
+
+/* ======== 4. pages ======== */
+// 메인
+@import "./pages/main"; // hj) 메인페이지
+
+// auth 폴더
+@import "./pages/login"; // ey) 로그인, 아이디/비밀번호찾기
+@import "./pages/register"; // ey) 회원가입
+@import "./pages/subscribe"; // ey) 구독하기
+
+// cancel_order 폴더
+@import "./pages/cancel_order"; // hj) 주문취소,환불 화면
+
+// cs 폴더
+@import "./pages/cs"; // ey) 고객센터
+
+// 게시판 게시글 레이아웃
+@import "./pages/post"; // ey) 게시글
+
+// product_list 폴더
+@import "./pages/category_choice_view"; // hj) 카테고리선택결과
+@import "./pages/product_search_view"; // hj) 통합검색결과
+@import "./pages/gnb_choice_view"; // hj) 대메뉴선택결과
+
+// product_view 폴더
+@import "./pages/product_detail_view"; // ey) 상품보기 페이지
+@import "./pages/product_review_detail"; // ey) 상품리뷰 상세보기
+@import "./pages/product_qna_detail"; // ey) 상품문의 상세보기
+
+// snb 폴더
+@import "./pages/snb_cart_view"; // hj) 사이드네비 - 장바구니 화면
+@import "./pages/snb_term_policy"; // hj) 사이드네비 - 이용약관 / 개인정보처리방침
+@import "./pages/snb_alarm_view"; // hj) 사이드네비 - 알림
+
+// store 폴더
+@import "./pages/store"; // hj) 스토어
+@import "./pages/store_inquiry"; // ey) 스토어 문의하기
+
+// error 폴더
+@import "./pages/error"; // hj) 에러페이지
+
+// mypage 폴더
+@import "./pages/mypages"; // hj) 마이페이지
+
+// order 폴더
+@import "./pages/order"; // hj) 주문관련 페이지
+
+@import "./pages/update"; // hj) 브라우저 업데이트 페이지
+
+/* ======== 4. END ======== */

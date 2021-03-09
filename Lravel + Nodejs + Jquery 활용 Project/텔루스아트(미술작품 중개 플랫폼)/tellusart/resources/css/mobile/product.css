@@ -1,0 +1,143 @@
+img.artist_img{
+	width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+label.artist_img_label{
+	border: 1px solid #fea803;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #fea803;
+    cursor: pointer;
+}
+
+.product_slide_wrap .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: 0;
+    z-index: 9999;
+}
+
+.product_slide_wrap .bx-wrapper .bx-controls-direction a i{
+    font-size: 50px;
+    color: rgba(0,0,0,0.2);
+}
+
+.cate-slide{
+    overflow-x: scroll;
+    width: 100%;
+    -ms-overflow-style: none;
+}
+
+.cate-slide::-webkit-scrollbar { 
+    display: none !important;
+}
+
+.cate-slide ul{
+    overflow: auto;
+    overflow-y: hidden;
+    width: auto;
+    height: 40px;
+}
+
+.cate-slide ul li{
+    float: left;
+}
+
+.cate-slide ul li a{
+    display: block;
+    color: #222;
+    font-size: 14px;
+    padding: 10px 24px;
+}
+
+.cate-slide ul li.active a{
+    border-bottom:2px solid #222;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.search_bottom{
+    position: fixed;
+    bottom: 76px;
+    right: 22px;
+}
+
+.search_bottom div, .search_bottom a{
+    display:block;
+    background: #fec603;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.search_bottom div i, .search_bottom a i{
+    color: #302e57;
+    font-size: 19px;
+}
+
+#search_popup .cux_modal_dialog{
+    height: 40px;
+}
+
+#search_popup .cux_modal_dialog .search_content{
+    position: relative;
+}
+
+#search_popup .cux_modal_dialog .search_content input[type="text"]{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 13px;
+    padding-right: 43px;
+}
+
+#search_popup .cux_modal_dialog .search_content button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #302e57;
+    padding: 8px 10px;
+    outline:none;
+}
+
+.product_slide_wrap .bx-wrapper{
+    margin-bottom:0;
+}
+
+.product_img_slide{
+    height:100%;
+}
+
+.product_img_slide>div{
+    height:100%;
+    display: table;
+}
+
+.product_img_slide>div p{
+    min-height:100%;
+    display:table-cell !important;
+    vertical-align: middle;
+    background:#222;
+}
+
+.product_img_slide>div p img{
+    border-radius: none;
+}

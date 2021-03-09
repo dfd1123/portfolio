@@ -1,0 +1,841 @@
+// 주문관련 공통요소 */
+.dg-total-price-card {
+  border: 1px solid #333333;
+  margin-top: -1px;
+
+  .in-price-infos {
+    background-color: #fafafa;
+    border-bottom: 1px solid $light_gray6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+    padding-top: 10px;
+
+    ._col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+    ._col--total ._prc {
+      font-weight: bold;
+    }
+    ._icon {
+      padding-top: 15px;
+    }
+    ._label {
+      @include fontType01(13px, $color: #787878);
+      @include inlineBlockStyle(middle);
+
+      margin-bottom: 10px;
+    }
+    ._prc {
+      @include fontType01(#{$px-24}rem, $weight: 500);
+      @include inlineBlockStyle(middle);
+
+      margin-bottom: 10px;
+    }
+    ._prc i {
+      font-style: normal;
+      padding-right: 5px;
+    }
+  }
+  .in-guide-article {
+    padding: 30px;
+    ._subject {
+      @include fontType01(#{$px-16}rem, $weight: 500);
+    }
+    ._paragraph {
+      @include fontType01(#{$px-13}rem, $weight: 300, $color: #787878);
+      @include fontType02(0, 1.7);
+
+      margin-bottom: 12px;
+      padding: 15px 0;
+    }
+  }
+  .in-days {
+    background-color: #fafafa;
+    border: 1px solid $light_gray6;
+    text-align: center;
+    height: 50px;
+    padding: 11px 0;
+    label {
+      @include fontType01(#{$px-14}rem);
+      @include inlineBlockStyle(middle);
+    }
+    .dg-input-checkbox_label {
+      margin: 0;
+      text-align: 0;
+      top: 0;
+      margin-right: 3px;
+    }
+    ._days {
+      padding: 0 15px;
+    }
+  }
+}
+
+.dg-order-status-card {
+  padding: 50px 0 20px;
+  text-align: center;
+  .in-icon {
+    margin-bottom: 35px;
+    user-select: none;
+  }
+  .in-status-tit {
+    @include fontType01(30px, $weight: bold);
+  }
+  .in-status-desc {
+    @include fontType01(15px, $weight: 300, $color: $gray);
+    @include fontType02(0, 1.5);
+
+    margin: 20px 0;
+    .in-ancor {
+      text-decoration: underline;
+      text-decoration-color: $black;
+      color: $gray;
+    }
+  }
+
+  .in-paytype-bank {
+    max-width: 555px;
+    margin: 40px auto 25px;
+    border-radius: 8px;
+
+    ._tit {
+      @include fontType01(14px);
+
+      margin-bottom: 7px;
+      display: inline-block;
+    }
+    ._box {
+      background-color: #fafafa;
+      border: 1px solid $light_gray6;
+      padding: 11px 0;
+      border-radius: 8px;
+    }
+    ._box li {
+      @include fontType01(13px, $weight: 300);
+      @include fontType02(0, 1.6);
+
+      margin: 2px 0;
+    }
+    ._box li i {
+      font-style: normal;
+      padding: 0 3px;
+    }
+    ._box li:nth-child(2) {
+      font-weight: 400;
+    }
+    ._box li:nth-child(2) span {
+      @include fontType01(inherit, $weight: inherit, $color: #b4b4b4);
+
+      margin-right: 5px;
+    }
+    ._box li:nth-child(2) b {
+      @include fontType01(inherit, $weight: inherit, $color: #ff5656);
+    }
+  }
+}
+// 주문관련 공통요소 END
+
+/*
+    PAGES - 주문확인
+*/
+
+#dg-order-check-wrapper {
+  padding-top: 35px;
+  padding-bottom: 200px;
+
+  #_mini_quick_menu {
+    top: 105px;
+  }
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  .l-contents-group {
+    padding: 0 10px;
+  }
+
+  // 전체선택 선택해제 선택상품삭제
+  .in-sorting {
+    margin: 17px 0;
+
+    ._type:first-child {
+      padding-left: 16px;
+      position: relative;
+    }
+
+    ._type:first-child .dg-input-checkbox_label {
+      @include position($t: -3px, $l: 0);
+
+      margin: 0;
+    }
+  }
+  // 전체선택 선택해제 선택상품삭제 END
+
+  .in-breadcrumb {
+    @include position($t: 50%, $r: 0);
+
+    transform: translateY(-50%);
+  }
+
+  .dg-clothes-history-card {
+    .in-content {
+      padding: 22px 17px 17px 50px;
+      .dg-input-checkbox_label {
+        @include position($t: 0, $l: -32px);
+
+        margin: 0;
+      }
+    }
+  }
+
+  .dg-button-wrap {
+    max-width: 510px;
+  }
+}
+
+/*
+    PAGES - 주문/결제
+*/
+
+#dg-order-process-wrapper {
+  padding-top: 35px;
+  padding-bottom: 200px;
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  .l-contents-group {
+    padding: 0 10px;
+  }
+
+  .l-con-title-group.type01 {
+    padding: 0;
+    .in-subject {
+      @include fontType01(#{$px-18}rem, $weight: bold);
+
+      width: 100%;
+      padding: 13px 0;
+      border-bottom: 0;
+    }
+    ._etc_ment {
+      @include position($r: 0, $b: 15px);
+      @include fontType01(#{$px-13}rem, $weight: 200, $color: #787878);
+    }
+  }
+
+  .in-breadcrumb {
+    @include position($t: 50%, $r: 0);
+
+    transform: translateY(-50%);
+  }
+
+  .dg-clothes-history-card {
+    ._ask_textarea {
+      padding-bottom: 15px;
+      user-select: none;
+    }
+  }
+
+  // 좌측 정보
+  .in-detail-info {
+    border: 1px solid $light_gray6;
+
+    .in-information {
+      border-bottom: 0;
+    }
+
+    .l-con-article {
+      border-bottom: 1px solid $light_gray6;
+      padding: 25px 20px;
+      margin-bottom: 0;
+
+      .information_span {
+        font-size: 12px;
+        color: mediumvioletred;
+        display: block;
+        margin-top: 15px;
+      }
+    }
+
+    .l-con-article:last-child {
+      border-bottom: 0;
+    }
+
+    .in-subject {
+      @include fontType01(#{$px-18}rem);
+
+      border-bottom: 0;
+      margin-bottom: 12px;
+      user-select: none;
+    }
+    ._list:last-child {
+      margin-bottom: 0;
+    }
+
+    ._input {
+      @include inputInit(
+        $bd: 1px solid $light_gray6,
+        $pd: 0 12px,
+        $pointer: auto,
+        $focus-bd: #333
+      );
+      @include fontType01(#{$px-13}rem, $weight: 300);
+
+      width: 100%;
+      height: 40px;
+    }
+
+    // 쿠폰 적용
+    .in-coupon-box {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 40px;
+    }
+
+    .in-coupon-box ._coupon_tit {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+
+      line-height: 38px;
+      width: 74%;
+      height: 100%;
+      border: 1px solid $light_gray6;
+      padding: 0 15px;
+      cursor: default;
+      outline: none;
+      &:hover,
+      &:focus {
+        border: 1px solid $black;
+      }
+    }
+
+    .in-coupon-box .square-btn-dark {
+      letter-spacing: -0.5px;
+      width: 24.5%;
+      height: 100%;
+    }
+
+    // 배송준비 기간 물음표
+    ._question_icon {
+      @include position($t: 8px, $l: 110px);
+
+      width: 18px;
+      height: 21px;
+    }
+
+    ._question_icon:hover ._paragraph_box {
+      opacity: 1;
+      top: 15px;
+    }
+
+    ._question_icon img {
+      cursor: pointer;
+    }
+
+    ._question_icon ._paragraph_box {
+      @include fontType01(#{$px-11}rem, $weight: 200, $color: #787878);
+      @include fontType02(-0.5px, 1.75);
+      @include position($t: 20px, $l: 7px);
+
+      z-index: 2;
+
+      width: 362px;
+      word-spacing: 0.1px;
+      background-color: white;
+      padding: 7px 8px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s;
+    }
+
+    // 배송준비 기간 일수 선택
+    .in-days-box {
+      position: relative;
+      z-index: 1;
+      background-color: #fafafa;
+      border: 1px solid $light_gray6;
+      font-size: 14px;
+      height: 50px;
+      padding-left: 14px;
+      user-select: none;
+    }
+
+    .in-days-box ._days {
+      margin-right: 40px;
+    }
+
+    .in-days-box .dg-input-checkbox_label {
+      margin-right: 5px;
+    }
+
+    // 주문고객 정보
+    ._etc_check {
+      @include position($t: -6px, $r: 0);
+      overflow: 0;
+      position: absolute;
+      top: -6px;
+      right: 0;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    ._etc_check .dg-input-checkbox_label {
+      margin-right: 4px;
+    }
+
+    // 배송지 정보
+    ._etc_buttons {
+      @include position($t: 0, $r: 0);
+    }
+
+    ._etc_buttons .square-btn-outline {
+      margin: 0 -3px;
+      width: 80px;
+      border-color: #b4b4b4;
+      color: #b4b4b4;
+    }
+
+    ._etc_buttons .square-btn-outline.active {
+      border-color: #333;
+      background-color: #333;
+      color: white;
+    }
+
+    // 배송지 정보 - 우편번호
+    ._list--post ._input {
+      @include inlineBlockStyle(middle);
+
+      width: 132px;
+      margin-right: 5px;
+    }
+
+    ._list--post .square-btn-outline {
+      height: 40px;
+      line-height: 40px;
+      width: 135px;
+    }
+
+    // 배송지 정보 - 배송 요청사항
+    ._list--textarea ._label {
+      transform: translateY(0);
+      top: 12px;
+    }
+
+    ._list--textarea ._textarea {
+      @include inputInit(
+        $pd: 10px 12px,
+        $bd: 1px solid $light_gray6,
+        $focus-bd: #333,
+        $pointer: auto
+      );
+      @include fontType01(#{$px-13}rem, $weight: 300);
+      width: 100%;
+      height: 78px;
+      resize: none;
+      line-height: 1.7;
+      box-sizing: border-box;
+    }
+
+    // 결제수단 - 버튼
+    .in-paytype-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      user-select: none;
+    }
+
+    .in-paytype-buttons button {
+      @include buttonInit(
+        $bd-radius: 8px,
+        $bd: 1px solid $light_gray6,
+        $pd: 0,
+        $pointer: pointer
+      );
+      @include fontType01(#{$px-13}rem, $weight: 300);
+
+      width: 31.5%;
+      border: 1px solid $light_gray6;
+      background-color: white;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 101px;
+      color: #b4b4b4;
+    }
+
+    .in-paytype-buttons button.active {
+      border: 1px solid #333333;
+      color: #333;
+    }
+
+    .in-paytype-buttons button.active ._icon--on {
+      display: block;
+    }
+
+    .in-paytype-buttons button.active ._icon--off {
+      display: none;
+    }
+
+    .in-paytype-buttons button ._icon {
+      margin-bottom: 13px;
+    }
+
+    .in-paytype-buttons button ._icon--on {
+      display: none;
+    }
+
+    // 결제수단 - 무통장입금
+    .in-paytype-detail {
+      margin-top: 20px;
+    }
+
+    .in-paytype-detail ._tit {
+      @include fontType01(#{$px-16}rem, $weight: 400);
+
+      margin-bottom: 8px;
+      user-select: none;
+    }
+
+    .in-paytype-detail table {
+      width: 100%;
+      background-color: #fafafa;
+      border: 1px solid $light_gray6;
+      padding: 17px 12px 12px;
+    }
+
+    .in-paytype-detail table th {
+      @include fontType01(#{$px-11}rem, $weight: 400, $color: #787878);
+
+      text-align: left;
+      padding-bottom: 8px;
+    }
+
+    .in-paytype-detail table ._slct {
+      @include fontType01(#{$px-13}rem, $weight: bold);
+      @include bgOption(8px, calc(100% - 10px) 50%);
+      @include inputInit(
+        $bd: 1px solid $light_gray6,
+        $pd: 0 10px,
+        $focus-bd: #333
+      );
+
+      background-image: url($path-icon+"icon_slct_arrow.svg");
+      width: 100%;
+      height: 40px;
+    }
+
+    .in-paytype-detail table td {
+      padding-right: 10px;
+      vertical-align: middle;
+    }
+
+    .in-paytype-detail table input {
+      @include fontType01(#{$px-13}rem);
+      @include inputInit(
+        $pd: 0 10px,
+        $bd: 1px solid $light_gray6,
+        $focus-bd: #333,
+        $bd-radius: 0,
+        $pointer: auto
+      );
+
+      width: 100%;
+      height: 40px;
+      user-select: none;
+    }
+
+    // 결제수단 - 무통장 입금 > 은행선택박스
+    .bank-con-box--01 {
+      margin: 15px 0;
+    }
+
+    // 결제수단 - 무통장 입금 > 주의사항박스
+    .bank-con-box--02 ._tit {
+      @include fontType01(#{$px-13}rem);
+
+      padding: 5px 0;
+    }
+
+    .bank-con-box--02 ._tit ._first {
+      margin-right: 28px;
+    }
+
+    .bank-con-box--02 ._tit span {
+      @include fontType01(inherit, $color: #787878);
+    }
+
+    .bank-con-box--02 ._tit ._point {
+      @include fontType01(inherit, $color: #ff5656, $weight: 400);
+    }
+
+    .bank-con-box--02 ._cautions li {
+      @include fontType01(#{$px-11}rem, $weight: 300, $color: #c8c8c8);
+
+      line-height: 1.8;
+    }
+  }
+
+  // 좌측 정보 END
+
+  // 우측 취소 정보
+  .in-pay-info .in-information {
+    padding: 10px 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .in-pay-info ._list {
+    &--sale ._txt {
+      color: #ff5656;
+    }
+    &--final {
+      border-top: 1px solid #c8c8c8;
+      padding: 13px 0px 0px 115px;
+      margin-top: 20px;
+    }
+    &--final ._label {
+      @include fontType01(#{$px-18}rem, $weight: 500);
+
+      top: calc(50% + 8px);
+    }
+    &--final ._txt {
+      @include fontType01(#{$px-24}rem, $weight: bold, $color: $purple);
+    }
+    ._txt {
+      text-align: right;
+      font-weight: 400;
+    }
+  }
+
+  .in-agree-list {
+    margin-bottom: 25px;
+  }
+
+  .in-agree-list ._agr_list {
+    @include fontType01(#{$px-13}rem);
+
+    position: relative;
+    padding: 5px 0;
+    user-select: none;
+  }
+
+  .in-agree-list ._more {
+    @include fontType01(#{$px-11}rem);
+    @include position($b: 5px, $r: 0);
+
+    cursor: pointer;
+  }
+
+  .in-agree-list ._more img {
+    margin-left: 3px;
+    position: relative;
+    top: -1px;
+  }
+
+  ._agree_info_view {
+    border: 1px solid $light_gray6;
+    background-color: #fafafa;
+    padding: 10px;
+    margin-top: 13px;
+    display: none;
+    user-select: auto;
+  }
+
+  ._agree_info_view li {
+    @include fontType01(#{$px-11}rem, $weight: 300, $color: #787878);
+
+    line-height: 1.8;
+  }
+
+  #agree-info-more:checked + ._agr_list #agree-info-view {
+    display: block;
+  }
+  // 우측 취소 정보 END
+}
+
+/*
+    PAGES - 주문완료
+*/
+
+#dg-order-complete-wrapper {
+  padding-top: 35px;
+  padding-bottom: 200px;
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  .l-contents-group {
+    padding: 0 10px;
+  }
+
+  .mb-1 {
+    margin-bottom: 1px;
+  }
+
+  .dg-clothes-history-card {
+    .in-content {
+      border-bottom: 0px none;
+    }
+  }
+
+  .in-breadcrumb {
+    @include position($t: 50%, $r: 0);
+
+    transform: translateY(-50%);
+  }
+
+  .dg-button-wrap {
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  .dg-button-wrap--single {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
+
+/*
+    PAGES - 배송지 변경
+*/
+
+#dg-change-address-wrapper {
+  padding-top: 35px;
+  padding-bottom: 200px;
+
+  #_mini_quick_menu {
+    top: 110px;
+  }
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  .l-contents-group {
+    padding: 0 10px;
+  }
+
+  // 좌측 정보
+  .in-detail-info {
+    border: 1px solid $light_gray6;
+
+    ._list ._txt {
+      font-size: #{$px-13}rem;
+    }
+
+    .in-information {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .l-con-article {
+      border-bottom: 1px solid $light_gray6;
+      padding: 22px 20px;
+      margin-bottom: 0;
+    }
+
+    .l-con-article:last-child {
+      border-bottom: 0;
+    }
+
+    .in-subject {
+      @include fontType01(#{$px-18}rem);
+
+      border-bottom: 0;
+    }
+    ._list:last-child {
+      margin-bottom: 0;
+      padding-top: 0;
+    }
+
+    ._input {
+      @include inputInit(
+        $bd: 1px solid $light_gray6,
+        $pd: 0 12px,
+        $pointer: auto,
+        $focus-bd: #333
+      );
+      @include fontType01(#{$px-13}rem, $weight: 300);
+
+      width: 100%;
+      height: 40px;
+    }
+
+    // 배송지 정보
+    ._etc_buttons {
+      @include position($t: 0, $r: 4px);
+    }
+
+    ._etc_buttons .square-btn-outline {
+      margin: 0 -3px;
+      width: 80px;
+      border-color: #b4b4b4;
+      color: #b4b4b4;
+    }
+
+    ._etc_buttons .square-btn-outline.active {
+      border-color: #333;
+      background-color: #333;
+      color: white;
+    }
+
+    // 배송지 정보 - 우편번호
+    ._list--post ._input {
+      @include inlineBlockStyle(middle);
+
+      width: 132px;
+      margin-right: 5px;
+    }
+
+    ._list--post .square-btn-outline {
+      height: 40px;
+      line-height: 40px;
+      width: 135px;
+    }
+
+    // 배송지 정보 - 배송 요청사항
+    ._list--textarea ._label {
+      transform: translateY(0);
+      top: 12px;
+    }
+
+    ._list--textarea ._textarea {
+      @include inputInit(
+        $pd: 10px 12px,
+        $bd: 1px solid $light_gray6,
+        $focus-bd: #333,
+        $pointer: auto
+      );
+      @include fontType01(#{$px-13}rem, $weight: 300);
+      width: 100%;
+      height: 78px;
+      resize: none;
+      line-height: 1.7;
+      box-sizing: border-box;
+    }
+  }
+
+  // 좌측 정보 END
+
+  // 우측 취소 정보
+  .in-pay-info .in-text-group {
+    text-align: center;
+    padding: 25px 0 40px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  // 우측 취소 정보 END
+}

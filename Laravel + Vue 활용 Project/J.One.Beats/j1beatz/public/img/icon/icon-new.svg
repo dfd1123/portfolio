@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46" viewBox="0 0 46 46">
+  <defs>
+    <filter id="타원_56" x="0" y="0" width="46" height="46" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_442" data-name="그룹 442" transform="translate(-799 -440)">
+    <g transform="matrix(1, 0, 0, 1, 799, 440)" filter="url(#타원_56)">
+      <circle id="타원_56-2" data-name="타원 56" cx="14" cy="14" r="14" transform="translate(9 6)" fill="#ff6a6a"/>
+    </g>
+    <path id="패스_119" data-name="패스 119" d="M1.865-9.4a1.617,1.617,0,0,1,.195.01.457.457,0,0,1,.14.039.469.469,0,0,1,.12.085,1.355,1.355,0,0,1,.13.146L7.384-2.834q-.026-.227-.036-.445t-.01-.406V-9.4H8.879V0h-.9a.8.8,0,0,1-.345-.065A.767.767,0,0,1,7.365-.3L2.451-6.559q.02.208.029.413t.01.374V0H.949V-9.4Z" transform="translate(817.051 464.399)" fill="#fff"/>
+  </g>
+</svg>

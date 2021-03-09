@@ -1,0 +1,131 @@
+.checkbox_01 {
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 0;
+
+  &_box {
+    position: relative;
+    float: left;
+    width: 35px;
+    height: 35px;
+
+    svg {
+      @include position($t: 0, $l: 0);
+    }
+
+    svg .chckone {
+      fill: #f8f8f8;
+      stroke: #f3f3f3;
+      stroke-width: 1.3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: all 0.3s ease;
+    }
+
+    svg .chckpoint_before {
+      fill: none;
+      stroke: #eeeeee;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+    }
+
+    svg .chckpoint_after {
+      fill: none;
+      stroke: #fabb3c;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 71px;
+      stroke-dashoffset: 71px;
+      transition-delay: 0.3s;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  input:checked + .checkbox_01_box svg {
+    .chckone {
+      stroke-dashoffset: 0;
+      fill: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .chckpoint_before {
+      opacity: 0;
+    }
+
+    .chckpoint_after {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+.checkbox_02 {
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 0;
+
+  &_box {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+
+    svg {
+      @include position($t: 0, $l: 0);
+    }
+
+    svg .chckone {
+      fill: #e6e6e6;
+      stroke: #c3c3c3;
+      stroke-width: 1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 170px;
+      stroke-dashoffset: 170px;
+      transition: all 0.5s ease;
+    }
+
+    svg .chckpoint_before {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+    }
+
+    svg .chckpoint_after {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 71px;
+      stroke-dashoffset: 71px;
+      transition-delay: 0.3s;
+      transition: all 0.8s ease-in-out;
+    }
+  }
+
+  input:checked + .checkbox_02_box svg {
+    .chckone {
+      stroke-dashoffset: 0;
+      fill: #fabb3c;
+      stroke: #faa13c;
+      transition: all 0.6s ease;
+    }
+
+    .chckpoint_before {
+      opacity: 0;
+    }
+
+    .chckpoint_after {
+      stroke-dashoffset: 0;
+    }
+  }
+}

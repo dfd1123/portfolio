@@ -1,0 +1,45 @@
+@function themeGradient($degree, $start, $end) {
+  @return linear-gradient($degree, $start, $end);
+}
+
+@function bgImg($path, $img) {
+  @return url($path+$img);
+}
+
+@function z($key) {
+  @if map-has-key($z-indexes, $key) {
+    @return map-get($z-indexes, $key);
+  }
+  @warn "Unknown `#{$key}` in $z-indexes";
+  @return null;
+}
+
+@function layoutPc($key) {
+  @if map-has-key($pc-layout, $key) {
+    @return map-get($pc-layout, $key);
+  }
+}
+
+@function layoutPc15($key) {
+  @if map-has-key($pc-15inch-layout, $key) {
+    @return map-get($pc-15inch-layout, $key);
+  }
+}
+
+@function layoutTablet($key) {
+  @if map-has-key($tablet-layout, $key) {
+    @return map-get($tablet-layout, $key);
+  }
+}
+
+@function layoutTab($key) {
+  @if map-has-key($tab-layout, $key) {
+    @return map-get($tab-layout, $key);
+  }
+}
+
+@function layoutMobile($key) {
+  @if map-has-key($mobile-basic-layout, $key) {
+    @return map-get($mobile-basic-layout, $key);
+  }
+}

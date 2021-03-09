@@ -1,0 +1,11 @@
+@function themeGradi($degree) {
+  @return linear-gradient($degree, #fc4ead, #a134e8);
+}
+
+@function hoverEffectBg($hover-bg) {
+  @return darken($hover-bg, 2%);
+}
+
+@function activeEffectBg($active-bg) {
+  @return darken($active-bg, 8%);
+}

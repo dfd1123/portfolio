@@ -1,0 +1,196 @@
+/* main */
+.wallet__after-tit {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #cccccc;
+    padding-top: 45px;
+    margin-bottom: 30px;
+    opacity: 0;
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+    -webkit-animation: translateNone 0.5s 1;
+            animation: translateNone 0.5s 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+            animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+.wallet__after-tit b {
+    font-size: 1.3em;
+    font-weight: inherit;
+    color: #fff;
+}
+
+.wallet-panel--before {
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 35px;
+}
+
+.wallet-panel--before p {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #535353;
+    letter-spacing: -1px;
+}
+
+.wallet-panel--before p b {
+    font-weight: 400;
+    color: #cccccc;
+}
+
+.wallet-panel--after {
+    background-position: calc(100% - 0.8rem) 0.5rem;
+    background-size: 7.5rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 0 #ABABAB;
+            box-shadow: 0 3px 0 #ABABAB;
+    background-image: url("../img/logo/logo_wordtype.png");
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    opacity: 0;
+    -webkit-animation: translateNone 0.7s 1 0.4s;
+            animation: translateNone 0.7s 1 0.4s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+            animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+.wallet-panel--after__hd {
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.wallet-panel--after__hd .wlt_coin {
+    font-size: 1.5em;
+    font-weight: inherit;
+    color: #000000;
+    width: calc(100% - 7.5rem);
+    word-break: break-all;
+    letter-spacing: -1px;
+    line-height: 1.3;
+}
+
+.wallet-panel--after__hd .wlt_price {
+    font-size: 0.75em;
+    font-weight: inherit;
+    color: #8b8b8b;
+}
+
+.wallet-panel--after__hd .front_doller:before {
+    content: '$';
+}
+
+.wallet-panel--after__md {
+    padding: 0px 15px 10px;
+}
+
+.wallet-panel--after__md .wlt_adrs_label {
+    font-size: 0.75em;
+    font-weight: inherit;
+    color: #8b8b8b;
+    display: inline-block;
+    width: 100%;
+}
+
+.wallet-panel--after__md .wlt_adrs {
+    font-size: 1.5em;
+    font-weight: inherit;
+    color: #000000;
+    word-break: break-all;
+    line-height: 1.2;
+}
+
+.wallet-panel--after__bt {
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.wallet-panel--after__bt .wlt_menu_btn {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border: 0;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: inherit;
+    color: #000000;
+    width: 25%;
+    border-right: 1px solid #e9e9e9;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.wallet-panel--after__bt .wlt_menu_btn:active {
+    background-color: #f2f2f2;
+}
+
+.wallet-panel--after__bt .wlt_menu_btn:last-child {
+    border-right: 0;
+}
+
+.wallet-panel--after__bt .wlt_menu_btn__txt {
+    padding-left: 20px;
+}
+
+.wallet-panel--after__bt .wlt_menu_btn__txt--send {
+    background-position: 2px 55%;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon/mini_send_top_dark.png");
+}
+
+.wallet-panel--after__bt .wlt_menu_btn__txt--receive {
+    background-position: 2px 55%;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon/mini_get_bt_dark.png");
+}
+
+.wallet-panel--after__bt .wlt_menu_btn__txt--deposit {
+    background-position: 3px 55%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-image: url("../img/btn/arrow_bt_dark.png");
+}
+
+.wallet-panel--after__bt .wlt_menu_btn__txt--withdraw {
+    background-position: 3px 55%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-image: url("../img/btn/arrow_top_dark.png");
+}
+
+.wallet-panel--after__bt-02 .wlt_menu_btn {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: inherit;
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.wallet-panel--after__bt-02 .wlt_menu_btn:active {
+    background-color: #f2f2f2;
+}
+/* end main */

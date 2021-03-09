@@ -1,0 +1,93 @@
+.bcg-swal {
+  &__container.swal2-shown {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  &__popup {
+    padding: 2em 1.25em 0.7em;
+    box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+  &__popup--btnfalse {
+    box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+  &__popup--doublebtn {
+    padding: 2em 0.25em 0.7em;
+  }
+  &__popup-bdtop_ylw {
+    border-top: 7px solid #fcd658;
+    padding: 0 1em 0.7em;
+  }
+  &__button--single {
+    width: 100%;
+  }
+  &__icon {
+    margin: 0 auto 1.25rem;
+  }
+  &__icon--btnfalse {
+    margin: 0 auto 0.25rem;
+    transform: scale(0.8);
+  }
+  &__orange_single {
+    position: absolute;
+    top: -72px;
+  }
+  &__orange_doctors {
+    position: absolute;
+    top: -110px;
+    z-index: -1;
+  }
+  &__confirm-button {
+    border-radius: 5px !important;
+    box-shadow: none !important;
+  }
+  &__cancel-button {
+    border: 1px solid #faa13c !important;
+    color: #faa13c !important;
+    box-shadow: none !important;
+    &:hover {
+      background: #fff9f3 !important;
+    }
+  }
+  &__bdradius-button {
+    background-color: $theme-03 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 8px 10px rgba(250, 187, 60, 0.3) !important;
+    width: 100%;
+  }
+  &__content {
+    font-size: 1em;
+  }
+  &__content--ta_left {
+    text-align: left !important;
+    b {
+      @include setFont(inherit, $color: $theme-02, $weight: bold);
+    }
+  }
+  &__content--pd_05em {
+    padding: 0 0.5em;
+  }
+  &__content--theme01 {
+    padding-top: 20px;
+    color: #272720;
+    font-weight: 400;
+    font-size: 0.95em;
+    word-break: keep-all;
+  }
+}
+
+.swal2-popup {
+  .swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid rgba(250, 187, 60, 0.45);
+  }
+  .swal2-icon.swal2-success [class^="swal2-success-line"] {
+    background-color: #fab62d;
+  }
+  .swal2-icon.swal2-success {
+    border-color: rgba(250, 187, 60, 0.45);
+  }
+  .swal2-icon.swal2-warning {
+    border-color: rgba(242, 116, 116, 0.6);
+    color: #ff7b7b;
+  }
+}

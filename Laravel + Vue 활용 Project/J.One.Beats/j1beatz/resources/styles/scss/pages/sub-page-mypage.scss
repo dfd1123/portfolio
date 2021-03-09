@@ -1,0 +1,536 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+/*
+    --------------------------------------------------------------------
+
+        INDEX 마이페이지
+
+            00. 공통
+            01. 이용권 관리
+            02. 주문내역
+            03. 마이앨범
+            04. 알림 메세지
+            05. 나의 정보관리
+
+    --------------------------------------------------------------------
+*/
+
+// 00. 공통
+
+.sub-page-mypage {
+    &-contents-inner {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .in-title {
+        padding: 0 23px;
+        font-size: 16px;
+        min-height: 20px;
+
+        &-name {
+            font-weight: bold;
+        }
+    }
+}
+
+// 01. 이용권 관리
+
+.sub-page-mypage-01 {
+    .sub-page-ticket {
+        &-info01 {
+            width: 100%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 14px;
+            display: flex;
+            padding: 30px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+
+            &-name {
+                width: 40%;
+                border-right: 1px solid #cccccc;
+                text-align: center;
+
+                b {
+                    color: $theme-button01-color;
+                    margin-right: 5px;
+                }
+            }
+
+            &-status {
+                width: 60%;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+
+        &-info02 .ticket-box {
+            width: 100%;
+            height: 200px;
+            border: 1px solid rgba(112, 112, 112, 0.2);
+            border-radius: 14px;
+            position: relative;
+
+            &-nothing {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &-nothing .btn {
+                width: 170px;
+            }
+
+            &-data-group {
+                line-height: 1.8;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            &-name {
+                color: $theme-button01-color;
+                font-size: 28px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                display: inline-block;
+            }
+
+            &-data_list ._label {
+                color: rgba(51, 51, 51, 0.5);
+                margin-right: 13px;
+            }
+
+            &-data_list ._data {
+                font-weight: 400;
+
+                b {
+                    margin-right: 7px;
+                }
+
+                em,
+                b {
+                    font-weight: inherit;
+                    letter-spacing: 1px;
+                }
+            }
+
+            &-yes .ticket-box-name_data_group {
+                @include position($l: 35px, $b: 32px);
+            }
+
+            &-yes .btn {
+                @include buttonStyle(10px, 33px, #333333);
+                @include position($b: 32px, $r: 35px);
+                width: 110px;
+            }
+        }
+    }
+}
+
+// 02. 주문내역
+
+.sub-page-mypage-02 {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .mypage-02-option-bar {
+        width: 100%;
+        margin: 40px 0;
+        display: flex;
+    }
+
+    ._history_period_list01 {
+        width: 50%;
+        height: 55px;
+        border: 1px solid #dbdbdb;
+        border-radius: 12px;
+        overflow: hidden;
+
+        li {
+            width: 20%;
+            float: left;
+            height: 100%;
+            line-height: 55px;
+            text-align: center;
+            border-right: 1px solid #dbdbdb;
+        }
+
+        li:last-child {
+            border-right: 0;
+        }
+
+        li label {
+            @include fontStyle(14px, 400);
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        li._all label {
+            color: $theme-button01-color;
+        }
+    }
+
+    @each $order-history-period in all, week1, week2, month1, month3 {
+        #check-order-history-#{$order-history-period}:checked
+            ~ ._history_period_list01
+            li._#{$order-history-period}
+            label {
+            background-color: $theme-button01-color;
+            color: #fff;
+            transition: all 0.2s;
+        }
+    }
+
+    ._history_period_list02 {
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        label {
+            @include fontStyle(14px, 400);
+            color: rgba(51, 51, 51, 0.5);
+            width: 21%;
+            text-align: center;
+        }
+
+        span {
+            @include fontStyle(14px, 400);
+            color: rgba(51, 51, 51, 0.5);
+            width: 5%;
+            text-align: center;
+        }
+
+        input {
+            width: 37%;
+            border-radius: 12px;
+            border: 1px solid #dbdbdb;
+            height: 40px;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding-left: 5%;
+            background-image: url($G-path-img-icon+"icon-calender-purple.svg");
+            background-position: 19% 50%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .cart_chart_list table th.th-song,
+    .cart_chart_list table td.td-song {
+        width: 30%;
+    }
+
+    .cart_chart_list table th.th-file_type,
+    .cart_chart_list table td.td-file_type {
+        width: 10%;
+    }
+
+    .cart_chart_list table td.td-order_data {
+        font-size: 14px;
+        line-height: 1.7;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+    }
+
+    .cart_chart_list table td.td-download {
+        .btn {
+            @include buttonStyle(5px, 30px, #fff, $theme-button01-color, 14px);
+            border: 1px solid $theme-button01-color;
+            margin-bottom: 5px;
+            padding: 0 10px 0 30px;
+            background-image: url($G-path-img-btn+"btn-down-purple.svg");
+            background-repeat: no-repeat;
+            background-position: 10px 50%;
+        }
+
+        .btn:hover {
+            background-color: $theme-button01-color;
+            color: #fff;
+            background-image: url($G-path-img-btn+"btn-down-white.svg");
+        }
+    }
+}
+
+// 03. 마이앨범
+
+.sub-page-mypage-03 {
+    padding-top: 30px;
+
+    .in-title {
+        padding: 0;
+    }
+
+    .myalbum-list {
+        ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .myalbum-card {
+            width: 450px;
+            height: 250px;
+            margin-right: 2%;
+            margin-bottom: 55px;
+
+            display: flex;
+
+            float: left;
+            position: relative;
+            padding-left: 270px;
+            align-items: center;
+        }
+
+        .myalbum-plus-folder {
+            cursor: pointer;
+        }
+
+        .myalbum-plus-folder .myalbum-thumb {
+            border: 1px solid #dbdbdb;
+            background-color: #fff;
+            background-image: url($G-path-img-icon+"icon-myalbum-folder.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: none;
+        }
+
+        .myalbum-plus-folder span {
+            color: $theme-button01-color;
+        }
+
+        .myalbum-thumb {
+            @include position($t: 0, $l: 0);
+            width: 250px;
+            height: 250px;
+            display: flex;
+            border-radius: 30px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            background-color: #fff;
+            align-items: center;
+            justify-content: left;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        .myalbum-thumb-not_song {
+            background-image: url($G-path-img+"imgs/img_myalbum_empty.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+            border: 0;
+        }
+
+        .myalbum-card input[type="checkbox"] {
+            @include position($t: 25px, $l: 25px);
+            z-index: 3;
+        }
+
+        .myalbum-card input[type="checkbox"] + label {
+            @include position($t: 20px, $l: 20px);
+            z-index: 2;
+        }
+
+        .myalbum-info {
+            position: relative;
+            padding-bottom: 80px;
+        }
+
+        .myalbum-info dt {
+            @include fontStyle(18px, 400);
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .myalbum-info ._total_song {
+            @include fontStyle(13px, 400);
+            margin-bottom: 5px;
+        }
+
+        .myalbum-info ._total_song em {
+            font-weight: inherit;
+        }
+
+        .myalbum-info ._data {
+            @include fontStyle(13px, 400);
+            color: rgba(51, 51, 51, 0.5);
+            letter-spacing: 1px;
+        }
+
+        .myalbum-info .btn {
+            @include position($b: 0, $l: 0);
+            width: 30px;
+            height: 30px;
+            border-radius: 0;
+            background-image: url($G-path-img-btn+"btn-playlist-plus-purple.svg");
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-detail {
+        margin-bottom: 45px;
+
+        .myalbum-setting {
+            margin: 30px 0 0;
+            position: relative;
+            display: inline-block;
+            width: 210px;
+            font-size: 15px;
+        }
+
+        .myalbum-setting input {
+            width: 100%;
+            border: 0;
+            font-size: 1.5em;
+            padding: 0.5em;
+            padding-right: 35px;
+        }
+
+        ._after_btn {
+            @include position($r: 0, $t: 0);
+            display: none;
+            height: 100%;
+            line-height: 3.1em;
+
+            a {
+                @include fontStyle(14px, 400);
+                display: inline-block;
+                padding: 0 0.5em;
+            }
+
+            a._complt {
+                padding-right: 1.5em;
+                color: $theme-button01-color;
+            }
+        }
+
+        .myalbum-setting.active {
+            width: 380px;
+        }
+
+        .myalbum-setting.active input {
+            background-image: none;
+            background-color: #f8f8f8;
+            border-radius: 15px;
+            padding-right: 80px;
+        }
+
+        .myalbum-setting.active ._after_btn {
+            display: inline-block;
+        }
+    }
+}
+
+// 04. 알림 메세지
+
+.sub-page-mypage-05 {
+    .sub-page-alarm-group {
+        margin-top: 40px;
+    }
+
+    .sub-page-alarm-msg {
+        width: 100%;
+        border-radius: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #cccccc;
+        padding: 25px 23px;
+        margin-bottom: 13px;
+        font-size: 18px;
+        position: relative;
+
+        ._title {
+            font-weight: 400;
+            font-size: 1em;
+            margin-bottom: 0.8em;
+            display: inline-block;
+        }
+
+        ._txt {
+            font-size: 0.82em;
+            line-height: 1.5;
+            color: #333;
+            font-weight: 400;
+        }
+
+        ._data {
+            @include position($t: 25px, $r: 20px);
+            color: rgba(51, 51, 51, 0.5);
+            font-size: 0.8em;
+            letter-spacing: 1px;
+        }
+
+        &.__no {
+            text-align: center;
+
+            b {
+                color: $blue-color;
+                font-weight: inherit;
+                text-decoration: underline;
+            }
+        }
+
+        &-new {
+            &:before {
+                @include position($t: -13px, $l: -24px);
+                content: url($G-path-img-icon+"icon-new.svg");
+            }
+        }
+    }
+}
+
+// 05. 나의 정보관리
+
+.sub-page-mypage-06 {
+    .sub-page-form-panel {
+        margin-top: 55px;
+
+        .in-title {
+            padding: 0;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+
+        .in-title:first-of-type {
+            margin-top: 0;
+        }
+
+        ._re-certify {
+            display: flex;
+        }
+
+        ._re-certify .btn-certify-mini {
+            margin-left: 20px;
+        }
+
+        ._count_time {
+            @include fontStyle(14px, 400);
+            @include position($t: 50%, $r: 130px);
+            color: $theme-button01-color;
+            transform: translateY(-50%);
+            letter-spacing: 1px;
+        }
+
+        input::placeholder,
+        select {
+            color: #cccccc;
+        }
+    }
+
+    .btn-complete {
+        @include buttonStyle(30px, 55px, #333333, #fff, 1.1rem);
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .btn-ok {
+        @include buttonStyle(5px, 47px, $theme-button01-color, #fff, 1.1rem);
+    }
+}

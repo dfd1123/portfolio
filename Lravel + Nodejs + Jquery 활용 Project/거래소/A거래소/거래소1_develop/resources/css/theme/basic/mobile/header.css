@@ -1,0 +1,587 @@
+/* ----------start 모바일버전 헤더스타일---------- */
+
+/* 네비버튼 */
+.m_toggle_btn{
+    width: 50px;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.m_toggle_btn label{
+    width: 100%; height: 100%;
+}
+
+.m_toggle_btn span{
+    display: inline-block;
+    width: 10px;
+    height: 2.5px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.m_toggle_btn span:before,
+.m_toggle_btn span:after{
+    width: 140%;
+    height: 100%;
+    background: #fff;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.m_toggle_btn span:before{
+    top: -5px;
+}
+
+.m_toggle_btn span:after{
+    top: 5px;
+}
+
+/* //네비버튼 */
+
+/* 토글버튼 누르면 열림 */
+#m_nav_check_box:checked ~ #m_nav_page{
+    transition: all 0.3s;
+    transition-timing-function: ease;
+    left: 0;
+}
+
+/* 닫기버튼 누르면 닫힘 */
+
+#m_nav_close_box:checked + #m_nav_page{
+    transition: all 0.3s;
+    transition-timing-function: ease;
+    left: -100%;
+}
+
+/* 모바일네비페이지 */
+#m_nav_page{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    z-index: 10;
+    top: 0;
+    left: -100%;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+#m_nav_page .nav_sub_btns{
+    background-color: #333333;
+}
+
+#m_nav_page .nav_sub_btns.text-right{
+    text-align: right;
+    height: 45px;
+}
+
+#m_nav_page .nav_sub_btns .before{
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+}
+
+#m_nav_page .nav_sub_btns .nav_home_btn{
+    width: 40px;
+    height: 100%;
+    display: inline-block;
+    background-image: url(/storage/image/homepage/mobile_icon/btn_home.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 22px;
+}
+
+#m_nav_page .nav_sub_btns .nav_x_btn{
+    width: 50px;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#m_nav_page .nav_sub_btns .nav_x_btn span{
+    width: 18px;
+    height: 1.2px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#m_nav_page .nav_sub_btns .nav_x_btn span:before,
+#m_nav_page .nav_sub_btns .nav_x_btn span:after{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+#m_nav_page .nav_sub_btns .nav_x_btn span:before{
+    transform: rotate(45deg);
+}
+
+#m_nav_page .nav_sub_btns .nav_x_btn span:after{
+    transform: rotate(-230deg);
+}
+
+#m_nav_page .login_status{
+    width: 100%;
+    height: 43px; font-size: 1rem;
+    padding: 0 15px;
+}
+
+#m_nav_page .login_status_before{
+    height: 55px;
+    position: relative;
+    padding-top: 22px;
+}
+
+#m_nav_page .login_status_before_group{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#m_nav_page .login_status_before span{
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+#m_nav_page .login_status_before .border_btn{
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+#m_nav_page .login_status_before .border_btn:active{
+    background: #f7f7f7;
+}
+
+#m_nav_page .login_status_before .login_register_btns{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#m_nav_page .login_status_before .login_register_btns a {
+    font-weight: bold;
+    color: #00b9ff;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#m_nav_page .login_status_after{
+    padding: 0 20px 20px;
+}
+
+#m_nav_page .login_status_after .after_name_group a{
+    color: #fff;
+    font-size: 13px;
+}
+
+#m_nav_page .login_status_after .after_name_group a b{
+    font-size: 17px;
+}
+
+#m_nav_page .nav_sub_btns .after{
+    position: relative;
+    border-bottom: 1px solid #515151;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#m_nav_page .login_status .after span{
+    display: inline-block; width: 100%;
+}
+
+#m_nav_page .login_status .after span a{
+    display: inline-block; width: 100%;
+    color: #474846;
+}
+
+#m_nav_page .my_total_asset{
+}
+
+#m_nav_page .my_total_asset .label{
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+#m_nav_page .my_total_asset .ast_num{
+    color: #fff;
+    line-height: 1;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+#m_nav_page .my_total_asset .ast_num .currency{
+    font-size: 1.2rem;
+    color: #dcdcdc;
+    font-weight: 100;
+    margin-left: 5px;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+#m_nav_page .nav_group,
+#m_nav_page .nav_group .nav_ul{
+    width: 100%;
+}
+
+#m_nav_page .nav_group .nav_ul .main_menu {
+    border-bottom: 1px solid #f5f5f5;
+    /* line-height: 41px; */
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.9rem;
+    color: #474846;
+}
+
+#m_nav_page .nav_group .nav_ul .main_menu>a:active{
+    background: #F0F0F0;
+}
+
+#m_nav_page .nav_group .nav_ul .main_menu>a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    padding-left: 65px;
+    color: #474846;
+}
+
+#m_nav_page .nav_group .nav_ul .main_menu .nav-menu-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    padding-left: 0;
+    width: 65px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(1) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_01_commu.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(2) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_02_guide.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(3) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_02_deal.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(4) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_03_statement.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(5) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_04_property.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(6) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_05_IEO.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(7) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_06_out_trade.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(8) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_07_trading.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(9) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_08_info.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(10) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_09_guide.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(11) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_10_support.svg);
+}
+#m_nav_page .nav_group .nav_ul .main_menu:nth-child(12) .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/icon_11_info.svg);
+}
+
+
+#m_nav_page .nav_group .nav_ul .main_menu .fa-angle-down{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+/* 드롭다운 메뉴 0319 추가 */
+#m_nav_page .scrl_wrap{
+    padding-bottom: 150px;
+    height: 100%;
+}
+
+#m_nav_page .nav_group .nav_ul .drop_menu{
+    height: auto;
+}
+
+#m_nav_page .nav_group .nav_ul .main_menu label{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    /*
+    background-image: url(/storage/image/homepage/mobile_icon/btn_sidemenu.svg);
+    background-position: 94% center;
+    background-repeat: no-repeat;
+    */
+}
+
+#m_nav_page .drop_down{
+    width:100%;
+    background: #f5f5f5;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+#m_nav_page .drop_down li{
+    height: 40px;
+    line-height: 40px;
+}
+
+#m_nav_page .drop_down li:active{
+    background-color: #f0f0f0;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+#m_nav_page .drop_down li a{
+    display: inline-block;
+    font-size: 0.85rem;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    padding-left: 65px;
+    position: relative;
+}
+
+#m_nav_page .drop_down li a:active{
+    background: #F0F0F0;
+}
+
+#sub_menu1:checked + .drop_down{
+    height: 210px;
+    transition: all 0.3s;
+    padding: 5px 0;
+}
+
+#sub_menu2:checked + .drop_down,
+#sub_menu4:checked + .drop_down,
+#sub_menu5:checked + .drop_down{
+    height: 130px;
+    transition: all 0.3s;
+    padding: 5px 0;
+}
+
+#sub_menu6:checked + .drop_down,
+#sub_menu7:checked + .drop_down{
+    height: 290px;
+    transition: all 0.3s;
+    padding: 5px 0;
+}
+/* //드롭다운 메뉴 0319 추가 */
+
+#m_nav_page .nav_sub_btn_group{
+    width: 100%;
+    height: auto;
+    /* background: #00b9ff; */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: unset;
+    text-align: center;
+    z-index: 7;
+    padding-top: 20px;
+}
+
+#m_nav_page .nav_sub_btn_group .download_btn{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #00b9ff;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    display: inline-block;
+
+}
+
+#m_nav_page .nav_sub_btn_group .sub_etc_btns{
+    text-align: center;
+}
+
+#m_nav_page .nav_sub_btn_group .sub_etc_btns li{
+    display: inline-block;
+}
+
+#m_nav_page .nav_sub_btn_group .sub_etc_btns li:first-child a{
+    margin-right: 1.5rem;
+    border-right: 1px solid #969696;
+}
+
+#m_nav_page .nav_sub_btn_group .sub_etc_btns li:nth-child(2) a{
+    margin-left: 0.2rem;
+}
+
+#m_nav_page .nav_sub_btn_group .sub_etc_btns li a:focus{
+    color:#00b9ff;
+}
+
+#m_nav_page .nav_sub_btn_group .sub_etc_btns li a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    font-size: 0.95rem;
+    letter-spacing: -0.52px;
+    font-family: 'Spoqa Han Sans Light';
+    color: #969696;
+    /* border-right: 1px solid #969696; */
+}
+
+#m_nav_page .nav_sub_btn_group .sub_etc_btns li._logout a{
+    color: #00b9ff;
+}
+
+#m_nav_page .nav_sub_btn_group .sub_etc_btns li:last-child a{
+    border-right: 0;
+}
+
+#m_nav_page .nav_sub_btn_group .nav-menu-icon{
+    background-image: url(/storage/image/homepage/mobile_icon/nav-loginout.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 3px;
+    left: -3px;
+}
+
+/* 국기아이콘 0327 추가 */
+
+.flag_country{
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.lang_choice_list{
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 0;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    display: flex;
+    height: 65px;
+    overflow: hidden;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.lang_choice_list li{
+    border-right: 1px solid #ececec;
+    text-align: center;
+    vertical-align: middle;
+    height: 65px;
+    padding: 0;
+    display: inline-block;
+    flex: 1;
+    font-size: 0.8rem;
+}
+
+.lang_choice_list li:last-child{
+    border-right: 0;
+}
+
+.lang_choice_list li>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+}
+
+.lang_choice_list li>a:active{
+    background: #00b9ff;
+    color: #fff;
+}
+
+.lang_choice_list li .flag_img{
+    width: 25px;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.lang_choice_list li .flag_img>img{
+    width: 100%;
+    height: 100%;
+}
+
+#m_nav_page .nav_sub_btns .after .label{
+    width: 25px;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    display: inline-block;
+}
+
+#m_nav_page .nav_sub_btns .after .label img{
+    width: 100%;
+}
+
+#lang_choice_check:checked + .lang_choice_list{
+    width: 270px;
+    transition: all 0.3s;
+}
+
+#m_nav_page .nav_sub_btns .before .label{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    top: -4px;
+    position: relative;
+}
+
+#m_nav_page .nav_sub_btns .before .label img{
+    width: 25px;
+    position: relative;
+    top: 3px;
+}
+
+.nickname_right_arrow{
+    margin-left:30px;
+}
+
+
+/* //국기아이콘 0327 추가 */
+
+/* //모바일네비페이지 */
+
+/* ----------end 모바일버전 헤더스타일---------- */

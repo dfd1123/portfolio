@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- header -->
+      <!-- detail 페이지만 detail-mobile-hd 클래스 추가 -->
+      <header id="admin-header" class="detail-mobile-hd">
+        <!-- 상단고정 헤더 -->
+        <div id="header-hd">
+          <div class="show-pc">
+            <!-- 상단 side navigation -->
+            <section class="hd-snb-bar">
+              <div class="in-store-profile">
+                <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+                <a href="#" target="_blank">
+                  <figure class="symbol-circle">
+                    <img
+                      src="/images/img/profile_admin.jpg"
+                      alt="profile image"
+                    />
+                  </figure>
+                  <h2 class="in-name">스토어명</h2>
+                  <img
+                    class="in-btn-img"
+                    src="/images/btn/btn_more.svg"
+                    alt="btn more"
+                  />
+                </a>
+              </div>
+
+              <div class="in-snb-group">
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">알림</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="../snb/inquiry-store-list.html" class="in-snb-list">
+                  <span class="in-snb-name">스토어 문의</span>
+                </a>
+                <a href="../snb/cs-notice-main.html" class="in-snb-list">
+                  <span class="in-snb-name">고객센터</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">로그아웃</span>
+                </a>
+              </div>
+            </section>
+            <!-- END 상단 side navigation -->
+
+            <!-- 상단 타이틀바 -->
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <section class="hd-title-bar">
+              <div class="in-page-name">
+                <h3 class="in-main"><span>상품문의 상세보기</span></h3>
+              </div>
+
+              <div class="in-page-btn-group">
+                <a
+                  href="inquiry-product-list.html"
+                  class="rounded-square-btn btn-mild"
+                  >목록으로</a
+                >
+
+                <input
+                  type="button"
+                  class="rounded-square-btn btn-theme"
+                  value="답변완료"
+                />
+              </div>
+            </section>
+            <!-- FIXME: END -->
+            <!-- END 상단 타이틀바 -->
+          </div>
+
+          <div class="show-mobile">
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <div class="hd-title-bar">
+              <div class="hd-title-bar-inner">
+                <div class="in-left-btn">
+                  <label for="mobile_show_gnb" class="in-label-btn">
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                  </label>
+                </div>
+
+                <div class="in-page-name">
+                  <h3 class="in-main">
+                    <span>상품문의 상세보기</span>
+                    <a href="history-order-list.html" class="icon-back-btn"
+                      >뒤로가기</a
+                    >
+                  </h3>
+                </div>
+
+                <div class="in-page-btn-group">
+                  <input
+                    type="button"
+                    class="mobile-btn-theme"
+                    value="답변완료"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- FIXME: END -->
+          </div>
+        </div>
+        <!-- END 상단고정 헤더 -->
+
+        <input id="mobile_show_gnb" class="none" type="checkbox" />
+        <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+        <!-- 왼쪽 global navigation -->
+        <div id="header-gnb">
+          <section class="in-brand-con-box show-pc">
+            <h1 class="in-brand-logo">
+              <!-- TODO: 대시보드 메인으로 -->
+              <a href="../index.html">
+                <img
+                  src="/images/logo/logo_header_wh.svg"
+                  alt="image"
+                  class="in-logo"
+                />
+              </a>
+            </h1>
+          </section>
+
+          <section class="in-mobile-gnb-hd show-mobile">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#">
+                <figure class="symbol-circle">
+                  <img
+                    src="/images/img/profile_admin.jpg"
+                    alt="profile image"
+                  />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img
+                  class="in-btn-img"
+                  src="/images/btn/btn_more.svg"
+                  alt="btn more"
+                />
+              </a>
+            </div>
+
+            <label for="mobile_show_gnb" class="icon-close-btn">닫기</label>
+            <div class="inner-snb-group">
+              <a href="../index.html" class="icon-home-btn in-icon-btn"
+                ><i class="hide-text">홈</i></a
+              >
+              <!-- 새 알림 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="../snb/alarm-view.html"
+                class="icon-alarm-btn in-icon-btn"
+                ><i class="hide-text">알림</i></a
+              >
+              <!-- 새 문의 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="../snb/inquiry-store-list.html"
+                class="icon-contact-btn in-icon-btn"
+                ><i class="hide-text">문의</i></a
+              >
+            </div>
+            <div class="in-bottom-btns clearfix">
+              <a href="../snb/cs-notice-main.html" class="link-cs-btn"
+                >고객센터</a
+              >
+              <a href="#">로그아웃</a>
+            </div>
+          </section>
+
+          <div class="in-gnb-group">
+            <a href="setting-store.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_01.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_01_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">스토어 설정</span>
+            </a>
+            <a href="check-order.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_02.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_02_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문상품 확인</span>
+            </a>
+            <a href="history-order-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문내역</span>
+            </a>
+            <a href="history-cancel-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">취소/환불 내역</span>
+            </a>
+            <a href="manage-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_05.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_05_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품관리</span>
+            </a>
+            <a href="inquiry-product-list.html" class="in-gnb-list active">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_06.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_06_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품문의</span>
+            </a>
+            <a href="manage-review.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_07.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_07_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">구매후기</span>
+            </a>
+            <a href="sales-status.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_08.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_08_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">매출현황</span>
+            </a>
+          </div>
+        </div>
+        <!-- END 왼쪽 global navigation -->
+      </header>
+      <!-- END header -->
+
+      <!-- contents -->
+      <div id="admin-container" class="detail-container">
+        <div class="wrapper">
+          <div id="page-inquiry-prdt-detail-wrap">
+            <div class="grid-line-group">
+              <div class="panel-default">
+                <div class="form-wrapper">
+                  <fieldset class="form-container type-03 not-mobile">
+                    <div class="form-align">
+                      <label for="#" class="form-align-tit">문의자</label>
+                      <div class="form-align-input">
+                        <p class="in-text">홍길동</p>
+                      </div>
+                    </div>
+
+                    <div class="form-align">
+                      <label for="#" class="form-align-tit"
+                        >문의자 이메일</label
+                      >
+                      <div class="form-align-input">
+                        <p class="in-text">donggle@donggle.com</p>
+                      </div>
+                    </div>
+
+                    <div class="form-align">
+                      <label for="#" class="form-align-tit"
+                        >문의자 폰번호</label
+                      >
+                      <div class="form-align-input">
+                        <p class="in-text">010-0000-0000</p>
+                      </div>
+                    </div>
+
+                    <div class="form-align">
+                      <label for="#" class="form-align-tit">문의 날짜</label>
+                      <div class="form-align-input">
+                        <div class="in-text">2019년 00월 00일 00 : 00 : 00</div>
+                      </div>
+                    </div>
+
+                    <div class="form-align">
+                      <label for="#" class="form-align-tit">상품명</label>
+                      <div class="form-align-input">
+                        <div class="in-text">
+                          <div class="date-product-md">
+                            <figure class="in-thumb">
+                              <img
+                                src="/images/img/product.jpg"
+                                alt="product image"
+                              />
+                            </figure>
+                            <span class="in-word"
+                              >데일리 러빈 라운드넥 뽀송니트</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-align">
+                      <label for="#" class="form-align-tit">제목</label>
+                      <div class="form-align-input">
+                        <div class="in-text">문의 제목</div>
+                      </div>
+                    </div>
+
+                    <div class="form-align">
+                      <label for="#" class="form-align-tit">문의내용</label>
+                      <div class="form-align-input">
+                        <p class="in-text in-text-200">
+                          문의내용입니다.<br />
+                          내용 분량만큼 테이블 높이 늘어나게 해주세요.<br />
+                          최소높이 200px
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="form-align">
+                      <label for="#" class="form-align-tit">답변</label>
+                      <div class="form-align-input">
+                        <div class="temp-div in-editor">
+                          <p class="_editor">에디터 들어갈 곳</p>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset class="mobile-only">
+                    <ul class="mobile-detail-list">
+                      <li class="content-divide-line user-info">
+                        <dl class="clearfix">
+                          <dt class="_tit">문의자</dt>
+                          <dd class="_txt">홍길동</dd>
+                        </dl>
+                        <dl class="clearfix">
+                          <dt class="_tit">문의자 이메일</dt>
+                          <dd class="_txt">donggle@donggle.com</dd>
+                        </dl>
+                        <dl class="clearfix">
+                          <dt class="_tit">문의자 전화번호</dt>
+                          <dd class="_txt">010-2345-7890</dd>
+                        </dl>
+                        <dl class="clearfix">
+                          <dt class="_tit">문의 날짜</dt>
+                          <dd class="_txt">2020년 02월 02일 00 : 00 : 00</dd>
+                        </dl>
+                      </li>
+                      <li class="content-divide-line product-name">
+                        <dl class="clearfix">
+                          <dt class="_tit">상품명</dt>
+                          <dd class="_txt">
+                            <div class="date-product-md">
+                              <figure class="in-thumb">
+                                <img
+                                  src="/images/img/product.jpg"
+                                  alt="product image"
+                                />
+                              </figure>
+                              <span class="in-word"
+                                >데일리 러빈 라운드넥 뽀송니트</span
+                              >
+                            </div>
+                          </dd>
+                        </dl>
+                      </li>
+                      <li class="content-divide-line user-question">
+                        <dl class="clearfix">
+                          <dt class="_tit">제목</dt>
+                          <dd class="_txt">
+                            문의제목입니다. 문의 제목 길이가 길어지면 줄이
+                            늘어납니다.
+                          </dd>
+                        </dl>
+                      </li>
+                      <li class="content-divide-line user-question">
+                        <dl class="clearfix">
+                          <dt class="_tit">문의내용</dt>
+                          <dd class="_txt">
+                            문의내용입니다.<br />내용 분량만큼 높이가
+                            늘어납니다.
+                          </dd>
+                        </dl>
+                      </li>
+                      <li class="content-divide-line my-answer">
+                        <dl class="clearfix">
+                          <dt class="_tit">답변</dt>
+                          <dd class="_txt">
+                            <!-- 상태에 따라 하나만 보임 -->
+                            <div class="temp-div in-editor none">
+                              <p class="_editor">에디터 들어갈 곳</p>
+                            </div>
+                            <div class="temp-div in-answer">
+                              <p class="_answer">답변입니다.</p>
+                            </div>
+                          </dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="admin-footer" class="not-mobile">
+          <span class="in-copyright">Copyrights © <i>Donggle</i></span>
+          <div class="in-company-info">
+            <span>회사명 : ㈜동글</span>
+            <span>대표이사 : OOO</span>
+            <span>사업자등록번호 : 220-88-93187</span>
+            <span>통신판매업신고 : 2016-서울강남-00359</span>
+            <span>호스팅사업자 : (주)동글</span>
+            <span class="in-address"
+              >주소 : (06223) 서울특별시 강남구 테헤란로 32길 26 청송빌딩</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- END contents -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+
+/* 게시판 리스트 광고영역배너 공통속성 */
+.board_st_wrap.p2p_ico_wrap.adv_wrap .board_st_inner{
+    max-width: 1750px;
+    display: flex;
+}
+
+.board_st_wrap.p2p_ico_wrap.adv_wrap .board_st_con{
+    width: 100%;
+    margin: 0;
+}
+
+@media all and (max-width:1720px){
+    
+
+    .board_st_wrap.p2p_ico_wrap.adv_wrap .right_con{
+        padding-left: 0;
+    }
+    .board_st_wrap.p2p_ico_wrap.adv_wrap .left_con{
+        display: none;
+    }
+}
+
+@media all and (max-width: 1410px){
+
+    .right_adv_banner_wrap, .left_adv_banner_wrap{
+        display: none;
+    }
+    .board_st_wrap.p2p_ico_wrap.adv_wrap .board_st_inner{
+        max-width: 1750px;
+        padding: 25px 25px;
+    }
+}
+/* 게시판 리스트 광고영역배너 공통속성 */
+
+/* 게시판 상단 배너 */
+.adv_banner_wrap{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* 게시판 좌측 우측 배너영역 */
+.right_adv_banner_wrap,.left_adv_banner_wrap{
+    position: relative;
+    height: 100%;
+    width: 325px;
+}
+
+.right_adv_banner_wrap{
+    margin-left: 20px;
+    text-align: left;
+}
+
+.left_adv_banner_wrap{
+    margin-right: 20px;
+    text-align: right;
+}
+
+/* 게시판 좌측 우측 배너 안 영역 */
+.board_st_wrap.p2p_ico_wrap .adv_banners{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

@@ -1,0 +1,199 @@
+/*웹 버전*/
+.payment_wrapper{width: 100%; height: 100%; position: absolute; top: 0; left: 0; padding-left: 0;}
+
+.payment_wrapper .overlay_effect{width: 100%; height: 100%; background: black; opacity: 0.5; position: absolute;}
+
+.payment_wrapper .row.pg_row{position: relative; margin: 0;}
+
+.qr_wrapper{width: 50%; min-width: 768px; margin: 0 auto; margin-top: 30px;}
+
+.qr_wrapper .panel_inner_1{border: 0; border-radius: 5px; position: relative;}
+
+.qr_wrapper .panel_inner_1 .pg_logo{width: 223px; position: absolute; padding: 15px; top: 0; left: 5px; }
+
+.qr_wrapper .panel_inner_1 .pg_status{position: absolute; right: 25px; top: 25px; font-size: 18px; letter-spacing: -2px; color: #555555;}
+
+.qr_wrapper .panel_inner_1 .pg_status:before {content: ''; display: inline-block; position: absolute; left: -12px; top: 7px; background: #7c58bf;
+    width: 7px; height: 7px; border-radius: 50%;}
+
+.panel_inner_2{margin-bottom: 0px; border: 0; background: #efefef; padding: 70px 20px 50px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);}
+
+.panel_inner_body{background: #fcfcfc; border: 1px solid #c8c8c8; position: relative;}
+
+.panel_inner_body h3{letter-spacing: -2px; color: #333333; font-size: 18px; margin-top: 0;}
+
+.panel_inner_body .right_top_price{position: absolute; top: 12px; right: 12px; font-size: 12px; color: #7f7f7f; letter-spacing: -.5px;}
+
+.panel_inner_body .inner_text{font-size: 14px; line-height: 25px; color: #555555;letter-spacing: -.5px; text-align: center; margin-bottom: 0;}
+
+.panel_inner_body .inner_text b:nth-child(1){color: black; font-size: 16px;}
+
+.panel_inner_body .inner_text b:nth-child(4){color: #ff3939; display: inline-block; margin-top: 5px; font-size: 17px;}
+
+.panel_inner_body center .form_align{width: 38%; min-width: 340px; height: 30px; margin: 0 auto; position: relative; margin-bottom: 10px;}
+
+.panel_inner_body center .form_align .form-control{border: 1px solid #c8c8c8; box-shadow: none; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+
+.panel_inner_body center .form_align:nth-child(2) button{height: 100%; padding: 0 10px; position: absolute; right: 0; top: 0; background: #fff; border: 1px solid #c8c8c8; font-size: 12px; color: #7f7f7f; letter-spacing: -.7px; display: none;}
+
+.panel_inner_body center .qrbtn_wrap .form_align,
+.panel_inner_body center .m_qrbtn_wrap .form_align{height: 40px;}
+
+.panel_inner_body p:nth-child(5),.panel_inner_body p:nth-child(6){text-align: center; font-size: 11px; color: #7f7f7f; letter-spacing: -.5px; line-height: 18px; margin: 25px 0;}
+
+.panel_inner_body p:nth-child(6){display: none;}
+
+.ok_btn{width: 49%; height: 100%; left: 0; top: 0; position: absolute; background: #7c58bf; border-radius: 10px; color: white; border: 0; transition: all 0.3s;}
+
+.ok_btn:hover,.ok_btn:active{background: #7931ab; transition: all 0.3s; color: #fff;}
+
+.cancel_btn{width: 100%; height: 100%; left: 0; top: 0; position: absolute; background: #fff; border-radius: 10px; border: 1px solid #7c58bf; color: #7c58bf;}
+
+.cancel_btn:hover, .cancel_btn:active{border: 1px solid #7c58bf; color: #7c58bf;}
+
+/*모바일 버전 버튼 wrap*/
+.m_qrbtn_wrap{display: none;}
+
+.m_qrbtn_wrap .form_align:first-child .ok_btn:last-child{right: 0; left: inherit;}
+
+.m_qrbtn_wrap .form_align:last-child{margin-bottom: 0;}
+
+.m_qrbtn_wrap .form_align:last-child .cancel_btn{width: 100%;}
+/*모바일 버전 버튼 end*/
+
+.lang_btn_wrap{position: absolute; right: 27px; bottom: 13px; cursor: pointer;}
+
+.lang_btn_wrap label{color: #8a8a8a; margin-bottom: 0;}
+
+span.flag_span{display: inline-block; width: 33px; height: 21px; float: left; border: 1px solid #c7c7c7; margin-right: 5px; position: relative; top: -2px;}
+
+span.flag_span img{width: 100%; height: 100%; float: left; }
+
+#lang_list{display: none;}
+
+.lang_list_wrap{position: absolute; width: 90px; bottom: 25px; right: 20px; padding-left: 0; margin-bottom: 25px; border: 1px solid #c8c8c8; display: none;}
+
+#lang_list:checked + .lang_list_wrap{display: block; }
+
+.lang_list_wrap .lang_li{text-align: center; list-style: none; background: #fff; border-bottom: 1px solid #c8c8c8;}
+
+.lang_list_wrap .lang_li:last-child{border-bottom: 0;}
+
+.lang_list_wrap .lang_li a{display: block; width: 100%; height: 100%; font-size: 12px; color: #555; padding: 9px 10px;}
+
+.pg_footer{position: absolute; bottom: 15px; left: 0; width: 100%; text-align: center; color: #555;}
+
+/*반응형 시작*/
+
+@media all and (max-width: 1080px){
+	
+	.qr_wrapper{min-width: 550px; position: absolute; width: 100%; height: 100%; margin-top: 0;}
+	
+	.payment_wrapper .row.pg_row{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+	
+	/*탭버전일 때 안보이는 것*/
+	.payment_wrapper .overlay_effect,.qrbtn_wrap,.panel_inner_body p:nth-child(5){display: none;}
+	
+	/*탭버전일 때 보이는 것*/
+	.panel_inner_body center .form_align:nth-child(2) button,.m_qrbtn_wrap,.panel_inner_body p:nth-child(6){display: block;}
+	
+	.qr_wrapper .panel_inner_1{border-radius: 0; width: 100%; height: 100%; margin-bottom: 0;}
+	
+	.qr_wrapper .panel_inner_2,.panel_inner_body{width: 100%; height: 100%;}
+	
+	.panel_inner_body center .form_align:nth-child(2) .form-control{ padding-right: 65px; padding-left: 7px; text-align: left;}
+	
+	.panel_inner_body p:nth-child(6){margin: 25px 0 0;}
+	
+}
+
+@media all and (max-width: 576px){
+	
+	.qr_wrapper{min-width: 300px;}
+	
+	.qr_wrapper .panel_inner_1 .pg_logo{padding: 12px; width: 193px; left: 0;}
+	
+	.qr_wrapper .panel_inner_1 .pg_status{font-size: 17px; right: 12px; top: 20px; }
+	
+	.qr_wrapper .panel_inner_2{padding: 60px 10px 35px;}
+	
+	.panel_inner_body{padding: 10px; overflow-y: scroll;}
+	
+	.panel_inner_body h3{font-size: 17px; margin-bottom: 15px; margin-top: 3px;}
+	
+	.panel_inner_body .inner_text{font-size: 13px; line-height: 22px;}
+	
+	.panel_inner_body .inner_text b:nth-child(1){font-size: 14px;}
+
+	.panel_inner_body .inner_text b:nth-child(4){font-size: 15px;}
+	
+	.panel_inner_body center .form_align{min-width: 300px; margin-bottom: 6px;}
+	
+	.panel_inner_body center .qrbtn_wrap .form_align, 
+	.panel_inner_body center .m_qrbtn_wrap .form_align{height: 35px;}
+	
+	.panel_inner_body center input,.ok_btn,.cancel_btn{font-size: 11px;}
+	
+	.panel_inner_body p:nth-child(6){font-size: 10px; margin: 25px 0 0 0;}
+	
+	.lang_btn_wrap{right: 12px; bottom: 7px; font-size: 11px;}
+	
+	span.flag_span{width: 28px; height: 18px; margin-right: 4px;}
+	
+	.lang_list_wrap{bottom: 10px; right: 10px; width: 80px;}
+	
+	.lang_list_wrap .lang_li a{font-size: 11px; padding: 6px 10px;}
+	
+	.panel_inner_body center .form_align:nth-child(2) .form-control{font-size: 11px; padding-right: 65px;}
+	
+	.panel_inner_body center .form_align:nth-child(2) button,
+	.m_qrbtn_wrap .form_align:first-child .ok_btn{font-size: 11px;}
+	
+	.pg_footer{bottom: 10px; font-size: 11px;}
+	
+}
+
+@media all and (max-width: 360px){
+	
+	.qr_wrapper .panel_inner_1 .pg_logo{width: 163px; padding: 10px;}
+	
+	.qr_wrapper .panel_inner_1 .pg_status{font-size: 14px; right: 12px;top: 15px;}
+	
+	.qr_wrapper .panel_inner_2{padding: 50px 10px 30px;}
+	
+	.panel_inner_body{padding: 6px;}
+	
+	.panel_inner_body h3{font-size: 14px; margin-bottom: 10px;}
+	
+	.panel_inner_body .right_top_price{font-size: 9px; top: 8px; right: 9px;}
+	
+	.panel_inner_body .inner_text{font-size: 11px; line-height: 18px;}
+	
+	.panel_inner_body .inner_text b:nth-child(1){font-size: 13px;}
+	
+	.panel_inner_body .inner_text b:nth-child(4) { font-size: 13px; margin-top: 2px;}
+	
+	.panel_inner_body center .form_align{min-width: 280px; height: 25px;}
+	
+	.panel_inner_body center .qrbtn_wrap .form_align, .panel_inner_body center .m_qrbtn_wrap .form_align{height: 30px;}
+	
+	.panel_inner_body center .form_align:nth-child(2) button, .m_qrbtn_wrap .form_align:first-child .ok_btn{font-size: 9px; padding: 0 5px;}
+	
+	.panel_inner_body center .form_align:nth-child(2) .form-control{padding: 3px 52px 3px 3px; font-size: 11px;}
+	
+	.panel_inner_body center input, .ok_btn, .cancel_btn{font-size: 11px;}
+	
+	.panel_inner_body p:nth-child(6){font-size: 8px; margin: 10px 0 0;}
+	
+	.lang_btn_wrap{bottom: 4px; font-size: 10px;}
+	
+	.lang_list_wrap{width: 76px; bottom: 5px;}
+	
+	.lang_list_wrap .lang_li a{font-size: 10px;}
+	
+	.pg_footer{bottom: 7px;}
+	
+}
+
+/*반응형 끝*/
+

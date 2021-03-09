@@ -1,0 +1,48 @@
+{
+  "name": "kt_cms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "rsync -ahv dist/* deploy"
+  },
+  "gitHooks": {
+    "post-merge": "npm install && npm run build && npm run deploy"
+  },
+  "dependencies": {
+    "array.prototype.flatmap": "^1.2.3",
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-types": "^6.26.0",
+    "core-js": "^2.6.11",
+    "file-saver": "^2.0.2",
+    "jw-paginate": "^1.0.4",
+    "lodash": "^4.17.15",
+    "mime-types": "^2.1.26",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "object.fromentries": "^2.0.2",
+    "qs": "^6.9.1",
+    "vue": "^2.6.11",
+    "vue-clickaway": "^2.2.2",
+    "vue-momentjs": "^0.1.2",
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-plugin-vuex": "^4.1.2",
+    "@vue/cli-service": "^3.12.1",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

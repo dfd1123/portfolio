@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*==============================================
+
+    ----------------------------------------------------------------
+	* Date			:	2019.09.16
+	* Modify		:
+	* Name			:	reset.css
+	----------------------------------------------------------------
+
+	- Description -
+
+	00. reset		:	css 초기화
+
+==============================================*/
+
+
+/* ===========================
+	00. reset
+=========================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,input,select,textarea,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin:0px; padding:0px; vertical-align:top;}
+body {width:100%; height:100%; color:#666; font-family:'Roboto' , 'Noto Sans KR' , sans-serif; font-size:14px; font-weight:400; line-height:1.5; letter-spacing:-0.025em; word-break:break-all;}
+html {position:relative;width:100%; height:100%;}
+body.window-pop {min-width:0;}
+ul, ol, dl {list-style-type:none;}
+h1, h2, h3, h4, h5, h6, th {font-weight:400;}
+table {border-collapse:collapse; border-spacing:0; word-break:break-all;}
+table th {font-weight:400;}
+img, button, fieldset, abbr, acronym {border:0;}
+label {cursor:pointer;}
+address, caption, cite, code, dfn, em, var {font-style:normal; font-weight:normal;}
+strong {font-weight:normal;}
+caption, legend {width:0px; height:0px; font-size:0px; line-height:0px; visibility:hidden;}
+img {max-width:100%;}
+q:before, q:after {content:'';}
+hr {display:none;}
+
+/* html5 ie9 else */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block; padding:0; margin:0;}
+
+a {text-decoration:none; color:inherit; font-size:inherit; cursor:pointer;}
+a:link, a:visited {text-decoration:none; color:inherit;}
+a:hover, a:focus, a:active {text-decoration:none;}

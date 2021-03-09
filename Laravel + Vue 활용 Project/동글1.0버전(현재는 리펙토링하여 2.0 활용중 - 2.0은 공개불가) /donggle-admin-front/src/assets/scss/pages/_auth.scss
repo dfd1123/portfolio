@@ -1,0 +1,496 @@
+/* PAGES - auth
+   ========================================================================== */
+
+#admin-container.auth-container {
+  @include bg-option(cover, center);
+  @include bg-img($path-img, "bg_login.jpg");
+
+  padding: 0px;
+  color: $black;
+  user-select: none;
+
+  & > .wrapper {
+    min-height: calc(100vh - #{layoutPc(ft-height)});
+    padding-top: 80px;
+  }
+
+  #admin-footer {
+    background-color: rgba(245, 245, 245, 0.5);
+  }
+}
+
+.login_info_ment{
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+}
+
+// 공통
+.page-auth-wrap {
+  .panel-default {
+    @include set-relative;
+    @include set-center;
+    @include z-index(default);
+    @include rounded(25px);
+
+    width: 390px;
+    min-height: 665px;
+    padding: 33px 30px;
+  }
+  .auth-logo-wrap {
+    @include set-relative;
+
+    padding-top: 15px;
+  }
+  .auth-hd-logo {
+    @include set-center;
+    @include bg-option(cover, center);
+    @include bg-img($path-logo, "logo.svg");
+    @include set-hidden-text;
+
+    width: 192px;
+    height: 52px;
+  }
+  ._sub_title {
+    @include set-absol-left;
+
+    top: -68px;
+    color: $gray;
+    opacity: 0.4;
+  }
+  .form_wrap {
+    margin: 31px 0px;
+  }
+  .form-container {
+    margin: 31px 0px;
+    padding: 0px;
+
+    .in-divider {
+      margin: 16px 0px;
+    }
+
+    ._s-font {
+      margin: 0px;
+    }
+
+    ._label {
+      @include font(12px, $w: 300);
+
+      display: block;
+    }
+    .form-input-txt {
+      @include rounded(0);
+      @include hover-focus-eft {
+        border-color: $primary-color-01;
+      }
+
+      width: 100%;
+      padding: 11px 0px;
+      border: 0px none;
+      border-bottom: 1px solid $black;
+    }
+
+    ._save_form {
+      @include font($s: 12px, $c: $gray-md);
+
+      float: left;
+    }
+
+    ._save_form label {
+      margin-right: 4px;
+    }
+
+    ._find_id_pw {
+      @include font($s: 12px, $c: $primary-color-01);
+
+      float: right;
+    }
+
+    ._btn_with_textbox_wrap {
+      @include set-relative;
+    }
+
+    ._with_input-txt {
+      @include set-absolute($r: 0px, $b: 0px);
+      @include font($s: 13px);
+
+      display: block;
+      width: 94px;
+      min-width: auto;
+      height: 42px;
+      line-height: 42px;
+    }
+
+    .dg-tel_countdown {
+      @include set-absol-top;
+      @include font(14px, 500, $blue);
+
+      right: 100px;
+    }
+
+    ._write_eq {
+      @include set-absolute($b: -10px, $l: 0px);
+      @include font($s: 12px, $c: $blue);
+
+      margin: 5px 0px;
+    }
+
+    ._write_wr {
+      @include set-absolute($b: -10px, $l: 0px);
+      @include font($s: 12px, $c: $red);
+
+      margin: 5px 0px;
+    }
+  }
+
+  .auth-btn {
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+
+    &._full {
+      display: block;
+      margin: 14px 0px;
+    }
+
+    &.btn-gradient {
+      @include box-shadow(0px 5px 10px rgba($secondary-color, 0.3));
+    }
+  }
+}
+.dg-find-title-wrap {
+  @include set-relative;
+  margin: 48px 0px 0px;
+
+  > h2 {
+    text-align: center;
+    @include font(22px, 600, $black);
+  }
+}
+.dg-dubblebtn-wrap {
+  .square-md-btn {
+    display: block;
+    float: left;
+    width: 48.5%;
+    min-width: auto;
+    margin-right: 3%;
+    &:last-of-type {
+      margin: 0px;
+    }
+  }
+}
+._find-complete {
+  @include box-shadow(0px 5px 10px rgba(0, 0, 0, 0.05));
+
+  margin: 30px 0px;
+  border: 1px solid $gray-lighter;
+  padding: 35px 0px;
+  text-align: center;
+
+  > h2 {
+    @include font($w: 500);
+    > b {
+      color: $primary-color-01;
+    }
+  }
+
+  .fw-b {
+    @include font($s: 18px, $w: 600);
+  }
+}
+// 로그인
+.login_connect_wrap {
+  padding-top: 1px;
+
+  > h3 {
+    @include set-relative;
+    @include font($s: 13px, $w: 500, $c: $gray-md);
+
+    margin: 21px 0px;
+    text-align: center;
+
+    &:before,
+    &:after {
+      @include set-absol-top;
+
+      content: "";
+      display: block;
+      width: 35%;
+      height: 1px;
+      background-color: $gray-lighter;
+    }
+    &:after {
+      left: 0px;
+    }
+    &:before {
+      right: 0px;
+    }
+  }
+
+  .login_connect {
+    @include bg-option(auto, 95% center);
+    @include bg-img($path-btn, "btn_arrow_right_wh.svg");
+    @include font($s: 14px, $c: white);
+    @include rounded(20px);
+
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0px;
+    padding-left: 25px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+
+    > img {
+      vertical-align: middle;
+    }
+  }
+  .login_connect_naver {
+    @include hover-active-bg(#00bf19);
+
+    background-color: #00bf19;
+    > img {
+      margin-right: 8.7px;
+    }
+  }
+  .login_connect_kakao {
+    @include hover-active-bg(#fce000);
+    @include bg-img($path-btn, "btn_arrow_right_br.svg");
+
+    background-color: #fce000;
+    color: #381e1f;
+    > img {
+      margin-right: 6.7px;
+    }
+  }
+  .login_connect_facebook {
+    @include hover-active-bg(#4267b2);
+
+    margin: 10px 0px 0px;
+    background-color: #4267b2;
+
+    > img {
+      margin-right: 15.3px;
+    }
+  }
+}
+
+// 아이디/비밀번호 찾기
+#page-find-choice-wrap {
+  .dg-find-title-wrap {
+    margin: 48px 0px 40px;
+  }
+
+  ._find_choice_btn {
+    @include set-relative;
+    @include rounded(10px);
+    @include bg-option(auto, center 47px);
+    @include hover-eft {
+      @include box-shadow(0 8px 18px rgba(black, 0.05));
+
+      border-color: $black;
+    }
+
+    float: left;
+    height: 205px;
+    width: 49%;
+    border: 1px solid $gray-light-02;
+    padding: 94px 31px 43px;
+    text-align: center;
+
+    > h3 {
+      margin: 0px 0px 10px;
+      font-weight: 500;
+    }
+
+    > p {
+      @include font(12px, 200, $gray-md);
+
+      line-height: 1.5;
+      letter-spacing: -0.7px;
+      -webkit-text-stroke: 0;
+      user-select: auto;
+    }
+
+    ._next_page_btn {
+      @include set-absolute($t: 0px, $l: 0px);
+      @include width-height-100;
+
+      display: block;
+      text-indent: -9999px;
+    }
+  }
+
+  ._find_id_btn {
+    margin-right: 2%;
+    @include bg-img($path-icon, "icon_id.svg");
+  }
+
+  ._find_pw_btn {
+    @include bg-img($path-icon, "icon_pw.svg");
+  }
+}
+
+// 높이가 줄었을 떄, 푸터가 가려지지 않게
+@media all and (max-height: 920px) {
+  .page-auth-wrap {
+    .panel-default {
+      height: 560px;
+      padding: 20px 30px;
+    }
+
+    .form-container {
+      margin: 20px 0px;
+    }
+
+    .form_wrap {
+      margin: 20px 0px;
+    }
+  }
+  .login_connect_wrap {
+    > div {
+      @include set-center;
+      width: fit-content;
+    }
+
+    .login_connect {
+      display: inline-block;
+      width: 42px;
+      min-width: auto;
+      height: 42px;
+      margin: 0px 11px;
+      padding: 11px 0px 0px;
+      line-height: inherit;
+      background-image: none;
+      text-align: center;
+      font-size: 0px;
+      > img {
+        margin: 0px;
+      }
+    }
+
+    .login_connect_naver {
+      padding: 14px 0px 0px;
+    }
+  }
+  .dg-find-title-wrap {
+    margin: 30px 0px 0px;
+  }
+  #page-find-choice-wrap {
+    .dg-find-title-wrap {
+      margin: 30px 0px;
+    }
+  }
+}
+
+// width: ~ 768px
+
+@include media-mobile-version(mobile-only) {
+  .login_info_ment{
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    margin-top:20px;
+  }
+
+  #admin-container.auth-container {
+    > .wrapper {
+      height: 100vh;
+      padding-top: 0;
+      min-height: 100vh;
+    }
+
+    .page-auth-wrap {
+      height: 100%;
+    }
+
+    > #admin-footer {
+      display: none;
+    }
+  }
+
+  .page-auth-wrap {
+    .panel-default {
+      @include width-height-100;
+      @include rounded(0px);
+
+      padding-top: 50px;
+      min-height: 100%;
+    }
+
+    ._sub_title {
+      top: auto;
+      bottom: -2em;
+      font-size: 12px;
+    }
+
+    .form-container .form-input-txt {
+      font-size: 14px;
+    }
+  }
+
+  #page-login-wrap {
+    .panel-default {
+      padding: 20px 30px;
+      min-height: 100%;
+    }
+  }
+
+  #page-find-choice-wrap {
+    .dg-find-title-wrap {
+      margin: 0px;
+    }
+
+    ._find_choice_btn {
+      width: 100%;
+      height: auto;
+      margin: 10px 0px;
+      padding: 67px 27px 43px;
+      background-position: 27px 26px;
+
+      > h3 {
+        font-size: 15px;
+      }
+
+      ._next_page_btn {
+        @include bg-option(auto, 95% center);
+        @include bg-img($path-btn, "btn_next_round.svg");
+      }
+
+      > p {
+        width: 100px;
+      }
+    }
+
+    ._find_id_btn {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    ._find_pw_btn {
+      text-align: left;
+    }
+  }
+
+  .dg-find-title-wrap {
+    @include set-fixed($t: 0px, $l: 0px);
+    @include z-index(default);
+
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px;
+    border-bottom: 1px solid $gray-light-02;
+    background-color: white;
+
+    > h2 {
+      @include font($s: 16px, $w: 500);
+    }
+  }
+
+  .icon-back-btn {
+    @include bg-img($path-btn, "btn_m_back.svg");
+
+    left: 30px;
+  }
+}

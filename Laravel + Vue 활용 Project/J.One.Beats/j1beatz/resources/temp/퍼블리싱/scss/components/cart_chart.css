@@ -1,0 +1,195 @@
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/* 
+    ----------------- 
+        array 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+/* 
+    --------------------------------------------------------------------
+            * cart_chart component *
+    --------------------------------------------------------------------
+*/
+.cart_chart_list {
+  width: 100%;
+}
+
+.cart_chart_list table {
+  font-size: 16px;
+}
+
+.cart_chart_list table thead div {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.cart_chart_list table tbody div {
+  color: #333333;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+}
+
+.cart_chart_list table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.cart_chart_list table tbody tr:hover td.td-license span {
+  opacity: 1;
+}
+
+.cart_chart_list table tbody .c-song-title {
+  height: 3.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 4em;
+}
+
+.cart_chart_list table tbody .c-song-title-info {
+  width: 100%;
+  text-align: left;
+  line-height: 1.2;
+  padding-left: 7px;
+}
+
+.cart_chart_list table tbody .c-song-title-info b {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.cart_chart_list table tbody .c-song-title-info span {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.cart_chart_list table tbody .c-song-title .thumb-mini {
+  top: 0;
+  left: 0;
+  -webkit-transform: none;
+          transform: none;
+  background-color: ghostwhite;
+}
+
+.cart_chart_list table th {
+  border-top: 2px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  background-color: transparent;
+  padding: 11px 0;
+  font-size: 0.85em;
+  vertical-align: middle;
+}
+
+.cart_chart_list table td {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.13);
+  vertical-align: middle;
+  height: 5.5em;
+  text-align: center;
+}
+
+.cart_chart_list table th.th-check,
+.cart_chart_list table td.td-check {
+  width: 5%;
+}
+
+.cart_chart_list table th.th-song,
+.cart_chart_list table td.td-song {
+  width: 40%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.cart_chart_list table th.th-file_type,
+.cart_chart_list table td.td-file_type {
+  width: 12%;
+}
+
+.cart_chart_list table th.th-license,
+.cart_chart_list table td.td-license {
+  width: 20%;
+}
+
+.cart_chart_list table td.td-license span {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #7e2aff;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.cart_chart_list table th.th-price,
+.cart_chart_list table td.td-price {
+  width: 15%;
+}
+
+.cart_chart_list table td.td-price div {
+  font-size: 17px;
+}
+
+.cart_chart_list table td.td-price b {
+  padding-right: 5px;
+}
+
+.cart_chart_list table th.th-del,
+.cart_chart_list table td.td-del {
+  width: 8%;
+}
+
+.cart_chart_list table th.th-order_data,
+.cart_chart_list table td.td-order_data {
+  width: 13%;
+}
+
+.cart_chart_list table th.th-pay_type,
+.cart_chart_list table td.td-pay_type {
+  width: 13%;
+}
+
+.cart_chart_list table th.th-download,
+.cart_chart_list table td.td-download {
+  width: 20%;
+}
+
+.chart-ctrl-btn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url("../../img/btn/control_btn02.svg");
+  cursor: pointer;
+}
+
+.sub-section .chart-ctrl-btn {
+  background-image: url("../../img/btn/control_btn02-dark.svg");
+}
+
+.sub-section .chart-ctrl-btn-del {
+  background-position: -120px -30px;
+}
+
+.sub-section .chart-ctrl-btn-del:hover {
+  background-position: -150px -30px;
+}
+/*# sourceMappingURL=cart_chart.css.map */

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23.25" viewBox="0 0 22 23.25">
+  <g id="btn_04_my_on" transform="translate(0 0.75)">
+    <path id="Path" d="M5.5,11A5.5,5.5,0,1,0,0,5.5,5.5,5.5,0,0,0,5.5,11Z" transform="translate(5.5)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g id="사각형_210" data-name="사각형 210" transform="translate(0 12.5)" fill="none" stroke="#a134e8" stroke-linejoin="round" stroke-width="1.5">
+      <path d="M8,0h6a8,8,0,0,1,8,8v2a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V8A8,8,0,0,1,8,0Z" stroke="none"/>
+      <path d="M8,.75h6A7.25,7.25,0,0,1,21.25,8v.5a.75.75,0,0,1-.75.75H1.5A.75.75,0,0,1,.75,8.5V8A7.25,7.25,0,0,1,8,.75Z" fill="none"/>
+    </g>
+  </g>
+</svg>

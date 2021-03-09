@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-mypage-set-info-wrapper" class="mypage-set-info-wrapper">
+      <!-- * 마이페이지 헤더 -->
+      <div class="_page_title_wrap">
+        <h2>
+          내 정보 관리
+          <a href="#" class="_back_btn">뒤로가기</a>
+        </h2>
+        <div class="second_title clear_both">
+          <a href="MyPageSetInfoView.html" class="active">내 정보 관리</a>
+          <a href="MyPageSetAccountView.html" class="_long"
+            >카드 및 환불계좌 관리</a
+          >
+          <a href="MyPageGradeView.html">회원등급</a>
+        </div>
+      </div>
+      <!-- * 마이페이지 헤더 -->
+
+      <div class="l-mypage-contents">
+        <!-- 1) 내정보 관리 -->
+        <div class="l-con-area">
+          <div class="l-con-article">
+            <div>
+              <!-- * 내정보 관리 영역 -->
+              <fieldset class="dg-set-info-group">
+                <ul class="in-information">
+                  <!-- [1] 이름 -->
+                  <li class="_list">
+                    <span class="_label">이름</span>
+                    <div class="_input_group">
+                      <span class="_readonly_text">김동글</span>
+                    </div>
+                  </li>
+                  <!-- [1] E -->
+
+                  <!-- [2] 이메일 -->
+                  <li class="_list">
+                    <span class="_label">이메일</span>
+                    <div class="_input_group">
+                      <span class="_readonly_text">donggle@donggle.com</span>
+                    </div>
+                  </li>
+                  <!-- [2] E -->
+
+                  <!-- [3] 비밀번호 -->
+                  <li class="_list">
+                    <span class="_label _label--top">비밀번호</span>
+
+                    <div class="_input_group">
+                      <!-- ※ 변경하기 누르면 아래 dg-change-view 화면 펼쳐짐 -->
+                      <div class="_in_desc">
+                        <button
+                          class="square-btn-outline"
+                          onclick="alert('밑에 변경폼 펼쳐집니다')"
+                        >
+                          변경하기
+                        </button>
+                      </div>
+                      <!-- ※ 변경하기 누르면 아래 dg-change-view 화면 펼쳐짐 E -->
+
+                      <!-- dg-change-view 화면 (구분클래스: type-pw) -->
+                      <div class="dg-change-view type-pw">
+                        <span class="_mini_label">변경할 비밀번호</span>
+
+                        <div class="in-input-area">
+                          <input
+                            type="password"
+                            class="_input"
+                            placeholder="비밀번호"
+                          />
+                        </div>
+                        <div class="in-input-area">
+                          <input
+                            type="password"
+                            class="_input"
+                            placeholder="비밀번호 재입력"
+                          />
+                        </div>
+
+                        <!-- ※ 비밀번호 일치할 경우 (클래스 able 추가, 비밀번호가 일치합니다. )
+                           ※ 비밀번호 불일치할 경우 (클래스 disable 추가, 비밀번호가 일치하지 않습니다. )
+                              가상선택자로 텍스트 설정해놔서 클래스만 변경하면 됩니다.
+                      -->
+                        <span class="_pw_state able"></span>
+                        <!-- ※ END -->
+
+                        <div class="set-info-btn_wrap">
+                          <button
+                            type="button"
+                            class="square-btn-outline w-80"
+                            onclick="alert('변경폼이 접힙니다.')"
+                          >
+                            취소
+                          </button>
+                          <button
+                            type="button"
+                            class="square-btn-outline w-80"
+                            onclick="alert('(스윗알럿)비밀번호 변경이 완료되었습니다.')"
+                          >
+                            완료
+                          </button>
+                        </div>
+                      </div>
+                      <!-- dg-change-view 화면 (구분클래스: type-pw) E -->
+                    </div>
+                  </li>
+                  <!-- [3] E -->
+
+                  <!-- [4] 휴대폰 번호 -->
+                  <li class="_list">
+                    <span class="_label _label--top">휴대폰 번호</span>
+
+                    <div class="_input_group">
+                      <!-- ※ 변경하기 누르면 아래 dg-change-view 화면 펼쳐짐 -->
+                      <div class="_in_desc clear_both">
+                        <span class="_num">010-0000-0000</span>
+                        <button
+                          class="square-btn-outline"
+                          onclick="alert('밑에 변경폼 펼쳐집니다')"
+                        >
+                          변경하기
+                        </button>
+                      </div>
+                      <!-- ※ 변경하기 누르면 아래 dg-change-view 화면 펼쳐짐 E -->
+
+                      <!-- dg-change-view 화면 (구분클래스: type-phonenum) -->
+                      <div class="dg-change-view type-phonenum">
+                        <span class="_mini_label">변경할 휴대폰 번호</span>
+
+                        <div class="in-input-area type-withbtn">
+                          <input
+                            type="number"
+                            class="_input"
+                            placeholder="본인 명의 휴대폰 번호"
+                          />
+                          <button
+                            type="button"
+                            class="square-btn-dark"
+                            onclick="alert('(스윗알럿)인증번호를 보냈습니다.')"
+                          >
+                            인증요청
+                          </button>
+                        </div>
+
+                        <div class="in-input-area type-withbtn">
+                          <input
+                            type="number"
+                            class="_input"
+                            placeholder="인증번호 입력"
+                          />
+                          <button
+                            type="button"
+                            class="square-btn-dark"
+                            onclick="alert('(스윗알럿)인증이 완료되었습니다.')"
+                          >
+                            인증완료
+                          </button>
+                          <span class="_pw_state able"></span>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="square-btn-outline w-80"
+                          onclick="alert('변경폼이 접합니다.')"
+                        >
+                          취소
+                        </button>
+                        <button
+                          type="button"
+                          class="square-btn-outline w-80"
+                          onclick="alert('(스윗알럿)휴대폰 번호 변경이 완료되었습니다.')"
+                        >
+                          완료
+                        </button>
+                      </div>
+                      <!-- dg-change-view 화면 (구분클래스: type-phonenum) E -->
+                    </div>
+                  </li>
+                  <!-- [4] E -->
+
+                  <!-- [5] 성별 -->
+                  <li class="_list">
+                    <span class="_label">성별</span>
+                    <div class="_input_group">
+                      <span class="_check_option">
+                        <input
+                          type="radio"
+                          id="test001"
+                          name="gender"
+                          class="dg-input-checkbox display_none"
+                        />
+                        <label
+                          for="test001"
+                          class="dg-input-checkbox_label"
+                        ></label>
+                        <label for="test001">여자</label>
+                      </span>
+                      <span class="_check_option">
+                        <input
+                          type="radio"
+                          id="test002"
+                          name="gender"
+                          class="dg-input-checkbox display_none"
+                        />
+                        <label
+                          for="test002"
+                          class="dg-input-checkbox_label"
+                        ></label>
+                        <label for="test002">남자</label>
+                      </span>
+                    </div>
+                  </li>
+                  <!-- [5] E -->
+
+                  <!-- [6] 생일 -->
+                  <li class="_list">
+                    <span class="_label">생일</span>
+                    <div class="_input_group">
+                      <!-- ※ datepicker 적용해야함 -->
+                      <input
+                        type="text"
+                        class="_input _input--date"
+                        placeholder="2000-00-00"
+                      />
+                      <!-- ※ datepicker 적용해야함 END -->
+                    </div>
+                  </li>
+                  <!-- [6] E -->
+
+                  <!-- [7] 평소 착용사이즈 -->
+                  <li class="_list">
+                    <span class="_label">평소 착용사이즈</span>
+                    <div class="_input_group type-pd-narrow">
+                      <select class="_slct">
+                        <option value="#">설정해놓은 사이즈</option>
+                        <option value="#">44</option>
+                      </select>
+                    </div>
+                  </li>
+                  <!-- [7] E -->
+
+                  <!-- [8] 알림설정 -->
+                  <li class="_list _list--alarm">
+                    <span class="_label _label--top">알림설정</span>
+                    <div class="_input_group type-pd-narrow">
+                      <span class="_etc_ment"
+                        >SMS, 이메일을 통해 파격할인/이벤트/<br>쿠폰 정보를 받아보실
+                        수 있습니다.</span
+                      >
+                      <span class="_check_option">
+                        <input
+                          type="checkbox"
+                          id="test003"
+                          class="dg-input-checkbox display_none"
+                        />
+                        <label
+                          for="test003"
+                          class="dg-input-checkbox_label"
+                        ></label>
+                        <label for="test003">SMS</label>
+                      </span>
+                      <span class="_check_option">
+                        <input
+                          type="checkbox"
+                          id="test004"
+                          class="dg-input-checkbox display_none"
+                        />
+                        <label
+                          for="test004"
+                          class="dg-input-checkbox_label"
+                        ></label>
+                        <label for="test004">이메일</label>
+                      </span>
+                    </div>
+                  </li>
+                  <!-- [8] E -->
+                </ul>
+
+                <div class="dg-button-wrap dg-button-wrap--single">
+                  <button
+                    type="button"
+                    class="theme-btn-gradient btn-shadow"
+                    onclick="alert('(스윗알럿)회원정보 수정이 완료되었습니다.')"
+                  >
+                    회원정보 수정하기
+                  </button>
+                </div>
+              </fieldset>
+              <!-- * 내정보 관리 영역 E -->
+              <div class="_leave-dg">
+                <a href="MyPageSecessionView.html">회원탈퇴</a>
+                <p>회원탈퇴 신청 화면으로 이동합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1) 내정보 관리 E -->
+      </div>
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

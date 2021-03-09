@@ -1,0 +1,132 @@
+/* PAGES - 스토어 설정 페이지
+   ========================================================================== */
+
+#page-setting-store-wrap {
+  @include set-clearfix;
+  @include max-width(1170px, 100%);
+  @include set-center;
+
+  padding: layoutPc(page-wrap-pd-t) 0 layoutPc(page-wrap-pd-b);
+  user-select: none;
+
+  .grid-col.first {
+    @include set-relative;
+    @include z-index(default);
+
+    float: left;
+    width: 49%;
+    margin-bottom: 25px;
+
+    .form-align-tit {
+      width: 195px;
+    }
+  }
+
+  .grid-col.second {
+    float: right;
+    width: calc(51% - 20px);
+
+    .form-align-tit {
+      width: 125px;
+    }
+  }
+
+  .grid-col.third {
+    width: 49%;
+  }
+
+  .form-align-input {
+    width: 100%;
+  }
+}
+
+//반응형
+@include media-pc(smallmidium) {
+  #page-setting-store-wrap {
+    .grid-col.first,
+    .grid-col.second,
+    .grid-col.third {
+      width: 100%;
+      float: none;
+      margin: 0px auto 25px;
+    }
+  }
+}
+@include media-mobile-version(ipad) {
+  #page-setting-store-wrap {
+    padding: 30px 0 150px;
+
+    .grid-col.first,
+    .grid-col.second,
+    .grid-col.third {
+      width: 95%;
+      float: none;
+    }
+  }
+}
+
+//mobile
+@include media-mobile-version(galaxy-tab) {
+  #page-setting-store-wrap {
+    padding: 10px 0 80px;
+    background-color: white;
+
+    .grid-col.first,
+    .grid-col.second,
+    .grid-col.third {
+      width: 100%;
+      margin: 0px auto 10px;
+    }
+
+    .panel-default {
+      padding: 0px;
+      box-shadow: none;
+    }
+
+    .panel-default-title {
+      margin: 0px 0px 5px;
+      padding: 0px;
+
+      .in-mainname {
+        @include font(18px, $w: bold);
+
+        display: block;
+      }
+
+      .in-subtxt{
+        user-select: auto;
+      }
+    }
+
+    .grid-col {
+      margin: 10px 0px;
+      border-bottom: 6px solid $gray-lighter-02;
+      padding: 20px;
+      &.third {
+        border: 0px none;
+      }
+      .form-align-tit {
+        display: block;
+        margin: 10px 0px;
+      }
+    }
+
+    .form-container.type-01 {
+      padding: 0px;
+      .form-align {
+        display: block;
+        margin: 20px 0px;
+        border: 0px none;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+@include media-mobile-version(mobile-small) {
+  #page-setting-store-wrap {
+    .grid-col {
+      padding: 20px 13px;
+    }
+  }
+}

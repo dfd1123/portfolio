@@ -1,0 +1,999 @@
+/* ----------start 모바일버전 공통 스타일---------- */
+
+/* 색상 도우미
+        헤더 네비게이션 진한 남색선 -> #28283c;
+        폰트어썸 아이콘 포인트 색상 -> #87cdce;
+        진한 청록색 .point_clr_1 -> #4aa4a4;
+        밝은 청록색 .point_clr_2 -> #87cdce;
+    */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+select {
+    -webkit-appearance:none; -moz-appearance:none; appearance:none;
+    background-image: url(/storage/image/homepage/select_bg.svg);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#m_wrapper {
+    width: 100%;
+    min-height: 100%;
+    /* footer가 없어서 우선 주석걸어놓음!
+    padding-bottom: 50px;
+    margin-bottom: -50px; */
+    height: 100%;
+}
+
+#m_wrapper #m_main_container {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 45px;
+}
+
+#m_wrapper #m_main_container.active{
+    -webkit-overflow-scrolling: touch;
+}
+
+#m_wrapper #m_main_container.active_2{
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: unset;
+}
+
+#m_wrapper.back_bg {
+    background-image: url(/storage/image/homepage/bg_login.png);
+    background-position: bottom;
+    background-size: 140%;
+    background-repeat: no-repeat;
+}
+
+/*------------basic style start------------*/
+
+ul,
+li {
+    list-style: none;
+}
+
+.ios-scroll{
+    -webkit-overflow-scrolling: touch;
+}
+
+a {
+    color: #474846;
+    text-decoration: none;
+    -webkit-user-select : none;
+}
+
+a:hover,a:active{
+    color: #474846;
+    text-decoration: none;
+}
+
+body {
+    background: transparent !important;
+    color: #474846;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.blue {
+    color: #2e4dff;
+}
+
+.hide {
+    display: none;
+}
+
+.pl-120px {
+    padding-left: 120px;
+}
+
+.dp_table {
+    display: table;
+    width: 100%;
+}
+
+.dp_table_cell {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.point_clr_1 {
+    color: #4aa4a4 !important;
+}
+
+.point_clr_2 {
+    color: #87cdce !important;
+}
+
+.non_data{
+    font-size: 0.8rem;
+    vertical-align: middle;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.non_data i{
+    font-size: 1.1rem;
+    position: relative;
+    top: 2px;
+}
+
+.non_data td{
+    padding: 20px 0;
+}
+
+.coin_name_eng b {
+    font-weight: normal;
+}
+
+.form-control {
+    height: calc(2.5rem + 2px);
+}
+
+.boxing {
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 11px 0;
+    color: #474846;
+    padding-top: 11px !important;
+}
+
+.register_pw_alert.ment {
+    text-align: right !important;
+    width: 100%;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.register_pw_alert.ment .pw_no {
+    color: #ff4646;
+}
+
+.register_pw_alert.ment .pw_yes {
+    color: #4378ff;
+}
+
+.no_wrap_form_group {
+    flex-wrap: unset !important;
+}
+
+.coin_img{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.currency{
+    color: #787878;
+    text-transform: uppercase;
+}
+
+.bt-f0f0{
+    border-top: 1px solid #f0f0f0;
+}
+.bb-f0f0{
+    border-bottom: 1px solid #f0f0f0;
+}
+.bt-dddd{
+    border-top: 1px solid #dddddd;
+}
+.bb-dddd{
+    border-bottom: 1px solid #dddddd;
+}
+.scrl_wrap{
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+/*------------basic style end------------*/
+
+/* --------상단탭메뉴-------- */
+.m_tab_list{
+    overflow-x: scroll;
+    -ms-overflow-style:none;
+}
+
+.m_tab_list::-webkit-scrollbar{
+    display:none;
+}
+
+.m_tab_list ul.w-160{
+    width: 160%;
+}
+
+.m_tab_list ul.w-120{
+    width: 120%;
+}
+
+/* --------상단탭메뉴-------- */
+
+/* select_bar start */
+
+.select_wrap{
+    position: relative;    
+}
+
+.select_wrap .select_type{
+    border-bottom: 1px solid black;
+    height: 37px;
+}
+
+.select_wrap .select_type label{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 9px 15px;
+    font-size: 0.78rem;
+}
+
+.select_wrap .select_type label i{
+    float: right;
+    font-size: 1.2rem;
+}
+
+.select_wrap .type_list{
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    font-size: 0.78rem;
+    width: 100%;
+    transition: all 0.25s;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+}
+
+.select_wrap .type_list li{
+    width: 100%;
+    margin: 5px 0;
+}
+
+.select_wrap .type_list li a{
+    width: 100%;
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.select_wrap .type_list li a:active{
+    background: #28283c;
+    color: #fff;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.08);
+}
+/* select_bar end */
+
+
+/*------------modal popup start------------*/
+
+#fullscreen_modal {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 77, 79, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.modal_popup{
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    background: #fff;
+    border-top: 10px solid #87cdce;
+    position: fixed;
+    top: 100%;
+    z-index: 6;
+    left: 0;
+    opacity: 0;
+}
+
+.modal_popup .form_div{
+    width: 100%;
+    height: 100%;
+}
+
+.modal_popup .form_div form{
+    width: 100%;
+    height: 100%;
+}
+
+.modal_popup h1{
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.modal_popup .form-control{
+	border-color: #dddddd;
+}
+
+.modal_popup textarea{
+    resize: none; height: 60%;
+    width: 100%;
+}
+
+.modal_popup .btn_style{
+	background: #464a58;
+	font-size: 13px;
+	box-shadow: none;
+	outline: none;
+}
+
+.modal_popup .btn_style.w-50{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+a.btn_style{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+    height: calc(2.19rem + 2px);
+    line-height: calc(2.19rem + 2px);
+}
+
+a.btn_style.not_active_btn{
+    width: 100%;
+    line-height: calc(2.5rem + 2px);
+    background-color:#aaaaaa !important;
+}
+
+.modal_popup #cancel_btn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0; right: 0;
+}
+
+.modal_popup #cancel_btn span{
+    width: 18px;
+    height: 1.5px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.modal_popup #cancel_btn span:before,
+.modal_popup #cancel_btn span:after{
+    width: 100%;
+    height: 100%;
+    background: #28283c;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.modal_popup #cancel_btn span:before{
+    transform: rotate(45deg);
+}
+
+.modal_popup #cancel_btn span:after{
+    transform: rotate(-230deg);
+}
+
+/*------------modal popup end------------*/
+
+
+
+
+/* 상단 (탭메뉴) */
+.m_tab_list {
+    width: 100%;
+    height: 40px;
+}
+
+.m_tab_list ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 0.9rem;
+}
+
+@media all and (max-width: 325px){
+    
+    .m_tab_list ul{
+        font-size: 0.75rem;
+    }
+    
+}
+
+.m_tab_list ul li {
+    flex: 1;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.m_tab_list ul li.active {
+    border-bottom: 2px solid #62cccc;
+    font-weight: bold;
+}
+
+.m_tab_list ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.m_tab_list ul li a label{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.m_tab_list ul li a:active{
+    background: #f7f7f7;
+}
+
+/* //상단 (탭메뉴) */
+
+/*------------input[type="checkbox"] grayCheckbox style start------------*/
+
+.grayCheckbox {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.grayCheckbox:checked::after {
+    content: "";
+    position: absolute;
+    background-image: url(/storage/image/homepage/icon/graycheckbox-02.svg);
+    background-size: 110%;
+    background-color: #464a58;
+    background-position: center;
+    transition: all 0.3s;
+    border: 2px solid #464a58;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: -3px;
+}
+
+.grayCheckbox::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #464a58;
+    border-radius: 50%;
+    transition: all 0.3s;
+    background-size: 115%;
+}
+
+/*------------input[type="checkbox"] grayCheckbox style end------------*/
+
+/*------------모바일 헤더 타이틀 start------------*/
+
+.m_hd_title {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 45px;
+    text-align: center;
+    background: #fff;
+    line-height: 45px;
+    display: table;
+    border-bottom: 1px solid #dddddd;
+    color: #474846;
+    z-index: 5;
+    font-size: 1.05rem;
+}
+
+.m_hd_title .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.m_hd_title .logo {
+    width: 120px;
+    float: right;
+    position: relative;
+    left: -15px;
+    top: 2px;
+}
+
+.m_hd_title .write_btn_st{
+    height: 100%;
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.m_hd_title .write_btn_st img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+}
+
+/* 0322 헤더에 작성버튼 스타일 추가 */
+
+/* //0322 헤더에 작성버튼 스타일 추가 */
+
+/*------------모바일 헤더 타이틀 end------------*/
+
+/*------------버튼스타일 start------------*/
+
+.border_btn {
+    padding: 3px 22px;
+    border: 1px solid #474846;
+    color: #474846;
+    font-size: 0.9rem;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.mini_btn_st{
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    font-size: 0.75rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.mini_btn_st:active{
+    background: #f7f7f7;
+}
+
+.abslt_btn{
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.17);
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+    border: 0;
+    outline: none;
+    background: #40a09d;
+}
+
+.abslt_btn:active{
+    background: #389491;
+}
+
+/*------------버튼스타일 end------------*/
+
+/*------------coin chart 코인 목록 테이블 공통스타일 start------------*/
+.table_label {
+    width: 100%;
+    height: 35px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    background: #fafafa;
+}
+
+.table_label thead > tr > th {
+    color: #969696;
+    font-size: 0.75rem;
+    padding: 6px;
+    font-weight: 400;
+}
+
+.coin_chart_tbl {
+    width: 100%;
+}
+
+.coin_chart_tbl tr {
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.coin_chart_tbl tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/*------------coin chart 코인 목록 테이블 공통스타일 end------------*/
+
+/* sch_bar 검색바 공통스타일 start */
+
+.sch_bar{
+    width: 100%;
+    position: relative;
+    height:40px;
+}
+
+.coin_sch_bar{
+    width: 100%; height: 100%;
+    padding-right: 120px;
+    position: relative;
+}
+
+.coin_sch_bar .inner{
+    width: 100%; height: 100%;
+    position: relative;
+}
+
+.coin_sch_bar input{
+    width: 100%;
+    height: 100%;
+    padding: 0px 38px 0px 15px;
+    border: 0;
+    outline: none;
+    border: 1px solid transparent;
+    font-size: 0.75rem;
+    background: transparent;
+    border-radius: 0;
+    line-height: 40px;
+}
+
+.coin_sch_bar input::placeholder{
+    line-height: 40px;
+}
+
+.coin_sch_bar i{
+    background-image: url(/storage/image/homepage/icon/sch-mint.svg);
+    width: 20px; height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 10px; right: 10px;
+}
+
+.coin_sch_bar span{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    color: #787878;
+    font-size: 0.6rem;
+    padding: 7px 0px 7px 15px;
+}
+
+.coin_sch_bar input:focus{
+    border: 1px solid #87cdce;
+    box-shadow: none; outline: none;
+}
+
+.sch_bar .coin_sch_checkbox {
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 35px;
+    border-left: 1px solid #f5f5f5;
+    font-size: 0.75rem;
+}
+
+.sch_bar label{
+    width: 100%; height: 100%;
+    line-height: 40px;
+}
+
+#my_coin:checked + label{
+    background:rgba(135,205,206,0.2);
+    color:  #4aa4a4;
+    font-weight: bold;
+}
+
+.sch_bar .coin_sch_checkbox select{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    color: #474846;
+    padding-left: 5px;
+    border-radius: 0;
+    font-size: 0.75rem;
+}
+
+
+/* sch_bar 검색바 공통스타일 end */
+
+/* 조회 옵션 */
+
+.sch_option_wrap {
+    position: relative;
+}
+
+.sch_option_wrap .option_bar{
+    background: #f5f5f5;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.sch_option_wrap .option_bar label{
+    padding: 9px 15px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sch_option_wrap .option_bar i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    color: #62cccc;
+}
+
+.sch_option_wrap .option_bar:active i{
+    color: #62cccc;
+}
+
+.option_group{
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    width: 100%;
+    transition: all 0.3s;
+    height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.option_group .inner_line{
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+}
+
+.option_group .inner_line .btns{
+    border: 1px solid #333333;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    outline: none;
+    font-size: 0.75rem;
+    width: 32.5%;
+    padding: 10px 0;
+    height: 35px;
+}
+
+.option_group .inner_line .btns:active{
+    border-color: #4aa4a4;
+    color: #4aa4a4;
+}
+
+.option_group .inner_line .input{
+    width: 47%;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    height: 35px;
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+    background-image: url(/storage/image/homepage/icon/calender_icon.svg);
+    background-size: 17px;
+    background-position: 93% 50%;
+    background-repeat: no-repeat;
+}
+
+.option_group .inner_line .input:focus{
+    outline: none;
+    border-color: #4aa4a4;
+}
+
+.option_group .inner_line .btn_style{
+    background: #464a58;
+}
+
+#option_group_check:checked + .option_group{
+    height: 160px;
+    transition: all 0.3s;
+    padding: 15px 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* 조회옵션 */
+
+/*------------거래소, 입출금, 내자산 페이지의 내역들 레이아웃 공통스타일 start------------*/
+
+.history_st .list .con{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 15px 15px;
+    font-size: 0.9rem;
+}
+
+.history_st .list .con.buy .type{
+    color: #ff4646;
+}
+
+.history_st .list .con.sell .type{
+    color: #4378ff;
+}
+
+.history_st .list .con.in .type{
+    color: #35cdce;
+}
+
+.history_st .list .con.out .type{
+    color: #ff4646;
+}
+
+.history_st .con .info{
+    text-align: right;
+    font-size: 0.78rem;
+    letter-spacing: 0;
+    height: 22px;
+    line-height: 22px;
+    padding: 2px 0;
+    position: relative;
+}
+
+.history_st .con .info label{
+    float: left;
+    font-weight: 400;
+    color: #787878;
+}
+
+.history_st .con .info._date{
+    text-align: left;
+    font-size: 0.7rem;
+    color: #787878;
+}
+
+.history_st .con .currency{
+    color: #787878;
+}
+
+.history_st .con button{
+    background: none;
+    outline: none;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    position: absolute;
+    right: 70px;
+    top: 0;
+}
+
+.history_st .con button:active{
+    color: #4aa4a4;
+    border-color: #4aa4a4;
+}
+
+.history_st .con .info._coin{
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.history_st .con .info._coin span:first-child{
+    float:left;
+}
+
+.history_st .con .info._coin u{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.history_st .con .info._amt{
+    font-weight: bold;
+}
+
+.history_st .con .info._amt span{
+    font-size: 0.9rem;
+}
+
+.history_st .con .info._amt .currency{
+    color: black;
+    margin-left: 5px;
+}
+
+/* 총보유자산 */
+
+.status_bar .total_ast {
+    background: #f7f7f7;
+    padding: 12px 15px;
+    height: 50px;
+    position: relative;
+    font-size: 0.9rem;
+    letter-spacing: 0;
+}
+
+.status_bar .total_ast .currency{
+    font-size: 0.75rem;
+}
+
+.status_bar .total_ast .point_clr_1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.status_bar .total_ast .tit{
+    position: relative;
+    top: 3px;
+    font-size: 1rem;
+}
+
+/* //총보유자산 */
+
+/*------------거래소, 입출금, 내자산 페이지의 내역들 레이아웃 공통스타일 end------------*/
+
+/* 로딩화면 */
+
+.posi_wrap{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 7;
+	width:100%;
+	height:100%;
+	display: table;
+    background: rgba(58, 77, 79, 0.3);
+}
+
+.posi_wrap>div{
+	display: table-cell;
+	vertical-align: middle;
+    text-align: center;
+}
+
+#loading {
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #87cdce;
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+  }
+
+/* //로딩화면 */
+
+
+/* ----------end 모바일버전 공통 스타일---------- */

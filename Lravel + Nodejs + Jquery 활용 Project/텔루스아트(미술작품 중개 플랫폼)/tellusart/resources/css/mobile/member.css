@@ -1,0 +1,153 @@
+.loginbox{display:block;margin:0 auto;text-align:center;padding:50px 0;overflow:hidden;}
+.login_tabs input[type=radio] {position: absolute;top: -9999px;left: -9999px;}
+.login_tabs {width:100%;position: relative;padding: 0;margin: 0px auto;}
+.login_tabs li{display:inline-block;margin:0 3px auto;}
+.login_tabs label {display: block;width:91px;height:91px;background:#fff;border:1px solid #c1c1c1;border-radius:5px;color: #c1c1c1;font-size: 18px;font-weight: normal;cursor: pointer;position: relative;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;}
+.login_tabs label i{display:block;margin-top:25px;margin-bottom:10px;}
+.login_tabs label:hover {top: 0;}
+.login_tabs [id^=logintab]:checked + label {background: #fea803;border:1px dotted #b17501;color: white;top: 0;}
+.login_tabs [id^=logintab]:checked ~ [id^=logintab-content] {display: block;}
+.logintab-content{z-index: 2;color:#333;display: block;text-align: left;width: 100%;font-size: 20px;line-height: 140%;padding:0px 10px;left: 0;
+box-sizing: border-box;
+-webkit-animation-duration: 0.5s;
+-o-animation-duration: 0.5s;
+-moz-animation-duration: 0.5s;
+animation-duration: 0.5s;
+}
+
+input.required{width:100%;border:1px solid #d2d2d2;border-radius:5px;box-sizing:border-box;border-radius:5px;height:51px;margin-bottom:3px;line-height:51px;padding:10px;color:#222;font-size:13px;}
+.folder_check{display:block;overflow:hidden;padding:10px 0;}
+.folder_check input[type="checkbox"] {
+    display:none;border:none;
+}
+.folder_check > label{display:inline-block;cursor:pointer;font-size:13px;color:#222;border:none;width:auto;height:auto;}
+.folder_check input[type="checkbox"] + label span {
+    display:inline-block;
+	padding-right:5px;
+    width:21px;
+    height:21px;
+    margin:0;
+    vertical-align:middle;
+    background:url(/storage/image/mobile/ic_check_yoff.png) left top no-repeat;
+    cursor:pointer;
+}
+.folder_check input[type="checkbox"]:checked + label span {
+    background:url(/storage/image/mobile/ic_check_yon.png) 0px top no-repeat;
+}
+
+button.loginbt{display:block;text-align:center;line-height:51px;font-weight:bold;background:#ffe22e;color:#302e57;border:1px solid #998400;font-size:15px;width:100%;border-radius:5px;}
+ul.etclog{padding:0;margin:0 auto;width:100%;text-align:center;}
+ul.etclog li{display:inline-block;margin:0 auto;position:relative;padding-right:10px;text-align:center;}
+ul.etclog li > a{display:block;color:#222;font-size:13px;font-family: 'Noto Sans KR', sans-serif;padding:10px 0;}
+ul.etclog li:nth-of-type(2){padding-left:15px;}
+ul.etclog li:nth-of-type(2):before{content:'';position:absolute;left:0;width:1px;height:10px;background:#ddd;margin-top:17px;}
+ul.snslogin{display:block;overflow:hidden;padding:20px 0;margin:0;width:100%;}
+ul.snslogin li{display:block;margin:0 auto;text-align:center;margin-bottom:5px;box-sizing:border-box;}
+ul.snslogin li a{display:block;width:100%;border-radius:5px;background:#fff;border:1px solid #d2d2d2;box-sizing:border-box;padding:10px 0;font-size:13px;color:#222222;}
+ul.snslogin li a i{display:inline-block;margin-right:5px;}
+
+
+
+.joinform{display:block;margin:0 auto;text-align:center;width:100%;padding:20px 10px 0 10px;box-sizing:border-box;overflow:hidden;font-family: 'Noto Sans KR', sans-serif;}
+.joinform .jbox{display:block;width:100%;margin-right:3%;border-right:1px dotted #ddd;text-align:left;margin-bottom:10px;}
+.joinform .agbox{display:block;width:100%;text-align:left;}
+.joinform .agbox .folder_check{padding:5px 0;}
+.joinform .agbox .folder_check ul{padding:0;margin:0;background:#fff;width:100%;box-sizing:border-box;overflow:hidden;padding:5px 20px;border:1px solid #e5e5e5;}
+.joinform .agbox .folder_check ul li{display:block;padding:7px 0;font-size:13px;}
+.joinform .agbox .folder_check ul li label.btn{position:absolute;right:0;top:7px;padding:5px 10px;color:#888;border:1px solid #888;font-size:12px;border-radius:5px;text-align:center;}
+.joinform .agbox .folder_check ul li label.btn:hover{background:#888;color:#fff;}
+.joinform .agbox .folder_check ul li:first-child{border-bottom:1px dotted #ddd;}
+.joinform .agbox .folder_check ul li:last-child{color:#999;}
+.joinform  h3{font-size:18px;color:#222222;display:block;margin-bottom:15px;font-weight:400;width:100%;}
+.joinform  h3 i{color:#413e70;display:inline-block;margin-right:10px;}
+.joinform  ul{padding:0;margin:0;padding-bottom:0px;overflow:hidden;}
+.joinform  ul li{display:block;margin-bottom:3px;position:relative;}
+.joinform  ul li input.required{height:41px;line-height:41px;font-size:13px;}
+.joinform  ul li a{display:inline-block;border-radius:5px;font-size:13px;}
+a.add_search{display:inline-block;height:41px;line-height:41px;border:1px solid #b17501;background:#fea803;color:#fff;box-sizing:border-box;margin-left:3px;text-align:center;}
+button.add_search{display:inline-block;width:19%;height:41px;line-height:41px;border:1px solid #b17501;background:#fea803;color:#fff;box-sizing:border-box;margin-left:3px;text-align:center;}
+
+.inp_with_btn{position:relative;}
+.inp_with_btn input{width:100%;padding-right:90px;}
+.inp_with_btn button.certify_btn{position: absolute; top: 3px; right: 3px; height: 35px; border: 1px solid #b17501; background: #fea803; color: #fff; padding: 0 14px; border-radius: 5px;}
+.inp_with_btn button.certify_btn.active{background:#413e70;border:1px solid #413e70;}	
+
+.psearch{display:block;margin:0 auto;width:100%;background:#efefef;padding:20px 10px;box-sizing:border-box;}
+.psearch p{display:block;text-align:center;padding:10px 0;text-align:left;}
+
+
+.both_btn_group button,
+.both_btn_group a{display:inline-block !important;vertical-align:middle;width:49% !important;line-height:41px;padding:0px;font-size:15px;border:none;}
+.both_btn_group a.cancel_btn{background:#999;border:1px solid #999;color:#fff;border-radius:5px;text-align:center;}
+
+
+.joinform .right .folder_check ul li em {
+	width:85%;
+    display:inline-block;
+	    vertical-align:top;  
+}
+.check input{  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;}
+.check input[type="checkbox"]:not(old){
+  width   :0px;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+  border:none;
+}
+
+.check input[type="checkbox"]:not(old) + label span {
+
+	display : inline-block;
+	border:none;
+	background : url('/storage/image/homepage/ic_check_off.png') left no-repeat;
+	width:19px;height:19px;
+	line-height  : 19px;
+	color:#888;
+	font-size:13px;
+	vertical-align:middle;margin-right:4px;
+	 
+}
+
+.check input[type="checkbox"]:not(old):checked + label span{
+
+  display      : inline-block;
+  background   : url('/storage/image/homepage/ic_check_on.png') left no-repeat;
+  width:19px;height:19px;
+}
+
+.modifybox{display:block;padding:10px;box-sizing:border-box;width:95%;margin:0 auto;text-align:center;border-radius:5px;border:1px solid #ddd;margin-top:70px;background:#fff;}
+.modifybox h3{float:left;width:100%;text-align:left;overflow:hidden;}
+.modifybox ul{width:100%;margin:0px;padding:0px;overflow:hidden;box-sizing:border-box;}
+.modifybox ul li{display:block;margin-bottom:3px;position:relative;text-align:left;}
+.modifybox ul li input.required{height:41px;line-height:41px;font-size:13px;}
+.modifybox ul li a{display:inline-block;border-radius:5px;font-size:13px;}
+.correct_yn{
+	
+	margin-bottom: 4px;
+    margin-top: 4px;
+	padding: 0 2px;
+	height: 18px;
+    text-align: right;
+}
+
+.correct_yn span{
+	display:none;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.correct_yn span.correct{
+    color: #413f71;
+}
+
+.correct_yn span.uncorrect{
+    color: #fe4b2a;
+}
+
+

@@ -1,0 +1,107 @@
+/* mymenu common */
+.container--mymenu {
+    padding: 0;
+    height: 100%;
+}
+
+.mymenu__hd-btns {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    color: #999999;
+    height: 40px;
+    line-height: 40px;
+}
+
+.mymenu__hd-btn {
+    font-size: 0.75em;
+    font-weight: 300;
+    color: #fff;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35%;
+}
+
+.mymenu__hd-btn.active {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #2E87C8;
+}
+
+.mymenu__view-wrapper {
+    height: calc( 100% - 40px);
+    padding: 30px 20px 20px;
+}
+
+.mymenu__view {
+    height: 100%;
+    padding-bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: #fff;
+    width: 100%;
+}
+
+.mymenu__view-list, .mymenu__view-hd {
+    font-size: 0.75em;
+    font-weight: 300;
+    color: #000000;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #999999;
+    position: relative;
+    padding: 10px 10px 10px 35px;
+    background-color: #EFEFEF;
+}
+
+.mymenu__view-list .num, .mymenu__view-hd .num {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #2E87C8;
+}
+
+.mymenu__view-list .title, .mymenu__view-hd .title {
+    margin-bottom: 2px;
+}
+
+.mymenu__view-list .info, .mymenu__view-hd .info {
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #535353;
+}
+
+.mymenu__view-list .info .status, .mymenu__view-hd .info .status {
+    padding-left: 5px;
+}
+
+.mymenu__view-list .info .status.ing, .mymenu__view-hd .info .status.ing {
+    color: #ff0000;
+}
+
+.mymenu__view-list .info .status.complt, .mymenu__view-hd .info .status.complt {
+    color: #2e87c8;
+}
+
+.mymenu__view-list {
+    background-color: #fff;
+    border-top: 0;
+}
+
+.mymenu__view-list:active {
+    background-color: #f2f2f2;
+}
+
+/* end mymenu common */

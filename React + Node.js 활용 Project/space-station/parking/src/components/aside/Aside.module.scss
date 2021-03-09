@@ -1,0 +1,131 @@
+@import '../../static/stylesheets/Root.scss';
+$aside-pd: 20px;
+.aside-menu {
+    width: 320px;
+    height: 100%;
+    color: #222;
+    background-color: #fff;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.16);
+    @media (max-width: 340px) {
+        width: 260px;
+    }
+    &.open {
+        .user-point {
+            left: 0;
+        }
+    }
+    .user-point {
+        position: absolute;
+        transform: translateY(50%);
+        width: 100%; height: 48px;
+        left: 100%; bottom: 0;
+        padding: 0 20px;
+        background-color: #222;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        color: #fff;
+        border-radius: 2px;
+        justify-content: flex-start;
+        transition: left 0.5s cubic-bezier(1, -0.01, 0.78, 1.07);
+        .point-title {
+            font-size: 16px;
+        }
+        .point-value {
+            font-size: 20px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+    }
+    .aside-content {
+        height: 100%;
+        overflow-y: auto;
+        .aside-top {
+            width: 100%;
+            position: relative;
+            background-color: #e9ebed;
+            height: 221px;
+            .aside-icon {
+                padding: $aside-pd 12px;
+                position: relative;
+                .aside-close {
+                    position: absolute;
+                    right: 12px;
+                }
+            }
+            .aside-profile {
+                width: 100%;
+                justify-content: flex-start;
+                box-sizing: border-box;
+                padding: $aside-pd;
+                display: flex;
+                align-items: center;
+                .user-img {
+                    width: 56px; height: 56px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: solid 1px #dbdbdb;
+                    img {
+                        width: 100%; height: 100%;
+                    }
+                }
+                .user-profile {
+                    text-align: left;
+                    margin-left: 15px;
+                    .user-name {
+                        color: #222;
+                        font-size: 22px;
+                        font-weight: bold;
+                        line-height: 1.5;
+                        &.login {
+                            font-size: 18px;
+                            color: #777;
+                            font-weight: 500;
+                        }
+                    }
+                    .user-email {
+                        color: #555;
+                        font-size: 14px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        .aside-event {
+            padding: $aside-pd;
+            margin-top: 24px;
+        }
+    }
+}
+
+html {
+    body {
+        .dim {
+            z-index: $level2;
+        }
+    }
+}
+
+html {
+    body {
+        .link-item {
+            padding: 0 $aside-pd;
+            display: flex;
+            width: 100%;
+            height: 48px;
+            justify-content: flex-start;
+            img {
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            span {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .banner-item {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

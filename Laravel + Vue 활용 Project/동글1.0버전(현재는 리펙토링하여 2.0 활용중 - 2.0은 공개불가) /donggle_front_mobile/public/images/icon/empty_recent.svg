@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="93" height="93" viewBox="0 0 93 93">
+  <g id="empty_recent" transform="translate(-1021 -741)">
+    <circle id="타원_126" data-name="타원 126" cx="46.5" cy="46.5" r="46.5" transform="translate(1021 741)" fill="#f9f5fd"/>
+    <circle id="타원_125" data-name="타원 125" cx="36.344" cy="36.344" r="36.344" transform="translate(1031.001 751)" fill="#f2e8f9"/>
+    <g id="그룹_3705" data-name="그룹 3705" transform="translate(1047.682 770.174)">
+      <path id="패스_161" data-name="패스 161" d="M1.625,31.612a2.11,2.11,0,0,0-.346.815A1.692,1.692,0,0,0,3.111,34.41H37.523a1.7,1.7,0,0,0,1.832-1.99,2.11,2.11,0,0,0-.346-.815C38.273,30.566,20.728,17.11,20.728,17.11S2.361,30.574,1.625,31.612Z" transform="translate(0 -4.422)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+      <path id="패스_162" data-name="패스 162" d="M19.7,3.609l1.724-1.291a5.3,5.3,0,0,1,7.428,1.053l.195.26a5.3,5.3,0,0,1-1.053,7.428l-4.94,3.714" transform="translate(-5.145 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    </g>
+    <circle id="타원_127" data-name="타원 127" cx="13.775" cy="13.775" r="13.775" transform="translate(1075.25 788.387)" fill="#fff" stroke="#ead9f5" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="그룹_3690" data-name="그룹 3690" transform="translate(1084.204 797.34)">
+      <line id="선_468" data-name="선 468" x2="9.645" y2="9.645" fill="none" stroke="#ead9f5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_469" data-name="선 469" x1="9.645" y2="9.645" fill="none" stroke="#ead9f5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <line id="선_470" data-name="선 470" x2="4.326" y2="4.326" transform="translate(1098.954 811.115)" fill="none" stroke="#ead9f5" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="패스_160" data-name="패스 160" d="M57.134,53.091l1.507-1.507a2.247,2.247,0,0,0,0-3.191L54.528,44.28a2.247,2.247,0,0,0-3.191,0L49.83,45.787a2.247,2.247,0,0,0,0,3.191l4.113,4.113A2.247,2.247,0,0,0,57.134,53.091Z" transform="translate(1052.971 770.683)" fill="#fff" stroke="#ead9f5" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

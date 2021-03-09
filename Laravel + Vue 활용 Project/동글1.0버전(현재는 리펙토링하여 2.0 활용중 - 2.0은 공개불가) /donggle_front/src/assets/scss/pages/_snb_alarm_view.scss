@@ -1,0 +1,101 @@
+/*
+    PAGES - (사이드네비)알림
+*/
+
+#dg-snb-alarm-wrapper {
+  .l-page-wrapper {
+    padding-top: 55px;
+  }
+
+  .nothing-history {
+    padding: 55% 0;
+    height: 100%;
+  }
+
+  .dg-alarm-card {
+    width: 370px;
+    margin: 0 auto;
+
+    .in-subject {
+      height: 66px;
+      line-height: 66px;
+      margin-bottom: 6px;
+      border: 1px solid #b4b4b4;
+      padding: 0px 0px 0px 20px;
+      background-color: #ffffff;
+      font-size: $f-22;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
+      user-select: none;
+    }
+    .in-contents {
+      background-color: white;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
+      height: 576px;
+    }
+    ._alarm_list_group {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 4px;
+        display: none;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #7b7b7b;
+        border-radius: 50px;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 50px;
+        background-color: transparent;
+      }
+    }
+
+    ._list {
+      padding: 20px 20px 20px 80px;
+      position: relative;
+      position: relative;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid $light_gray6;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      .symbol-circle {
+        @include position($t: 20px, $l: 20px);
+        @include circleSize(48px);
+      }
+      ._store {
+        font-weight: 500;
+        margin: 5px 0 6px;
+      }
+      ._date {
+        @include position($t: 23px, $r: 20px);
+        @include fontType01(#{$px-11}rem, #787878, 300);
+
+        height: 18px;
+        display: inline-block;
+        letter-spacing: 0.3px;
+      }
+      ._txt {
+        @include fontType01(#{$px-13}rem, #787878, 200);
+        line-height: 1.5;
+      }
+    }
+    ._list:hover {
+      border-color: #fc4ead;
+      transition: all 0.2s;
+      ._txt {
+        color: #333;
+      }
+    }
+    ._list:active {
+      background-color: #f8f8f8;
+    }
+    ._list.new ._store {
+      @include makeAfter(url($path-icon+"badge_new.svg")) {
+        padding-left: 5px;
+      }
+    }
+  }
+}

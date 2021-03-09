@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+/* 
+    --------------------------------------------------------------------
+            * sub_page_large_title component *
+            //이용권정보, 장바구니, 고객센터, 마이페이지 제목 스타일
+    --------------------------------------------------------------------
+*/
+
+// 서브페이지 제목 스타일
+
+.sub-page-large-title {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+  height: 150px;
+  position: relative;
+
+  &-name {
+    @include position($l: 0, $b: 30px);
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  &._cart {
+    border-bottom: 0;
+
+    .sub-page-large-title-name {
+      @include position($l: 0, $b: 65px);
+    }
+  }
+}
+
+// 서브페이지 제목 하단 탭메뉴 스타일
+
+.sub-page-large-tab {
+  text-align: center;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+
+  ul {
+    font-size: 14px;
+  }
+
+  .tab-menu-list a {
+    padding: 12px 22px;
+    font-weight: 400;
+  }
+}

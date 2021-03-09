@@ -1,0 +1,942 @@
+/* ----------start 모바일버전 거래소 스타일---------- */
+
+/* ----------공통스타일---------- */
+.m_tab_menu_con {
+    width: 100%;
+    height: calc(100% - 83px);
+}
+
+.m_tab_menu_con.trans_order_con,
+.m_tab_menu_con.market_chart_con{
+    width: 100%;
+    height: calc(100% - 147px);
+}
+
+/* 상단 고정 코인선택바 */
+.coin_select_bar {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 5px 0;
+    position: relative;
+}
+
+.coin_select_bar>label{
+    width: 100%;
+    display: inline-block;
+}
+
+.coin_select_bar .select_tit {
+    display: inline-block;
+    padding-right: 20px;
+    position: relative;
+    left: 15px;
+    z-index: 1;
+    font-size: 0.9rem;
+    color: #474846;
+}
+
+.coin_select_bar .select_tit .currency {
+    font-size: 0.8rem;
+    color: #787878;
+}
+
+.coin_select_bar .coin_symbol {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 5px;
+    margin-right: 3px;
+}
+
+.coin_select_bar .select_tit:after {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-top: 5px solid #474846;
+    top: 13px;
+    right: 0;
+    width: 10px;
+}
+
+.coin_select_bar .select_list{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    z-index: 1;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.17);
+    border-top: 1px solid #dddddd;
+}
+
+.coin_select_bar .select_list li{
+    margin: 5px 10px;
+}
+
+.coin_select_bar .select_list li a{
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 5px 20px;
+    border-radius: 5px;
+}
+
+.coin_select_bar .select_list li a:active{
+    background: #28283c;
+    color: #fff;
+}
+
+.coin_select_bar .select_list li a img{
+    width: 18px;
+    height: 18px;
+    top: 3px;
+}
+
+/* 0404 코인목록 마켓리스트 탭 추가 시작 */
+
+#list_check:checked + .market_list_n_coin_list{
+    display: block;
+}
+
+.market_list_n_coin_list{
+    width: 100%;
+    position: absolute;
+    top: 39px;
+    z-index: 3;
+    display: none;
+}
+
+.coin_select_bar .market_list_tab{
+    border-top: 1px solid #dddddd;
+    display: flex;
+    width: 100%;
+    height: 30px;
+	line-height: 30px;
+    color: #787878;
+    background-color: #fff;
+}
+
+.coin_select_bar .market_list_tab li{
+	width: 50%;
+	border-right: 1px solid #dddddd;
+    text-align: center;
+}
+
+.coin_select_bar .market_list_tab li:last-child{
+	border: 0;
+}
+
+.coin_select_bar .market_list_tab li label{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.coin_select_bar .market_list_tab li label:active{
+	background-color: #fafafa;
+}
+
+.coin_select_bar .market_list_tab li.active{
+	border-bottom: 2px solid #28283c;
+    background-color: #f7f7f7;
+}
+
+.coin_select_bar .coin_list-2,
+.coin_select_bar .coin_list-3,
+.coin_select_bar .coin_list-4{
+	display: none;
+}
+
+#usdc_market_list:checked ~ .coin_list-1{
+	display: table;
+}
+
+#usdc_market_list:checked ~ .coin_list-2,
+#usdc_market_list:checked ~ .coin_list-3,
+#usdc_market_list:checked ~ .coin_list-4{
+	display: none;
+}
+
+#btc_market_list:checked ~ .coin_list-2{
+	display: table;
+}
+
+#btc_market_list:checked ~ .coin_list-1,
+#btc_market_list:checked ~ .coin_list-3,
+#btc_market_list:checked ~ .coin_list-4{
+	display: none;
+}
+
+#eth_market_list:checked ~ .coin_list-3{
+	display: table;
+}
+
+#eth_market_list:checked ~ .coin_list-1,
+#eth_market_list:checked ~ .coin_list-2,
+#eth_market_list:checked ~ .coin_list-4{
+	display: none;
+}
+
+#krw_market_list:checked ~ .coin_list-4{
+	display: table;
+}
+
+#krw_market_list:checked ~ .coin_list-1,
+#krw_market_list:checked ~ .coin_list-2,
+#krw_market_list:checked ~ .coin_list-3{
+	display: none;
+}
+
+/* //0404 코인목록 마켓리스트 탭 추가 끝 */
+
+/* //상단 고정 코인선택바 */
+
+/* 하단 고정 네비게이션 */
+.m_tab_menu {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 45px;
+}
+
+.m_tab_menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+}
+
+.m_tab_menu ul li {
+    flex: 1;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    height: 45px;
+    line-height: 45px;
+}
+
+.m_tab_menu ul li a {
+    color: #333333;
+    font-size: 0.8rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.m_tab_menu ul li.active {
+    border-top: 1px solid #48413b;
+    background: #48413b;
+}
+
+.m_tab_menu ul li.active a {
+    color: #fff;
+}
+/* //하단 고정 네비게이션 */
+
+/* ----------//공통스타일---------- */
+
+/* 각 창마다 내용보이는 영역 높이 */
+.bottom_wrap {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 1.주문 높이 */
+.trans_order_con .bottom_wrap {
+    height: 100%;
+}
+
+/* 2.호가 높이 */
+.asking_price_con .bottom_wrap {
+    height: calc(100% - 40px);
+    overflow-y: hidden;
+}
+
+/* 3.차트 높이 */
+.market_chart_con .bottom_wrap {
+    height: 100%;
+}
+
+/* 5.거래내역 높이 */
+.trans_history_con .bottom_wrap {
+    height: calc(100% - 40px);
+}
+
+/* //각 창마다 내용보이는 영역 높이 */
+
+/* 공통스타일 table_label */
+.table_wrap .table_label {
+    border-top: 0;
+}
+/* //공통스타일 table_label */
+
+/* 상단 (코인 종가 및 전일대비 등 정보영역) */
+.coin_num_data {
+    position: relative;
+    height: 63px;
+}
+
+.coin_num_data .first_line {
+    font-size: 1.2rem;
+    padding: 10px 15px 0;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.coin_num_data .first_line .currency {
+    color: #787878;
+    font-size: 0.8rem;
+    font-weight: 0;
+}
+
+.coin_num_data .second_line {
+    padding: 7px 15px;
+    font-size: 0.8rem;
+}
+
+.coin_num_data .second_line .tit {
+    color: #555555;
+    font-size: 0.7rem;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.view_24h_label {
+    position: relative;
+    font-size: 0.65rem;
+    color: #474846;
+    float: right;
+    top: 3px;
+}
+
+.view_24h_list {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    display: flex;
+    border-top: 1px solid transparent;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    z-index: 2;
+}
+
+#view_24h_ul_1:checked + .view_24h_list,
+#view_24h_ul_2:checked + .view_24h_list {
+    height: 45px;
+    transition: all 0.2s;
+    border-top: 1px solid #f0f0f0;
+    width: 100%;
+    background: #fff;
+}
+
+.view_24h_list li {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    color: #555555;
+}
+
+.view_24h_list li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.view_24h_list li:nth-child(2) a {
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+
+.view_24h_list li p {
+    line-height: 1;
+    font-size: 0.65rem;
+}
+
+/* //상단 (코인 종가 및 전일대비 등 정보영역) */
+
+/* ----------1.주문---------- */
+.trans_order_con .left_con {
+    float: left;
+    width: 40%;
+    background: #f7f7f7;
+    height: 100%;
+    overflow-y: scroll;
+    font-size: 0.7rem;
+    color: #555555;
+}
+
+.trans_order_con .left_con .up_wrap{
+    width: 100%;
+    height: calc(50% - 57px);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.trans_order_con .left_con .up_wrap>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+}
+
+.trans_order_con .left_con .down_wrap{
+    width: 100%;
+    height: calc(50% - 25px);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.trans_order_con .left_con .down_wrap>ul{
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-direction: column;
+}
+
+.trans_order_con .left_con .wait_tit {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+
+.trans_order_con .left_con .sell_wait_tit {
+    border-bottom: 0;
+    background: #eaeef9;
+    color: #4378ff;
+}
+
+.trans_order_con .left_con .buy_wait_tit {
+    background: #ffe1e1;
+    color: #ff4646;
+}
+
+.trans_order_con .left_con .tratbl_total_box {
+    border-top: 1px solid rgba(250, 250, 250, 0.4);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+    text-align: center;
+    background: #fff;
+    font-weight: bold;
+    border: 2px solid black;
+    color: black;
+    font-size: 0.85rem;
+}
+
+.trans_order_con .left_con .tratbl_total_box>span{
+    line-height: 28px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.trans_order_con .left_con .tratbl_total_box.red {
+    border: 2px solid #ff4646;
+    color: #ff4646;
+}
+
+.trans_order_con .left_con .tratbl_total_box.blue {
+    border: 2px solid #4378ff;
+    color: #4378ff;
+}
+
+.trans_order_con .left_con .wait_ul li {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.8);
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.78rem;
+    position: relative;
+}
+
+.trans_order_con .left_con .wait_ul li span {
+    display: inline-block;
+}
+
+.trans_order_con .left_con .wait_ul li .per_bar{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+}
+
+.trans_order_con .left_con .wait_ul li .price_span {
+    float: left;
+    height: 100%;
+    padding-left: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.trans_order_con .left_con .wait_ul li .amt_span {
+    float: right;
+    height: 100%;
+    padding-right: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.trans_order_con .left_con .wait_ul.buy_wait_ul li {
+    width: 100%;
+}
+
+.trans_order_con .left_con .wait_ul.buy_wait_ul li .per_bar{
+    background: #ffb4b4;
+    opacity: 0.4;
+}
+
+.trans_order_con .left_con .wait_ul.buy_wait_ul li:active {
+    background: #ffc2c2;
+    font-weight: bold;
+}
+
+.trans_order_con .left_con .wait_ul.sell_wait_ul li {
+    width: 100%;
+}
+
+.trans_order_con .left_con .wait_ul.sell_wait_ul li .per_bar{
+    background: #bdceff;
+    opacity: 0.4;
+}
+
+.trans_order_con .left_con .wait_ul.sell_wait_ul li:active {
+    background: #c5d2ef;
+    font-weight: bold;
+}
+
+.trans_order_con .right_con {
+    float: right;
+    width: 60%;
+    height: 100%;
+}
+
+.trade_hd {
+    width: 100%;
+    height: 45px;
+}
+
+.trade_hd ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.trade_hd ul li {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 45px;
+    height: 100%;
+    color: #474846;
+}
+
+.trade_hd ul li i {
+    display: none;
+}
+
+.trade_hd ul li.active i {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.trade_hd ul li.li_buy.active {
+    color: #ff4646;
+}
+
+.trade_hd ul li.li_sell.active {
+    color: #4378ff;
+}
+
+.trans_order_con .right_con .deal_con {
+    padding: 0 10px;
+}
+
+.trans_order_con .right_con .balance_state {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 0.65rem;
+    color: #555555;
+    margin-bottom: 0.5rem;
+}
+
+.trans_order_con .right_con .balance_state u {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #333333;
+}
+
+.trans_order_con .buysell_table,
+.trans_order_con .buysell_table tr {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.trans_order_con .buysell_wrap .form-group {
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.trans_order_con .buysell_wrap .form-group td {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.trans_order_con .buysell_wrap .form-group label,
+.trans_order_con .buysell_wrap .form-group .currency {
+    position: absolute;
+    color: #474846;
+}
+
+.trans_order_con .buysell_wrap .form-group label {
+    top: 12px;
+    font-size: 0.65rem;
+    left: 8px;
+}
+
+.trans_order_con .buysell_wrap .form-group .currency {
+    right: 10px;
+    top: 8px;
+    font-size: 0.9rem;
+}
+
+.trans_order_con .buysell_wrap .form-group .form-control {
+    height: calc(2.3rem + 2px);
+    padding: 0 55px 0 35px;
+    text-align: right;
+}
+
+.trans_order_con .buysell_wrap .updown_btns {
+    height: 40px;
+}
+
+.trans_order_con .buysell_wrap .updown_btns ul,
+.trans_order_con .buysell_wrap .percent_btns ul {
+    display: flex;
+    width: 100%;
+}
+
+.trans_order_con .buysell_wrap .updown_btns ul li {
+    width: 100%;
+    height: 27px;
+}
+
+.trans_order_con .buysell_wrap .updown_btns ul li,
+.trans_order_con .buysell_wrap .percent_btns ul li {
+    flex: 1;
+}
+
+.trans_order_con .buysell_wrap .updown_btns ul li button,
+.trans_order_con .buysell_wrap .percent_btns ul li button {
+    background: #fff;
+    font-size: 0.75rem;
+    color: #474846;
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dddddd;
+    border-right: 0;
+    padding: 0;
+}
+
+.trans_order_con .buysell_wrap .updown_btns ul li button:active,
+.trans_order_con .buysell_wrap .percent_btns ul li button:active {
+    border-color: #ffdc00;
+    border-right: 1px solid #ffdc00 !important;
+    background: #f7f7f7;
+}
+
+.trans_order_con .buysell_wrap .updown_btns ul li:last-child button,
+.trans_order_con .buysell_wrap .percent_btns ul li:last-child button {
+    border-right: 1px solid #dddddd;
+}
+
+.trans_order_con .total_sum_wrap {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+.trans_order_con .total_sum_wrap p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.trans_order_con .coin_buy_con .total_sum_wrap p {
+    color: #ff4646;
+}
+
+.trans_order_con .coin_sell_con .total_sum_wrap p {
+    color: #4378ff;
+}
+
+.trans_order_con .buysell_btn .btn_style {
+    height: calc(2.5rem + 2px);
+}
+
+.trans_order_con .buysell_btn.buy_btn .btn_style {
+    background-color: #ff4646;
+}
+
+.trans_order_con .buysell_btn.sell_btn .btn_style {
+    background-color: #4378ff;
+}
+
+.trans_order_con .buysell_btn.not_active_btn .btn_style {
+    background-color: #aaaaaa;
+}
+
+/* ----------//1.주문---------- */
+
+/* ----------2.호가---------- */
+
+.asking_price_con .table_label thead > tr > th{
+    width: 33.33%;
+    text-align: center;
+}
+
+.asking_price_con .updownarea {
+    height: calc(50% - 35px);
+    transition: all 0.4s;
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.asking_price_con .updownarea .inner{
+    width: 100%;
+    display: table;
+    height: 100%;
+}
+
+.asking_price_con .updownarea .inner>ul{
+    display: table-cell;
+}
+
+.asking_price_con .updownarea.up .inner>ul{
+    vertical-align: bottom;
+}
+
+.asking_price_con .updownarea .inner>ul li{
+    border-bottom: 1px solid rgba(250, 250, 250, 0.8);
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.asking_price_con .updownarea.up .inner>ul li .per_bar{
+    background: #eaeef9;
+    opacity: 0.7;
+}
+
+.asking_price_con .updownarea.down .inner>ul li .per_bar{
+    background: #ffe1e1;
+    opacity: 0.7;
+}
+
+.asking_price_con .updownarea .inner>ul li span{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.asking_price_con .updownarea .inner>ul li span:nth-child(1){
+    text-align: left;
+    padding-left: 5px;
+}
+
+.asking_price_con .updownarea .inner>ul li span:nth-child(3){
+    text-align: right;
+    padding-right: 5px;
+}
+
+.asking_price_con .updownarea .inner>ul li .per_bar{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.asking_price_con .total_sum{
+    height: 35px;
+    background: #fff;
+    border: 1px solid #474846;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.asking_price_con .total_sum.red{
+    border: 1px solid #ff4646;
+}
+
+.asking_price_con .total_sum.blue{
+    border: 1px solid #4378ff;
+}
+
+#sell_wait_check:checked ~ .up.updownarea{
+    height: calc(100% - 30px);
+    overflow-y: scroll;
+    transition: all 0.3s;
+    -webkit-overflow-scrolling: touch;
+}
+
+#sell_wait_check:checked ~ .total_sum{
+    display: none;
+}
+
+#sell_wait_check:checked ~ .down.updownarea{
+    height: 0;
+    overflow-y: hidden;
+    transition: all 0.3s;
+}
+
+#buy_wait_check:checked ~ .up.updownarea{
+    height: 0;
+    overflow-y: hidden;
+    transition: all 0.3s;
+}
+
+#buy_wait_check:checked ~ .down.updownarea{
+    height: calc(100% - 32px);
+    overflow-y: scroll;
+    transition: all 0.3s;
+    -webkit-overflow-scrolling: touch;
+}
+
+#buy_wait_check:checked ~ .total_sum{
+    display: none;
+}
+
+#total_wait_check:checked ~ .up.updownarea{
+    height: calc(50% - 35px);
+    transition: all 0.3s;
+}
+
+#total_wait_check:checked ~ .down.updownarea{
+    height: calc(50% - 35px);
+    transition: all 0.3s;
+}
+
+.blink {
+	animation: blink 0.125s ease-out 3;
+}
+
+/* 호가창 애니메이션 */
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+.cell {
+	display: inline-block;
+	border: 1px solid transparent;
+	padding: 10px
+}
+
+.cell-blink {
+animation: cell-blink 1s linear 1;
+}
+
+@keyframes cell-blink {
+	100% {
+		border: 1px solid transparent;
+	}
+}
+
+.row-blink {
+animation: row-blink 0.75s linear 1;
+}
+
+@keyframes row-blink {
+	100% {
+		background-color: transparent;
+	}
+}
+
+/* ----------//2.호가---------- */
+
+/* ----------3.차트---------- */
+
+.market_chart_con .chart_con {
+    width: 100%;
+    background: gray;
+    height: 500px;
+}
+
+/* ----------//3.차트---------- */
+
+/* ----------4.시세---------- */
+.market_price_con .table_label thead > tr > th {
+    width: 33.33%;
+    text-align: center;
+}
+.market_price_con .table_label thead > tr > th:nth-child(1) {
+    padding-left: 10px;
+}
+.market_price_con .table_label thead > tr > th:nth-child(3) {
+    padding-right: 10px;
+}
+
+.market_price_con .coin_chart_tbl tbody > tr{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.market_price_con .coin_chart_tbl tbody > tr.sell{
+    background: rgba(179,202,255,0.2);
+}
+
+.market_price_con .coin_chart_tbl tbody > tr.sell td:nth-child(1){
+    color: #2e4dff;
+}
+
+.market_price_con .coin_chart_tbl tbody > tr.buy{
+    background: rgba(255,223,223,0.2);
+}
+
+.market_price_con .coin_chart_tbl tbody > tr.buy td:nth-child(1){
+    color: #ff0000;
+}
+
+.market_price_con .coin_chart_tbl tbody > tr > td {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 33.33%;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+.market_price_con .coin_chart_tbl tbody > tr > td:nth-child(1) {
+    text-align: right;
+    padding-right: 20px;
+}
+.market_price_con .coin_chart_tbl tbody > tr > td:nth-child(3) span {
+    display: inline-block;
+    width: 100%;
+}
+
+/* ----------//4.시세---------- */
+
+/* ----------5.거래내역 (common.css에 있음 편집 하면 안돼요~)---------- */
+
+/* ----------//5.거래내역 (common.css에 있음 편집 하면 안돼요~)---------- */
+
+/* ----------end 모바일버전 거래소 스타일---------- */

@@ -1,0 +1,188 @@
+/* LAYOUT - forms
+   ========================================================================== */
+
+.form-wrapper {
+  width: 100%;
+  font-size: 16px;
+}
+
+.form-container {
+  @include set-relative;
+
+  width: 100%;
+  padding: 10px 0;
+  min-inline-size: unset;
+
+  .form-caution {
+    @include font(11px, 400, $primary-color-02);
+
+    display: block;
+    line-height: 1.5;
+    padding-top: 8px;
+    user-select: all;
+  }
+}
+
+// form style 01 (스토어 설정)
+.form-container.type-01 {
+  .form-align {
+    border-bottom: 1px solid $gray-lighter;
+    display: flex;
+    align-items: baseline;
+    padding: 14.5px 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .form-align-tit {
+    @include font(15px, 400, $gray);
+
+    width: 165px;
+    user-select: none;
+  }
+
+  .form-align-input {
+    min-width: 40%;
+
+    &.type-certi {
+      .in-group {
+        display: flex;
+      }
+      .rounded-square-btn {
+        margin-left: 9px;
+      }
+    }
+    &.type-img {
+      .form-caution {
+        margin-bottom: 20px;
+      }
+    }
+
+    .form-input-txt,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+    }
+  }
+
+  .form-textarea {
+    display: block;
+  }
+}
+
+// form style 02 (상품 등록)
+.form-container.type-02 {
+  padding: 0;
+
+  .form-align {
+    border-bottom: 1px solid $gray-lighter;
+    padding: 20px 0;
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    &.type-group {
+      padding: 25px 0;
+    }
+
+    .in-grid:first-child {
+      @include inline-block;
+
+      width: 25%;
+      min-width: 320px;
+    }
+
+    .in-grid:last-child {
+      @include inline-block;
+
+      width: 65%;
+    }
+
+    .in-grid-align {
+      margin-bottom: 20px;
+    }
+
+    .in-grid-align:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-align-tit {
+    @include font(15px, bold, $gray);
+
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+    user-select: none;
+  }
+
+  .form-align-input {
+    padding: 5px 0;
+
+    &.type-color {
+      .in-group {
+        margin-bottom: 30px;
+      }
+    }
+
+    .in-group {
+      display: flex;
+
+      .rounded-square-btn {
+        margin-left: 9px;
+      }
+    }
+  }
+
+  .form-select {
+    width: 170px;
+  }
+}
+
+// form style 03 (문의)
+.form-container.type-03 {
+  padding: 0;
+  border-top: 1px solid $gray-md-04;
+  border-bottom: 1px solid $gray-md-04;
+
+  .form-align {
+    border-bottom: 1px solid $gray-lighter;
+    min-height: 55px;
+    width: 100%;
+    display: table;
+  }
+
+  .form-align-tit {
+    @include font(15px, 300, $gray);
+
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 163px;
+    background-color: $gray-lighter-02;
+    padding: 0 20px 0 30px;
+    width: 15%;
+    user-select: none;
+  }
+
+  .form-align-input {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding: 15px 30px;
+    width: 85%;
+  }
+
+  .in-text {
+    @include font(15px, 400, $gray);
+
+    line-height: 1.5;
+  }
+
+  .in-editor {
+    width: 100%;
+  }
+}

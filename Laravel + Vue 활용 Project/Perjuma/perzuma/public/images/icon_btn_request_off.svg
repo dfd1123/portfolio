@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_btn_request_off" width="37" height="48" viewBox="0 0 37 48">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-width:2px}.cls-1{stroke:#bfc9d1}.cls-1,.cls-3{stroke-linejoin:round}.cls-2,.cls-3{stroke:#80c0ff}.cls-2{stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="레이어_1" data-name="레이어 1">
+        <path id="패스_2322" d="M36 47H1V1h35v29" class="cls-1" data-name="패스 2322"/>
+        <path id="사각형_283" d="M0 0h15v7H0z" class="cls-1" data-name="사각형 283" transform="translate(11 1)"/>
+        <path id="선_23" d="M0 0h21" class="cls-2" data-name="선 23" transform="translate(8 16)"/>
+        <path id="선_24" d="M0 0h21" class="cls-2" data-name="선 24" transform="translate(8 23)"/>
+        <path id="선_25" d="M0 0h8" class="cls-2" data-name="선 25" transform="translate(8 30)"/>
+        <path id="선_26" d="M0 0h14" class="cls-2" data-name="선 26" transform="translate(19 37)"/>
+        <path id="패스_2323" d="M28.964 31.964L34 37l-5.036 5.036" class="cls-3" data-name="패스 2323"/>
+    </g>
+</svg>

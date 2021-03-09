@@ -1,0 +1,168 @@
+/* PAGES - login */
+/* 
+login main
+ */
+#login_main {
+  .dg_reg_agree_save {
+    font-size: 0.75em;
+    color: $gray;
+  }
+  .dg-write_form {
+    margin: 34px 0px 30px;
+  }
+}
+.dg-find_id_pw {
+  float: right;
+  margin: 14px 0px;
+  font-size: 0.75em;
+  color: $purple;
+  opacity: 0.5;
+}
+.dg-input-checkbox_text {
+  font-size: 0.75em;
+}
+.dg-reg-end_btn_wrap {
+  .dg-btn_width100 {
+    width: 100%;
+    margin: 7px 0px;
+    &.dg-btn_gra {
+      box-shadow: 0px 5px 6px rgba(#fc4ead, 0.2);
+    }
+  }
+}
+.login_connect_wrap {
+  margin: 38px 0px 0px;
+  user-select: none;
+}
+.login_connect_wrap > h3 {
+  position: relative;
+  margin: 22px 0px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.75em;
+  color: $gray;
+  &:before,
+  &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 10.7em;
+    height: 1px;
+    background-color: $light_gray6;
+    bottom: 0.5em;
+  }
+  &:before {
+    left: 0px;
+  }
+  &:after {
+    right: 0px;
+  }
+}
+
+.dg-login-popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 400px;
+  background-color: $white;
+  .dg-reg-step_end_desc {
+    padding: 130px 15px 15px;
+    // background-image:url($path-icon+'');
+    // ☆image name: icon_error
+  }
+  .dg-reg-step_end_title {
+    font-size: 1.375em;
+    color: $purple_dark;
+  }
+  .dg-reg-end_text {
+    padding: 8px 0px;
+  }
+  .dg-reg-end_btn_wrap {
+    margin: 10px 0px 0px;
+  }
+  .dg-reg-end_btn_wrap > a {
+    padding: 11px 0px;
+  }
+}
+/* login main E */
+/* 
+find choice
+*/
+#find_choice {
+  margin: 40px auto 150px;
+}
+.dg-choice_box-btn {
+  width: 48.5%;
+  display: inline-block;
+  border: 1px solid $light_gray3;
+  border-radius: 10px;
+  padding: 100px 15px 50px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    border-color: $black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+  }
+  > a {
+    > h3 {
+      margin: 8px 0px;
+      font-weight: 500;
+      color: $black;
+    }
+    > p {
+      font-size: 0.75em;
+      font-weight: 200;
+      color: $gray4;
+    }
+  }
+}
+.dg-find_id-btn {
+  background-image: url($path-icon+"icon_id.svg");
+  @include bgOption(27%, center 50px);
+}
+.dg-find_pw-btn {
+  float: right;
+  background-image: url($path-icon+"icon_pw.svg");
+  @include bgOption(43%, center 50px);
+}
+/* find choice E */
+
+/* 
+find id
+*/
+.dg-dubble_btn_wrap {
+  margin: 33px 0px 0px;
+}
+#findID_end {
+  .dg-popup_alert_desc {
+    background: none;
+    padding: 36px 78px;
+    text-align: center;
+    > h2 {
+      line-height: 2.2;
+    }
+    > div > b {
+      line-height: 2.2;
+    }
+  }
+}
+/* find id E */
+
+/* 
+find password
+*/
+#findPW_end {
+  .dg-popup_alert_desc {
+    background: none;
+    margin: 20px 0px;
+    padding: 36px 0px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .btn_write_complete_wrap {
+    margin: 20px 0px;
+  }
+}
+/* find password E */

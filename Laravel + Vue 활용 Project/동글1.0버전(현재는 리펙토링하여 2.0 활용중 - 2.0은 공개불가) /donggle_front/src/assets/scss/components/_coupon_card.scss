@@ -1,0 +1,89 @@
+/*
+    COMPONENT - coupon frame component
+*/
+
+.dg-coupon-card {
+  @include bgOption(100%, center);
+
+  background-image: url($path-img+"frame_coupon.png");
+  height: 170px;
+  padding-left: 75px;
+  padding-right: 30px;
+
+  &.type-download {
+    background-image: url($path-img+"frame_coupon_dot.png");
+    padding-right: 70px;
+  }
+
+  .in-download button {
+    @include position($t: 0, $r: -60px);
+    @include buttonInit($pointer: pointer, $bg: transparent);
+
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    user-select: none;
+  }
+
+  .in-download ._icon {
+    margin: 0 auto;
+  }
+
+  .in-download ._icon--off {
+    display: none;
+  }
+
+  &.type-download.active .in-download ._icon--off {
+    display: block;
+  }
+
+  &.type-download.active .in-download ._icon--on {
+    display: none;
+  }
+
+  .in-information {
+    @include position($t: 50%, $l: 0);
+
+    transform: translateY(-50%);
+  }
+
+  ._tit {
+    @include fontType01(#{$px-18}rem, $weight: 400);
+    @include ellipse(1, 26px);
+
+    letter-spacing: -0.8px;
+    margin-bottom: 15px;
+  }
+
+  ._desc {
+    @include fontType01(#{$px-11}rem, black, 300);
+    @include fontType02(0, 2);
+
+    position: relative;
+    padding-left: 50px;
+  }
+  ._desc dt {
+    @include fontType01(inherit, inherit, 400);
+    @include position($t: 50%, $l: 0);
+
+    display: inline-block;
+    transform: translateY(-50%);
+  }
+
+  ._desc .rounded-btn-outline {
+    @include fontType01(#{$px-11}rem, #787878, 300);
+
+    height: 18px;
+    line-height: 18px;
+    min-width: unset;
+    padding: 0 10px;
+    border-color: #c8c8c8;
+    margin-left: 5px;
+  }
+}
+
+.dg-coupon-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="347" height="215.293" viewBox="0 0 347 215.293">
+  <defs>
+    <filter id="Background" x="2.002" y="0" width="344.998" height="215.293" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#97a9ce" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1ae8ce"/>
+      <stop offset="1" stop-color="#1ae8ce" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1" x2="0" xlink:href="#linear-gradient-2"/>
+    <filter id="Combined_Shape" x="0" y="97.544" width="108" height="88.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-2"/>
+      <feFlood flood-color="#4b556e" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Combined_Shape-2" x="79" y="88.514" width="108" height="88.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-3"/>
+      <feFlood flood-color="#4b556e" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Combined_Shape-3" x="158" y="57.25" width="108" height="88.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-4"/>
+      <feFlood flood-color="#4b556e" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Combined_Shape-4" x="237" y="13.221" width="108" height="88.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-5"/>
+      <feFlood flood-color="#4b556e" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="mobile_img_02" transform="translate(-6187 217)">
+    <g transform="matrix(1, 0, 0, 1, 6187, -217)" filter="url(#Background)">
+      <path id="Background-2" data-name="Background" d="M2.471,0H312.527A2.471,2.471,0,0,1,315,2.471V182.822a2.471,2.471,0,0,1-2.471,2.471H2.471A2.471,2.471,0,0,1,0,182.822V2.471A2.471,2.471,0,0,1,2.471,0Z" transform="translate(17 14)" fill="#fff"/>
+    </g>
+    <g id="Lines" transform="translate(6230.119 -184.517)">
+      <path id="Line" d="M1,166.809V0" transform="translate(-1)" fill="none" stroke="#707070" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-2" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(15.849)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-3" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(31.856)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-4" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(48.706)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-5" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(64.713)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-6" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(81.562)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-7" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(97.569)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-8" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(114.419)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-9" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(130.426)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-10" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(147.275)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-11" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(163.282)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-12" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(180.131)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-13" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(196.138)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-14" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(212.988)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-15" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(228.995)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-16" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(245.844)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+      <path id="Line-17" data-name="Line" stroke="#707070" d="M1,166.809V0" fill="none" transform="translate(261.851)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="6" opacity="0.148"/>
+    </g>
+    <path id="Mask" d="M0,0H314.93a0,0,0,0,1,0,0V119.561a15,15,0,0,1-15,15H15a15,15,0,0,1-15-15V0A0,0,0,0,1,0,0Z" transform="translate(6204.001 -152.597)" fill="none"/>
+    <path id="Path" d="M0,25.529C208.592,41.6,311.908-93.411,311.908-93.411" transform="translate(6205.573 -82.376)" fill="none" stroke="#1ae8ce" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="교차_1" data-name="교차 1" d="M0,159.976V120.094C194.831,133.543,300.834,16.769,315,0V159.976Z" transform="translate(6204 -177.402)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" opacity="0.2" fill="url(#linear-gradient)"/>
+    <path id="Mask-2" data-name="Mask" d="M0,0H314.93a0,0,0,0,1,0,0V119.561a15,15,0,0,1-15,15H15a15,15,0,0,1-15-15V0A0,0,0,0,1,0,0Z" transform="translate(6204.001 -152.597)" fill="none"/>
+    <g id="_1-1_graph_side" data-name="1-1_graph_side" transform="translate(6204.001 -202.985)">
+      <path id="Gradient" d="M0,0H21.481a4,4,0,0,1,4,4V180.95a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(289.45 0)" fill="url(#linear-gradient-2)"/>
+      <path id="Gradient-2" data-name="Gradient" d="M4,0H25.194a0,0,0,0,1,0,0V184.95a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(0 0)" fill="url(#linear-gradient-3)"/>
+    </g>
+    <text id="_20:00" data-name="20:00" transform="translate(6478 -29.815)" fill="#6e6e6e" font-size="13" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="-25.051" y="0">2020.04</tspan></text>
+    <text id="_16:00" data-name="16:00" transform="translate(6399 -29.815)" fill="#6e6e6e" font-size="13" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="-25.051" y="0">2020.02</tspan></text>
+    <text id="_12:00" data-name="12:00" transform="translate(6320 -29.815)" fill="#6e6e6e" font-size="13" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="-25.051" y="0">2020.01</tspan></text>
+    <text id="_8:00" data-name="8:00" transform="translate(6241 -29.815)" fill="#6e6e6e" font-size="13" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="-25.051" y="0">2019.12</tspan></text>
+    <text id="Training_pace" data-name="Training pace" transform="translate(6215.195 -175.94)" fill="#005c9b" font-size="16" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700"><tspan x="0" y="0">Health Care Market</tspan></text>
+    <text id="Training_pace-2" data-name="Training pace" transform="translate(6215.195 -153.472)" fill="#005c9b" font-size="11" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">a. 헬스케어 제품</tspan><tspan x="0" y="14">b. 헬스케어 App 서비스</tspan><tspan x="0" y="28">c. 헬스케어 교육 / 강연 콘텐츠</tspan></text>
+    <g id="그룹_4092" data-name="그룹 4092" transform="translate(6212.304 -100.456)">
+      <g transform="matrix(1, 0, 0, 1, -25.3, -116.54)" filter="url(#Combined_Shape)">
+        <path id="Combined_Shape-5" data-name="Combined Shape" d="M23.838,35.7H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0H52a8,8,0,0,1,8,8V27.7a8,8,0,0,1-8,8H36.162L30,40Z" transform="translate(24 116.54)" fill="#fff"/>
+      </g>
+      <text id="_8:00-2" data-name="8:00" transform="translate(28.696 21.688)" fill="#1382ce" font-size="11" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="-19.58" y="0">축구용품</tspan></text>
+    </g>
+    <g id="그룹_4093" data-name="그룹 4093" transform="translate(6296.327 -109.486)">
+      <g transform="matrix(1, 0, 0, 1, -109.33, -107.51)" filter="url(#Combined_Shape-2)">
+        <path id="Combined_Shape-6" data-name="Combined Shape" d="M23.838,35.7H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0H52a8,8,0,0,1,8,8V27.7a8,8,0,0,1-8,8H36.162L30,40Z" transform="translate(103 107.51)" fill="#fff"/>
+      </g>
+      <text id="_8:00-3" data-name="8:00" transform="translate(23.673 16.246)" fill="#1382ce" font-size="11" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="-14.74" y="0">한정판</tspan><tspan x="-9.9" y="12">굿즈</tspan></text>
+    </g>
+    <g id="그룹_4094" data-name="그룹 4094" transform="translate(6375.636 -140.75)">
+      <g transform="matrix(1, 0, 0, 1, -188.64, -76.25)" filter="url(#Combined_Shape-3)">
+        <path id="Combined_Shape-7" data-name="Combined Shape" d="M23.838,35.7H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0H52a8,8,0,0,1,8,8V27.7a8,8,0,0,1-8,8H36.162L30,40Z" transform="translate(182 76.25)" fill="#fff"/>
+      </g>
+      <text id="_8:00-4" data-name="8:00" transform="translate(23.364 15.149)" fill="#1382ce" font-size="11" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="-9.9" y="0">경기</tspan><tspan x="-14.74" y="12">관람권</tspan></text>
+    </g>
+    <g id="그룹_4095" data-name="그룹 4095" transform="translate(6447.659 -184.779)">
+      <g transform="matrix(1, 0, 0, 1, -260.66, -32.22)" filter="url(#Combined_Shape-4)">
+        <path id="Combined_Shape-8" data-name="Combined Shape" d="M23.838,35.7H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0H52a8,8,0,0,1,8,8V27.7a8,8,0,0,1-8,8H36.162L30,40Z" transform="translate(261 32.22)" fill="#fff"/>
+      </g>
+      <text id="_8:00-5" data-name="8:00" transform="translate(30.341 17.25)" fill="#1382ce" font-size="11" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="-19.58" y="0">헬스케어</tspan><tspan x="-9.9" y="12">제품</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,662 @@
+/* ----------start 모바일버전 ICO 스타일---------- */
+
+/* 공통속성 */
+.m_ico_wrap{
+    height: calc(100% - 77px);
+}
+
+.m_ico_wrap-view{
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+#ico_type_check:checked + .type_list{
+    height: 205px;
+    border-bottom: 1px solid black;
+    padding: 5px 8px;
+    transition: all 0.3s;
+}
+
+.m_ico_wrap-view .abslt_btn{
+    position: fixed;
+}
+
+/* //공통속성 */
+
+/* ----------ICO---------- */
+
+/* ICO목록 */
+
+.m_ico_wrap .ico_list_group{
+    background: #f5f5f5;
+}
+
+.m_ico_wrap .list_in_con_outer{
+    padding: 13px 10px;
+}
+
+.ico_list_group .list_in_con{
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border-radius: 5px;
+}
+
+.ico_list_group .list_in_con:active{
+    background: #f7f7f7;
+}
+
+.ico_list_group .list_in_con .thumnail{
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ico_list_group .list_in_con .thumnail img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.ico_list_group .list_in_con .thumnail:after{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 120px 0;
+    display: none;
+}
+
+.ico_list_group .list_in_con .thumnail.upcoming:after{
+    content: '진행예정';
+    display: block;
+}
+
+.ico_list_group .list_in_con .thumnail.soldout:after{
+    content: '매진 ';
+    display: block;
+} 
+
+.ico_list_group .list_in_con .thumnail.end:after{
+    content: '마감';
+    display: block;
+}
+
+.ico_list_group .list_in_con .thumnail.waiting:after{
+    content: '승인 대기중';
+    display: block;
+}
+
+.ico_list_group .list_in_con:active .thumnail img{
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+
+.ico_list_group .list_in_con .infos{
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.ico_list_group .list_in_con .infos .hd{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    color: #333;
+}
+
+.ico_list_group .list_in_con .infos .hd span:nth-child(1){
+    color: #1382CE;
+    text-transform: uppercase;
+    padding-right: 10px;
+    border-right: 1px solid #DCDCDC;
+    margin-right: 5px;
+}
+
+.ico_list_group .list_in_con .info._date{
+    padding-top: 10px;
+    letter-spacing: 0;
+    font-size: 0.7rem;
+    color: #969696;
+}
+
+.ico_list_group .list_in_con .info._txt{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    font-size: 0.75rem;
+    position: relative;
+}
+
+.ico_list_group .list_in_con .info._period{
+    font-size: 0.8rem;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #969696;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 0.3rem;
+}
+
+.ico_list_group .list_in_con .info._psbcoin{
+    color: #333;
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.ico_list_group .list_in_con .info._psbcoin label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid transparent;
+    padding: 0 10px;
+    height: 23px;
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+.ico_list_group .list_in_con .info._minimal{
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0;
+    text-align: right;
+    font-weight: bold;
+    color: #474846;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.ico_list_group .list_in_con .info._minimal label{
+    font-size: 0.8rem;
+    top: 14px;
+    color: #969696;
+    font-weight: 400;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+/* ----------//ICO---------- */
+
+/* ----------ICO-view---------- */
+
+/* 상단 메인정보(썸네일, 구매옵션창) */
+
+.ico_view_con .main_info{
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+}
+
+.ico_view_con .main_info .thumnail{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.ico_view_con .main_info .thumnail img{
+    width: 100%;
+    height: 100%;
+}
+
+.ico_view_con .main_info .infos{
+    width: 100%;
+    font-size: 0.85rem;
+}
+
+.ico_view_con .main_info .infos .hd_coin{
+    color: #1382CE;
+    font-size: 1.35rem;
+    border-right: 1px solid #DCDCDC;
+    text-transform: uppercase;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.ico_view_con .main_info .infos .hd_tit{
+    display: inline-block;
+    font-size: 1.35rem;
+    margin-top: 5px;
+    line-height: 1.8rem;
+    word-break: break-all;
+}
+
+.ico_view_con .main_info .info._intro{
+    font-size: 0.75rem;
+}
+
+.ico_view_con .main_info .info._date{
+    font-size: 0.7rem;
+    color: #969696;
+    padding: 10px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ico_view_con .main_info .info._date .idbywriten{
+    color: #969696;
+    border-right: 1px solid #dcdcdc;
+    letter-spacing: 0;
+}
+
+.ico_view_con .main_info .info._date .datewriten{
+    color: #969696;
+    letter-spacing: 0;
+}
+
+.ico_view_con .main_info .info._period{
+    letter-spacing: 0;
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+    padding: 1rem 0;
+}
+
+.ico_view_con .main_info .info._period i{
+    width: 18px;
+    background-image: url(/storage/image/homepage/mobile_icon/btn_calendar.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: inline-block;
+    height: 13.6px;
+    position: relative;
+    top: 3px;
+    left: -7px;
+}
+
+.ico_view_con .main_info .s_info{
+    padding: 2px 0;
+    position: relative;
+}
+
+.ico_view_con .main_info .s_info label{
+    width: 90px;
+    font-size: 0.75rem;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.ico_view_con .main_info .s_info._price{
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 10px;
+}
+
+.ico_view_con .main_info .s_info._price span,
+.ico_view_con .main_info .s_info._psbcoin span{
+    font-weight: bold; 
+    font-size: 0.85rem;
+}
+
+.ico_view_con .main_info .s_info._psbcoin span{
+    color: #333;
+}
+
+.ico_view_con .main_info .s_info._myast{
+    margin-top: 10px;
+}
+
+.ico_view_con .main_info .s_info._myast,
+.ico_view_con .main_info .s_info._minimal{
+    text-align: right;
+    height: 24px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.ico_view_con .main_info .s_info._myast label,
+.ico_view_con .main_info .s_info._minimal label,
+.ico_view_con .main_info .s_info._buyamt label{
+    position: absolute;
+    left: 0;
+    text-align: left;
+    top: 0;
+    height: 100%;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.ico_view_con .main_info .s_info._myast .currency,
+.ico_view_con .main_info .s_info._minimal .currency{
+    font-weight: 400;
+}
+
+.ico_view_con .main_info .info._totalsum{
+    padding: 35px 0 10px 0;
+    position: relative;
+    border-bottom: 1px solid #333;
+    margin-top: 10px;
+}
+
+.ico_view_con .main_info .info._totalsum label{
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-size: 0.85rem;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group{
+    height: 25px;
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group input{
+    border: 0;
+    border-bottom: 1px solid #dcdcdc;
+    padding-left: 110px;
+    padding-right: 45px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    outline: none;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group input:focus{
+    border-color: #333;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .currency{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    line-height: 25px;
+    font-size: 0.85rem;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .updown_btn{
+    background: #fff;
+    position: absolute;
+    right: 0;
+    border: 1px solid #dcdcdc;
+    width: 29px;
+    text-align: center;
+    color: #555555;
+    height: 100%;
+    cursor: pointer;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .up_btn:hover{
+    border:1px solid #00b9ff;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .up_btn:active{
+    border:1px solid #00b9ff;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .down_btn:hover{
+    border:1px solid #00b9ff;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .down_btn:active{
+    border:1px solid #00b9ff;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .up_btn.updown_btn{
+    top: 0;
+    background-image: url(/storage/image/homepage/mobile_icon/ico_arrow_up_off.svg);
+    left: 0;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .up_btn.updown_btn:hover{
+    background-image: url(/storage/image/homepage/mobile_icon/ico_arrow_up_on.svg);
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .up_btn.updown_btn:active{
+    background-image: url(/storage/image/homepage/mobile_icon/ico_arrow_up_on.svg);
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .down_btn.updown_btn{
+    bottom: 0;
+    background-image: url(/storage/image/homepage/mobile_icon/ico_arrow_down_off.svg);
+    left: 29px;
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .down_btn.updown_btn:hover{
+    background-image: url(/storage/image/homepage/mobile_icon/ico_arrow_down_on.svg);
+}
+
+.ico_view_con .main_info .info._totalsum .total-price-group .down_btn.updown_btn:active{
+    background-image: url(/storage/image/homepage/mobile_icon/ico_arrow_down_on.svg);
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent{
+    display: flex;
+    width: 100%;
+    margin: 17px 0 10px auto;
+    justify-content: space-between;
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent li{
+    width: 25%;
+    position: relative;
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent li button{
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    font-size: 0.75rem;
+    padding: 5px 0;
+    background: #fff;
+    color: #555555;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.ico_view_con .main_info .info._totalsum .buy_percent li button:active{
+    color: #333;
+    border-color: #333;
+}
+
+.ico_view_con .main_info .s_info._buyamt{
+    text-align: right;
+    margin: 10px 0 1rem;
+    font-weight: bold;
+}
+
+.ico_view_con .main_info .s_info._buyamt label{
+    line-height: 36px;
+    font-size: 0.85rem;
+}
+
+.ico_view_con .main_info .s_info._buyamt b{
+    font-size: 1.1rem;
+    letter-spacing: 0;
+}
+
+.ico_view_con .main_info .s_info._buyamt .currency{
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.ico_view_con .main_info .info_agree{
+    font-size: 0.7rem;
+    color: #b4b4b4;
+    position: relative;
+    text-align: center;
+}
+
+.ico_view_con .main_info .info_agree input{
+    position: relative;
+    top: 0;
+    margin-right: 10px;
+}
+
+.ico_view_con .main_info .btn_style{
+    height: calc(2.6rem + 2px);
+    outline: none;
+}
+
+.ico_view_con .main_info .btn_style.not_active_btn{
+    background-image: linear-gradient(to right, #00b9ff, #4375ff);
+}
+
+/* //상단 메인정보(썸네일, 구매옵션창) */
+
+.ico_view_con .info_section {
+    padding: 20px;
+    font-size: 0.85rem;
+    margin: 20px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ico_view_con .info_section h6{
+    padding-top: 40px;
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.ico_view_con .info_section h6:before{
+    position: absolute;
+    bottom: 47px;
+    height: 3px;
+    width: 21px;
+    background-image: linear-gradient(to right, #00b9ff, #4375ff);
+    content: '';
+    left: 0;
+}
+
+.ico_view_con .info_section ul li{
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.ico_view_con .info_section2 table{
+    width: 100%;
+}
+
+.ico_view_con .info_section2 table th{
+    padding: 10px 0;
+    color: #969696;
+    font-weight: 400;
+    width: 24%;
+    font-size: 0.75rem;
+}
+.ico_view_con .info_section2 table td{
+    color: #333;
+    font-size: 0.75rem;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.ico_view_con .info_section2 table .down_btn{
+    background: #fff;
+    border: 0;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    padding: 5px 25px 5px 10px;
+    margin-right: 5px;
+    background-image: url(/storage/image/homepage/mobile_icon/icon_download.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 33px 6px;
+    width: 55px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.ico_view_con .info_section2 table .down_btn:hover{
+    color: #333;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid #00b9ff;
+
+}
+
+.ico_view_con .info_section2 table .down_btn:active{
+    background-color: #f7f7f7;
+}
+
+.ico_view_con .info_section2 table .sns_tr a{
+    color: #6498FF;
+    text-decoration: underline;
+    margin-right: 5px;
+}
+
+section.info_section.info_section3 div img {
+    width: 100%;
+}
+
+.point_clr_ico{
+    color:#1382CE;
+}
+
+.point_clr_ico_light{
+    color:#00B9FF;
+}
+
+.point_only_clr{
+    color: #333;
+}
+
+.currency_dark {
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Spoqa Han Sans Light';
+    font-weight:400;
+}
+
+.btn_notice{
+    margin-right: 7px;
+    vertical-align: top;
+}
+
+.ico_view_tit{
+    text-align: center;
+}
+
+
+/* ----------//ICO-view---------- */
+
+.m_ico_wrap .history_st .con.buy .info._coin{
+    font-weight: normal;
+}
+
+
+/* ----------end 모바일버전 ICO 스타일---------- */

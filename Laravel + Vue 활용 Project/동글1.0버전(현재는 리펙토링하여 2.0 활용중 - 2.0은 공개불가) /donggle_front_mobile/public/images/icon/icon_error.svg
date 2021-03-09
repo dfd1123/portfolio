@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="62.035" viewBox="0 0 95 62.035">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.853" y1="0.854" x2="0.144" y2="0.189" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fc4ead"/>
+      <stop offset="1" stop-color="#ff9100"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_error" transform="translate(-414 -192.482)">
+    <path id="패스_131" data-name="패스 131" d="M31.018,0A31.018,31.018,0,1,1,0,31.018,31.018,31.018,0,0,1,31.018,0Z" transform="translate(430.482 192.482)" fill="url(#linear-gradient)"/>
+    <circle id="타원_102" data-name="타원 102" cx="6" cy="6" r="6" transform="translate(428 201)" fill="none" stroke="#ffc744" stroke-width="1.5" opacity="0.7"/>
+    <g id="타원_107" data-name="타원 107" transform="translate(414 214)" fill="none" stroke="#ff9100" stroke-width="1.5">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="4.25" fill="none"/>
+    </g>
+    <g id="타원_103" data-name="타원 103" transform="translate(499 226)" fill="none" stroke="#fc4ead" stroke-width="1.5">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="4.25" fill="none"/>
+    </g>
+    <circle id="타원_104" data-name="타원 104" cx="2.5" cy="2.5" r="2.5" transform="translate(420 233)" fill="#fe8226"/>
+    <circle id="타원_105" data-name="타원 105" cx="2.5" cy="2.5" r="2.5" transform="translate(492 202)" fill="#fe686a"/>
+    <circle id="타원_106" data-name="타원 106" cx="5" cy="5" r="5" transform="translate(483 234)" fill="#ff95cf" opacity="0.5"/>
+    <g id="btn_close" transform="translate(-1321.5 156.5)">
+      <line id="선_71" data-name="선 71" x1="20" y2="20" transform="translate(1773.5 58.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+      <line id="선_72" data-name="선 72" x2="20" y2="20" transform="translate(1773.5 58.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

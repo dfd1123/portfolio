@@ -1,0 +1,48 @@
+.status-tit{
+
+    font: {
+        size: 1.1em;
+        weight: 500;
+    }
+    color: $white;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: -0.5px;
+
+    @include responsive('iphone5'){
+        font-size: 1em;
+    }
+
+    &-group{
+        font-size: 1.2rem;
+        padding-top: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    b{
+        color: $brand-color;
+    }
+
+    &__icon{
+        display: block;
+        width: 5rem;
+        margin: 10px auto;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__bt-date{
+        color: $mid-gray-01;
+        font-size: 0.85em;
+    }
+
+    &__bt-ment{
+        color: $light-gray-01;
+        line-height: 1.4;
+        margin: 10px 0;
+        font-size: 0.85em;
+    }
+    
+}

@@ -1,0 +1,171 @@
+/* --------------모바일 영어버전 css start-------------- */
+
+body{
+    letter-spacing: 0;
+	font-family: "Nunito", sans-serif;
+}
+
+/* --------상단탭메뉴-------- */
+.m_tab_list{
+    overflow-x: scroll;
+}
+
+.m_tab_list ul.w-160{
+    width: 160%;
+}
+
+.m_tab_list ul.w-120,
+.m_tab_list ul.w-120_eng{
+    width: 120%;
+}
+
+.m_tab_list ul li a label.lh-20{
+    line-height: 20px;
+}
+
+/* --------상단탭메뉴-------- */
+
+/* 메인 */
+#main_wrap .m_direct_btn ul li:nth-child(2) a {
+    padding: 4px 0;
+}
+
+#main_wrap .m_direct_btn ul li a{
+    font-size: 0.85rem;
+}
+
+/* 거래소 */
+.trade_hd ul li{
+    text-transform: uppercase;
+}
+.m_tab_menu ul li:nth-child(2) a,
+.m_tab_menu ul li:nth-child(5) a{
+    line-height: 17px;
+    padding: 5px 0;
+}
+
+.m_myasset_wrap .con_1 .coin_sch_bar{
+    padding-right: 100px;
+}
+
+.m_myasset_wrap .con_1 .sch_bar{
+    height: 70px;
+}
+
+.m_myasset_wrap .con_1 .sch_bar .coin_sch_checkbox,
+.m_myasset_wrap .con_1 .sch_bar label{
+    line-height: 70px; 
+}
+
+.m_myasset_wrap .con_1 .sch_bar .coin_sch_checkbox{
+    width: 100px;
+}
+
+.m_transwlt_wrap .coin_sch_bar{
+    padding-right: 90px;
+}
+
+.m_transwlt_wrap .sch_bar .coin_sch_checkbox{
+    width: 90px;
+}
+
+.m_transwlt_wrap .right_wrap .con_2 .form_group.lg_font label{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.m_transwlt_wrap .right_wrap .con_2 .form_group.lg_font span{
+    float: none !important;
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+}
+
+.m_transwlt_wrap .right_wrap .con_2 .form_group_wrap .form_group:nth-child(1) .mini_btn_st{
+    line-height: 16px;
+}
+
+.table_label thead > tr > th{
+    vertical-align: middle;
+}
+
+.m_transwlt_wrap .left_wrap .scrl_wrap {
+    height: calc(100% - 134px);
+}
+
+.m_transwlt_wrap .coin_table tbody>tr>td:nth-child(1),
+.m_transwlt_wrap .table_label thead>tr>th:nth-child(1){
+    width: 30%;
+}
+.m_transwlt_wrap .coin_table tbody>tr>td:nth-child(2),
+.m_transwlt_wrap .table_label thead>tr>th:nth-child(2){
+    width: 15%;
+}
+.m_transwlt_wrap .coin_table tbody>tr>td:nth-child(3),
+.m_transwlt_wrap .table_label thead>tr>th:nth-child(3){
+    width: 30%;
+}
+.m_transwlt_wrap .coin_table tbody>tr>td:nth-child(4),
+.m_transwlt_wrap .table_label thead>tr>th:nth-child(4){
+    width: 25%;
+}
+
+.m_transwlt_wrap .coin_table tbody>tr>td button{
+    width: unset;
+}
+.m_transwlt_wrap .right_wrap .con_3 .sch_bar .coin_sch_checkbox{
+    width: 140px;
+}
+
+/* ICO */
+
+.ico_view_con .main_info .s_info label{
+    width: 120px;
+}
+
+.ico_view_con .info_section2 table th{
+    width: 35%;
+}
+
+/* P2P */
+
+
+.p2p_list_group .list_in_con .buy_tit::before {
+    content: 'buy';
+}
+.p2p_list_group .list_in_con .sell_tit::before {
+    content: 'sell';
+}
+
+.m_p2p_wrap-2 .list_in_con .tit{
+    width: 100%;
+    display: inline-block;
+    padding-left: 0.25rem;
+}
+
+.p2p_onpro_wrap .list_in_con .status_tit{
+    margin-top: 5px;
+}
+
+.p2p_modal_popup label{
+    width: 40%;
+}
+
+.p2p_create_popup .form-group.not_flex label {
+    width: 50%;
+}
+
+/* 로그인 */
+
+.certifi_form_group .certifi_form_input.pl-120px{
+    padding-left: 155px;
+}
+
+/* 고객센터 */
+
+.m_cs_wrap .cs_table tbody>tr>td.status{
+    width: 30%;
+}
+
+/* --------------모바일 영어버전 css end-------------- */

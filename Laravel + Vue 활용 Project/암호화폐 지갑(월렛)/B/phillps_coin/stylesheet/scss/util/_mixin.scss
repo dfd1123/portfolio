@@ -1,0 +1,107 @@
+@mixin position(
+    $p: absolute,
+    $t: null,
+    $l: null,
+    $r: null,
+    $b: null
+){
+    position: $p;
+    top: $t;
+    left: $l;
+    right: $r;
+    bottom: $b;
+};
+
+@mixin translate(
+    $x: 50%, 
+    $y: 50%
+){
+    transform: translateX($x) translateY($y);
+}
+
+@mixin zindex($layer){
+    z-index: z($layer);
+}
+
+@mixin scrollyArea($height: 100%, $p_b: 90px){
+    height: $height;
+    padding-bottom: $p_b;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+@mixin fontStyle($size, $weight: null, $color: null){
+    font-size: font($size);
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin margin0Auto{
+    margin: 0 auto;
+    position: relative;
+}
+
+@mixin bgStyle(
+    $p_x: 50%,
+    $p_y: 50%,
+    $size: null
+){
+    background-position: $p_x $p_y;
+    background-size: $size;
+    background-repeat: no-repeat;
+}
+
+@mixin buttonDefaultRemove($radius: 0, $bg-color: transparent){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border: 0;
+    outline: none;
+    background-color: $bg-color;
+    cursor: pointer;
+}
+
+@mixin inputDefaultRemove($radius: 0, $bg-color: transparent){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border: 0;
+    outline: none;
+    -webkit-appearance: none;
+    background: $bg-color;
+}
+
+@mixin activeEvent($self: false) {
+    @if $self {
+        &:active{
+            @content;
+        }
+        } @else {
+        &:active{
+            @content;
+        }
+    }
+}
+
+@mixin placeholder($self: false){
+
+    @if $self {
+        &::placeholder{
+            @content;
+        }
+    }@else{
+        &::placeholder{
+            @content;
+        }
+    }
+
+}
+
+
+@mixin responsive($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint) {
+
+        @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+        
+    }
+}

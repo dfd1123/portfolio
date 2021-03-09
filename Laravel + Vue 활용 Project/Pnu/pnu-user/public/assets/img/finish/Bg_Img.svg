@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="242.81" height="253.034" viewBox="0 0 242.81 253.034">
+  <g id="그룹_993" data-name="그룹 993" transform="translate(-493.695 -353.042)" opacity="0.527">
+    <rect id="사각형_473" data-name="사각형 473" width="242.81" height="21.725" rx="10.5" transform="translate(493.695 353.042)" fill="#e5e5e5"/>
+    <rect id="사각형_474" data-name="사각형 474" width="209.583" height="240.254" transform="translate(510.309 365.821)" fill="#fff"/>
+    <g id="그룹_991" data-name="그룹 991" transform="translate(539.152 395.415)">
+      <path id="패스_146" data-name="패스 146" d="M544.884,401.115a26.92,26.92,0,0,0,0,38.069l19.035-19.035V393.231A26.835,26.835,0,0,0,544.884,401.115Z" transform="translate(-537 -393.231)" fill="#d3d3d3"/>
+      <path id="패스_147" data-name="패스 147" d="M563.509,418.75l-19.035,19.035a26.92,26.92,0,0,0,38.069,0Z" transform="translate(-536.59 -391.832)" fill="#c1c1c1"/>
+      <path id="패스_148" data-name="패스 148" d="M581.554,401.115a26.835,26.835,0,0,0-19.035-7.884v26.918l19.035,19.035a26.92,26.92,0,0,0,0-38.069Z" transform="translate(-535.601 -393.231)" fill="#e8e8e8"/>
+    </g>
+    <g id="그룹_992" data-name="그룹 992" transform="translate(606.448 406.231)">
+      <rect id="사각형_475" data-name="사각형 475" width="84.601" height="10.575" fill="#ededed"/>
+      <rect id="사각형_476" data-name="사각형 476" width="84.601" height="10.575" transform="translate(0 21.15)" fill="#ededed"/>
+    </g>
+    <rect id="사각형_477" data-name="사각형 477" width="151.897" height="10.575" transform="translate(539.152 475.85)" fill="#ededed"/>
+    <rect id="사각형_478" data-name="사각형 478" width="151.897" height="10.575" transform="translate(539.152 497.316)" fill="#ededed"/>
+    <rect id="사각형_479" data-name="사각형 479" width="151.897" height="10.575" transform="translate(539.152 518.782)" fill="#ededed"/>
+    <rect id="사각형_480" data-name="사각형 480" width="151.897" height="10.575" transform="translate(539.152 540.248)" fill="#ededed"/>
+    <rect id="사각형_481" data-name="사각형 481" width="151.897" height="10.575" transform="translate(539.152 561.345)" fill="#ededed"/>
+  </g>
+</svg>

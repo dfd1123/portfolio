@@ -1,0 +1,2380 @@
+/*------------------------MARKET 거래소 페이지 스타일 START------------------------*/
+
+/*------------① news start------------*/
+
+.ntc_bar {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    padding: 10px 0;
+}
+
+.ntc_bar .ntc_bar_mask {
+    overflow: hidden;
+    height: 100%;
+}
+
+.ntc_bar .ntc_ul {
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.ntc_bar .ntc_ul li {
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+}
+
+.ntc_bar .ntc_ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ntc_bar .ntc_ul li a span:nth-child(1) {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #00b9ff;
+}
+
+.ntc_bar .ntc_ul li a span:nth-child(2) {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+}
+
+.ntc_bar .ntc_ul li .tit {
+    border-right: 1px solid #dddddd;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.ntc_bar .ntc_ul li:hover .tit {
+    font-weight: bold;
+}
+
+.ntc_bar .ntc_ul li:hover .ntc_tit {
+    text-decoration: underline;
+}
+
+.ntc_bar .close_btn {
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ntc_bar .close_btn span {
+    width: 20px;
+    height: 1px;
+    display: inline-block;
+    background: black;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.ntc_bar .close_btn span:after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.ntc_bar.active {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 13px;
+    top: -42px;
+    padding: 5px 13px;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.ntc_bar.active:hover {
+    background: rgba(240, 240, 240, 0.9);
+}
+
+.ntc_bar.active:active {
+    background: rgba(240, 240, 240, 0.8);
+}
+
+.ntc_bar.active .close_btn span {
+    transform: none;
+    width: 10px;
+    top: 3px;
+    transition: all 0.2s;
+    position: absolute;
+    top: 15px;
+}
+
+.ntc_bar.active .close_btn span:before {
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    background: black;
+    top: -5px;
+    content: "";
+    transition: all 0.2s;
+}
+
+.ntc_bar.active .close_btn span:after {
+    transform: none;
+    top: 5px;
+    width: 15px;
+    transition: all 0.2s;
+}
+
+.ntc_bar.active .ntc_show {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.ntc_bar.active .close_btn {
+    width: 40px;
+    right: 0;
+}
+
+.ntc_bar.active .ntc_ul {
+    display: none;
+    transition: all 0.2s;
+}
+
+.ntc_bar .ntc_next,
+.ntc_bar .ntc_show {
+    display: none;
+}
+
+.ntc_bar.active .ntc_bar_mask {
+    display: none;
+}
+
+/*------------① news end------------*/
+
+/*------------① event start------------*/
+
+.event_bar {
+    width: 100%;
+    height: 38px;
+    position: relative;
+    padding: 10px 0;
+}
+
+.event_bar .event_bar_mask {
+    overflow: hidden;
+    height: 100%;
+}
+
+.event_bar .event_ul {
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.event_bar .event_ul li {
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+}
+
+.event_bar .event_ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.event_bar .event_ul li a span:nth-child(1) {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #00b9ff;
+}
+
+.event_bar .event_ul li a span:nth-child(2) {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+}
+
+.event_bar .event_ul li .tit {
+    border-right: 1px solid #dddddd;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.event_bar .event_ul li:hover .tit {
+    font-weight: bold;
+}
+
+.event_bar .event_ul li:hover .event_tit {
+    text-decoration: underline;
+}
+
+.event_bar .close_btn {
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.event_bar .close_btn span {
+    width: 20px;
+    height: 1px;
+    display: inline-block;
+    background: white;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.event_bar .close_btn span:after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.event_bar.active {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 13px;
+    top: -42px;
+    padding: 5px 13px;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.event_bar.active:hover {
+    background: rgba(240, 240, 240, 0.9);
+}
+
+.event_bar.active:active {
+    background: rgba(240, 240, 240, 0.8);
+}
+
+.event_bar.active .close_btn span {
+    transform: none;
+    width: 10px;
+    top: 3px;
+    transition: all 0.2s;
+    position: absolute;
+    top: 15px;
+}
+
+.event_bar.active .close_btn span:before {
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    background: black;
+    top: -5px;
+    content: "";
+    transition: all 0.2s;
+}
+
+.event_bar.active .close_btn span:after {
+    transform: none;
+    top: 5px;
+    width: 15px;
+    transition: all 0.2s;
+}
+
+.event_bar.active .event_show {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.event_bar.active .close_btn {
+    width: 40px;
+    right: 0;
+}
+
+.event_bar.active .event_ul {
+    display: none;
+    transition: all 0.2s;
+}
+
+.event_bar .event_next,
+.event_bar .event_show {
+    display: none;
+}
+
+.event_bar.active .event_bar_mask {
+    display: none;
+}
+
+/*------------① event end------------*/
+
+/*------------② market main container start------------*/
+
+/*--②-1 .trans_wrap .left_con ~ .trans_wrap .center_con ~ .trans_wrap .right_con common style*/
+.trans_wrap {
+    width: 100%;
+    position: relative;
+}
+
+.trans_wrap .trans_inner {
+    max-width: 1920px;
+    margin: auto;
+    padding: 15px 0;
+    background: #f5f5f5;
+}
+
+.trans_wrap .trans_con {
+    width: 99%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.trans_wrap .left_con,
+.trans_wrap .right_con {
+    width: 365px;
+}
+
+.trans_wrap .center_con {
+    width: 100%;
+    padding: 0 375px;
+}
+
+.trans_wrap .tit {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.trans_wrap .tit h6 {
+    padding: 12.5px 19px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+}
+
+.trans_wrap .tit .table_label {
+    width: 100%;
+    border-top: 1px solid #dddddd;
+}
+
+.trans_wrap .tit .table_label th {
+    width: 50%;
+    padding: 4px 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    color: #969696;
+    height: 38px;
+}
+
+.trans_wrap .tit .table_label th:first-child {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.trans_wrap .tit .table_label th:last-child {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.trans_wrap .table_in_box,
+.trans_wrap .table_in_box > tbody {
+    width: 100%;
+    position: relative;
+}
+
+.trans_wrap .table_in_box tr {
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border-left: 1px solid transparent;
+    cursor: pointer;
+}
+
+.coin_list_table tr {
+    height: 48px;
+}
+
+.trans_wrap .table_in_box tr:hover {
+    background: #fafafa;
+}
+
+.trans_wrap .table_in_box tr td {
+    vertical-align: middle;
+    font-size: 13px;
+    width: 33%;
+    text-align: center;
+    position: relative;
+}
+/*--//②-1 .trans_wrap .left_con ~ .trans_wrap .center_con ~ .trans_wrap .right_con common style*/
+
+/*--②-2 .trans_wrap .left_con(호가창) style*/
+/*common*/
+.trans_wrap .left_con {
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.trans_wrap .left_con.left_absol_top {
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    left: 0;
+}
+
+.trans_wrap .left_con.left_absol_bottom {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    left: 0;
+}
+
+.trans_wrap .left_con.left_fix_top {
+    position: fixed;
+    top: 15px;
+    bottom: auto;
+    left: 0.5%;
+}
+
+.trans_wrap .left_con .btn_list {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+}
+.trans_wrap .left_con .btn_list li {
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #969696;
+    margin: 0 5px;
+}
+.trans_wrap .left_con .btn_list li.active {
+    font-weight: bold;
+    color: #00b9ff;
+}
+.trans_wrap .left_con .btn_list li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.trans_wrap .left_con .btn_list li:hover {
+    border-color: #00b9ff;
+}
+.trans_wrap .left_con .wait_wrap {
+    height: 355px;
+    transition: all ease 0.5s;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    position: relative;
+    overflow-y: hidden;
+}
+.trans_wrap .left_con .total_box {
+    background: #fff;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 12px 0;
+    color: #444;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+.trans_wrap .left_con .total_box span {
+}
+
+.trans_wrap .left_con .wait_wrap .both_table tr {
+    height: 40px;
+}
+
+.trans_wrap .left_con .wait_wrap .both_table tr:hover td span {
+    font-weight: bold;
+}
+
+.trans_wrap .both_table tr td:nth-child(1) {
+    text-align: left;
+    padding-left: 20px;
+}
+.trans_wrap .both_table tr td:nth-child(2) {
+    text-align: right;
+    padding-right: 20px;
+    position: relative;
+}
+.trans_wrap .both_table tr td span {
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.26px;
+    text-align: right;
+    color: #333333;
+}
+.trans_wrap .left_con .both_table .per_bar {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    opacity: 0.4;
+    max-width: 100%;
+}
+/*//common*/
+
+/*.up_wrap.wait_wrap*/
+.trans_wrap .left_con .up_wrap {
+    background-image: url(/storage/image/homepage/wait_bg-01.svg);
+}
+.trans_wrap .left_con .up_wrap .up_table {
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #f0f0f0;
+}
+.trans_wrap .left_con .up_wrap .up_table td:nth-child(1) span {
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.26px;
+    text-align: left;
+    color: #6498ff;
+}
+.trans_wrap .both_table.up_table .per_bar {
+    background: #b3caff;
+    left: 0;
+}
+.trans_wrap .table_in_box.up_table tr:hover {
+    background: rgba(179, 202, 255, 0.3);
+}
+.trans_wrap .table_in_box.up_table tr:active {
+    background: rgba(179, 202, 255, 0.5);
+}
+/*//.up_wrap.wait_wrap*/
+
+/*.down_wrap.wait_wrap*/
+.trans_wrap .left_con .down_wrap {
+    background-image: url(/storage/image/homepage/wait_bg-02.svg);
+}
+.trans_wrap .left_con .down_wrap .down_table td:nth-child(1) span {
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.26px;
+    text-align: left;
+    color: #ff6060;
+}
+.trans_wrap .both_table.down_table .per_bar {
+    background: #ffdfdf;
+    right: 0;
+}
+.trans_wrap .table_in_box.down_table tr:hover {
+    background: rgba(255, 223, 223, 0.3);
+}
+.trans_wrap .table_in_box.down_table tr:active {
+    background: rgba(255, 223, 223, 0.5);
+}
+/*//.down_wrap.wait_wrap*/
+/*--//②-2 .trans_wrap .left_con(호가창) style*/
+
+/*--②-3 .trans_wrap .right_con(코인목록, 거래기록) style*/
+/*common*/
+.trans_wrap .right_con {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.trans_wrap .right_con .scl_wrap {
+    height: 550px;
+    width: 100%;
+    overflow-y: scroll;
+    transition: all 0.3s;
+}
+.trans_wrap .right_con .inner_box {
+    border: 1px solid #dddddd;
+    background: #fff;
+}
+.trans_wrap .right_con_inbox-1 .tit .coin_list_thead th {
+    width: 33.3%;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    color: #969696;
+    padding: 10px 0;
+}
+
+.trans_wrap .right_con_inbox-1 .tit .coin_list_thead th:nth-child(1) {
+    padding-left: 30px;
+    text-align: left;
+    width: 48%;
+}
+
+.trans_wrap .right_con_inbox-1 .tit .coin_list_thead th:nth-child(2) {
+    text-align: right;
+    padding-right: 10px;
+    width: 27%;
+}
+
+.trans_wrap .right_con_inbox-1 .tit .coin_list_thead th:nth-child(3) {
+    padding-right: 16px;
+    text-align: right;
+    width: 25%;
+}
+/*//common*/
+
+/*.right_con_inbox-1 (코인목록)*/
+.trans_wrap .right_con_inbox-1.active .scl_wrap {
+    height: 135px;
+    transition: all 0.3s;
+}
+.trans_wrap .tit .coin_sch_bar {
+    position: relative;
+    padding: 20px 21px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.trans_wrap .tit .coin_sch_bar input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dcdcdc;
+    padding-left: 10px;
+    background: url(/images/btn_search.svg) no-repeat 95% center;
+    background-size: 17px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.2s;
+}
+.trans_wrap .tit .coin_sch_bar input:focus {
+    border: 1px solid #333;
+}
+.trans_wrap .coin_table tr td {
+    height: 55px;
+}
+.trans_wrap .coin_table tr td:nth-child(1) {
+    padding-left: 56px;
+    position: relative;
+    text-align: left;
+    width: 48%;
+}
+.trans_wrap .coin_table tr td:nth-child(1):before {
+    width: 4px;
+    height: 70px;
+    content: "";
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.trans_wrap .coin_table tr td:nth-child(1) i {
+    color: #dddddd;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    transition: all 0.2s;
+}
+.trans_wrap .coin_table tr td:nth-child(1) p {
+    margin-top: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: -0.56px;
+    text-align: left;
+    color: #333333;
+}
+.trans_wrap .coin_table tr td:nth-child(1) p > small {
+    display: block;
+    font-size: 10px;
+    color: #bbb;
+    letter-spacing: -1px;
+}
+.trans_wrap .coin_table tr td:nth-child(1) .coin_img {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    width: 35px;
+    height: 35px;
+}
+.trans_wrap .coin_table tr td:nth-child(1) span {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #717171;
+}
+.trans_wrap .coin_table tr td:nth-child(2) {
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    color: #333333;
+    width: 27%;
+    padding-right: 10px;
+}
+.trans_wrap .coin_table tr td:nth-child(3) {
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+    width: 25%;
+}
+.trans_wrap .coin_table tr:hover {
+    background: rgba(0, 185, 255, 0.03);
+    border-left: 1px solid #f0f0f0;
+}
+.trans_wrap .coin_table tr:active {
+    background: rgba(0, 185, 255, 0.1);
+    border-left: 1px solid #f1f1f1;
+}
+.trans_wrap .coin_table tr:hover td:nth-child(1):before {
+    background: #333;
+    transition: all 0.2s;
+}
+.trans_wrap .coin_table tr:active td:nth-child(1):before {
+    background: #333;
+    transition: all 0.2s;
+}
+
+/* // 0404 코인목록 마켓리스트 탭 추가 시작 */
+
+.trans_wrap .market_list_tab {
+    overflow: hidden;
+    width: 100%;
+    height: 51px;
+    line-height: 50px;
+    color: #787878;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+}
+
+.trans_wrap .market_list_tab li {
+    float: left;
+    width: 50%;
+}
+
+.trans_wrap .market_list_tab li:nth-child(1).active ~ .underline {
+    left: 66px;
+    width: 54px;
+}
+.trans_wrap .market_list_tab li:nth-child(2).active ~ .underline {
+    left: 249px;
+    width: 54px;
+}
+
+.trans_wrap .market_list_tab li:last-child {
+    border: 0;
+}
+
+.trans_wrap .market_list_tab li label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: #333333;
+    padding: 14px 0;
+    background-color: #f8f8f8;
+}
+
+.trans_wrap .market_list_tab li label:active {
+    background-color: #fff;
+}
+
+.trans_wrap .market_list_tab li.active label {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.trans_wrap .coin_table-2,
+.trans_wrap .coin_table-3 {
+    display: none;
+}
+
+/* // 0404 코인목록 마켓리스트 탭 추가 끝 */
+
+/*//.right_con_inbox-1 (코인목록)*/
+
+/*.right_con_inbox-2 (거래기록)*/
+
+.trans_wrap .right_con_inbox-2.active .scl_wrap {
+    height: 555px;
+    transition: all 0.3s;
+}
+.trans_wrap .trans_record tr th,
+.trans_wrap .trans_record tr td {
+    width: 33.3%;
+}
+.trans_wrap .trans_record tr th {
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: center;
+    color: #969696;
+    border-bottom: 1px solid #333;
+}
+.trans_wrap .trans_record tr th:nth-child(1) {
+    text-align: left;
+    padding-left: 20px;
+}
+.trans_wrap .trans_record tr th:nth-child(2) {
+    text-align: right;
+    padding-right: 20px;
+}
+.trans_wrap .trans_record tr td:nth-child(1) {
+    text-align: left;
+    padding-left: 20px;
+}
+.trans_wrap .trans_record tr td:nth-child(2) {
+    text-align: right;
+    padding-right: 20px;
+}
+.trans_wrap .trans_record tbody tr:hover {
+    font-weight: bold;
+}
+.trans_wrap .right_con_inbox-2 .tit {
+    position: relative;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    line-height: 1;
+    right: 0;
+    cursor: pointer;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn:hover span:before,
+.trans_wrap .right_con_inbox-2 .toggle_btn:hover span:after {
+    background: #00b9ff;
+    transition: all 0.3s;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn:active span:before,
+.trans_wrap .right_con_inbox-2 .toggle_btn:active span:after {
+    background: #62a3a3;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn span {
+    position: relative;
+    width: 14px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn span:before,
+.trans_wrap .right_con_inbox-2 .toggle_btn span:after {
+    width: 8px;
+    height: 1px;
+    background: #555555;
+    content: "";
+    position: absolute;
+    top: 0;
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn span:before {
+    left: 0;
+    transform: rotate(-45deg);
+}
+.trans_wrap .right_con_inbox-2 .toggle_btn span:after {
+    right: 0;
+    transform: rotate(45deg);
+}
+.trans_wrap .right_con_inbox-2.active .toggle_btn {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+    top: 0;
+}
+.trans_wrap .trans_record tr.red {
+    background: rgba(255, 223, 223, 0.2);
+}
+.trans_wrap .trans_record tr.blue {
+    background: rgba(179, 202, 255, 0.2);
+}
+.trans_wrap .trans_record tr.red td:nth-child(2n-1),
+.trans_wrap .trans_record tr.blue td:nth-child(2n-1) {
+    color: black;
+}
+/*//.right_con_inbox-2 (거래기록)*/
+/*--//②-3 .trans_wrap .right_con(코인목록, 거래기록) style*/
+
+/*--②-4 .trans_wrap .center_con(코인상태바, 차트, 구매-판매박스) style*/
+/*common*/
+.trans_wrap .center_con u,
+.trans_wrap .center_con em {
+    text-decoration: none;
+    font-style: normal;
+}
+.trans_wrap .center_con .currency {
+    font-size: 16px;
+    font-weight: bold;
+    color: #777;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*//common*/
+
+/*.trans_hd (coin state bar-코인상태바)*/
+.trans_wrap .center_con .trans_hd {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+}
+.trans_wrap .center_con .trans_hd .coin_state_1 {
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    position: relative;
+    padding: 11px 10px;
+    height: 100%;
+    border-right: 1px solid #f0f0f0;
+}
+.trans_wrap .center_con .trans_hd .coin_state_1 > div {
+    float: left;
+}
+.trans_wrap .center_con .trans_hd .coin_state_1 > p {
+    float: left;
+}
+.trans_wrap .center_con .coin_state_1 .coin_name {
+    overflow: hidden;
+}
+.trans_wrap .center_con .coin_state_1 .coin_name > img {
+    float: left;
+    width: 56px;
+    height: 56px;
+}
+.trans_wrap .center_con .coin_state_1 .coin_name > div {
+    float: left;
+    margin-left: 10px;
+    margin-right: 17px;
+    padding: 3px 0;
+}
+.trans_wrap .center_con .coin_state_1 .in_cell span {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.trans_wrap .center_con .coin_state_1 .c_name {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.72px;
+    color: #333333;
+}
+.trans_wrap .center_con .coin_state_1 .c_name > small {
+    font-size: 12px;
+    color: #bbb;
+    margin: 0 3px;
+}
+.trans_wrap .center_con .coin_state_1 .c_name_eng {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #969696;
+}
+.trans_wrap .center_con .coin_state_1 .c_name_eng > small {
+    font-size: 12px;
+    color: #bbb;
+    margin: 0 3px;
+}
+.trans_wrap .center_con .coin_state_1 .coin_num_data span:nth-child(1) {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+}
+.trans_wrap .center_con .coin_state_1 .coin_num_data span:nth-child(1) b {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+.trans_wrap .center_con .coin_state_1 .coin_num_data span:nth-child(2) {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #969696;
+}
+.trans_wrap .center_con .coin_state_1 .coin_num_data span:nth-child(2) em {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #333333;
+}
+.trans_wrap .center_con .coin_state_2 {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.trans_wrap .center_con .coin_state_2 u {
+    font-size: 13px !important;
+}
+.trans_wrap .center_con .coin_state_2 ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.trans_wrap .center_con .coin_state_2 ul li {
+    width: 50%;
+    height: 50%;
+    padding: 8.5px 10px;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+}
+.trans_wrap .center_con .coin_state_2 ul li.border_r {
+    border-right: 1px solid #f0f0f0;
+}
+.trans_wrap .center_con .coin_state_2 ul li.border_b {
+    border-bottom: 1px solid #f0f0f0;
+}
+.trans_wrap .center_con .event_infor_panel {
+    height: 35px;
+    background-color: black;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: center;
+    color: #ffffff;
+}
+.trans_wrap .center_con .sports_infor_panel {
+    height: 35px;
+    background-color: #1382ce;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+.align_right {
+    float: right;
+    display: inline-block;
+}
+.align_right b {
+    color: #333;
+}
+.align_right u {
+    font-size: 13px !important;
+    text-decoration: none;
+    font-style: normal;
+}
+/*//.trans_hd (coin state bar-코인상태바)*/
+
+/*.chart_con (chart area-트레이딩 뷰 차트영역)*/
+.trans_wrap .center_con .trans_chart_wrap {
+    width: 100%;
+    overflow: hidden;
+}
+.trans_wrap .center_con .chart_con {
+    height: 270px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+}
+/*//.chart_con (chart area-트레이딩 뷰 차트영역)*/
+
+.trans_wrap .center_con .my_trade_infor {
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    margin: 10px 0;
+}
+
+.trans_wrap .center_con .my_trade_infor .my_trade_infor_nav {
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+}
+
+.trans_wrap .center_con .my_trade_infor .my_trade_infor_nav ul {
+    overflow: hidden;
+}
+
+.trans_wrap .center_con .my_trade_infor .my_trade_infor_nav ul li {
+    position: relative;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: center;
+    color: #333333;
+    float: left;
+}
+
+.underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 2px;
+    background: #00b9ff;
+    transition: all 0.2s ease-in-out;
+}
+
+.my_trade_infor_nav ul li:nth-child(1).active ~ .underline {
+    left: 28px;
+    width: 59px;
+}
+.my_trade_infor_nav ul li:nth-child(2).active ~ .underline {
+    left: 151px;
+    width: 54px;
+}
+.my_trade_infor_nav ul li:nth-child(3).active ~ .underline {
+    left: 295px;
+    width: 59px;
+}
+
+.trans_wrap .center_con .my_trade_table_wrap .my_assets_avg {
+}
+
+.trans_wrap .center_con .my_trade_table_wrap .my_assets_avg ul {
+    overflow: hidden;
+}
+
+.trans_wrap .center_con .my_trade_table_wrap .my_assets_avg ul li {
+    overflow: hidden;
+    float: left;
+    width: 33.3%;
+    padding: 13px 20px;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #969696;
+}
+
+.trans_wrap .center_con .my_trade_table_wrap .my_assets_avg ul li:nth-child(3),
+.trans_wrap .center_con .my_trade_table_wrap .my_assets_avg ul li:nth-child(6) {
+    border-right: none;
+}
+
+.trans_wrap
+    .center_con
+    .my_trade_table_wrap
+    .my_assets_avg
+    ul
+    li
+    span:nth-child(1) {
+    float: left;
+}
+
+.trans_wrap
+    .center_con
+    .my_trade_table_wrap
+    .my_assets_avg
+    ul
+    li
+    span:nth-child(2) {
+    float: right;
+    text-align: right;
+}
+
+.trans_wrap
+    .center_con
+    .my_trade_table_wrap
+    .my_assets_avg
+    ul
+    li
+    span:nth-child(2)
+    b {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    margin-right: 5px;
+}
+
+/* deal_n_history_wrap CSS */
+
+.deal_n_history_wrap {
+    overflow: hidden;
+}
+
+.deal_n_history_wrap .history_wrap {
+    width: 45%;
+    float: left;
+    padding-right: 10px;
+}
+
+.deal_n_history_wrap .history_wrap .right_con_inbox-2 {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+}
+
+.deal_n_history_wrap .history_wrap .right_con_inbox-2 .tit h6 {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+}
+
+.deal_n_history_wrap .history_wrap .right_con_inbox-2 .scl_wrap {
+    height: 439px;
+    overflow-y: scroll;
+}
+
+/*.deal_con (trans con-구매 판매창) 제목*/
+.trans_wrap .center_con .deal_wrap {
+    width: 55%;
+    float: right;
+    position: relative;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+}
+.trans_wrap .center_con .deal_wrap .deal_con {
+    height: 100%;
+    width: 100%;
+}
+.trans_wrap .center_con .deal_wrap .deal_con.coin_buy_con {
+}
+.trans_wrap .center_con .deal_con .tit {
+    border-color: #f0f0f0;
+    text-align: center;
+}
+.trans_wrap .center_con .deal_con .tit span,
+.trans_wrap .center_con .choice_option_tit span {
+    display: inline-block;
+    width: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    color: #333333;
+    padding: 15px 0;
+    position: relative;
+}
+.trans_wrap .center_con .tit span:after {
+    content: "";
+    width: 60px;
+    height: 2.5px;
+    background-color: #ff6060;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.trans_wrap .center_con .coin_buy_con .tit span:after {
+    background-color: #ff6060;
+}
+.trans_wrap .center_con .coin_sell_con .tit span:after {
+    background-color: #6498ff;
+}
+.trans_wrap .center_con .deal_con .balance_state {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #717171;
+    padding: 12px 20px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.trans_wrap .center_con .deal_con .balance_state > span:nth-child(1) {
+    float: left;
+}
+.trans_wrap .center_con .deal_con .balance_state > span:nth-child(1) u {
+    color: #333;
+}
+.trans_wrap .center_con .deal_con .balance_state > span:nth-child(2) {
+    float: right;
+}
+.trans_wrap .center_con .choice_option_tit {
+    width: 100%;
+    cursor: pointer;
+}
+.trans_wrap .center_con .choice_option_tit ul {
+    width: 100%;
+    display: flex;
+}
+.trans_wrap .center_con .choice_option_tit li {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.05);
+}
+.trans_wrap .center_con .choice_option_tit li:first-child {
+}
+.trans_wrap .center_con .choice_option_tit li:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+.trans_wrap .center_con .choice_option_tit li:active {
+    background: rgba(0, 0, 0, 0.1);
+}
+.trans_wrap .center_con .choice_option_tit li.active {
+    background: #fff;
+}
+.trans_wrap .choice_option_tit .tit {
+    border-bottom: 0;
+}
+.trans_wrap .center_con .choice_option_tit .option_li span {
+    color: rgba(0, 0, 0, 0.3);
+}
+.trans_wrap .center_con .choice_option_tit .option_li span:after {
+    background: rgba(0, 0, 0, 0.3);
+}
+.trans_wrap .center_con .choice_option_tit .option_li.active span {
+    color: #333;
+}
+.trans_wrap
+    .center_con
+    .choice_option_tit
+    .option_li.buy_color.active
+    span:after {
+    background-color: #ff6060;
+}
+.trans_wrap
+    .center_con
+    .choice_option_tit
+    .option_li.sell_color.active
+    span:after {
+    background-color: #6498ff;
+}
+/*//.deal_con (trans con-구매 판매창) 제목*/
+
+/*.deal_con (trans con-구매 판매창)*/
+.trans_wrap .center_con .buysell_wrap {
+    padding: 0 20px;
+}
+.trans_wrap .center_con .buysell_table {
+    width: 100%;
+    position: relative;
+}
+.trans_wrap .center_con .buysell_table td {
+    position: relative;
+    width: 100%;
+}
+.trans_wrap .center_con .buysell_table td > div.price_inp_box {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.trans_wrap .center_con .buysell_table td > div.price_inp_box .currency {
+    right: 75px !important;
+}
+.trans_wrap
+    .center_con
+    .buysell_table
+    td
+    > div.price_inp_box
+    .buysell_input
+    input {
+    padding-right: 100px;
+}
+.trans_wrap .center_con .buysell_table td > div.amt_inp_box {
+}
+.trans_wrap .center_con .buysell_table td > div.amt_inp_box .currency {
+    right: 13px;
+}
+.trans_wrap
+    .center_con
+    .buysell_table
+    td
+    > div.amt_inp_box
+    .buysell_input
+    input {
+    padding-right: 57px;
+}
+.trans_wrap .center_con .buysell_table tr:last-child td {
+    padding-left: 0;
+}
+.trans_wrap .center_con .buysell_table .label {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333;
+    display: block;
+}
+.trans_wrap .center_con .buysell_table .buysell_input {
+    height: 34px;
+    position: relative;
+}
+.trans_wrap .center_con .buysell_table .buysell_input .updown_btn {
+    background: #fff;
+    position: absolute;
+    right: 0px;
+    border: 1px solid #dddddd;
+    width: 30px;
+    text-align: center;
+    color: #555555;
+    height: 30px;
+    cursor: pointer;
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1;
+}
+.trans_wrap .center_con .buysell_table .buysell_input .up_btn {
+    top: 0;
+    right: 33px;
+    font-size: 90%;
+    background-image: url(/storage/image/homepage/icon/plu-min-01.svg);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .up_btn:hover {
+    background-color: rgba(255, 70, 70, 0.1);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .up_btn:active {
+    background-color: rgba(255, 70, 70, 0.2);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .down_btn {
+    top: 0;
+    background-image: url(/storage/image/homepage/icon/plu-min-02.svg);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .down_btn:hover {
+    background-color: rgba(67, 120, 255, 0.1);
+}
+.trans_wrap .center_con .buysell_table .buysell_input .down_btn:active {
+    background-color: rgba(67, 120, 255, 0.2);
+}
+.trans_wrap .center_con .buysell_table .buysell_input input {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+    text-align: right;
+    box-sizing: border-box;
+}
+.trans_wrap .center_con .buysell_table ul {
+    display: flex;
+    justify-content: space-between;
+}
+.trans_wrap .center_con .buysell_table ul li {
+    display: inline-block;
+    width: 19%;
+    margin-top: 10px;
+}
+.trans_wrap .center_con .buysell_table ul li button {
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    font-size: 12px;
+    padding: 12px 0;
+    height: 40px;
+    background: #fff;
+    color: #555555;
+    outline: none;
+    cursor: pointer;
+}
+.trans_wrap .center_con .buysell_table ul li button:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #00b9ff;
+}
+.trans_wrap .center_con .buysell_table ul li button:active {
+    background: rgba(0, 0, 0, 0.1);
+}
+.trans_wrap .center_con .buysell_table .fee_box {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.trans_wrap .center_con .buysell_table .fee_box > span {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #717171;
+    display: none;
+}
+.trans_wrap .center_con .buysell_table .fee_box > span:nth-child(1) {
+    float: left;
+}
+.trans_wrap .center_con .buysell_table .fee_box > span:nth-child(2) {
+    float: right;
+}
+.trans_wrap
+    .center_con
+    .buysell_table
+    .fee_box
+    > span:nth-child(2)
+    > em:nth-child(2) {
+    margin-left: 5px;
+}
+.trans_wrap .center_con .buysell_table input:focus {
+    outline: none;
+}
+.trans_wrap .center_con .buysell_table .total_sum_wrap {
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    text-align: right;
+    color: #333;
+}
+
+.trans_wrap .center_con .buysell_table .total_sum_wrap p {
+    width: 100%;
+    height: 35px;
+    padding: 2px 3px;
+    border-bottom: 2px solid #333;
+}
+
+.trans_wrap .center_con .buysell_table .total_sum_wrap p > b:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: 0.4px;
+    text-align: right;
+    color: #333333;
+}
+
+.trans_wrap .center_con .buysell_table .total_sum_wrap p > b:nth-child(2) {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #717171;
+}
+
+.trans_wrap .center_con .total_sum_wrap .label {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+}
+.trans_wrap .center_con .buysell_input .currency {
+    position: absolute;
+    top: 8px;
+    color: #999;
+    font-weight: bold;
+}
+.trans_wrap .center_con .buysell_table .buysell_btn {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.trans_wrap .center_con .buysell_table .buysell_btn button {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table .buysell_btn a {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    letter-spacing: -0.8px;
+    padding: 18px 0;
+    transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table .buy_btn button {
+    background-color: #e53131;
+}
+.trans_wrap .center_con .buysell_table .buy_btn button:hover {
+    background-color: #c83030;
+    transition: all 0.1s;
+}
+.trans_wrap .center_con .buysell_table .buy_btn button:active {
+    background-color: #d83b3b;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table .sell_btn button {
+    background-color: #4378ff;
+}
+.trans_wrap .center_con .buysell_table .sell_btn button:hover {
+    background-color: #396def;
+    transition: all 0.1s;
+}
+.trans_wrap .center_con .buysell_table .sell_btn button:active {
+    background-color: #4378ff;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table button.not_active_btn {
+    background-color: #aaa;
+}
+.trans_wrap .center_con .buysell_table button.not_active_btn:hover {
+    background-color: #777;
+    transition: all 0.1s;
+}
+.trans_wrap .center_con .buysell_table button.not_active_btn:active {
+    background-color: #777;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+.trans_wrap .center_con .buysell_table a.not_active_btn {
+    background-color: #333;
+}
+.trans_wrap .center_con .buysell_table a.not_active_btn:hover {
+    background-color: #777;
+    transition: all 0.1s;
+}
+.trans_wrap .center_con .buysell_table a.not_active_btn:active {
+    background-color: #777;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+/*//.deal_con (trans con-구매 판매창)*/
+/*--//②-4 .trans_wrap .center_con(코인상태바, 차트, 구매-판매박스) style*/
+
+/*------------② market main container end------------*/
+
+/*------------③ wait arder, 24h transaction hisotry start------------*/
+
+/*--③-1 .trans_tbl_con common*/
+.trans_wrap .trans_tbl_con {
+    width: 100%;
+    height: auto;
+    color: #333;
+    font-size: 15px;
+}
+
+.trans_wrap .trans_tbl_con h1 {
+    padding: 13px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 13px;
+    font-weight: bold;
+    display: none;
+}
+
+.trans_wrap .trans_tbl_con .trans_tbl {
+    width: 100%;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head th {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: right;
+    color: #969696;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head th div:nth-child(1) {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head th:nth-child(1),
+.trans_wrap .trans_tbl_con .tbl_head th:nth-child(2),
+.trans_wrap .trans_tbl_con .tbl_body td:nth-child(1),
+.trans_wrap .trans_tbl_con .tbl_body td:nth-child(2) {
+    text-align: left;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head th:nth-child(1),
+.trans_wrap .trans_tbl_con .tbl_head th:nth-child(2),
+.trans_wrap .trans_tbl_con .tbl_body td:nth-child(1),
+.trans_wrap .trans_tbl_con .tbl_body td:nth-child(2) > span > small {
+    display: none;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head {
+    border-bottom: 1px solid #333;
+    font-size: 13px;
+    font-size: 12px;
+    color: #787878;
+}
+
+.trans_wrap .trans_tbl_con .tbl_head th {
+    font-weight: 500;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.trans_wrap .trans_tbl_con .tbl_body td {
+    font-size: 13px;
+    padding: 8px 12px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.trans_wrap .trans_tbl_con tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.trans_wrap .trans_tbl_con .tbl_body tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.trans_wrap .trans_tbl_con .tbl_body tr:last-child {
+    border: 0;
+}
+
+.trans_wrap .trans_tbl_con .tbl_body tr:nth-child(even) {
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.trans_wrap .trans_tbl_con .tbody_wrap {
+    height: 165px;
+    overflow-y: scroll;
+}
+/*--//③-1 .trans_tbl_con common*/
+
+/* 잔고 및 자산현황 */
+
+#my_assets_tbl_wrap .trans_tbl .tbl_head th:nth-child(1) {
+    width: 15%;
+    padding-left: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl .tbl_head th:nth-child(2) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl .tbl_head th:nth-child(3) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl .tbl_head th:nth-child(4) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl .tbl_head th:nth-child(5) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl .tbl_head th:nth-child(6) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td {
+    height: 55px;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(1) {
+    width: 15%;
+    padding-left: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(2) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(3) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(4) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(5) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(6) {
+    width: 17%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(1) > div:nth-child(1) {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+}
+
+#my_assets_tbl_wrap
+    .trans_tbl
+    tbody
+    td:nth-child(1)
+    > div:nth-child(1)
+    > small {
+    font-size: 10px;
+    color: #bbb;
+    display: none;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(1) > div:nth-child(2) {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td:nth-child(6) > div:nth-child(1) {
+    line-height: 1.46;
+    letter-spacing: normal;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td b {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+}
+
+#my_assets_tbl_wrap .trans_tbl tbody td em.currency {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #969696;
+    margin-left: 3px;
+}
+
+/*--③-2 .trans_tbl_con_1 .tbl_body button*/
+.trans_wrap .trans_tbl_con_1 .tbl_body td:last-child button {
+    margin-top: 5px;
+    border: 0;
+    padding: 5px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    cursor: pointer;
+    background: transparent;
+    color: #555555;
+    font-size: 11px;
+    outline: none;
+}
+
+.trans_wrap .trans_tbl_con_1 .tbl_body td:last-child button:hover {
+    border-color: #00b9ff;
+}
+
+.trans_wrap .trans_tbl_con_1 .tbl_body td:last-child button:active {
+    background: rgba(0, 0, 0, 0.1);
+}
+/*--//③-2 .trans_tbl_con_1 .tbl_body button*/
+
+#trade_list tr {
+    height: 40px;
+}
+
+#trade_list tr.sell {
+    background: rgba(179, 202, 255, 0.2);
+}
+
+#trade_list tr.sell td:nth-child(1) {
+    color: #2e4dff;
+}
+
+#trade_list tr.buy {
+    background: rgba(255, 223, 223, 0.2);
+}
+
+#trade_list tr.buy td:nth-child(1) {
+    color: #ff0000;
+}
+
+.blink {
+    animation: blink 0.125s ease-out 3;
+}
+
+/* 호가창 애니메이션 */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.cell {
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.cell-blink {
+    animation: cell-blink 1s linear 1;
+}
+
+@keyframes cell-blink {
+    100% {
+        border: 1px solid transparent;
+    }
+}
+
+.row-blink {
+    animation: row-blink 0.75s linear 1;
+}
+
+@keyframes row-blink {
+    100% {
+        background-color: transparent;
+    }
+}
+
+/*------------wait arder, 24h transaction hisotry end------------*/
+
+/* Comunity Style Edit */
+.comunity_table_wrap {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    margin: 10px 0;
+    min-height: 322px;
+}
+
+.cs_table_wrap .table_label thead > tr > th {
+    background: #fff;
+}
+
+.cs_table_wrap .table_label thead > tr > th {
+    border-top: none;
+}
+
+.comunity_hd {
+    padding: 17px 20px;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+}
+
+.comunity_hd > h3 {
+    font-size: 23px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.48;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.comunity_hd > a {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    z-index: 1;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    padding: 8px 30px;
+    border: solid 1px #dcdcdc;
+}
+
+.comunity_hd > a:hover {
+    background: #fafafa;
+}
+
+#rightcon_botom,
+#leftcon_botom {
+    width: 100%;
+}
+/*------------------------MARKET 거래소 페이지 스타일 END------------------------*/
+/*-------------n번째 이벤트 관련 style ------------------*/
+#n_event_modal {
+    display: none;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+#n_event_modal_content {
+    background-color: transparent !important;
+}
+#n_event_modal_close:hover,
+:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+#n_event_modal_close {
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding-right: -50%;
+    margin-right: 20%;
+    z-index: 3;
+}
+
+#modalImg {
+    min-height: 0%;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-height: 300px;
+    max-width: 900px;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.2s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+    background-color: rgba(255, 255, 255, 0);
+}
+#prize_Info_submmit {
+    min-height: 0%;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-height: 70px;
+    max-width: 180px;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.2s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+    background: linear-gradient(to top, #adb4c0, #82899a);
+    border-radius: 9px;
+    border: 5px solid #9da3b2;
+    font-size: larger;
+}
+#inner_prize_Info_submmit {
+    border-radius: 3px;
+    background: linear-gradient(to top, #adb4c0, #82899a);
+    margin: 0;
+    font-size: medium;
+    color: white;
+    font-weight: 600;
+}
+#n_event_modal_notify {
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    margin-top: -1.5%;
+}
+#n_event_modal_prize {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 999;
+    text-shadow: 1px 2px 2px black;
+}
+#prize_info:hover {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Make it a marquee */
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee span {
+    width: auto;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee span:hover {
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+/*-------------n번째 이벤트 관련 style end ------------------*/
+
+/* ---------- 191223 거래소 유지보수 ---------- */
+
+/* sport coin */
+#coin_list_table_usd_wrapper {
+    display: none;
+}
+
+#usdc_market_list:checked ~ #coin_list_table_usd_wrapper {
+    display: block;
+}
+
+#usdc_market_list:checked ~ #coin_list_table_krw_wrapper {
+    display: none;
+}
+
+/* public coin */
+#coin_list_table_krw_wrapper {
+    display: none;
+}
+
+#krw_market_list:checked ~ #coin_list_table_krw_wrapper {
+    display: block;
+}
+
+#krw_market_list:checked ~ #coin_list_table_usd_wrapper {
+    display: none;
+}
+
+.trans_wrap .coin_table_renew thead tr {
+    height: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #969696;
+    padding: 10px 0;
+    letter-spacing: -0.48px;
+}
+
+.trans_wrap .coin_table_renew thead tr th:nth-child(1) {
+    padding-left: 30px;
+    width: 48%;
+    text-align: left;
+}
+
+.trans_wrap .coin_table_renew thead tr th:nth-child(2) {
+    text-align: right;
+    width: 27%;
+    padding-right: 10px;
+}
+
+.trans_wrap .coin_table_renew thead tr th:nth-child(3) {
+    padding-right: 16px;
+    text-align: right;
+    width: 25%;
+}
+
+.trans_wrap .tit.bd_0 {
+    border-bottom: 0;
+}
+
+/* ---------- 191223 END ---------- */

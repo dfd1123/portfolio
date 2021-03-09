@@ -1,0 +1,60 @@
+/* mymenu03 */
+.container--mymenu03 {
+    padding: 0 20px;
+}
+
+.mymenu__profile {
+    text-align: center;
+    border-bottom: 2px solid #dfdfdf;
+    padding: 3rem 0 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.mymenu__profile .name {
+    color: #fff;
+}
+
+.mymenu__profile .email {
+    display: inline-block;
+    font-size: 0.7em;
+}
+
+.mymenu__profile-info {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.mymenu__profile-info-list {
+    font-size: 0.85em;
+    font-weight: 300;
+    color: #fff;
+    padding: 10px 0 10px 100px;
+    position: relative;
+    text-align: right;
+}
+
+.mymenu__profile-info-list .label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+}
+
+.mymenu__profile-info-list .btn {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #2E87C8;
+    margin-left: 5px;
+    padding-right: 0;
+}
+
+.mymenu__profile-info-list .btn:active {
+    color: #2979b3;
+}
+/* end mymenu03 */

@@ -1,0 +1,23 @@
+{
+  "name": "exchange1-websocket",
+  "version": "1.2.1",
+  "description": "exchange1-websocket",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "debug": "set NODE_ENV=development&&set PORT=8080&&nodemon --inspect=5858 ./index --watch ./ --delay 1.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "decimal.js": "^10.2.0",
+    "mysql2": "^1.6.5",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.9.0",
+    "ws": "^6.2.1"
+  }
+}

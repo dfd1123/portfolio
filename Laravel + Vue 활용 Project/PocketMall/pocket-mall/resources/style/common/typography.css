@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "spoqa";
+    src: url("../assets/fonts/SpoqaHanSansBold.ttf") format("truetype"),
+        url("../assets/fonts/SpoqaHanSansBold.woff") format("woff"),
+        url("../assets/fonts/SpoqaHanSansBold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "spoqa";
+    src: url("../assets/fonts/SpoqaHanSansRegular.ttf") format("truetype"),
+        url("../assets/fonts/SpoqaHanSansRegular.woff") format("woff"),
+        url("../assets/fonts/SpoqaHanSansRegular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "spoqa";
+    src: url("../assets/fonts/SpoqaHanSansLight.ttf") format("truetype"),
+        url("../assets/fonts/SpoqaHanSansLight.woff") format("woff"),
+        url("../assets/fonts/SpoqaHanSansLight.woff2") format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "spoqa";
+    src: url("../assets/fonts/SpoqaHanSansThin.ttf") format("truetype"),
+        url("../assets/fonts/SpoqaHanSansThin.woff") format("woff"),
+        url("../assets/fonts/SpoqaHanSansThin.woff2") format("woff2");
+    font-weight: 200;
+}

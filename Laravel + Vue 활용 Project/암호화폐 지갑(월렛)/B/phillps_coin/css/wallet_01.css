@@ -1,0 +1,26 @@
+/* wallet01 */
+.container--wallet01 {
+    height: 100%;
+}
+
+.container--wallet01 .scrl-wrap {
+    height: 100%;
+    padding-bottom: 90px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container--wallet01 .basic_panel--dark__contents {
+    margin-bottom: 18px;
+}
+
+.container--wallet01 .table_type02 {
+    margin-bottom: 15px;
+}
+
+
+.wallet__adress {
+    line-height: 1.5;
+    font-weight: 300;
+}
+/* end wallet01 */

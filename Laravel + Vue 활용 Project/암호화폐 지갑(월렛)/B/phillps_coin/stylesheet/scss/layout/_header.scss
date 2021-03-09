@@ -1,0 +1,71 @@
+.header{
+    
+    @include position(absolute, 0, 0);
+    @include zindex(default);
+    @include fontStyle('default-rem', normal, #fff);
+    width: 100%;
+    height: $header-height;
+    text-align: center;
+
+    &--type01{
+        background-color: $black;
+    }
+
+    &--type02{
+        background-color: $white;
+        @include fontStyle('default-rem', normal, $black);
+    }
+
+    &__center{
+        line-height: $header-height;
+        @include fontStyle('basic-l', inherit, inherit);
+    }
+
+    &__logo{
+        width: 10rem;
+        vertical-align: middle;
+    }
+
+    &__btn{
+        @include buttonDefaultRemove(transparent);
+        @include bgStyle(50%, 50%, 16px);
+        @include activeEvent{
+            opacity: 0.8;
+        }
+        width:60px;
+        height: $header-height;
+        position: absolute;
+
+        &--left{
+            @include position(absolute, 0, 0);
+        }
+        &--right{
+            @include position(absolute, 0, $r: 0);
+        }
+        &--close{
+            background-image: url($base-url-btn+'cancel_light.png');
+        }
+        &--close-dark{
+            background-image: url($base-url-btn+'cancel_dark.png');
+        }
+        &--prev{
+            background-image: url($base-url-btn+'arrow_prev_light.png');
+            background-size: 10px;
+        }
+        &--menu{
+            background-image: url($base-url-btn+'menu.png');
+            width: 50px;
+        }
+        &--home{
+            background-image: url($base-url-icon+'home_light.png');
+        }
+    }
+
+    &__btn__label{
+        @include position(absolute, 0, 0);
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+}

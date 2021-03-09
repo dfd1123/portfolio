@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.5" height="29.485" viewBox="0 0 34.5 29.485">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#00a2ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px}
+        </style>
+    </defs>
+    <g id="레이어_2" data-name="레이어 2" transform="translate(1.25 1.25)">
+        <g id="레이어_1" data-name="레이어 1">
+            <path id="패스_2558" d="M33.25 15.817v12.418h-32V15.817" class="cls-1" data-name="패스 2558" transform="translate(-1.25 -1.25)"/>
+            <path id="선_125" d="M0 0v15.761" class="cls-1" data-name="선 125" transform="translate(16)"/>
+            <path id="패스_2559" d="M24.414 9.847l-7.164 7.164-7.164-7.164" class="cls-1" data-name="패스 2559" transform="translate(-1.25 -1.25)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82.617" height="79" viewBox="0 0 82.617 79">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00b9ff"/>
+            <stop offset="1" stop-color="#4375ff"/>
+        </linearGradient>
+    </defs>
+    <g id="icon_complete" transform="translate(0 -11.205)">
+        <g id="그룹_253" data-name="그룹 253" transform="translate(0 11.206)">
+            <g id="그룹_252" data-name="그룹 252">
+                <path id="패스_1001" d="M75.663 44.026a3.337 3.337 0 0 0-3.337 3.337v3.361A32.825 32.825 0 0 1 39.5 83.531h-.019A32.825 32.825 0 0 1 39.5 17.88h.019a32.621 32.621 0 0 1 13.341 2.842 3.337 3.337 0 0 0 2.716-6.1 39.25 39.25 0 0 0-16.054-3.42H39.5a39.5 39.5 0 0 0-27.947 67.419 39.242 39.242 0 0 0 27.924 11.585h.023A39.5 39.5 0 0 0 79 50.727v-3.363a3.337 3.337 0 0 0-3.337-3.338z" class="cls-1" data-name="패스 1001" transform="translate(0 -11.206)"/>
+            </g>
+        </g>
+        <g id="그룹_255" data-name="그룹 255" transform="translate(25.314 14.843)">
+            <g id="그룹_254" data-name="그룹 254">
+                <path id="패스_1002" d="M213.2 34.723a3.338 3.338 0 0 0-4.72 0l-37.415 37.419-8.489-8.489a3.337 3.337 0 0 0-4.719 4.72l10.849 10.849a3.337 3.337 0 0 0 4.72 0L213.2 39.443a3.337 3.337 0 0 0 0-4.72z" class="cls-1" data-name="패스 1002" transform="translate(-156.879 -33.746)"/>
+            </g>
+        </g>
+    </g>
+</svg>

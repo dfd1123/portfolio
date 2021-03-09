@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>philips pay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="stylesheet/scss/vendors/normalize-custom.css">
+        <link rel="stylesheet" href="css/common.css">
+
+        <!-- 개별 css -->
+        <link rel="stylesheet" href="css/register.css">
+        
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body ontouchstart="">
+
+        <div id="app" class="app">
+
+            <!-- 헤더 -->
+            <header class="header header--type01">
+                <button type="button" class="header__btn header__btn--left header__btn--prev" onClick="location.href='./00_login.html'">
+                    <b class="hide-text">닫기</b>
+                </button>
+                <h1 class="header__center">회원가입</h1>
+            </header>
+            <!-- end 헤더 -->
+            <!-- 컨텐츠 -->
+            <div class="content_wrapper">
+                <!-- 각 페이지마다 다른 컨테이너 -->
+                <div class="container container--register">
+
+                    <div class="basic_panel">
+                        <h2 class="basic_panel__title">필립스 페이 약관안내</h2>
+                        <ul class="basic_panel__contents">
+                            <li class="register__agree-list">
+                                <input type="checkbox" id="regi_agree_all" class="chck_style">
+                                <label for="regi_agree_all" class="chck_style__label"></label>
+                                <label for="regi_agree_all">모든 약관에 동의합니다.</label>
+                            </li> 
+                            <li class="register__agree-list">
+                                <input type="checkbox" id="regi_agree_01" class="chck_style">
+                                <label for="regi_agree_01" class="chck_style__label"></label>
+                                <label for="regi_agree_01">서비스 이용약관 동의 (필수)</label>
+                            </li> 
+                            <li class="register__agree-list">
+                                <input type="checkbox" id="regi_agree_02" class="chck_style">
+                                <label for="regi_agree_02" class="chck_style__label"></label>
+                                <label for="regi_agree_02">개인정보처리방침 (필수)</label>
+                            </li> 
+                        </ul>
+                        <h2 class="basic_panel__title">유의사항</h2>
+                        <div class="basic_panel__contents">
+                            <p class="caution_list">※ 만 14세 미만의 회원가입은 받지 않습니다.</p>
+                            <p class="caution_list">※ 코인 전송에 따른 손실에 대해 필립스코인은 책임지지 않습니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="basic_panel">
+                        <h2 class="basic_panel__title">이름(실명)</h2>
+                        <div class="basic_panel__contents">
+                            <input type="text" placeholder="실명입력" class="basic_panel__input basic_panel__input01">
+                        </div>
+                        <h2 class="basic_panel__title">로그인 이메일</h2>
+                        <div class="basic_panel__contents ">
+                            <div class="basic_panel__input-group basic_panel__input-group--email">
+                                <input type="text" class="basic_panel__input basic_panel__input01">
+                                <span class="special_character">@</span>
+                                <div class="domain_select_group">
+                                    <select class="basic_panel__input basic_panel__slct">
+                                        <option value="도메인 선택">도메인 선택</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="direct_input">직접입력</option>
+                                    </select>
+                                    <input type="text" class="basic_panel__input basic_panel__input01" placeholder="직접 입력">
+                                </div>
+                                <p class="basic_panel__small-text">사용하시는 이메일주소를 통해 로그인 아이디를 생성합니다.</p>
+                            </div>
+                        </div>
+                        <div class="basic_panel__contents">
+                            <div class="basic_panel__input-group--certify">
+                                <input type="text" placeholder="인증번호 입력" class="basic_panel__input basic_panel__input01">
+                                <button type="button" class="btn_mini btn_mini01">인증하기</button>
+                            </div>
+                            <!-- 인증번호 틀렸을때 -->
+                            <p class="basic_panel__small-text">인증번호가 틀렸습니다.</p>
+                            <!-- 인증번호 맞을 때 -->
+                            <!-- <p class="basic_panel__small-text blue">인증되었습니다.</p> -->
+                        </div>
+
+                    </div>
+
+                    <div class="bt-fix-btn">
+                        <button type="button" class="btn_solid btn_solid02">다음</button>
+                    </div>
+
+                </div>
+                <!-- end 각 페이지마다 다른 컨테이너 -->
+            </div>
+            <!-- end 컨텐츠 -->
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,291 @@
+/*common*/
+.next_arrow{
+    animation-name:arrow;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes arrow{
+    0%{
+        bottom:66px;
+    }
+    100%{
+        bottom:33px;
+        opacity:0;
+    }
+}
+
+@keyframes main_text{
+    100%{
+        opacity:1;
+    }
+}
+/*main*/
+#t_main.active .onlybg{
+    animation-name:bgsize;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+    z-index:-9;
+}
+@keyframes bgsize{
+    100%{
+        opacity:1;
+    }
+}
+#t_main.active .ani_h2{
+    animation-name:text_move;
+    animation-duration:0.4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+@keyframes text_move{
+    100%{
+        margin-left:0px;
+        opacity:1;
+    }
+}
+#t_main.active .text_ani{
+    animation-name:text_ani;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+@keyframes text_ani{
+    100%{
+        margin-top:0px;
+        opacity:1;
+    }
+}
+.ani_h2_1{
+    animation-delay:0.2s;
+}
+.ani_h2_2{
+    animation-delay:0.5s;
+}
+.ani_h2_3{
+    animation-delay:0.7s;
+}
+.text_ani1{
+    animation-delay:0.7s;
+}
+.text_ani2{
+    animation-delay:0.8s;
+}
+.text_ani3{
+    animation-delay:0.9s;
+}
+.text_ani4{
+    animation-delay:1.0s;
+}
+.text_ani5{
+    animation-delay:1.1s;
+}
+.ani_h2_4{
+    animation-delay:1.3s;
+}
+/*main E*/
+
+/*app소개1*/
+#t_appdown1 .bg_airplane.active{
+    animation-name:airplane1;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+}
+@keyframes airplane1{
+    100%{
+        bottom: 360px;
+        right: 240px; 
+    }
+}
+
+.bg_circle.active {
+    animation-name:circle;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+}
+@keyframes circle{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-17px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+.cir__bag{
+    animation-delay:0.2s;
+}
+.cir__hum{
+    animation-delay:0.5s;
+}
+.cir__map{
+    animation-delay:0.3s;
+}
+
+.tab__img1.active{
+    animation-name:hand_up;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+@keyframes hand_up{
+    0%{
+        background-position:center 500px;
+    }
+    100%{
+        background-position:center bottom;
+    }
+}
+/*app소개1 E*/
+
+/*app소개2*/
+#t_appdown2 .bg_airplane.active{
+    animation-name:airplane2;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+}
+@keyframes airplane2{
+    100%{
+        bottom: 410px;
+        right: 100px;
+    }
+}
+
+.tab__img--ms.active{
+    animation-name:box_view;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+@keyframes box_view{
+    100%{
+        right:0px;
+        opacity:1;
+    }
+}
+.tab__img--ms1{
+    animation-delay:0s;
+}
+.tab__img--ms2{
+    animation-delay:0.1s;
+}
+.tab__img--ms3{
+    animation-delay:0.2s;
+}
+.tab__img--ms4{
+    animation-delay:0.3s;
+}
+.tab__img--ms5{
+    animation-delay:0.4s;
+}
+
+.tab__img--bg.active{
+    animation-name:img_up;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+@keyframes img_up{
+    100%{
+        opacity:1;
+        margin-top:0px;
+    }
+}
+/*app소개2 E*/
+
+/*app소개3*/
+#t_appdown3 .bg_airplane.active{
+    animation-name:airplane3;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+}
+@keyframes airplane3{
+    100%{
+        bottom: 270px;
+        right: 280px;
+    }
+}
+.bgimg__pop.active{
+    animation-name:pop_ing;
+    animation-duration:0.8s;
+    animation-delay:0.3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+    animation-timing-function: cubic-bezier(.22,.68,0,1.71);
+}
+@keyframes pop_ing{
+    100%{
+        transform:scale(1);
+    }
+}
+.bgimg__bg.active{
+    animation-name:main_text;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+/*app소개3 E*/
+
+/*plan가입*/
+.plan--title.active .fain, .plan--title.active~.btn--ghost{
+    animation-name:main_text;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+.plan--title.active .fain_3{
+    animation-name:pop_text;
+}
+@keyframes pop_text{
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+#t_plannerreg.active .form__planner{
+    animation-name:form_open;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+@keyframes form_open{
+    100%{
+        right:20%;
+        opacity:1;
+    }
+}
+
+.fain_1{
+    animation-delay:0.0s;
+}
+.fain_2{
+    animation-delay:0.3s;
+}
+.fain_3{
+    animation-delay:0.6s;
+}
+.fain_4{
+    animation-delay:0.85s;
+}
+.fain_5{
+    animation-delay:1.1s;
+}
+.btn--ghost{
+    animation-delay:1.0s;
+}
+.form__planner{
+    animation-delay:1.3s;
+}
+
+/*plan가입 E*/

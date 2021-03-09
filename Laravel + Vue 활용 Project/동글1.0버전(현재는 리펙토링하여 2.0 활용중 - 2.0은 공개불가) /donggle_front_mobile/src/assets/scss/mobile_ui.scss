@@ -1,0 +1,93 @@
+@charset 'utf-8';
+
+// 1. 변수, 함수 등 utility
+@import "./utility/variables";
+@import "./utility/mixin";
+@import "./utility/function";
+
+/* ======== 1. base, typo, helper(클래스) ======== */
+@import "./base/base";
+@import "./base/typo";
+@import "./base/helper";
+/* ======== 1. END ======== */
+
+/* ======== 2. components ======== */
+
+// 좋아요 하트버튼
+@import "./components/heart_badge";
+
+//기본 버튼 디자인
+@import "./components/button";
+
+//기본 인풋 디자인
+@import "./components/input";
+
+// 옷상품 카드
+@import "./components/clothes_list_card";
+
+// 상품내역 카드
+@import "./components/clothes_history_card";
+
+// 상품리뷰내역 카드
+@import "./components/review_history_card";
+
+// 주문정보들 (좌측-우측카드) 레이아웃
+// 사용한 페이지: 주문취소신청, 환불신청, 배송지변경, 주문/결제, 주문완료, 주문상세내역 (6페이지)
+@import "./components/order_info_group";
+
+// 검색옵션 구역
+// 사용한 페이지: 카테고리선택, 통합검색결과
+@import "./components/filter_search_group";
+
+// 리뷰
+@import "./components/review";
+
+// 페이지네이션
+@import "./components/pager";
+
+// 고객센터 게시판
+@import "./components/board";
+
+// 쿠폰
+// 사용한 페이지: 내 쿠폰함, 쿠폰받기
+@import "./components/coupon_card";
+
+// 내역없을 때 레이아웃
+@import "./components/empty";
+
+// 별점 그룹 (1점부터 5점)
+// 사용한 페이지: 최근본상품, 나의구매후기, 구매후기 작성하기, 상품리뷰상세보기, 상품상세보기 (5페이지)
+@import "./components/star_group";
+
+//팝업 레이아웃
+@import "./components/popup";
+
+// SLICK SLIDER
+@import "./components/slick";
+
+// 페이지 상단 제목
+@import "./components/page_title";
+/* ======== 2. END ======== */
+
+/* ======== 3. layout ======== */
+@import "./layout/layout";
+@import "./layout/topbenner";
+@import "./layout/header";
+@import "./layout/footer";
+/* ======== 3. END ======== */
+
+/* ======== 4. pages ======== */
+@import "./pages/main";
+@import "./pages/auth";
+@import "./pages/subscribe";
+@import "./pages/productdetail";
+@import "./pages/_product_review_detail";
+@import "./pages/product_qna_detail";
+@import "./pages/cs";
+@import "./pages/product_list_view";
+@import "./pages/order";
+@import "./pages/snb";
+@import "./pages/cancel_order";
+@import "./pages/store";
+@import "./pages/mypage";
+/* ======== 4. END ======== */

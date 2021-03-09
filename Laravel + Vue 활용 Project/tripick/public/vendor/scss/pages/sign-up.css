@@ -1,0 +1,283 @@
+/* colors */
+/* font-size */
+/* unit */
+/* responsive */
+/* mix-in */
+.wrapper--sign-up {
+  background-color: #F4F7F9;
+}
+
+.wrapper--sign-up--01 {
+  background-image: url(/img/bg/bg-br-logo.svg);
+  background-position: 85% 92%;
+  background-repeat: no-repeat;
+  background-size: 45%;
+}
+
+.wrapper--sign-up--02 {
+  background-color: #fff;
+  padding-top: 4.5rem;
+  padding-bottom: 6rem;
+}
+
+.wrapper--sign-up--02 .ft-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.agree-intro {
+  font-size: 18px;
+  padding: 5rem 0 3rem;
+}
+
+.agree-intro__label {
+  font-size: inherit;
+  font-weight: 400;
+  color: #B0B5B9;
+  text-decoration: underline;
+}
+
+.agree-intro__span {
+  font-size: 0.68em;
+  font-weight: 400;
+  color: #CAD4DD;
+  padding-left: 1.7rem;
+}
+
+.account-list__list-group {
+  font-size: 18px;
+}
+
+.account-list__list {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 1em 1em 1em 4em;
+  margin: 12px 0;
+  position: relative;
+}
+
+.account-list__list__icon {
+  width: 2.3em;
+  height: 2.3em;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0.8em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.account-list__list__icon--kakao {
+  background-size: 2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/img/icon/icon-agree-kakao.svg);
+}
+
+.account-list__list__icon--email {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/img/icon/icon-agree-email.svg);
+}
+
+.account-list__list:active {
+  background-color: #f2f2f2;
+}
+
+.account-list__list__txt {
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.sign-up-agree {
+  border-bottom: 1px solid #E1E6EA;
+  font-size: 18px;
+  padding: 0.95rem 0;
+}
+
+.sign-up-agree--first {
+  padding: 0.95rem 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.sign-up-agree__label {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #00244C;
+}
+
+.sign-up-agree--etc .sign-up-agree__label {
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #CAD4DD;
+}
+
+.sign-up-agree--etc:nth-child(4) {
+  border-bottom: 0;
+}
+
+.sign-up-profile {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.sign-up-profile__image {
+  background-size: 3.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #00DBD8;
+  display: inline-block;
+  font-size: 18px;
+  background-image: url(/img/logo/logo-symbol-tripik-opacity.svg);
+  position: relative;
+}
+
+.sign-up-profile__image::after {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  content: "";
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url("/img/icon/icon-picture-mini.svg");
+}
+
+.sign-up-profile__caption {
+  font-size: 0.68em;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sign-up-fieldset__group {
+  font-size: 18px;
+}
+
+.sign-up-fieldset__list {
+  width: 100%;
+  height: 2.5em;
+  position: relative;
+}
+
+.sign-up-fieldset__list__label {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #99B1CB;
+}
+
+.sign-up-fieldset__list__input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #00244C;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid #E1E6EA;
+  padding-left: 7rem;
+}
+
+.sign-up-fieldset__list__input:focus {
+  border-color: #00DBD8;
+}
+
+.sign-up-fieldset__list__input::-webkit-input-placeholder {
+  color: rgba(153, 177, 203, 0.3);
+}
+
+.sign-up-fieldset__list__input:-ms-input-placeholder {
+  color: rgba(153, 177, 203, 0.3);
+}
+
+.sign-up-fieldset__list__input::-ms-input-placeholder {
+  color: rgba(153, 177, 203, 0.3);
+}
+
+.sign-up-fieldset__list__input::placeholder {
+  color: rgba(153, 177, 203, 0.3);
+}
+
+.sign-up-fieldset--phone {
+  margin-top: 3rem;
+}
+
+.sign-up-fieldset--phone__button {
+  height: 2rem;
+  line-height: 2rem;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.68em;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 8rem;
+}
+
+.sign-up-fieldset--phone__input {
+  padding-left: 7px;
+}
+
+.sign-up-fieldset--phone__certify {
+  font-size: 0.9em;
+  padding-left: calc(0.75em + 7px);
+  padding-top: 0.5em;
+}
+
+.sign-up-fieldset--phone__certify__count {
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #00244C;
+}
+
+.sign-up-fieldset--phone__certify__caution {
+  color: rgba(153, 177, 203, 0.3);
+}
+
+.sign-up-fieldset--phone__certify.is-active .sign-up-fieldset--phone__certify__count {
+  color: #00DBD8;
+}
+
+.button-wrap {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  padding: 2rem 0;
+}
+
+.wrapper--sign-up--02 #user_form {
+  height: calc(100% - 30px);
+}
+
+.wrapper--sign-up--02 #user_form .wrapper--inner {
+  height: 100%;
+}

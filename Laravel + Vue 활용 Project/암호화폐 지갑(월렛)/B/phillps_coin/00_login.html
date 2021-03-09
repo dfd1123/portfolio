@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>philips pay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="stylesheet/scss/vendors/normalize-custom.css">
+        <link rel="stylesheet" href="css/common.css">
+
+        <!-- 개별 css -->
+        <link rel="stylesheet" href="css/login.css">
+        
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="app" class="app">
+
+            <!-- 헤더 -->
+            <header class="header header--type01">
+                <h1 class="header__center">
+                    <img src="img/logo/logo_wordtype.png" alt="logo" class="header__logo">
+                </h1>
+            </header>
+            <!-- end 헤더 -->
+            <!-- 컨텐츠 -->
+            <div class="content_wrapper">
+                <!-- 각 페이지마다 다른 컨테이너 -->
+                <div class="container container--login">
+                    <img src="img/logo/logo_symbol.png" alt="symbol logo" class="login__symbol">
+                    <span class="login__ment">혁신적인 글로벌 암호화폐거래 <em>phillips pay</em></span>
+
+                    <div class="login__form-group">
+                        <input type="email" class="input_type01" placeholder="이메일 주소">
+                        <input type="password" class="input_type01" placeholder="비밀번호">
+                        <button type="button" class="btn_solid btn_solid01_disable">로그인</button>
+                    </div>
+                    
+                    <div class="login__option">
+                        <a href="./01_register.html">회원가입</a>|<a href="#">아이디/비밀번호찾기</a>
+                    </div>
+                </div>
+                <!-- end 각 페이지마다 다른 컨테이너 -->
+            </div>
+            <!-- end 컨텐츠 -->
+        </div>
+
+        <script>
+
+            $(function(){
+
+                // 아이디, 비밀번호 다입력하면 버튼활성화
+                $('.login__form-group input').change(function(){
+
+                    var email_val = $('.login__form-group input[type=email]').val();
+                    var pw_val = $('.login__form-group input[type=password]').val();
+
+                    if( email_val !== '' && pw_val !== '' ){
+                        $('.login__form-group button').addClass('active');
+                    }else{
+                        $('.login__form-group button').removeClass('active');
+                    }
+
+                })
+                //end
+
+            })
+        </script>
+
+    </body>
+
+</html>

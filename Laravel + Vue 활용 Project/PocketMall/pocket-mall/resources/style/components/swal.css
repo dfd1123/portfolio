@@ -1,0 +1,134 @@
+/* Notification */
+.notices.is-bottom {
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+/* END Notification */
+
+/* SweetAlert2 */
+.swal2-container {
+    z-index: 8000;
+}
+
+.swal2-modal {
+    border-radius: 10px;
+    max-width: 430px;
+    width: 80%;
+    box-shadow: 40px 40px 40px rgba(2, 8, 22, 0.16);
+}
+
+#swal2-content {
+    color: #595f6f;
+    letter-spacing: -0.03em;
+    font-size: 1em;
+}
+
+.swal2-styled {
+    border-radius: 5px;
+    font-family: "spoqa", sans-serif;
+}
+
+.swal2-styled.swal2-confirm {
+    background-image: linear-gradient(
+        to right,
+        #1dbbff 0%,
+        #1d6aff 51%,
+        #1dbbff 100%
+    ) !important;
+    color: white;
+    background-size: 200% auto;
+    transition: 0.5s;
+    box-shadow: none !important;
+}
+
+.swal2-styled.swal2-confirm:active {
+    background-image: linear-gradient(
+        to right,
+        #26a3d9 0%,
+        #1958d7 51%,
+        #26a3d9 100%
+    ) !important;
+    background-position: right center;
+    transition: 0.2s;
+}
+
+@media all and (min-width: 1024px) {
+    .swal2-styled.swal2-confirm:hover {
+        background-image: linear-gradient(
+            to right,
+            #1dbbff 0%,
+            #1d6aff 51%,
+            #1dbbff 100%
+        ) !important;
+        background-position: right center !important;
+    }
+}
+
+.swal2-styled.swal2-cancel {
+    background-color: #d8d8d8 !important;
+    box-shadow: none !important;
+}
+
+.swal2-styled.swal2-confirm:focus,
+.swal2-styled.swal2-cancel:focus {
+    box-shadow: none !important;
+}
+
+/* 메일팝업 */
+
+.mail-pop-image {
+    opacity: 0;
+    animation: flipInX 1s 1 0.3s both;
+}
+/* END */
+
+@keyframes flipInX {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        opacity: 1;
+    }
+}
+
+/* Warning Alert */
+.swal2-icon.swal2-warning.custom-warning-icon {
+    border-color: #2196f3;
+    color: #2196f3;
+    opacity: 0.9;
+    transform: scale(0.75);
+    margin: 0 auto 5px;
+}
+
+#swal2-content.custom-warnig-content {
+    font-size: 1.125em;
+    padding-bottom: 5px;
+}
+/* END */
+
+/* END SweetAlert2 */

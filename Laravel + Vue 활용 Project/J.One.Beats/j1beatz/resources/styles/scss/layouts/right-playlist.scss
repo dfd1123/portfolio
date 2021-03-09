@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+// 오른쪽 재생목록
+
+.playlist {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    bottom: $theme-playbar-height;
+    right: 0;
+    overflow: hidden;
+    width: $theme-playlist-width;
+    padding: 40px 30px;
+    background-color: $theme-playlist-bg-color;
+    overflow: hidden;
+    right: -530px;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+
+    h2 {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    h2 a {
+        color: #fff;
+        font-size: 15px;
+        display: inline-block;
+        margin-left: 15px;
+        position: relative;
+        top: -4px;
+        display: none;
+    }
+
+    &-sch-bar {
+        line-height: 35px;
+        width: 100%;
+        padding: 20px 0px 10px 0px;
+
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        fieldset {
+            display: inline-block;
+            width: 300px;
+            height: 35px;
+            padding: 0;
+            position: relative;
+        }
+
+        fieldset input {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            border-radius: 10px;
+            border: 0;
+            background-color: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            padding: 0.5rem 0.8rem;
+            font-weight: 100;
+            outline: none;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+            }
+            &:focus{
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        fieldset input + button {
+            @include backgroundBasic(20px);
+            width: 40px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            border: 0;
+            border-radius: 0;
+            background-image: url($ui-path-img-btn+"btn_sch.svg");
+            background-color: transparent;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        .right_edit {
+            color: #fff;
+            float: right;
+        }
+        .cancle_btn {
+            color: rgba(255, 255, 255, 0.7);
+            padding-left: 13px;
+        }
+    }
+
+    &-del-bar {
+        display: none;
+        min-height: 20px;
+        margin: 20px 0 10px;
+
+        input[type="checkbox"] + label {
+            margin-right: 5px;
+            margin-left: 25px;
+            position: relative;
+            top: 5px;
+        }
+
+        label,
+        a {
+            font-size: 13px;
+            color: #fff;
+        }
+
+        a {
+            float: right;
+            position: relative;
+            top: 9px;
+            right: 35px;
+        }
+    }
+}
+
+.playlist-inner {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 115px;
+}
+
+.playlist-inner-wrapper {
+    background-color: rgba(27, 27, 56, 0.6);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+.playlist-inner-container {
+    width: 100%;
+    font-size: 17px;
+    height: calc(100vmin - 320px);
+    overflow-y: scroll;
+
+    .beat-ul-list {
+        position: relative;
+        padding-left: 100px;
+        padding: 1em 1.3em 1em 5em;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: all 0.2s;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: none;
+        }
+
+        input[type="checkbox"] + label {
+            @include position($t: 50%, $l: 8px);
+            transform: translateY(-50%);
+            display: none;
+        }
+
+        &:hover .thumb-mini-outer:before {
+            opacity: 1;
+            transition: all 0.2s;
+        }
+    }
+
+    .mini-btns {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @each $mini-btn-name in mini-album, mini-buy, mini-dot3 {
+        .#{$mini-btn-name}-btn {
+            background-image: url($ui-path-img-btn+"#{$mini-btn-name}.svg");
+        }
+    }
+
+    .mini-btn.mini-buy-btn{
+        background-position: 50% 42%;
+    }
+
+    /* 재생목록 더보기 메뉴 최상단, 최하단 위치조정 */
+    .beat-ul-list {
+        .beat-pd-info-view {
+            @include position($r: 25px, $t: -20px);
+        }
+
+        &:last-child .beat-pd-info-view {
+            @include position($r: 25px, $t: -23px);
+        }
+
+        &:first-child .beat-pd-info-view {
+            @include position($r: 25px, $t: -13px);
+        }
+    }
+
+    .mini-btn {
+        @include backgroundBasic(1.5em);
+        width: 2.5em;
+        height: 2.5em;
+        margin-right: 10px;
+        background-color: #7300df;
+        display: inline-block;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.2s;
+        opacity: 0.75;
+
+        &:hover {
+            background-color: darken(#7300df, 10%);
+            transition: all 0.2s;
+        }
+
+        &.mini-dot3-btn {
+            background-size: 4px;
+            background-color: transparent;
+            width: 1.5em;
+            position: absolute;
+            z-index: 999;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .del-btn {
+        width: 2.5em;
+        height: 2.5em;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-image: url($ui-path-img-icon+"icon-del-white.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+        cursor: pointer;
+    }
+
+    .nothing_result{
+        text-align: center;
+        &__img{
+            width: 40px;
+            margin: 0 auto 15px;
+            display: block;
+        }
+        &__ment{
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 100;
+            font-size: 1rem;
+        }
+    }
+
+
+}
+
+// 삭제 눌렀을 때 재생목록 상태 변화
+
+.playlist.active {
+    h2 a {
+        display: inline-block;
+    }
+
+    .playlist-sch-bar {
+        display: none;
+    }
+
+    .playlist-del-bar {
+        display: block;
+    }
+
+    .playlist-inner-wrapper {
+        border-radius: 0;
+
+        .playlist-inner-container.selecting {
+            height: calc(100vmin - 450px);
+        }
+
+        .beat-ul-list {
+            padding: 1em 1.3em 1em 7em;
+        }
+
+        input[type="checkbox"] + label {
+            display: block;
+        }
+
+        .thumb-mini-outer {
+            left: 48px;
+        }
+
+        .mini-btns,
+        .mini-btn.mini-dot3-btn {
+            display: none;
+        }
+
+        .del-btn {
+            display: block;
+        }
+    }
+}
+
+#playlist-container .beat-pd-info-view{
+    background-color: #fff;
+    padding: 7px 0;
+}
+
+#playlist-container .beat-pd-info-view a{
+    padding: 6px 10px 6px 48px;
+}

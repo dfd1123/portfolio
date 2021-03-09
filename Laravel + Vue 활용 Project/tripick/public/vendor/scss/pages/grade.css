@@ -1,0 +1,178 @@
+/* colors */
+/* font-size */
+/* unit */
+/* responsive */
+/* mix-in */
+.wrapper--grade {
+  padding-top: 4.5rem;
+  font-size: 15px;
+}
+
+.wrapper--grade .wrapper--inner {
+  padding: 0;
+}
+
+.plnr_grade_hd {
+  height: 20rem;
+  background-image: url(/img/bg/bg-intro.png);
+  background-repeat: no-repeat;
+  background-position: 50% 72%;
+  background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 325px) {
+  .plnr_grade_hd {
+    height: 15rem;
+  }
+}
+
+.plnr_grade_hd:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  content: '';
+  width: 100%;
+  height: 100%;
+}
+
+.plnr_grade_medals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 325px) {
+  .plnr_grade_medals {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+.plnr_grade_medals ._list {
+  text-align: center;
+  margin: 0 25px;
+  color: #fff;
+  opacity: 0.2;
+  -webkit-animation: medal_ani 0.4s 1;
+          animation: medal_ani 0.4s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+          animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+.plnr_grade_medals ._list:nth-child(1) {
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.plnr_grade_medals ._list:nth-child(2) {
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.plnr_grade_medals ._list:nth-child(3) {
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.plnr_grade_medals ._list b {
+  display: block;
+  margin: 4px 0;
+}
+
+.plnr_grade_medals ._list span {
+  font-size: 0.85em;
+}
+
+.plnr_grade_desc {
+  padding: 2rem 2rem 0;
+  color: #00244C;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+@media (max-width: 325px) {
+  .plnr_grade_desc {
+    font-size: 13px;
+  }
+}
+
+.plnr_grade_desc h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  opacity: 0;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-name: medal_ani;
+          animation-name: medal_ani;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+          animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+.plnr_grade_desc p {
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-name: medal_ani;
+          animation-name: medal_ani;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+          animation-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+@-webkit-keyframes medal_ani {
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes medal_ani {
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}

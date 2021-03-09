@@ -1,0 +1,67 @@
+.createbox{display:block;margin:0 auto;overflow:hidden;width:95%;}
+.createbox h3{padding:10px 0;}
+.createbox form{display:block;width:100%;box-sizing:border-box;padding:10px 0;border-top:1px dotted #666;}
+.createbox dl{display:block;padding:3px 0;overflow:hidden;margin:0;}
+.createbox dl dd button{float:left;border:1px solid #fea803;background:#fff;border-radius:3px;padding:12px 15px;color:#fea803;vertical-align:middle;margin-bottom:3px;margin-right:3px;}
+.createbox dl dd button i img{max-width:10px;}
+.createbox dl dt{display:block;text-align:left;font-size:13px;color:#222;letter-spacing:-1px;margin-bottom:5px;}
+
+.createbox dl dd{display:block;text-align:left;width:100%;padding:0;margin:0;box-sizing:border-box;letter-spacing:-1px;text-align:left;}
+.createbox dl dd input[type="text"],
+.createbox dl dd input[type="file"],
+.createbox dl dd input[type="number"]{display:block;width:100%;box-sizing:border-box;font-size:13px;color:#999;padding:12px;border:1px solid #ddd;border-radius:5px;background:#fff;}
+.createbox dl dd input.din[type="text"],
+.createbox dl dd input.din[type="file"],
+.createbox dl dd input.din[type="number"]{float:left;width:72%;}
+.createbox dl dd textarea{display:block;font-family: 'Noto Sans KR', sans-serif;width:100%;min-height:70px;box-sizing:border-box;border:1px solid #ddd;border-radius:5px;font-weight:normal;background:#f9f9f9;font-size: 13px;padding: 10px;}
+.createbox dl.ty02{}
+.createbox dl.ty02 dt{width:100%;margin-top:5px;}
+.createbox dl.ty02 dt.left10{padding-left:10px;}
+.createbox dl.ty02 dd{width:100%;overflow:hidden;}
+.createbox dl dd .select{margin-bottom:0;}
+.createbox dl dd .select.din{margin-left:5px;}
+.createbox dl dd .select select{height:40px;border:1px solid #ddd;background:#fff;}
+.createbox dl dd .select.w50{width:49%;float:left;margin-right:1%;}
+.createbox dl dd .select.w20{width:24%;float:left;margin-right:1%;}
+.createbox dl dd .select__arrow{top:17px;}
+button.regist_bt{display:block;text-align:center;line-height:55px;background:#413e70;color:#fff;font-size:15px;width:100%;border-radius:5px;border:none;margin-top:30px;}
+
+input.ing[type="radio"] { display:none;}
+input.ing[type="radio"] + label {
+	display:inline-block;cursor:pointer;
+		color:#888;
+		margin:10px 10px 0px 0;
+		font-size:12px;
+	
+}
+
+input.ing[type="radio"] + label span {
+    display:inline-block;
+    vertical-align:middle;  
+    cursor:pointer;
+	color:#bfbfbf;
+	width:20px;height:20px;
+	text-align:center;
+	border:1px solid #d2d2d2;
+	border-radius:100em;
+	background:#fff;
+	margin: 0 10px 0 0;
+	box-sizing:border-box;
+}
+
+
+input.ing[type="radio"]:checked + label span {
+     border:5px solid #fea803;background:#fff;color:#fff;
+	
+}
+.filebox {float:left;width:70%;overflow:hidden;}
+.filebox label { display: inline-block; margin-bottom:3px;width:98%;box-sizing:border-box;font-size:15px;padding:10px;text-align:center;vertical-align:middle;color: #fea803; font-size: inherit; line-height: normal; vertical-align: middle; background-color: #fff; cursor: pointer; border: 1px solid #fea803;border-radius: .25em; }
+.filebox label i{font-size:20px;display:inline-block;margin-left:10px;vertical-align:middle;}
+.filebox input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; }
+
+
+.imgs_wrap {/*float:left;width: 70%;*/display:block;width:100%;overflow:hidden;margin-top:5px;}
+.imgs_wrap p{display:block;vertical-align:top;width:100%;box-sizing:border-box;padding:5px;border:1px solid #fea803;margin-top:5px;border-radius:5px;}
+.imgs_wrap img { display:block;margin:0 auto;max-width: 30%;border-radius:5px;box-sizing:border-box;}
+
+

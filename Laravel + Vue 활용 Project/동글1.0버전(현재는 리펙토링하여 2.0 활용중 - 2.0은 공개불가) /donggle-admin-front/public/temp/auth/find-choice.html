@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>동글 가맹점 관리자 페이지</title>
+
+  <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <!--
+    헤더 팝업은 여기에만 구현되어있음
+    .in-snb-hidden
+   -->
+    <!-- header -->
+    <header id="admin-header" style="display: none">
+      <!-- 상단고정 헤더 -->
+      <div id="header-hd">
+        <div class="show-pc">
+          <!-- 상단 side navigation -->
+          <section class="hd-snb-bar">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#" target="_blank">
+                <figure class="symbol-circle">
+                  <img src="/images/img/profile_admin.jpg" alt="profile image" />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img class="in-btn-img" src="/images/btn/btn_more.svg" alt="btn more" />
+              </a>
+            </div>
+
+            <div class="in-snb-group">
+              <a href="#" class="in-snb-list">
+                <span class="in-snb-name">알림</span>
+                <div class="in-snb-hidden"></div>
+              </a>
+              <a href="#" class="in-snb-list">
+                <span class="in-snb-name">스토어 문의</span>
+              </a>
+              <a href="#" class="in-snb-list">
+                <span class="in-snb-name">고객센터</span>
+                <div class="in-snb-hidden"></div>
+              </a>
+              <a href="#" class="in-snb-list">
+                <span class="in-snb-name">로그아웃</span>
+              </a>
+            </div>
+          </section>
+          <!-- END 상단 side navigation -->
+
+          <!-- 상단 타이틀바 -->
+          <section class="hd-title-bar">
+            <div class="in-page-name">
+              <h3 class="in-main"><span>아이디/비밀번호 찾기</span></h3>
+            </div>
+
+            <div class="in-page-btn-group"></div>
+          </section>
+          <!-- END 상단 타이틀바 -->
+        </div>
+
+        <div class="show-mobile">
+          <div class="hd-title-bar">
+            <div class="hd-title-bar-inner">
+              <div class="in-left-btn">
+                <label for="mobile_show_gnb" class="in-label-btn">
+                  <span class="hbg"></span>
+                  <span class="hbg"></span>
+                  <span class="hbg"></span>
+                </label>
+              </div>
+
+              <div class="in-page-name">
+                <h3 class="in-main">
+                  <span>아이디/비밀번호 찾기</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END 상단고정 헤더 -->
+
+      <input id="mobile_show_gnb" class="none" type="checkbox" />
+      <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+      <!-- 왼쪽 global navigation -->
+      <div id="header-gnb">
+        <section class="in-brand-con-box show-pc">
+          <h1 class="in-brand-logo">
+            <!-- TODO: 대시보드 메인으로 -->
+            <a href="../index.html">
+              <img src="/images/logo/logo_header_wh.svg" alt="image" class="in-logo" />
+            </a>
+          </h1>
+        </section>
+
+        <section class="in-mobile-gnb-hd show-mobile">
+          <div class="in-store-profile">
+            <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+            <a href="#">
+              <figure class="symbol-circle">
+                <img src="/images/img/profile_admin.jpg" alt="profile image" />
+              </figure>
+              <h2 class="in-name">스토어명</h2>
+              <img class="in-btn-img" src="/images/btn/btn_more.svg" alt="btn more" />
+            </a>
+          </div>
+
+          <label for="mobile_show_gnb" class="icon-close-btn">닫기</label>
+          <div class="inner-snb-group">
+            <a href="../index.html" class="icon-home-btn in-icon-btn"><i class="hide-text">홈</i></a>
+            <!-- 새 알림 있으면 클래스 목록에 active 추가 -->
+            <a href="#" class="icon-alarm-btn in-icon-btn"><i class="hide-text">알림</i></a>
+            <!-- 새 문의 있으면 클래스 목록에 active 추가 -->
+            <a href="../snb/inquiry-store-list.html" class="icon-contact-btn in-icon-btn"><i class="hide-text">문의</i></a>
+          </div>
+
+          <div class="in-bottom-btns clearfix">
+            <a href="#" class="link-cs-btn">고객센터</a>
+            <a href="#">로그아웃</a>
+          </div>
+        </section>
+
+        <div class="in-gnb-group">
+          <a href="setting-store.html" class="in-gnb-list">
+            <img class="in-gnb-icon mode-off" src="/images/icon/icon_01.svg" alt="gnb icon" />
+            <img class="in-gnb-icon mode-on" src="/images/icon/icon_01_on.svg" alt="gnb icon" />
+            <span class="in-gnb-name">스토어 설정</span>
+          </a>
+          <a href="check-order.html" class="in-gnb-list active">
+            <img class="in-gnb-icon mode-off" src="/images/icon/icon_02.svg" alt="gnb icon" />
+            <img class="in-gnb-icon mode-on" src="/images/icon/icon_02_on.svg" alt="gnb icon" />
+            <span class="in-gnb-name">주문상품 확인</span>
+          </a>
+          <a href="#" class="in-gnb-list">
+            <img class="in-gnb-icon mode-off" src="/images/icon/icon_03.svg" alt="gnb icon" />
+            <img class="in-gnb-icon mode-on" src="/images/icon/icon_03_on.svg" alt="gnb icon" />
+            <span class="in-gnb-name">주문내역</span>
+          </a>
+          <a href="#" class="in-gnb-list">
+            <img class="in-gnb-icon mode-off" src="/images/icon/icon_03.svg" alt="gnb icon" />
+            <img class="in-gnb-icon mode-on" src="/images/icon/icon_03_on.svg" alt="gnb icon" />
+            <span class="in-gnb-name">취소/환불 내역</span>
+          </a>
+          <a href="manage-product-list.html" class="in-gnb-list">
+            <img class="in-gnb-icon mode-off" src="/images/icon/icon_05.svg" alt="gnb icon" />
+            <img class="in-gnb-icon mode-on" src="/images/icon/icon_05_on.svg" alt="gnb icon" />
+            <span class="in-gnb-name">상품관리</span>
+          </a>
+          <a href="../gnb/inquiry-product-list.html" class="in-gnb-list">
+            <img class="in-gnb-icon mode-off" src="/images/icon/icon_06.svg" alt="gnb icon" />
+            <img class="in-gnb-icon mode-on" src="/images/icon/icon_06_on.svg" alt="gnb icon" />
+            <span class="in-gnb-name">상품문의</span>
+          </a>
+          <a href="#" class="in-gnb-list">
+            <img class="in-gnb-icon mode-off" src="/images/icon/icon_07.svg" alt="gnb icon" />
+            <img class="in-gnb-icon mode-on" src="/images/icon/icon_07_on.svg" alt="gnb icon" />
+            <span class="in-gnb-name">구매후기</span>
+          </a>
+          <a href="#" class="in-gnb-list">
+            <img class="in-gnb-icon mode-off" src="/images/icon/icon_08.svg" alt="gnb icon" />
+            <img class="in-gnb-icon mode-on" src="/images/icon/icon_08_on.svg" alt="gnb icon" />
+            <span class="in-gnb-name">매출현황</span>
+          </a>
+        </div>
+      </div>
+      <!-- END 왼쪽 global navigation -->
+    </header>
+    <!-- END header -->
+
+    <!-- contents -->
+    <div id="admin-container" class="auth-container">
+      <div class="wrapper">
+        <!-- page content -->
+        <div id="page-find-choice-wrap" class="page-auth-wrap">
+          <div class="panel-default">
+            <div class="form-wrapper">
+              <!-- header -->
+              <div class="show-pc auth-logo-wrap">
+                <h2 class="auth-hd-logo hide-text">donggle</h2>
+                <p class="_sub_title">동글 입점스토어 관리자</p>
+              </div>
+              <div class="dg-find-title-wrap">
+                <h2>
+                  아이디/비밀번호 찾기
+                  <a href="login.html" class="icon-back-btn">뒤로가기</a>
+                </h2>
+              </div>
+              <!-- header E -->
+
+              <!-- content -->
+              <section class="auth-layout clearfix">
+                <h2 class="hide-text">아이디 비밀번호 찾기</h2>
+                <div class="_find_choice_btn _find_id_btn">
+                  <h3>아이디 찾기</h3>
+                  <p>휴대폰 인증을 통하여 아이디를 찾습니다.</p>
+                  <a href="find-id.html" class="_next_page_btn">바로가기</a>
+                </div>
+                <div class="_find_choice_btn _find_pw_btn">
+                  <h3>비밀번호 찾기</h3>
+                  <p>휴대폰 인증을 통하여 비밀번호를 찾습니다.</p>
+                  <a href="find-pw.html" class="_next_page_btn">바로가기</a>
+                </div>
+              </section>
+              <!-- content E -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- page content E -->
+      <div id="admin-footer">
+        <span class="in-copyright">Copyrights © <i>Donggle</i></span>
+        <div class="in-company-info">
+          <span>회사명 : ㈜동글</span>
+          <span>대표이사 : OOO</span>
+          <span>사업자등록번호 : 220-88-93187</span>
+          <span>통신판매업신고 : 2016-서울강남-00359</span>
+          <span>호스팅사업자 : (주)동글</span>
+          <span class="in-address">주소 : (06223) 서울특별시 강남구 테헤란로 32길 26 청송빌딩</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- END contents -->
+  </div>
+</body>
+
+</html>

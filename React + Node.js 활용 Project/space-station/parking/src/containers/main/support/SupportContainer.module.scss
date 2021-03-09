@@ -1,0 +1,20 @@
+@import '../../../static/stylesheets/Root.scss';
+
+.container{
+    @include container(48px);
+    :global .MuiTab-textColorInherit.Mui-selected{
+        color: #222;
+        font-weight: bold;
+    }
+}
+
+
+.tabs {
+    background-color: #FFF;
+    width: 100%;
+    .tab {
+        min-width: 50px;
+        font-size: 16px;
+        font-weight: 400; // Reqular
+    }
+}

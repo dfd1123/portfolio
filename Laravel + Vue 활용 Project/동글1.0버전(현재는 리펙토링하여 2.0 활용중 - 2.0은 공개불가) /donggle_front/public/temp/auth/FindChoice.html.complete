@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/ui.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="dg-reg-hd">
+      <h1 class="dg-reg-hd-logo">gonggle</h1>
+      <div class="dg-reg-hd-step_wrap">
+        <h2>아이디/비밀번호 찾기</h2>
+        <a href="#">뒤로가기</a>
+      </div>
+    </header>
+    <!-- header E -->
+
+    <!-- content -->
+    <section id="find_choice" class="step_common">
+      <h2 class="dg_blind">아이디 비밀번호 찾기</h2>
+      <div class="dg-choice_box-btn dg-find_id-btn">
+        <h3>아이디 찾기</h3>
+        <p>휴대폰 인증을 통하여 아이디를 찾습니다.</p>
+      </div>
+      <div class="dg-choice_box-btn dg-find_pw-btn">
+        <h3>비밀번호 찾기</h3>
+        <p>휴대폰 인증을 통하여 비밀번호를 찾습니다.</p>
+      </div>
+    </section>
+    <!-- content E -->
+  </body>
+</html>
+
+<!-- find id or pw END -->

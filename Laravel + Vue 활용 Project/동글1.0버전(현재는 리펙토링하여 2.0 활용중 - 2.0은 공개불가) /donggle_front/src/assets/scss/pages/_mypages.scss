@@ -1,0 +1,1005 @@
+/*
+    PAGES - 마이페이지기본
+*/
+
+#dg-mypage-default-wrapper {
+  .l-mypage-contents .l-con-article {
+    margin-bottom: 80px;
+  }
+}
+.l-mypage-contents #_mini_quick_menu {
+  top: 40px;
+  right: -80px;
+}
+/*
+    PAGES - (주문배송)주문내역 조회
+*/
+
+#dg-mypage-order-history-wrapper {
+  padding-bottom: 200px;
+
+  .dg-filter-inquiry-group.mb-18 {
+    margin: 0px;
+  }
+
+  .l-grid-list.l-col-1 {
+    margin: 20px 0px;
+  }
+
+  //주문일시, 주문번호 레이아웃
+  .dg-about-odnum-label {
+    border-top: 1px solid #c8c8c8;
+    padding: 10px 20px;
+    background-color: $light_gray5;
+    .rounded-btn-outline {
+      height: 20px;
+      line-height: 20px;
+      font-weight: 200;
+    }
+  }
+
+  //주문내역 보더수정
+  .dg-clothes-history-card .in-content {
+    border-top: 0px none;
+  }
+
+  // 버튼 활성화
+  .date-range-wrap {
+    float: left;
+  }
+  ._btns_group {
+    .square-btn-outline {
+      min-width: 80px;
+    }
+  }
+  .date-change-input:checked + .square-btn-outline {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+/*
+    PAGES - (주문배송)주문내역 조회 > 주문내역 상세 조회
+*/
+#dg-mypage-history-detail-wrapper {
+  padding-bottom: 200px;
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  // 배송준비 기간 텍스트
+  ._list--ready ._txt {
+    display: inline-block;
+  }
+
+  // 배송준비 기간 물음표
+  ._question_icon {
+    @include inlineBlockStyle(middle);
+    @include position(relative, $t: 0, $l: 3px);
+
+    width: 18px;
+    height: 21px;
+  }
+
+  ._question_icon:hover ._paragraph_box {
+    opacity: 1;
+    top: 15px;
+  }
+
+  ._question_icon img {
+    cursor: pointer;
+  }
+
+  ._question_icon ._paragraph_box {
+    @include fontType01(#{$px-11}rem, $weight: 200, $color: #787878);
+    @include fontType02(-0.5px, 1.75);
+    @include position($t: 20px, $l: 7px);
+
+    z-index: 2;
+
+    width: 362px;
+    word-spacing: 0.1px;
+    background-color: white;
+    padding: 7px 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s;
+  }
+}
+
+/*
+    PAGES - (주문배송)취소/환불내역 조회
+*/
+
+#dg-mypage-cancel-history-wrapper {
+  padding-bottom: 200px;
+
+  .dg-filter-inquiry-group.mb-18 {
+    margin: 0px;
+  }
+
+  .l-grid-list.l-col-1 {
+    margin: 20px 0px;
+  }
+
+  //주문일시, 주문번호 레이아웃
+  .dg-about-odnum-label {
+    border-top: 1px solid #c8c8c8;
+    padding: 10px 20px;
+    background-color: $light_gray5;
+    .rounded-btn-outline {
+      height: 20px;
+      line-height: 20px;
+      font-weight: 200;
+    }
+  }
+
+  //주문내역 보더수정
+  .dg-clothes-history-card .in-content {
+    border-top: 0px none;
+  }
+
+  //버튼 활성화
+  .date-range-wrap {
+    float: left;
+  }
+  ._btns_group {
+    .square-btn-outline {
+      min-width: 80px;
+    }
+  }
+  .date-change-input:checked + .square-btn-outline {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+/*
+    PAGES - (나의 구매후기)구매후기 작성하기
+*/
+
+// 나의 구매후기 쪽 공통요소
+.dg-write-review-btn-wrap {
+  display: flex;
+  margin-bottom: 35px;
+  padding: 0 5px;
+  .square-btn-outline {
+    @include fontType01(#{$px-16}rem, $color: #c8c8c8);
+
+    width: 51%;
+    height: 49px;
+    line-height: 49px;
+    border: 1px solid $light_gray6;
+  }
+  /*
+  .square-btn-outline.active {
+    border: 2px solid #333;
+    color: #333;
+  }
+  */
+  .square-btn-outline.router-link-active {
+    border: 2px solid #333;
+    color: #333;
+  }
+}
+// 나의 구매후기 쪽 공통요소 END
+
+#dg-mypage-write-review-wrapper {
+  padding-bottom: 200px;
+
+  .l-grid-list {
+    min-height: 440px;
+  }
+}
+
+/*
+    PAGES - (나의 구매후기)나의 구매후기
+*/
+
+#dg-mypage-my-review-wrapper {
+  padding-bottom: 200px;
+
+  .l-grid-group {
+    padding: 0 5px;
+  }
+
+  .dg-review-history-card {
+    margin: 5px 0;
+    .in-content {
+      border: 1px solid $light_gray6;
+    }
+  }
+
+  .dg-my-review-btn-wrap {
+    @include position($t: 100px, $l: 0);
+    display: inline-block;
+    width: 90px;
+
+    .rounded-btn-outline {
+      @include fontType01(#{$px-11}rem);
+      @include makeAfter {
+        @include position($t: 0, $l: 0);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 0;
+        height: 100%;
+      }
+
+      position: relative;
+      background: transparent;
+      overflow: hidden;
+      height: 24px;
+      line-height: 24px;
+      margin: 3px 0;
+      transition: all 0.2s;
+    }
+
+    .rounded-btn-outline:hover {
+      color: white;
+      transition: all 0.2s;
+    }
+
+    .rounded-btn-outline:hover:after {
+      width: 100%;
+    }
+
+    .btn--edit {
+      @include makeAfter {
+        z-index: -1;
+        background: #28b2a9;
+      }
+
+      border-color: #28b2a9;
+      color: #28b2a9;
+
+      &:active:after {
+        background-color: darken(#28b2a9, 7%);
+      }
+    }
+
+    .btn--del {
+      @include makeAfter {
+        z-index: -1;
+        background: #ff5656;
+      }
+
+      border-color: #ff5656;
+      color: #ff5656;
+
+      &:active:after {
+        background-color: darken(#ff5656, 7%);
+      }
+    }
+  }
+}
+
+/*
+    PAGES - (관심리스트)찜한 상품
+*/
+
+#dg-mypage-like-list-wrapper {
+  padding-bottom: 200px;
+
+  .heart-badge-label svg {
+    overflow: hidden;
+  }
+}
+
+/*
+    PAGES - (관심리스트)최근 본 상품
+*/
+
+#dg-mypage-current-list-wrapper {
+  padding-bottom: 200px;
+
+  .heart-badge-label svg {
+    overflow: hidden;
+  }
+}
+
+/*
+    PAGES - (관심리스트)즐겨찾기 스토어
+*/
+
+#dg-mypage-store-list-wrapper {
+  padding-bottom: 100px;
+
+  .dg-favorite-store-card {
+    border: 1px solid $light_gray6;
+    border-radius: 8px;
+    text-align: center;
+    padding-bottom: 16px;
+    overflow: hidden;
+    user-select: none;
+    margin-bottom: 12px;
+
+    &:hover {
+      border-color: #fc4ead;
+      transition: all 0.2s;
+    }
+
+    width: 100%;
+    .in-thumbnail {
+      @include bgOption;
+
+      width: 100%;
+      height: 200px;
+      position: relative;
+    }
+    ._logo {
+      @include position($b: -30px, $l: 50%);
+
+      transform: translateX(-50%);
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid $light_gray6;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    // 스토어 정보 상단
+    .in-detail_top {
+      padding-top: 35px;
+      width: 100%;
+      padding-bottom: 10px;
+    }
+    ._brandname {
+      @include fontType01(#{$px-18}rem, $weight: bold);
+
+      padding: 10px 0 12px;
+      user-select: auto;
+    }
+    ._brandintro {
+      @include makeAfter {
+        width: 20px;
+        height: 1px;
+        background: #333;
+        display: inline-block;
+      }
+
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+    }
+    ._brandintro p {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+      @include ellipse(3, 18px);
+    }
+    // 스토어 정보 상단 E
+
+    // 스토어 정보 중앙 (즐겨찾기, 스토어문의)
+    .in-detail_middle {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .in-detail_middle li {
+      @include inlineBlockStyle(middle);
+
+      margin: 0 5px;
+    }
+    .in-detail_middle li img {
+      @include inlineBlockStyle(middle);
+
+      margin-right: 5px;
+    }
+    .in-detail_middle li span {
+      @include inlineBlockStyle(middle);
+      @include fontType01(#{$px-12}rem);
+    }
+    // 스토어 정보 중앙 (즐겨찾기, 스토어문의) E
+
+    // 스토어로 가기버튼
+    .rounded-btn-dark {
+      @include hoverActiveBg(#333);
+
+      background-color: #333;
+      color: white;
+      width: 166px;
+      height: 36px;
+    }
+    // 스토어로 가기버튼 E
+  }
+}
+
+/*
+    PAGES - (쿠폰)내 쿠폰함
+*/
+
+// 쿠폰 공통요소
+.dg-coupon-sorting-bar {
+  width: 100%;
+  height: 42px;
+  background-color: #fafafa;
+  border: 1px solid $light_gray6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px 0 5px;
+
+  .square-btn-dark {
+    @include hoverActiveBg(#676767);
+
+    min-width: auto;
+    padding: 0 5px;
+    background-color: #676767;
+  }
+}
+// 쿠폰 공통요소 END
+
+#dg-mypage-coupon-list-wrapper {
+  padding-bottom: 100px;
+
+  .dg-coupon-input-group {
+    width: 100%;
+    margin-bottom: 25px;
+
+    .in-subject {
+      @include fontType01(#{$px-16}rem, $weight: 400);
+
+      margin-bottom: 5px;
+    }
+    .in-input-group {
+      position: relative;
+      padding: 5px 0;
+      height: 50px;
+    }
+    ._input {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+      @include inputInit(
+        $pd: 0 10px,
+        $bd: 1px solid $light_gray6,
+        $pointer: auto,
+        $focus-bd: #333
+      );
+      @include inlineBlockStyle(middle);
+
+      width: 50%;
+      max-width: 290px;
+      height: 100%;
+      margin-right: 3px;
+    }
+    .square-btn-outline {
+      @include inlineBlockStyle(middle);
+      @include fontType01(#{$px-13}rem, $weight: 300);
+
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 13px;
+    }
+  }
+  .l-grid-list.l-col-2 {
+    padding: 0;
+  }
+
+  .dg-coupon-card {
+    margin-top: 15px;
+  }
+}
+
+/*
+    PAGES - (쿠폰)쿠폰받기
+*/
+
+#dg-mypage-coupon-zone-wrapper {
+  padding-bottom: 100px;
+
+  .l-grid-list.l-col-2 {
+    padding: 0;
+  }
+
+  .dg-coupon-card {
+    margin-top: 15px;
+  }
+}
+
+/*
+    PAGES - (쿠폰)쿠폰 사용내역
+*/
+
+#dg-mypage-coupon-history-wrapper {
+  padding-bottom: 100px;
+
+  .dg-filter-inquiry-group {
+    .in-bottom-group {
+      border-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .dg-coupon-history-table {
+    .in-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    .in-table thead th {
+      @include fontType01(#{$px-14}rem, #787878, 400);
+
+      background-color: #fafafa;
+      border-top: 1px solid #c8c8c8;
+      border-bottom: 1px solid #333333;
+      height: 40px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .in-table tbody td {
+      @include fontType01(#{$px-13}rem, #333, 400);
+
+      border-bottom: 1px solid $light_gray6;
+      height: 54px;
+      vertical-align: middle;
+    }
+    .in-table tbody td._td_light {
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  // 버튼 활성화
+  .date-range-wrap {
+    float: left;
+  }
+  ._btns_group {
+    .square-btn-outline {
+      min-width: 80px;
+    }
+  }
+  .date-change-input:checked + .square-btn-outline {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+/*
+    PAGES - (내 정보)내 정보 관리
+*/
+
+#dg-mypage-set-info-wrapper {
+  padding-bottom: 100px;
+
+  .dg-set-info-group {
+    position: relative;
+    text-align: right;
+
+    .in-information {
+      margin-bottom: 35px;
+    }
+
+    // 공통 - 버튼들
+    .square-btn-outline,
+    .square-btn-dark {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .square-btn-outline.w-80 {
+      min-width: 80px;
+      margin-right: 5px;
+    }
+
+    .in-btn-secession {
+      @include hoverActiveBg(#676767);
+
+      height: 28px;
+      line-height: 28px;
+      background: #676767;
+      margin-bottom: 40px;
+    }
+    // 공통 - 버튼들 E
+
+    // 공통 - 행
+    ._list {
+      position: relative;
+      padding-left: 135px;
+      border-bottom: 1px solid $light_gray6;
+
+      &--alarm ._label--top {
+        top: 30px;
+      }
+    }
+
+    ._list:last-child {
+      border-color: #333333;
+    }
+    // 공통 - 행 E
+
+    // 공통 - 좌측 라벨
+    ._label {
+      @include position($t: 50%, $l: 0);
+
+      transform: translateY(-50%);
+    }
+
+    ._label--top {
+      transform: translateY(0);
+      top: 38px;
+    }
+
+    ._mini_label {
+      @include fontType01(#{$px-12}rem);
+
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    // 공통 - 좌측 라벨 E
+
+    // 공통 - 우측 인풋그룹
+    ._input_group {
+      padding: 28px 0;
+      text-align: left;
+    }
+
+    ._input_group.type-pd-narrow {
+      padding: 20px 0;
+    }
+    // 공통 - 우측 인풋그룹 E
+
+    // 공통 - 우측 내용
+    ._readonly_text {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+      letter-spacing: 0;
+    }
+
+    ._input {
+      @include fontType01(#{$px-14}rem);
+      @include inputInit($pointer: auto, $focus-bd: $purple);
+
+      min-width: 330px;
+      height: 40px;
+      border-bottom: 1px solid black;
+    }
+
+    ._input--date {
+      @include bgimg(url($path-btn + "btn_calendar.svg"));
+      @include bgOption($size: 17px, $position: calc(100% - 10px) 50%);
+    }
+    // 공통 - 우측 내용 E
+
+    // 공통 - 우측 작은글씨들
+    ._in_desc {
+      margin-bottom: 25px;
+    }
+
+    ._pw_state {
+      @include fontType01(#{$px-12}rem);
+
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    ._pw_state.able {
+      @include makeBefore("비밀번호가 일치합니다.");
+      color: #3482e8;
+    }
+
+    ._pw_state.disable {
+      @include makeBefore("비밀번호가 일치하지 않습니다.");
+      color: #ff5656;
+    }
+
+    ._etc_ment {
+      @include fontType01(#{$px-13}rem, #787878, 300);
+
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    // 공통 - 우측 작은글씨들 E
+
+    // 공통 - 우측 체크박스들
+    ._check_option {
+      margin-right: 25px;
+    }
+
+    ._check_option label {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+      @include inlineBlockStyle(middle);
+    }
+
+    .dg-input-checkbox_label {
+      margin: 0;
+      top: 0;
+      margin-right: 4px;
+    }
+    // 공통 - 우측 체크박스들 E
+
+    // 공통 - 우측 셀렉트
+    ._slct {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+      @include bgOption(8px, calc(100% - 10px) 50%);
+      @include inputInit(
+        $bd: 1px solid $light_gray6,
+        $pd: 0 10px,
+        $focus-bd: #333
+      );
+
+      background-image: url($path-icon + "icon_slct_arrow.svg");
+      width: 330px;
+      height: 40px;
+    }
+    // 공통 - 우측 셀렉트 E
+
+    // dg-change-view 화면
+    .dg-change-view.type-pw .in-input-area:last-of-type {
+      margin-bottom: 2px;
+    }
+
+    .dg-change-view.type-phonenum .in-input-area:last-of-type {
+      margin-bottom: 17px;
+    }
+
+    .in-input-area {
+      position: relative;
+      display: block;
+      max-width: 330px;
+      margin-bottom: 10px;
+    }
+
+    .in-input-area.type-withbtn button {
+      @include position($t: 0, $r: 0);
+    }
+
+    ._num {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+
+      letter-spacing: 0;
+      margin-right: 10px;
+    }
+    // dg-change-view 화면 E
+  }
+
+  .dg-button-wrap--single {
+    max-width: 345px;
+  }
+
+  .vdp-datepicker {
+    width: fit-content;
+    .vdp-datepicker__calendar {
+      width: 100%;
+    }
+  }
+}
+
+/*
+    PAGES - (내 정보)내 정보 관리 > 동글 탈퇴
+*/
+
+#dg-mypage-secession-wrapper {
+  padding-bottom: 100px;
+  user-select: none;
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  .dg-secession-card {
+    text-align: center;
+
+    .in-subject {
+      @include fontType01(#{$px-13}rem);
+
+      display: inline-block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    .in-con-box {
+      padding: 10px 0;
+    }
+    .in-con-box--desc {
+      background-color: #fafafa;
+      border: 1px solid $light_gray6;
+      padding: 20px 0;
+    }
+    .in-con-box--desc p {
+      @include fontType01(#{$px-16}rem);
+
+      line-height: 1.5;
+    }
+    .in-con-box--check {
+      padding: 20px 0 85px;
+    }
+    .in-con-box--check .in-subject {
+      padding-bottom: 5px;
+    }
+    .dg-button-wrap--single {
+      max-width: 345px;
+    }
+  }
+}
+
+/*
+    PAGES - (내 정보)카드 및 환불계좌 관리
+*/
+
+#dg-mypage-set-account-wrapper {
+  padding-bottom: 100px;
+
+  .dg-account-set-card {
+    border: 1px solid $light_gray6;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    user-select: none;
+
+    &:hover {
+      border-color: #333;
+      transition: all 0.2s;
+    }
+
+    .in-name {
+      @include fontType01(#{$px-28}rem, $weight: 500);
+
+      padding: 12px 0 16px;
+    }
+    .in-caution {
+      @include fontType01(#{$px-15}rem, $weight: 300);
+    }
+    .in-state {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+
+      padding: 24px 0 31px;
+    }
+    .in-full-button {
+      @include position($b: 0, $l: 0);
+      @include buttonInit($bg: #333, $pointer: pointer);
+      @include fontType01(#{$px-16}rem);
+
+      width: 100%;
+      height: 45px;
+      color: white;
+      &:hover {
+        color: white;
+      }
+      &:active {
+        color: white;
+      }
+    }
+    ._nothing {
+      color: #c8c8c8;
+    }
+    ._thing {
+      color: #787878;
+    }
+    ._thing i {
+      font-style: normal;
+    }
+  }
+}
+
+/*
+    PAGES - (내 정보)회원 등급
+*/
+#dg-mypage-grade-wrapper {
+  // 현재 등급
+  .my_level {
+    margin: 35px 0px;
+    border: 1px solid $light_gray6;
+    background-color: $light_gray5;
+    .content-wrap {
+      width: fit-content;
+      height: 190px;
+      margin: 0px auto;
+    }
+    .img_box {
+      float: left;
+      width: 160px;
+      height: 160px;
+      margin: 15px 0px;
+      margin-right: 23px;
+      border: 1px solid $profill_bd;
+      padding: 22px;
+      border-radius: 50%;
+      background-color: $white;
+      ._img {
+        display: block;
+        width: 115px;
+        height: 115px;
+        @include bgOption(100%, center);
+      }
+    }
+    ._text {
+      float: left;
+      width: 180px;
+      margin: 66px 0px;
+      line-height: 1.5;
+      font-size: $f-20;
+    }
+    ._name:before {
+      font-weight: 600;
+      color: $blue;
+    }
+    &.level01 {
+      ._img {
+        background-image: url($path-img + "grade/level_01_guest.png");
+      }
+      ._name {
+        &:before {
+          content: "게스트 ";
+        }
+      }
+    }
+    &.level02 {
+      ._img {
+        background-image: url($path-img + "grade/level_02_buyer.png");
+      }
+      ._name {
+        &:before {
+          content: "정기구독회원 ";
+        }
+      }
+    }
+    &.level03 {
+      ._img {
+        background-image: url($path-img + "grade/level_03_special.png");
+      }
+      ._name {
+        &:before {
+          content: "1달이용회원 ";
+        }
+      }
+    }
+  }
+  //등급안내
+  .grade_info {
+    margin: 40px 0px;
+    > h3 {
+      margin: 20px 0px;
+      font-size: $f-18;
+      font-weight: 500;
+    }
+    .level_info {
+      float: left;
+      width: 33.33%;
+      height: 225px;
+      border: 1px solid $light_gray6;
+      padding: 23px 20px;
+      &:first-of-type {
+        border-right: 0px none;
+      }
+      &:last-of-type {
+        border-left: 0px none;
+      }
+    }
+    .img_box {
+      float: left;
+      width: 70px;
+      user-select: none;
+    }
+    .text_box {
+      float: left;
+      // 100% - img - margin
+      width: 167px;
+      margin-left: 12px;
+      > h4 {
+        margin-bottom: 10px;
+        font-size: $f-18;
+      }
+      > p {
+        line-height: 1.7;
+        font-size: $f-13;
+        color: $gray;
+      }
+      ._pink {
+        margin-top: 10px;
+        font-size: $f-15;
+        font-weight: 600;
+        color: $pink;
+      }
+    }
+  }
+}

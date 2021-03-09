@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.055" height="19.054" viewBox="0 0 19.055 19.054">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="19.054" height="19.054" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="btn_search_1" data-name="btn_search – 1" transform="translate(0)" clip-path="url(#clip-path)">
+    <g id="타원_29" data-name="타원 29" fill="none" stroke="#00b9ff" stroke-width="2">
+      <circle cx="7.326" cy="7.326" r="7.326" stroke="none"/>
+      <circle cx="7.326" cy="7.326" r="6.326" fill="none"/>
+    </g>
+    <line id="선_46" data-name="선 46" x2="6.279" y2="6.279" transform="translate(12.035 12.035)" fill="none" stroke="#00b9ff" stroke-width="2"/>
+  </g>
+</svg>

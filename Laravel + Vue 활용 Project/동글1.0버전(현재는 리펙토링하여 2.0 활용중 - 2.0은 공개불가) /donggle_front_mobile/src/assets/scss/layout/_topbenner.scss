@@ -1,0 +1,70 @@
+/*
+    LAYOUT - topbanner.scss
+*/
+
+// 이미지 추가하기
+.dg-main_popup {
+  height: 51px;
+  text-align: center;
+  overflow: hidden;
+  .dg-main_popup_img {
+    height: 100%;
+    background-image: url($path-img+"donggle_ad_banner/banner_ad.png");
+    @include bgOption(360%, center);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+  }
+  &_all {
+    position: relative;
+    @include center(1060px);
+    text-align: center;
+    font-size: 2em;
+    color: $white;
+    -webkit-text-shadow: none;
+    -webkit-text-stroke: 0;
+  }
+  &-close {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-indent: -9999px;
+    border: none;
+    outline: none;
+  }
+  &-close:before,
+  &-close:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    height: 1px;
+    width: 15px;
+    background-color: $white;
+    transform: rotate(45deg);
+  }
+  &-close:after {
+    transform: rotate(135deg);
+  }
+  &.active {
+  }
+}
+
+/* i pad pro */
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .dg-main_popup .dg-main_popup_img {
+    background-size: 150%;
+  }
+}
+/* i pad */
+@media all and (min-width: 415px) and (max-width: 768px) {
+  .dg-main_popup .dg-main_popup_img {
+    background-size: 250%;
+  }
+}

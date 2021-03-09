@@ -1,0 +1,745 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+/*
+    --------------------------------------------------------------------
+
+        INDEX 서브페이지
+
+            00. 공통
+            01. gnb02 - 01 실시간 TOP 100 페이지
+            02. gnb02 - 02 분위기선택 차트 페이지
+            03. gnb02 - 03 장르선택 차트 페이지
+            04. gnb02 - 04 프로듀서 리스트 페이지
+            05. 비트 정보 beat-info 페이지
+            06. 프로듀서 정보 producer-info 페이지
+            07. 태그검색결과 search-tag 페이지
+
+    --------------------------------------------------------------------
+*/
+
+// 00. 공통
+
+.sub-page-title {
+    width: 100%;
+    padding: 40px 0px;
+    position: relative;
+
+    &-name {
+        font-size: 35px;
+        font-weight: bold;
+        color: #333333;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    &-time {
+        color: rgba(51, 51, 51, 0.5);
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 400;
+
+        em,
+        b {
+            color: inherit;
+            font-weight: inherit;
+        }
+    }
+
+    &-category {
+        font-size: 14px;
+        position: absolute;
+        top: 14px;
+        color: #bc9bff;
+        font-weight: 400;
+    }
+
+    &-top100 {
+        background-color: $theme-bg-color;
+        text-transform: uppercase;
+        padding-bottom: 85px;
+        padding-top: 30px;
+        padding: 30px 30px 85px 30px;
+        margin-bottom: 65px;
+
+        .sub-page-title-name {
+            color: #fff;
+        }
+
+        .sub-page-title-time {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .sub-page-top100-category {
+        @include position($t: 120px, $l: 30px);
+        $height: 60px;
+
+        display: inline-block;
+        position: absolute;
+        height: $height;
+        width: 170px;
+        transition: all 0.2s;
+        background-color: #fff;
+        border-radius: $height/2;
+        box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        ._now_category {
+            height: $height;
+            width: 170px;
+            display: inline-block;
+            line-height: 60px;
+            padding: 0 25px;
+            font-size: 18px;
+            font-weight: 400;
+            position: relative;
+
+            &:after {
+                @include position($t: 0, $r: 25px);
+                content: url($G-path-img-icon+"icon-bt-arrow.svg");
+                opacity: 0.4;
+            }
+        }
+
+        ._category_list {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        ._category_list button {
+            border: 0;
+            background-color: transparent;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            padding: 9px 23px;
+
+            &:hover {
+                color: $theme-button01-color;
+            }
+        }
+
+        &:hover {
+            $height: 175px;
+
+            height: $height;
+            transition: all 0.2s;
+            border-radius: 60px/2;
+        }
+    }
+}
+
+// 01. gnb02 - 01 실시간 TOP 100
+
+.sub-page-gnb02-1 {
+    .mood-genre-choice {
+        margin-bottom: 55px;
+    }
+
+    .mood-genre-choice-list {
+        .mood-genre-choice-btn.active {
+            background-color: $theme-button01-color;
+            border-color: $theme-button01-color;
+
+            span {
+                color: #fff;
+                transition: all 0.2s;
+            }
+        }
+    }
+}
+
+// 02. gnb02 - 02 분위기선택 차트
+
+.sub-page-gnb02-2 {
+    .mood-genre-choice {
+        margin-bottom: 55px;
+    }
+
+    .mood-genre-choice-list {
+        .genre.active {
+            background-color: $theme-button01-color;
+            border-color: $theme-button01-color;
+
+            span {
+                color: #fff;
+                transition: all 0.2s;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+// 04. gnb02 - 04 프로듀서 리스트
+
+.sub-page-gnb02-4 {
+    .sub-page-title {
+        padding-top: 27px;
+    }
+
+    .tab-menu ul {
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .producer-card-list {
+        margin-top: 50px;
+
+        .producer-card {
+            margin-right: 2%;
+            margin-bottom: 55px;
+        }
+    }
+}
+
+// 05. beat-info
+
+.beat-profile {
+    display: flex;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 1.8em;
+    padding-top: 1.8em;
+
+    &-thumb {
+        @include backgroundBasic(cover);
+        position: relative;
+
+        width: 13em;
+        height: 13em;
+        border-radius: 2.7em;
+        display: inline-block;
+    }
+
+    &-detail {
+        padding: 3.3em 1.5em;
+
+        ._pd_name {
+            color: rgba(51, 51, 51, 0.5);
+        }
+
+        ._pd_summing_up li {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 0 2.2em 0 1.3em;
+            position: relative;
+            margin-right: 0.7em;
+        }
+
+        ._pd_summing_up li:nth-child(1) {
+            border-right: 1px solid #dcdcdc;
+        }
+
+        ._pd_summing_up li:after {
+            text-transform: uppercase;
+            font-size: 0.5em;
+            color: #8d8d8d;
+            font-weight: 100;
+        }
+
+        ._pd_summing_up ._play-li::before {
+            @include position($t: 2px, $l: 0);
+            content: url($G-path-img-icon+"icon-play-purple.svg");
+        }
+
+        ._pd_summing_up ._play-li::after {
+            @include position($t: 6px, $r: 14px);
+            content: "play";
+        }
+
+        ._pd_summing_up ._like-li::before {
+            @include position($t: 2px, $l: 0);
+            content: url($G-path-img-icon+"icon-heart-purple.svg");
+        }
+        ._pd_summing_up ._like-li::after {
+            @include position($t: 6px, $r: 14px);
+            content: "like";
+        }
+    }
+
+    dl {
+        margin-bottom: 1.8em;
+
+        dt {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.2em;
+        }
+    }
+}
+
+.beat-info-wrapper {
+    padding-top: 30px;
+    display: flex;
+
+    .beat-info-container {
+        &:nth-child(1) {
+            width: 60%;
+            margin-right: 40px;
+        }
+
+        &:nth-child(2) {
+            width: 40%;
+        }
+
+        h3 {
+            font-weight: 500;
+            color: #333;
+            font-size: 1.3em;
+            display: inline-block;
+            margin: 15px 0;
+        }
+    }
+
+    .ticket-con {
+        width: 100%;
+        height: 110px;
+        position: relative;
+        border-radius: 15px;
+        padding-left: 170px;
+        overflow: hidden;
+        box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+
+        ul {
+            display: flex;
+            width: 100%;
+        }
+
+        ul li {
+            width: 33%;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        ul li:nth-child(2) {
+            padding-left: 30px;
+        }
+
+        ul li._button_list {
+            text-align: right;
+        }
+
+        ul li a {
+            text-decoration: underline;
+            font-size: 14px;
+            color: #bdb4cc;
+        }
+
+        ul li span {
+            color: rgba(51, 51, 51, 0.5);
+        }
+
+        ul li em {
+            color: $theme-button01-color;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+
+    .ticket-con-label {
+        @include position($t: 0, $l: 0);
+        @include fontStyle(23px, 500);
+        width: 150px;
+        height: 100%;
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        justify-content: center;
+    }
+
+    .ticket-con-delux {
+        .btn {
+            @include buttonStyle(15px, 47px, $theme-button01-color, #fff, 15px);
+            @include backgroundBasic(18px);
+            background-position: 21% 50%;
+            padding-left: 50px;
+            padding-right: 20px;
+            background-image: url($G-path-img-btn+"not_sprite/ctrl_btn_mini_cart_off.svg");
+        }
+
+        border: 1px solid $theme-button01-color;
+
+        .ticket-con-label {
+            color: $theme-button01-color;
+        }
+    }
+
+    .ticket-con-nothing {
+        padding-left: 0;
+        justify-content: center;
+
+        b {
+            font-size: 20px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        span {
+            color: rgba(51, 51, 51, 0.8);
+        }
+
+        .btn {
+            @include buttonStyle(30px, 47px, $theme-button01-color, #fff, 15px);
+            padding: 0 20px;
+            margin-left: 30px;
+        }
+    }
+
+    .beat-info-detail-panel {
+        border-radius: 15px;
+        box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+
+        ul {
+            display: table;
+            width: 100%;
+            border-bottom: 1px solid #dcdcdc;
+        }
+
+        ul li {
+            display: table-cell;
+            padding: 25px 0;
+            vertical-align: middle;
+        }
+
+        ul li._subject {
+            width: 100px;
+            padding-left: 20px;
+            font-weight: 400;
+        }
+
+        ul li ._tag {
+            color: lighten($theme-button01-color, 20%);
+            font-weight: 400;
+            margin: 7px;
+            display: inline-block;
+
+            &:hover {
+                color: $theme-button01-color;
+            }
+        }
+
+        ul li .mood-genre-choice-btn {
+            margin: 7px;
+
+            &:hover {
+                background-color: #7e2aff;
+                border-color: #7e2aff;
+            }
+
+            &:hover span {
+                color: #fff;
+            }
+        }
+    }
+
+    .beat-info-comment-panel {
+        border-radius: 15px;
+        box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+        height: 600px;
+        position: relative;
+        padding-bottom: 115px;
+
+        ._scroll-area {
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
+        }
+
+        ul {
+            display: table;
+            width: 100%;
+            border-bottom: 1px solid #dcdcdc;
+        }
+
+        ul li {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        ul li._name {
+            @include fontStyle(15px, bold);
+            width: 15%;
+            padding-left: 20px;
+            padding-top: 20px;
+            vertical-align: top;
+        }
+
+        ul li._reple_txt {
+            @include fontStyle(15px, 400);
+            line-height: 1.6;
+            position: relative;
+            padding: 15px 20px 35px 0;
+        }
+
+        ul ._data {
+            @include position($b: 8px, $l: 0);
+            @include fontStyle(14px, 400);
+            color: rgba(51, 51, 51, 0.5);
+        }
+
+        ul ._option_btns {
+            @include position($b: 8px, $r: 28px);
+
+            ._edit_btn {
+                color: $blue-color;
+                margin-right: 15px;
+            }
+
+            ._del_btn {
+                color: $red-color;
+            }
+        }
+
+        .beat-info-comment-write {
+            @include position($b: 0, $l: 0);
+            padding: 25px;
+            display: flex;
+            width: 100%;
+        }
+
+        .beat-info-comment-write input {
+            border: 1px solid rgba(112, 112, 112, 0.5);
+            border-radius: 15px;
+            width: 100%;
+            height: 60px;
+            padding: 20px;
+        }
+
+        .beat-info-comment-write .btn {
+            @include buttonStyle(15px, 60px, #fff, $theme-button01-color, 15px);
+            height: 100%;
+            margin-left: 15px;
+            border: 1px solid $theme-button01-color;
+            width: 30%;
+        }
+    }
+}
+
+.this-pd-recommend-list {
+    margin-bottom: 30px;
+
+    .result-card {
+        width: 185px;
+        margin-right: 15px;
+
+        .tag-album-thumb {
+            height: 185px;
+        }
+    }
+
+    &._slick_panel .slick-arrow {
+        top: 30%;
+    }
+
+    &._slick_panel .slick-next {
+        right: -30px;
+    }
+
+    &._slick_panel .slick-prev {
+        left: -30px;
+    }
+}
+
+.btn_beat_info_down{
+    border-radius: 5px;
+    line-height: 30px;
+    height: 40px;
+    width:160px;
+    background-color: #fff;
+    color: #7e2aff;
+    font-size: 14px;
+    border: 1px solid #7e2aff;
+    margin-bottom: 5px;
+    padding: 0 20px 0 40px;
+    background-image: url($G-path-img-btn+"btn-down-purple.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    outline: none;
+    margin-top: 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #7e2aff;
+        color: #fff;
+        transition: all 0.2s;
+        background-image: url($G-path-img-btn+"btn-down-white.svg");
+    }
+}
+
+.btn_beat_info_play {
+    @include backgroundBasic(18px);
+    background-position: 55% 50%;
+    background-image: url($G-path-img-btn+"not_sprite/ctrl_btn_mini_play-wh.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    background-color: rgba(0,0,0,0.6);
+    outline: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    z-index: 5;
+    &:hover{
+        transition: all 0.2s;
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+.btn_beat_info_prdcer{
+    cursor: pointer;
+    &:hover{
+        color: rgba(0,0,0,0.7);
+    }
+}
+.btn_info_share{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url($G-path-img-btn+"not_sprite/ctrl_btn_mini_share_off.svg");
+    background-position: center;
+    outline: none;
+    position: relative;
+    top: 3px;
+    padding-left: 40px;
+    background-size: 47%;
+
+    &:hover{
+        background-image: url($G-path-img-btn+"not_sprite/ctrl_btn_mini_share_on.svg");
+    }
+}
+
+// 06. producer-info
+
+.producer-profile {
+    display: flex;
+    font-size: 18px;
+    padding-bottom: 1.8em;
+    padding-top: 1.8em;
+
+    &-thumb {
+        @include backgroundBasic(cover);
+
+        width: 13em;
+        height: 13em;
+        border-radius: 2.7em;
+        display: inline-block;
+    }
+
+    &-detail {
+        padding: 1.5em 1.5em;
+
+        .flw-btn {
+            @include buttonStyle(30px, 40px, #e4e4e4, #fff);
+            text-transform: uppercase;
+            padding: 0 1.8em;
+            margin: 1.3em 0;
+        }
+
+        .flw-btn.active {
+            @include buttonStyle(30px, 40px, $theme-button01-color, #fff);
+            padding: 0 1.5em 0 3em;
+            background-image: url($G-path-img-icon+"icon-flw-check.svg");
+            background-position: 19px 50%;
+            background-repeat: no-repeat;
+        }
+
+        ._pd_mood_detail {
+            color: rgba(51, 51, 51, 0.5);
+        }
+
+        ._pd_summing_up li {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 0 2.2em 0 0;
+            position: relative;
+            margin-right: 0.7em;
+            border-right: 1px solid #dcdcdc;
+        }
+
+        ._pd_summing_up li:last-child {
+            border-right: 0;
+        }
+
+        ._pd_summing_up li._flw-li {
+            padding: 0 3.3em 0 0;
+        }
+
+        ._pd_summing_up li:after {
+            text-transform: uppercase;
+            font-size: 0.5em;
+            color: #8d8d8d;
+            font-weight: 100;
+        }
+
+        ._pd_summing_up ._like-li::after {
+            @include position($t: 6px, $r: 14px);
+            content: "like";
+        }
+
+        ._pd_summing_up ._flw-li::after {
+            @include position($t: 6px, $r: 14px);
+            content: "follow";
+        }
+
+        ._pd_summing_up ._buy-li::after {
+            @include position($t: 6px, $r: 14px);
+            content: "buy";
+        }
+    }
+
+    dl {
+        dt {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.2em;
+        }
+
+        dd {
+            font-size: 0.85em;
+            line-height: 1.6;
+        }
+
+        dd b {
+            display: inline-block;
+            width: 60px;
+            color: #8d8d8d;
+        }
+
+        dd em {
+            margin-right: 15px;
+            color: rgba(51, 51, 51, 0.8);
+            font-weight: 400;
+        }
+    }
+}
+
+// 07. search-tag
+
+.search-tag-result-list {
+    .result-card {
+        margin-right: 2%;
+        margin-bottom: 55px;
+    }
+}

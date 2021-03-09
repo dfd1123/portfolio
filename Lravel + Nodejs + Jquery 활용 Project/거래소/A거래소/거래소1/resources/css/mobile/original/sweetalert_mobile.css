@@ -1,0 +1,61 @@
+/* ----------start sweet alert 모바일버전으로 스타일변경---------- */
+
+.swal-icon:first-child{
+    margin: 10px auto;
+}
+
+.swal-icon{
+    transform: scale(0.7);
+}
+
+.swal-title{
+    font-size: 1.15rem;
+}
+
+.swal-text {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.swal-footer{
+    padding: 0;
+    border-top: 1px solid #ececec;
+    display: flex;
+}
+
+.swal-button-container{
+    margin: 0;
+    flex: 1;
+}
+
+.swal-button{
+    width: 100%;
+    border-radius: 0;
+    background-color: #fff !important;
+    color: #48413b;
+    font-weight: bold;
+    flex: 1;
+    padding: 13px 44px;
+    font-size: 1.1rem;
+}
+
+.swal-button-container:nth-child(2){
+    border-left: 1px solid #ececec;
+}
+
+.swal-button:hover{
+    background-color: #f7f7f7 !important;
+}
+
+.swal-button:active{
+    background-color: #f7f7f7 !important;
+}
+
+.swal-modal{
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+/* ----------end sweet alert 모바일버전으로 스타일변경---------- */

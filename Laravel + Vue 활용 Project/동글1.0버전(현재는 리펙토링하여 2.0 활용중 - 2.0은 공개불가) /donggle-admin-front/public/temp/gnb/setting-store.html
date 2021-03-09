@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- header -->
+      <header id="admin-header">
+        <!-- 상단고정 헤더 -->
+        <div id="header-hd">
+          <div class="show-pc">
+            <!-- 상단 side navigation -->
+            <section class="hd-snb-bar">
+              <div class="in-store-profile">
+                <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+                <a href="#" target="_blank">
+                  <figure class="symbol-circle">
+                    <img
+                      src="/images/img/profile_admin.jpg"
+                      alt="profile image"
+                    />
+                  </figure>
+                  <h2 class="in-name">스토어명</h2>
+                  <img
+                    class="in-btn-img"
+                    src="/images/btn/btn_more.svg"
+                    alt="btn more"
+                  />
+                </a>
+              </div>
+
+              <div class="in-snb-group">
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">알림</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="../snb/inquiry-store-list.html" class="in-snb-list">
+                  <span class="in-snb-name">스토어 문의</span>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">고객센터</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">로그아웃</span>
+                </a>
+              </div>
+            </section>
+            <!-- END 상단 side navigation -->
+
+            <!-- 상단 타이틀바 -->
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <section class="hd-title-bar">
+              <div class="in-page-name">
+                <h3 class="in-main">
+                  <span>스토어 설정</span>
+                  <!-- 추가된 부분 -->
+                  <span class="in-stat">승인 대기중입니다.</span>
+                  <span class="in-stat"
+                    >승인이 거절되었습니다
+                    <small class="_reason">: 부적절한 스토어명</small></span
+                  >
+                  <!-- 추가된 부분 E -->
+                </h3>
+              </div>
+
+              <div class="in-page-btn-group">
+                <input
+                  type="button"
+                  class="rounded-square-btn btn-theme"
+                  value="저장"
+                />
+              </div>
+            </section>
+            <!-- FIXME: END -->
+            <!-- END 상단 타이틀바 -->
+          </div>
+
+          <div class="show-mobile">
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <div class="hd-title-bar">
+              <div class="hd-title-bar-inner">
+                <div class="in-left-btn">
+                  <label for="mobile_show_gnb" class="in-label-btn">
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                  </label>
+                </div>
+
+                <div class="in-page-name">
+                  <h3 class="in-main">
+                    <span>스토어 설정</span>
+                    <!-- 추가된 부분 -->
+                    <!-- <span class="in-stat">승인대기</span> -->
+                    <span class="in-stat"
+                      >승인거절<small class="_reason"
+                        >: 부적절한 스토어명</small
+                      ></span
+                    >
+                    <!-- 추가된 부분 E -->
+                  </h3>
+                </div>
+
+                <div class="in-page-btn-group">
+                  <input type="button" class="mobile-btn-theme" value="저장" />
+                </div>
+              </div>
+            </div>
+            <!-- FIXME: END -->
+          </div>
+        </div>
+        <!-- END 상단고정 헤더 -->
+
+        <input id="mobile_show_gnb" class="none" type="checkbox" />
+        <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+        <!-- 왼쪽 global navigation -->
+        <div id="header-gnb">
+          <section class="in-brand-con-box show-pc">
+            <h1 class="in-brand-logo">
+              <!-- TODO: 대시보드 메인으로 -->
+              <a href="../index.html">
+                <img
+                  src="/images/logo/logo_header_wh.svg"
+                  alt="image"
+                  class="in-logo"
+                />
+              </a>
+            </h1>
+          </section>
+
+          <section class="in-mobile-gnb-hd show-mobile">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#">
+                <figure class="symbol-circle">
+                  <img
+                    src="/images/img/profile_admin.jpg"
+                    alt="profile image"
+                  />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img
+                  class="in-btn-img"
+                  src="/images/btn/btn_more.svg"
+                  alt="btn more"
+                />
+              </a>
+            </div>
+
+            <label for="mobile_show_gnb" class="icon-close-btn">닫기</label>
+            <div class="inner-snb-group">
+              <a href="../index.html" class="icon-home-btn in-icon-btn"
+                ><i class="hide-text">홈</i></a
+              >
+              <!-- 새 알림 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="../snb/alarm-view.html"
+                class="icon-alarm-btn in-icon-btn"
+                ><i class="hide-text">알림</i></a
+              >
+              <!-- 새 문의 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="../snb/inquiry-store-list.html"
+                class="icon-contact-btn in-icon-btn"
+                ><i class="hide-text">문의</i></a
+              >
+            </div>
+            <div class="in-bottom-btns clearfix">
+              <a href="../snb/cs-notice-main.html" class="link-cs-btn"
+                >고객센터</a
+              >
+              <a href="#">로그아웃</a>
+            </div>
+          </section>
+
+          <div class="in-gnb-group">
+            <a href="setting-store.html" class="in-gnb-list active">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_01.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_01_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">스토어 설정</span>
+            </a>
+            <a href="check-order.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_02.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_02_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문상품 확인</span>
+            </a>
+            <a href="history-order-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문내역</span>
+            </a>
+            <a href="history-cancel-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">취소/환불 내역</span>
+            </a>
+            <a href="manage-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_05.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_05_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품관리</span>
+            </a>
+            <a href="inquiry-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_06.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_06_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품문의</span>
+            </a>
+            <a href="manage-review.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_07.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_07_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">구매후기</span>
+            </a>
+            <a href="sales-status.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_08.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_08_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">매출현황</span>
+            </a>
+          </div>
+        </div>
+        <!-- END 왼쪽 global navigation -->
+      </header>
+      <!-- END header -->
+
+      <!-- contents -->
+      <div id="admin-container">
+        <div class="wrapper">
+          <div id="page-setting-store-wrap">
+            <div class="grid-col first">
+              <div class="panel-default-container">
+                <div class="panel-default-title">
+                  <h4 class="in-mainname">사업자 정보</h4>
+                  <span class="in-subtxt"
+                    >※ 허위 정보를 등록할 시 강력히 처벌합니다.</span
+                  >
+                </div>
+                <div class="panel-default">
+                  <div class="form-wrapper">
+                    <fieldset class="form-container type-01">
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit">업체명</label>
+                        <div class="form-align-input">
+                          <input
+                            type="text"
+                            class="form-input-txt"
+                            placeholder="동글스토어"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit"
+                          >입점한 상가/호수</label
+                        >
+                        <div class="form-align-input">
+                          <input type="text" class="form-input-txt" />
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit"
+                          >동글 브랜드네임</label
+                        >
+                        <div class="form-align-input">
+                          <input type="text" class="form-input-txt" />
+                          <span class="form-caution"
+                            >스토어에서는 업체가명으로 노출 됩니다.</span
+                          >
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit"
+                          >사업자 등록번호</label
+                        >
+                        <div class="form-align-input type-certi">
+                          <div class="in-group">
+                            <input
+                              type="text"
+                              class="form-input-txt"
+                              placeholder="동글스토어"
+                            />
+                            <input
+                              type="button"
+                              class="rounded-square-btn btn-outline-navy"
+                              value="인증하기"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit">대표자명</label>
+                        <div class="form-align-input">
+                          <input type="text" class="form-input-txt" />
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit"
+                          >대표 전화번호</label
+                        >
+                        <div class="form-align-input">
+                          <input type="text" class="form-input-txt" />
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit"
+                          >매장 카카오톡 아이디</label
+                        >
+                        <div class="form-align-input">
+                          <input type="text" class="form-input-txt" />
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-col second">
+              <div class="panel-default-container">
+                <div class="panel-default-title">
+                  <h4 class="in-mainname">스토어 정보</h4>
+                </div>
+                <div class="panel-default">
+                  <div class="form-wrapper">
+                    <fieldset class="form-container type-01">
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit"
+                          >프로필 이미지</label
+                        >
+                        <div class="form-align-input type-img">
+                          <input id="ex-file" type="file" class="none" />
+                          <label
+                            for="ex-file"
+                            class="rounded-square-btn btn-outline-navy"
+                            >이미지 업로드</label
+                          >
+                          <span class="form-caution"
+                            >프로필 이미지는 80*80px 사이즈의 JPG, PNG 파일을
+                            권장합니다.</span
+                          >
+
+                          <div class="form-upload-img-area type-circle">
+                            <!-- <img src="/images/img/product.jpg" alt="upload image"> -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit"
+                          >대표 이미지</label
+                        >
+                        <div class="form-align-input type-img">
+                          <input id="ex-file" type="file" class="none" />
+                          <label
+                            for="ex-file"
+                            class="rounded-square-btn btn-outline-navy"
+                            >이미지 업로드</label
+                          >
+                          <span class="form-caution"
+                            >대표 이미지는 842*422px 사이즈의 JPG, PNG 파일을
+                            권장합니다.</span
+                          >
+
+                          <div class="form-upload-img-area type-square">
+                            <!-- <img src="/images/img/product.jpg" alt="upload image"> -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit"
+                          >매장 인사글</label
+                        >
+                        <div class="form-align-input">
+                          <textarea
+                            name="#"
+                            id="#"
+                            cols="30"
+                            rows="10"
+                            class="form-textarea"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-col third">
+              <div class="panel-default-container">
+                <div class="panel-default-title">
+                  <h4 class="in-mainname">정산 받을 계좌 정보</h4>
+                </div>
+                <div class="panel-default">
+                  <div class="form-wrapper">
+                    <fieldset class="form-container type-01">
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit">은행명</label>
+                        <div class="form-align-input">
+                          <select class="form-select">
+                            <option value="0">은행 선택</option>
+                            <option value="1">가은행</option>
+                            <option value="2">나은행</option>
+                            <option value="3">다은행</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit">계좌번호</label>
+                        <div class="form-align-input">
+                          <input type="number" class="form-input-txt" />
+                        </div>
+                      </div>
+
+                      <div class="form-align">
+                        <label for="#" class="form-align-tit">예금주</label>
+                        <div class="form-align-input type-certi">
+                          <div class="in-group">
+                            <input type="text" class="form-input-txt" />
+                            <input
+                              type="button"
+                              class="rounded-square-btn btn-outline-navy"
+                              value="인증하기"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="admin-footer">
+          <span class="in-copyright">Copyrights © <i>Donggle</i></span>
+          <div class="in-company-info">
+            <span>회사명 : ㈜동글</span>
+            <span>대표이사 : OOO</span>
+            <span>사업자등록번호 : 220-88-93187</span>
+            <span>통신판매업신고 : 2016-서울강남-00359</span>
+            <span>호스팅사업자 : (주)동글</span>
+            <span class="in-address"
+              >주소 : (06223) 서울특별시 강남구 테헤란로 32길 26 청송빌딩</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- END contents -->
+    </div>
+  </body>
+</html>

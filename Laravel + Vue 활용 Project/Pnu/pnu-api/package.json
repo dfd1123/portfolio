@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "scripts": {
+        "deploy": "cross-env scripts/post-merge.sh"
+    },
+    "gitHooks": {
+        "post-merge": "chmod -R 755 ./scripts && npm run deploy"
+    },
+    "devDependencies": {
+        "cross-env": "^6.0.3",
+        "yorkie": "^2.0.0"
+    }
+}

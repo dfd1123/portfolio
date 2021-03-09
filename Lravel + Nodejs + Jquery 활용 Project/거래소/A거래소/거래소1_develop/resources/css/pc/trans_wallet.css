@@ -1,0 +1,1587 @@
+/*------------------------TRANS WALLET 입출금 페이지 스타일 START------------------------*/
+
+/*--common*/
+.trans_wrap .trans_inner_2 {
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    padding: 15px 0;
+}
+
+.trans_inner_2 .trans_con {
+    overflow: hidden;
+}
+
+.trans_inner_2 .scl_wrap {
+    height: 750px;
+    overflow-y: scroll;
+}
+
+.trans_inner_2 .trans_right .btn_style {
+    border: 0;
+}
+
+.trans_inner_2 .trans_right .btn_style:hover {
+    border: 0;
+}
+
+/*--//common*/
+
+/*------------① trans_inner_2 .trans_left start------------*/
+
+.trans_inner_2 .trans_left {
+    background: #fff;
+    width: 49.5%;
+    float: left;
+}
+
+/*--①-1 .ta_total_asset style*/
+.trans_inner_2 .trans_left .ta_total_asset {
+    position: relative;
+    padding: 20.5px 20px;
+    border: solid 1px #333333;
+    background-color: #ffffff;
+}
+
+.trans_inner_2 .trans_left .ta_total_asset label {
+    position: absolute;
+    top: 29px;
+    left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+}
+
+.trans_inner_2 .trans_left .ta_total_asset span {
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: #474846;
+}
+
+.trans_inner_2 .trans_left .ta_total_asset span #holding_total_balance {
+    font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: 0.52px;
+    text-align: right;
+    color: #333333;
+}
+
+.trans_inner_2 .trans_left .ta_total_asset span .currency {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: right;
+    color: #969696;
+    vertical-align: super;
+}
+/*--//①-1 .trans_left_bottom style*/
+
+.trans_inner_2 .trans_left .trans_left_bottom {
+    margin-top: 15px;
+    border: 1px solid #dcdcdc;
+}
+
+/* --//①-1 .coin_category style */
+
+.trans_inner_2 .trans_left .trans_left_bottom .coin_category {
+    position: relative;
+}
+
+.trans_inner_2 .trans_left .trans_left_bottom .coin_category ul {
+    overflow: hidden;
+}
+
+.trans_inner_2 .trans_left .trans_left_bottom .coin_category ul li {
+    float: left;
+    width: 33.3%;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #333333;
+    padding: 23px 0;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.trans_inner_2 .trans_left .trans_left_bottom .coin_category ul li.active {
+    background: #fff;
+    font-weight: bold;
+}
+
+.underline {
+    position: absolute;
+    left: 92px;
+    bottom: 0;
+    width: 17px;
+    height: 2px;
+    background: #00b9ff;
+    transition: all 0.3s ease-in-out;
+}
+.coin_category li:nth-child(1).active ~ .underline {
+    left: 63px;
+    width: 80px;
+}
+.coin_category li:nth-child(2).active ~ .underline {
+    left: 269px;
+    width: 80px;
+}
+.coin_category li:nth-child(3).active ~ .underline {
+    left: 474px;
+    width: 80px;
+}
+/*
+.coin_category li:nth-child(1):hover ~ .underline {
+    left: 0;
+}
+.coin_category li:nth-child(2):hover ~ .underline {
+    left: 20%;
+}
+.coin_category li:nth-child(3):hover ~ .underline {
+    left: 40%;
+}
+*/
+
+/*--①-2 .ta_sch_bar style*/
+.trans_inner_2 .ta_sch_bar {
+    height: 45px;
+    width: 100%;
+    position: relative;
+}
+
+.trans_inner_2 .coin_sch_bar {
+    width: 100%;
+    height: 100%;
+}
+
+.trans_inner_2 .coin_sch_bar > input {
+    border: 1px solid transparent;
+    height: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    color: #333;
+    padding: 0 12px;
+    padding-right: 120px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    background-image: url(/images/icon/btn_search_blue.svg);
+    background-repeat: no-repeat;
+    background-position: 79% 60%;
+    cursor: pointer;
+}
+
+.trans_inner_2 .coin_sch_bar > input:focus {
+    border: 1px solid #00b9ff;
+}
+
+.trans_inner_2 .coin_sch_bar > input::placeholder {
+    color: #dddddd;
+}
+
+.trans_inner_2 .coin_sch_checkbox {
+    width: 115px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    font-size: 11px;
+    font-weight: bold;
+    color: #464a58;
+    padding: 11px 0;
+    border-left: 1px solid #dcdcdc;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.trans_inner_2 .coin_sch_checkbox > label {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333;
+}
+
+.trans_inner_2 .coin_sch_checkbo label,
+.trans_inner_2 .coin_sch_checkbo input {
+    cursor: pointer;
+}
+
+.trans_inner_2 .coin_sch_checkbox > .grayCheckbox {
+    width: 10px;
+    height: 10px;
+}
+
+.trans_inner_2 .coin_sch_checkbox > .grayCheckbox::after,
+.trans_inner_2 .coin_sch_checkbox > .grayCheckbox:checked::after {
+    width: 15px;
+    height: 15px;
+}
+/*--//①-2 .ta_sch_bar style*/
+
+/*--①-3 coin_chart_tbl TRANS WALLET~MY ASSET~MAIN common style*/
+.ta_coin_list_wrap .table_label thead > tr > th:nth-child(4) {
+    width: 110px;
+}
+
+.ta_coin_list_wrap .coin_chart_tbl tbody > tr > td:nth-child(2n) {
+    text-align: center;
+}
+
+.ta_coin_list_wrap .coin_chart_tbl tbody > tr > td:nth-child(3) {
+    text-align: right;
+    padding-right: 15px;
+    border-right: 1px solid #f0f0f0;
+}
+
+.ta_coin_list_wrap .coin_chart_tbl tbody > tr > td:nth-child(4) {
+    width: 110px;
+}
+
+.ta_coin_list_wrap .coin_chart_tbl tbody > tr > td:nth-child(2n) span {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+}
+
+.ta_coin_list_wrap
+    .coin_chart_tbl
+    tbody
+    > tr
+    > td:nth-child(3)
+    p:nth-child(1)
+    span {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+}
+
+.ta_coin_list_wrap
+    .coin_chart_tbl
+    tbody
+    > tr
+    > td:nth-child(3)
+    p:nth-child(1)
+    span.currency {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #969696;
+    padding-left: 3px;
+}
+
+.ta_coin_list_wrap
+    .coin_chart_tbl
+    tbody
+    > tr
+    > td:nth-child(3)
+    p:nth-child(2)
+    span {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #969696;
+}
+
+.ta_coin_list_wrap
+    .coin_chart_tbl
+    tbody
+    > tr
+    > td:nth-child(3)
+    p:nth-child(2)
+    span.currency {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #969696;
+    padding-left: 3px;
+}
+
+/*--//①-3 coin_chart_tbl TRANS WALLET~MY ASSET~MAIN common style*/
+
+/*--①-4 left_box coin_chart_tbl common style*/
+
+.trans_inner_2 .ta_coin_list_wrap .table_label thead > tr > th {
+    background: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    color: #969696;
+    height: 39px;
+    border-bottom: 1px solid #393939;
+}
+
+.trans_inner_2 .ta_coin_list_wrap .table_label thead > tr > th:nth-child(1) {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.trans_inner_2 .ta_coin_list_wrap .table_label thead > tr > th:nth-child(2) {
+    text-align: left;
+}
+
+.trans_inner_2 .ta_coin_list_wrap .table_label thead > tr > th:nth-child(3),
+.trans_inner_2 .ta_coin_list_wrap .table_label thead > tr > th:nth-child(4) {
+    text-align: center;
+}
+
+.coin_chart_tbl tr {
+    border-bottom: 1px solid #dcdcdc;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+}
+
+.coin_chart_tbl tr:hover {
+    background-color: rgba(0, 185, 255, 0.05);
+    border-left: 4px solid #333;
+}
+
+.coin_chart_tbl tr td {
+    height: 70px;
+}
+
+.coin_chart_tbl tr td.coin_td {
+    position: relative;
+    padding-left: 53px;
+}
+
+.coin_chart_tbl tr td.coin_td > img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+}
+
+.coin_chart_tbl tr td.coin_td span {
+    display: block;
+}
+
+.coin_chart_tbl tr td.coin_td span.coin_name {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+}
+
+.coin_chart_tbl tr td.coin_td span.coin_name > small {
+    font-size: 10px;
+    color: #bbb;
+    display: block;
+}
+
+.coin_chart_tbl tr td.coin_td span.coin_name_eng {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.coin_chart_tbl tr td.coin_td span.coin_name_eng > small {
+    font-size: 10px;
+    color: #bbb;
+    display: block;
+}
+
+.coin_chart_tbl .status_btn.cvt_btn {
+    border-radius: 30px;
+    color: #464a58;
+    border: 1px solid #464a58;
+    background: transparent;
+}
+
+.coin_chart_tbl .status_btn.cvt_btn:hover {
+    background: #fff;
+    color: #00b9ff;
+    border-color: #00b9ff;
+}
+
+.coin_chart_tbl .status_btn.cvt_btn:active {
+    background: #fff;
+    color: #00b9ff;
+    border-color: #00b9ff;
+}
+
+.coin_chart_tbl tr td button.status_btn {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: right;
+    color: #333333;
+    border: none;
+    background: transparent;
+}
+
+/*--//①-4 left_box coin_chart_tbl common style*/
+
+/*------------① .trans_inner_2 .trans_left end------------*/
+
+/*------------② .trans_inner_2 .trans_right start------------*/
+
+/*--common*/
+.trans_inner_2 .trans_right {
+    background: #fff;
+    width: 49.5%;
+    position: relative;
+    float: right;
+}
+
+.trans_inner_2 .trans_right .trans_right_hd {
+    border: 1px solid #dcdcdc;
+}
+
+.trans_inner_2 .trans_right .p_horizon {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.trans_inner_2 .trans_right .p_horizon .tit_small {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+    float: left;
+    vertical-align: middle;
+}
+
+.trans_inner_2 .trans_right .p_horizon.etc_style .tit_small {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+}
+
+.trans_inner_2 .trans_right .p_horizon .data_info {
+    width: auto;
+    float: right;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+    vertical-align: middle;
+}
+
+.trans_inner_2 .trans_right .p_horizon .data_info .currency {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #00b9ff;
+}
+
+.trans_inner_2 .trans_right .p_horizon.etc_style .data_info {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+}
+
+.trans_inner_2 .trans_right .p_horizon.etc_style .data_info .currency {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #969696;
+}
+/*--//common*/
+
+/*--②-1 .ta_right_tit style*/
+.trans_inner_2 .trans_right .ta_right_tit {
+    position: relative;
+    padding: 8px 15px;
+    padding-top: 29px;
+    height: 94.5px;
+}
+
+.trans_inner_2 .trans_right .ta_right_tit label {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: #333333;
+}
+
+.trans_inner_2 .trans_right .ta_right_tit label > small {
+    font-size: 13px;
+    color: #bbb;
+    margin-left: 3px;
+}
+
+.trans_inner_2 .trans_right .ta_right_tit span {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #969696;
+}
+
+.trans_inner_2 .trans_right .ta_right_tit i {
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    color: #00b9ff;
+    position: absolute;
+    cursor: pointer;
+    top: 33px;
+    right: 13px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.trans_inner_2 .trans_right .ta_right_tit i.active {
+    animation: refreshRotate 1s cubic-bezier(0.08, 0.84, 0.99, 0.37) infinite;
+}
+
+.trans_inner_2 .trans_right .ta_right_tit i:hover {
+    background: #f5f5f5;
+}
+
+.trans_inner_2 .trans_right .ta_right_tit i:active {
+    background: #eaeaea;
+}
+
+@keyframes refreshRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*--//②-1 .ta_right_tit style*/
+
+/*--②-2 .ta_asset_box style*/
+.trans_inner_2 .trans_right .ta_asset_box {
+    background: #fff;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #333;
+    padding: 15px;
+}
+
+.trans_inner_2 .trans_right .ta_asset_box .p_horizon:nth-child(2) {
+    margin-top: 10px;
+}
+/*--//②-2 .ta_asset_box style*/
+
+/*--②-3 .ta_transacinfor style*/
+
+.trans_inner_2 .trans_right .ta_transacinfor {
+    padding: 10px 0;
+}
+
+.trans_inner_2 .trans_right .ta_transacinfor .p_horizon {
+    padding: 5px 15px;
+}
+
+.trans_inner_2 .trans_right .ta_transacinfor .p_horizon:nth-child(2) {
+    border-color: #dddddd;
+}
+
+.trans_inner_2 .trans_right .ta_transacinfor .p_horizon .data_info b {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+}
+/*--//②-3 .ta_transacinfor style*/
+
+/*--②-4 .transac_header style*/
+.trans_inner_2 .transac_header {
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid #dcdcdc;
+    border-bottom: none;
+    position: relative;
+}
+
+.trans_inner_2 .transac_header ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.trans_inner_2 .transac_header ul li {
+    cursor: pointer;
+    float: left;
+    width: 33.3%;
+    padding: 23px 0;
+    background: #fafafa;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #333333;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.trans_inner_2 .transac_header ul li:hover {
+    background: #fff;
+}
+
+.trans_inner_2 .transac_header ul li:active {
+    background: #fff;
+}
+
+.trans_inner_2 .transac_header ul li.active {
+    background: #fff;
+    font-weight: bold;
+}
+
+.transac_header li:nth-child(1).active ~ .underline {
+    left: 61px;
+    width: 80px;
+}
+.transac_header li:nth-child(2).active ~ .underline {
+    left: 269px;
+    width: 80px;
+}
+.transac_header li:nth-child(3).active ~ .underline {
+    left: 474px;
+    width: 80px;
+}
+/*
+.transac_header li:nth-child(1):hover ~ .underline {
+    left: 0;
+}
+.transac_header li:nth-child(2):hover ~ .underline {
+    left: 20%;
+}
+.transac_header li:nth-child(3):hover ~ .underline {
+    left: 40%;
+}
+*/
+/*--//②-4 .transac_header style*/
+
+/*--②-5 .ta_transac_group style*/
+.transac_con_wrap {
+    background: #fff;
+    width: 100%;
+    height: 650px;
+    position: relative;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+}
+
+/*common*/
+.ta_form_group .btn {
+    display: inline-block;
+    border: 0;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    color: #fff;
+    cursor: pointer;
+    background: #333;
+}
+
+.ta_form_group .before_acti_btn {
+    background: #a3a3a3;
+    transition: all 0.2s;
+}
+
+.ta_form_group .before_acti_btn.active {
+    background: #00b9ff;
+    transition: all 0.2s;
+}
+
+.ta_form_group .before_acti_btn.active:hover {
+    background: #00a0dc;
+}
+
+.ta_form_group .btn:hover {
+    background: #000;
+}
+.ta_form_group .ta_form_input {
+    display: inline-block;
+    background: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+    text-align: left;
+    box-sizing: border-box;
+    color: #333333;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+    transition: border 0.5s;
+}
+
+.ta_form_group .ta_form_input:focus {
+    border-bottom: 1px solid #00b9ff;
+}
+/*//common*/
+
+/*.first_deposit_con (입금주소)*/
+.first_deposit_con {
+    background: #fff;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.first_deposit_con h4.bank_infor {
+    padding: 50px 0 20px;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    font-size: 19px;
+}
+.first_deposit_con .first_deposit_info.ment {
+    padding: 45px 0;
+    margin-bottom: 17px;
+    border-bottom: 2px solid #dcdcdc;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+    text-align: center;
+    color: #333333;
+}
+.first_deposit_con .first_deposit_info.ment em {
+    font-weight: bold;
+    color: #00b9ff;
+}
+.first_deposit_con .first_deposit_info {
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    color: #474846;
+    font-weight: bold;
+}
+.first_deposit_con .first_deposit_qr_con {
+    margin: 20px 0;
+}
+.first_deposit_con .first_deposit_qr_con span {
+    display: inline-block;
+    width: 133px;
+    height: 133px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #00b9ff;
+}
+.first_deposit_con .first_deposit_form_group {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.first_deposit_con .first_deposit_form_group > label {
+    padding: 11px 0;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+}
+.first_deposit_con .first_deposit_form_group.ta_form_group .btn {
+    width: 115px;
+    height: 42px;
+}
+.first_deposit_con .first_deposit_form_group.ta_form_group .ta_form_input {
+    width: 340px;
+    text-align: right;
+    padding: 0 12px;
+}
+.first_deposit_con .first_deposit_form_group > input::after {
+    content: "원";
+}
+
+.first_deposit_con .first_deposit_form_group.ta_form_group .transwallet_btn {
+    border-radius: 0;
+}
+
+.first_deposit_con .first_deposit_note_con {
+    text-align: center;
+    background: #fafafa;
+    color: #474846;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 11px;
+    line-height: 20px;
+    width: 100%;
+}
+.first_deposit_con .first_deposit_note_con .tit {
+    margin-bottom: 8px;
+    border-bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #ff6060;
+}
+.first_deposit_con .first_deposit_note_con .tit i {
+    font-size: 15px;
+    color: #ff6060;
+}
+.first_deposit_con .first_deposit_note_con ul li {
+    font-size: 11px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #969696;
+}
+.coin_address_box > input {
+    width: 380px;
+    height: 42px;
+    border: solid 1px #dcdcdc;
+    background-color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.coin_address_box > button {
+    width: 115px;
+    height: 42px;
+    background-color: #333333;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+.coin_address_box > button:hover {
+    background-color: #000;
+}
+.coin_desti_label {
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    max-width: calc(380px + 115px);
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #5a5a5a;
+}
+/*//.first_deposit_con (입금주소)*/
+
+/*.second_wdr_con (출금신청)*/
+.second_wdr_con {
+    display: none;
+}
+.second_wdr_con .second_wdr_form_group {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+}
+.second_wdr_con .second_wdr_form_group:nth-child(1) b {
+    color: #ff6060 !important;
+}
+.second_wdr_con .second_wdr_form_group .p_horizon {
+    padding: 15px 15px;
+}
+.second_wdr_con .second_wdr_form_group_wrap {
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 13px 15px;
+}
+.second_wdr_con .second_wdr_form_group_wrap .ta_form_group {
+    border: 0;
+}
+.second_wdr_con .second_wdr_form_group_wrap .ta_form_group:nth-child(1),
+.second_wdr_con .second_wdr_form_group_wrap .ta_form_group:nth-child(2) {
+    margin-bottom: 8px;
+}
+.second_wdr_con .second_wdr_form_group_wrap .ta_form_group:nth-child(2) .btn {
+    background: #c8c8c8;
+    color: #464a58;
+}
+.second_wdr_con .second_wdr_form_group_wrap .ta_form_group label,
+.second_wdr_con .second_wdr_form_group .tit_small {
+    font-size: 15px;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+    line-height: 2 !important;
+}
+.second_wdr_con .second_wdr_form_group_wrap .ta_form_group label {
+    width: 150px;
+    line-height: 3 !important;
+}
+.second_wdr_con .second_wdr_form_group_wrap .ta_form_input {
+    width: 75%;
+    margin-right: 12px;
+}
+.second_wdr_con .second_wdr_form_group .btn {
+    width: 16%;
+}
+.second_wdr_con .second_wdr_form_group.second_wdr_btn_group {
+    padding: 5px 15px 10px;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+}
+.second_wdr_con .second_wdr_btn_group .second_wdr_btn {
+    background: #333;
+    height: 60px;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.64px;
+    color: #fff;
+    width: 100%;
+    padding: 13px 0;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.second_wdr_con .second_wdr_btn_group .second_wdr_btn:hover {
+    background: #000;
+    outline: none;
+}
+
+.second_wdr_con .second_wdr_btn_group .second_wdr_btn:active {
+    top: -1px;
+    background: #000;
+}
+
+input#cash_withdraw_bank_info {
+    width: 75%;
+    height: 42px;
+    border: solid 1px #dcdcdc;
+    background-color: #ffffff;
+    padding-left: 10px;
+}
+
+input#cash_withdraw_amt {
+    text-align: right;
+}
+
+.pos_relative_box {
+    position: relative;
+    width: 75%;
+}
+
+.pos_relative_box input {
+    width: 100% !important;
+    height: 42px;
+    padding: 5px 10px;
+    padding-right: 89px;
+}
+
+.pos_relative_box .ta_form_input {
+    border-bottom: 1px solid #333;
+}
+
+.pos_relative_box input::after {
+    content: "원";
+}
+
+.pos_relative_box button {
+    width: 62px !important;
+    height: 23px;
+    background-color: #dcdcdc !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.5 !important;
+    letter-spacing: -0.48px !important;
+    text-align: center;
+    color: #ffffff !important;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    z-index: 1;
+    border-radius: 30px;
+    padding: 0;
+}
+
+.pos_relative_box span {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+    text-align: right;
+    color: #333333;
+    position: absolute;
+    top: 11px;
+    right: 73px;
+    z-index: 1;
+}
+
+.withdraw_fee_box {
+    padding: 10px 0 3px;
+}
+
+.withdraw_fee_box p {
+    padding: 12px 10px;
+    background-color: #f5f5f5;
+}
+
+.withdraw_fee_box p span:nth-child(1) {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #333333;
+}
+
+.withdraw_fee_box p span:nth-child(2) {
+    float: right;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    text-align: right;
+    color: #333333;
+}
+
+.withdraw_fee_box p span:nth-child(2) b {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+}
+
+.total_price_box {
+}
+
+.total_price_box p {
+    padding: 15px 15px 10px 15px;
+    overflow: hidden;
+}
+
+.total_price_box p span:nth-child(1) {
+    font-size: 15px;
+    font-weight: bold !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.4 !important;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #333333;
+    float: left;
+    width: 25%;
+}
+
+.total_price_box p span:nth-child(2) {
+    display: block;
+    float: left;
+    width: 75%;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #717171;
+    padding: 3px 20px;
+    border-bottom: 1px solid #00b9ff;
+    height: 36px;
+}
+
+.total_price_box p span:nth-child(2) b {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: 0.4px;
+    text-align: right;
+    color: #333333;
+}
+
+.inout_notice_box {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #dcdcdc;
+    padding: 8px 13px;
+    text-align: left;
+}
+
+.inout_notice_tit {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    color: #ff6060;
+    text-align: left;
+}
+
+.inout_notice_list {
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: -0.4px;
+    color: #969696;
+}
+
+.inout_notice_list li {
+    margin-bottom: 5px;
+}
+.inout_notice_list li:last-child {
+    margin-bottom: 0;
+}
+
+/*//.second_wdr_con (출금신청)*/
+
+/*.third_history_con (입출금내역)*/
+.third_history_con {
+    display: none;
+}
+.third_history_con .third_history_hd {
+    padding: 12px 10px;
+    text-align: left;
+}
+.third_history_con .third_history_hd select {
+    font-size: 14px;
+    width: 80px;
+    color: #787878;
+    height: 29px;
+    padding: 0 5px;
+}
+
+.third_history_con .third_history_hd ul {
+    overflow: hidden;
+}
+.third_history_con .third_history_hd ul li {
+    float: left;
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    color: #969696;
+    cursor: pointer;
+}
+.third_history_con .third_history_hd ul li.active {
+    color: #00b9ff;
+    font-weight: bold;
+}
+.third_history_con .third_history_wrap .table_label {
+    background: #fff;
+    border-top: 1px solid #dddddd;
+}
+.third_history_con .table_label thead > tr > th {
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    color: #969696;
+    height: 29px;
+}
+.third_history_con .table_label thead > tr > th:nth-child(1) {
+    width: 20%;
+}
+.third_history_con .table_label thead > tr > th:nth-child(2) {
+    width: 60%;
+}
+.third_history_con .table_label thead > tr > th:nth-child(3) {
+    width: 20%;
+}
+.third_history_con .third_history_wrap .scl_wrap {
+    height: 570px;
+    background: #fff;
+}
+.third_history_con .third_history_wrap .third_history_tbl {
+    width: 100%;
+    font-size: 13px;
+}
+.third_history_con .third_history_wrap .third_history_tbl tbody > tr > td {
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(1) {
+    width: 20%;
+    font-weight: bold;
+    border-bottom-color: #d1d1d1;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(3)
+    button {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 21px;
+    border: solid 1px #dcdcdc;
+    background-color: #ffffff;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    margin-top: 6px;
+    transition: all 0.2s;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(3)
+    button:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #00b9ff;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(3)
+    button:active {
+    background: #fafafa;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr.out
+    > td:nth-child(1) {
+    color: #ff6060;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr.in
+    > td:nth-child(1) {
+    color: #00b9ff;
+}
+
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr.inout_nothing {
+    height: 100px;
+}
+
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr.inout_nothing
+    td {
+    font-weight: 400;
+    border: 0;
+    border-top: 1px solid #e6e6e6;
+}
+
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(1)
+    .currency {
+    color: #787878;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(2) {
+    width: 60%;
+}
+.third_history_con .third_history_wrap .third_history_tbl tbody > tr > td.data {
+    color: #787878;
+    font-size: 11px;
+    border-bottom-color: #d1d1d1;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(2)
+    p {
+    letter-spacing: 0;
+    padding: 10px 0;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(1)
+    p {
+    letter-spacing: 0;
+    word-break: break-all;
+    font-weight: 400;
+    color: #787878;
+    font-size: 11px;
+    padding: 10px;
+}
+.third_history_con
+    .third_history_wrap
+    .third_history_tbl
+    tbody
+    > tr
+    > td:nth-child(1)
+    a {
+    text-decoration: underline;
+}
+
+#deposit_coin_address_qrcode img {
+    width: 100%;
+}
+
+.readonly {
+    display: none !important;
+}
+/*//.third_history_con (입출금내역)*/
+
+/* 보안인증 필요할 때 */
+.lv_up_alert {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 30px 30px;
+    padding-top: 80px;
+    min-height: 400px;
+    border: 1px solid #dcdcdc;
+    margin-top: 12px;
+}
+
+.lv_up_alert p {
+    vertical-align: middle;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #333333;
+}
+
+.lv_up_alert p img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 21px;
+}
+
+.lv_up_alert i {
+    color: #ff6060;
+}
+
+.lv_up_alert button {
+    width: 100%;
+    height: 60px;
+    background: #333;
+    margin-top: 33px;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.64px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.lv_up_alert button:hover {
+    background-color: #000000;
+}
+/* 보안인증 필요할 때 */
+
+/*--//②-5 .ta_transac_group style*/
+
+/*------------------------TRANS WALLET 입출금 페이지 스타일 END------------------------*/
+
+/* 2019-12-18 입출금 유의사항 텍스트관련 css */
+.coin_address_box {
+    padding-bottom: 5px;
+}
+/* 2019-12-18 입출금 유의사항 텍스트관련 css END */

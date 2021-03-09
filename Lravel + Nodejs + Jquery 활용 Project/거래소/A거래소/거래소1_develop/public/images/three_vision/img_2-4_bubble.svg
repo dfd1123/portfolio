@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="391" height="231" viewBox="0 0 391 231">
+  <defs>
+    <filter id="img_2-4_bubble" x="0" y="0" width="391" height="231" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#img_2-4_bubble)">
+    <path id="img_2-4_bubble-2" data-name="img_2-4_bubble" d="M-3550.5,3214a94.085,94.085,0,0,1-55.808-18.231l-31.354,17.767,14.374-33.764A94.1,94.1,0,0,1-3645,3119.5a94.5,94.5,0,0,1,94.5-94.5h160a94.5,94.5,0,0,1,94.5,94.5,94.5,94.5,0,0,1-94.5,94.5Z" transform="translate(3666 -3011)" fill="#41a0e1"/>
+  </g>
+</svg>

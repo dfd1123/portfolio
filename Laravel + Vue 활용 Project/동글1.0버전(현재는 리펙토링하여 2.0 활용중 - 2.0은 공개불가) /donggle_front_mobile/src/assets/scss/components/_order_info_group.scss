@@ -1,0 +1,269 @@
+/*
+    COMPONENT - donggle order info group
+*/
+.ordered-list-group_wrap {
+  border-bottom: 6px solid $light_gray6;
+  .dg-clothes-history-card {
+    .inner-wrap {
+      padding: 15px 20px;
+    }
+    .in-content ._name {
+      padding: 0px;
+    }
+    .dg-clothes-thumbnail {
+      margin-left: 0px;
+    }
+  }
+  .dg-clothes-history-card .inner-wrap:last-of-type {
+    border: 0px none;
+  }
+  .dg-final-price-label {
+    border-top: 1px solid $light_gray2;
+    border-bottom: 0px none;
+    background-color: $light_gray5;
+  }
+}
+._etc_ment {
+  display: block;
+  border-bottom: 1px solid $light_gray2;
+  padding: 12px 20px 6px;
+  @include fontType01(#{$px-10}rem, $weight: 200, $color: $gray);
+
+  user-select: none;
+}
+.dg-order-info-group {
+  // 정보
+  .in-detail-info {
+    .l-con-article {
+      padding: 0px 20px;
+      border-bottom: 6px solid $profill_bd;
+      .in-subject {
+        position: relative;
+        margin: 20px 0px;
+        font-size: $f-14;
+        font-weight: 600;
+        user-select: none;
+      }
+    }
+
+    ._input_group{
+      width:75%;
+      margin-left:25%;
+      > textarea{
+        outline:none;
+      }
+      > input:focus, > textarea:focus{
+        border:1px solid $black;
+      }
+    }
+
+    .in-information {
+      margin: 10px 0px 20px;
+    }
+
+    ._list {
+      position: relative;
+      line-height: 1.6;
+      margin: 7px 0;
+    }
+
+    ._list--reason {
+      padding-left: 0;
+      margin: 0;
+    }
+
+    ._list ._label {
+      @include position($t:50%, $l:0px);
+      @include fontType01(#{$px-13}em);
+
+      transform: translateY(-50%);
+    }
+
+    ._list {
+      ._input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid $light_gray6;
+        padding: 10px 13px;
+        @include fontType01(#{$px-13}em);
+      }
+      ._txt {
+        @include fontType01(#{$px-13}em, $weight: 300);
+      }
+      ._txt.num {
+        letter-spacing: 0.3px;
+      }
+      ._name {
+        font-size: $px-16 + rem;
+        font-weight: 500;
+      }
+      ._gray {
+        color: $gray;
+      }
+      ._add {
+        font-weight: 500;
+      }
+      &._address {
+        margin: 0px;
+      }
+      &._info {
+        padding-left: 0px;
+      }
+    }
+
+    ._list--textarea ._textarea {
+      resize: vertical;
+      width: 100%;
+      height: 100px;
+      border: 1px solid $light_gray6;
+      padding: 10px 13px;
+      box-sizing: border-box;
+      font-size: $f-13;
+    }
+    ._list--textarea ._textarea::placeholder {
+      font-weight: 200;
+      color: $light_gray2;
+    }
+
+    ._list--post ._input {
+      width: 66%;
+    }
+
+    ._list--post .square-btn-outline {
+      width: 32%;
+      height: 40px;
+      line-height: 40px;
+      padding: 0;
+    }
+
+    .wait {
+      color: #ff5656;
+    }
+    .ing {
+      color: #a134e8;
+    }
+    .complt {
+      color: #3482e8;
+    }
+
+    .in-reason-detail {
+      padding: 10px 0 0 32px;
+    }
+    ._rd_subject {
+      @include fontType01(#{$px-18}rem, $weight: 500);
+
+      margin-bottom: 10px;
+    }
+    ._rd_textarea {
+      margin-bottom: 12px;
+      text-align: right;
+    }
+    ._rd_textarea textarea {
+      @include fontType01(13px);
+      @include fontType02(-0.2px, 1.7);
+
+      width: 100%;
+      resize: none;
+      min-height: 130px;
+      border: 1px solid $light_gray6;
+      padding: 10px;
+      border-radius: 0;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      outline: none;
+
+      &:focus {
+        border-color: #333;
+      }
+    }
+    ._rd_textarea span {
+      @include fontType01(#{$px-13}rem, $weight: 300, $color: #c8c8c8);
+    }
+    ._rd_etc_ment {
+      @include fontType01(#{$px-13}rem, $weight: 300, $color: #787878);
+    }
+
+    .in-account-info span {
+      @include fontType01(#{$px-13}rem, $weight: 300, $color: #787878);
+    }
+
+    .in-account-info span i {
+      font-style: normal;
+    }
+
+    .in-account-info .nothing {
+      color: #c8c8c8;
+    }
+
+    .in-account-info {
+      padding: 15px 15px 0;
+    }
+
+    .in-account-info .rounded-btn-outline {
+      @include fontType01(#{$px-10}rem, $weight: 300, $color: #787878);
+      height: 18px;
+      min-width: 55px;
+      padding: 0;
+      border-color: #c8c8c8;
+      margin-left: 5px;
+    }
+  }
+  // 정보 E
+
+  // 정보카드
+  .in-pay-info {
+    .in-subject {
+      @include fontType01(#{$px-14}rem, $weight: bold);
+      margin: 20px 0px;
+      padding: 0px 20px;
+      user-select: none;
+    }
+    .in-agree-list {
+      padding: 0px 20px;
+      user-select: none;
+    }
+    .dg-total-price-card {
+      margin: 0px;
+      border-bottom: 1px solid $light_gray6;
+      padding: 10px 20px;
+    }
+    .in-information {
+      padding: 10px 0 15px;
+      border-bottom: 1px solid #c8c8c8;
+      margin-bottom: 40px;
+    }
+    ._list {
+      padding-left: 100px;
+      position: relative;
+      line-height: 1.6;
+      margin: 7px 0;
+    }
+    ._list ._label {
+      @include fontType01(#{$px-13}em);
+    }
+    ._list .verti_top {
+      top: 3px;
+      transform: translateY(0);
+    }
+    ._list ._txt {
+      @include fontType01(#{$px-13}rem, $weight: 300);
+    }
+    ._list--expire ._txt {
+      @include fontType01(#{$px-13}rem, $color: #787878);
+    }
+    ._list--expire b {
+      @include fontType02(0, 1);
+      color: #ff5656;
+    }
+  }
+  // 정보카드
+  
+  &.not-input {
+    .in-detail-info ._list ._label {
+      position: initial;
+      transform: none;
+      float: left;
+    }
+  }
+}

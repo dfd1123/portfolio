@@ -1,0 +1,18 @@
+	.private{display:block;width:100%;padding:20px 0;}
+	.prtxt{display:block;width:95%;margin:0 auto;padding:0 0 15px 0;overflow:hidden;background: #fff;padding:15px 5px;box-sizing:border-box;height: 600px;overflow-y: scroll;}
+	.prtxt>div{}
+	.private h3{display:block;width:100%;font-size:18px;color:#222;padding:0 0 10px 0;letter-spacing:-1px;font-weight:400;overflow:hidden;}
+	.prtxt>p{display:block;border:1px solid #ddd;padding:10px;border-radius:3px;background:#fff;min-height:500px;overflow-y:scroll;text-align:left;}
+	.prtab{display:block;width:95%;margin:0 auto;padding:15px 0 0 0;overflow:hidden;}
+	.prtab ul{padding:0px;margin:0px;}
+	.prtab ul li{width:50%;float:left;}
+	.prtab ul li a{display:block;width:100%;box-sizing:border-box;text-align:center;font-size:13px;padding:15px 0;color:#fff;border-left:1px solid rgba(256,256,256,0.3);letter-spacing:-1px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e3e3e3), color-stop(1, #a6a3a3));
+	background: -moz-linear-gradient(top, #e3e3e3 0%, #a6a3a3 100%);
+	background: -webkit-linear-gradient(top,  #e3e3e3 0%, #a6a3a3 100%);
+	background: -o-linear-gradient(top,  #e3e3e3 0%, #a6a3a3 100%);
+	background: -ms-linear-gradient(top,  #e3e3e3 0%, #a6a3a3 100%);
+	background: linear-gradient(top,  #e3e3e3 0%, #a6a3a3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e3e3', endColorstr='#a6a3a3', gradientType=0);}
+	.prtab ul li:first-child a{border-left:none;}
+	.prtab ul li a.active{background:#fea803;font-weight:bold}

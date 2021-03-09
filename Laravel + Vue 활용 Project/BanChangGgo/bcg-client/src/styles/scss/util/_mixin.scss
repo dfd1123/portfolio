@@ -1,0 +1,103 @@
+@mixin position($p: absolute, $t: null, $l: null, $r: null, $b: null) {
+  position: $p;
+  top: $t;
+  left: $l;
+  right: $r;
+  bottom: $b;
+}
+
+@mixin translate($x: 50%, $y: 50%) {
+  transform: translateX($x) translateY($y);
+}
+
+@mixin pushAuto {
+  margin: 0 auto;
+  position: relative;
+}
+
+@mixin zindex($layer) {
+  z-index: z($layer);
+}
+
+@mixin emFont($size, $weight: 400, $color: null, $lh: null) {
+  font-size: emFont($size);
+  font-weight: $weight;
+  color: $color;
+  line-height: $lh;
+}
+
+@mixin remFont($size, $weight: 400, $color: null, $lh: null) {
+  font-size: remFont($size);
+  font-weight: $weight;
+  color: $color;
+  line-height: $lh;
+}
+
+@mixin setFont($size, $weight: 400, $color: null, $lh: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $lh;
+}
+
+@mixin bgStyle($p_x: 50%, $p_y: 50%, $size: null) {
+  background-position: $p_x $p_y;
+  background-size: $size;
+  background-repeat: no-repeat;
+}
+
+@mixin initButton($radius: 0, $bg-color: transparent) {
+  border-radius: $radius;
+  border: 0;
+  outline: none;
+  background-color: $bg-color;
+  cursor: pointer;
+}
+
+@mixin initInput($radius: 0, $bg-color: transparent) {
+  border-radius: $radius;
+  border: 0;
+  outline: none;
+  -webkit-appearance: none;
+  background: $bg-color;
+}
+
+@mixin btButton() {
+  @include position($b: 0, $l: 0);
+  width: calc(100% - 4rem);
+  transform: translate(2rem, -2rem);
+}
+
+@mixin responsive($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+@mixin btnShadow($color, $opacity) {
+  box-shadow: 0 4px 14px rgba($color, $opacity);
+}
+@mixin ellipsis($line-cnt, $line-height) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-cnt;
+  word-wrap: break-word;
+  line-height: $line-height;
+  height: $line-height * $line-cnt;
+}
+
+@mixin answerFormStyle {
+  background-color: white;
+  width: 100%;
+  min-height: 3.4rem;
+  padding: 0 15px;
+  margin: 10px 0;
+  border: 1px solid $theme-03;
+  border-radius: 10px;
+  box-shadow: 0 7px 9px rgba(0, 0, 0, 0.1);
+  outline: none;
+}

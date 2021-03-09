@@ -1,0 +1,57 @@
+@import '../../static/stylesheets/lib/variables';
+
+.dialog {
+    width: 302px;
+    overflow: hidden;
+
+    .area {
+        width: 100%;
+        height: 100%;
+        border: solid 1px #dbdbdb;
+        padding-bottom: 54px;
+        .content {
+            text-align: center;
+            margin-top: 46px;
+            margin-bottom: 30px;
+            padding: 0 20px;
+            word-break: keep-all;
+            line-height: 1.5;
+            .title {
+                font-size: 1.833rem;
+                color: #222;
+            }
+            .text {
+                margin-top: 30px;
+                font-size: 1.333rem;
+                color: #555;
+            }
+        }
+    }
+
+    .bottom {
+        position: absolute;
+        display: table;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 54px;
+
+        .button {
+            width: 100%;
+            height: 100%;
+            font-size: 1.5rem;
+            border: solid 1px #dbdbdb;
+            &.active {
+                border: none;
+                background-color: $mobile-main-color;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+    }
+    &.confirm {
+        .button {
+            width: 50%;
+        }
+    }
+}

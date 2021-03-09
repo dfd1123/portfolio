@@ -1,0 +1,413 @@
+/* PAGES - 주문내역 페이지
+   ========================================================================== */
+
+#page-history-order-list-wrap {
+  .table-area {
+    @include set-relative;
+
+    padding: 20px 10px 115px;
+
+    .search-default-bar {
+      margin-bottom: 30px;
+    }
+
+    .search-status-bar {
+      margin: 25px 0 13px;
+    }
+
+    .search-status-bar.type-last {
+      margin-top: 8px;
+    }
+
+    .nothing-history {
+      padding: 60px 0;
+    }
+  }
+
+  .search-option-check-group {
+    .in-check-list > * {
+      min-width: 80px;
+    }
+  }
+
+  .tbl-default {
+    .ta-right {
+      padding-right: 20px;
+    }
+    td i {
+      letter-spacing: 0.1px;
+      padding: 0 4px;
+    }
+  }
+
+  .tbl-default-body {
+    .in-tr {
+      height: 70px;
+    }
+  }
+
+  .btn-gray {
+    @include hover-eft {
+      background-color: $primary-color;
+    }
+
+    &:active {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+
+  .pager-wrap {
+    bottom: 25px;
+  }
+}
+
+#page-history-order-detail-wrap {
+  .grid-line-group.first {
+    margin-bottom: 35px;
+  }
+
+  .grid-line-group.second {
+    .panel-default {
+      padding: 40px 30px;
+    }
+
+    .tbl-default {
+      border-bottom: 1px solid $gray-lighter;
+    }
+
+    .tbl-default-body .in-tr {
+      @include hover-eft {
+        background-color: unset;
+      }
+
+      height: 70px;
+    }
+  }
+
+  .mobile-wrapper {
+    display: none;
+  }
+}
+
+//주문상품카드
+.gray-panel {
+  border: 1px solid $gray-light-01;
+  padding: 30px 20px;
+  background-color: $gray-lighter-02;
+
+  .inner-panel-title {
+    margin: 0px 0px 20px;
+  }
+
+  .inner-section {
+    .in-title {
+      @include font(13px, 500, $gray-md-03);
+    }
+
+    ._txt {
+      margin-right: 15px;
+      border-right: 1px solid $gray-lighter;
+      padding-right: 15px;
+      padding-left: 9px;
+      color: $gray;
+    }
+
+    ._deli {
+      color: $primary-color-01;
+      &._end {
+        color: $blue;
+      }
+    }
+  }
+
+  .main-mini-panel-card {
+    @include set-relative;
+
+    border: 1px solid $gray-lighter;
+    box-shadow: none;
+
+    .inner {
+      padding-left: 150px;
+    }
+
+    .in-thumb {
+      top: 10px;
+      width: 120px;
+      height: 120px;
+    }
+
+    .in-txt-box {
+      padding: 10px 0px 18px;
+    }
+
+    .in-subtit {
+      @include font($s: 15px, $c: $gray);
+
+      padding: 0px;
+      margin-bottom: 5px;
+      letter-spacing: 0px;
+    }
+
+    ._title {
+      @include font(15px, 200, $gray-md-03);
+
+      padding-right: 5px;
+      letter-spacing: -1px;
+    }
+
+    .in-maintit {
+      @include font(18px, 500, $primary-color);
+
+      margin: 6px 0px 10px;
+    }
+
+    .in-coupon {
+      width: fit-content;
+      height: 28px;
+      line-height: 28px;
+      padding: 0px 15px;
+      border-radius: 14px;
+      font-size: 13px;
+      user-select: none;
+    }
+
+    .in-total {
+      @include set-absolute($b: 10px, $r: 0px);
+
+      text-align: right;
+    }
+
+    .in-number {
+      @include font($s: 13px, $c: $gray-md-03);
+
+      padding: 6px 0px;
+    }
+
+    .in-number > b {
+      color: $gray;
+    }
+
+    .in-price {
+      @include font(18px, 600, $pink);
+    }
+  }
+}
+
+//모바일 주문리스트
+.tbl-list-wrapper {
+  .order-pd-list {
+    @include set-relative;
+    border-bottom: 1px solid $gray-lighter;
+    padding: 20px;
+    &:last-of-type {
+      border: 0px none;
+    }
+  }
+  .order-date {
+    ._date {
+      @include font(11px, 100, $gray-md-03);
+
+      display: inline-block;
+      width: 11%;
+      vertical-align: middle;
+      letter-spacing: 0px;
+    }
+    ._order_num {
+      @include font(13px, 500, $primary-color);
+
+      display: inline-block;
+      width: calc(100% - 11% - 5rem);
+      vertical-align: middle;
+      letter-spacing: 0px;
+    }
+    ._stat {
+      @include font(15px, 600, $primary-color);
+
+      float: right;
+      width: 4rem;
+      margin-top: 2px;
+      text-align: right;
+    }
+  }
+  .order-status {
+    margin: 10px 0px 0px 12%;
+    .in-tit {
+      @include font(13px, 500, $gray-md-03);
+    }
+    .in-desc {
+      @include font(13px, 500, $gray);
+    }
+    ._pink {
+      @include font(15px,600, $pink);
+    }
+  }
+}
+
+//주문내역 페이지 모바일화면
+@include media-mobile-version(ipad) {
+  #page-history-order-list-wrap {
+    .panel-default {
+      min-height: calc(100vh - 0px - 50px - 100px);
+      padding: 0px;
+    }
+  }
+
+  #page-history-order-list-wrap .table-area {
+    .search-default-bar {
+      margin-bottom: 0;
+    }
+
+    .search-status-bar {
+      padding-top: 0;
+      margin: 20px 0px 10px;
+      text-align: center;
+    }
+  }
+}
+
+//디테일페이지 반응형 모바일화면
+@include media-mobile-version(ipad) {
+  #admin-container.detail-container {
+    background-color: white;
+
+    .cs-content-wrap {
+      padding-top: 50px;
+    }
+    .wrapper {
+      min-height: auto;
+    }
+  }
+  #page-history-order-detail-wrap {
+    .tbl-wrapper {
+      display: none;
+    }
+    .mobile-wrapper {
+      display: block;
+    }
+    .grid-line-group {
+      &.first {
+        padding-bottom: 30px;
+        border-bottom: 6px solid $gray-lighter-02;
+      }
+      &.second .panel-default {
+        padding: 0px 20px;
+        box-shadow: none;
+      }
+    }
+    .panel-default-title {
+      margin: 30px 0px 22px;
+      padding: 0px 20px;
+      .in-mainname {
+        @include font($s: 18px, $w: 600);
+      }
+    }
+  }
+  .gray-panel {
+    border: 0px none;
+    padding: 0px 10px;
+    box-shadow: none;
+    background-color: white;
+    .inner-panel-title {
+      padding: 0px 10px;
+    }
+    .inner-section {
+      .in-title {
+        display: block;
+        margin: 5px 0px;
+      }
+      ._txt {
+        float: right;
+        border: 0px none;
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+    .main-mini-panel-card {
+      border: 0px none;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+    }
+  }
+  .gray-panel .main-mini-panel-card {
+    .inner {
+      padding-left: 0px;
+    }
+    .in-thumb {
+      top: 45px;
+      width: 70px;
+      height: 70px;
+    }
+    .in-txt-box {
+      padding: 10px 0px 0px;
+    }
+    .in-subtit {
+      font-size: 13px;
+    }
+    .in-subtit ._title {
+      @include font($s: 13px, $w: 200);
+    }
+    .in-maintit {
+      @include font($s: 15px, $w: 600);
+
+      margin: 11px 0px 4px;
+      padding-left: 80px;
+    }
+    .in-option {
+      margin: 0px;
+      padding-left: 80px;
+      font-weight: 300;
+    }
+    .in-option ._title {
+      display: none;
+    }
+    .in-total {
+      position: inherit;
+      text-align: left;
+      padding-left: 80px;
+    }
+    .in-number {
+      @include font(13px, 100, $gray);
+
+      padding: 2px 0px 8px;
+    }
+    .in-price {
+      font-size: 15px;
+    }
+    .in-coupon {
+      width: 100%;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+  .order-info-group {
+    margin: 30px 0px 40px;
+    .line_desc {
+      margin: 6px 0px;
+    }
+    ._title {
+      @include font(13px, 100, $gray-md-03);
+
+      float: left;
+    }
+    ._txt {
+      @include font($s: 13px, $c: $gray);
+
+      float: right;
+      letter-spacing: -0.5px;
+    }
+    ._txt > b {
+      @include font(15px, 600, $pink);
+    }
+    ._order_num {
+      float: none;
+    }
+    ._title._order_num {
+      font-size: 11px;
+    }
+    ._txt._order_num {
+      margin: 6px 0px 12px;
+      letter-spacing: 0px;
+      color: $primary-color;
+    }
+  }
+}

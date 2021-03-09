@@ -1,0 +1,291 @@
+.main-popup {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 10;
+}
+.main-popup.active {
+  display: block;
+}
+.main-popup::-webkit-scrollbar {
+  display: none;
+}
+.popup_bg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: -1;
+}
+.popup_content_wrapper {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  max-width: 1188px;
+  height: calc(100% - 150px);  /* 상단 배경영역 */
+  z-index: 1;
+}
+.popup_content_wrap {
+  background-color: #fff;
+}
+
+/* 팝업 상단 콘텐츠 */
+.popup_con1 {
+  position: relative;
+  background-color: #ced6de;
+  color: #fff;
+}
+.popup_con1 .mock-up {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 420px;
+  height: 100%;
+  background-image: url(../../images/img/example-mockup.png);
+  background-repeat: no-repeat;
+  background-position: 47% 6%;
+  background-size: auto;
+  text-indent: -9999px;
+}
+.popup_con1 ._type_info {
+  padding: 61px 128px 47px 420px;
+}
+.popup_con1 ._type_info ._title {
+  margin: 33px 0px 12px;
+  text-transform: capitalize;
+  font-size: 0.875em;
+  opacity: 0.5;
+}
+.popup_con1 ._type_info ._name {
+  font-size: 1.25em;
+}
+.popup_con1 ._type_info ._text {
+  line-height: 1.8;
+}
+
+/* 팝업 상단 콘텐츠 E */
+
+/* 팝업 하단 콘텐츠 */
+
+.popup_con2 {
+  padding: 49px 128px 49px 91px;
+}
+.popup_con2 > h2 {
+  font-size: 1.25em;
+  color: #454545;
+}
+.popup_con2 .ex_img_box {
+  float: left;
+  width: 65%;
+  height: 251px;
+  margin: 20px 0px;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+  background-image: url(../../images/img/example_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.popup_con2 .ex_img_desc_box {
+  width: 33%;
+  margin-left: 2%;
+  background-image: url(../../images/img/example_banner_desc.png);
+}
+
+/* 팝업 하단 콘텐츠 E */
+
+.popup_button_wrapper {
+  position: fixed;
+  width: 75%;
+  max-width: 1188px;
+  height: calc(100% - 150px);
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 닫기 버튼 */
+.main-popup ._close_btn {
+  position: fixed;
+  top: -50px;
+  right: -73px;
+  width: 30px;
+  height: 30px;
+  border: 0px none;
+  padding: 0px;
+  outline: 0px none;
+  background-color: transparent;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.main-popup ._close_btn:before,
+.main-popup ._close_btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: height 0.3s;
+}
+.main-popup ._close_btn:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.main-popup ._close_btn:hover:before,
+.main-popup ._close_btn:hover:after {
+  height: 30px;
+}
+/* 닫기 버튼 E */
+
+/* 아이콘 카트 버튼 */
+.main-popup ._icon_cart_btn {
+  position: fixed;
+  top: 0px;
+  right: -90px;
+  width: 64px;
+  border: 0px none;
+  padding: 70px 0px 0px;
+  outline: 0px none;
+  background-color: transparent;
+  font-size: 0.875em;
+  color: #fff;
+  cursor: pointer;
+}
+.main-popup ._icon_cart_btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(../../images/icon/icon_cart_btn.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 15px 17px;
+  transition: all 0.3s;
+}
+.main-popup ._icon_cart_btn:hover:before {
+  transform: scale(0.95);
+}
+/* 아이콘 카트 버튼 E */
+
+/* 영상 팝업 */
+
+.video-popup_con_image {
+  min-height: 478px;
+  outline: 1px solid red;
+}
+
+.video-popup_con_iframe {
+  min-height: 669px;
+  outline: 1px solid red;
+}
+
+/* 영상 팝업 E */
+
+/* 알럿 디자인 */
+.alert-popup .popup_bg {
+  background-color: rgba(0,0,0,0.75);
+}
+.alert-wrapper{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 85%;
+  max-width: 380px;
+  height: fit-content;
+  margin: auto;
+}
+.alert_close_btn {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  border: 0px none;
+  outline: 0px none;
+  padding-bottom: 20px;
+  padding-right: 2em;
+  background-color: transparent;
+  text-align: right;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 0.8571em;
+  color: #fff;
+  opacity:0.5;
+}
+.alert_close_btn:before,
+.alert_close_btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 1em;
+  width: 1px;
+  height: 13px;
+  margin-bottom: 24px;
+  border-radius: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transition: height 0.3s;
+}
+.alert_close_btn:after {
+  transform: rotate(-45deg);
+}
+.alert-wrap {
+  padding: 18px;
+  border-radius: 6px;
+  background-color: #fff;
+  text-align: center;
+}
+.alert-wrap ._icon {
+  height: 50px;
+  margin: 40px 0px 30px;
+  background-image: url(../../images/icon/icon_cart_btn.svg);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center center;
+}
+.alert-wrap ._title {
+  line-height: 1.4;
+  font-size: 1.7143em;
+  font-weight: 600;
+  color: #10307A;
+}
+.alert-wrap ._text {
+  line-height: 1.4;
+  margin: 8px 0px 30px;
+  font-size: 1.1429em;
+  font-weight: 300;
+  color: #595F6F;
+}
+
+.double-btn-wrap .rounded-button {
+  width: 49%;
+}
+.double-btn-wrap:last-child {
+  margin-left: 1%;
+}
+.single-btn-wrap .btn-bluegradi {
+  width: 70%;
+}
+.only-text-alert-wrap ._title {
+  margin: 25px 0px 22px;
+}
+
+/* 알럿 디자인 E */

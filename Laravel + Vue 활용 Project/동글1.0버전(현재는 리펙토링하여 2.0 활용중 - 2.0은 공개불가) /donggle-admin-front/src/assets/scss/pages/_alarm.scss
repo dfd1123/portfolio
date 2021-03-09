@@ -1,0 +1,152 @@
+/* PAGES - 알림 페이지
+   ========================================================================== */
+#admin-container.alarm-container {
+  padding-top: layoutPc(hd-snb-bar-height);
+  .wrapper{
+    padding: 60px layoutPc(container-pd);
+  }
+}
+.page-alarm-mobile-title {
+  display: none;
+}
+#page-snb-alarm-wrap {
+  max-width: 370px;
+  margin: 0px auto;
+  .panel-default {
+    margin: 6px 0px;
+    padding: 0px;
+    height: 576px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .nothing-history {
+    @include set-absol-center;
+  }
+}
+._alarm_list_group {
+  ._list {
+    @include set-relative;
+    border: 1px solid white;
+    border-bottom-color: $gray-lighter;
+    padding: 20px;
+    &:hover {
+      border-color: $pink;
+    }
+    &:active {
+      background-color: $gray-lighter;
+    }
+    &.new ._name:after {
+      @include inline-block;
+      @include bg-img($path-icon, "icon_new.svg");
+      @include bg-option(auto, center);
+
+      content: "";
+      width: 28px;
+      height: 12px;
+      margin: 0px 5px;
+      vertical-align: super;
+    }
+  }
+  .in-store-profile {
+    @include set-absolute($t: 20px, $l: 20px);
+    .symbol-circle {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  ._alarm_desc {
+    padding-left: 57px;
+    ._name {
+      color: $gray;
+    }
+    ._date {
+      @include font(11px, 200, $gray-md);
+
+      margin-top: 4px;
+      float: right;
+    }
+    ._desc {
+      @include font($s: 13px, $w: 200);
+    }
+  }
+}
+
+@include media-pc(15inch){
+  #admin-container.alarm-container{
+    .wrapper{
+      padding: 25px layoutPc15(container-pd);
+    }
+  }
+}
+//반응형 태블릿
+@include media-mobile-version(ipad) {
+  #admin-container.alarm-container {
+    padding-top: layoutPc15(hd-snb-bar-height);
+    .wrapper{
+      padding: 0px;
+    }
+  }
+  #page-snb-alarm-wrap {
+    .panel-default {
+      max-height: 576px;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+// 반응형 모바일
+@include media-mobile-version(mobile-only) {
+  #admin-container.alarm-container {
+    padding: 0px;
+  }
+  #page-snb-alarm-wrap {
+    margin: 0px;
+    max-width: inherit;
+    height: auto;
+    .panel-default {
+      width: 100vw;
+      height: 100vh;
+      margin: 0px;
+      padding-top: 50px;
+      max-height: 100vh;
+    }
+  }
+  .page-alarm-mobile-title {
+    @include set-fixed($t: 0px, $l: 0px);
+    // @include z-index(sideNav);
+
+    display: block;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    line-height: 50px;
+    margin: 0px;
+    background-color: $black;
+    text-align: center;
+    > h3 {
+      @include font($w: 500, $c: white);
+    }
+  }
+  ._alarm_list_group {
+    .in-store-profile .symbol-circle {
+      width: 34px;
+      height: 34px;
+    }
+    ._alarm_desc {
+      padding-left: 45px;
+      ._name {
+        font-size: 14px;
+      }
+    }
+    ._list {
+      &:hover {
+        border-color: $primary-color-01;
+      }
+      &.new ._name:after {
+        vertical-align: baseline;
+      }
+    }
+  }
+}

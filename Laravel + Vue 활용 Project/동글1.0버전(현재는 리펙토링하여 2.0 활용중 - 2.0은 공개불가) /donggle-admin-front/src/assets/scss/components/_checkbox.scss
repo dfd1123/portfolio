@@ -1,0 +1,55 @@
+/* COMPONENTS - checkbox
+   ========================================================================== */
+
+// 체크박스,라디오 스타일
+.check-gradi-circle {
+  @include circle-size(21px) {
+    @include make-before {
+      @include circle-size(9px) {
+        @include set-absolute($t: 50%, $l: 50%);
+
+        background-color: white;
+        margin-top: -4.5px;
+        margin-left: -4.5px;
+        transform: scale(0);
+        transition: 0.2s;
+      }
+    }
+    @include inline-block;
+    @include set-relative;
+
+    border: 1px solid $gray-light;
+    cursor: pointer;
+  }
+}
+
+// 선택할 때 navy버튼
+.chck-box:checked + .check-navy {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: white;
+  transition: 0.1s;
+  box-shadow: 0 4px 6px rgba(black, 0.08);
+  user-select: none;
+}
+
+// 선택할 때 outline-navy 버튼
+.chck-box:checked + .check-outline-navy {
+  background-color: white;
+  border: 1px solid $purple-dark;
+  color: $purple-dark;
+  transition: 0.1s;
+  box-shadow: 0 4px 6px rgba(black, 0.08);
+  user-select: none;
+}
+
+// 선택할 때 체크박스,라디오버튼
+.chck-box:checked + .check-gradi-circle {
+  @include gradient-bg(to top);
+
+  border: 0;
+
+  &:before {
+    transform: scale(1);
+  }
+}

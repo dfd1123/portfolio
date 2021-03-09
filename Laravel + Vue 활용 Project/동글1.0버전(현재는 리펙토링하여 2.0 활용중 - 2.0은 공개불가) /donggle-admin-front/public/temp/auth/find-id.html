@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>동글 가맹점 관리자 페이지</title>
+
+  <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- header -->
+    <header id="admin-header" style="display: none">
+      <!-- 상단고정 헤더 -->
+      <div id="header-hd">
+        <div class="show-pc">
+          <!-- 상단 side navigation -->
+          <section class="hd-snb-bar">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#" target="_blank">
+                <figure class="symbol-circle">
+                  <img src="/images/img/profile_admin.jpg" alt="profile image" />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img class="in-btn-img" src="/images/btn/btn_more.svg" alt="btn more" />
+              </a>
+            </div>
+
+            <div class="in-snb-group">
+              <a href="#" class="in-snb-list">
+                <span class="in-snb-name">알림</span>
+                <div class="in-snb-hidden"></div>
+              </a>
+              <a href="#" class="in-snb-list">
+                <span class="in-snb-name">스토어 문의</span>
+              </a>
+              <a href="#" class="in-snb-list">
+                <span class="in-snb-name">고객센터</span>
+                <div class="in-snb-hidden"></div>
+              </a>
+              <a href="#" class="in-snb-list">
+                <span class="in-snb-name">로그아웃</span>
+              </a>
+            </div>
+          </section>
+          <!-- END 상단 side navigation -->
+
+          <!-- 상단 타이틀바 -->
+          <section class="hd-title-bar">
+            <div class="in-page-name">
+              <h3 class="in-main"><span>아이디찾기</span></h3>
+            </div>
+
+            <div class="in-page-btn-group"></div>
+          </section>
+          <!-- END 상단 타이틀바 -->
+        </div>
+
+        <div class="show-mobile">
+          <div class="hd-title-bar">
+            <div class="hd-title-bar-inner">
+              <div class="in-left-btn">
+                <label for="mobile_show_gnb" class="in-label-btn">
+                  <span class="hbg"></span>
+                  <span class="hbg"></span>
+                  <span class="hbg"></span>
+                </label>
+              </div>
+
+              <div class="in-page-name">
+                <h3 class="in-main">
+                  <span>아이디찾기</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END 상단고정 헤더 -->
+
+      <input id="mobile_show_gnb" class="none" type="checkbox" />
+      <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+      <!-- 왼쪽 global navigation -->
+      <div id="header-gnb">
+        <section class="in-brand-con-box show-pc">
+          <h1 class="in-brand-logo">
+            <!-- TODO: 대시보드 메인으로 -->
+            <a href="../index.html">
+              <img src="/images/logo/logo_header_wh.svg" alt="image" class="in-logo" />
+            </a>
+          </h1>
+        </section>
+
+        <section class="in-mobile-gnb-hd show-mobile">
+          <div class="in-store-profile">
+            <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+            <a href="#">
+              <figure class="symbol-circle">
+                <img src="/images/img/profile_admin.jpg" alt="profile image" />
+              </figure>
+              <h2 class="in-name">스토어명</h2>
+              <img class="in-btn-img" src="/images/btn/btn_more.svg" alt="btn more" />
+            </a>
+          </div>
+          <label for="mobile_show_gnb">닫기</label>
+        </section>
+
+        <!-- contents -->
+        <div id="admin-container" class="auth-container">
+          <div class="wrapper">
+            <!-- page content -->
+            <div id="page-find-id-wrap" class="page-auth-wrap">
+              <div class="panel-default">
+                <div class="form-wrapper">
+                  <div class="show-pc auth-logo-wrap">
+                    <h2 class="auth-hd-logo hide-text">donggle</h2>
+                    <p class="_sub_title">동글 입점스토어 관리자</p>
+                  </div>
+                  <div class="dg-find-title-wrap">
+                    <h2>
+                      아이디 찾기
+                      <a href="find-choice.html" class="icon-back-btn">뒤로가기</a>
+                    </h2>
+                  </div>
+
+                  <!-- content -->
+                  <!-- 섹션으로 단계구분 -->
+                  <section class="auth-layout">
+                    <h2 class="hide-text">아이디 찾기</h2>
+                    <form action="#" method="post" class="form_wrap">
+                      <fieldset class="form-container type-01">
+                        <legend class="hide-text">아이디 찾기</legend>
+                        <div class="in-divider">
+                          <label for="#" class="_label">이름</label>
+                          <input type="text" id="#" class="form-input-txt" maxlength="10" placeholder="실명 입력" />
+                        </div>
+                        <div class="in-divider">
+                          <label for="#" class="_label">휴대폰 번호</label>
+                          <div class="_btn_with_textbox_wrap">
+                            <input type="tel" id="#" class="form-input-txt" placeholder="본인 명의 휴대폰 번호" maxlength="13" />
+                            <input type="button" class="square-md-btn btn-black _with_input-txt" value="인증번호 발송" />
+                          </div>
+                        </div>
+                        <div class="in-divider">
+                          <div class="_btn_with_textbox_wrap">
+                            <label for="#" class="none">인증번호</label>
+                            <input type="tel" id="#" class="form-input-txt" placeholder="인증번호 입력" maxlength="6" />
+                            <span class="dg-tel_countdown">3:00</span>
+                            <input type="button" class="square-md-btn btn-black _with_input-txt" value="인증완료" />
+                          </div>
+                          <p class="_write_wr">
+                            인증번호가 일치하지 않습니다.
+                          </p>
+                        </div>
+                      </fieldset>
+                      <div class="dg-btn-wrap dg-dubblebtn-wrap clearfix">
+                        <a href="#" class="square-md-btn btn-outline-gray auth-btn">취소</a>
+                        <a href="#" class="square-md-btn btn-gradient auth-btn">확인</a>
+                      </div>
+                    </form>
+                  </section>
+
+                  <!-- 이 섹션이 보일때에는 .dg-find-title-wrap 에서 .icon-back-btn 이 안보임 -->
+                  <section class="auth-layout none">
+                    <div class="_find-complete">
+                      <h2>안녕하세요, <b>김동글</b>님!<br /></h2>
+                      <div>
+                        찾으시려는 이메일 주소는<br />
+                        <b class="fw-b">dfd11**@naver.com</b><br />
+                        입니다.
+                      </div>
+                      </fieldset>
+                      </form>
+                      <div class="dg-btn-wrap clearfix">
+                        <a href="#" class="square-md-btn btn-outline-gray">취소</a>
+                        <a href="#" class="square-md-btn btn-gradient">확인</a>
+                      </div>
+                  </section>
+
+                  <section class="auth-layout">
+                    <a href="#" class="_home_btn">홈으로</a>
+                    <div class="dg-popup_alert_desc">
+                      <h2>안녕하세요, <b>김동글</b>님!<br /></h2>
+                      <div>
+                        찾으시려는 이메일 주소는
+                        <b>dfd11**@naver.com</b><br />
+                        입니다.
+                      </div>
+                      <div class="dg-btn-wrap dg-dubblebtn-wrap clearfix">
+                        <a href="#" class="square-md-btn btn-outline-gray auth-btn">비밀번호 찾기</a>
+                        <a href="#" class="square-md-btn btn-gradient auth-btn">로그인</a>
+                      </div>
+                  </section>
+                  <!-- content E -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- page content E -->
+        </div>
+        <div id="admin-footer"></div>
+      </div>
+      <!-- END contents -->
+    </header>
+
+    <!-- contents -->
+    <div id="admin-container" class="auth-container">
+      <div class="wrapper">
+        <!-- page content -->
+        <div id="page-find-id-wrap" class="page-auth-wrap">
+          <div class="panel-default">
+            <div class="form-wrapper">
+              <div class="show-pc auth-logo-wrap">
+                <h2 class="auth-hd-logo hide-text">donggle</h2>
+                <p class="_sub_title">동글 입점스토어 관리자</p>
+              </div>
+              <div class="dg-find-title-wrap">
+                <h2>
+                  아이디 찾기
+                  <a href="find-choice.html" class="icon-back-btn">뒤로가기</a>
+                </h2>
+              </div>
+
+              <!-- content -->
+              <!-- 섹션으로 단계구분 -->
+              <section class="auth-layout">
+                <h2 class="hide-text">아이디 찾기</h2>
+                <form action="#" method="post" class="form_wrap">
+                  <fieldset class="form-container type-01">
+                    <legend class="hide-text">아이디 찾기</legend>
+                    <div class="in-divider">
+                      <label for="#" class="_label">이름</label>
+                      <input type="text" id="#" class="form-input-txt" maxlength="10" placeholder="실명 입력" />
+                    </div>
+                    <div class="in-divider">
+                      <label for="#" class="_label">휴대폰 번호</label>
+                      <div class="_btn_with_textbox_wrap">
+                        <input type="tel" id="#" class="form-input-txt" placeholder="본인 명의 휴대폰 번호" maxlength="13" />
+                        <input type="button" class="square-md-btn btn-black _with_input-txt" value="인증번호 발송" />
+                      </div>
+                    </div>
+                    <div class="in-divider">
+                      <div class="_btn_with_textbox_wrap">
+                        <label for="#" class="none">인증번호</label>
+                        <input type="tel" id="#" class="form-input-txt" placeholder="인증번호 입력" maxlength="6" />
+                        <span class="dg-tel_countdown">3:00</span>
+                        <input type="button" class="square-md-btn btn-black _with_input-txt" value="인증완료" />
+                      </div>
+                      <p class="_write_wr">
+                        인증번호가 일치하지 않습니다.
+                      </p>
+                    </div>
+                  </fieldset>
+                  <div class="dg-btn-wrap dg-dubblebtn-wrap clearfix">
+                    <a href="#" class="square-md-btn btn-outline-gray auth-btn">취소</a>
+                    <a href="#" class="square-md-btn btn-gradient auth-btn">확인</a>
+                  </div>
+                </form>
+              </section>
+
+              <!-- 이 섹션이 보일때에는 .dg-find-title-wrap 에서 .icon-back-btn 이 안보임 -->
+              <section class="auth-layout none">
+                <div class="_find-complete">
+                  <h2>안녕하세요, <b>김동글</b>님!<br /></h2>
+                  <div>
+                    찾으시려는 이메일 주소는<br />
+                    <b class="fw-b">dfd11**@naver.com</b><br />
+                    입니다.
+                  </div>
+                </div>
+                <div class="dg-btn-wrap dg-dubblebtn-wrap clearfix">
+                  <a href="#" class="square-md-btn btn-outline-gray auth-btn">비밀번호 찾기</a>
+                  <a href="#" class="square-md-btn btn-gradient auth-btn">로그인</a>
+                </div>
+              </section>
+              <!-- content E -->
+            </div>
+          </div>
+        </div>
+        <!-- page content E -->
+      </div>
+
+      <div id="admin-footer">
+        <span class="in-copyright">Copyrights © <i>Donggle</i></span>
+        <div class="in-company-info">
+          <span>회사명 : ㈜동글</span>
+          <span>대표이사 : OOO</span>
+          <span>사업자등록번호 : 220-88-93187</span>
+          <span>통신판매업신고 : 2016-서울강남-00359</span>
+          <span>호스팅사업자 : (주)동글</span>
+          <span class="in-address">주소 : (06223) 서울특별시 강남구 테헤란로 32길 26 청송빌딩</span>
+        </div>
+      </div>
+    </div>
+    <!-- END contents -->
+
+  </div>
+</body>
+
+</html>

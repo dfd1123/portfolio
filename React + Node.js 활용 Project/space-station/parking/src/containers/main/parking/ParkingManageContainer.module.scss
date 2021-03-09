@@ -1,0 +1,131 @@
+@import '../../../static/stylesheets/Root.scss';
+
+.parking-management-container {
+    padding: $padding-side;
+    @include container($pd-top);
+    padding-bottom: 40px;
+    .enroll-button {
+        background: linear-gradient(45deg, #444444, #222222);
+        width: 100%;
+        height: 56px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        .plus {
+            position: relative;
+            bottom: 1px;
+            font-weight: 200;
+            font-size: 24px;
+            margin-right: 8px;
+        }
+    }
+    .parking-list {
+        width: 100%;
+        .parking-item {
+            display: block;
+            width: 100%;
+            border-radius: 2px;
+            box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.08);
+            .parking-image {
+                width: 100%;
+                padding-top: 36.585365%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #ebebeb;
+                opacity: 0;
+                transition: opacity .3s ease-in;
+            }
+            .isLoad{
+                opacity: 1;
+            }
+            .parking-info {
+                width: 100%;
+                padding: 24px 16px;
+                padding-bottom: 27px;
+                .subject {
+                    display: flex;
+                    text-align: center;
+                    margin-bottom: 24px;
+                    color: #222222;
+                    .status {
+                        margin-right: 12px;
+                        border: 1px solid #222222;
+                        width: 64px;
+                        height: 28px;
+                        line-height: 28px;
+                        border-radius: 14px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    .finished{
+                        opacity: .5;
+                    }
+                    .place_status {
+                        color: #888888;
+                        border-color: #aaaaaa;
+                    }
+                    .title {
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-align: left;
+                        word-break: keep-all;
+                    }
+                }
+
+                .description {
+                    display: flex;
+                    justify-content: space-between;
+                    line-height: 1.5;
+                    .schedule {
+                        font-size: 16px;
+                        span {
+                            font-size: 14px;
+                            color: #777777;
+                        }
+                    }
+                    .per-price {
+                        text-align: right;
+                        .per {
+                            font-size: 14px;
+                            color: #999999;
+                        }
+                        .price {
+                            font-size: 24px;
+                            font-weight: bold;
+                            color: #222222;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .non-qna{
+        width: 100%;
+        height: calc(100vh - 160px);
+        .non-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            // height: calc(100% - 96px);
+            .explain{
+                font-size: 1.333rem; // 16px;
+                font-weight: 400; // Regular
+                color: #222;
+                margin-top: 28px;
+            }
+    
+        }
+    }
+}
+
+.parking-item {
+    & + & {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ws-chat-spowide",
+  "version": "0.0.1",
+  "description": "ws-chat-spowide",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "debug": "set NODE_ENV=development&&nodemon --inspect=5858 ./index --watch ./ --delay 1.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0",
+    "dotenv": "^8.1.0",
+    "mysql2": "^1.7.0"
+  }
+}

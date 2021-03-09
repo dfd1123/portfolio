@@ -1,0 +1,984 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+button{
+	border:none;
+}
+
+button:focus {
+	outline:0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family:'Spoqa Han Sans Regular';
+	src:url('/fonts/SpoqaHanSans_all/SpoqaHanSans_original/Spoqa Han Sans Regular.ttf');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans Bold';
+	src:url('/fonts/SpoqaHanSans_all/SpoqaHanSans_original/Spoqa Han Sans Bold.ttf');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans Light';
+	src : url('/fonts/SpoqaHanSans_all/SpoqaHanSans_original/Spoqa Han Sans Light.ttf');
+}
+@font-face {
+	font-family: 'Spoqa Han Sans Thin';
+	src : url('/fonts/SpoqaHanSans_all/SpoqaHanSans_original/Spoqa Han Sans Thin.ttf');
+}
+@font-face {
+	font-family:'Poppins-Regular';
+	src : url('/fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+	font-family:'Poppins-Bold';
+	src : url('/fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+	font-family:'Poppins-SemiBold';
+	src : url('/fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+	font-family:'Poppins-ExtraLight';
+	src : url('/fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+html, body{
+	min-width:1280px;
+	height:100%;
+}
+
+body{
+	font-family: 'Spoqa Han Sans Regular','Poppins-Regular';
+}
+
+#wrapper{
+	min-height: 100%;
+    padding: 75px 0 323px;
+    margin: -75px 0 -323px;
+}
+
+#container{
+	min-width:1280px;
+	width:100%;
+}
+
+.bg_wh_btn{
+	width: 100%;
+    height: 60px;
+    border: solid 1px #00b9ff;
+    background: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #00b9ff;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+.bg_wh_btn:hover{
+    border: solid 3px #00b9ff;
+}
+
+.bg_blue_btn{
+	width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #00b9ff 20%, #4375ff 80%);
+}
+
+.invalid-feedback{
+	font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #ff6060;
+}
+
+.swal-icon {
+    width: 60px;
+    height: 60px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    box-sizing: content-box;
+    margin: 20px auto;
+}
+
+.swal-icon--error {
+    border-color: #ff6060;
+    background: #ff6060;
+    -webkit-animation: animateErrorIcon .5s;
+    animation: animateErrorIcon .5s;
+}
+
+.swal-icon--error__line {
+    position: absolute;
+    height: 4px;
+    width: 36px;
+    background-color: #fff;
+    display: block;
+    top: 29px;
+    border-radius: 2px;
+}
+
+.swal-icon--error__line--left {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 13px;
+}
+
+.swal-icon--error__line--right {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 12px;
+}
+
+.swal-title {
+    color: rgba(0,0,0,.65);
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    display: block;
+    padding: 0px 16px;
+    font-size: 27px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.48;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #496582;
+}
+
+.swal-text {
+    font-size: 16px;
+    position: relative;
+    float: none;
+    line-height: normal;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    color: rgba(0,0,0,.64);
+    max-width: calc(100% - 20px);
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #969696;
+}
+
+.swal-button-container {
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+}
+
+.swal-button {
+    background-color: #28283c;
+    padding: 10px 44px;
+    box-shadow: none !important;
+    outline: none !important;
+    border: 1px solid #00b9ff;
+    border-radius: 0;
+    background: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #00b9ff;
+    width: 100%;
+    height: 60px;
+}
+
+.swal-footer {
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    padding-bottom: 39px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.swal-icon:first-child {
+    margin-top: 45px;
+}
+/* header */
+
+.header{
+  width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid #00b9ff;
+}
+
+.main_header{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+  .header_background{
+      background-color: rgba(0, 0, 0, 1);
+  }
+
+.top_menu{
+    max-width:1240px;
+    width:100%;
+    width: 95%;
+    height: 75px;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 75px;
+    padding-left: 200px;
+}
+
+.main_logo{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+}
+
+.main_menu{
+    width:100%;
+    height:100%;
+}
+
+.main_menu > li{
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}
+
+.main_menu > li > a{
+    height: 100%;
+    display: block;
+    text-align: center;
+    color:#fff;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    padding: 0 14px;
+}
+
+.sub_menu{
+  position: absolute;
+  left: -25px;
+  background-color: #fff;
+  transition: all 0.15s ease-in;
+  margin-top: -28px;
+  width: 126px;
+  border-top: 3px solid #00b9ff;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+}
+
+.sub_menu > li{
+    width:100%;
+    height: 32px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.sub_menu > li > a{
+  font-family: 'Spoqa Han Sans Light';
+  color: #333;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.46;
+  letter-spacing: -0.52px;
+  text-align: center;
+  display: block;
+  height: 32px;
+  padding: 5px 10px;
+}
+
+.main_menu > li:hover .sub_menu{
+    opacity: 1;
+    visibility: visible;
+    display:block;
+}
+
+.sub_menu > li:hover > a{
+    font-weight: 600;
+    color:#1382CE;
+}
+
+.top_menu button{
+    width: 106px;
+    height: 47px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #00b9ff;
+    color: #00b9ff;
+    font-size: 15px;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    right: 15%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.join_nav{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.join_nav li:first-child{
+    padding:0 23px 0 0;
+}
+
+.join_nav > li > a{
+  color:#fff;
+}
+
+.join_nav li{
+  float:left;
+}
+
+.after_login_info{
+    width:167px;
+    background-image: url(/images/btn_menu_arrow.svg);
+    background-position:right center;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor:pointer;
+}
+
+.after_login_info a{
+  color:#fff;
+  font-family: 'Spoqa Han Sans Regular';
+  padding-right: 15px;
+  font-size:15px;
+  line-height: 1.47;
+  font-weight: 100;
+}
+
+.after_login_info > .login_sub_location{
+  left:15px;
+  margin-top:-4px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.after_login_info:hover > .login_sub_location{
+  opacity: 1;
+  visibility: visible;
+  display:block;
+}
+
+
+header::after{
+  content: '';
+  display: block;
+  clear:both;
+}
+
+/* footer */
+.footer{
+    width:100%;
+    background-color: #262626;
+    color:#777b8e;
+}
+
+.footer_inner{
+    max-width:1240px;
+    width:100%;
+    margin: 0 auto;
+    padding: 3.75em 0;
+    position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #35394A;
+}
+
+.footer_inner > div{
+  display: inline-block;
+}
+
+.footer_logo{
+    display: block;
+    margin-bottom: 25px;
+}
+
+.same_font{
+    font-size: 12px;
+}
+
+.footer_info{
+  font-family: 'Spoqa Han Sans Light';
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+}
+
+.footer_inner_cs span{
+  display: block;
+}
+
+.footer_cs_title{
+    font-size: 14px;
+    color:#fff;
+}
+
+.footer_cs_tel{
+    display: block;
+    font-size: 25px;
+    color:#fff;
+    margin-bottom: 30px;
+}
+
+.footer_cs_time{
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+}
+
+
+.footer_inner_menu{
+  margin-right: 200px;
+}
+
+.footer_inner_menu ul li{
+    margin-bottom: 5px;
+}
+
+.footer_inner_menu ul li a{
+  color:#fff;
+  font-family: 'Spoqa Han Sans Regular';
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: -0.56px;
+}
+
+
+.footer_inner_world li{
+  padding-bottom: 1px;
+  font-size:14px;
+  font-family: 'Spoqa Han Sans Regular';
+  color:#fff;
+  line-height: 1.6;
+  letter-spacing: -0.56px;
+  margin-bottom:5px;
+}
+
+.sns_kakao{
+  margin-right: 5px
+}
+
+.footer_inner_copyright{
+  width:100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.spo_copyright{
+  font-size: 12px;
+}
+
+/* select_custom */
+#lang_check:checked ~ .lang_list{
+  max-height:500px;
+  transition: max-height 0.2s;
+}
+
+.lang_list{
+  margin-bottom:20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
+  position: absolute;
+}
+
+.lang_label{
+  text-align: left;
+  display: inline-block;
+  max-width: 149px;
+  width: 100%;
+  padding: 5px 51px 5px 10px;
+  border: 1px solid #8a8e9e;
+  color: #fff;
+  font-family: 'Spoqa Han Sans Light';
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: -0.48px;
+  
+  background-image: url(/images/btn_menu_arrow.svg);
+  background-position: 100px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
+
+}
+
+#lang_check{
+  display:none;
+}
+
+.lang_flag{
+  width:20px;
+  height: 13px;
+}
+
+.dropdown_list{
+  background-color: #fff;
+
+}
+
+.dropdown_list li{
+  padding: 2px 41px 0px 10px;
+  max-width: 149px;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.dropdown_list li a{
+  color:#000;
+  font-size:12px;
+  font-family: 'Spoqa Han Sans Light';
+}
+
+.dropdown_list li:hover a{
+  color:#00B9FF;
+  font-family: 'Spoqa Han Sans Light';
+}

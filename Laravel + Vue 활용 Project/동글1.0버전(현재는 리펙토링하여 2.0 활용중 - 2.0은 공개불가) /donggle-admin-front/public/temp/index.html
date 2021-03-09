@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!--
+    헤더 팝업은 여기에만 구현되어있음
+    .in-snb-hidden
+   -->
+     <!-- 메인일때만 main-header 적용 -->
+      <!-- header -->
+      <header id="admin-header" class="main-header">
+        <!-- 상단고정 헤더 -->
+        <div id="header-hd">
+          <div class="show-pc">
+            <!-- 상단 side navigation -->
+            <section class="hd-snb-bar">
+              <div class="in-store-profile">
+                <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+                <a href="#">
+                  <figure class="symbol-circle">
+                    <img
+                      src="/images/img/profile_admin.jpg"
+                      alt="profile image"
+                    />
+                  </figure>
+                  <h2 class="in-name">스토어명</h2>
+                  <img
+                    class="in-btn-img"
+                    src="/images/btn/btn_more.svg"
+                    alt="btn more"
+                  />
+                </a>
+              </div>
+
+              <div class="in-snb-group">
+                <div class="in-snb-list">
+                  <span class="in-snb-name">알림</span>
+                  <!-- 알림 클릭했을 때 아래 in-snb-hidden 보여야함 -->
+                  <!-- 알림 팝업 -->
+                  <div class="in-snb-hidden">
+                    <h2>알림</h2>
+
+                    <div class="hd-alarm-wrap">
+                      <div class="hd-alarm new">
+                        <figure class="symbol-circle">
+                          <img
+                            src="/images/img/profile_admin.jpg"
+                            alt="profile image"
+                          />
+                        </figure>
+                        <div class="hd-alarm-desc_wrap">
+                          <!-- <div class="alrim-desc_sort">쿠폰</div> -->
+                          <div class="hd-alarm-desc">
+                            <div class="_from">알림발신인</div>
+                            <div class="_date">2019-10-10</div>
+                            <div class="_text">
+                              신규가입감사 할인쿠폰이 발급되었습니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="hd-alarm new">
+                        <figure class="symbol-circle">
+                          <img
+                            src="/images/img/profile_admin.jpg"
+                            alt="profile image"
+                          />
+                        </figure>
+                        <div class="hd-alarm-desc_wrap">
+                          <!-- <div class="alrim-desc_sort">쿠폰</div> -->
+                          <div class="hd-alarm-desc">
+                            <div class="_from">알림발신인</div>
+                            <div class="_date">2019-10-10</div>
+                            <div class="_text">
+                              신규가입감사 할인쿠폰이 발급되었습니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="hd-alarm">
+                        <figure class="symbol-circle">
+                          <img
+                            src="/images/img/profile_admin.jpg"
+                            alt="profile image"
+                          />
+                        </figure>
+                        <div class="hd-alarm-desc_wrap">
+                          <!-- <div class="alrim-desc_sort">쿠폰</div> -->
+                          <div class="hd-alarm-desc">
+                            <div class="_from">알림발신인</div>
+                            <div class="_date">2019-10-10</div>
+                            <div class="_text">
+                              신규가입감사 할인쿠폰이 발급되었습니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="hd-alarm">
+                        <figure class="symbol-circle">
+                          <img
+                            src="/images/img/profile_admin.jpg"
+                            alt="profile image"
+                          />
+                        </figure>
+                        <div class="hd-alarm-desc_wrap">
+                          <!-- <div class="alrim-desc_sort">쿠폰</div> -->
+                          <div class="hd-alarm-desc">
+                            <div class="_from">알림발신인</div>
+                            <div class="_date">2019-10-10</div>
+                            <div class="_text">
+                              신규가입감사 할인쿠폰이 발급되었습니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hd-alrim-allview">
+                      <a href="#">+ 전체보기</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="snb/inquiry-store-list.html" class="in-snb-list">
+                  <span class="in-snb-name">스토어 문의</span>
+                </a>
+                <div class="in-snb-list">
+                  <span class="in-snb-name">고객센터</span>
+                  <!-- 고객센터 클릭했을 때 아래 in-snb-hidden 보여야함 -->
+                  <!-- cs 링크 팝업 -->
+                  <div class="in-snb-hidden">
+                    <div class="cs-content">
+                      <a href="#">공지사항</a>
+                      <a href="#">자주 묻는 질문</a>
+                      <a href="#">관리자 1:1 문의</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="in-snb-list">
+                  <span class="in-snb-name">로그아웃</span>
+                </div>
+              </div>
+            </section>
+            <!-- END 상단 side navigation -->
+
+            <!-- 상단 타이틀바 -->
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <section class="hd-title-bar">
+              <div class="in-page-name">
+                <h3 class="in-main"><span>스토어 관리</span></h3>
+              </div>
+
+              <div class="in-page-btn-group"></div>
+            </section>
+            <!-- FIXME: END -->
+            <!-- END 상단 타이틀바 -->
+          </div>
+
+          <div class="show-mobile">
+            <div class="hd-title-bar">
+              <!-- FIXME: 이부분만 바뀝니다~ -->
+              <div class="hd-title-bar-inner">
+                <div class="in-left-btn">
+                  <label for="mobile_show_gnb" class="in-label-btn">
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                  </label>
+                </div>
+
+                <div class="in-page-name">
+                  <h3 class="in-main">
+                    <a href="#">
+                      <img
+                        src="/images/logo/logo_header_bk.svg"
+                        alt="image"
+                        class="in-logo"
+                      />
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <!-- FIXME: END -->
+            </div>
+          </div>
+        </div>
+        <!-- END 상단고정 헤더 -->
+
+        <input id="mobile_show_gnb" class="none" type="checkbox" />
+        <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+        <!-- 왼쪽 global navigation -->
+        <div id="header-gnb">
+          <section class="in-brand-con-box show-pc">
+            <h1 class="in-brand-logo">
+              <!-- TODO: 대시보드 메인으로 -->
+              <a href="index.html">
+                <img
+                  src="/images/logo/logo_header_wh.svg"
+                  alt="image"
+                  class="in-logo"
+                />
+              </a>
+            </h1>
+          </section>
+
+          <section class="in-mobile-gnb-hd show-mobile">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#" target="_blank">
+                <figure class="symbol-circle">
+                  <img
+                    src="/images/img/profile_admin.jpg"
+                    alt="profile image"
+                  />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img
+                  class="in-btn-img"
+                  src="/images/btn/btn_more.svg"
+                  alt="btn more"
+                />
+              </a>
+            </div>
+
+            <label for="mobile_show_gnb" class="icon-close-btn">닫기</label>
+            <div class="inner-snb-group">
+              <a href="./index.html" class="icon-home-btn in-icon-btn"
+                ><i class="hide-text">홈</i></a
+              >
+              <!-- 새 알림 있으면 클래스 목록에 active 추가 -->
+              <a href="./snb/alarm-view.html" class="icon-alarm-btn in-icon-btn"
+                ><i class="hide-text">알림</i></a
+              >
+              <!-- 새 문의 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="./snb/inquiry-store-list.html"
+                class="icon-contact-btn in-icon-btn"
+                ><i class="hide-text">문의</i></a
+              >
+            </div>
+            <div class="in-bottom-btns clearfix">
+              <a href="./snb/cs-notice-main.html" class="link-cs-btn"
+                >고객센터</a
+              >
+              <a href="#">로그아웃</a>
+            </div>
+          </section>
+
+          <div class="in-gnb-group">
+            <a href="gnb/setting-store.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_01.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_01_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">스토어 설정</span>
+            </a>
+            <a href="gnb/check-order.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_02.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_02_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문상품 확인</span>
+            </a>
+            <a href="gnb/history-order-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문내역</span>
+            </a>
+            <a href="gnb/history-cancel-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">취소/환불 내역</span>
+            </a>
+            <a href="gnb/manage-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_05.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_05_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품관리</span>
+            </a>
+            <a href="gnb/inquiry-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_06.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_06_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품문의</span>
+            </a>
+            <a href="manage-review.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_07.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_07_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">구매후기</span>
+            </a>
+            <a href="gnb/sales-status.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_08.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_08_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">매출현황</span>
+            </a>
+          </div>
+        </div>
+        <!-- END 왼쪽 global navigation -->
+      </header>
+      <!-- END header -->
+
+      <!-- contents -->
+      <div id="admin-container" class="main-container">
+        <div class="wrapper">
+          <div id="page-main-wrap">
+            <div class="show-mobile">
+              <div class="main-gnb-area">
+                <div class="inner">
+                  <a href="gnb/setting-store.html" class="in-list">
+                    <img src="/images/icon/icon_01_wh.svg" alt="icon" />
+                    <span class="in-word">스토어 설정</span>
+                  </a>
+                  <a href="gnb/check-order.html" class="in-list">
+                    <img src="/images/icon/icon_02_wh.svg" alt="icon" />
+                    <span class="in-word">주문상품 확인</span>
+                  </a>
+                  <a href="gnb/history-order-list.html" class="in-list">
+                    <img src="/images/icon/icon_03_wh.svg" alt="icon" />
+                    <span class="in-word">주문내역</span>
+                  </a>
+                  <a href="gnb/history-cancel-list.html" class="in-list">
+                    <img src="/images/icon/icon_03_wh.svg" alt="icon" />
+                    <span class="in-word">취소/환불 내역</span>
+                  </a>
+                  <a href="gnb/manage-product-list.html" class="in-list">
+                    <img src="/images/icon/icon_05_wh.svg" alt="icon" />
+                    <span class="in-word">상품관리</span>
+                  </a>
+                  <a href="#" class="in-list">
+                    <img src="/images/icon/icon_06_wh.svg" alt="icon" />
+                    <span class="in-word">상품문의</span>
+                  </a>
+                  <a href="#" class="in-list">
+                    <img src="/images/icon/icon_07_wh.svg" alt="icon" />
+                    <span class="in-word">구매후기</span>
+                  </a>
+                  <a href="#" class="in-list">
+                    <img src="/images/icon/icon_08_wh.svg" alt="icon" />
+                    <span class="in-word">매출현황</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-line-group first">
+              <div class="grid-col grid-col-01">
+
+                <h3 class="mobile-page-title show-mobile ">스토어 관리</h3>
+
+                <div class="panel-default-container panel-con-01">
+                  <div class="panel-default-title">
+                    <h4 class="in-mainname">주문 현황</h4>
+                  </div>
+                  <div class="panel-default">
+                    <div class="main-graph-area"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-col grid-col-02">
+                <div class="panel-default-container panel-con-02">
+                  <div class="panel-default-title">
+                    <h4 class="in-mainname">금일 주문 현황</h4>
+                  </div>
+                  <div class="panel-default-content">
+                    <div class="main-info-panel-card">
+                      <ul class="inner">
+                        <li class="info-list">
+                          <div class="in-title">
+                            <img src="/images/icon/icon_02.svg" alt="icon" />
+                            <span>주문수</span>
+                          </div>
+                          <div class="in-content">
+                            <p><b>111</b><span>건</span></p>
+                          </div>
+                        </li>
+                        <li class="info-list">
+                          <div class="in-title">
+                            <img src="/images/icon/icon_03.svg" alt="icon" />
+                            <span>취소/환불</span>
+                          </div>
+                          <div class="in-content">
+                            <p><b>3</b><span>건</span></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel-default-container panel-con-03">
+                  <div class="panel-default-title">
+                    <h4 class="in-mainname">이번달 매출현황</h4>
+                  </div>
+                  <div class="panel-default-content">
+                    <div class="main-info-panel-card">
+                      <ul class="inner">
+                        <li class="info-list">
+                          <div class="in-title">
+                            <img src="/images/icon/icon_02.svg" alt="icon" />
+                            <span>주문수</span>
+                          </div>
+                          <div class="in-content">
+                            <p><b>111</b><span>건</span></p>
+                            <p class="in-text-right plus">
+                              <b>3,000,000</b><span>원</span>
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-list">
+                          <div class="in-title">
+                            <img src="/images/icon/icon_03.svg" alt="icon" />
+                            <span>취소/환불</span>
+                          </div>
+                          <div class="in-content">
+                            <p><b>3</b><span>건</span></p>
+                            <p class="in-text-right minus">
+                              <b>90,000</b><span>원</span>
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-list">
+                          <div class="in-title">
+                            <img
+                              src="/images/icon/icon_profit.svg"
+                              alt="icon"
+                            />
+                            <span>예상매출</span>
+                          </div>
+                          <div class="in-content">
+                            <p><b>50,000</b><span>건</span></p>
+                            <p class="in-text-right">
+                              <b>3,000,000</b><span>원</span>
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-line-group second">
+              <div class="grid-col grid-col-03">
+                <div class="panel-default-container panel-con-04">
+                  <div class="panel-default-title">
+                    <h4 class="in-mainname">스토어 문의</h4>
+
+                    <a href="#" class="in-more">
+                      <span>더보기</span>
+                      <img src="/images/btn/btn_more.svg" alt="btn" />
+                    </a>
+                  </div>
+                  <div class="panel-default-content">
+                    <div class="main-mini-panel-card">
+                      <div class="inner">
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status">답변대기</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card">
+                      <div class="inner">
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status complt">답변완료</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card">
+                      <div class="inner">
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status complt">답변완료</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card">
+                      <div class="inner">
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status">답변대기</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card">
+                      <div class="inner">
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status">답변대기</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-col grid-col-04">
+                <div class="panel-default-container panel-con-05">
+                  <div class="panel-default-title">
+                    <h4 class="in-mainname">상품문의</h4>
+
+                    <a href="#" class="in-more">
+                      <span>더보기</span>
+                      <img src="/images/btn/btn_more.svg" alt="btn" />
+                    </a>
+                  </div>
+                  <div class="panel-default-content">
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status">답변대기</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status">답변대기</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status">답변대기</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status">답변대기</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          문의 제목입니다. 문의 제목입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <span class="in-status">답변대기</span>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-col grid-col-05">
+                <div class="panel-default-container panel-con-06">
+                  <div class="panel-default-title">
+                    <h4 class="in-mainname">구매후기</h4>
+
+                    <a href="#" class="in-more">
+                      <span>더보기</span>
+                      <img src="/images/btn/btn_more.svg" alt="btn" />
+                    </a>
+                  </div>
+                  <div class="panel-default-content">
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          후기 내용입니다. 후기 내용입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <div class="star-group star-04">
+                          <i class="_img"></i>
+                          <span class="_rate"></span>
+                        </div>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          후기 내용입니다. 후기 내용입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <div class="star-group star-04">
+                          <i class="_img"></i>
+                          <span class="_rate"></span>
+                        </div>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          후기 내용입니다. 후기 내용입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <div class="star-group star-04">
+                          <i class="_img"></i>
+                          <span class="_rate"></span>
+                        </div>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          후기 내용입니다. 후기 내용입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <div class="star-group star-04">
+                          <i class="_img"></i>
+                          <span class="_rate"></span>
+                        </div>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                    <div class="main-mini-panel-card type-thumb">
+                      <div class="inner">
+                        <figure class="in-thumb">
+                          <img
+                            src="/images/img/product.jpg"
+                            alt="product image"
+                          />
+                        </figure>
+                        <span class="in-subtit"
+                          >데일리 흑청와이드 데님팬츠_3color</span
+                        >
+                        <p class="in-maintit">
+                          후기 내용입니다. 후기 내용입니다. 어느정도 길어질시
+                          말줄임표해주세요~
+                        </p>
+                        <div class="star-group star-04">
+                          <i class="_img"></i>
+                          <span class="_rate"></span>
+                        </div>
+                        <span class="in-datetime">1시간전</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="admin-footer">
+          <span class="in-copyright">Copyrights © <i>Donggle</i></span>
+          <div class="in-company-info">
+            <span>회사명 : ㈜동글</span>
+            <span>대표이사 : OOO</span>
+            <span>사업자등록번호 : 220-88-93187</span>
+            <span>통신판매업신고 : 2016-서울강남-00359</span>
+            <span>호스팅사업자 : (주)동글</span>
+            <span class="in-address"
+              >주소 : (06223) 서울특별시 강남구 테헤란로 32길 26 청송빌딩</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- END contents -->
+    </div>
+  </body>
+</html>

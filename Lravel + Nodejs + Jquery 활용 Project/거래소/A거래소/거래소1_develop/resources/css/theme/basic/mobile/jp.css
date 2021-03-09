@@ -1,0 +1,173 @@
+/* --------------모바일 일본어버전 css start-------------- */
+
+body{
+    letter-spacing: -0.4px;
+	font-family: "Nunito", 'Noto Sans JP', sans-serif;
+}
+
+/* 헤더 */
+#m_nav_page .nav_sub_btns .before{
+    top: 25px;
+}
+/* //헤더 */
+
+/* --------상단탭메뉴-------- */
+.m_tab_list{
+    overflow-x: scroll;
+}
+
+.m_tab_list ul.w-160{
+    width: 160%;
+}
+
+.m_tab_list ul.w-120{
+    width: 120%;
+}
+
+/* --------상단탭메뉴-------- */
+
+/* --------코인검색바-------- */
+
+.coin_sch_bar{
+    padding-right: 80px;
+}
+
+.sch_bar .coin_sch_checkbox{
+    width: 80px;
+}
+
+/* --------코인검색바-------- */
+
+/* --------메인-------- */
+
+#main_wrap .m_coin_chart .table_label thead>tr>th:nth-child(1){
+    width: 30%;
+}
+
+#main_wrap .m_coin_chart .table_label thead>tr>th:nth-child(2){
+    width: 25%;
+}
+
+#main_wrap .m_coin_chart .table_label thead>tr>th:nth-child(3),
+#main_wrap .m_coin_chart .table_label thead>tr>th:nth-child(4){
+    width: 23%;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(1){
+    width: 30%;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(2){
+    width: 28%;
+}
+
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(3){
+    width: 22%;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(4){
+    width: 20%;
+}
+
+/* 헤더 */
+
+#m_nav_page .nav_sub_btns{
+    height: 65px;
+}
+
+#m_nav_page .nav_sub_btns .after>span a{
+    display: inline-block;
+    text-align: left;
+}
+
+/* //헤더 */
+
+/* --------메인 end-------- */
+
+/* --------마이페이지-------- */
+.m_mypage_wrap-1 .alarm_div span{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.m_mypage_wrap-1 .alarm_div .alarm_group{
+    width: 100%;
+    text-align: right;
+    float: none;
+}
+
+.m_mypage_wrap-3 .both_btn_group button{
+    font-size: 0.75rem;
+}
+/* --------마이페이지 end-------- */
+
+/* --------거래소-------- */
+.trans_order_con .left_con .wait_ul li.nthing_li {
+    height: 45px;
+    width: 100%;
+}
+
+.coin_select_bar .select_tit .currency{
+    padding-left: 0.5rem;
+}
+/* --------거래소 end-------- */
+
+/* --------입출금-------- */
+
+.m_transwlt_wrap .right_wrap .con_2 .form_group_wrap .form_group:nth-child(1) .mini_btn_st{
+    line-height: 16px;
+}
+
+/* --------입출금 end-------- */
+
+
+/* --------회원가입-------- */
+
+@media all and (max-width:576px){
+
+.auth_wrap.register_auth_wrap .top_tit,
+.auth_wrap.register_auth_wrap .top_tit.last_top_tit{
+    padding: 15px 20px;
+}
+
+.auth_wrap.register_auth_wrap .top_tit .grayCheckbox{
+    top: 43px;
+}
+
+.auth_wrap.register_auth_wrap .top_tit.last_top_tit .grayCheckbox{
+    top: 33px;
+}
+
+.auth_wrap.register_auth_wrap .top_tit label{
+    text-indent: 0;
+}
+
+}
+/* --------회원가입 end-------- */
+
+/* --------p2p-------- */
+
+.p2p_list_group .list_in_con .buy_tit::before {
+    content: '購入';
+}
+.p2p_list_group .list_in_con .sell_tit::before {
+    content: '売却';
+}
+
+.p2p_create_popup #cancel_btn{
+    width: 90px;
+}
+.p2p_modal_popup .small_slc{
+    width: 45%;
+}
+/* --------p2p end-------- */
+
+/* --------ICO-------- */
+
+.ico_view_con .info_section2 table th{
+    width: 35%;
+}
+/* --------ICO end-------- */
+
+/* --------------모바일 일본어버전 css end-------------- */

@@ -1,0 +1,231 @@
+@import "../helpers/mixin";
+
+.wrapper--sign-up {
+    background-color: $bg-01-color;
+
+    &--01 {
+        background-image: url(/img/bg/bg-br-logo.svg);
+        background-position: 85% 92%;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        
+    }
+
+    &--02 {
+        background-color: #fff;
+        padding-top: 4.5rem;
+        padding-bottom: 6rem;
+
+        .ft-info{
+            @include position($b: 0, $l: 0, $transX: 0, $transY: 0);
+        }
+
+    }
+
+}
+
+.agree-intro {
+    font-size: $parent-normal-font;
+    padding: 5rem 0 3rem;
+
+    &__label {
+        @include fontStyle(inherit, 400, $gray-color);
+        text-decoration: underline;
+    }
+
+    &__span {
+        @include fontStyle($small-font, 400, $light-blue-color);
+        padding-left: 1.7rem;
+    }
+}
+
+.account-list {
+    &__list-group {
+        font-size: $parent-normal-font;
+    }
+
+    &__list {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 1em 1em 1em 4em;
+        margin: 12px 0;
+        position: relative;
+
+        &__icon {
+            width: 2.3em;
+            height: 2.3em;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0.8em;
+            transform: translateY(-50%);
+        }
+
+        &__icon--kakao {
+            @include bgStyle(2em);
+            background-image: url(/img/icon/icon-agree-kakao.svg);
+        }
+
+        &__icon--email {
+            @include bgStyle(cover);
+            background-image: url(/img/icon/icon-agree-email.svg);
+        }
+
+        &:active {
+            background-color: darken(#fff, 5%);
+        }
+
+        &__txt {
+            @include fontStyle($normal-small-font, 400, #5a5a5a);
+        }
+    }
+}
+
+.sign-up-agree {
+    border-bottom: 1px solid $border-color;
+    font-size: $parent-normal-font;
+    padding: 0.95rem 0;
+
+    &--first {
+        padding: 0.95rem 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__label {
+        @include fontStyle($normal-small-font, 500, $navy-color);
+    }
+
+    &--etc {
+        .sign-up-agree__label {
+            @include fontStyle($normal-small-font, 400, $light-blue-color);
+        }
+
+        &:nth-child(4) {
+            border-bottom: 0;
+        }
+    }
+}
+
+.sign-up-profile {
+    margin: 2rem 0;
+    text-align: center;
+
+    &__image {
+        @include bgStyle(3.5rem);
+
+        $circle-size: 7rem;
+        width: $circle-size;
+        height: $circle-size;
+        border-radius: 50%;
+        background-color: $main-color;
+        display: inline-block;
+        font-size: $parent-normal-font;
+        background-image: url(/img/logo/logo-symbol-tripik-opacity.svg);
+        position: relative;
+
+        &::after {
+            @include bgStyle(cover);
+            @include position($r: 0, $b: 0, $transX: 0, $transY: 0);
+            $circle-size: 2.5rem;
+
+            content: "";
+            display: inline-block;
+            width: $circle-size;
+            height: $circle-size;
+            background-image: url("/img/icon/icon-picture-mini.svg");
+        }
+    }
+
+    &__caption {
+        @include fontStyle($small-font, 800, #fff);
+        margin-top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.sign-up-fieldset {
+    &__group {
+        font-size: $parent-normal-font;
+    }
+
+    &__list {
+        width: 100%;
+        height: 2.5em;
+        position: relative;
+
+        &__label {
+            @include position($t: 50%, $l: 7px, $transX: 0, $transY: -50%);
+            @include fontStyle($normal-small-font, 400, $light-blue-02-color);
+        }
+
+        &__input {
+            @include iosInput;
+            @include fontStyle($normal-small-font, 400, $navy-color);
+            outline: none;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: 0;
+            border-bottom: 1px solid $border-color;
+            padding-left: 7rem;
+
+            &:focus {
+                border-color: $main-color;
+            }
+
+            &::placeholder {
+                color: rgba(#99b1cb, 0.3);
+            }
+        }
+    }
+
+    &--phone {
+        margin-top: 3rem;
+
+        &__button {
+            @include buttonStyle(5px, 2rem, #fff, $small-font);
+            @include position($t: 50%, $r: 0, $transX: 0, $transY: -50%);
+            width: 8rem;
+        }
+
+        &__input {
+            padding-left: 7px;
+        }
+
+        &__certify {
+            font-size: $normal-font;
+            padding-left: calc(0.75em + 7px);
+            padding-top: 0.5em;
+        }
+
+        &__certify__count {
+            @include fontStyle($normal-small-font, 400, $navy-color);
+        }
+
+        &__certify__caution {
+            color: rgba(#99b1cb, 0.3);
+        }
+
+        &__certify.is-active .sign-up-fieldset--phone__certify__count {
+            color: $main-color;
+        }
+    }
+}
+
+
+.button-wrap{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding: 2rem 0;
+}
+
+.wrapper--sign-up--02 #user_form{
+    height: calc(100% - 30px);
+
+    .wrapper--inner{
+        height: 100%;
+    }
+}

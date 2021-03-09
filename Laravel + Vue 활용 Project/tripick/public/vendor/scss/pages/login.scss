@@ -1,0 +1,136 @@
+@import '../helpers/mixin';
+
+.wrapper--login{
+
+    background: linear-gradient(to top, $main-color, #00B3DB);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &--inner{
+        position: relative;
+        background-color: #fff;
+        width: 100%;
+        height: auto;
+        padding: 3rem 0 0;
+        height: 60vh;
+
+        &::before{
+
+          @include bgStyle(cover);
+          $height: 216px;
+          content: '';
+          width: 100%;
+          height: $height;
+          background-image: url(/img/bg/bg-login-panel.svg);
+          display: inline-block;
+          position: absolute;
+          top: -$height + 1px;
+          background-position: bottom;
+
+          @include sm{
+
+            @include bgStyle(100%);
+            background-position: bottom;
+            $height: 166px;
+
+
+          }
+
+        }
+
+        @include mediaCustom(1024){
+            height: 40vh;
+        }
+
+        @include md{
+            height: 60vh;
+        }
+
+        @include sm{
+            height: 67vh;
+            overflow-y: scroll;
+        }
+
+    }
+
+    &__con{
+
+      width: 100%;
+      padding: 0 3rem;
+      background-color: #fff;
+      height: 100%;
+
+      .button{
+
+        width: 80%;
+        margin: 1.5rem auto;
+        display: block;
+        background: linear-gradient(45deg, #00BCDA, #3EDFE2);
+        box-shadow: 0 4px 11px rgba(0,177,174, 0.2);
+        font-weight: 700;
+
+      }
+
+    }
+
+    .inline--center{
+        margin: 1rem 0 2rem;
+    }
+
+    .ft-info{
+        height: 20vh;
+        @include sm{
+            height: auto;
+        }
+    }
+
+}
+
+// 소셜로그인 스타일 추가
+
+.social_login_group {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+
+    span{
+        color: #99B1CB;
+        border-right: 1px solid #B4B4B4;
+        height: 17px;
+        line-height: 17px;
+        padding-right: 13px;
+    }
+
+    .social_btn{
+        @include bgStyle(32px);
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 8px 7px rgba(0,0,0,0.11);
+
+        &.naver{
+            margin: 0 18px;
+            background-color: #00BF19;     
+            background-image: url(/img/icon/icon-agree-naver.svg);
+            background-size: 18px;   
+        }
+
+        &.kakao{
+            background-color: #FCE000;
+            background-image: url(/img/icon/icon-agree-kakao.svg);
+        }
+
+        a{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+
+    }
+
+}

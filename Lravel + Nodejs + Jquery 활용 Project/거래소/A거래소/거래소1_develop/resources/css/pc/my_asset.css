@@ -1,0 +1,691 @@
+/*------------------------MY ASSET 내 자산 스타일 START------------------------*/
+
+/*--common*/
+.my_asset_wrap {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.my_asset_wrap .ast_info{
+    margin:20px 0;
+}
+
+.my_asset_con_wrap {
+	width: 100%;
+	border: 0;
+	height: unset;
+	background: #fff;
+}
+
+.my_asset_con_wrap .table_label{
+	border-bottom: 1px solid #dddddd;
+}
+
+.coin_td{
+	position: relative;
+}
+
+.coin_td img{
+	position: absolute;
+    top: 21px;
+    left: 13px;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+}
+
+.coin_td span.coin_name{
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: left;
+    color: #333333;
+    display: block;
+
+}
+
+.coin_td span.coin_name>small{
+    font-size: 10px;
+    color: #bbb;
+    display: block;
+}
+
+.coin_td span.coin_name_eng{
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #717171;
+    text-transform: uppercase;
+}
+
+.coin_td span.coin_name_eng>small{
+    font-size: 10px;
+    color: #bbb;
+    margin-left: 3px;
+}
+
+/*--//common*/
+
+/*--table common*/
+.ast_table_wrap {
+	background: #fff;
+    border: 1px solid #dddddd;
+}
+
+.ast_table_wrap .coin_chart_tbl .currency {
+    margin-left: 0;
+    color:#717171;
+}
+
+.ast_table_wrap .table_label thead > tr > th {
+	font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.48px;
+    color: #969696;
+    padding: 10px 0;
+    text-align: right;
+}
+
+.ast_table_wrap .coin_chart_tbl tbody > tr > td {
+	font-size: 13px;
+}
+
+.ast_table_wrap .coin_chart_tbl tbody > tr > td.coin_td .coin_name_eng {
+	font-size: 11px;
+}
+
+.coin_chart_tbl tbody>tr {
+    border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+	height:70px;
+}
+/*--//table common*/
+
+/*------------① my_asset_hd.transac_header start------------*/
+
+.my_asset_hd {
+	background: #fff;
+}
+
+.my_asset_hd ul li {
+	font-size: 16px;
+}
+
+.trans_inner_2 .transac_header.my_asset_hd {
+	border: 0;
+}
+
+.trans_inner_2 .transac_header.my_asset_hd ul {
+    position: relative;
+}
+
+.trans_inner_2 .transac_header.my_asset_hd ul span.underline{
+    bottom:0;
+}
+
+.trans_inner_2 .transac_header.my_asset_hd ul li:nth-child(1).active ~ .underline {
+    left: 23px;
+    width: 72px;
+}
+
+.trans_inner_2 .transac_header.my_asset_hd ul li:nth-child(2).active ~ .underline {
+    left: 141px;
+    width: 72px;
+}
+
+.trans_inner_2 .transac_header.my_asset_hd ul li:nth-child(3).active ~ .underline {
+    left: 266px;
+    width: 59px;
+}
+
+.my_asset_con .table_view_more{
+	width: 100%;
+    height: calc(2.5rem + 2px);
+}
+
+.my_asset_con .table_view_more button{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #fff;
+    border: 1px solid #474846;
+    border-radius: 5px;
+    font-size: 13px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.08);
+	outline: none;
+	cursor: pointer;
+}
+
+.my_asset_con .table_view_more button:hover{
+	border-color: #00b9ff;
+}
+
+.my_asset_con .table_view_more button:active{
+	background: #f7f7f7;
+}
+
+/*------------//① my_asset_hd.transac_header end------------*/
+
+/*------------② my_asset_con_wrap start------------*/
+
+/*--②-1 .my_asset_1 style*/
+.my_asset_con_wrap .my_asset_1 .note_label{
+	text-align: right;
+}
+
+.my_asset_con_wrap .my_asset_1 .note_label .coin_sch_checkbox{
+    left: 0;
+    border: 0;
+    padding: 17px 0;
+    width: 95px;
+}
+
+.my_asset_1 .ast_info {
+	background: #fff;
+	border: 1px solid #dddddd;
+	border-bottom: 0;
+}
+
+.ast_info ul {
+	width: 100%;
+    overflow: hidden;
+}
+
+.ast_info ul li {
+	width: 410px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #f8f8f8;
+    padding: 15px;
+    font-size: 13px;
+    color: #3b3b3b;
+    background-color: #f8f8f8;
+    transition:box-shadow 0.2s, border 0.2s, background-color 0.2s;
+}
+
+.ast_info ul li:hover{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #00b9ff;
+    background-color: #ffffff;
+}
+
+.ast_info ul li>span{
+    display:block;
+    text-align:right;
+}
+
+.ast_info ul li>span:nth-child(1){
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: right;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.ast_info ul li>span:nth-child(2){
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+}
+
+.ast_info ul li>span:nth-child(2) u{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+    text-align: right;
+    color: #969696;
+}
+
+.ast_info ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.ast_info ul li:nth-child(1), .ast_info ul li:nth-child(2), .ast_info ul li:nth-child(3) {
+	
+}
+
+.my_asset_1 .table_label thead > tr > th{
+    padding-right: 40px;
+}
+
+.my_asset_1 .table_label thead > tr > th:nth-child(1), .my_asset_1 .coin_chart_tbl tbody > tr > td:nth-child(1) {
+	width: 12%;
+}
+
+.my_asset_1 .table_label thead > tr > th:nth-child(2), .my_asset_1 .coin_chart_tbl tbody > tr > td:nth-child(2) {
+	width: 18%;
+}
+
+.my_asset_1 .table_label thead > tr > th:nth-child(3), .my_asset_1 .coin_chart_tbl tbody > tr > td:nth-child(3), .my_asset_1 .table_label thead > tr > th:nth-child(4), .my_asset_1 .coin_chart_tbl tbody > tr > td:nth-child(4), .my_asset_1 .table_label thead > tr > th:nth-child(5), .my_asset_1 .coin_chart_tbl tbody > tr > td:nth-child(5), .my_asset_1 .table_label thead > tr > th:nth-child(6), .my_asset_1 .coin_chart_tbl tbody > tr > td:nth-child(6) {
+	width: 15%;
+}
+
+.my_asset_1 .table_label thead > tr > th:nth-child(7), .my_asset_1 .coin_chart_tbl tbody > tr > td:nth-child(7) {
+	width: 10%;
+}
+
+.my_asset_1 .coin_chart_tbl tbody > tr > td {
+	font-size: 13px;
+	text-align: right;
+	border: 0;
+	padding-right: 40px;
+}
+
+.my_asset_1 .coin_chart_tbl tbody > tr > td:first-child {
+	text-align: left;
+	padding: 10px 0 10px 45px;
+}
+
+.my_asset_1 .coin_chart_tbl tbody > tr > td:last-child {
+	text-align: center;
+	padding: 0;
+	border-left: 1px solid #f0f0f0;
+}
+
+.my_asset_1 .coin_chart_tbl tbody > tr > td:last-child button.status_btn{
+    letter-spacing: 0;
+    border: 0;
+    background: 0 0;
+    color: #464a58;
+    font-size: 11px;
+    padding: 8px 17px;
+    border-radius: 5px;
+    font-weight: 700;
+    outline: 0;
+    cursor: pointer;
+    background: #464a58;
+    color: #fff;
+    padding: 8px 0;
+    width: 80px;
+    text-transform: uppercase;
+}
+
+.my_asset_1 .coin_chart_tbl tbody > tr > td:last-child button.status_btn:active{
+    background: #111;
+}
+
+.my_asset_1 .coin_chart_tbl tbody > tr > td:nth-child(2) .currency{
+    line-height: 1.46;
+    letter-spacing: normal;
+    color: #00b9ff;
+    text-transform:uppercase;
+}
+/*--//②-1 .my_asset_1 style*/
+
+/*--②-2 .my_asset_2 style*/
+.my_asset_2 {
+	display: none;
+}
+
+.my_asset_2 .table_label thead > tr > th {
+	width: 14%;
+	vertical-align: middle;
+	border-right:1px solid #f0f0f0;
+}
+
+.my_asset_2 .table_label thead > tr > th:last-child{
+	border-right:none;
+}
+
+.my_asset_2 .table_label thead > tr > th div{
+    padding:3px 0;
+    padding-right: 20px;
+}
+
+.my_asset_2 .table_label thead > tr > th div:nth-child(2){
+	border-top:1px solid #f0f0f0;
+}
+
+.my_asset_2 .coin_chart_tbl tbody > tr > td {
+	text-align: center;
+	width: 14%;
+}
+
+.my_asset_2 .table_label thead > tr > th:nth-child(1), .my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(1) {
+	width: 12%;
+	text-align: center;
+	padding-right: 0;
+}
+
+.my_asset_2 .table_label thead > tr > th:nth-child(2), .my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(2) {
+	width: 12%;
+	text-align: center;
+	padding-right: 0;
+}
+
+.my_asset_2 .table_label thead > tr > th:nth-child(3), .my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(3) {
+	width: 12%;
+	text-align: left;
+    padding-right: 0;
+    padding-left: 50px;
+}
+
+.my_asset_2 .table_label thead > tr > th:nth-child(3){
+	padding-left:41px;
+}
+
+.my_asset_2 .table_label thead > tr > th:nth-child(2) {
+	text-align: center;
+}
+
+.my_asset_2 .table_label thead > tr > th:nth-child(4), .my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(4) {
+	width: 8%;
+	text-align: center;
+	padding-right: 0;
+}
+
+.my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(4) {
+	font-weight: bold;
+}
+
+.my_asset_2 .coin_chart_tbl tbody > tr.trs_type-sell > td:nth-child(4) {
+	color: #4378ff;
+}
+
+.my_asset_2 .coin_chart_tbl tbody > tr.trs_type-buy > td:nth-child(4) {
+	color: #ff4646;
+}
+
+.my_asset_2 .table_label thead > tr > th:nth-child(5), .my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(5) {
+	width: 16%;
+}
+
+.my_asset_2 .table_label thead > tr > th:nth-child(7), .my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(7) {
+	width: 10%;
+	text-align: center;
+	padding-right: 0;
+}
+
+.my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(5) div,.my_asset_2 .coin_chart_tbl tbody > tr > td:nth-child(6) div{
+	padding:2px 0;
+}
+/*--//②-2 .my_asset_2 style*/
+
+/*--②-3 .my_asset_2 style*/
+.my_asset_3 {
+	display: none;
+}
+
+.my_asset_3 .ast_table_wrap .table_label {
+	border-top: 0;
+}
+
+.my_asset_3 .table_label thead > tr > th {
+	width: 14.5%;
+	vertical-align: middle;
+	border-right:1px solid #f0f0f0;
+}
+
+.my_asset_3 .table_label thead > tr > th:last-child{
+    border-right:none;
+    text-align: center;
+}
+
+.my_asset_3 .table_label thead > tr > th div{
+    padding:5px 0;
+    padding-right: 20px;
+}
+
+.my_asset_3 .table_label thead > tr > th div:last-child{
+	border-top:1px solid #f0f0f0;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr > td {
+	text-align: center;
+	width: 14.5%;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr > td div{
+	padding: 3px 0;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.my_asset_3 .table_label thead > tr > th:nth-child(1), .my_asset_3 .coin_chart_tbl tbody > tr > td:nth-child(1) {
+	width: 12%;
+	text-align: center;
+	padding-right: 0;
+}
+
+.my_asset_3 .table_label thead > tr > th:nth-child(2), .my_asset_3 .coin_chart_tbl tbody > tr > td:nth-child(2) {
+	width: 9%;
+    text-align: center;
+    padding-right: 0;
+}
+
+.my_asset_3 .table_label thead > tr > th:nth-child(3), .my_asset_3 .coin_chart_tbl tbody > tr > td:nth-child(3){
+	width: 12%;
+	text-align: left;
+	padding-right: 0;
+}
+
+.my_asset_3 .table_label thead > tr > th:nth-child(3) {
+	text-align: center;
+}
+
+.my_asset_3 .table_label thead > tr > th:nth-child(4), .my_asset_3 .coin_chart_tbl tbody > tr > td:nth-child(4) {
+	width: 8%;
+	text-align: center;
+	padding-right: 0;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr > td:nth-child(3) {
+    font-weight: bold;
+    padding-left: 47px;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr.trs_type-sell > td:nth-child(3) {
+	color: #4378ff;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr.trs_type-buy > td:nth-child(3) {
+	color: #ff4646;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr.none_transac > td{
+	padding: 20px 0;
+}
+
+.my_asset_3 .table_label thead > tr > th:nth-child(8), .my_asset_3 .coin_chart_tbl tbody > tr > td:nth-child(8) {
+	width: 10%;
+	text-align: center;
+	padding-right: 0;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr > td:nth-child(8) {
+	border-left: 1px solid #f0f0f0;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr > td:last-child button{
+    border: solid 1px #dcdcdc;
+    background-color: #ffffff;
+    height: 35px;
+    padding: 0 18px;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    cursor: pointer;
+    transition:box-shadow 0.2s, border 0.2s;
+}
+
+.my_asset_3 .coin_chart_tbl tbody > tr > td:last-child button:hover{
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #00b9ff;
+}
+/*--//②-3 .my_asset_2 style*/
+
+.trans_wrap .trans_inner_2 {
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    padding: 15px 0;
+}
+
+.trans_inner_2 .transac_header.my_asset_hd {
+    border: 0;
+}
+
+.trans_inner_2 .transac_header {
+    width: 357px;
+}
+
+.my_asset_hd {
+    background: #fff;
+}
+
+.trans_inner_2 .transac_header ul {
+    width: 100%;
+    overflow:hidden;
+    border:1px solid #dcdcdc;
+    border-bottom:none;
+}
+
+.trans_inner_2 .transac_header ul li {
+    cursor: pointer;
+    width: 33.3%;
+    float:left;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 22px 0;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #333333;
+}
+
+.trans_inner_2 .transac_header ul li.active{
+    font-weight: bold;
+}
+
+.my_asset_con_wrap .my_asset_1 .note_label {
+    background: #f5f5f5;
+    text-align: right;
+    font-size: 12px;
+    color: #787878;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    padding: 15px;
+    position: relative;
+}
+
+.my_asset_con_wrap .my_asset_1 .note_label .coin_sch_checkbox {
+    width: 95px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    font-size: 11px;
+    font-weight: 700;
+    color: #464a58;
+    padding: 17px 0;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.coin_category {
+    position: relative;
+    border: 1px solid #dcdcdc;
+    border-bottom: none;
+}
+
+.coin_category ul{
+    overflow:hidden;
+    position: relative;
+}
+
+.coin_category ul li {
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #969696;
+    padding: 14px 5px;
+    margin:0 14px;
+    cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.coin_category ul li.active{
+    font-weight:bold;
+    color:#00b9ff;
+}
+
+.underline {
+    position: absolute;
+    left: 92px;
+    bottom: 6px;
+    width: 17px;
+    height: 2px;
+    background: #00b9ff;
+    transition: all .3s ease-in-out;
+}
+.coin_category li:nth-child(1).active ~ .underline {
+    left: 24px;
+    width: 17px;
+}
+.coin_category li:nth-child(2).active ~ .underline {
+    left: 93px;
+    width: 69px;
+}
+.coin_category li:nth-child(3).active ~ .underline {
+    left: 217px;
+    width: 69px;
+}
+/*
+.coin_category li:nth-child(1):hover ~ .underline {
+    left: 0;
+}
+.coin_category li:nth-child(2):hover ~ .underline {
+    left: 20%;
+}
+.coin_category li:nth-child(3):hover ~ .underline {
+    left: 40%;
+}
+*/
+
+/*------------② my_asset_con_wrap end------------*/
+
+/*------------------------MY ASSET 내 자산 스타일 END------------------------*/

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/ui.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="dg-reg-hd">
+      <h1 class="dg-reg-hd-logo">gonggle</h1>
+      <div class="dg-reg-hd-step_wrap">
+        <h2>아이디 찾기</h2>
+        <a href="#">뒤로가기</a>
+      </div>
+    </header>
+    <!-- header E -->
+
+    <!-- content -->
+    <section id="findID1" class="step_common">
+      <h2 class="dg_blind">아이디 찾기</h2>
+      <form action="#" method="post">
+        <fieldset class="dg-write_form">
+          <legend class="dg_blind">아이디 찾기</legend>
+          <div class="dg_write write_name">
+            <label for="#">이름</label>
+            <input
+              type="text"
+              id="#"
+              class="input_text_box"
+              maxlength="10"
+              placeholder="실명 입력"
+            />
+          </div>
+          <div class="dg_write write_tel">
+            <label for="#">휴대폰 번호</label>
+            <div class="input_btn_with_textbox_wrap">
+              <input
+                type="tel"
+                id="#"
+                class="input_text_box input_text_box_with_btn"
+                placeholder="본인 명의 휴대폰 번호"
+                maxlength="13"
+              />
+              <input
+                type="button"
+                class="dg-btn input_btn_with_textbox_btn"
+                value="인증번호 발송"
+              />
+            </div>
+            <label for="#" class="dg_blind">인증번호</label>
+            <div class="input_btn_with_textbox_wrap">
+              <input
+                type="number"
+                id="#"
+                class="input_text_box input_text_box_with_btn"
+                placeholder="인증번호 입력"
+                maxlength="#"
+              />
+              <span class="dg-tel_countdown">3:00</span>
+              <input
+                type="button"
+                class="dg-btn input_btn_with_textbox_btn"
+                value="인증완료"
+              />
+            </div>
+            <p class="dg-write_wr dg-write_wr_nb">
+              인증번호가 일치하지 않습니다.
+            </p>
+          </div>
+        </fieldset>
+      </form>
+      <div class="dg-dubble_btn_wrap clear_both">
+        <a href="#" class="dg-btn_line dg-dubble_btn">취소</a>
+        <a href="#" class="dg-btn_gra dg-dubble_btn">확인</a>
+      </div>
+    </section>
+
+    <section id="findID_end" class="step_common">
+      <div class="dg-popup_alert_desc">
+        <h2>안녕하세요, <b>김동글</b>님!<br /></h2>
+        <div>
+          찾으시려는 이메일 주소는
+          <b>dfd11**@naver.com</b><br />
+          입니다.
+        </div>
+      </div>
+      <div class="dg-dubble_btn_wrap clear_both">
+        <a href="#" class="dg-btn_line dg-dubble_btn">비밀번호 찾기</a>
+        <a href="#" class="dg-btn_gra dg-dubble_btn">로그인</a>
+      </div>
+    </section>
+    <!-- content E -->
+  </body>
+</html>
+
+<!-- find Id / complete E -->

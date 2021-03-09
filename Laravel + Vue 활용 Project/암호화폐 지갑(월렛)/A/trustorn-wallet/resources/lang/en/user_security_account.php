@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'title' => "security certificate",
+    'info_1_1' => "Your current security level",
+    'info_1_2' => "level",
+    'info_1_3' => ".",
+    'step2' => "Step 2-Verify your deposit and withdrawal account",
+    'document1' => "identity card",
+    'document2' => "bankbook",
+    'account_info' => "Enter account information",
+    'select_bank' => "select bank",
+    'placeholder_bank' => "Please enter your bank name. ex) ㅇㅇ Bank",
+    'account_number' => "account number",
+    'placeholder_account_number' => "Please enter your account number without '-'",
+    'account1_attatch' => "Attach a passbook picture",
+    'account1_pic' => "photobook",
+    'account1_pic_holding' => "photo with bankbook",
+    'pic_attach_ok' => "Done photo attached",
+    'ps_p1' => "-Security deposit is required for deposit and withdrawal, and the withdrawal account will be upgraded to level 3 immediately.",
+    'ps_p2' => "-Withdrawal accounts can only register one account with no account name.",
+    'ps_p3' => "-It may take about 0 ~ 2 days to complete verification after attaching photos.",
+    'cautions' => "Notes",
+    'ps_p4' => "-Your security level determines your KRW and cryptocurrency limits.",
+    'ps_p5' => "-Security level is increased as soon as each authentication step is completed.",
+    'next' => "next",
+    'account_info_empty' => "Your account information has not been entered.",
+    'pic_not_uploaded' => "The photo was not uploaded.",
+    'close' => "close",
+    'upload_error' => "Upload error."
+];

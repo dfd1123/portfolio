@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.73" height="27.51" viewBox="0 0 38.73 27.51">
+  <g id="icon_card-off" transform="translate(-0.75 -0.75)">
+    <g id="그룹_397" data-name="그룹 397" transform="translate(1.25 1.25)">
+      <g id="그룹_396" data-name="그룹 396">
+        <path id="패스_55" data-name="패스 55" d="M38.98,26.593a1.161,1.161,0,0,1-1.157,1.166H2.407A1.156,1.156,0,0,1,1.25,26.593V2.407A1.154,1.154,0,0,1,2.407,1.25H37.814a1.16,1.16,0,0,1,1.157,1.157V26.593Z" transform="translate(-1.25 -1.25)" fill="#fff" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <line id="선_179" data-name="선 179" x2="15.479" transform="translate(4.521 21.898)" fill="#fff" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <line id="선_180" data-name="선 180" x2="6.193" transform="translate(25.416 21.898)" fill="#fff" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+      <path id="패스_56" data-name="패스 56" d="M39,8.89H1.5v5.262H39" transform="translate(-1.274 -1.982)" fill="#b4b4b4"/>
+    </g>
+  </g>
+</svg>

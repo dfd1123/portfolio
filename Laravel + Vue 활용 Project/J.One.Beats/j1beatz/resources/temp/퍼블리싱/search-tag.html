@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>J1beats-main</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="제이원비츠" />
+        <meta property="og:description" content="제이원비츠 설명입니다." />
+        <!-- ↓오픈그래프 썸네일 이미지는 만들어놨지만, path방식이 아닌 url방식으로 해야 보인다고 하네욤 우선 이미지 경로라도 적어놓겠습니다~ -->
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="음악플랫폼, 제이원비츠">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="scss/j1beat-ui.css">
+
+        <!--TODO:페이지별 css-->
+        <link rel="stylesheet" href="scss/pages/sub-page.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--TODO:END-->
+
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+    
+
+    </head>
+
+    <body>
+
+        <div id="app">
+    
+            <!-- 메인 컨텐츠 -->
+            <div id="wrap">
+                
+                <section class="section sub-section">
+
+                    <article class="j1beatz-hd">
+
+                        <h3 class="none">제목 및 아티스트 및 태그 검색하기</h3>
+
+                        <fieldset class="j1beatz-hd-sch-field">
+                            <input type="text" placeholder="제목/아티스트/#태그 검색">
+                            <button type="button"><span class="none">검색버튼</span></button>
+                        </fieldset>
+
+                        <div class="j1beatz-hd-cs-field">
+                            <h3>고객센터</h3>
+                            <div class="cs-btns">
+                                <a href="#" class="cs-btn cs-btn-blg"><span class="none">블로그</span></a>
+                                <a href="#" class="cs-btn cs-btn-kkt"><span class="none">카카오톡</span></a>
+                                <a href="#" class="cs-btn cs-btn-insta"><span class="none">인스타그램</span></a>
+                                <a href="#" class="cs-btn cs-btn-ytb"><span class="none">유튜브</span></a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <div class="page-contents-wrapper">
+
+                        <!--TODO:장르선택 차트-->
+                        <div class="sub-page-gnb02-3">
+                            
+                            <div class="sub-page-title">
+
+                                <span class="sub-page-title-category">검색</span>
+                                <h2 class="sub-page-title-name"><b>'#태그검색했을때'</b> 검색결과</h2>
+                                
+                            </div>
+
+                            <div class="in-title">
+                                <span class="in-title-right in-title-right-all_play"><a href="#" role="button">전체듣기</a></span>
+                            </div>
+
+                            <div class="search-tag-result-list">
+                                <ul>
+                                    <li class="result-card">
+                                        <figure class="tag-album-thumb" style="background-image: url(img/example/myalbum-thumnail02.png);">
+                                            <figcaption class="none">앨범 썸네일</figcaption>
+                                        </figure>
+                                        <dl>
+                                            <dt>music title</dt>
+                                            <dd class="_pd_name">producer name</dd>
+                                            <dd class="_tags"><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span></dd>
+                                        </dl>
+                                    </li>
+                                    
+                                    <li class="result-card">
+                                        <figure class="tag-album-thumb" style="background-image: url(img/example/myalbum-thumnail02.png);">
+                                            <figcaption class="none">앨범 썸네일</figcaption>
+                                        </figure>
+                                        <dl>
+                                            <dt>music title</dt>
+                                            <dd class="_pd_name">producer name</dd>
+                                            <dd class="_tags"><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span></dd>
+                                        </dl>
+                                    </li>
+                                    
+                                    <li class="result-card">
+                                        <figure class="tag-album-thumb" style="background-image: url(img/example/myalbum-thumnail02.png);">
+                                            <figcaption class="none">앨범 썸네일</figcaption>
+                                        </figure>
+                                        <dl>
+                                            <dt>music title</dt>
+                                            <dd class="_pd_name">producer name</dd>
+                                            <dd class="_tags"><span>태그</span><span>태그는최대</span><span>태그</span><span>태그</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span></dd>
+                                        </dl>
+                                    </li>
+                                    
+                                    <li class="result-card">
+                                        <figure class="tag-album-thumb" style="background-image: url(img/example/myalbum-thumnail02.png);">
+                                            <figcaption class="none">앨범 썸네일</figcaption>
+                                        </figure>
+                                        <dl>
+                                            <dt>music title</dt>
+                                            <dd class="_pd_name">producer name</dd>
+                                            <dd class="_tags"><span>태그</span><span>태그는최대</span><span>태그</span><span>태그</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span></dd>
+                                        </dl>
+                                    </li>
+                                    
+                                    <li class="result-card">
+                                        <figure class="tag-album-thumb" style="background-image: url(img/example/myalbum-thumnail02.png);">
+                                            <figcaption class="none">앨범 썸네일</figcaption>
+                                        </figure>
+                                        <dl>
+                                            <dt>music title</dt>
+                                            <dd class="_pd_name">producer name</dd>
+                                            <dd class="_tags"><span>태그</span><span>태그는최대</span><span>태그</span><span>태그</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span></dd>
+                                        </dl>
+                                    </li>
+                                    
+                                    <li class="result-card">
+                                        <figure class="tag-album-thumb" style="background-image: url(img/example/myalbum-thumnail02.png);">
+                                            <figcaption class="none">앨범 썸네일</figcaption>
+                                        </figure>
+                                        <dl>
+                                            <dt>music title</dt>
+                                            <dd class="_pd_name">producer name</dd>
+                                            <dd class="_tags"><span>태그</span><span>태그는최대</span><span>태그</span><span>태그</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span></dd>
+                                        </dl>
+                                    </li>
+                                    
+                                    <li class="result-card">
+                                        <figure class="tag-album-thumb" style="background-image: url(img/example/myalbum-thumnail02.png);">
+                                            <figcaption class="none">앨범 썸네일</figcaption>
+                                        </figure>
+                                        <dl>
+                                            <dt>music title</dt>
+                                            <dd class="_pd_name">producer name</dd>
+                                            <dd class="_tags"><span>태그</span><span>태그는최대</span><span>태그</span><span>태그</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span><span>태그입니다</span></dd>
+                                        </dl>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!--TODO:END 장르선택 차트-->
+
+                    </div>
+
+                </section>
+                
+            </div>
+            <!-- //메인 컨텐츠 -->
+    
+        </div>
+
+    </body>
+</html>

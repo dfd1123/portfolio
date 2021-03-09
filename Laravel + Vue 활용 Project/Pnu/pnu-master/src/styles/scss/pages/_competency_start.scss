@@ -1,0 +1,15 @@
+#competency_start{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    > h2{
+        font-size:$f-24;
+        margin:25px 0px;
+    }
+}
+.btn_com_start{
+    color:$light_green2;
+}

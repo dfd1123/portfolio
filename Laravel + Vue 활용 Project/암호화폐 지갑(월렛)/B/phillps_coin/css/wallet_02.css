@@ -1,0 +1,39 @@
+/* wallet02 */
+.container--wallet02 {
+    height: 100%;
+}
+
+.container--wallet02 .scrl-wrap {
+    height: 100%;
+    padding-bottom: 90px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container--wallet02 .status-tit {
+    color: #8b8b8b;
+}
+
+.container--wallet02 .basic_panel__title {
+    margin-bottom: 4px;
+}
+
+.container--wallet02 .basic_panel__contents {
+    margin-bottom: 18px;
+}
+
+.container--wallet02 .basic_panel__contents:last-child {
+    margin-bottom: 25px;
+}
+
+.wallet__qrcode {
+    width: 40%;
+    max-width: 150px;
+    display: block;
+    margin: 10px auto 15px;
+}
+
+.wallet__qrcode img {
+    width: 100%;
+}
+/* end wallet01 */

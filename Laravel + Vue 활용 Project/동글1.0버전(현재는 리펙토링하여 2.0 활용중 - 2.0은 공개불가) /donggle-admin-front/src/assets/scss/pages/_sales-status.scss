@@ -1,0 +1,175 @@
+#page-sales-status-wrap {
+  .table-area {
+    padding: 20px 10px;
+
+    .search-option-bar {
+      margin-bottom: 70px;
+    }
+
+    .search-status-bar {
+      margin: 25px 0 13px;
+    }
+
+    .search-status-bar.type-last {
+      margin-top: 8px;
+    }
+
+    .search-option-period{
+      padding: 0px;
+    }
+
+    .nothing-history {
+      padding: 60px 0;
+    }
+  }
+
+  .search-option-check-group {
+    .in-check-list > * {
+      min-width: 80px;
+    }
+  }
+
+  .tbl-default {
+    .ta-right {
+      padding-right: 20px;
+    }
+    td i {
+      letter-spacing: 0.1px;
+      padding: 0 4px;
+    }
+  }
+
+  .tbl-default-body {
+    .in-tr {
+      height: 70px;
+    }
+  }
+}
+
+// 여기서만 적용
+@media all and (max-width:1500px) and (min-width:1441px){
+  #page-sales-status-wrap .search-option-period ~ .btn-theme{
+    margin-top: 0px;
+  }
+}
+@media all and (max-width:1315px){
+  #page-sales-status-wrap .search-option-period ~ .btn-theme{
+    margin-top: 0px;
+  }
+}
+
+//mogile
+@include media-mobile-version(ipad) {
+  #page-sales-status-wrap {
+    .panel-default {
+      min-height: calc(100vh - 0px - 50px - 100px);
+      padding: 0px;
+    }
+
+    .search-status-bar {
+      text-align: center;
+      .in-align-right{
+        position: relative;
+        left: 0px;
+      }
+    }
+
+    .choice-status-bar {
+      padding: 30px 0px;
+    }
+    .choice-status-bar .form-select {
+      @include font(13px, 400, $gray);
+    }
+  }
+
+  #page-sales-status-wrap .table-area {
+    .search-default-bar {
+      margin-bottom: 0;
+    }
+    .search-status-bar {
+      margin: 20px 0px;
+      padding: 0px;
+    }
+  }
+
+  .in-page-btn-group {
+    .sales-stat-down-btn {
+      width: 30px;
+      min-width: auto;
+    }
+  }
+  .list-total-wrapper {
+    padding: 30px 20px;
+    background-color: $primary-color-02;
+    color: white;
+  }
+  .list-total-title {
+    @include font(18px, 600, white);
+    > span {
+      display: inline-block;
+      border-bottom: 3px solid white;
+      padding-bottom: 11px;
+    }
+  }
+  .list-total-wrapper .tbl-list-wrapper {
+    padding: 0px;
+    .sales-status {
+      margin-top: -2px;
+      border: 0px none;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px 0px 0px;
+    }
+    .sales-status > li {
+      margin: 3px 0px;
+    }
+    .sales-status .in-tit {
+      color: white;
+    }
+    .sales-status .in-tit > small {
+      @include font($s: 12px, $w: 200);
+
+      opacity: 0.6;
+    }
+    .sales-status .in-desc {
+      @include font($s: 15px, $c: white);
+    }
+  }
+  .sales-list-wrap {
+    padding: 0px 0px 40px;
+  }
+  .sales-status {
+    border-bottom: 1px solid $gray-lighter;
+    padding: 28px 20px;
+    > li {
+      margin: 5px 0px;
+    }
+    > li:first-of-type {
+      margin: 0px 0px 15px;
+    }
+    > li:last-of-type {
+      margin-bottom: 0px;
+    }
+    .in-tit {
+      @include font($s: 14px, $c: $gray-md-03);
+      float: left;
+    }
+    .in-od_num {
+      letter-spacing: 0px;
+      color: $primary-color;
+    }
+    .in-desc {
+      @include font($s: 14px, $c: $gray);
+
+      float: right;
+      letter-spacing: 0px;
+    }
+    .in-name {
+      @include font(15px, 600, $primary-color);
+
+      letter-spacing: -0.3px;
+    }
+    .in-desc ._pink {
+      @include font(16px, 600, $pink);
+    }
+  }
+}

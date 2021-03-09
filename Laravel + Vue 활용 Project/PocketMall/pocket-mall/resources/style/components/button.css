@@ -1,0 +1,56 @@
+.rounded-button {
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+    height: 48px;
+    line-height: 48px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-bluegradi {
+    background-image: linear-gradient(
+        to right,
+        #1dbbff 0%,
+        #1d6aff 51%,
+        #1dbbff 100%
+    );
+    color: white;
+    background-size: 200% auto;
+    transition: 0.5s;
+}
+
+.btn-bluegradi:active {
+    background-image: linear-gradient(
+        to right,
+        #26a3d9 0%,
+        #1958d7 51%,
+        #26a3d9 100%
+    );
+    background-position: right center;
+    transition: 0.2s;
+}
+
+@media all and (min-width: 1024px) {
+    .btn-bluegradi:hover {
+        background-position: right center;
+    }
+}
+
+.btn-gray {
+    background-color: #d8d8d8;
+    color: white;
+    transition: 0.2s;
+}
+
+@media all and (min-width: 1024px) {
+    .btn-gray:hover {
+        background-color: #c3c3c3;
+        transition: 0.2s;
+    }
+}
+
+.btn-gray:active {
+    background-color: #bdbdbd;
+}

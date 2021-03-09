@@ -1,0 +1,36 @@
+/*
+    BASE - typo.scss
+*/
+
+@font-face {
+  font-family: "Spoqa";
+  src: url($path-font+'Spoqa_Han_Sans_Regular.woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Spoqa";
+  src: url($path-font+'Spoqa_Han_Sans_Bold.woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Spoqa";
+  src: url($path-font+'Spoqa_Han_Sans_Light.woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Spoqa";
+  src: url($path-font+'Spoqa_Han_Sans_Thin.woff');
+  font-weight: 100;
+}
+body {
+  font-family: "spoqa", "Arial", "sans-serif";
+  word-break: keep-all;
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.45px;
+  -webkit-text-stroke: 0.7px rgba(0, 0, 0, 0.1);
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.45px;
+  -moz-osx-font-smoothing: grayscale;
+}

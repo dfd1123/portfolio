@@ -1,0 +1,672 @@
+@charset "UTF-8";
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+/*
+    --------------------------------------------------------------------
+
+        INDEX 마이페이지
+
+            00. 공통
+            01. 이용권 관리
+            02. 주문내역
+            03. 마이앨범
+            04. 알림 메세지
+            05. 나의 정보관리
+
+    --------------------------------------------------------------------
+*/
+.sub-page-mypage-contents-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sub-page-mypage .in-title {
+  padding: 0 23px;
+  font-size: 16px;
+  min-height: 20px;
+}
+
+.sub-page-mypage .in-title-name {
+  font-weight: bold;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info01 {
+  width: 100%;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info01-name {
+  width: 40%;
+  border-right: 1px solid #cccccc;
+  text-align: center;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info01-name b {
+  color: #7e2aff;
+  margin-right: 5px;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info01-status {
+  width: 60%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box {
+  width: 100%;
+  height: 200px;
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  border-radius: 14px;
+  position: relative;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-nothing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-nothing .btn {
+  width: 170px;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-data-group {
+  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-name {
+  color: #7e2aff;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-data_list ._label {
+  color: rgba(51, 51, 51, 0.5);
+  margin-right: 13px;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-data_list ._data {
+  font-weight: 400;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-data_list ._data b {
+  margin-right: 7px;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-data_list ._data em,
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-data_list ._data b {
+  font-weight: inherit;
+  letter-spacing: 1px;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-yes .ticket-box-name_data_group {
+  position: absolute;
+  bottom: 32px;
+  left: 35px;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-yes .btn {
+  border-radius: 10px;
+  line-height: 33px;
+  height: 33px;
+  background-color: #333333;
+  color: #fff;
+  font-size: 0.95rem;
+  position: absolute;
+  bottom: 32px;
+  right: 35px;
+  width: 110px;
+}
+
+.sub-page-mypage-01 .sub-page-ticket-info02 .ticket-box-yes .btn:hover {
+  background-color: #1a1a1a;
+}
+
+.sub-page-mypage-02 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sub-page-mypage-02 .mypage-02-option-bar {
+  width: 100%;
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sub-page-mypage-02 ._history_period_list01 {
+  width: 50%;
+  height: 55px;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sub-page-mypage-02 ._history_period_list01 li {
+  width: 20%;
+  float: left;
+  height: 100%;
+  line-height: 55px;
+  text-align: center;
+  border-right: 1px solid #dbdbdb;
+}
+
+.sub-page-mypage-02 ._history_period_list01 li:last-child {
+  border-right: 0;
+}
+
+.sub-page-mypage-02 ._history_period_list01 li label {
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.sub-page-mypage-02 ._history_period_list01 li._all label {
+  color: #7e2aff;
+}
+
+.sub-page-mypage-02 #check-order-history-all:checked
+~ ._history_period_list01
+li._all
+label {
+  background-color: #7e2aff;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sub-page-mypage-02 #check-order-history-week1:checked
+~ ._history_period_list01
+li._week1
+label {
+  background-color: #7e2aff;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sub-page-mypage-02 #check-order-history-week2:checked
+~ ._history_period_list01
+li._week2
+label {
+  background-color: #7e2aff;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sub-page-mypage-02 #check-order-history-month1:checked
+~ ._history_period_list01
+li._month1
+label {
+  background-color: #7e2aff;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sub-page-mypage-02 #check-order-history-month3:checked
+~ ._history_period_list01
+li._month3
+label {
+  background-color: #7e2aff;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sub-page-mypage-02 ._history_period_list02 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-page-mypage-02 ._history_period_list02 label {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.5);
+  width: 21%;
+  text-align: center;
+}
+
+.sub-page-mypage-02 ._history_period_list02 span {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.5);
+  width: 5%;
+  text-align: center;
+}
+
+.sub-page-mypage-02 ._history_period_list02 input {
+  width: 37%;
+  border-radius: 12px;
+  border: 1px solid #dbdbdb;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-left: 5%;
+  background-image: url("/img/icon/icon-calender-purple.svg");
+  background-position: 19% 50%;
+  background-repeat: no-repeat;
+}
+
+.sub-page-mypage-02 .cart_chart_list table th.th-song,
+.sub-page-mypage-02 .cart_chart_list table td.td-song {
+  width: 30%;
+}
+
+.sub-page-mypage-02 .cart_chart_list table th.th-file_type,
+.sub-page-mypage-02 .cart_chart_list table td.td-file_type {
+  width: 10%;
+}
+
+.sub-page-mypage-02 .cart_chart_list table td.td-order_data {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.sub-page-mypage-02 .cart_chart_list table td.td-download .btn {
+  border-radius: 5px;
+  line-height: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #7e2aff;
+  font-size: 14px;
+  border: 1px solid #7e2aff;
+  margin-bottom: 5px;
+  padding: 0 10px 0 30px;
+  background-image: url("/img/btn/btn-down-purple.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+
+.sub-page-mypage-02 .cart_chart_list table td.td-download .btn:hover {
+  background-color: #e6e6e6;
+}
+
+.sub-page-mypage-02 .cart_chart_list table td.td-download .btn:hover {
+  background-color: #7e2aff;
+  color: #fff;
+  background-image: url("/img/btn/btn-down-white.svg");
+}
+
+.sub-page-mypage-03 {
+  padding-top: 30px;
+}
+
+.sub-page-mypage-03 .in-title {
+  padding: 0;
+}
+
+.sub-page-mypage-03 .myalbum-list ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-card {
+  width: 450px;
+  height: 250px;
+  margin-right: 2%;
+  margin-bottom: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  position: relative;
+  padding-left: 270px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-plus-folder {
+  cursor: pointer;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-plus-folder .myalbum-thumb {
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  background-image: url("/img/icon/icon-myalbum-folder.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-plus-folder span {
+  color: #7e2aff;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-thumb-not_song {
+  background-image: url("/img/imgs/img_myalbum_empty.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-card input[type="checkbox"] {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 3;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-card input[type="checkbox"] + label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-info {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-info dt {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-info ._total_song {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-info ._total_song em {
+  font-weight: inherit;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-info ._data {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.5);
+  letter-spacing: 1px;
+}
+
+.sub-page-mypage-03 .myalbum-list .myalbum-info .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  background-image: url("/img/btn/btn-playlist-plus-purple.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sub-page-mypage-03-detail {
+  margin-bottom: 45px;
+}
+
+.sub-page-mypage-03-detail .myalbum-setting {
+  margin: 30px 0 0;
+  position: relative;
+  display: inline-block;
+  width: 210px;
+  font-size: 15px;
+}
+
+.sub-page-mypage-03-detail .myalbum-setting input {
+  width: 100%;
+  border: 0;
+  font-size: 1.5em;
+  padding: 0.5em;
+  padding-right: 35px;
+}
+
+.sub-page-mypage-03-detail ._after_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  height: 100%;
+  line-height: 3.1em;
+}
+
+.sub-page-mypage-03-detail ._after_btn a {
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+.sub-page-mypage-03-detail ._after_btn a._complt {
+  padding-right: 1.5em;
+  color: #7e2aff;
+}
+
+.sub-page-mypage-03-detail .myalbum-setting.active {
+  width: 380px;
+}
+
+.sub-page-mypage-03-detail .myalbum-setting.active input {
+  background-image: none;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  padding-right: 80px;
+}
+
+.sub-page-mypage-03-detail .myalbum-setting.active ._after_btn {
+  display: inline-block;
+}
+
+.sub-page-mypage-05 .sub-page-alarm-group {
+  margin-top: 40px;
+}
+
+.sub-page-mypage-05 .sub-page-alarm-msg {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  padding: 25px 23px;
+  margin-bottom: 13px;
+  font-size: 18px;
+  position: relative;
+}
+
+.sub-page-mypage-05 .sub-page-alarm-msg ._title {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 0.8em;
+  display: inline-block;
+}
+
+.sub-page-mypage-05 .sub-page-alarm-msg ._txt {
+  font-size: 0.82em;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 400;
+}
+
+.sub-page-mypage-05 .sub-page-alarm-msg ._data {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.sub-page-mypage-05 .sub-page-alarm-msg.__no {
+  text-align: center;
+}
+
+.sub-page-mypage-05 .sub-page-alarm-msg.__no b {
+  color: #6a7eff;
+  font-weight: inherit;
+  text-decoration: underline;
+}
+
+.sub-page-mypage-05 .sub-page-alarm-msg-new:before {
+  position: absolute;
+  top: -13px;
+  left: -24px;
+  content: url("/img/icon/icon-new.svg");
+}
+
+.sub-page-mypage-06 .sub-page-form-panel {
+  margin-top: 55px;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel .in-title {
+  padding: 0;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel .in-title:first-of-type {
+  margin-top: 0;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel ._re-certify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel ._re-certify .btn-certify-mini {
+  margin-left: 20px;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel ._count_time {
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  right: 130px;
+  color: #7e2aff;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  letter-spacing: 1px;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel input::-webkit-input-placeholder,
+.sub-page-mypage-06 .sub-page-form-panel select {
+  color: #cccccc;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel input:-ms-input-placeholder,
+.sub-page-mypage-06 .sub-page-form-panel select {
+  color: #cccccc;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel input::-ms-input-placeholder,
+.sub-page-mypage-06 .sub-page-form-panel select {
+  color: #cccccc;
+}
+
+.sub-page-mypage-06 .sub-page-form-panel input::placeholder,
+.sub-page-mypage-06 .sub-page-form-panel select {
+  color: #cccccc;
+}
+
+.sub-page-mypage-06 .btn-complete {
+  border-radius: 30px;
+  line-height: 55px;
+  height: 55px;
+  background-color: #333333;
+  color: #fff;
+  font-size: 1.1rem;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.sub-page-mypage-06 .btn-complete:hover {
+  background-color: #1a1a1a;
+}
+
+.sub-page-mypage-06 .btn-ok {
+  border-radius: 5px;
+  line-height: 47px;
+  height: 47px;
+  background-color: #7e2aff;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.sub-page-mypage-06 .btn-ok:hover {
+  background-color: #6100f6;
+}
+/*# sourceMappingURL=sub-page-mypage.css.map */

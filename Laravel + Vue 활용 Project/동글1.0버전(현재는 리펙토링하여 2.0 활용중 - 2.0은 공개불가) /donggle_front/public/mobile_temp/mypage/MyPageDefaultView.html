@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-mypage-default-wrapper">
+      <!-- * 마이페이지 헤더 -->
+      <div class="l-mypage-hd">
+        <h2>
+          <span>마이페이지</span>
+          <a href="#" class="_profill_btn">프로필변경</a>
+          <a href="/mobile_temp/snb/SnbAlarmView.html" class="_alrim_btn"
+            >알림</a
+          >
+        </h2>
+        <div class="l-mypage-hd-inner">
+          <div class="in-profile">
+            <figure class="_pic">
+              <div class="symbol-circle">
+                <img
+                  src="/images/img/basic_profile/01.png"
+                  alt="default profile img"
+                  class="_imgtag"
+                />
+              </div>
+              <!-- ※ 회원등급에 따라서 lv-01, lv-02, lv-03, lv-04, lv-05 클래스 바뀜 -->
+              <span class="_grade lv-01"></span>
+              <!-- ※ 회원등급에 따라서 lv-01, lv-02, lv-03, lv-04, lv-05 클래스 바뀜 END -->
+            </figure>
+            <h3 class="_name">
+              <b>김동글</b><span>님의 등급은</span> <i>비기너</i
+              ><span>입니다.</span>
+              <a href="MyPageGradeView.html" class="grade_info">등급안내></a>
+            </h3>
+          </div>
+
+          <ul class="in-panels">
+            <li class="_list">
+              <span>쿠폰</span>
+              <a href="MyPageCouponListView.html">0개</a>
+            </li>
+            <li class="_list">
+              <span>주문완료</span>
+              <a href="MyPageOrderHistoryView.html">5개</a>
+            </li>
+            <li class="_list">
+              <span>취소/환불</span>
+              <a href="MyPageCancelHistoryView.html">0건</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- * 마이페이지 헤더 -->
+
+      <div class="l-mypage-contents">
+        <div class="mypage-btn-wrap clear_both">
+          <a href="MyPageOrderHistoryView.html" class="mypage-btn mypage-btn01"
+            >주문배송</a
+          >
+          <a href="MyPageMyReviewView.html" class="mypage-btn mypage-btn02"
+            >나의 구매후기</a
+          >
+          <a href="MyPageLikeListView.html" class="mypage-btn mypage-btn03"
+            >관심리스트</a
+          >
+          <a href="MyPageCouponListView.html" class="mypage-btn mypage-btn04"
+            >쿠폰</a
+          >
+          <a href="MyPageSetInfoView.html" class="mypage-btn mypage-btn05"
+            >내 정보</a
+          >
+          <a
+            href="/mobile_temp/cs/CsNoticeView.html"
+            class="mypage-btn mypage-btn06"
+            >고객센터</a
+          >
+        </div>
+
+        <div class="link-title">
+          <a href="/mobile_temp/snb/SnbCartView.html">장바구니</a>
+          <a href="MyPageLikeListView.html">내가 찜한 상품</a>
+          <a href="MyPageCurrentListView.html">최근 본 상품</a>
+        </div>
+
+        <div>
+          <button class="logout_btn">
+            <img src="/images/btn/btn_logout.svg" alt="로그아웃" />
+            <span>로그아웃</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

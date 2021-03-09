@@ -1,0 +1,110 @@
+@media all and (max-width: 1730px){
+
+    .beat-info-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .beat-info-wrapper .beat-info-container:nth-child(1){
+
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+    .beat-info-wrapper .beat-info-container{
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .beat-info-wrapper .ticket-con-delux .btn {
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+
+}
+
+@media all and (max-width: 1500px){
+
+    .header{
+        left: -320px;
+        transition: all 0.5s;
+        transition-timing-function: cubic-bezier(.25,.75,.5,1.25);
+    }
+
+    .header-btn{
+        display: block;
+    }
+
+    #check-header-btn:checked ~ .header{
+        
+        left: 0;
+        transition: all 0.5s;
+        transition-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+    }
+
+    .section {
+        padding: 0 0 135px 0;
+    }
+
+    .beat_chart_list table {
+        font-size: 15px;
+    }
+
+    .chart-ctrl-btn-cart .chart-ctrl-btn{
+        top: 1px;
+    }
+
+    .playbar-inner{
+        min-width: 1200px;
+    }
+
+    .playbar-control-area{
+        min-width: 630px;
+    }
+
+}
+
+@media all and (max-width: 1200px){
+
+
+
+    .playbar-inner {
+        min-width: 960px;
+    }
+    
+    .playbar-control-area {
+        min-width: 500px;
+    }
+    
+    .playbar-control-area .ctrl-btn {
+        margin: 0 2px;
+    }
+
+    .ctrl-btn{
+        width: 50px;
+    }
+
+    .volume-ctrl-panel {
+        padding: 10px 20px;
+        width: 190px;
+    }
+
+    .playbar-info01{
+        font-size: 15px;
+    }
+
+    .playbar-time .current_time{
+        margin-right: 10px;
+    }
+
+    .playbar-time .all_time{
+        margin-left: 10px;
+    }
+
+    .playbar-info02 .btn-01{
+        padding: 0 10px;
+    }
+
+
+}

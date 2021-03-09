@@ -1,0 +1,73 @@
+/*
+    PAGES - (고객센터)공지사항, 자주묻는 질문, 이벤트
+*/
+#dg-error-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.dg-error-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.dg-error-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.dg-error-card {
+  max-width: 610px;
+  background-color: white;
+  border-radius: 45px;
+  box-shadow: 0 38px 45px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0 45px;
+  user-select: none;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: topAni 0.4s linear 1;
+  animation-fill-mode: both;
+
+  .in-big-number {
+    @include fontType01(130px, white, 900);
+
+    text-shadow: 0 12px 16px #e5dfe9;
+    letter-spacing: 12px;
+    -webkit-text-stroke: 0;
+  }
+  .in-msg {
+    @include fontType01(30px, #9677aa, 400);
+
+    margin: 20px 0;
+    letter-spacing: -2.5px;
+    word-spacing: 3px;
+  }
+  .in-msg-desc {
+    @include fontType01(16px, #b4b4b4, 200);
+
+    line-height: 1.45;
+  }
+  .theme-btn-gradient {
+    @include fontType01(16px);
+
+    width: 180px;
+    height: 46px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 23px;
+  }
+  .in-logo {
+    width: 89px;
+  }
+}
+
+@keyframes topAni {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

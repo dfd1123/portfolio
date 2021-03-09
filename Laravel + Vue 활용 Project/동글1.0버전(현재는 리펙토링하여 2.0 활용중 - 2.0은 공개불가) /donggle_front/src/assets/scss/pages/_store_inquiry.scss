@@ -1,0 +1,86 @@
+/*
+    PAGES - 스토어 문의
+*/
+.l-store-qna-contents .l-con-area{
+  float:none;
+  width:100%;
+}
+.dg-store-wrapper{
+  background-color:$light_gray5;
+  .l-store-contents{
+    @include center(1056px);
+    padding:55px 12px 180px 12px;
+    .l-con-area{
+      width:100%;
+    }
+  }
+}
+#dg-store-inquiry-wrapper{
+
+  ._support_content_wrap .dg-edit-del-btn-wrap {
+    float: right;
+    display: block;
+    width: 190px;
+    margin: 10px 20px 5px;
+
+    .rounded-btn-outline {
+      @include fontType01(#{$px-11}rem);
+      @include makeAfter {
+        @include position($t: 0, $l: 0);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 0;
+        height: 100%;
+      }
+
+      position: relative;
+      background: transparent;
+      overflow: hidden;
+      height: 24px;
+      line-height: 24px;
+      transition: all 0.2s;
+      z-index: 1;
+    }
+
+    .rounded-btn-outline:hover {
+      background-color: transparent;
+      color: white;
+      transition: all 0.2s;
+    }
+
+    .rounded-btn-outline:hover:after {
+      width: 100%;
+    }
+
+    .btn--edit {
+      @include makeAfter {
+        z-index: -1;
+        background: #28b2a9;
+      }
+
+      border-color: #28b2a9;
+      color: #28b2a9;
+
+      &:active:after {
+        background-color: darken(#28b2a9, 7%);
+      }
+    }
+
+    .btn--del {
+      @include makeAfter {
+        z-index: -1;
+        background: #ff5656;
+      }
+
+      margin-left:10px;
+      border-color: #ff5656;
+      color: #ff5656;
+
+      &:active:after {
+        background-color: darken(#ff5656, 7%);
+      }
+    }
+  }
+}

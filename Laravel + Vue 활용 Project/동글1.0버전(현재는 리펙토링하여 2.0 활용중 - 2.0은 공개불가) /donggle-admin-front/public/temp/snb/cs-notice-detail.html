@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글 가맹점 관리자 페이지</title>
+
+    <link rel="stylesheet" href="/css/dg-admin-ui.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- header -->
+      <header id="admin-header" class="detail-mobile-hd">
+        <!-- 상단고정 헤더 -->
+        <div id="header-hd">
+          <div class="show-pc">
+            <!-- 상단 side navigation -->
+            <section class="hd-snb-bar">
+              <div class="in-store-profile">
+                <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+                <a href="#" target="_blank">
+                  <figure class="symbol-circle">
+                    <img
+                      src="/images/img/profile_admin.jpg"
+                      alt="profile image"
+                    />
+                  </figure>
+                  <h2 class="in-name">스토어명</h2>
+                  <img
+                    class="in-btn-img"
+                    src="/images/btn/btn_more.svg"
+                    alt="btn more"
+                  />
+                </a>
+              </div>
+
+              <div class="in-snb-group">
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">알림</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">스토어 문의</span>
+                </a>
+                <a href="../snb/cs-notice-main.html" class="in-snb-list">
+                  <span class="in-snb-name">고객센터</span>
+                  <div class="in-snb-hidden"></div>
+                </a>
+                <a href="#" class="in-snb-list">
+                  <span class="in-snb-name">로그아웃</span>
+                </a>
+              </div>
+            </section>
+            <!-- END 상단 side navigation -->
+          </div>
+
+          <div class="show-mobile">
+            <!-- FIXME: 이부분만 바뀝니다~ -->
+            <div class="hd-title-bar">
+              <div class="hd-title-bar-inner">
+                <div class="in-left-btn">
+                  <label for="mobile_show_gnb" class="in-label-btn">
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                    <span class="hbg"></span>
+                  </label>
+                </div>
+
+                <div class="in-page-name">
+                  <h3 class="in-main">
+                    <span class="show-pc">고객센터</span>
+                    <span class="show-mobile">공지사항</span>
+                    <a href="cs-notice-main.html" class="icon-back-btn"
+                      >뒤로가기</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- FIXME: END -->
+          </div>
+        </div>
+        <!-- END 상단고정 헤더 -->
+
+        <input id="mobile_show_gnb" class="none" type="checkbox" />
+        <label for="mobile_show_gnb" class="mobile-overlay show-mobile"></label>
+
+        <!-- 왼쪽 global navigation -->
+        <div id="header-gnb">
+          <section class="in-brand-con-box show-pc">
+            <h1 class="in-brand-logo">
+              <!-- TODO: 대시보드 메인으로 -->
+              <a href="../index.html">
+                <img
+                  src="/images/logo/logo_header_wh.svg"
+                  alt="image"
+                  class="in-logo"
+                />
+              </a>
+            </h1>
+          </section>
+
+          <section class="in-mobile-gnb-hd show-mobile">
+            <div class="in-store-profile">
+              <!-- TODO: 쇼핑몰의 스토어홈으로 연결 -->
+              <a href="#">
+                <figure class="symbol-circle">
+                  <img
+                    src="/images/img/profile_admin.jpg"
+                    alt="profile image"
+                  />
+                </figure>
+                <h2 class="in-name">스토어명</h2>
+                <img
+                  class="in-btn-img"
+                  src="/images/btn/btn_more.svg"
+                  alt="btn more"
+                />
+              </a>
+            </div>
+
+            <label for="mobile_show_gnb" class="icon-close-btn">닫기</label>
+            <div class="inner-snb-group">
+              <a href="../index.html" class="icon-home-btn in-icon-btn"
+                ><i class="hide-text">홈</i></a
+              >
+              <!-- 새 알림 있으면 클래스 목록에 active 추가 -->
+              <a href="alarm-view.html" class="icon-alarm-btn in-icon-btn"
+                ><i class="hide-text">알림</i></a
+              >
+              <!-- 새 문의 있으면 클래스 목록에 active 추가 -->
+              <a
+                href="inquiry-store-list.html"
+                class="icon-contact-btn in-icon-btn"
+                ><i class="hide-text">문의</i></a
+              >
+            </div>
+
+            <div class="in-bottom-btns clearfix">
+              <a href="cs-notice-main.html" class="link-cs-btn">고객센터</a>
+              <a href="#">로그아웃</a>
+            </div>
+          </section>
+
+          <div class="in-gnb-group">
+            <a href="../gnb/setting-store.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_01.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_01_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">스토어 설정</span>
+            </a>
+            <a href="../gnb/check-order.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_02.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_02_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문상품 확인</span>
+            </a>
+            <a href="../gnb/history-order-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">주문내역</span>
+            </a>
+            <a href="../gnb/history-cancel-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_03.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_03_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">취소/환불 내역</span>
+            </a>
+            <a href="../gnb/manage-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_05.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_05_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품관리</span>
+            </a>
+            <a href="../gnb/inquiry-product-list.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_06.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_06_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">상품문의</span>
+            </a>
+            <a href="../gnb/manage-review.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_07.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_07_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">구매후기</span>
+            </a>
+            <a href="../gnb/sales-status.html" class="in-gnb-list">
+              <img
+                class="in-gnb-icon mode-off"
+                src="/images/icon/icon_08.svg"
+                alt="gnb icon"
+              />
+              <img
+                class="in-gnb-icon mode-on"
+                src="/images/icon/icon_08_on.svg"
+                alt="gnb icon"
+              />
+              <span class="in-gnb-name">매출현황</span>
+            </a>
+          </div>
+        </div>
+        <!-- END 왼쪽 global navigation -->
+      </header>
+      <!-- END header -->
+
+      <!-- contents -->
+      <div id="admin-container" class="cs-container">
+        <div class="wrapper">
+          <!-- page content -->
+          <div id="page-cs-notice-detail-wrap" class="cs-notice-detail-wrap">
+            <div class="grid-line-group clearfix">
+              <!-- side navi -->
+              <!-- 활성화된 메뉴 _list 에 active 추가 -->
+              <div class="cs-side-navi show-pc">
+                <div class="sidenav-title-group">
+                  <h2 class="in-title">고객센터</h2>
+                </div>
+                <article class="in-nav-section">
+                  <ul class="clearfix">
+                    <li class="_list active">
+                      <a href="cs-notice-main.html">공지사항</a>
+                    </li>
+                    <li class="_list">
+                      <a href="cs-faq.html">자주묻는 질문</a>
+                    </li>
+                    <li class="_list">
+                      <a href="cs-support.html">관리자1:1문의</a>
+                    </li>
+                  </ul>
+                </article>
+              </div>
+              <!-- side navi E -->
+              <!-- cs content -->
+              <div class="panel-default-container">
+                <section class="_cs_con_wrap">
+                  <!-- 공지사항 게시글 -->
+                  <div class="panel-default">
+                    <!-- 제목 -->
+                    <div>
+                      <h3 class="cs-notice-detail-title show-mobile">
+                        공지사항
+                        <a href="cs-notice-main.html" class="icon-back-btn"
+                          >뒤로가기</a
+                        >
+                      </h3>
+                    </div>
+                    <h3 class="_title_wrap clearfix">
+                      <a
+                        href="cs-notice-main.html"
+                        class="icon-back-btn show-pc"
+                        >뒤로가기</a
+                      >
+                      <span class="_title"
+                        >동글 공지사항 제목입니다.공지사항의 제목이 길어지면
+                        줄이 바뀌어서 표시가 됩니다.</span
+                      >
+                      <div class="_title_info">
+                        <span class="_number">000</span>
+                        <span class="_date">2019-00-00</span>
+                      </div>
+                    </h3>
+                    <!-- 제목 E -->
+                    <div class="_content_wrap">
+                      <p>
+                        글 양에 따라 높이 유동적 <br />안녕하세요.<br />
+                        항상 저희 동글에게 관심과 사랑을 주시는 고객님께 감사의
+                        말씀을 드립니다.<br />
+                        2019년 7월 19일, 회원을 통합 관리하고자
+                        개인정보처리방침을 개정하였습니다.<br />
+                        아래 파란색 글씨를 클릭하시면, 이전 약관과 변경 약관을
+                        확인하실 수 있는 링크로 연결됩니다.<br />
+                        만약, 개인정보처리방침 개정에 대해 고객님께서 동의하지
+                        않으실 경우 탈퇴하실 수 있으며,<br />
+                        개정 약관 효력 발생일까지 거부의사를 밝히지 않으신
+                        경우에는 변경 약관에 대해 동의하신 것으로 처리됩니다.<br />
+                        이전 개인정보처리방침 / 변경된 개인정보처리방침 궁금하신
+                        사항은 고객상담팀으로 연락 주시기 바라며,<br />
+                        저희 동글은 소중한 고객님의 개인정보 보호를 위해
+                        노력하겠으며 보다 좋은, 보다 편리한 서비스를 제공할 수
+                        있도록 하겠습니다.<br />
+                        감사합니다.
+                      </p>
+                      <!-- 첨부파일 영역 -->
+                      <!-- 첨부파일 개수에 따라 ._content_wrap 의 padding-bottom이 변함 -->
+                      <div class="file_down">
+                        <h4>첨부파일 다운로드</h4>
+                        <!-- 첨부파일 -->
+                        <label class="file-download-btn">
+                          <img
+                            class="in-icon"
+                            src="/images/icon/icon_folder.svg"
+                            alt="folder icon"
+                          />
+                          <span class="in-filename"
+                            >첨부파일명_길어지면 늘어나게.jpg</span
+                          >
+                        </label>
+                        <!-- 첨부파일 E -->
+                        <!-- 첨부파일 -->
+                        <label class="file-download-btn">
+                          <img
+                            class="in-icon"
+                            src="/images/icon/icon_folder.svg"
+                            alt="folder icon"
+                          />
+                          <span class="in-filename"
+                            >첨부파일명_길어지면 늘어나게 첨부파일명_길어지면
+                            늘어나게 첨부파일명_길어지면 늘어나게 첨부파일명
+                            길어지면 늘어나게.jpg</span
+                          >
+                        </label>
+                        <!-- 첨부파일 E -->
+                      </div>
+                      <!-- 첨부파일 영역 E -->
+                    </div>
+                    <!-- 내용 -->
+                    <a
+                      href="cs-notice-main.html"
+                      class="square-lg-btn type-shadow btn-gradient _list-btn show-pc"
+                      >목록</a
+                    >
+                  </div>
+                  <!-- 공지사항 게시글 E -->
+                </section>
+              </div>
+              <!-- cs content E -->
+            </div>
+          </div>
+          <!-- page content E -->
+        </div>
+        <div id="admin-footer" class="show-pc"></div>
+      </div>
+      <!-- END contents -->
+    </div>
+  </body>
+</html>

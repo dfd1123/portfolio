@@ -1,0 +1,332 @@
+
+/*반응형 start*/
+
+@media all and (max-width: 1500px){
+	
+	.box_wrapper{width: 55%; min-width: 1170px;}
+	
+	/*결제모듈> 결제현황*/
+	.box_style.panel_box {width: 90%; margin: 0 auto;overflow-y: scroll;height: 850px;}
+	
+	.box_style.panel_box .table{width: 180%; max-width: 180%;}
+	
+}
+
+@media all and (max-width: 1395px){
+	
+	.box_wrapper{min-width: 980px;}
+	
+	.line_align .form-control{min-width: 230px;}
+	
+	/*결제모듈> 결제현황*/
+	.box_style.panel_box .table{width: 200%; max-width: 200%;}
+
+	/*지갑> 출금신청 페이지 왼쪽박스*/
+	.box_wrapper .left_box thead>tr>th:nth-child(1),
+	.box_wrapper .left_box thead>tr>th:nth-child(2){width: 35%;}
+	
+	/*지갑> 출금신청 페이지 오른쪽 하단박스*/
+	.withdraw_panel .form-group-2 .label_st{width: 160px; padding: 20px 10px 20px 10px;}
+	
+	.coin_withdraw_list td:first-child .coin_name,
+	.in_2nd_table tbody tr td{font-size: 13px;}
+	
+	.in_2nd_table tbody tr td:nth-child(2n){font-size: 12px;}
+	
+	.in_2nd_table tbody tr td:nth-child(2) span:last-child{font-size: 11px;}
+	
+}
+
+@media all and (max-width: 1175px){
+	
+	.box_wrapper{width: 95%; min-width: 650px; position: inherit;}
+	
+	.line_align .form-control{min-width: 400px;}
+	
+	/*결제모듈> 결제현황*/
+	.box_style.panel_box .table{width: 230%; max-width: 230%;}
+	
+	/*지갑> 출금신청 페이지 박스들*/
+	.box_wrapper .left_box,.box_wrapper .right_box{width: 100%;}
+	
+	.withdraw_panel .form-group-2 .label_st{width: 200px; padding: 20px 10px 20px 20px;}
+	
+	.box_wrapper .left_box h3{text-align: center;}
+	
+	/*지갑> 출금신청 페이지 오른쪽 하단박스*/
+	.selected_bar{padding: 10px 15px;}
+	
+	.selected_bar .coin_symbol{width: 55px; height: 55px; top: 16px;}
+	
+	.selected_bar p:nth-child(2){font-size: 16px;}
+	
+	.coin_withdraw_list td:nth-child(2){font-size: 15px; font-weight: 300;}
+	
+	.coin_withdraw_list td{padding: 4px !important;}
+	
+	.coin_withdraw_list td:nth-child(3) span{font-size: 12px;}
+	
+}
+
+@media all and (max-width: 992px){
+	
+	/*지갑> 마이페이지 내 지갑 부분*/
+	.col-md-5.left_qrbox {width: 100%; margin-bottom: 2%;}
+	
+	.col-md-5.left_qrbox .panel-body{padding: 8px;}
+	
+	.col-md-7.right_historys {width: 100%;}
+	
+	.col-md-7.right_historys .panel{margin-bottom: 2%;}
+
+}
+
+@media all and (max-width: 767px){
+	
+	.box_wrapper{min-width: unset;}
+	
+	.line_align .form-control{min-width: 300px;}
+	
+	.pg_wrapper,.box_style.notice_panel{ width: 35%; margin: 0 auto; min-width: 550px;}
+	
+	.pg_wrapper .line_align .form-control {width: 255px;min-width: unset; padding: 6px 7px;font-size: 12px;}
+	
+	.pg_wrapper .panel .col-md-12 {padding: 0;}
+	
+	label.label_st{font-size: 11px;width: 90px;}
+	
+	/*결제모듈>결제현황 */
+	.box_style.panel_box table td{padding: 4px !important;}
+	
+	.sch_wrap_group .sch_wrap{min-width: 300px;}
+	
+	/*고객센터> 공지사항*/
+	.box_style.notice_panel{margin-top: 60px;}
+	
+	.box_style.notice_panel table>tbody td a{padding: 7px 0;}
+	
+	.box_style.notice_panel table>tbody tr{font-size: 13px;}
+	
+	/*결제모듈>사업자정보 관리 */
+	.pg_wrapper.com_info_write .com_type_choice label{font-size: 11px;}
+	
+	.pg_wrapper.com_info_write .line_align.half_line .form-control{width: 125px; min-width: unset;padding: 6px 7px; font-size: 12px;}
+		
+	.pg_wrapper.com_info_write .line_align .form-control{padding: 6px 7px;}
+	
+	/*지갑> 출금신청 */
+	.withdraw_panel .form-group-2 .label_st{width: 150px;}
+	
+	.withdraw_panel ul li{padding: 5px 0 8px;font-size: 14px;}
+	
+	.withdraw_panel .form-group-2 .btn_center{margin: 7px 0 33px;}
+	
+	/*지갑> 마이페이지 */
+	.under_box{width: 35%;min-width: 550px;}
+	
+}
+
+@media all and (max-width: 576px){
+	
+	.box_wrapper{width: 100%; }
+	
+	.box_wrapper .box_style{background-color: #fff; border: 1px solid #d9dee4; margin-bottom: 2%;}
+
+	.pg_wrapper,.box_style.notice_panel{width: 100%; margin: 0 auto; min-width: unset;}
+	
+	.line_align .form-control{left: 0; height: 100%;padding: 3px 5px;font-size: 11px; min-width: 100px; padding-right: 5px; width: 100% }
+	
+	.line_align .form-control{left: 0;}
+
+	.pg_wrapper .line_align .form-control{width: 200px;height: 28px; top: 8px;}
+	
+	label.label_st {font-size: 11px;width: 70px;}.
+	
+	.pg_wrapper .box_style h3,.box_style.notice_panel h3{text-align: center; margin: 2px 0; font-size: 16px;}
+	
+	.box_style{box-shadow: none; border: 0; background-color: #f7f7f7;}
+	
+	/*결제모듈>결제현황 */
+	.box_style.panel_box{width: 100%; height: 600px;}
+	
+	.box_style.panel_box h3,.pg_wrapper .box_style.notice_panel h3{text-align: center; margin: 10px 0; font-size: 16px;}
+	
+	.box_style.notice_panel h3{margin: 10px 0;}
+	
+	.box_style.panel_box .table{width: 260%;max-width: 260%;}
+	
+	.box_style.panel_box table td{padding: 1px; font-size: 10px;}
+	
+	.table-striped>tbody>tr:nth-of-type(even){background-color: #fff;}
+	
+	.box_style.panel_box .table>thead>tr>th,.box_style.notice_panel table>thead>tr{font-size: 11px;border-top: 2px solid #9448c8;}
+	
+	.panel-body,.pg_wrapper.com_info_write .col-md-12,.pg_wrapper .col-md-12{padding: 0;}
+	
+	/*결제모듈>결제정보*/
+	.pg_wrapper.pg_info .line_align_pg{min-width: unset; width: 80%;}
+	
+	/*결제모듈>사업자정보 */
+	.pg_wrapper.com_info_write label.label_st{width: 80px;}
+	
+	.pg_wrapper.com_info_write label.label_st:nth-child(4){margin-left: 10px;}
+	
+	.pg_wrapper.com_info_write .com_type_choice{margin-left: 0;}
+	
+	.pg_wrapper.com_info_write .line_align .form-control{width: 160px;font-size: 11px;}
+	
+	.line_align.mobile_ceo_input{display: block !important;}
+	
+	.pg_wrapper.com_info_write .line_align.half_line label.label_st.m_hide,
+	.pg_wrapper.com_info_write .line_align.half_line .form-control.m_hide
+	{display: none !important;}
+	
+	.pg_wrapper.com_info_write label.label_st:nth-child(4),.pg_wrapper.com_info_write .line_align.half_line .form-control:nth-child(5){display: none;}
+	
+	.pg_wrapper.com_info_write .com_type_choice label {font-size: 10px; margin: 0 5px 0 3px;}
+	
+	.pg_wrapper.com_info_write .line_align.half_line .form-control{font-size: 11px;}
+	
+	.status_line #status{left: 0;}
+	
+	.panel-heading{padding: 0;}
+	
+	.sch_wrap_group .sch_wrap{min-width: 330px; display: block; width: 100%; float: none; border-radius: 5px; overflow: hidden;}
+	
+	.sch_wrap .input_search~input,.sch_wrap_group button{font-size: 11px;}
+	
+	.sch_wrap_group button{display: block; float: none; margin: 0 auto; margin-top: 10px; width: 330px;}
+	
+	.sch_wrap select{font-size: 10px; width: 60px; }
+	
+	.sch_wrap .input_search{ padding-left: 65px; padding-right: 45px; font-size: 11px;}
+	
+	/*지갑> 출금신청*/
+	.box_wrapper .left_box thead>tr>th{font-size: 11px;}
+	
+	.box_wrapper .left_box thead>tr>th:nth-child(1){width: 45%;}
+	
+	.box_wrapper .left_box h3{font-size: 16px;}
+	
+	.box_wrapper .right_box .box_style:nth-child(2){margin-bottom: 50px;}
+	
+	.left_box .panel-body,.right_box .panel-body{padding: 8px;}
+	
+	.coin_withdraw_list td{padding: 1px !important;}
+	
+	.coin_withdraw_list td:first-child div{padding-left: 32px;}
+	
+	.coin_withdraw_list td:first-child span{ left: 3px;width: 23px; height: 23px; top: 4px;}
+	
+	.coin_withdraw_list td:nth-child(3) span{font-weight: 400;padding: 2px 10px;}
+	
+	.coin_withdraw_list td:nth-child(2){font-size: 14px;}
+	
+	.coin_withdraw_list td:first-child .coin_name, .in_2nd_table tbody tr td{font-size: 12px;}
+	
+	.coin_withdraw_list td:first-child p,.coin_withdraw_list td:nth-child(3) span{font-size: 11px;}
+	
+	.withdraw_panel .form-group-2 .label_st{width: 80px;padding: 10px 5px !important; text-align: center;}
+	
+	.withdraw_panel .form-group-2 .label_st br{display: block;}
+	
+	.withdraw_panel .form-group-2 .line_align .form_line{height: 20px; width: 73%;}
+	
+	.withdraw_panel .form-group-2 .line_align:nth-child(1) .form_line{top: 7px;}
+	
+	.withdraw_panel .form-group-2 .line_align:nth-child(1) input{padding-right: 35px;width: 100%;}
+	
+	.withdraw_panel .form-group-2 .line_align:nth-child(2) .form_line{top: 10px;}
+	
+	.withdraw_panel .form-group-2 .line_align:nth-child(2) .form-control,
+	.withdraw_panel .form-group-2 .line_align:nth-child(3) .form-control{padding-right: 65px;}
+	
+	.withdraw_panel .form-group-2 .btn_center{margin: 15px 0 15px;}
+	
+	.selected_bar{padding: 5px 10px;}
+	
+	.selected_bar .coin_symbol { width: 40px; height: 40px; top: 13px; left: 15px;}
+	
+	.selected_bar p:nth-child(2) { font-size: 14px; padding-left: 55px;}
+	
+	.selected_bar p:nth-child(3){padding-left: 55px; font-size: 11px; margin-bottom: 5px;}
+	
+	.selected_bar p:nth-child(3) span:first-child{margin-right: 20px;}
+	
+	.form_line span{top: 2px; font-size: 11px;}
+	
+	.form_line button{width: 60px;font-size: 10px;}
+	
+	.in_2nd_table table thead>tr>th{font-size: 10px;}
+	
+	.in_2nd_table tbody tr td:nth-child(2n){font-size: 11px;     padding: 7px 0;}
+	
+	.in_2nd_table tbody tr td:nth-child(2n) span{word-break: break-all;line-height: 20px;}
+	
+	.in_2nd_table tbody tr td:nth-child(2) span:last-child{width: 130px; font-size: 10px; line-height: 17px;}
+	
+	.in_2nd_table tbody tr td:nth-child(4) span:first-child{margin-bottom: 0;}
+	
+	.in_2nd_history .sch_bar{padding: 5px;}
+	
+	.in_2nd_history .sch_bar select{padding: 1px 5px; font-size: 10px;}
+	
+	/*고객센터> 공지사항*/
+	.box_style.notice_panel table>tbody tr{padding: 1px 0;font-size:11px;}
+	
+	.box_style.notice_panel .pagination{margin-top: 5px;}
+	
+	/*지갑> 마이페이지*/
+	.pg_wrapper.setting_wrapper {width: 100%;}
+	
+	.pg_wrapper.setting_wrapper .list-group a{font-size: 12px;}
+	
+	.col-md-5.left_qrbox .panel-body,.col-md-7.right_historys .panel-body{background: #fff;}
+	
+	.under_box { width: 100%;min-width: unset;}
+
+	.under_box .panel {background: transparent;box-shadow: none;}
+	
+	.under_box.pass .form-control{height: 25px; top: 10px;}
+	
+	.under_box.walet h3{padding: 10px 0;}
+	
+	.under_box.walet .panel-body p{font-size: 11px;}
+	
+}
+
+@media all and (max-width: 360px){
+	
+	label.label_st{width: 70px;}
+	
+	.pg_wrapper .line_align .form-control{width: 160px;padding: 6px 3px;font-size: 10px;}
+	
+	/*결제모듈>결제정보*/
+	.pg_wrapper.pg_info .pg_btn{margin-top: 50px;}
+	
+	/*결제모듈>사업자정보관리*/
+	.pg_wrapper.com_info_write label.label_st{width: 80px;}
+
+	.pg_wrapper.com_info_write .line_align .form-control{ min-width: 140px;  width: 140px;}
+	
+	.pg_wrapper.com_info_write .line_align.half_line .form-control{width: 95px;}
+	
+	.pg_wrapper.com_info_write .com_type_choice{margin-top: 8px; margin-left: 0;}
+	
+	.pg_wrapper.com_info_write .com_type_choice label{margin: 0 1px;}
+	
+	.btn_center{margin: 15px 0 0;}
+	
+	/*결제모듈>결제현황*/
+	.box_style.panel_box .table { width: 350%;max-width: 350%;}
+	
+	.sch_wrap_group button{width: 300px;}
+	
+	.sch_wrap_group .sch_wrap{min-width: 300px;width: 90%;}
+
+	/*지갑> 출금신청 */
+	.withdraw_panel .form-group-2 .line_align .form_line{width: 70%;}
+	
+}
+
+/*반응형 끝*/

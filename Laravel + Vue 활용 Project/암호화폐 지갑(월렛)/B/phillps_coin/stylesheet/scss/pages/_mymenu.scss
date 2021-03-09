@@ -1,0 +1,268 @@
+/* mymenu */
+.container--mymenu{
+
+    padding: 0;
+    height: 100%;
+
+    &02{
+        .mymenu__view-wrapper{
+            padding: 20px;
+        }
+        .mymenu__view{
+            height: calc(100% - 85px);
+        }
+    }
+
+    &02-1{
+        padding: 0 20px;
+
+        .basic_panel{
+            border-radius: 0;
+        }
+
+        .basic_panel__input{
+            border-color: $mid-gray-01;
+        }
+
+        .basic_panel__textarea{
+            padding: 0 10px;
+            min-height: 45vh;
+        }
+
+        .status-tit-group{
+            margin-bottom: 15vh;
+            padding-top: 15vh;
+        }
+
+    }
+
+    &03{
+        padding: 0 20px;
+    }
+
+}
+
+.mymenu{
+
+    &__hd-btns{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border: {
+            top: 1px solid;
+            bottom: 1px solid;
+        }
+        color: $mid-gray-02;
+        height: 40px;
+        line-height: 40px;
+    }
+    &__hd-btn{
+        @include fontStyle('basic', 300, #fff);
+        @include buttonDefaultRemove(0, transparent);
+        width: 35%;
+        &.active{
+            @include fontStyle('basic', bold, $brand-color);
+        }
+    }
+    &__view-wrapper{
+        height: calc( 100% - 40px );
+        padding: 30px 20px 20px;
+    }
+    &__view{
+        @include scrollyArea(100%, 0);
+        background: $white;
+        width: 100%;
+    }
+
+    &__view-list,
+    &__view-hd{
+        @include fontStyle('basic', 300, $black);
+        border: {
+            top: 1px solid;
+            bottom: 1px solid;
+            color: $mid-gray-02;
+        }
+        position: relative;
+        padding: 10px 10px 10px 35px;
+        background-color: #EFEFEF;
+        .num{
+            @include position(absolute, 10px, 10px);
+            @include fontStyle('basic', bold, $brand-color);
+        }
+        .title{
+            margin-bottom: 2px;
+        }
+        .info{
+            @include fontStyle('basic', 500, $mid-gray-00);
+        }
+        .info .status{
+            padding-left: 5px;
+        }
+        .info .status.ing{
+            color: $red-color;
+        }
+        .info .status.complt{
+            color: $blue-color;
+        }
+    }
+
+    &__view-list{
+        @include activeEvent(){
+            background-color: darken($white, 5%);
+        }
+        background-color: $white;
+        border-top: 0;
+    }
+
+    &__ntc-view{
+        @include fontStyle('basic-m', 400, $black);
+        @include scrollyArea(calc(100% - 59px), 0);
+        @include responsive('mobile'){
+            height: calc(100% - 55px);
+        }
+        width: 100%;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    &__qna-write-btn,
+    &__qna-hd{
+        @include fontStyle('default', 500, $color: $brand-color);
+        @include buttonDefaultRemove(0, $white);
+        width: 100%;
+        text-align: left;
+        letter-spacing: -0.5px;
+        margin-bottom: 15px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 1rem;
+    }
+
+    &__qna-write-btn{
+        @include activeEvent(){
+            background-color: darken($white, 5%);
+        }
+    }
+
+    &__qna-hd{
+        margin-bottom: 0;
+    }
+
+    &__qna-view{
+        @include fontStyle('basic-m', 400, $black);
+        @include scrollyArea(calc(100% - 99px), 0);
+        @include responsive('mobile'){
+            height: calc(100% - 95px);
+        }
+        width: 100%;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    &__qna-view--complt{
+        @include fontStyle('basic-m', 400, $black);
+        width: 100%;
+        height: calc(100% - 94px);
+        padding: 0;
+        line-height: 1.6;
+
+        .q-con{
+            @include scrollyArea(40%, 0);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .a-con{
+            font-size: 1.2rem;
+            height: 60%;
+            padding-top: 57px;
+            position: relative;
+        }
+
+        .a-con .mymenu__view-hd{
+            @include position(absolute, 0, 0);
+            width: 100%;
+        }
+        
+        .a-con .qna-contents{
+            @include fontStyle('basic-m', 400, $black);
+            @include scrollyArea(100%, 0);
+            width: 100%;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+    }
+
+    &__qna-btns{
+        @include position(absolute, $b: 0, $l: 0);
+        width: 100%;
+        &--double-btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        height: 40px;
+    }
+
+    &__qna-btn{
+        @include fontStyle('basic-m', 300, $white);
+        @include buttonDefaultRemove(0, $brand-color);
+        @include activeEvent(){
+            background-color: darken($brand-color, 5%);
+        }
+        width: 100%;
+        border-right: 1px solid $white;
+        &:last-child{
+            border-right: 0;
+        }
+        height: 40px;
+        line-height: 40px;
+    }
+
+    &__profile{
+        text-align: center;
+        border-bottom: 2px solid #dfdfdf;
+        padding: 3rem 0 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 5px;
+
+        .name{
+            color: $white;
+        }
+
+        .email{
+            display: inline-block;
+            font-size: 0.7em;
+        }
+    }
+
+    &__profile-info{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    &__profile-info-list{
+        @include fontStyle('default', 300, $white);
+        padding: 10px 0 10px 100px;
+        position: relative;
+        text-align: right;
+
+        .label{
+            @include position(absolute, 50%, 0);
+            @include translate(0, -50%);
+        }
+
+        .btn{
+            @include buttonDefaultRemove(0, transparent);
+            @include activeEvent(){
+                color: darken($brand-color, 5%);
+            }
+            color: $brand-color;
+            margin-left: 5px;
+            padding-right: 0;
+        }
+
+    }
+
+}
+/* end mymenu */

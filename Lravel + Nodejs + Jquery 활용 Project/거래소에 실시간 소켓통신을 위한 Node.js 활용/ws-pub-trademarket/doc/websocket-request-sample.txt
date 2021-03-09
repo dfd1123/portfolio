@@ -1,0 +1,7 @@
+[Sub -> Pub]
+스냅샷 요청
+{"t":"snapshot"}
+
+[Pub -> Sub]
+리프레쉬 요청
+{"t":"refresh","coins":[]}

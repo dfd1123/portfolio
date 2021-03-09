@@ -1,0 +1,124 @@
+/* PAGES - 스토어 문의 페이지
+   ========================================================================== */
+
+#page-inquiry-store-list-wrap {
+  .table-area {
+    @include set-relative;
+
+    padding: 20px 10px 90px;
+
+    .search-default-bar {
+      margin-bottom: 30px;
+    }
+
+    .search-status-bar {
+      margin: 25px 0 13px;
+    }
+
+    .search-status-bar.mt-0 {
+      margin-top: 0;
+    }
+
+    .search-status-bar.type-last {
+      margin-top: 8px;
+    }
+
+    .nothing-history {
+      padding: 60px 0;
+    }
+  }
+
+  .search-option-check-group {
+    .in-check-list > * {
+      min-width: 80px;
+    }
+  }
+
+  .tbl-default {
+    .ta-right {
+      padding-right: 20px;
+    }
+    td i {
+      letter-spacing: 0.1px;
+      padding: 0 4px;
+    }
+  }
+
+  .tbl-default-body {
+    .in-tr {
+      height: 70px;
+    }
+  }
+
+  .btn-gray {
+    @include hover-eft {
+      background-color: $primary-color;
+    }
+
+    &:active {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+
+  .pager-wrap {
+    bottom: 20px;
+  }
+}
+
+#page-inquiry-store-detail-wrap {
+  .panel-default {
+    margin-bottom: 130px;
+  }
+  .in-text-200 {
+    min-height: 200px;
+  }
+  ._editor {
+    display: flex;
+    height: 355px;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-lighter;
+  }
+}
+
+//리스트 모바일
+@include media-mobile-version(ipad) {
+  #page-inquiry-store-list-wrap {
+    .panel-default {
+      min-height: calc(100vh - 0px - 50px - 100px);
+      padding: 0px;
+    }
+
+    .choice-status-bar .in-choice-wrap {
+      height:auto;
+      padding: 42px 0px 0px 13px;
+    }
+  }
+
+  #page-inquiry-store-list-wrap .table-area {
+    .search-default-bar {
+      margin-bottom: 0;
+    }
+
+    .choice-status-bar {
+      margin: 0;
+      border-bottom: 1px solid #f0f0f0;
+      padding: 0px;
+    }
+
+    .choice-status-bar .in-choice-all {
+      margin: 0px 12px 6px;
+    }
+
+    .choice-status-bar .in-button-group {
+      right: 10px;
+      top:auto;
+      bottom:10px;
+      transform:none;
+    }
+
+    .choice-status-bar .rounded-square-xs-btn {
+      box-shadow: none;
+    }
+  }
+}

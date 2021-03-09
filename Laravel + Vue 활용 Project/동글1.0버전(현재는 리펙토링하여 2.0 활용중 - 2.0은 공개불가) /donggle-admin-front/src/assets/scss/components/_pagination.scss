@@ -1,0 +1,47 @@
+/* COMPONENTS - pagination
+   ========================================================================== */
+
+.pager-wrap {
+  @include set-absol-left;
+
+  width: max-content;
+  bottom: 50px;
+  user-select: none;
+}
+._pager_box {
+  float: left;
+  &._pager_number {
+    width: max-content;
+    margin: 0px 20px;
+  }
+}
+._pager {
+  @include circle-size(38px);
+  @include box-shadow(0px 4px 6px rgba(0, 0, 0, 0.06));
+  @include font(13px, 500, $gray-md-03);
+  @include bg-option(auto, center);
+
+  margin: 0px 3px;
+  border: 1px solid $gray-lighter;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  &.active {
+    @include box-shadow(none);
+
+    background-color: $pink;
+    color: white;
+  }
+}
+._left_db {
+  @include bg-img($path-btn, "btn_arrow_left_db.svg");
+}
+._left_sg {
+  @include bg-img($path-btn, "btn_arrow_left.svg");
+}
+._right_sg {
+  @include bg-img($path-btn, "btn_arrow_right.svg");
+}
+._right_db {
+  @include bg-img($path-btn, "btn_arrow_right_db.svg");
+}

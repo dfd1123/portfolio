@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+		"eslint.validate": [
+			"vue",
+			"html",
+			"javascript"
+		],
+		"vetur.completion.autoImport": false,
+		"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true,
+			"source.fixAll": true
+		},
+		"editor.formatOnSave": false
+	}
+}

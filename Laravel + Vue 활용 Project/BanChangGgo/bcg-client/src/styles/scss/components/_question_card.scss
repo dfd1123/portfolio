@@ -1,0 +1,56 @@
+.question_card {
+  width: 100%;
+  display: table;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.04);
+  min-height: 115px;
+  padding: 1.5rem 0;
+  margin: 6px 0;
+  .in_symbol {
+    @include position($t: -40px, $l: 50%);
+    @include translate($x: -50%, $y: 0);
+    img {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .in_symbol:after {
+    @include position($b: 1px, $l: 50%);
+    @include translate($x: -50%, $y: 0);
+    content: "";
+    width: 80%;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    display: inline-block;
+  }
+  .in_number {
+    @include setFont(12px, $weight: bold, $color: white);
+    background-color: $theme-03;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-bottom: 0.8rem;
+  }
+  .in_title {
+    @include remFont("20px");
+    line-height: 1.35;
+    word-break: keep-all;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .in_desc {
+    @include remFont("13px", $weight: 300, $color: #9b9b9b);
+    padding-top: 0.5rem;
+    word-break: keep-all;
+  }
+}
+
+.question_card.symbol {
+  padding-top: 55px;
+}

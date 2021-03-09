@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>philips pay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="stylesheet/scss/vendors/normalize-custom.css">
+        <link rel="stylesheet" href="css/common.css">
+
+        <!-- 개별 css -->
+        <link rel="stylesheet" href="css/wallet.css">
+        <link rel="stylesheet" href="css/wallet_03.css">
+        
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="app" class="app">
+            
+            <!-- 헤더 -->
+            <header class="header header--type01">
+                <button type="button" class="header__btn header__btn--left header__btn--prev">
+                    <b class="hide-text">닫기</b>
+                </button>
+                <h1 class="header__center">입금</h1>
+                <button type="button" class="header__btn header__btn--right header__btn--home">
+                    <b class="hide-text">홈</b>
+                </button>
+            </header>
+            <!-- end 헤더 -->
+            <!-- 컨텐츠 -->
+            <div class="content_wrapper">
+                <!-- 각 페이지마다 다른 컨테이너 -->
+                <div class="container container--wallet03">
+                    <h2 class="status-tit-group">
+                        <span class="status-tit"><b>입금신청</b>이 완료되었습니다.</span>
+                        <span class="status-tit__bt-date">2018.00.00 00:00:00</span>
+                    </h2>
+                    <div class="basic_panel">
+                        <h2 class="basic_panel__title">입금안내</h2>
+                        <p class="wallet__etc-info wallet__account-info">
+                            <span class="wallet__account-info__bank">국민은행 <b>590202-06-095743</b></span>
+                            <span class="wallet__account-info__name">(예금주 : 필립스주식회사)</span>
+                        </p>
+                        <div class="basic_panel__contents">
+                            <p class="caution_list">※ 금융사고 방지를 위해 반드시 인증한 계좌로 입금해주세요.</p>
+                            <p class="caution_list">※ 입금신청 후, 위의 계좌번호로 입금하셔야 입금이 완료됩니다.</p>
+                            <p class="caution_list">※ 입금 확인 후 입금요청이 승인됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="basic_panel--dark">
+                        <div class="basic_panel--dark__contents">
+                            <table class="table_type01 table_type01--border-top">
+                                <tr class="table_type01__tr">
+                                    <th class="table_type01__th">총 입금금액</th>
+                                    <td class="table_type01__td table_type01__td--big">
+                                        <span>0000.000</span>
+                                        <em class="tbl_unit">won</em>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bt-fix-btn">
+                        <button type="button" class="btn_solid btn_solid02">홈으로</button>
+                    </div>
+                </div>
+                <!-- end 각 페이지마다 다른 컨테이너 -->
+            </div>
+            <!-- end 컨텐츠  -->
+        </div>
+
+    </body>
+
+</html>

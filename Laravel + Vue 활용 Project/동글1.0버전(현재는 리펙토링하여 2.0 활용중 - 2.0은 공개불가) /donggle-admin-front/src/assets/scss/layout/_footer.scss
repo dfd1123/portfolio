@@ -1,0 +1,79 @@
+/* LAYOUT - footer
+   ========================================================================== */
+
+#admin-footer {
+  @include font(12px, 300, $gray-md-03);
+  @include set-flex;
+
+  width: 100%;
+  height: layoutPc(ft-height);
+  background-color: $gray-lighter-03;
+  border-top: 1px solid $gray-lighter-01;
+  flex-direction: column;
+
+  .in-copyright {
+    color: $gray-01;
+  }
+
+  .in-copyright i {
+    color: $purple-mild-01;
+  }
+
+  .in-company-info {
+    padding: 6px 0;
+
+    & > span {
+      @include inline-block;
+
+      border-right: 1px solid $gray-md-03;
+      line-height: 1;
+      padding: 0 3px;
+      padding-right: 5px;
+    }
+
+    & > span:nth-last-child(2) {
+      padding-right: 0;
+      border-right: 0;
+    }
+
+    span.in-address {
+      display: block;
+      text-align: center;
+      margin-top: 6px;
+      border: 0;
+      display: block;
+    }
+  }
+}
+
+@include media-mobile-version(galaxy-tab){
+  #admin-footer{
+    font-size: 11px;
+
+    .in-copyright{
+      font-size: 12px;
+    }
+
+    .in-company-info{
+      max-width: 480px;
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
+
+@include media-mobile-version(mobile-only){
+  #admin-footer{
+    height: auto;
+    padding: 5px 0px;
+    .in-company-info{
+      max-width: 100%;
+      width: 100%;
+      line-height: 1.5;
+    }
+
+    .in-company-info span.in-address{
+      margin-top: 4px;
+    }
+  }
+}

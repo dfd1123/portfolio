@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1101" height="560.635" viewBox="0 0 1101 560.635">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1ae8ce"/>
+      <stop offset="1" stop-color="#1ae8ce" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_4096" data-name="그룹 4096" transform="translate(-394.5 794.9)">
+    <g id="_1-2_graph_line" data-name="1-2_graph_line" transform="translate(-568 -723)">
+      <path id="Path" d="M-.544,324.59C728.187,370.806,1091.074-91.742,1091.074-91.742" transform="translate(968.044 25.027)" fill="none" stroke="#1ae8ce" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="교차_1" data-name="교차 1" d="M0,558.768v-139.3C680.365,466.445,1050.536,58.573,1100,0V558.768Z" transform="translate(963 -70.533)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" opacity="0.2" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="49.01" height="36.542" viewBox="0 0 49.01 36.542">
+  <path id="패스_1845" data-name="패스 1845" d="M34.51,10.59c7.89.74,14,5.79,14,11.91,0,6.63-7.16,12-16,12a20.11,20.11,0,0,1-8.07-1.64l-3.83,3a.79.79,0,0,1-1.26-.74l.77-5a12,12,0,0,1-2.7-3.59" fill="none" stroke="#263238" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="패스_1846" data-name="패스 1846" d="M41.5,21.75h-18a1.5,1.5,0,0,1,0-3h18a1.5,1.5,0,0,1,0,3Z" fill="#00b9ff" stroke="#263238" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="패스_1847" data-name="패스 1847" d="M34.5,27.75h-11a1.5,1.5,0,0,1,0-3h11a1.5,1.5,0,0,1,0,3Z" fill="#00b9ff" stroke="#263238" stroke-miterlimit="10" stroke-width="1"/>
+  <circle id="타원_37" data-name="타원 37" cx="1.5" cy="1.5" r="1.5" transform="translate(38 24.75)" fill="#00b9ff" stroke="#263238" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="패스_1848" data-name="패스 1848" d="M32.5,12.5c0-6.63-7.16-12-16-12S.5,5.87.5,12.5s7.16,12,16,12a20.11,20.11,0,0,0,8.07-1.64l3.83,3a.79.79,0,0,0,1.26-.74l-.77-5A10.36,10.36,0,0,0,32.5,12.5Z" fill="#fff"/>
+  <path id="패스_1849" data-name="패스 1849" d="M28.88,26.5a1.25,1.25,0,0,1-.78-.27l-3.6-2.79a20.89,20.89,0,0,1-8,1.56C7.4,25,0,19.39,0,12.5S7.4,0,16.5,0,33,5.61,33,12.5a10.78,10.78,0,0,1-3.58,7.78L30.15,25a1.27,1.27,0,0,1-.62,1.3A1.24,1.24,0,0,1,28.88,26.5Zm-4.24-4.22,4.07,3.16a.27.27,0,0,0,.32,0,.25.25,0,0,0,.13-.28l-.81-5.27.2-.18A9.9,9.9,0,0,0,32,12.5C32,6.16,25.05,1,16.5,1S1,6.16,1,12.5,8,24,16.5,24a19.63,19.63,0,0,0,7.87-1.6Z" fill="#263238"/>
+  <path id="패스_1850" data-name="패스 1850" d="M25.5,11.75H7.5a1.5,1.5,0,0,1,0-3h18a1.5,1.5,0,0,1,0,3Z" fill="#00b9ff" stroke="#263238" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="패스_1851" data-name="패스 1851" d="M18.5,17.75H7.5a1.5,1.5,0,0,1,0-3h11a1.5,1.5,0,0,1,0,3Z" fill="#00b9ff" stroke="#263238" stroke-miterlimit="10" stroke-width="1"/>
+  <circle id="타원_38" data-name="타원 38" cx="1.5" cy="1.5" r="1.5" transform="translate(22 14.75)" fill="#00b9ff" stroke="#263238" stroke-miterlimit="10" stroke-width="1"/>
+  <line id="선_136" data-name="선 136" x2="2" transform="translate(13 28.75)" fill="#fff" stroke="#263238" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+  <line id="선_137" data-name="선 137" x1="7" transform="translate(40 6.75)" fill="#fff" stroke="#263238" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+  <line id="선_138" data-name="선 138" x1="2" transform="translate(36 6.75)" fill="#fff" stroke="#263238" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+</svg>

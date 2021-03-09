@@ -1,0 +1,73 @@
+/* colors */
+/* font-size */
+/* unit */
+/* responsive */
+/* mix-in */
+.wrapper--findpw {
+  padding-top: 4.5rem;
+  font-size: 16px;
+}
+
+.wrapper--findpw .wrapper--inner {
+  padding-top: 2rem;
+}
+
+.find_pw_panel {
+  background-color: #FAFAFA;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.find_pw_panel ._label {
+  color: #393939;
+  width: 100%;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.find_pw_panel ._email_input,
+.find_pw_panel ._pw_input {
+  width: 100%;
+  height: 3rem;
+  border: 0;
+  border-bottom: 1px solid #00DBD8;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.find_pw_panel ._pw_input:last-of-type {
+  margin-bottom: 0;
+}
+
+.find_pw_panel .button {
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.9em;
+  padding: 0 13px;
+  width: unset;
+  border-radius: 5px;
+  background-color: #00DBD8;
+}
+
+.find_pw_panel .button:active {
+  background-color: #00c2bf;
+}
+
+.find_pw_panel .pw_alarm {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+  font-weight: 100;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.find_pw_panel .pw_alarm .able {
+  color: #ff2f2f;
+}
+
+.find_pw_panel .pw_alarm .disable {
+  color: #00B1DC;
+}

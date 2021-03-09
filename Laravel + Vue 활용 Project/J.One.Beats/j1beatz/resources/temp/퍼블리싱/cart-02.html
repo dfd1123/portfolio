@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>J1beats-main</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="제이원비츠" />
+        <meta property="og:description" content="제이원비츠 설명입니다." />
+        <!-- ↓오픈그래프 썸네일 이미지는 만들어놨지만, path방식이 아닌 url방식으로 해야 보인다고 하네욤 우선 이미지 경로라도 적어놓겠습니다~ -->
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="음악플랫폼, 제이원비츠">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="scss/j1beat-ui.css">
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="slick/slick-theme.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+        <!--TODO:페이지별 css-->
+        <link rel="stylesheet" href="scss/pages/sub-page-cart.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--TODO:END-->
+
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.js"></script>
+        <script src="js/main.js"></script>
+    
+
+    </head>
+
+    <body>
+
+        <div id="app">
+
+            <!-- 메인 컨텐츠 -->
+            <div id="wrap">
+                
+                <section class="section sub-section">
+
+                    <!--TODO:이용권정보, 장바구니, 고객센터, 마이페이지일 때 j1beatz-hd에 bg_gray_ver 클래스추가-->
+                    <article class="j1beatz-hd bg_gray_ver">
+
+                        <h3 class="none">제목 및 아티스트 및 태그 검색하기</h3>
+
+                        <fieldset class="j1beatz-hd-sch-field">
+                            <input type="text" placeholder="제목/아티스트/#태그 검색">
+                            <button type="button"><span class="none">검색버튼</span></button>
+                        </fieldset>
+
+                        <div class="j1beatz-hd-cs-field">
+                            <h3>고객센터</h3>
+                            <div class="cs-btns">
+                                <a href="#" class="cs-btn cs-btn-blg"><span class="none">블로그</span></a>
+                                <a href="#" class="cs-btn cs-btn-kkt"><span class="none">카카오톡</span></a>
+                                <a href="#" class="cs-btn cs-btn-insta"><span class="none">인스타그램</span></a>
+                                <a href="#" class="cs-btn cs-btn-ytb"><span class="none">유튜브</span></a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <!--TODO:END-->
+                    
+                    <!--TODO:이용권정보, 장바구니, 고객센터, 마이페이지일 때 아래 제목스타일 추가-->
+                    <div class="sub-page-large-title-group">
+                        <div class="sub-page-large-title _cart">
+                            <h2 class="sub-page-large-title-name">장바구니</h2>
+                        </div>
+                        <div class="sub-page-cart-procedure">
+                            <ul>
+                                <li class="sub-page-cart-procedure-list">
+                                    <img src="img/icon/cart-none.svg" alt="cart none" class="no-active">
+                                    <img src="img/icon/cart-active.svg" alt="cart none" class="active">
+                                    <span>장바구니</span>
+                                </li>
+                                <li class="sub-page-cart-procedure-list active">
+                                    <img src="img/icon/paygo-none.svg" alt="cart none" class="no-active">
+                                    <img src="img/icon/paygo-active.svg" alt="cart none" class="active">
+                                    <span>결제진행</span>
+                                </li>
+                                <li class="sub-page-cart-procedure-list">
+                                    <img src="img/icon/paycomplt-none.svg" alt="cart none" class="no-active">
+                                    <img src="img/icon/paycomplt-active.svg" alt="cart none" class="active">
+                                    <span>결제완료</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--TODO:END-->
+
+                    <div class="page-contents-wrapper">
+
+                        <div class="sub-page-cart">
+
+                            <div class="sub-page-cart-02">
+                                
+                                <div class="sub-page-cart-contents-inner">
+
+                                    <input type="checkbox" id="check-order-beat-order_list" class="none-input">
+                                    <input type="checkbox" id="check-order-beat-sale" class="none-input" >
+                                    <input type="checkbox" id="check-order-beat-pay_type" class="none-input" checked>
+
+                                    <div class="sub-page-order-ing">
+
+                                        <div class="sub-page-order-ing-tab _order_list">
+                                            <label for="check-order-beat-order_list">
+                                                <span class="in-title">
+                                                    <span class="in-title-name">주문 비트 리스트</span>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                        <div class="sub-page-order-ing-tab-view tab-view-order_list" data-mcs-theme="minimal-dark" >
+                                            
+                                            <div class="cart_chart_list">
+
+                                                <table>
+
+                                                    <thead>
+
+                                                        <tr>
+                                                            <th class="th-check">
+                                                                <div>
+                                                                    <input type="checkbox" title="곡 전체선택" id="check-all-order" class="input-style-01">
+                                                                    <label for="check-all-order">
+                                                                        <span class="none">곡 전체선택하기</span>
+                                                                    </label>
+                                                                </div>
+                                                            </th>
+                                                            <th class="th-song">
+                                                                <div>곡/프로듀서</div>
+                                                            </th>
+                                                            <th class="th-file_type">
+                                                                <div>파일형식</div>
+                                                            </th>
+                                                            <th class="th-license">
+                                                                <div>라이센스</div>
+                                                            </th>
+                                                            <th class="th-price">
+                                                                <div>가격</div>
+                                                            </th>
+                                                        </tr>
+
+                                                    </thead>
+
+                                                </table>
+            
+                                                <table>
+
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td class="td-check">
+                                                                <div>
+                                                                    <input type="checkbox" title="곡 개별선택" id="check-each-order1" class="input-style-01">
+                                                                    <label for="check-each-order1">
+                                                                        <span class="none">곡 개별선택하기</span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-song">
+                                                                <div class="c-song-title">
+                                                                    <span class="thumb-mini" style="background-image: url(img/example/ex_fliker.jpg);" style="background-image: url(img/example/ex_fliker.jpg);"><span class="none">썸네일</span></span>
+                                                                    <p class="c-song-title-info">
+                                                                        <b>music title</b>
+                                                                        <br>
+                                                                        <span>producer name</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-file_type">
+                                                                <div>mp3</div>
+                                                            </td>
+                                                            <td class="td-license">
+                                                                <div><span>basic(스트리밍)+delux</span></div>
+                                                            </td>
+                                                            <td class="td-price">
+                                                                <div><b>23,000</b><em>원</em></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td-check">
+                                                                <div>
+                                                                    <input type="checkbox" title="곡 개별선택" id="check-each-order1" class="input-style-01">
+                                                                    <label for="check-each-order1">
+                                                                        <span class="none">곡 개별선택하기</span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-song">
+                                                                <div class="c-song-title">
+                                                                    <span class="thumb-mini" style="background-image: url(img/example/ex_fliker.jpg);"><span class="none">썸네일</span></span>
+                                                                    <p class="c-song-title-info">
+                                                                        <b>music title</b>
+                                                                        <br>
+                                                                        <span>producer name</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-file_type">
+                                                                <div>mp3</div>
+                                                            </td>
+                                                            <td class="td-license">
+                                                                <div><span>basic(스트리밍)+delux</span></div>
+                                                            </td>
+                                                            <td class="td-price">
+                                                                <div><b>23,000</b><em>원</em></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td-check">
+                                                                <div>
+                                                                    <input type="checkbox" title="곡 개별선택" id="check-each-order1" class="input-style-01">
+                                                                    <label for="check-each-order1">
+                                                                        <span class="none">곡 개별선택하기</span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-song">
+                                                                <div class="c-song-title">
+                                                                    <span class="thumb-mini" style="background-image: url(img/example/ex_fliker.jpg);"><span class="none">썸네일</span></span>
+                                                                    <p class="c-song-title-info">
+                                                                        <b>music title</b>
+                                                                        <br>
+                                                                        <span>producer name</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-file_type">
+                                                                <div>mp3</div>
+                                                            </td>
+                                                            <td class="td-license">
+                                                                <div><span>basic(스트리밍)+delux</span></div>
+                                                            </td>
+                                                            <td class="td-price">
+                                                                <div><b>23,000</b><em>원</em></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td-check">
+                                                                <div>
+                                                                    <input type="checkbox" title="곡 개별선택" id="check-each-order1" class="input-style-01">
+                                                                    <label for="check-each-order1">
+                                                                        <span class="none">곡 개별선택하기</span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-song">
+                                                                <div class="c-song-title">
+                                                                    <span class="thumb-mini" style="background-image: url(img/example/ex_fliker.jpg);"><span class="none">썸네일</span></span>
+                                                                    <p class="c-song-title-info">
+                                                                        <b>music title</b>
+                                                                        <br>
+                                                                        <span>producer name</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-file_type">
+                                                                <div>mp3</div>
+                                                            </td>
+                                                            <td class="td-license">
+                                                                <div><span>basic(스트리밍)+delux</span></div>
+                                                            </td>
+                                                            <td class="td-price">
+                                                                <div><b>23,000</b><em>원</em></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td-check">
+                                                                <div>
+                                                                    <input type="checkbox" title="곡 개별선택" id="check-each-order1" class="input-style-01">
+                                                                    <label for="check-each-order1">
+                                                                        <span class="none">곡 개별선택하기</span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-song">
+                                                                <div class="c-song-title">
+                                                                    <span class="thumb-mini" style="background-image: url(img/example/ex_fliker.jpg);"><span class="none">썸네일</span></span>
+                                                                    <p class="c-song-title-info">
+                                                                        <b>music title</b>
+                                                                        <br>
+                                                                        <span>producer name</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-file_type">
+                                                                <div>mp3</div>
+                                                            </td>
+                                                            <td class="td-license">
+                                                                <div><span>basic(스트리밍)+delux</span></div>
+                                                            </td>
+                                                            <td class="td-price">
+                                                                <div><b>23,000</b><em>원</em></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="td-check">
+                                                                <div>
+                                                                    <input type="checkbox" title="곡 개별선택" id="check-each-order1" class="input-style-01">
+                                                                    <label for="check-each-order1">
+                                                                        <span class="none">곡 개별선택하기</span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-song">
+                                                                <div class="c-song-title">
+                                                                    <span class="thumb-mini" style="background-image: url(img/example/ex_fliker.jpg);"><span class="none">썸네일</span></span>
+                                                                    <p class="c-song-title-info">
+                                                                        <b>music title</b>
+                                                                        <br>
+                                                                        <span>producer name</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-file_type">
+                                                                <div>mp3</div>
+                                                            </td>
+                                                            <td class="td-license">
+                                                                <div><span>basic(스트리밍)+delux</span></div>
+                                                            </td>
+                                                            <td class="td-price">
+                                                                <div><b>23,000</b><em>원</em></div>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td class="td-check">
+                                                                <div>
+                                                                    <input type="checkbox" title="곡 개별선택" id="check-each-order2" class="input-style-01">
+                                                                    <label for="check-each-order2">
+                                                                        <span class="none">곡 개별선택하기</span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-song">
+                                                                <div class="c-song-title">
+                                                                    <span class="thumb-mini" style="background-image: url(img/example/ex_fliker.jpg);"><span class="none">썸네일</span></span>
+                                                                    <p class="c-song-title-info">
+                                                                        <b>music title</b>
+                                                                        <br>
+                                                                        <span>producer name</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="td-file_type">
+                                                                <div>mp3</div>
+                                                            </td>
+                                                            <td class="td-license">
+                                                                <div><span>basic(스트리밍)+delux</span></div>
+                                                            </td>
+                                                            <td class="td-price">
+                                                                <div><b>23,000</b><em>원</em></div>
+                                                            </td>
+                                                        </tr>
+                                                            
+                                                    </tbody>
+
+                                                </table>
+                                                        
+                                            </div>
+
+                                        </div>
+
+                                        <div class="sub-page-order-ing-tab _sale">
+                                            <label for="check-order-beat-sale">
+                                                <span class="in-title">
+                                                    <span class="in-title-name">할인/혜택 적용</span>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                        <div class="sub-page-order-ing-tab-view tab-view-sale">
+                                        </div>
+                                        
+                                        <div class="sub-page-order-ing-tab _pay_type">
+                                            <label for="check-order-beat-pay_type">
+                                                <span class="in-title">
+                                                    <span class="in-title-name">결제 수단</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="sub-page-order-ing-tab-view tab-view-pay_type">
+                                            <div class="tab-view-pay_type-group">
+                                                <input type="radio" name="pay_type" id="check-pay_type-1" class="none-input">
+                                                <input type="radio" name="pay_type" id="check-pay_type-2" class="none-input">
+                                                <input type="radio" name="pay_type" id="check-pay_type-3" class="none-input">
+                                                <ul>
+                                                    <li class="tab-view-pay_type-list tab-view-pay_type-list-1">
+                                                        <label for="check-pay_type-1">
+                                                            <span class="_icon"></span>
+                                                            <span class="_label">신용카드 결제</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="tab-view-pay_type-list tab-view-pay_type-list-2">
+                                                        <label for="check-pay_type-2">
+                                                            <span class="_icon"></span>
+                                                            <span class="_label">무통장 입금</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="tab-view-pay_type-list tab-view-pay_type-list-3">
+                                                        <label for="check-pay_type-3">
+                                                            <span class="_icon"></span>
+                                                            <span class="_label">휴대폰 결제</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="sub-page-cart-price_info">
+                                        <span>
+                                            <em>총 비트금액</em>
+                                            <b>1,000,000</b><span>원</span>
+                                        </span>
+                                        <span class="price-total-sale">
+                                            <em>총 할인금액</em>
+                                            <b>1,000,000</b><span>원</span>
+                                        </span>
+                                        <span class="price-total-pay">
+                                            <em>총 결제금액</em>
+                                            <b>23,000</b><span>원</span>
+                                        </span>
+                                    </div>
+
+                                    <div class="sub-page-cart-btn-group">
+                                        <button type="button" class="btn btn-outline">뒤로가기</button>
+                                        <button type="button" class="btn">선택비트 주문</button>
+                                    </div>
+
+                                </div>                
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </section>
+
+            </div>
+            <!-- //메인 컨텐츠 -->
+        
+        </div>
+
+    </body>
+
+</html>

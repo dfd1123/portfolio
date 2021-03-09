@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.26" height="29.479" viewBox="0 0 31.26 29.479">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fc4ead"/>
+      <stop offset="1" stop-color="#a134e8"/>
+    </linearGradient>
+    <filter id="btn_heart-on" x="0" y="0" width="31.26" height="29.479" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#btn_heart-on)">
+    <path id="btn_heart-on-2" data-name="btn_heart-on" d="M11.13,40.879,9.572,39.321C3.784,34.2,0,30.751,0,26.522A6.035,6.035,0,0,1,6.122,20.4a6.689,6.689,0,0,1,5.009,2.337A6.689,6.689,0,0,1,16.139,20.4a6.035,6.035,0,0,1,6.122,6.122c0,4.229-3.784,7.68-9.572,12.8Z" transform="translate(4.5 -15.9)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+
+/* 셀렉트 */
+.select { position: relative;display: inline-block;width: 100%;}
+.select select { display: inline-block;width: 100%;cursor: pointer;outline: 0; border: 0;border-radius: 0; border: 1px solid #d2d2d2; height: 40px;margin-bottom: 3px;padding: 7px 10px;color: #888;font-size: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+   }
+.select select::-ms-expand {display: none;}
+.select select:hover,
+.select select:focus {color: #000;background: #f9f9f9;}
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.select__arrow { position: absolute;top: 25px; right: 15px;width: 0;height: 0;pointer-events: none; width:12px;height:7px;background:url(../img/ic_seldown.png) no-repeat center top;background-size:6px auto}
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+background:url(../img/ic_seldown_off.png) no-repeat center top;
+background-size:6px auto
+}
+.select select:disabled ~ .select__arrow {
+background:url(../img/ic_seldown_off.png) no-repeat center top;
+background-size:6px auto
+}
+select {margin:0; -webkit-appearance: none;-moz-appearance: none; appearance: none;}
+input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="image"],input[type="tel"], textarea {-webkit-appearance:none;-webkit-border-radius:0;}

@@ -1,0 +1,81 @@
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+/* 
+    --------------------------------------------------------------------
+            * result_card component *
+    --------------------------------------------------------------------
+*/
+.result-card {
+  width: 215px;
+  display: inline-block;
+}
+
+.result-card .tag-album-thumb {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 214px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.result-card dl {
+  padding: 0 13px;
+}
+
+.result-card dt {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0 5px 0;
+}
+
+.result-card ._pd_name {
+  color: rgba(51, 51, 51, 0.5);
+  margin-bottom: 15px;
+}
+
+.result-card ._tags {
+  width: 100%;
+  display: inline-block;
+  height: 75px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+}
+
+.result-card ._tags span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #636363;
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+
+.result-card ._tags span::before {
+  content: "#";
+}
+/*# sourceMappingURL=result_card.css.map */

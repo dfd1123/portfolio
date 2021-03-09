@@ -1,0 +1,319 @@
+/*결제모듈>사업자정보관리, 설정하기, 결제현황 공통스타일 start*/
+.box_style{ box-shadow: 0 10px 30px rgba(57,0,112,.18); border: 0;}
+
+.pg_wrapper,.box_style.notice_panel{ width: 55%; margin: 0 auto; min-width: 680px;}
+
+.box_style h3 {text-align: center; font-size: 21px; margin: 20px 0 30px; font-weight: 400; color: #9448c8;}
+
+.pg_wrapper .box_style h3 {margin: 20px 0;}
+
+.box_style.notice_panel{margin-top: 60px;}
+
+/*결제모듈>사업자정보관리, 설정하기, 결제현황 공통스타일 end*/
+
+/*결제모듈>결제하기 start*/
+.pg_wrapper.pg_info .col-md-12{width: 100%;}
+.pg_wrapper.pg_info .panel-body{padding-bottom: 40px;}
+.pg_wrapper.pg_info h3 {border-bottom: 2px solid #9448c8; padding: 20px 0 25px; margin: 0;}
+.pg_wrapper.pg_info .ment{color: black; letter-spacing: -.3px; width: 100%; text-align: center; display: inline-block; text-align: center; padding: 25px 0;}
+.pg_wrapper.pg_info .line_align_pg{width: 50%; margin: 8px auto; border: 1px solid #cccccc; height: 45px; position: relative; min-width: 390px;}
+.pg_wrapper.pg_info .line_align_pg_inner{border: 0; width: 100%; height: 100%; padding: 0 5px;}
+.pg_wrapper.pg_info .line_align_pg:nth-child(3) .line_align_pg_inner{padding: 0 7px;}
+.pg_wrapper.pg_info .line_align_pg:nth-child(3) .unit{color: #9448c8; position: absolute; right: 10px; top: 12px; font-size: 14px;} 
+.pg_wrapper.pg_info .line_align_total{text-align: right; line-height: 38px; color: #969696; border: 0; }
+.pg_wrapper.pg_info .line_align_total .line_align_pg_inner{width:100%; background: transparent; border: 0; text-align: right; font-size: 16px; padding-right: 40px;}
+.pg_wrapper.pg_info .line_align_total span{position: absolute;}
+.pg_wrapper.pg_info .line_align_total span.tit{left: 0; top: 5px;}
+.pg_wrapper.pg_info .line_align_total span.coin_name{right: 0; top: 5px;}
+.pg_wrapper.pg_info .pg_btn{color: #fff; padding: 0; display: block; margin: auto; border-radius: 5px; border: 0; background: #9448c8;}
+.pg_wrapper.pg_info .pg_btn:active{background: #7731a7;}
+.pg_wrapper.pg_info .line_align_pg input:focus, .pg_wrapper.pg_info .line_align_pg select:focus{
+	border: 1px solid #9448c8;
+}
+.pg_wrapper.pg_info input[type="number"]::-webkit-outer-spin-button,
+.pg_wrapper.pg_info input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*결제모듈>결제하기 end*/
+
+/*결제모듈 설정하기~사업자정보 작성하기 공통사항 start*/
+.line_align{width: 100%; float: left; height: auto; border-bottom: 1px solid #dddddd;}
+
+.line_align .form-group{margin-bottom:0;}
+
+.line_align:first-child {border-top: 2px solid #9448c8;}
+
+label.label_st {float: left; margin-bottom: 0; background: #f5f5f5; display: inline-block; height: 100%;
+    padding: 14px 0; font-weight: 400; color: #555555; width: 140px;text-align: center;}
+
+.line_align .form-control { border-radius: 0; width: 65%; float: left; position: relative; top: 8px;
+    height: 30px; box-shadow: none; left: 9px; min-width: 400px;}
+
+.btn_center {float: left; text-align: center; width: 100%; margin: 15px 0 30px;}
+
+.form-group .btn {margin-bottom: -6px; background-color: #9448c8; border: 0; border-radius: 10px; padding: 6px 20px; font-weight: 400;}
+
+.status_line #status{position: relative; top: 8px; height: 30px; left: 10px; border-color: #ccc; color: #555555; width: 18%;}
+/*결제모듈 설정하기~사업자정보 작성하기 공통사항 end*/
+
+/*결제모듈>사업자정보 관리 스타일 start*/
+.pg_wrapper.com_info_write .line_align .form-control {width: 200px; min-width: 200px;}
+
+.pg_wrapper.com_info_write .line_align.half_line .form-control {width: 140px; min-width: 140px;}
+
+.pg_wrapper.com_info_write label.label_st:nth-child(4) {margin-left: 30px;}
+
+.pg_wrapper.com_info_write .com_type_choice {margin-bottom: 0; display: inline-block; margin-left: 20px; margin-top: 13px; color: #555555;font-weight: 300;}
+
+.pg_wrapper.com_info_write .com_type_choice label {font-weight: 400; margin: 0 10px 0 3px; position: relative; top: -2px;}
+/*결제모듈>사업자정보 관리 스타일 end*/
+
+/*결제모듈>결제현황 스타일 start*/
+.box_style.panel_box{width: 90%; margin: 0 auto; margin-top: 0px;}
+
+.box_style.panel_box .table>thead>tr>th,
+.box_style.notice_panel table>thead>tr>th{border-bottom: 2px solid #9448c8; color: #9448c8; padding: 5px 8px;}
+
+.box_style.panel_box table td {color: #555555; font-size: 13px; vertical-align: middle !important;}
+
+.btn-warning {color: #fff; background-color: #90afe4; border-color: #90afe4; border-radius: 8px;}
+
+.btn-warning:hover,.btn-warning:focus,.btn-warning:active {background: #7b9fdc; border-color: #7b9fdc;}
+
+.form-group .btn-warning:hover,.form-group .btn-warning:focus,.form-group .btn-warning:active{background: #7931ab; border-color: #7931ab;}
+
+.box_style .pagination{width: 100%; text-align: center;}
+
+.box_style .pagination>li{display: inline-block;}
+
+.box_style .pagination>li>a, .pagination>li>span{color: #9b62ca;}
+
+.box_style .pagination>li>a.active{background: #ededed;}
+
+.text_clip span {text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; width: 100px; overflow: hidden; display: inline-block;
+    cursor: pointer; transition: all 0.3s; position: relative; top: 0px;}
+
+.text_clip span:hover{color: #9448c8; transition: all 0.3s; top: -2px;}
+
+.text_clip{position: relative;}
+
+.text_clip .full_url_box{display: none; position: absolute; top: 40px; left: -90px; width: 290px; overflow: hidden; height: 33px; border: 1px solid #c8c8c8;}
+
+.full_url_box input{width: 100%; background-color: white; position: absolute; font-size: 13px; padding: 7px 0 7px 9px; border: 0; top: 0; left: 0; z-index: 1; overflow: hidden;}
+
+.panel-heading{width: 100%; text-align: center;}
+
+.panel-heading .sch_wrap_group{display: inline-block;}
+
+.sch_wrap_group .sch_wrap{display: inline-block; width: 20%; min-width: 450px; background: #afafaf; position: relative; height: 30px; border: 1px solid #D9DEE4; float: left;}
+
+.sch_wrap .input_search{width: 100%; height: 100%; padding-left: 90px; padding-right: 100px; left: 0; top: 0; border: 0; position: absolute; }
+
+.sch_wrap .input_search ~ input{position: absolute; top: 0; right: 0; height: 100%; padding: 0 10px; background: #90afe4; border: 0; color: #fff; border-radius: 5px;}
+
+.sch_wrap select{border: 0; position: absolute; top: 0; left: 0; height: 100%; width: 80px; font-size: 13px;}
+
+.sch_wrap_group button{display: inline-block; float: left; border-radius: 5px; background: #90afe4; border: 0; height: 29px; margin-left: 10px; color: #fff; padding: 0 15px; margin-bottom: 0;}
+
+/*결제모듈>결제현황 스타일 end*/
+
+/*지갑> 출금신청 페이지 start*/
+
+.box_wrapper{width: 95%; margin: 0 auto; min-width: 1220px; height: 100%; min-height: 500px; position: relative; }
+	
+	/*왼쪽 박스*/
+.left_box{width: 44%; float: left; height: auto; margin-right: 1%;}
+
+.box_wrapper .left_box h3{margin: 15px 0 20px; }
+
+.box_wrapper .left_box thead>tr>th:nth-child(1){width: 30%; }
+
+.box_wrapper .left_box thead>tr>th:nth-child(2){width: 45%; }
+
+.box_wrapper .left_box thead>tr>th:nth-child(3){width: 25%; }
+
+.box_wrapper .left_box thead>tr>th{border-bottom: 2px solid #9448c8; color: #9448c8; padding: 5px 8px; text-align: center;}
+
+.left_box .coin_withdraw_list{text-align: center; transition: all 0.3s;}
+
+.left_box .coin_withdraw_list:hover,.withdraw_panel ul li:hover,.left_box .coin_withdraw_list:active,.withdraw_panel ul li:active{background: #f0f0f0; transition: all 0.3s;}
+
+.coin_withdraw_list td:first-child{text-align: left;}
+
+.coin_withdraw_list td:first-child div{padding-left: 42px; position: relative; margin: 5px 0 0 7px; }
+
+.coin_withdraw_list td:first-child span{position: absolute; left: 0; width: 33px; height: 33px; top: 2px;}
+
+.coin_withdraw_list td:first-child span img{width: 100%; height: 100%;}
+
+.coin_withdraw_list td:first-child .coin_name{font-size: 14px; margin-bottom: 0;}
+
+.coin_withdraw_list td:first-child .name_tag{font-weight: 300; margin: 3px 0 5px 0;}
+
+.coin_withdraw_list td{vertical-align: middle !important; color: #555555;}
+
+.coin_withdraw_list td:nth-child(2){font-size: 16px; font-weight: 300;}
+
+.coin_withdraw_list td:nth-child(2) span{width: 90px; text-align: right; display: inline-block;}
+
+.coin_withdraw_list td:nth-child(3) span{border: 1px solid #a9a9a9; color: #a9a9a9; font-weight: 300; padding: 5px 15px; border-radius: 50px; cursor: pointer;}
+
+.box_wrapper .right_box{width: 55%; float: left; height: 500px;}
+
+.box_wrapper .box_style{margin-bottom: 2%;}
+	
+	/*오른쪽 상단 박스*/
+.selected_bar{position: relative; padding: 20px 15px; padding-left: 25px;}
+
+.selected_bar .coin_symbol{width: 62px; height: 62px; display: inline-block; position: absolute; top: 24px; left: 25px;}
+
+.selected_bar .coin_symbol img{width: 100%; height: 100%;}
+
+.selected_bar p:nth-child(2){padding-left: 75px; font-size: 18px; color: #555555; margin-top: 5px;}
+
+.selected_bar p:nth-child(3){padding-left: 75px; font-size: 14px; color: #7f7f7f; }
+
+.selected_bar p:nth-child(3) span:first-child{margin-right: 50px; }
+
+	/*오른쪽 하단 박스*/
+.in_box_group{position: relative;}
+
+.withdraw_panel{height: auto; }
+
+.withdraw_panel ul{padding: 0; list-style: none; margin-bottom: 0; width: 100%; float: left; margin-top: 5px; }
+
+.withdraw_panel ul li{float: left; width: 50%; text-align: center; border-bottom: 0; font-size: 15px; color: #555555; padding: 15px 0 10px; cursor: pointer; transition: all 0.3s;} 
+
+.withdraw_panel ul li.active{border-bottom: 2px solid #9448c8;}
+	
+	/*출금신청 탭*/
+
+.in_1st_box{position: relative; float: left;}
+
+.withdraw_panel .form-group-2{margin: 0;}
+
+.withdraw_panel .form-group-2 .line_align:nth-child(1){border-top: 1px solid #ddd; }
+
+.withdraw_panel .form-group-2 .label_st {width: 180px; text-align: left; padding: 20px 10px 20px 20px; }
+
+.form_line{width: 65%; height: 30px; position: relative; float: left; top: 20px; left: 2%;}
+
+.form_line .form_line_input{text-align: right; position: absolute; left: 0; width: 100%; padding-right: 89px; top: 0; }
+
+.form_line span{position: absolute; right: 10px; top: 5px; color: #555555; font-size: 14px;}
+
+.form_line button{border: 1px solid #ccc; width: 80px; height: 100%; margin: 0; text-align: center; font-size: 14px; background: #f9f9f9; color: #555555; position: absolute; top:0; right: 0; }
+
+.withdraw_panel .form-group-2 .line_align:nth-child(2n) {border-bottom: 0;}
+
+.withdraw_panel .form-group-2 .line_align:nth-child(2n) .label_st{padding-top: 25px; padding-bottom: 15px; }
+
+.withdraw_panel .form-group-2 .line_align:nth-child(2n-1) .label_st{padding-top: 15px; padding-bottom: 25px; }
+
+.withdraw_panel .form-group-2 .line_align:nth-child(1) .label_st{padding-top: 20px; padding-bottom: 20px;}
+
+.withdraw_panel .form-group-2 .line_align:nth-child(1) .form_line{top: 15px;}
+
+.withdraw_panel .form-group-2 .line_align:nth-child(1) input{padding-right: 40px;}
+
+.withdraw_panel .form-group-2 .line_align:nth-child(2) .form_line{top: 22px;}
+
+.withdraw_panel .form-group-2 .line_align:nth-child(3) .form_line{top: 10px;}
+
+.withdraw_panel .form-group-2 .line_align:nth-child(4) input,
+.withdraw_panel .form-group-2 .line_align:nth-child(5) input{top: 0; padding-right: 5px;}
+
+.withdraw_panel .form-group-2 .line_align:nth-child(5) .form_line{top: 10px;}
+
+.value_bar {border: 0; text-align: right;}
+
+.withdraw_panel .form-group-2 .btn_center{margin: 40px 0 49px;}
+
+.withdraw_panel .form-group-2 .label_st br{display: none;}
+	
+	/*출금내역 탭*/
+.in_2nd_box{position: relative; float: left; width: 100%; height: 410px; display: none; overflow-y: scroll;}
+
+.in_2nd_box .in_2nd_history{position: absolute; top: 0; left: 0; width: 100%;}
+
+.in_2nd_history .sch_bar{width: 100%; float: left; text-align: right; padding: 10px 10px;}
+
+.in_2nd_history .sch_bar select{padding: 3px 5px; border: 1px solid #c9c9c9; color: #7f7f7f; font-size: 12px; font-weight: 400;}
+
+.in_2nd_history .in_2nd_table{width: 100%; float: left;}
+
+.in_2nd_history .in_2nd_table table{width: 100%; text-align: center;}
+
+.in_2nd_table table thead>tr>th{background: #f9f9f9; font-weight: 400; color: #7f7f7f; font-size: 13px; border-bottom: 1px solid #dddddd; text-align: center; padding: 5px 5px;}
+
+.in_2nd_table table thead>tr>th:nth-child(1){width: 15%; }
+
+.in_2nd_table table thead>tr>th:nth-child(2){width: 30%; }
+
+.in_2nd_table table thead>tr>th:nth-child(3){width: 15%; }
+
+.in_2nd_table table thead>tr>th:nth-child(4){width: 15%; }
+
+.in_2nd_table tbody tr{border-bottom: 1px solid #dddddd;}
+
+.in_2nd_table tbody tr td{color: #555555; text-align: center; font-size: 15px;}
+
+.in_2nd_table tbody tr td:nth-child(2n){font-size:14px; font-weight: 400;}
+
+.in_2nd_table tbody tr td:nth-child(2) {padding: 15px 0;}
+
+.in_2nd_table tbody tr td:nth-child(2n) span{display: inline-block; width: 100%; float: left;}
+
+.in_2nd_table tbody tr td:nth-child(2) span:last-child{width: 270px; word-break: break-all; line-height: 22px; margin: 0 auto; color: #9c9c9c; font-weight: 300; font-size: 13px; float: none;}
+
+.in_2nd_table tbody tr td:nth-child(4) span:first-child{margin-bottom: 5px;}
+
+/*지갑> 출금신청 페이지 end*/
+
+/*고객센터> 공지사항 start*/
+.box_style.notice_panel table{width: 100%; max-width: 100%; margin-bottom: 20px;}
+
+.box_style.notice_panel table>thead>tr>th{text-align: center;}
+
+.box_style.notice_panel table>thead>tr>th:nth-child(1){width: 15%;}
+
+.box_style.notice_panel table>thead>tr>th:nth-child(2){width: 50%;}
+
+.box_style.notice_panel table>thead>tr>th:nth-child(3){width: 17.5%;}
+
+.box_style.notice_panel table>thead>tr>th:nth-child(4){width: 17.5%;}
+
+.box_style.notice_panel table>tbody tr{font-size: 14px; color: #555555; transition: all 0.3s;}
+
+.box_style.notice_panel table>tbody tr:hover{background: #f0f0f0;}
+
+.box_style.notice_panel table>tbody td{vertical-align: middle; text-align: center; padding: 4px 0;}
+
+.box_style.notice_panel table>tbody td a{display: block; width: 100%; height: 100%; padding: 10px 0; color: #555555;}
+/*고객센터> 공지사항 end*/
+
+/*지갑> 마이페이지 start*/
+.under_box{margin: 0 auto; width: 45%; box-shadow: none; margin-top: 50px; min-width: 680px;}
+
+.pg_wrapper.setting_wrapper{width: 95%;}
+
+.setting_wrapper .list_group_wrap{margin-bottom: 20px; width: 100%;}
+
+.setting_wrapper .list-group a{border-radius: 0; border: 0; font-size: 15px; color: #555555; background: transparent; text-align: center; width: 33.33%; float: left; border-bottom: 1px solid #ddd;}
+
+.setting_wrapper .list-group a.active{background: #f0f0f0; border-bottom: 1px solid #f0f0f0;}
+
+.under_box panel{box-shadow: none;}
+
+.under_box hr{border-top: 2px solid #9448c8;}
+
+.under_box.walet{width: 100%;}
+
+.under_box.walet .col-md-5 .panel-default{margin-bottom: 0;}
+
+.under_box.walet .panel-body p{text-align: center;}
+
+.under_box.walet h3 {border-bottom: 2px solid #9448c8; padding-bottom: 15px;}
+
+/*지갑> 마이페이지 end*/

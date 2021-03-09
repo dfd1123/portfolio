@@ -1,0 +1,1058 @@
+/* ------------------------MYPAGE 마이페이지 스타일 START ------------------------ */
+
+/* 마이페이지 헤더 공통 start */
+.mypage_hd{
+    width: 100%;
+    height: 100px;
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #fff;
+    padding: 35px 0;
+    background-size: cover;
+}
+
+.mypage_hd h1{
+    color: #333;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.sub_nav_bar {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.sub_nav_bar ul li{
+    display: inline-block;
+    transition:all 0.3s ease 0s;
+}
+
+.sub_nav_bar ul li a{
+    color:333;
+}
+
+.sub_nav_bar ul li a span{
+    padding: 12px 25px 8px;
+    display: inline-block;
+    font-size: 15px;
+    color: #333;
+}
+
+.sub_nav_bar ul li.active span{
+    font-family: 'Spoqa Han Sans Bold';
+    font-weight: 700;
+    color:#00B9FF;
+}
+
+
+
+/* 마이페이지 헤더 공통 end */
+
+/* 마이페이지 공통 start */
+
+.mypage_wrap{
+    width: 100%;
+    position: relative;
+}
+
+.mypage_inner {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 70%;
+    padding: 45px 0;
+    color: #333333;
+}
+
+.mypage_inner .title{
+    text-align: left;
+    font-size: 17px;
+    font-family: spoqa han sans light;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 10px;
+}
+
+.mypage_inner .btn_style{
+    font-size: 15px;
+}
+
+.mypage_inner .btn_style{
+    height: calc(2.19rem + 20px);
+}
+
+.mypage_inner .complit_icon{
+    width: 105px;
+    display: block;
+    margin: 0 auto;
+}
+
+.gradient_btn{
+    background-image: linear-gradient(to right, #00b9ff, #4375ff);
+    color: #fff;
+}
+
+/* 마이페이지 공통 end */
+
+/* 알림 설정 start */
+
+.mypage_inner .boxing{
+    font-size: 13px;
+    padding: 11px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.mypage_inner .boxing:hover{
+    border-bottom: 1px solid #333;
+}
+
+.mypage_inner .form-group .alarm_group{
+    display: inline-block;
+    float: right;
+
+}
+
+.mypage_inner .boxing b{
+    color: #00B9FF;
+}
+
+.mypage_inner .tit{
+    text-align: center;
+    border: 0;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+input[type=radio], input[type=checkbox]{
+    cursor: pointer;
+}
+
+/* 알림 설정 end */
+
+/* OTP 보안강화 start */
+
+.mypage_inner .otp_setting_group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mypage_inner .otp_setting_group .left_con{
+    width: 45%;
+    background: #f5f5f5;
+    padding: 30px 0 20px;
+    text-align: center;
+}
+
+.mypage_inner .otp_setting_group .left_con .qr_box{
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.mypage_inner .otp_setting_group .left_con .qr_adrs{
+    font-size: 13px;
+    width: 100%;
+    display: inline-block;
+}
+
+.mypage_inner .otp_setting_group .right_con{
+    width: 52%;
+}
+
+.mypage_inner .otp_setting_group .right_con .tit{
+    font-size: 22px; text-align: left;
+}
+
+.mypage_inner .otp_setting_group .right_con .s_txt{
+    padding-left: 3px;
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+}
+
+.mypage_inner .otp_setting_group .otp_num_group{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 40px;
+}
+
+.mypage_inner .otp_setting_group .otp_num_group>form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mypage_inner .otp_setting_group .otp_num_group button{
+    width: 50%;
+    background: #dcdcdc;
+    box-shadow: none;
+    outline: none;
+    height: auto;
+}
+
+.mypage_inner .otp_setting_group .download_btn_group .s_txt{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.mypage_inner .otp_setting_group .download_btn{
+    text-align: left;
+    font-size: 12px;
+    padding: 0 13px;
+    background: #fff;
+    border: 1px solid #333333;
+    color: #333333; 
+    outline: none;
+    width: 100%;
+    height: auto;
+}
+
+.mypage_inner .otp_setting_group .download_btn b{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.mypage_inner .otp_setting_group .download_btn:hover{
+    border-color: #00B9FF;
+    color: #00B9FF;
+}
+
+.mypage_inner .otp_setting_guide{
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* OTP 보안강화 end */
+
+/* 락리워드 start */
+
+.lock_reward_hd .coin_amount_bar{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+
+.lock_reward_hd .coin_amount_bar label{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+.lock_reward_hd .coin_amount_bar input{
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Spoqa Han Sans Bold';
+    border: 0;
+    border-bottom: 1px solid #333333;
+    text-align: right;
+    padding: 0px 10px 0 80px;
+    color: #333333;
+    outline: none;
+}
+
+.lock_reward_hd .coin_amount_bar input:focus{
+    border-color: #00B9FF;
+    outline: none;
+}
+
+.lock_reward_hd .coin_amount_bar select.form-control{
+    width: 20%;
+    text-transform: uppercase;
+}
+
+.lock_reward_hd .coin_amount_bar select.form-control.select_style{
+    border-color: #dcdcdc;
+    color: #333;
+    -webkit-appearance: none;
+    background: #fff url(/images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 95% 55%;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+.lock_reward_hd .svgicon{
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    position: relative;
+    left: -4px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+}
+
+.lock_reward_hd .svgicon + span{
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.lock_reward_hd .svgicon.lock_icon{
+	background-image: url(/storage/image/homepage/icon/icon_lock.svg);
+}
+
+.lock_reward_hd .svgicon.unlock_icon{
+	background-image: url(/storage/image/homepage/icon/unlock.svg);
+}
+
+.lock_indicator ul{
+    width: 100%; 
+    display: inline-block;
+}
+
+.lock_indicator ul li{
+    display: inline-block;
+    text-align: right;
+    width: 32.7%;
+    font-size: 13px;
+    color: #333333;
+    background-color: #F8F8F8;
+    padding: 23px 40px;
+    border: 1px solid transparent;
+}
+
+.lock_indicator ul li .amount_span{
+    color: #333;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.lock_indicator ul li .amount_span .currency{
+    color: #969696;
+    text-transform: uppercase;
+    margin-left: 3px;
+}
+
+.lock_reward_group .lock_history_tab{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+
+.lock_reward_group .lock_history_tab ul{
+    width: 100%; 
+    height: 100%;
+    border:1px solid #dcdcdc;
+}
+
+.lock_history_tab li {
+    width: 50%;
+    float: left;
+    height: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.mypage_wrap .lock_indicator ul li:hover{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #00b9ff;
+    background-color: #fff;  
+    cursor:pointer;
+}
+
+/* 락 리워드 탭메뉴 호버시 효과 */
+.lock_history_tab{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 51px;
+    line-height: 50px;
+}
+
+.lock_history_tab ul li.active{
+    font-weight: bold;
+}
+
+.lock_history_tab ul li:before {
+    content: "";
+    position: absolute;
+    width: 13%;
+    height: 3px;
+    background: #00b9ff;
+    visibility:  hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+
+.lock_history_tab ul li:nth-child(1):before{
+bottom: 0;
+left: 130px;
+}
+
+.lock_history_tab ul li:nth-child(2):before {
+bottom: 0;
+right: 130px;
+}
+
+.lock_history_tab ul li:hover:before,
+.lock_history_tlib ul li:focus:before,
+.lock_history_tab ul li.active:before {
+visibility: visible;
+transform: scaleX(1);
+}
+
+.lock_history_table .table_label{
+    border: 1px solid #dcdcdc;
+    border-top:0;
+    color: #969696;
+    font-size: 12px;
+}
+
+.lock_history_table.table_1 .table_label thead tr{
+    height: 40px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.lock_history_table.table_1 .table_label thead > tr > th:nth-child(1),
+.lock_history_table.table_1 .table_label thead > tr > th:nth-child(2){
+    width: 30%;
+}
+.lock_history_table.table_1 .table_label thead > tr > th:nth-child(3){
+    width: 40%;
+}
+
+.lock_history_table .coin_chart_tbl{
+    font-size: 13px;
+}
+
+.lock_history_table .coin_chart_tbl tbody > tr:last-child{
+    border-color: #dcdcdc;
+}
+
+.lock_history_table .coin_chart_tbl tbody > tr > td{
+    text-align: center;
+    color: #333333;
+    padding: 15px 0;
+}
+
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(1),
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    width: 30%;
+}
+
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(3){
+    width: 40%;
+}
+
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr.lock_status > td:nth-child(1){
+    color: #ff6060;
+}
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr.unlock_status > td:nth-child(1){
+    color: #6498FF;
+    font-size: 13px;
+}
+
+.lock_history_table.table_2 .table_label thead > tr > th:nth-child(1),
+.lock_history_table.table_2 .table_label thead > tr > th:nth-child(2){
+    width: 50%;
+}
+
+.lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(1),
+.lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    width: 50%;
+}
+
+.lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    border-right: 1px solid #333333;
+}
+
+.lock_list_scroll{
+    overflow-y: scroll;
+    height: 420px;
+    border: 1px solid #dcdcdc;
+}
+
+.lock_status{
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* 락내역,배당내역 스크롤바 */
+.lock_list_scroll::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.lock_list_scroll::-webkit-scrollbar-button:start:decrement,
+.lock_list_scroll::-webkit-scrollbar-button:end:increment {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url() transparent;
+}
+.lock_list_scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+.lock_list_scroll::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.mypage_wrap .both_btn_group .lock_icon{
+    border: 1px solid #ff6060;
+    color: #ff6060;
+    background-image: url(/images/icon/icon_lock.svg);
+    background-size: 10px;
+    background-position: 43% center;
+    background-repeat: no-repeat;
+}
+
+.mypage_wrap .both_btn_group .unlock_icon{
+    background-image: url(/images/icon/icon_unlock.svg);
+    background-size: 10px;
+    background-position: 38% center;
+    background-repeat: no-repeat;
+}
+
+.mypage_wrap .both_btn_group .point_lock_clr:hover{
+    border: 2px solid #ff6060;
+}
+
+
+/* 락리워드 end */
+
+/* 보안인증 start */
+
+.mypage_inner .lv_certifi_before .title{
+    line-height: 25px;
+}
+
+.mypage_wrap .big_tit{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.security_set_group .boan_level_wrap{
+    display: block;
+    text-align: center;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con{
+    width: 148px;
+    height: 148px;
+    background-color: #f5f5f5;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 90px 0 30px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 31%;
+    background-size: 28px;
+    position: relative;
+    font-size: 13px;
+    color: #dcdcdc;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1){
+    background-image: url(/storage/image/homepage/icon/level_icon1_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1):after,.boan_level_con:nth-child(2):after,.boan_level_con:nth-child(3):after{
+    position: absolute;
+    content:'';
+    width: 7px;
+    height: 7px;
+    background: #00B9FF;
+    border-radius: 50%;
+    right: -19px;
+    top: 50%;
+    margin-top: -3.5px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(2){
+    background-image: url(/storage/image/homepage/icon/level_icon2_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(3){
+    background-image: url(/storage/image/homepage/icon/level_icon3_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(4){
+    background-image: url(/storage/image/homepage/icon/level_icon4_b.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con.active{
+    color: #333333;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.2);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1).active{
+    background-image: url(/storage/image/homepage/icon/level_icon1_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(2).active{
+    background-image: url(/storage/image/homepage/icon/level_icon2_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(3).active{
+    background-image: url(/storage/image/homepage/icon/level_icon3_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(4).active{
+    background-image: url(/storage/image/homepage/icon/level_icon4_a.png);
+    background-size: 60px;
+}
+
+.security_set_group .info_list {
+    border-top: 1px solid #f0f0f0;
+    font-size: 12px;
+}
+
+.mypage_inner .complit_icon{
+    width: 105px;
+}
+
+.resend_btn{
+    width: 100px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 3px 0;
+}
+
+.mypage_wrap .certi_confirm_box {
+    width: 100%;
+    height: 140px;
+    padding: 20px 15px;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 10px;
+    position: relative;
+    color: #fff;
+}
+
+.mypage_wrap .certi_confirm_box:hover{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #00b9ff;
+}
+
+.mypage_wrap .certi_main_txt {
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: -0.72px;
+    color: #333333;
+}
+
+.mypage_wrap .certi_sub_txt {
+    font-family: 'Spoqa Han Sans Light';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.46;
+    letter-spacing: -0.48px;
+    color: #333333;
+    margin: 0.4rem 0 1.2rem 0;
+}
+
+.mypage_wrap .indiv_info {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.security_change_btn {
+    outline: 0;
+    border: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    background-color: #333;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.security_change_btn:hover{
+    color:#fff;
+}
+
+.security_change_btn.active{
+    background-color: #bbb;
+    cursor:unset;
+}
+
+._success{
+    color:#969696 !important;
+    background-color: #dcdcdc !important;
+}
+
+/* 보안인증 end */
+
+
+/* 회원정보 변경 */
+/* 마이페이지(회원정보 변경)에서
+ 비밀번호 일치(#6498FF), 불일치(#FF6060) input 스타일 */
+ 
+ .mypage_wrap .certifi_form_group input.pw_correct_line
+ {
+     border-bottom: 1px solid #6498FF;
+ } 
+ 
+.mypage_wrap .certifi_form_group input.pw_incorrect_line
+ {
+     border-bottom: 1px solid #FF6060;
+ }
+
+ .mypage_wrap .register_pw_alert.ment {
+    text-align: right !important;
+    width: 100%;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.register_pw_alert.ment .pw_no {
+    color: #ff6060;
+}
+
+.register_pw_alert.ment .pw_yes {
+    color: #00b9ff;
+}
+/* ------------------------MYPAGE 마이페이지 스타일 END ------------------------ */
+
+.scrl_wrap{
+    height:460px;
+    width: 100%;
+    overflow-y: auto;
+}
+.certify_label{
+    display: block;
+}
+
+/* 모달 팝업창 */
+.modal-window {
+    position: fixed;
+    background-color: rgba(0,0,0,0.2);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+.modal-window.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal_content .certify_label{
+    font-size:15px;
+}
+
+.modal-window .modal_content {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 30px;
+    z-index: 999;
+    padding-top: 50px;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.modal-window.active .modal_content {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 30px;
+    z-index: 999;
+    padding-top: 50px;
+    opacity: 1;
+} 
+
+.my_page_pop_con{
+    text-align: center;
+}
+
+.pop_tit{
+    font-size: 30px;
+    color: #496582;
+    letter-spacing: -1.2px;
+}
+
+.pop_sub_sentence{
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: -0.6px;
+    text-align: center;
+}
+
+/* [마이페이지-보안인증] 모달 팝업창 인증완료 전 버튼 스타일 */
+.modal-window .modal_content .btn_certi_before{
+    background: #f0f0f0;
+    color: #969696;
+    border: 0;
+}
+
+
+/* 계좌 인증 모달 내부 */
+input[name="bank_chart_check"]:checked ~ .bank_view {
+    max-height: 700px;
+    transition: max-height 0.2s;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.bank_label {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 15px;
+    letter-spacing: -0.96px;
+    width: 41%;
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    background-size: initial;
+    background-position: 90% 55%;
+    background-repeat: no-repeat;
+    background-image: url(/images/arrow_down.png);
+    cursor: pointer;
+    color: #dcdcdc;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.bank_coin_name {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    font-weight: 600;
+}
+
+.bank_view {
+    max-height: 0;
+    transition: max-height 0.2s;
+    position: absolute;
+    top: 206px;
+    left: 30px;
+    width: 35%;
+    background-color: #fff;
+    z-index: 3;
+    overflow-y: scroll;
+    height: calc(48px * 4);
+}
+
+.bank_view::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.bank_view::-webkit-scrollbar-button:start:decrement,
+.bank_view::-webkit-scrollbar-button:end:increment {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url() transparent;
+}
+.bank_view::-webkit-scrollbar-track {
+    background: transparent;
+}
+.bank_view::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.bank_view li {
+    padding: 14px;
+    height: 48px;
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-family: 'Spoqa Han Sans Light';
+    letter-spacing: -0.72px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.bank_view li:hover {
+    background-color: rgba(0, 185, 255, 0.15)
+}
+
+/* 비밀번호 변경-계좌번호 불일치 확인 */
+.account_number_alert.ment {
+    text-align: left !important;
+    width: 100%;
+    display: inline-block;
+    font-size: 13px;
+    color:#ff6060;
+}
+
+/* 비밀번호 변경-계좌번호 불일치일 경우 계좌번호 input 컬러 */
+.account_alert_line{
+    border-bottom: 1px solid #ff6060;
+}
+
+.pop_division{
+    border:0.5px solid #dcdcdc;
+    width:100%;
+    display: block;
+}
+
+.pop_checking_sub{
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.modal_content .act_number_box .certifi_line{
+    width:72%;
+    display:inline-block;
+}
+
+.modal_content .ment .pw_no{
+    font-size: 13px;
+    color: #ff6060;
+    line-height: 1.46;
+    letter-spacing: -0.52px;
+}
+
+.modal_content .act_number_box .number_space{
+    width:24%; 
+}
+.image_file .upload_text {
+    display: inline-block;
+    width: 72%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 3px;
+    border: 1px solid #dcdcdc;
+    background-color: #f8f8f8;
+}
+
+.modal_content .upload-btn_wrap {
+    position: relative;
+    display: inline-block;
+    width: 26%;
+    height: 40px;
+    padding-left: 3px;
+}
+
+.file_btn_style{
+    color:#fff;
+    background-color: #333;
+    padding: 11px 10px;
+    font-size: 13px;
+    width: 100%;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+ .modal_content .upload-btn_wrap input.input_file{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.form-control:disabled, .form-control[readonly]{
+    background-color: #fff;
+}
+
+/* 모달 닫기 버튼 */
+.modal_content #cancel_btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.modal_content #cancel_btn span {
+    width: 18px;
+    height: 1px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.modal_content #cancel_btn span:before {
+    transform: rotate(45deg);
+}
+
+.modal_content #cancel_btn span:after {
+    transform: rotate(-230deg);
+}
+
+.modal_content #cancel_btn span:before, 
+.modal_content #cancel_btn span:after {
+    width: 100%;
+    height: 100%;
+    background: #28283c;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.qr_code_form{
+    text-align: center;
+    margin:0 auto;
+    width:80%;
+}
+
+.qr_code_example{
+    padding: 20px;
+    border:1px solid #00B9FF;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.code_number{
+    font-size: 15px;
+    letter-spacing: 0.75px;
+}
+
+.btn_copy{
+    color: #fff;
+    background-color: #333;
+    padding: 6px 0px;
+    font-size: 13px;
+    width: 24%;
+    display: inline-block;
+    margin-left: 5px; 
+    cursor: pointer;
+}

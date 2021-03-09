@@ -1,0 +1,41 @@
+// 이용약관, 처리방침 공통요소
+.dg-snb-terms-policy-contents {
+  @include fontType01(#{$px-15}rem);
+
+  line-height: 1.6;
+  padding: 30px 0;
+}
+// 이용약관, 처리방침 공통요소 END
+
+/*
+    PAGES - (사이드네비)동글 이용약관 / 개인정보처리방침
+*/
+
+.dg-snb-terms-policy-wrapper {
+  padding: 95px 35px;
+
+  #_mini_quick_menu {
+    top: 130px;
+    right: -55px;
+  }
+
+  .l-con-title-group {
+    margin-bottom: 10px;
+
+    .in-subject {
+      @include fontType01(#{$px-30}rem, $black, $weight: bold);
+
+      width: 100%;
+      border-bottom: 1px solid $black;
+      padding: 15px 0;
+    }
+  }
+
+  .l-contents-group {
+    padding: 0 10px;
+  }
+
+  .desc01 {
+    margin: 20px 0;
+  }
+}

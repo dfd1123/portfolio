@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-mypage-set-account-wrapper" class="mypage-set-account-wrapper">
+      <!-- 쿠폰적용상품 팝업 -->
+      <div class="_popup_wrapper _account_popup_wrapper display_none">
+        <div class="_bg"></div>
+        <div class="_popup_wrap">
+          <div class="_popup_title">
+            <h4>계좌 등록<button type="button" class="_close_btn"> </button></h4>
+          </div>
+          <div class="_popup_content">
+            <!-- 팝업 타이틀 -->
+            <div>
+              <h5 class="_title">계좌를 등록하셔야 환불을 받으실 수 있습니다.</h5>
+            </div>
+            <!-- 팝업 타이틀 E -->
+
+            <fieldset>
+              <legend class="dg_blind">계좌 등록</legend>
+              <div class="dg_write dg-list-lineup_wrap">
+                <p class="_label">은행명</p>
+                <select name="#" id="#" class="dg-list-lineup">
+                  <option value="#">국민은행</option>
+                </select>
+              </div>
+              <div class="dg_write write_num">
+                <label for="#" class="_label">계좌번호</label>
+                <input type="number" id="#" class="input_text_box" placeholder="계좌번호 입력">
+              </div>
+              <div class="dg_write write_name">
+                <label for="#" class="_label">예금주명</label>
+                <input type="text" id="#" class="input_text_box" maxlength="10" placeholder="예금주명 입력">
+                <span class="_warning">※ 은행과 계좌번호가 일치하지 않습니다.</span>
+              </div>
+            </fieldset>
+
+            <div class="account_btn_wrap">
+              <button class="square-btn-outline">계좌 인증하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 쿠폰적용상품 팝업 E -->
+      <!-- * 마이페이지 헤더 -->
+      <div class="_page_title_wrap">
+        <h2>
+          내 정보 관리
+          <a href="#" class="_back_btn">뒤로가기</a>
+        </h2>
+        <div class="second_title clear_both">
+          <a href="MyPageSetInfoView.html">내 정보 관리</a>
+          <a href="MyPageSetAccountView.html" class="_long active">카드 및 환불계좌 관리</a>
+          <a href="MyPageGradeView.html">회원등급</a>
+        </div>
+      </div>
+      <!-- * 마이페이지 헤더 -->
+
+      <div class="l-mypage-contents card_center">
+        <!-- 1) 카드 및 환불계좌 관리 -->
+        <div class="l-con-area">
+          <article class="l-con-article">
+            <div class="l-con-title-group type01 mb-35">
+              <h2 class="in-subject dg_blind">카드 및 환불계좌 관리</h2>
+            </div>
+
+            <div>
+              <ul class="l-grid-group">
+                <li class="l-grid-list">
+                  <!-- * 카드~계좌 등록카드 -->
+                  <div class="dg-account-set-card _set-buy-card">
+                    <h4 class="in-name">결제 카드 등록</h4>
+                    <p class="in-caution">
+                      간편하게 카드를 등록하고 결제하세요.
+                    </p>
+                    <div class="in-state">
+                      <!-- ※ 정보 없을 때 -->
+                      <span class="_nothing">정보가 없습니다.</span>
+                      <!-- ※ 정보 없을 때 END -->
+                      <!-- ※ 정보 있을 때 -->
+                      <p class="_thing clear_both display_none">
+                        <span class="_bank">기업은행카드</span>
+                        <span class="_name">일상의 기쁨 신용카드</span>
+                        <span class="_num">1234-****--1234-1234</span>
+                      </p>
+                      <!-- ※ 정보 있을 때 END -->
+                    </div>
+                    <!-- ※ 등록완료됐을 경우 변경으로 텍스트 변경해야함 -->
+                    <button
+                      type="button"
+                      class="in-full-button"
+                      onclick="alert('(팝업)카드 등록 팝업')"
+                    >
+                      <img
+                        src="/images/mobile/btn/btn_arrow_wh.svg"
+                        alt="화살표"
+                      />
+                      <p>등록</p>
+                    </button>
+                    <!-- ※ 등록완료됐을 경우 변경으로 텍스트 변경해야함 END -->
+                  </div>
+                  <!-- * 카드~계좌 등록카드 -->
+                </li>
+
+                <li class="l-grid-list">
+                  <!-- * 카드~계좌 등록카드 -->
+                  <div class="dg-account-set-card _set-return-card">
+                    <h4 class="in-name">환불 계좌 등록</h4>
+                    <p class="in-caution">
+                      계좌를 등록하셔야 환불을 받으실 수 있습니다.
+                    </p>
+                    <div class="in-state">
+                      <!-- ※ 정보 없을 때 -->
+                      <span class="_nothing display_none">정보가 없습니다.</span>
+                      <!-- ※ 정보 없을 때 END -->
+                      <!-- ※ 정보 있을 때 -->
+                      <p class="_thing clear_both">
+                        <span class="_bank">국민은행</span>
+                        <span class="_num">123456-78-12345678</span>
+                        <span class="_name">김동글</span>
+                      </p>
+                      <!-- ※ 정보 있을 때 END -->
+                    </div>
+                    <!-- ※ 등록완료됐을 경우 변경으로 텍스트 변경해야함 -->
+                    <button
+                      type="button"
+                      class="in-full-button"
+                      onclick="alert('(팝업)계좌 등록 팝업')"
+                    >
+                      <img
+                        src="/images/mobile/btn/btn_arrow_wh.svg"
+                        alt="화살표"
+                      />
+                      <p>변경</>
+                    </button>
+                    <!-- ※ 등록완료됐을 경우 변경으로 텍스트 변경해야함 END -->
+                  </div>
+                  <!-- * 카드~계좌 등록카드 -->
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!-- 1) 카드 및 환불계좌 관리 E -->
+        
+      </div>
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.641" height="19.523" viewBox="0 0 18.641 19.523">
+  <g id="btn_alarm" transform="translate(0.5 0.5)">
+    <path id="Path" d="M15.1,10.584l2.158,1.5a.882.882,0,0,1,.378.724v1.744a.882.882,0,0,1-.882.882H.882A.882.882,0,0,1,0,14.554V12.809a.882.882,0,0,1,.378-.724l2.158-1.5V5.364C2.536,2.731,4.7,0,8.82,0S15.1,2.631,15.1,5.364Z" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path-2" data-name="Path" d="M.882,0h5.64a.882.882,0,0,1,.8,1.261Q6.45,3.087,3.7,3.087T.086,1.261h0A.882.882,0,0,1,.882,0Z" transform="translate(5.118 15.436)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

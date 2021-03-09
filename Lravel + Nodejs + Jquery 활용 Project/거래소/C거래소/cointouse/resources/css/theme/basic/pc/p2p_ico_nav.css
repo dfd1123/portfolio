@@ -1,0 +1,18 @@
+.board_st_wrap.p2p_ico_wrap .board_st_con{
+    display: block;
+    justify-content: unset;
+    position: relative;
+}
+
+.board_st_wrap.p2p_ico_wrap .left_con{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 245px;
+    z-index: 1;
+}
+
+.board_st_wrap.p2p_ico_wrap .right_con{
+    width: 100%;
+    padding-left: 265px;
+}

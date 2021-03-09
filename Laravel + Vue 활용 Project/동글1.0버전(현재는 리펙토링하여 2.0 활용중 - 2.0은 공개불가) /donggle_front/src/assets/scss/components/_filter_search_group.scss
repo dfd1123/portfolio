@@ -1,0 +1,201 @@
+/*
+    COMPONENT - filter search component
+*/
+
+.dg-filter-search-group {
+  margin-bottom: 70px;
+  position: relative;
+  padding: 0 10px;
+  user-select: none;
+
+  .in-subject {
+    @include fontType01(#{$px-20}rem, $weight: bold);
+
+    width: 100%;
+    border-bottom: 1px solid $black;
+    padding: 15px 0;
+  }
+
+  #view-filter-group:checked ~ #view-filter-view {
+    display: none;
+  }
+
+  #view-filter-group:checked ~ .fold-btn {
+    @include bgimg(url($path-btn+"btn_beforefold.svg"));
+
+    background-size: 16px;
+  }
+
+  // 접기 버튼
+  .fold-btn {
+    @include position($t: 17px, $l: 90px);
+    @include buttonInit(0, 0, $bg: transparent, $pointer: pointer);
+    @include bgimg(url($path-btn+"btn_afterfold.svg"));
+
+    background-size: 80%;
+    width: 20px;
+    height: 20px;
+  }
+
+  // 행
+  .dg-filter-search-list {
+    $label-width: 77px;
+
+    border-bottom: 1px solid $light_gray6;
+    padding: 15px 0;
+    position: relative;
+
+    // 열
+    .in-label,
+    .in-section {
+      @include inlineBlockStyle(middle);
+    }
+    .in-label {
+      width: $label-width;
+      height: 100%;
+    }
+    // 전체해제 버튼
+    .in-refresh {
+      @include fontType01(#{$px-16}em, $gray);
+      @include buttonInit(
+        $bd-radius: 0,
+        $bd: 0,
+        $pd: 0,
+        $bg: transparent,
+        $hover-color: $black,
+        $pointer: pointer
+      );
+
+      padding-right: 15px;
+      border-right: 1px solid $light_gray6;
+      margin-right: 15px;
+      height: 32px;
+      line-height: 27px;
+      @include inlineBlockStyle(middle);
+    }
+    .in-refresh img {
+      @include inlineBlockStyle(middle);
+    }
+    .in-refresh span {
+      @include inlineBlockStyle(middle);
+      font-weight: 200;
+      padding-left: 5px;
+    }
+    .in-section {
+      width: calc(100% - #{$label-width+53});
+    }
+    .rounded-btn-dark {
+      margin-right: 5px;
+    }
+  }
+
+  // 전체해제 행
+  .dg-filter-search-list--refresh {
+    min-height: 65px;
+
+    .rounded-btn-outline {
+      border-color: $black;
+      min-width: auto;
+      padding: 0 13px;
+      line-height: 30px;
+      margin-right: 9px;
+    }
+    .rounded-btn-outline span {
+      padding-right: 7px;
+    }
+    .rounded-btn-outline img{
+      width: 11px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  // 기본 인풋
+  .init-input {
+    @include fontType01(#{$px-13}rem);
+    @include inlineBlockStyle(middle);
+    @include inputInit(0, 1px solid $light_gray6, 0 10px, auto, $purple);
+
+    max-width: 135px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  // 가격 범위선택 레인지
+  ._price_range {
+    @include fontType01(#{$px-13}rem);
+
+    margin-top: 10px;
+    padding: 0 10px;
+
+    ._start,
+    ._end {
+      @include inlineBlockStyle(middle);
+    }
+    ._end {
+      margin-right: 20px;
+    }
+    ._start:after {
+      @include makePseudo("~");
+
+      padding: 0 10px;
+    }
+  }
+
+  // 사이즈 범위선택 레인지
+  ._size_range {
+    padding: 0 10px;
+  }
+
+  // 해시태그 추가
+  ._hash {
+    @include inlineBlockStyle;
+
+    padding: 0 10px;
+    position: relative;
+
+    &:before {
+      @include makePseudo("#");
+      @include position($t: 5px, $l: 20px);
+      @include fontType01(#{$px-17}em);
+    }
+    .init-input {
+      padding-left: 23px;
+    }
+  }
+
+  // 1224 - 사이즈
+  .dg-filter-search-list--size {
+    .in-section {
+      padding-left: 20px;
+    }
+    .vue-slider-process {
+      background-color: $purple;
+    }
+    .vue-slider-rail {
+      background-color: #e2e2e2;
+    }
+    .vue-slider-dot-tooltip-bottom {
+      display: none;
+    }
+    .vue-slider-dot-handle {
+      background: #333333;
+      box-shadow: 0 2px 3px rgba(51, 51, 51, 0.2);
+    }
+    .vue-slider-dot-handle-focus {
+      box-shadow: 0px 0px 1px 2px rgba(252, 78, 173, 0.2);
+    }
+    .size-range-guide-bar {
+      margin-left: -8px;
+    }
+    .size-range-guide-bar span {
+      width: 46.92px;
+      display: inline-block;
+      font-size: 13px;
+    }
+    .size-range-guide-bar span.turning {
+      width: 43px;
+    }
+  }
+}

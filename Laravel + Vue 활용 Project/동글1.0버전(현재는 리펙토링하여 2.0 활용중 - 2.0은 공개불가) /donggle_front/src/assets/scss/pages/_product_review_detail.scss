@@ -1,0 +1,243 @@
+/*
+    PAGES - 리뷰 자세히보기
+*/
+#_mini_quick_menu {
+  top: 60px;
+}
+#product_review {
+  margin: 60px 0px;
+}
+/* review title */
+.review-detail_title {
+  border-top: 3px solid $black;
+  border-bottom: 3px solid $black;
+  padding: 10px 0px;
+  ._back_btn {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 15px 0px 0px 10px;
+    border: 0px none;
+    text-indent: -9999px;
+    background-color: transparent;
+    @include bgOption(auto, 5% center);
+    background-image: url($path-btn+"btn_back.svg");
+    outline: 0px none;
+  }
+  .review_img_box {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    > img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+  > h2 {
+    margin: 6px 0px;
+    > span {
+      font-size: $f-11;
+      font-weight: 300;
+      color: $gray;
+    }
+    > b {
+      font-size: $f-18;
+      font-weight: 500;
+    }
+  }
+}
+
+/* review description */
+.review-detail_and_comment_wrap {
+  display: flex;
+  flex-basis: auto;
+  border-bottom: 1px solid $light_gray6;
+}
+.product_review_detail {
+  width: 63%;
+  margin: 0px;
+  ._review {
+    cursor: default;
+    min-height: 840px;
+    margin: 0px;
+    border: none;
+    border-right: 1px solid $light_gray6;
+    padding: 20px 0px;
+    &:hover ._review_write_tex > p {
+      text-decoration: none;
+    }
+  }
+  ._review_write_product {
+    padding: 20px 0px;
+  }
+  ._review_write_text {
+    border-top: 1px solid $light_gray6;
+    img {
+      max-height: 150px;
+    }
+  }
+  > img {
+    display: inline-block;
+    margin: 20px 0px;
+  }
+  /* 20-03-31 */
+  ._review_write_text > p {
+    float: none;
+    width: 95%;
+    height: inherit;
+    margin: 20px 0px 70px;
+    -webkit-line-clamp: inherit;
+  }
+  ._review_write_images_wrap {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  ._review_write_images {
+    width: calc(50% - 5px);
+    margin: 0px 0px 10px;
+    background: pink;
+    > img {
+      width: 100%;
+    }
+  }
+  /* END 20-03-31 */
+}
+.product_review_detail ._review:hover ._review_write_text > p {
+  text-decoration: none;
+}
+/* comment layout */
+.product_review_comment {
+  position: relative;
+  width: 36.6%;
+  vertical-align: top;
+  > h3 {
+    margin: 20px 0px 0px 20px;
+    border-bottom: 1px solid $black;
+    padding: 10px 0px;
+    font-weight: 500;
+    > span {
+      padding: 0px 4px;
+      font-size: $f-13;
+      font-weight: 100;
+      color: $gray;
+    }
+  }
+}
+._comment_page {
+  max-height: 700px;
+  ._comment {
+    position: relative;
+    margin: 0px 0px 0px 20px;
+    border-bottom: 1px solid $light_gray6;
+    padding: 20px 0px;
+  }
+  ._comment .symbol-circle {
+    @include circleSize(38px);
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+  ._comment_text {
+    margin: 0px 90px 0px 50px;
+    line-height: 1.6;
+    > span {
+      font-size: $f-12;
+    }
+    ._comment_desc {
+      font-size: $f-13;
+      font-weight: 300;
+    }
+  }
+  ._date {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-size: $f-11;
+    font-weight: 300;
+    color: $gray;
+  }
+
+  .dg-my-review-btn-wrap {
+    margin: 15px 0px 0px;
+  }
+  .rounded-btn-outline {
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    margin: 3px 2px;
+    overflow: hidden;
+    font-size: $f-11;
+    background-color: transparent;
+    transition: all 0.2s;
+    &:hover {
+      color: $white;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 0%;
+      transition: all 0.2s;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+  }
+  .btn--edit {
+    border-color: #28b2a9;
+    color: #28b2a9;
+    @include makeAfter {
+      z-index: -1;
+      background: #28b2a9;
+    }
+    &:active:after {
+      background-color: darken(#28b2a9, 7%);
+    }
+  }
+  .btn--del {
+    border-color: #ff5656;
+    color: #ff5656;
+    @include makeAfter {
+      z-index: -1;
+      background: #ff5656;
+    }
+    &:active:after {
+      background-color: darken(#ff5656, 7%);
+    }
+  }
+}
+._comment_write_wrap {
+  width: 100%;
+  margin: -1px 0px 0px;
+  border-top: 1px solid $light_gray6;
+  padding: 20px;
+  background-color: $white;
+  ._comment_write {
+    width: 75%;
+    height: 40px;
+    border: 1px solid $light_gray2;
+    padding: 10px;
+    font-size: $f-13;
+  }
+  ._comment_sign_up {
+    width: 24%;
+    height: 40px;
+    margin: -3px 0px 0px;
+    line-height: 0;
+  }
+}
+._review_df {
+  margin: 20px 0px;
+}
+
+._comment_page ._empty,
+._deffrent_review_wrap ._empty {
+  display: none;
+}

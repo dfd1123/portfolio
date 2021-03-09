@@ -1,0 +1,72 @@
+.page_title {
+  @include position(fixed, $t: 0);
+  @include zindex("nav");
+  width: 100%;
+  max-width: 1024px;
+  height: $g-page_title_height;
+  line-height: $g-page_title_height;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  color: $gray-01;
+  text-align: center;
+
+  & > h1 {
+    @include remFont("18px", $weight: 400, $color: inherit);
+    user-select: none;
+  }
+
+  .page_title_btn {
+    @include initButton();
+    padding: 0;
+    width: 60px;
+    height: 100%;
+
+    &.btn-left {
+      @include position($t: 0, $l: 0);
+    }
+    &.btn-right {
+      @include position($t: 0, $r: 0);
+    }
+
+    & > i {
+      @include bgStyle(50%, 50%);
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.page_title.hdthemeylw {
+  box-shadow: none;
+  background-color: $theme-03;
+  color: white;
+  .icon_prev {
+    background-image: iconPrev(ffffff);
+  }
+  .icon_close {
+    background-image: iconClose(ffffff);
+  }
+  .icon_del_word {
+    color: white;
+  }
+}
+
+.page_title.noneshadow {
+  box-shadow: none;
+}
+
+.page_title.nonebg {
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+  .icon_prev {
+    background-image: iconPrev(ffffff);
+  }
+  .icon_close {
+    background-image: iconClose(ffffff);
+  }
+  .icon_del_word {
+    color: white;
+  }
+}

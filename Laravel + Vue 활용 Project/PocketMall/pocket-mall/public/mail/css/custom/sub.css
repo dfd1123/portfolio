@@ -1,0 +1,447 @@
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.txt-en {
+    letter-spacing: 0.5px;
+}
+/* 뒤로가기 버튼 */
+._back_btn {
+    position: relative;
+    padding-left: 20px;
+    font-size: 1.25em;
+    color: #fff;
+}
+._back_btn:before,
+._back_btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 3px;
+    height: 12px;
+    border-radius: 3px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+._back_btn:after {
+    top: 8px;
+    transform: rotate(-45deg);
+}
+/* 뒤로가기 버튼 E */
+
+/* 장바구니내역 확인 페이지 */
+.cart-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px; /* 헤더높이 띄우기 */
+}
+
+.cart-container .container-bg {
+    background: linear-gradient(to right, #1dbbff, #1d6aff);
+}
+
+.cart-wrap {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 990px;
+    width: 80%;
+    height: 676px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 29px 23px 31px rgba(45, 108, 206, 0.6);
+}
+
+.cart-wrap > div {
+    box-sizing: border-box;
+}
+
+/* 주문 리스트 */
+.cart-wrap .order-wrap {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 60px 55px;
+    background-color: #1d6eff;
+}
+
+.order-wrap .order-title {
+    padding: 0px 9px;
+    text-transform: capitalize;
+    font-size: 1.875em;
+    color: #fff;
+}
+
+.order-wrap .order-desc {
+    margin: 20px 0px;
+    padding: 0px 9px;
+    font-size: 1.125em;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.order-list-wrapper {
+    margin: 40px 0px 12px;
+    padding: 0px 10px;
+    border-bottom: 3px solid #fff;
+}
+
+.order-list-wrap {
+    height: 324px;
+    overflow-y: scroll;
+}
+
+.order-list-wrap::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+    background-color: #1a63f0;
+}
+.order-list-wrap::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #144cb7;
+}
+
+.order-list {
+    margin: 20px 9px;
+    margin-left: 0px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.15);
+}
+
+.order-list:first-of-type {
+    margin-top: 0px;
+}
+
+.order-list .order_name {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.order-list .order_name ._title {
+    position: relative;
+    font-size: 1.25em;
+    color: #1d6aff;
+}
+
+.order-list .order_name ._delete_btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 0px none;
+    outline: 0px none;
+    background-color: transparent;
+    font-size: 0.875rem;
+    color: #1d6aff;
+    cursor: pointer;
+}
+
+.order-list .order_name ._desc {
+    padding: 4px 0px 18px;
+    opacity: 0.3;
+}
+
+.order_check {
+    padding: 6px 0px 0px;
+}
+
+.order_check dt {
+    float: left;
+    width: 50%;
+    margin: 12px 0px 0px;
+    font-size: 0.875em;
+    color: #a7a7a7;
+}
+
+.order_check dd {
+    float: right;
+    width: 50%;
+    margin: 12px 0px 0px;
+    text-align: right;
+    font-size: 0.875em;
+}
+
+.order-wrap .total-price {
+    margin: 20px 0px;
+}
+
+.order-wrap .price_wrap {
+    position: relative;
+    margin: 0px 9px;
+}
+
+.order-wrap .total-price li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.125em;
+    color: #fff;
+}
+
+.order-wrap .total-price li b {
+    vertical-align: sub;
+    font-size: 1.825rem;
+}
+
+.order-wrap .total-price ._desc {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    word-spacing: 6px;
+}
+/* 주문리스트 END */
+/* 고객정보 입력란 */
+.cart-wrap .contect-wrap {
+    float: right;
+    width: 50%;
+}
+
+.customar-write-wrap {
+    padding: 78px 83px;
+}
+.customar-write-wrap .fieldset {
+    padding: 0px;
+}
+.customar-write-wrap .write_form {
+    margin: 14px 0px;
+}
+.customar-write-wrap ._write {
+    width: 100%;
+    height: auto;
+    border: 1px solid #dddfe7;
+    border-radius: 10px;
+    padding: 17px 20px;
+    outline: 0px none;
+    box-sizing: border-box;
+    resize: none;
+}
+.customar-write-wrap ._write:hover,
+.customar-write-wrap ._write:focus {
+    border: 1px solid #1d6eff;
+}
+
+.form-date_picker .kronos-outer,
+.form-date_picker .kronos-outer .kronos-cover {
+    display: block;
+}
+.form-date_picker .kronos-outer.kronos-open .kronos-inner {
+    width: 100%;
+}
+.form-date_picker ._date {
+    background-image: url("../../images/icon/select_arrow.svg");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+.customar-write-wrap ._write::placeholder {
+    color: #c2c2c2;
+}
+
+.customar-write-wrap .contect-etc {
+    height: 159px;
+    line-height: 1.3;
+}
+/* 고객정보 입력란 END */
+/* END 장바구니내역 확인 페이지 */
+
+/* 견적서 페이지 */
+.invoice-wrapper {
+    padding-bottom: 60px;
+}
+
+.invoice-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px; /* 헤더높이 띄우기 */
+}
+
+.invoice-container .container-bg {
+    background: linear-gradient(125deg, #1dbbff, #1d6aff);
+}
+.invoice-container .container-bg-bottom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        167deg,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 83, 203, 0.3) 50%
+    );
+    z-index: -1;
+}
+
+.invoice-wrap {
+    max-width: 880px;
+    margin: 0px auto;
+    background-color: #fff;
+    box-shadow: 12px 31px 34px rgba(0, 0, 0, 0.1);
+}
+.invoice-wrap .invoice_title {
+    padding: 24px 50px;
+    background-color: #20345a;
+    color: white;
+}
+
+/* 남색배경영역 */
+.invoice_title .icon_box {
+    float: left;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url("../../images/icon/category-symbol.svg");
+    background-repeat: no-repeat;
+    background-size: 43px;
+    background-position: center center;
+}
+.invoice_title ._title {
+    float: left;
+    height: 69px;
+    line-height: 69px;
+    margin: 0px 16px;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+.invoice_title ._title .txt-en {
+    float: right;
+    display: block;
+    margin: 0px 12px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    opacity: 0.65;
+}
+.invoice_title ._company {
+    float: right;
+    margin: 9px 0px;
+    line-height: 1.6;
+    text-align: right;
+}
+.invoice_title ._company ._name {
+    font-size: 1.25em;
+    letter-spacing: 4px;
+}
+.invoice_title ._company ._sub {
+    opacity: 0.3;
+}
+/* 남색배경영역 END */
+.invoice-wrap .invoice-desc {
+    padding: 26px 64px 41px;
+}
+.invoice-wrap .invoice-desc ._title {
+    margin: 41px 0px;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 500;
+}
+/* 주문내역 */
+.invoice-prdt-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.25em;
+    color: #585858;
+}
+.invoice-prdt-table td,
+.invoice-prdt-table th {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.invoice-prdt-table ._service {
+    width: 50%;
+    padding-left: 42px;
+}
+.invoice-prdt-table ._concept {
+    width: 20%;
+    text-align: center;
+}
+.invoice-prdt-table ._price {
+    width: 30%;
+    padding-right: 42px;
+    text-align: right;
+}
+.invoice-prdt-table ._tbody_price {
+    padding-right: 25px;
+}
+.invoice-prdt-table ._doublecol {
+    width: 70%;
+    padding-left: 42px;
+}
+.invoice-prdt-table .tbl-hd {
+    line-height: 50px;
+    border-top: 1px solid #20345a;
+    border-bottom: 1px solid #20345a;
+    background-color: #f4f4f4;
+    text-transform: capitalize;
+    text-align: left;
+}
+.invoice-prdt-table .tbl-con .order-prdt {
+    height: 89px;
+    border-top: 1px solid #d6d6d6;
+}
+.invoice-prdt-table .tbl-con .order-prdt:first-of-type {
+    border-top: 0px none;
+}
+.invoice-prdt-table .order-prdt ._detail {
+    opacity: 0.5;
+}
+.invoice-prdt-table .tbl-ft {
+    border-top: 1px solid #20345a;
+    text-transform: capitalize;
+}
+.invoice-prdt-table .tbl-ft ._tfoot_cell {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.invoice-prdt-table .tbl-ft ._tfoot_cell b.txt-en {
+    font-size: 1.875rem;
+    color: #1d6aff;
+}
+.tbl_scroll {
+    position: relative;
+    height: 253px;
+    overflow-y: scroll;
+}
+/* 주문내역 END */
+/* 주문자 정보 */
+.invoice-customar-info {
+    margin: 30px 0px;
+}
+.invoice-customar-info ._infomation {
+    border-top: 1px solid #d6d6d6;
+}
+.invoice-customar-info ._bdtop_none {
+    border: 0px none;
+}
+.invoice-customar-info .customar-info > dt {
+    display: inline-block;
+    width: 77px;
+    padding: 16px 8px;
+    line-height: 1.7;
+    vertical-align: top;
+    color: #b9b9b9;
+}
+.invoice-customar-info .customar-info > dd {
+    display: inline-block;
+    padding: 16px 8px;
+    line-height: 1.7;
+    color: #585858;
+}
+.invoice-customar-info .customar-info ._date {
+    height: 86px;
+    /* height - padding */
+    line-height: 54px;
+}
+/* 주문자 정보 END */
+/* END 견적서 페이지 */

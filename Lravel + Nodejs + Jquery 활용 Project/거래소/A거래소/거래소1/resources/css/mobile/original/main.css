@@ -1,0 +1,255 @@
+/* ----------start 모바일버전 메인페이지 스타일---------- */
+
+/* 공지사항바 */
+#main_wrap .notice_bar{
+    width: 100%; height: 30px;
+    background: #f5f5f5;
+    position: relative;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#main_wrap .notice_bar i{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.ntc_bar_mask{
+    overflow: hidden;
+    height: 100%;
+    height: 17px;
+}
+
+/* //공지사항바 */
+
+/* 메인 거래소-입출금-내자산 바로가기버튼 */
+#main_wrap .m_direct_btn{
+    width: 100%; height: 100px;
+}
+
+#main_wrap .m_direct_btn ul{
+    width: 100%; height: 100%;
+}
+
+#main_wrap .m_direct_btn ul li{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    background: #48413b;
+    text-align: center;;
+}
+
+#main_wrap .m_direct_btn ul li a{
+    color: #fff;
+    width: 100%; height: 100%;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 12px 0;
+}
+
+#main_wrap .m_direct_btn ul li a:active{
+    background: #141428;
+}
+
+#main_wrap .m_direct_btn ul li .icon{
+    width: 40px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+}
+
+#main_wrap .m_direct_btn ul li:nth-child(1) .icon{
+    background-image: url(/storage/image/homepage/mobile_icon/nav-menu-01-light.svg);
+}
+#main_wrap .m_direct_btn ul li:nth-child(2) .icon{
+    background-image: url(/storage/image/homepage/mobile_icon/nav-menu-02-light.svg);
+    position: relative;
+    left: 2px;
+    z-index: 1;
+}
+#main_wrap .m_direct_btn ul li:nth-child(3) .icon{
+    background-image: url(/storage/image/homepage/mobile_icon/nav-menu-03-light.svg);
+}
+
+/* //메인 거래소-입출금-내자산 바로가기버튼 */
+
+/* 메인 코인검색 및 코인차트 */
+#main_wrap .m_coin_chart .coin_sch_bar{
+    padding-right:0px;
+    border-top: 1px solid #dddddd;
+}
+
+#main_wrap .m_coin_chart .coin_sch_bar i{
+    top: 10px;
+}
+
+#main_wrap .m_coin_chart .sch_bar .coin_sch_checkbox{
+    display: none;
+}
+
+#main_wrap .m_coin_chart .table_label{
+    border-top: 1px solid #dddddd; 
+}
+
+#main_wrap .m_coin_chart .table_label thead{
+    border-bottom: 1px solid #dddddd; 
+}
+
+#main_wrap .m_coin_chart .table_label thead>tr>th,
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td{
+    text-align: center;
+}
+
+#main_wrap .m_coin_chart .table_label thead>tr>th:nth-child(1){
+    width: 20%;
+    text-align: left;
+    padding-left: 10px;
+}
+#main_wrap .m_coin_chart .table_label thead>tr>th:nth-child(2){
+    width: 25%;
+}
+#main_wrap .m_coin_chart .table_label thead>tr>th:nth-child(3){
+    width: 25%;
+}
+#main_wrap .m_coin_chart .table_label thead>tr>th:nth-child(4){
+    width: 20%;
+    text-align: right;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td{
+    font-size: 0.8rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 9px 0px;
+    color: #474846;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td .coin_name_eng{
+    color: #787878;
+    font-size: 0.65rem;
+    letter-spacing: 0;
+}
+
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(1){
+    width: 25%;
+    text-align: left;
+    padding-left: 10px;
+}
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(2){
+    width: 30%;
+}
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(3){
+    width: 25%;
+}
+#main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(4){
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* //메인 코인검색 및 코인차트 */
+
+/* usdc마켓 - btc마켓 - eth마켓 탭버튼 */
+
+#main_wrap .market_list_tab{
+    display: flex;
+    width: 100%;
+    height: 30px;
+	line-height: 30px;
+	color: #787878;
+}
+
+#main_wrap .market_list_tab li{
+	width: 50%;
+	border-right: 1px solid #dddddd;
+}
+
+#main_wrap .market_list_tab li:last-child{
+	border: 0;
+}
+
+#main_wrap .market_list_tab li label{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+#main_wrap .market_list_tab li.active{
+    background-color: #f5f5f5;
+    color: #28283c;
+    border-bottom: 2px solid #ffdc00;
+}
+
+#main_wrap .market_list_tab li label:active{
+	background-color: #fafafa;
+}
+
+#main_wrap .coin_table-2,
+#main_wrap .coin_table-3,
+#main_wrap .coin_table-4{
+	display: none;
+}
+
+#usdc_market_list:checked ~ .coin_table-1{
+	display: table;
+}
+
+#usdc_market_list:checked ~ .coin_table-2,
+#usdc_market_list:checked ~ .coin_table-3,
+#usdc_market_list:checked ~ .coin_table-4{
+	display: none;
+}
+
+#btc_market_list:checked ~ .coin_table-2{
+	display: table;
+}
+
+#btc_market_list:checked ~ .coin_table-1,
+#btc_market_list:checked ~ .coin_table-3,
+#btc_market_list:checked ~ .coin_table-4{
+	display: none;
+}
+
+#eth_market_list:checked ~ .coin_table-3{
+	display: table;
+}
+
+#eth_market_list:checked ~ .coin_table-1,
+#eth_market_list:checked ~ .coin_table-2,
+#eth_market_list:checked ~ .coin_table-4{
+	display: none;
+}
+
+#krw_market_list:checked ~ .coin_table-4{
+	display: table;
+}
+
+#krw_market_list:checked ~ .coin_table-1,
+#krw_market_list:checked ~ .coin_table-2,
+#krw_market_list:checked ~ .coin_table-3{
+	display: none;
+}
+
+/* // css마켓 - btc마켓 - eth마켓 탭버튼 */
+
+/* 반응형 */
+
+@media all and (max-width: 330px){
+    #main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(1){
+        padding-left: 6px;
+    }
+    
+    #main_wrap .m_coin_chart .coin_chart_tbl tbody>tr>td:nth-child(4){
+        padding-right: 6px;
+    }
+}
+
+/* ----------end 모바일버전 메인페이지 스타일---------- */

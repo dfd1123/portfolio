@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>J1beats-main</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="제이원비츠" />
+        <meta property="og:description" content="제이원비츠 설명입니다." />
+        <!-- ↓오픈그래프 썸네일 이미지는 만들어놨지만, path방식이 아닌 url방식으로 해야 보인다고 하네욤 우선 이미지 경로라도 적어놓겠습니다~ -->
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="음악플랫폼, 제이원비츠">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="scss/j1beat-ui.css">
+
+        <!--TODO:페이지별 css-->
+        <link rel="stylesheet" href="scss/pages/sub-page-cart.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--TODO:END-->
+
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+    
+
+    </head>
+
+    <body>
+
+        <div id="app">
+
+            <!-- 메인 컨텐츠 -->
+            <div id="wrap">
+                
+                <!--TODO:-->
+                <section class="section sub-section">
+
+                    <!--TODO:이용권정보, 장바구니, 고객센터, 마이페이지일 때 j1beatz-hd에 bg_gray_ver 클래스추가-->
+                    <article class="j1beatz-hd bg_gray_ver">
+
+                        <h3 class="none">제목 및 아티스트 및 태그 검색하기</h3>
+
+                        <fieldset class="j1beatz-hd-sch-field">
+                            <input type="text" placeholder="제목/아티스트/#태그 검색">
+                            <button type="button"><span class="none">검색버튼</span></button>
+                        </fieldset>
+
+                        <div class="j1beatz-hd-cs-field">
+                            <h3>고객센터</h3>
+                            <div class="cs-btns">
+                                <a href="#" class="cs-btn cs-btn-blg"><span class="none">블로그</span></a>
+                                <a href="#" class="cs-btn cs-btn-kkt"><span class="none">카카오톡</span></a>
+                                <a href="#" class="cs-btn cs-btn-insta"><span class="none">인스타그램</span></a>
+                                <a href="#" class="cs-btn cs-btn-ytb"><span class="none">유튜브</span></a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <!--TODO:END-->
+                    
+                    <!--TODO:이용권정보, 장바구니, 고객센터, 마이페이지일 때 아래 제목스타일 추가-->
+                    <div class="sub-page-large-title-group">
+                        <div class="sub-page-large-title _cart">
+                            <h2 class="sub-page-large-title-name">이용권 정보</h2>
+                        </div>
+                    </div>
+                    <!--TODO:END-->
+
+                    <div class="page-contents-wrapper">
+
+                        <div class="sub-page-cart">
+
+                            <div class="sub-page-ticket-info">
+                                
+                                <div class="in-title">
+                                    <h3 class="in-title-name">자동결제 정기이용권</h3>
+                                </div>
+
+                                <div class="ticket-info ticket-info-01">
+                                    <figure>
+                                        <figcaption>basic</figcaption>
+                                    </figure>
+                                    <dl>
+                                        <dd class="_ticket_desc">재생시간 제한없는 스트리밍 서비스</dd>
+                                        <dt>매월 3,600원</dt>
+                                        <dd class="_info_detail">- 보이스 태그 포함 재생</dd>
+                                        <dd class="_info_detail">- 다운로드 불가</dd>
+                                        <dd class="_info_detail">- 개인사용 제한</dd>
+                                    </dl>
+                                    <button type="button" class="btn">구매하기</button>
+                                </div>
+                                
+                                <div class="in-title">
+                                    <h3 class="in-title-name">음원구매 이용권</h3>
+                                </div>
+                                
+                                <div class="ticket-info ticket-info-02">
+                                    <figure>
+                                        <figcaption>delux</figcaption>
+                                    </figure>
+                                    <dl>
+                                        <dd class="_ticket_desc">다운로드 가능한 음원구매 이용권</dd>
+                                        <dt>한 곡당 20,000원</dt>
+                                        <dd class="_info_detail">- wav 파일 제공</dd>
+                                        <dd class="_info_detail">- 보이스 태그 제거</dd>
+                                        <dd class="_info_detail">- 음원발매, 공연 등 수익활동 가능</dd>
+                                        <dd class="_info_detail">- 리믹스 및 편곡 불가능</dd>
+                                    </dl>
+                                    <span class="_etc_desc">※ 정기 이용권이 아닌, 음원 구매시 한곡 당 부여되는 라이센스 권한 이용권입니다.</span>
+                                </div>
+                                
+                                <div class="in-title">
+                                    <h3 class="in-title-name">이용권 라이센스 정보</h3>
+                                </div>
+
+                                <div class="ticket-info-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>　</th>
+                                                <th>basic</th>
+                                                <th>deluxe</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>가격</td>
+                                                <td><b>3,600</b>원</td>
+                                                <td><b>20,000</b>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>시그니처 사운드<br><em>(보이스 태그)</em></td>
+                                                <td>O</td>
+                                                <td>X</td>
+                                            </tr>
+                                            <tr>
+                                                <td>포맷</td>
+                                                <td>mp3</td>
+                                                <td>wav</td>
+                                            </tr>
+                                            <tr>
+                                                <td>음원발매</td>
+                                                <td>X</td>
+                                                <td>O</td>
+                                            </tr>
+                                            <tr>
+                                                <td>수익성 공연<br><em>(방송)</em></td>
+                                                <td>X</td>
+                                                <td>O</td>
+                                            </tr>
+                                            <tr>
+                                                <td>유튜브 업로드</td>
+                                                <td>X</td>
+                                                <td>O</td>
+                                            </tr>
+                                            <tr>
+                                                <td>유튜브 수익창출</td>
+                                                <td>X</td>
+                                                <td>O</td>
+                                            </tr>
+                                            <tr>
+                                                <td>리믹스 및 편곡</td>
+                                                <td>X</td>
+                                                <td>X</td>
+                                            </tr>
+                                            <tr>
+                                                <td>구매 후 판매</td>
+                                                <td>불특정 다수에게 지속 판매</td>
+                                                <td>불특정 다수에게 지속 판매</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </section>
+
+            </div>
+            <!-- //메인 컨텐츠 -->
+        
+        </div>
+
+    </body>
+    
+</html>

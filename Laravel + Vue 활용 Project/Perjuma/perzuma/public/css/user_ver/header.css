@@ -1,0 +1,397 @@
+#main_hd{
+    background:#fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 17;
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1);
+}
+
+#main_hd .left_hd{
+    position: absolute;
+    top: 2.6em;
+    left: 1.3em;
+    z-index: 3;
+}
+
+#main_hd .left_hd img{
+    width: 1.7em;
+}
+
+#main_hd .center_hd{
+    text-align: center;
+    padding: 1.2em 0;
+}
+
+#main_hd .center_hd img{
+    display:block;
+    margin: 0 auto;
+    width:5.55em;
+}
+
+#main_hd .center_hd h1{
+    padding: 0 0;
+    font-size: 1.05em;
+    font-weight: bold;
+    color:#007bd2;
+}
+
+#main_hd .right_hd{
+    position: absolute;
+    top: 1.05em;
+    right: 1.3em;
+    z-index: 3;
+}
+
+#main_hd .right_hd img{
+    width: 1.3em;
+}
+
+#main_hd .right_hd span:last-child{
+    margin-bottom:0;
+}
+
+/*
+    #main_hd{
+        background: rgba(0,123,210,0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+    }
+
+    .left_hd{
+        position: absolute;
+        top: 2.6em;
+        left: 1.3em;
+        z-index: 3;
+    }
+
+    .left_hd img{
+        width: 1.7em;
+    }
+
+    .center_hd{
+        text-align: center;
+        padding: 1.8em 0;
+        padding-top: 2.3em;
+    }
+
+    .center_hd img{
+        display:block;
+        margin: 0 auto;
+    }
+
+    .center_hd img:first-child{
+        max-width: 7em;
+        margin-bottom: 0.7em;
+    }
+
+    .right_hd{
+        position: absolute;
+        top: 2.6em;
+        right: 1.3em;
+        z-index: 3;
+    }
+
+    .right_hd span{
+        display: block;
+        width: 1.5em;
+        height: 1px;
+        margin-bottom: 0.48em;
+        background-color: #ffffff;
+    }
+
+    .right_hd span:last-child{
+        margin-bottom:0;
+    }
+*/
+
+#sub_hd{
+    background: #007bd2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+#sub_hd .left_hd{
+    position: absolute;
+    top: 1.3em;
+    left: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd .left_hd i{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#sub_hd .center_hd{
+    text-align: center;
+    height: 2.6em;
+    color: #fff;
+    padding-top: 0.7em;
+    box-sizing: content-box;
+}
+
+#sub_hd .center_hd h1{
+    padding: 0.75em 0;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+#sub_hd .right_hd{
+    position: absolute;
+    top: 1.42em;
+    right: 1em;
+    z-index: 3;
+}
+
+#sub_hd .right_hd img{
+    width: 0.95em;
+}
+
+#sub_hd .close_hd_btn{
+    background: url(/images/btn_close.svg) no-repeat;
+    background-position: center center;
+    background-size: 0.95em;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+#sub_hd2{
+    background: rgba(11, 115, 210, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 17;
+}
+
+#sub_hd2 .left_hd{
+    position: absolute;
+    top: 1.4em;
+    left: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd2 .left_hd img{
+    width: 1.3em;
+}
+
+#sub_hd2 .center_hd{
+    text-align: center;
+    height: 2.6em;
+    color: #fff;
+    padding-top: 0.7em;
+    padding-bottom: 6.5em;
+    box-sizing: content-box;
+}
+
+#sub_hd2 .center_hd h1{
+    padding: 0.75em 0;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+#sub_hd2 .right_hd{
+    position: absolute;
+    top: 1.55em;
+    right: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd2 .right_hd img{
+    width: 1.2em;
+}
+
+#sub_hd2 .menu-trigger span{
+    background-color: #fff;
+}
+
+#sub_hd3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+#sub_hd3 .hd_wrap{
+    background: #007bd2;
+}
+
+#sub_hd3 .left_hd{
+    position: absolute;
+    top: 1.3em;
+    left: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd3 .left_hd i{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#sub_hd3 .center_hd{
+    text-align: center;
+    height: 2.6em;
+    color: #fff;
+    padding-top: 0.7em;
+    box-sizing: content-box;
+}
+
+#sub_hd3 .center_hd h1{
+    padding: 0.75em 0;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+#sub_hd3 .right_hd{
+    position: absolute;
+    top: 1.55em;
+    right: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd3 .right_hd img{
+    width: 0.95em;
+}
+
+.company_page_subhd{
+    overflow: hidden;
+}
+
+.company_page_subhd>div{
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 1.39;
+    letter-spacing: -0.56px;
+    text-align: center;
+    font-size: 0.97em;
+    color: #4f5256;
+    padding: 9px 0;
+    border-bottom:1px solid #828282;
+    background:#fff;
+}
+
+.company_page_subhd>div.active{
+    font-weight:700;
+    padding-bottom:8px;
+    border-bottom:2px solid #000000;
+}
+
+#sub_hd4{
+    background: #007bd2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+#sub_hd4 .left_hd{
+    position: absolute;
+    top: 1.4em;
+    left: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd4 .left_hd img{
+    width: 1.3em;
+}
+
+#sub_hd4 .center_hd{
+    text-align: center;
+    height: 2.6em;
+    color: #fff;
+    padding-top: 0.7em;
+    box-sizing: content-box;
+}
+
+#sub_hd4 .center_hd h1{
+    padding: 0.75em 0;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+#sub_hd4 .right_hd{
+    position: absolute;
+    top: 1.55em;
+    right: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd4 .right_hd img{
+    width: 1.2em;
+}
+
+#sub_hd4 .menu-trigger span{
+    background-color: #fff;
+}
+
+#sub_hd5{
+    background: #007bd2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+ #sub_hd5 .left_hd{
+    position: absolute;
+    top: 1.3em;
+    left: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd5 .left_hd i{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#sub_hd5 .center_hd{
+    text-align: center;
+    padding: 0.75em 0;
+    color: #fff;
+    padding-top: 1em;
+    box-sizing: content-box;
+}
+
+#sub_hd5 .center_hd h1{
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+#sub_hd5 .center_hd span{
+    display: block;
+    font-size: 0.7em;
+    line-height: 1.89;
+    letter-spacing: -0.36px;
+    color: #eaf2ff;
+}
+
+#sub_hd5 .right_hd{
+    position: absolute;
+    top: 1.55em;
+    right: 1.3em;
+    z-index: 3;
+}
+
+#sub_hd5 .right_hd img.alarm_icon{
+    width: 1.2em;
+}
+
+#sub_hd5 .right_hd img.alarm_new_icon{
+    position: absolute;
+    top: -4px;
+    right: -1px;
+    z-index: 5;
+    width: 0.7em;
+}

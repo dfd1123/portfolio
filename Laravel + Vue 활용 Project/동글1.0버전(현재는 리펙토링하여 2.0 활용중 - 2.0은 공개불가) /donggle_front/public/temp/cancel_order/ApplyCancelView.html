@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/ui.css" />
+</head>
+
+<body>
+  <!--
+    header 자리
+  -->
+
+  <!-- content -->
+  <div id="dg-apply-cancel-wrapper" class="l-page-wrapper">
+    <!-- 
+    미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+   -->
+    <!-- 미니 퀵메뉴 -->
+    <aside id="_mini_quick_menu">
+      <div class="_img_box">
+        <img src="/images/badge/badge_3.svg" alt="logo">
+      </div>
+      <h2 class="_title">#QUICK</h2>
+      <ul class="_mini_quick_menu_btn_wrap">
+        <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top">위로</a></li>
+        <li><a href="#" class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom">아래로</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- 미니 퀵메뉴 E -->
+
+    <!-- 1) 주문 취소신청 구역 -->
+    <div class="l-con-area full">
+
+      <article class="l-con-article mb-25">
+
+        <div class="l-con-title-group type02 mb-18">
+          <h2 class="in-subject">주문취소 신청</h2>
+        </div>
+
+        <!-- 취소신청 리스트 -->
+        <div class="l-contents-group">
+
+          <ul class="l-grid-group">
+
+            <li class="l-grid-list l-col-1">
+              <!-- * 주문일시, 주문번호 정보라벨 -->
+              <dl class="dg-about-odnum-label">
+                <dt>주문일시</dt>
+                <dd>2019-11-11 00:00:00</dd>
+                <dt>주문번호</dt>
+                <dd>0012547884</dd>
+                <dt>결제수단</dt>
+                <dd>무통장 입금(가상계좌)</dd>
+              </dl>
+              <!-- * 주문일시, 주문번호 정보라벨 E -->
+            </li>
+
+            <li class="l-grid-list l-col-1">
+              <!-- * 상품내역 카드 (취소일경우 type-cancel 클래스 추가) -->
+              <div class="dg-clothes-history-card type-cancel">
+                <div class="in-content">
+                  <div class="inner-box">
+                    <figure class="dg-clothes-thumbnail">
+                      <a class="in-image" href="#"
+                        style="background-image: url('/images/example/ex-clothes-img2.png');"></a>
+                    </figure>
+                    <ul class="_informations">
+                      <li class="_sellername">
+                        <a href="#">디어러버윤</a>
+                      </li>
+                      <li class="_prdtnum"><a href="#">1234567</a></li>
+                    </ul>
+                    <h3 class="_name">
+                      <a href="#">[모델추천] 팝콘체크 롱코트 (2color)_디어러버윤</a>
+                    </h3>
+                    <div class="_options">
+                      <dl class="_op_category">
+                        <dt class="_op_tit">옵션</dt>
+                        <dd class="_op_list">
+                          <span>팔찌1 컬러 : 실버</span>
+                          <span>팔찌2 컬러 : 실버</span>
+                          <span>각인문구/폰트 : 주문요청사항에 남겨주세요</span>
+                          <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                        </dd>
+                      </dl>
+                      <div class="_amount">
+                        <span>수량 : <b>1</b>개</span>
+                      </div>
+                    </div>
+                    <div class="_price">
+                      <span class="_prdt_price">상품금액 <b>19,800 원</b></span>
+                      <span class="_sale_price">할인금액 <b>- 19,800 원</b></span>
+                      <span class="_total_price">총 상품금액 <b>19,800 원</b></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- * 상품내역 카드 (취소일경우 type-cancel 클래스 추가) E -->
+            </li>
+
+            <li class="l-grid-list l-col-1">
+              <!-- * 최종 가격 안내 -->
+              <div class="dg-final-price-label">
+                <span class="_delivry_price">배송비 <b class="_point_size">2,500 원</b></span>
+              </div>
+              <!-- * 최종 가격 안내 E -->
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- 취소신청 리스트 E -->
+
+      </article>
+
+    </div>
+    <!-- 1) 주문 취소신청 구역 E -->
+
+    <!-- 2) 주문정보들 -->
+    <div class="dg-order-info-group clear_both">
+
+      <!-- 좌측 정보 -->
+      <div class="in-detail-info">
+
+        <!-- [1] 취소사유 -->
+        <article class="l-con-article">
+          <h4 class="in-subject">
+            <span>취소사유</span>
+            <span class="_etc_ment">제품이 택배사에 전달 된 후의 주문취소는 정상처리가 되지 않을
+              수 있습니다.</span>
+          </h4>
+          <ul class="in-information">
+            <li class="_list _list--reason">
+              <input type="checkbox" id="test" class="dg-input-checkbox display_none" />
+              <label for="test" class="dg-input-checkbox_label"></label>
+              <label for="test" class="_txt">주문에 이상은 없으나 구매의사 없음(변심)</label>
+            </li>
+            <li class="_list _list--reason">
+              <input type="checkbox" id="test1" class="dg-input-checkbox display_none" />
+              <label for="test1" class="dg-input-checkbox_label"></label>
+              <label for="test1" class="_txt">사이즈 또는 색상, 수량 등을 잘못 선택함</label>
+            </li>
+            <li class="_list _list--reason">
+              <input type="checkbox" id="test2" class="dg-input-checkbox display_none" />
+              <label for="test2" class="dg-input-checkbox_label"></label>
+              <label for="test2" class="_txt">다른 상품 구매 / 타 쇼핑몰에서 저렴하게 판매</label>
+            </li>
+            <li class="_list _list--reason">
+              <input type="checkbox" id="test3" class="dg-input-checkbox display_none" />
+              <label for="test3" class="dg-input-checkbox_label"></label>
+              <label for="test3" class="_txt">상품이 오랫동안 도착하지 않음</label>
+            </li>
+            <li class="_list _list--reason">
+              <input type="checkbox" id="test4" class="dg-input-checkbox display_none" />
+              <label for="test4" class="dg-input-checkbox_label"></label>
+              <label for="test4" class="_txt">상품등록 정보에 오류가 있음</label>
+            </li>
+          </ul>
+          <div class="in-reason-detail">
+            <h5 class="_rd_subject">상세내용</h5>
+            <div class="_rd_textarea">
+              <textarea></textarea>
+              <span>0 / 500</span>
+            </div>
+            <span class="_rd_etc_ment">- 취소/환불 사유를 정확히 적어주시면 빠른 처리 및 동글 스토어
+              개선에 도움이 됩니다.</span>
+          </div>
+        </article>
+        <!-- [1] E -->
+
+      </div>
+      <!-- 좌측 정보 E -->
+
+      <!-- 우측 취소 정보 -->
+      <div class="in-pay-info">
+
+        <!-- [1] 취소 정보 -->
+        <article class="l-con-article">
+          <h4 class="in-subject">취소 정보</h4>
+          <ul class="in-information mb-30">
+            <li class="_list">
+              <span class="_label">상품금액 합계</span>
+              <p class="_txt">146,700 원</p>
+            </li>
+            <li class="_list">
+              <span class="_label">배송비</span>
+              <p class="_txt">0 원</p>
+            </li>
+            <li class="_list _list--sale">
+              <span class="_label">회원등급할인</span>
+              <p class="_txt">- 5,000 원</p>
+            </li>
+            <li class="_list _list--sale">
+              <span class="_label">보유쿠폰 할인</span>
+              <p class="_txt">- 1,000 원</p>
+            </li>
+            <li class="_list _list--final">
+              <span class="_label">최종 취소 금액</span>
+              <p class="_txt"><b>100,000,000 원</b></p>
+            </li>
+          </ul>
+          <button type="button" class="theme-btn-gradient btn-shadow" onclick="confirm('(스윗알럿)취소신청하시겠습니까?')">
+            취소신청
+          </button>
+        </article>
+        <!-- [1] E -->
+
+      </div>
+      <!-- 우측 취소 정보 E -->
+
+    </div>
+    <!-- 2) 주문정보들 E -->
+
+  </div>
+  <!-- content E -->
+
+  <!--
+    footer 자리
+  -->
+</body>
+
+</html>

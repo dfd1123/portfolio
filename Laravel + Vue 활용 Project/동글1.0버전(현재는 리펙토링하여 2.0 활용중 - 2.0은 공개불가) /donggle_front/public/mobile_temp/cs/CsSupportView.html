@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-cs-support-wrapper" class="dg-cs-wrapper">
+      <!-- 1:1문의 작성 팝업 -->
+      <div
+        class="_popup_wrapper _write_ppopup_wrapper qna_write_popup_wrapper _cs_support_write_popup_wrapper display_none"
+      >
+        <div class="_bg"></div>
+        <div class="_popup_wrap">
+          <div class="_popup_title">
+            <h4>문의 작성<button type="button" class="_close_btn"></button></h4>
+          </div>
+          <div class="_popup_content">
+            <!-- 상품 종류 E -->
+            <div class="_product_view _store_view vi">
+              <div class="symbol-circle">
+                <img
+                  src="/images/img/profile_admin.jpg"
+                  alt="동글 로고"
+                  class="_imgtag"
+                />
+              </div>
+              <div class="_text">
+                <p>동글 고객센터</p>
+              </div>
+            </div>
+            <!-- 상품 종류 E -->
+            <h5>문의사항</h5>
+            <div class="_input_wrap">
+              <div class="dg_write write_title">
+                <label for="#" class="dg_blind">제목</label>
+                <input
+                  type="tel"
+                  id="#"
+                  class="input_text_box"
+                  placeholder="제목"
+                  maxlength="13"
+                />
+              </div>
+            </div>
+            <!-- 에디터 대신 삽입 -->
+            <div class="_edter_wrap">
+              <textarea
+                class="_editer"
+                name="#"
+                id="#"
+                placeholder="내용"
+              ></textarea>
+            </div>
+            <!-- 에디터 대신 삽입 E -->
+            <div class="dg-dubble_btn_wrap clear_both">
+              <button type="button" class="dg-btn_line dg-dubble_btn">
+                작성완료
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 1:1문의 작성 팝업 E -->
+      <div class="l-cs-contents">
+        <!-- 활성화된 메뉴 _list 에 active 추가 -->
+        <article class="in-nav-section">
+          <ul>
+            <li class="_list">
+              <a href="CsNoticeView.html">공지사항</a>
+            </li>
+            <li class="_list">
+              <a href="CsFaqView.html">자주묻는 질문</a>
+            </li>
+            <li class="_list active">
+              <a href="CsSupportView.html">1:1 문의</a>
+            </li>
+            <li class="_list">
+              <a href="CsEventView.html">이벤트</a>
+            </li>
+          </ul>
+        </article>
+
+        <div class="l-con-area">
+          <!-- 
+          등록된 문의가 없을 때: ._question_fill 에 .display_none
+          등록된 문의가 있을 때: ._question_empty 와 ._question_empty_a 에 .display_none
+          답변이 있을 때: ._no_response 에 display_none
+          답변이 없을 때: ._response 에 display_none
+          1:1문의 클릭시 ._support_title 에 .active 추가
+          답변이 없을 시 ._support_answer_content 에 ._no_answer 추가
+
+          ._support_title_wrapper ._write_popup_btn 
+          클릭시
+          ._cs_support_write_popup_wrapper
+          remove class .display_none
+         -->
+          <!-- 1) 1:1문의 -->
+          <div class="l-con-article clear_both">
+            <section
+              class="_cs_wrap _fnq_wrap _support_wrap _support_title_wrapper"
+            >
+              <div class="_page_title_wrap">
+                <h2>
+                  고객센터
+                  <a href="#" class="_back_btn">뒤로가기</a>
+                  <button type="button" class="_write_popup_btn">
+                    문의하기
+                  </button>
+                </h2>
+              </div>
+              <div class="_board">
+                <!-- 등록된 문의가 없을 때 -->
+                <div class="_empty">
+                  <div class="_img_box">
+                    <img
+                      src="/images/mobile/icon/empty_board_m.svg"
+                      alt="등록된 문의가 없습니다."
+                    />
+                  </div>
+                  <div class="_text">등록된 문의가 없습니다.</div>
+                </div>
+                <!-- 등록된 문의가 없을 때 E -->
+
+                <!-- 등록된 문의가 있을 때 -->
+                <ul class="_board_layout _cs_layout _fill">
+                  <li class="_cs_content">
+                    <input
+                      type="checkbox"
+                      id="test"
+                      class="_board_title_wrap display_none"
+                    />
+                    <label for="test" class="clear_both">
+                      <div class="symbol-circle">
+                        <img
+                          src="/images/img/profile_admin.jpg"
+                          alt="동글 로고"
+                          class="_imgtag"
+                        />
+                      </div>
+                      <div class="_board_title_label">
+                        <span class="_title">
+                          동글 질문 제목입니다.길어지면 이렇게 생략표시로
+                          생략됩니다.</span
+                        >
+                        <span class="_name">동글 고객센터</span>
+                        <span class="_date">2019-00-00</span>
+                        <span class="_check">답변대기</span>
+                      </div>
+                    </label>
+                    <div class="_board_hidden">
+                      <div class="_board_content">
+                        <div class="_title">
+                          동글 질문 제목입니다.길어지면 이렇게 생략표시로
+                          생략됩니다.
+                        </div>
+                        <div class="_desc">
+                          <p class="_inquire">
+                            내용입니다.어떠한 문의를 했을 때, 영문 대문자와의
+                            간격 및 크기 등을 비교하여 끝선에 맞추어서 제작
+                          </p>
+                          <p class="_answer">
+                            1) 주문취소 하신 경우<br />
+                            - 주문 취소 접수일로부터 하기와 같이 소요됩니다.<br />
+
+                            2) 환불 하신 경우<br />
+                            - 판매처에서 반품 상품 입고/검수 후 브랜디 측으로
+                            [환불승인]이 접수되는 날로부터 하기와 같이
+                            소요됩니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="_cs_content">
+                    <input
+                      type="checkbox"
+                      id="#"
+                      class="_board_title_wrap display_none"
+                    />
+                    <label for="#" class="clear_both">
+                      <div class="symbol-circle">
+                        <img
+                          src="/images/img/profile_admin.jpg"
+                          alt="동글 로고"
+                          class="_imgtag"
+                        />
+                      </div>
+                      <div class="_board_title_label">
+                        <span class="_title">
+                          동글 질문 제목입니다.길어지면 이렇게 생략표시로
+                          생략됩니다.</span
+                        >
+                        <span class="_name">동글 고객센터</span>
+                        <span class="_date">2019-00-00</span>
+                        <span class="_check _end">답변완료</span>
+                      </div>
+                    </label>
+                    <div class="_board_hidden">
+                      <div class="_board_content">
+                        <div class="_title">
+                          동글 질문 제목입니다.길어지면 이렇게 생략표시로
+                          생략됩니다.
+                        </div>
+                        <div class="_desc">
+                          <p class="_inquire">
+                            내용입니다.
+                          </p>
+                          <p class="_answer">
+                            답변입니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- 등록된 문의가 있을 때 E -->
+                <div class="_view_more"><button>문의 더보기</button></div>
+              </div>
+            </section>
+          </div>
+          <!-- 1) 1:1문의 E -->
+        </div>
+      </div>
+    </div>
+    <!-- content E -->
+  </body>
+</html>

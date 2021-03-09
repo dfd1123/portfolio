@@ -1,0 +1,1054 @@
+/* PAGES - 상품등록 페이지
+   ========================================================================== */
+
+#page-manage-prdt-list-wrap {
+  .table-area {
+    @include set-relative;
+
+    padding: 20px 10px 90px;
+
+    .search-default-bar {
+      margin-bottom: 30px;
+    }
+
+    .search-status-bar {
+      margin: 25px 0 13px;
+    }
+
+    .search-status-bar.mt-0 {
+      margin-top: 0;
+    }
+
+    .search-status-bar.type-last {
+      margin-top: 8px;
+    }
+
+    .search-status-bar .rounded-square-xs-btn {
+      margin-right: 5px;
+    }
+
+    .nothing-history {
+      padding: 60px 0;
+    }
+  }
+
+  .manage-pd-list-btn-wrap {
+    .rounded-square-btn {
+      width: 32%;
+    }
+  }
+
+  .btn-gray {
+    @include hover-eft {
+      background-color: $primary-color;
+    }
+
+    &:active {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+
+  .pager-wrap {
+    bottom: 20px;
+  }
+
+  .search-status-bar {
+    margin: 25px 0 13px;
+    .btn-outline-navy:before {
+      content: "선택한 상품 ";
+    }
+  }
+
+  .tbl-default-body {
+    .suspend-btn {
+      margin: 8px 0px 0px;
+    }
+  }
+}
+
+#page-manage-prdt-enroll-wrap {
+  padding-bottom: 7em;
+  .form-select {
+    margin-right: 5px;
+  }
+
+  .type-prdt-name {
+    .form-input-txt {
+      @include max-width(520px, 100%);
+    }
+  }
+
+  .type-group {
+    padding: 25px 0 42px;
+  }
+
+  .type-hash {
+    padding-top: 25px;
+
+    .in-group {
+      @include max-width(475px, 100%);
+    }
+    .form-input-txt {
+      width: 100%;
+    }
+  }
+
+  .type-group {
+    .form-input-txt {
+      @include max-width(270px, 100%);
+    }
+  }
+
+  .type-madein {
+    .form-input-txt {
+      @include max-width(270px, 100%);
+    }
+  }
+
+  .type-color {
+    .in-group {
+      @include max-width(475px, 100%);
+
+      margin-bottom: 5px;
+    }
+    .form-input-txt {
+      width: 100%;
+    }
+  }
+
+  .type-clean {
+    padding-bottom: 5px;
+  }
+
+  .type-material {
+    padding-bottom: 5px;
+  }
+
+  .temp-div {
+    min-height: 300px;
+    background-color: #f0f0f0;
+  }
+
+  .form-input-txt,
+  .in-list-group {
+    user-select: none;
+  }
+}
+
+.prdt-enroll-img-container {
+  @include max-width(1113px, 100%);
+  @include rounded;
+
+  background-color: $gray-lighter;
+  user-select: none;
+
+  ~ .btn-outline-navy {
+    margin-top: 10px;
+  }
+}
+
+// 동글가 입력카드
+.prdt-enroll-price-container {
+  max-width: 509px;
+  background: linear-gradient(
+    140deg,
+    $primary-gradient-end,
+    $primary-gradient-start 80%
+  );
+  border-radius: 15px;
+  color: white;
+  padding: 35px;
+  min-height: 232px;
+  box-shadow: 0 10px 20px rgba(#d03de9, 0.3);
+
+  .in-label {
+    @include font(1.375em, $w: 400);
+
+    display: inline-block;
+    width: 100%;
+  }
+
+  .in-group {
+    position: relative;
+    padding: 15px 0;
+
+    input {
+      @include form-tag-init(
+        $rounded: 8px,
+        $pd: 0 70px 0 0,
+        $bg: rgba(white, 0.2),
+        $ip: true
+      );
+      @include font(2.25em, $c: white);
+
+      width: 100%;
+      height: 70px;
+      text-align: right;
+    }
+
+    input::placeholder {
+      color: rgba(white, 0.5);
+    }
+
+    i {
+      @include font(2.25em);
+      @include set-absolute($t: 50%, $r: 25px);
+
+      transform: translateY(-50%);
+    }
+  }
+
+  .in-caution {
+    @include font($em-13px);
+
+    opacity: 0.85;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: -0.5px;
+  }
+}
+
+// 해시태그추가 컨테이너, 선택한색상 컨테이너
+.prdt-enroll-hash-container,
+.prdt-enroll-color-container {
+  .in-tit {
+    @include font(13px, 300, $gray);
+
+    margin-bottom: 15px;
+    user-select: none;
+  }
+}
+
+// 해시태그추가 컨테이너 개별 스타일링
+.prdt-enroll-hash-container {
+  padding-top: 20px;
+
+  .in-list-group {
+    @include set-relative;
+
+    & > * {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// 선택한색상 컨테이너 개별 스타일링
+.prdt-enroll-color-container {
+  padding-top: 25px;
+
+  .in-list-group {
+    @include set-relative;
+    @include max-width(1080px, 100%);
+
+    & > * {
+      margin-right: 6px;
+      margin-bottom: 10px;
+      min-width: 80px;
+    }
+  }
+}
+
+// 사이즈범위설정 컨테이너
+.prdt-enroll-size-container {
+  @include max-width(1113px, 100%);
+  @include rounded;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  min-height: 50px;
+}
+
+// 옵션생성 컨테이너
+.prdt-enroll-create-op-container {
+  background-color: $gray-lighter-02;
+  border: 1px solid $gray-lighter;
+  padding: 30px;
+  border-radius: 5px;
+  color: $primary-color-02;
+  text-align: center;
+
+  .in-tit {
+    @include font(14px, $w: 400);
+
+    text-align: left;
+    line-height: 1.6;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $gray-lighter;
+    b {
+      font-weight: bold;
+      display: block;
+    }
+  }
+
+  .in-list-group {
+    text-align: left;
+  }
+
+  .in-list {
+    position: relative;
+    line-height: 1;
+    width: 100%;
+    padding: 13px 0;
+    border-bottom: 1px solid $gray-lighter;
+
+    label {
+      @include font(15px, bold, $gray);
+
+      margin-right: 19px;
+    }
+  }
+
+  .in-op-category {
+    @include inline-block;
+
+    margin-right: 40px;
+    width: 20%;
+  }
+
+  .in-op-detail {
+    @include inline-block;
+
+    width: 70%;
+
+    .form-input-txt {
+      @include max-width(650px, 100%);
+    }
+  }
+
+  .option_del_btn {
+    cursor: pointer;
+    > img {
+      line-height: 1;
+      background: #222;
+      padding: 8px;
+    }
+  }
+
+  .rounded-square-btn {
+    margin-top: 30px;
+    margin-right: 5px;
+  }
+
+  .rounded-square-btn:last-child {
+    margin-right: 0;
+  }
+}
+
+// 옵션생성 결과 컨테이너
+.prdt-enroll-op-result-container {
+  padding-top: 20px;
+
+  .in-thead-group .in-th:first-child,
+  .in-list-group .in-td:first-child {
+    width: 50%;
+  }
+
+  .in-thead-group .in-th:nth-child(2),
+  .in-list-group .in-td:nth-child(2) {
+    width: 17%;
+  }
+
+  .in-thead-group .in-th:nth-child(3),
+  .in-list-group .in-td:nth-child(3) {
+    width: 17%;
+  }
+
+  .in-thead-group .in-th:last-child,
+  .in-list-group .in-td:last-child {
+    width: 5%;
+  }
+
+  .in-thead-group {
+    border-top: 1px solid $gray-md-04;
+
+    .in-list {
+      width: 100%;
+      height: 50px;
+      display: table;
+      background-color: #fafafa;
+      border-top: 1px solid $gray-lighter;
+    }
+
+    .in-th {
+      @include font(0.813em, 300, $gray-md-03);
+
+      display: table-cell;
+      vertical-align: middle;
+      border-right: 1px solid $gray-lighter;
+      text-align: center;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+
+  .in-list-group {
+    border-bottom: 1px solid $gray-md-04;
+
+    .in-list {
+      width: 100%;
+      height: 70px;
+      display: table;
+      border-bottom: 1px solid $gray-lighter;
+    }
+
+    .in-list:last-child {
+      border-bottom: 0;
+    }
+
+    .in-td:first-child {
+      @include font(15px, $c: $gray);
+
+      padding-left: 30px;
+      text-align: left;
+    }
+
+    .in-td {
+      display: table-cell;
+      vertical-align: middle;
+      border-right: 1px solid $gray-lighter;
+      text-align: center;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &.td-price .in-label {
+        display: none;
+      }
+    }
+  }
+
+  .form-input-txt {
+    @include max-width(160px, 90%);
+  }
+
+  .in-delete-btn {
+    @include form-tag-init($bg: $primary-color);
+    @include set-flex;
+
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+  }
+}
+
+// 세탁방법 컨테이너
+.prdt-enroll-clean-container {
+  label {
+    min-width: 110px;
+    margin-right: 5px;
+    margin-bottom: 12px;
+  }
+}
+
+// 소재 컨테이너
+.prdt-enroll-material-container {
+  max-width: calc(120px * 6);
+
+  label {
+    min-width: 110px;
+    margin-right: 5px;
+    margin-bottom: 12px;
+  }
+}
+
+// 기타 상세정보 컨테이너
+.prdt-enroll-etc-container {
+  display: inline-block;
+  border-top: 1px solid $gray-md-04;
+  border-bottom: 1px solid $gray-md-04;
+
+  .in-list {
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  dl {
+    padding: 10px 22px;
+  }
+
+  dt {
+    @include inline-block;
+    @include font(15px, 400, $gray);
+
+    min-width: 75px;
+  }
+
+  dd {
+    @include inline-block;
+  }
+
+  label {
+    min-width: 80px;
+    margin-right: 5px;
+  }
+}
+
+//모바일화면 테이블 대체 리스트
+.manage-pd-list-wrap {
+  .pd-input-box {
+    height: 47px;
+    line-height: 47px;
+    padding: 0px 20px 0px 10px;
+    background-color: $gray-lighter-02;
+  }
+  .check-gradi-circle {
+    top: -18px;
+  }
+  .check-label {
+    display: inline-block;
+    width: calc(100% - 25px);
+  }
+  ._pd_numname {
+    @include font(13px, 300, $gray-md-03);
+
+    float: left;
+    padding: 0px 5px;
+  }
+  ._pd_num {
+    @include font($s: 13px, $c: $gray);
+
+    float: left;
+  }
+  ._pd_category {
+    @include font($s: 12px, $c: rgba($gray, 0.7));
+    @include inline-block;
+
+    line-height: 1.45;
+    border-top: 1px solid #e2e2e2;
+    padding: 9px 0 3px;
+    width: 100%;
+  }
+  .date-product-md {
+    position: relative;
+    min-height: 90px;
+    margin: 10px 0px;
+    padding: 0px 20px;
+    padding-left: 140px;
+    .in-thumb {
+      top: 0px;
+      left: 40px;
+      width: 90px;
+      height: 90px;
+      transform: none;
+    }
+    .in-order-product ._pd_name {
+      @include font(15px, 600, $primary-color);
+    }
+    .in-order-product ._user_click {
+      @include font(12px, 300, $gray);
+
+      padding: 10px 0px 0px;
+    }
+    .in-order-product ._user_click ._num {
+      letter-spacing: 0px;
+    }
+  }
+  .order-status {
+    margin: 15px 20px 20px 40px;
+    border-top: 1px solid $gray-lighter;
+    border-bottom: 1px solid $gray-lighter;
+    padding: 14px 0px;
+    .in-tit {
+      @include font($s: 13px, $c: $gray-md-03);
+
+      float: left;
+      line-height: 1.7;
+    }
+    .in-desc {
+      @include font($s: 13px, $c: $gray);
+
+      float: right;
+    }
+    .in-desc ._pink {
+      @include font(15px, 600, $pink);
+    }
+    .selec_wrap {
+      padding: 10px 0px 0px;
+    }
+    .selec_wrap .in-tit {
+      line-height: 42px;
+    }
+    .selec_wrap .suspend-btn {
+      margin: 6px 0px;
+    }
+    .form-select {
+      width: 96px;
+      height: 42px;
+      min-height: 42px;
+    }
+  }
+}
+
+//구매후기 공통
+.manage-pd-list-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px 20px 0px 40px;
+  .rounded-square-btn {
+    min-width: 84px;
+    width: 49%;
+  }
+}
+
+//반응형
+
+@media all and (max-width: 1855px) {
+  .prdt-enroll-create-op-container {
+    .in-list label {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include media-pc(15inch) {
+  // 옵션생성 결과 컨테이너
+  .prdt-enroll-op-result-container {
+    .in-thead-group .in-th:first-child,
+    .in-list-group .in-td:first-child {
+      width: 44%;
+    }
+
+    .in-thead-group .in-th:nth-child(2),
+    .in-list-group .in-td:nth-child(2) {
+      width: 20%;
+    }
+
+    .in-thead-group .in-th:nth-child(3),
+    .in-list-group .in-td:nth-child(3) {
+      width: 20%;
+    }
+  }
+}
+
+@include media-pc(13inch) {
+  .prdt-enroll-create-op-container {
+    .in-op-category {
+      margin-right: 30px;
+      width: 22%;
+    }
+    .form-input-txt {
+      width: 100%;
+    }
+  }
+}
+
+@include media-pc(smallmidium) {
+  #page-manage-prdt-enroll-wrap .type-group {
+    .in-grid:first-child {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .in-grid:last-child {
+      width: 100%;
+    }
+  }
+}
+
+@include media-mobile-version(ipad) {
+  #page-manage-prdt-list-wrap {
+    .panel-default {
+      padding: 0px;
+    }
+
+    .manage-pd-list-wrap .pd-input-box {
+      height: auto;
+      line-height: 1.5;
+      padding: 5px 20px 12px 10px;
+    }
+
+    .manage-pd-list-wrap .check-gradi-circle {
+      top: 2px;
+    }
+
+    .in-product-order {
+      margin-bottom: 35px;
+    }
+
+    .manage-pd-list-wrap .check-label {
+      vertical-align: middle;
+    }
+
+    .pd-category-area {
+      padding: 5px 0 0 30px;
+      text-align: left;
+      opacity: 0.7;
+      margin-top: 5px;
+    }
+  }
+
+  #page-manage-prdt-list-wrap .table-area {
+    .sorting-tab-bar {
+      border: 0px none;
+
+      .in-tab {
+        width: calc(50% - 5px);
+        margin: 0px;
+        border-radius: 5px;
+        background-color: $gray-lighter-02;
+        color: $gray-md-03;
+        font-size: 15px;
+      }
+      .first-tab {
+        margin-right: 6px;
+      }
+      .chck-box:checked + .in-tab {
+        border: 0px none;
+        background-color: $primary-color-02;
+        font-weight: 600;
+        color: white;
+      }
+      .chck-box:checked + .in-tab:after {
+        content: none;
+      }
+    }
+    .search-status-bar {
+      margin: 25px 0px;
+      text-align: center;
+    }
+    .search-status-bar .btn-outline-navy {
+      box-shadow: none;
+      &:before {
+        content: none;
+      }
+    }
+    .search-status-bar .btn-outline-navy:last-child {
+      margin-right: 0;
+    }
+    .choice-status-bar {
+      margin-bottom: 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .show-mobile {
+      @include set-relative;
+    }
+    .go-top-btn {
+      @include hover-active-bg(white);
+    }
+  }
+
+  .search-status-bar {
+    .in-word-result {
+      font-size: 13px;
+    }
+  }
+
+  #page-manage-prdt-enroll-wrap {
+    padding: 20px 20px 6em;
+  }
+
+  .option_del_btn {
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    z-index: 1;
+    cursor: pointer;
+    > img {
+      line-height: 1;
+      background: #222;
+      padding: 6px;
+    }
+  }
+}
+
+@include media-mobile-version(galaxy-tab) {
+  #page-manage-prdt-enroll-wrap {
+    background-color: white;
+
+    .panel-default {
+      padding: 0;
+      box-shadow: none;
+    }
+  }
+
+  // 옵션생성 결과 컨테이너
+  .prdt-enroll-op-result-container {
+    .in-thead-group {
+      display: none;
+    }
+
+    .in-list-group {
+      border-bottom: 0;
+    }
+
+    .in-list-group .in-list {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: relative;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+
+      .td.td-price .in-label {
+        display: block;
+      }
+
+      .in-td.td-opname {
+        @include font(15px, $c: white);
+
+        background-color: $primary-color-02;
+        border-radius: 5px;
+        padding: 10px 15px;
+        width: 100%;
+        display: block;
+        line-height: 1;
+        margin-bottom: 15px;
+      }
+
+      .in-td.td-opname span {
+        color: inherit;
+      }
+
+      .in-td.td-price .in-label {
+        display: block;
+        margin-bottom: 5px;
+        color: $gray-md-03;
+      }
+
+      .in-td.td-price {
+        @include font(13px, $gray-md-03);
+
+        text-align: left;
+        border-right: 0;
+        width: 49%;
+      }
+
+      .in-td.td-price .form-input-txt {
+        @include max-width(100%, 100%);
+      }
+
+      .in-td.td-del {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .in-list-group .in-list:last-child {
+      margin-bottom: 0;
+    }
+
+    .in-delete-btn {
+      @include set-absolute($t: 2px, $r: 4px);
+
+      background-color: transparent;
+    }
+
+    .in-delete-btn img {
+      width: 45%;
+    }
+  }
+}
+
+@include media-mobile-version(mobile-only) {
+  #page-manage-prdt-enroll-wrap {
+    padding: 20px 0 6em;
+
+    .rounded-square-xs-btn {
+      padding: 0px 5px;
+    }
+
+    .panel-default-title {
+      padding: 0 20px;
+      margin-bottom: 15px;
+    }
+
+    .panel-default-title .in-mainname {
+      @include font(18px, $w: bold);
+    }
+
+    .form-container.type-02 .form-align {
+      padding: 13px 20px;
+      border-bottom: 0;
+    }
+
+    .form-container.type-02 .type-choiceop {
+      padding-left: 0;
+      padding-right: 0;
+
+      .form-align-tit {
+        padding: 0 20px;
+      }
+    }
+
+    .type-category .form-align-input {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .type-category .form-select {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 7px;
+    }
+
+    .type-group .form-input-txt {
+      @include max-width(100%, 100%);
+    }
+
+    .type-group .in-grid:first-child {
+      min-width: 100%;
+    }
+
+    .type-group .in-grid:last-child {
+      min-width: 100%;
+    }
+  }
+
+  .prdt-enroll-price-container {
+    padding: 25px 18px 22px;
+    min-height: 200px;
+
+    .in-label {
+      font-size: 18px;
+    }
+
+    .in-group input {
+      height: 50px;
+      font-size: 24px;
+      padding-right: 45px;
+    }
+
+    .in-group i {
+      font-size: 24px;
+      right: 15px;
+    }
+  }
+
+  .prdt-enroll-color-container {
+    .in-list-group > label {
+      min-width: calc(30% + 4.5px);
+    }
+    .in-list-group > label:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .prdt-enroll-create-op-container {
+    border: 0;
+    padding: 23px 20px;
+
+    .in-list {
+      padding: 25px 0;
+    }
+
+    .in-op-category {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .in-op-detail {
+      width: 100%;
+    }
+
+    .rounded-square-btn {
+      margin-top: 15px;
+    }
+  }
+
+  .prdt-enroll-op-result-container {
+    padding-top: 20px;
+    background-color: #fafafa;
+    padding: 15px 20px;
+  }
+
+  .prdt-enroll-clean-container {
+    .in-list-group label {
+      min-width: calc(30% + 4.5px);
+      padding: 0;
+    }
+    .in-list-group label:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .prdt-enroll-material-container {
+    .in-list-group label {
+      min-width: calc(30% + 4.5px);
+    }
+
+    .in-list-group label:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .prdt-enroll-etc-container {
+    dl {
+      padding: 10px 0;
+    }
+
+    dt {
+      min-width: 55px;
+    }
+  }
+}
+
+@include media-mobile-version(mobile-small) {
+  #page-manage-prdt-enroll-wrap {
+    .rounded-square-xs-btn {
+      font-size: 12px;
+    }
+
+    .panel-default-title {
+      padding: 0 15px;
+    }
+
+    .form-container.type-02 .form-align {
+      padding: 13px 15px;
+    }
+
+    .form-container.type-02 .type-choiceop {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .type-category .form-align-input {
+      flex-wrap: wrap;
+    }
+
+    .type-category .form-select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .type-category .form-select:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .prdt-enroll-color-container {
+    .in-list-group > label {
+      min-width: calc(30% + 3px);
+    }
+  }
+
+  .prdt-enroll-clean-container {
+    .in-list-group label {
+      min-width: calc(30% + 3px);
+    }
+  }
+
+  .prdt-enroll-material-container {
+    .in-list-group label {
+      min-width: calc(30% + 3px);
+    }
+  }
+
+  .prdt-enroll-etc-container {
+    dt {
+      min-width: 45px;
+      font-size: 13px;
+    }
+    label {
+      min-width: 72px;
+    }
+  }
+}

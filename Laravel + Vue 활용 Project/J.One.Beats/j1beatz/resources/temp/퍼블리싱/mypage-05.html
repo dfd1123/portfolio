@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>J1beats-main</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="제이원비츠" />
+        <meta property="og:description" content="제이원비츠 설명입니다." />
+        <!-- ↓오픈그래프 썸네일 이미지는 만들어놨지만, path방식이 아닌 url방식으로 해야 보인다고 하네욤 우선 이미지 경로라도 적어놓겠습니다~ -->
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="음악플랫폼, 제이원비츠">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="scss/j1beat-ui.css">
+
+        <!--TODO:페이지별 css-->
+        <link rel="stylesheet" href="scss/pages/sub-page-mypage.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--TODO:END-->
+
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+    
+
+    </head>
+
+    <body>
+
+        <div id="app">
+    
+            <!-- 메인 컨텐츠 -->
+            <div id="wrap">
+                
+                <section class="section sub-section">
+
+                    <!--TODO:이용권정보, 장바구니, 고객센터, 마이페이지일 때 j1beatz-hd에 bg_gray_ver 클래스추가-->
+                    <article class="j1beatz-hd bg_gray_ver">
+
+                        <h3 class="none">제목 및 아티스트 및 태그 검색하기</h3>
+
+                        <fieldset class="j1beatz-hd-sch-field">
+                            <input type="text" placeholder="제목/아티스트/#태그 검색">
+                            <button type="button"><span class="none">검색버튼</span></button>
+                        </fieldset>
+
+                        <div class="j1beatz-hd-cs-field">
+                            <h3>고객센터</h3>
+                            <div class="cs-btns">
+                                <a href="#" class="cs-btn cs-btn-blg"><span class="none">블로그</span></a>
+                                <a href="#" class="cs-btn cs-btn-kkt"><span class="none">카카오톡</span></a>
+                                <a href="#" class="cs-btn cs-btn-insta"><span class="none">인스타그램</span></a>
+                                <a href="#" class="cs-btn cs-btn-ytb"><span class="none">유튜브</span></a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <!--TODO:END-->
+
+                    <!--TODO:이용권정보, 장바구니, 고객센터, 마이페이지일 때 아래 제목스타일 추가-->
+                    <div class="sub-page-large-title">
+                        <h2 class="sub-page-large-title-name">마이 페이지</h2>
+                    </div>
+                    <div class="sub-page-large-tab">
+                        <div class="tab-menu tab-menu-alink">
+                            <ul>
+                                <li class="tab-menu-list"><a href="#">이용권 관리</a></li>
+                                <li class="tab-menu-list"><a href="#">주문내역</a></li>
+                                <li class="tab-menu-list"><a href="#">마이앨범</a></li>
+                                <li class="tab-menu-list"><a href="#">이벤트/쿠폰</a></li>
+                                <li class="tab-menu-list active"><a href="#">알림 메세지</a></li>
+                                <li class="tab-menu-list"><a href="#">나의 정보관리</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--TODO:END-->
+
+                    <div class="page-contents-wrapper">
+
+                        <div class="sub-page-mypage">
+                            
+                            <div class="sub-page-mypage-05">
+
+                                <div class="sub-page-mypage-contents-inner">
+
+                                    <div class="sub-page-alarm-group">
+
+                                        <div class="sub-page-alarm-msg __no">
+                                            <span class="_title">수신된 메세지가 없습니다.</span>
+                                            <p class="_txt"><b>마이페이지 > 알림 메세지</b>는 제이원비츠에서 회원님께 알리는 개인 메세지입니다.</p>
+                                        </div>
+                                        
+                                        <div class="sub-page-alarm-msg sub-page-alarm-msg-new __yes"> 
+                                            <span class="_title">제이원비츠 운영자</span>
+                                            <p class="_txt">회원님의 비밀번호가 2000 . 00 . 00  00 : 00 : 00 에 수정되었습니다.<br>비밀번호는 6개월 마다 주기적인 변경을 권장합니다.</p>
+                                            <span class="_data">2000. 00. 00  00:00:00</span>
+                                        </div>
+                                        
+                                        <div class="sub-page-alarm-msg sub-page-alarm-msg-new __yes"> 
+                                            <span class="_title">제이원비츠 운영자</span>
+                                            <p class="_txt"><b>마이페이지 > 알림 메세지</b>는 제이원비츠에서 회원님께 알리는 개인 메세지입니다.</p>
+                                            <span class="_data">2000. 00. 00  00:00:00</span>
+                                        </div>
+
+                                        <div class="sub-page-alarm-msg __yes"> 
+                                            <span class="_title">제이원비츠 운영자</span>
+                                            <p class="_txt"><b>마이페이지 > 알림 메세지</b>는 제이원비츠에서 회원님께 알리는 개인 메세지입니다.</p>
+                                            <span class="_data">2000. 00. 00  00:00:00</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+    
+                            </div>
+                             
+                        </div>
+                        
+                    </div>
+
+                </section>
+
+            </div>
+            <!-- //메인 컨텐츠 -->
+        
+        </div>
+
+    </body>
+</html>

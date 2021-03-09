@@ -1,0 +1,84 @@
+/* helper
+   ========================================================================== */
+
+.none {
+  display: none;
+}
+
+.clearfix {
+  @include set-clearfix;
+}
+
+.hide-text {
+  @include set-hidden-text;
+}
+
+.inner {
+  @include set-relative;
+  @include width-height-100;
+}
+
+.grid-line-group {
+  @include set-clearfix;
+}
+
+.nothing-history {
+  text-align: center;
+
+  .in-empty-icon {
+    margin: 0 auto 10px;
+    display: block;
+    user-select: none;
+  }
+  .in-empty-ment {
+    @include font(13px, 400, $purple-md);
+
+    letter-spacing: -0.2px;
+  }
+}
+
+//더보기, 스토어로가기버튼
+.in-more {
+  @include inline-block;
+
+  user-select: none;
+
+  & > span,
+  & > img {
+    @include inline-block;
+    position: relative;
+    transition: color 0.3s;
+    left: 0;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+  }
+
+  & > span {
+    @include font(13px);
+    padding-right: 3px;
+  }
+  &:hover > span {
+    color: $primary-color-01;
+  }
+  &:hover > img {
+    transition: all 0.2s;
+    transform: scale(1.1);
+  }
+}
+
+//스크롤영역
+.y-scroll {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray-md-03;
+  }
+}
+
+.pd_0 {
+  padding: 0px;
+}

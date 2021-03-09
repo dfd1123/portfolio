@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.054" height="19.055" viewBox="0 0 19.054 19.055">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{stroke:#00b9ff;stroke-width:2px}.cls-4{stroke:none}
+        </style>
+        <clipPath id="clip-path">
+            <path d="M0 0h19.054v19.054H0z" class="cls-1"/>
+        </clipPath>
+    </defs>
+    <g id="구성_요소_2" class="cls-2" data-name="구성 요소 2" transform="translate(0 -.001)">
+        <g id="타원_29" class="cls-3" data-name="타원 29">
+            <circle cx="7.326" cy="7.326" r="7.326" class="cls-4"/>
+            <circle cx="7.326" cy="7.326" r="6.326" class="cls-1"/>
+        </g>
+        <path id="선_46" d="M0 0l6.279 6.279" class="cls-3" data-name="선 46" transform="translate(12.035 12.035)"/>
+    </g>
+</svg>

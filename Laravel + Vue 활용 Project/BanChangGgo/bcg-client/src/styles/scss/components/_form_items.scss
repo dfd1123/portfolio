@@ -1,0 +1,242 @@
+.form_item {
+  padding: 10px 0 12px;
+
+  .form_label {
+    @include emFont("17px", $color: $theme-03);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form_input_group {
+    position: relative;
+  }
+
+  .form_btn_input_group {
+    display: flex;
+    align-items: baseline;
+
+    .small_btn01 {
+      @include position(relative, $t: 1px);
+    }
+
+    .form_input {
+      margin-right: 13px;
+    }
+  }
+
+  .form_input {
+    @include initInput;
+    @include emFont("20px", $color: $gray-01);
+    width: 100%;
+    height: 2.85rem;
+    padding: 0 7px;
+    border-bottom: 1px solid $gray-01;
+    margin-bottom: 5px;
+    letter-spacing: -0.3px;
+
+    &::placeholder {
+      color: rgba($gray-01, 0.3);
+    }
+    &:focus {
+      border-color: $theme-02;
+    }
+
+    &--none_num::-webkit-outer-spin-button,
+    &--none_num::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  p.form_input {
+    line-height: normal;
+    height: auto;
+    min-height: 2.85rem;
+    padding: 0.644rem 7px;
+  }
+
+  .form_select {
+    @include initInput;
+    @include emFont("20px", $color: $gray-01);
+    @include bgStyle(calc(100% - 7px), 50%, unset);
+    width: 100%;
+    height: 2.85rem;
+    padding: 0 7px;
+    border-bottom: 1px solid $gray-01;
+    margin-bottom: 5px;
+    letter-spacing: -0.3px;
+    background-image: url($g-btn-url+"btn_select_bt.svg");
+    &--not_bg {
+      background-image: unset;
+      & + i {
+        @include emFont("20px", $color: $gray-01);
+        @include position($r: 7px, $b: 5px);
+        height: 2.85rem;
+        line-height: 2.85rem;
+      }
+    }
+  }
+
+  p.form_select {
+    line-height: normal;
+    height: auto;
+    padding: 0.624rem 7px;
+    min-height: 2.85rem;
+  }
+
+  .form_textarea {
+    @include initInput;
+    @include emFont("20px", $color: $gray-01);
+    width: 100%;
+    min-height: 8rem;
+    padding: 7px;
+    border-bottom: 1px solid $gray-01;
+    resize: none;
+    overflow-y: hidden;
+    letter-spacing: -0.3px;
+  }
+
+  p.form_textarea {
+    @include emFont("20px", $color: $gray-01);
+    width: 100%;
+    min-height: 8rem;
+    padding: 7px;
+  }
+
+  .form_caution {
+    @include setFont(12px, $weight: 300, $color: #afafaf);
+    width: 100%;
+    display: inline-block;
+  }
+
+  .form_input_unit {
+    @include emFont("20px", $color: $gray-01);
+    @include position($r: 7px, $b: 5px);
+    height: 2.85rem;
+    line-height: 2.85rem;
+  }
+
+  .form_set_alarm {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    &:before {
+      @include position($t: 0, $r: 0);
+      width: 60px;
+      height: 100%;
+      content: "";
+      background-color: #a0a0a0;
+      border-radius: 6px;
+      transition: all 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+    &.activeon:before {
+      background-color: $theme-03;
+      right: 60px;
+      transition: all 0.3s;
+    }
+    &.activeon .in_option--on b {
+      color: white;
+    }
+    .in_option {
+      @include initInput;
+      width: 50%;
+      background-color: #e8e8e8;
+      border-color: #d8d8d8;
+      color: #bfbab9;
+    }
+    .in_option--on {
+      border: {
+        top: 1px solid;
+        left: 1px solid;
+        bottom: 1px solid;
+        top-left-radius: 6px;
+        bottom-left-radius: 6px;
+      }
+    }
+    .in_option--off {
+      border: {
+        top: 1px solid;
+        right: 1px solid;
+        bottom: 1px solid;
+        top-right-radius: 6px;
+        bottom-right-radius: 6px;
+      }
+    }
+    .in_option--off b {
+      color: white;
+    }
+    .in_option b {
+      @include zindex("default");
+      position: relative;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.form_item.type_eft {
+  position: relative;
+  padding: 14px 0 12px;
+
+  .form_label {
+    @include position($t: 25px, $l: 7px);
+    @include setFont(14px, $color: $gray-05);
+    margin-bottom: 0;
+    transition: all 0.3s;
+  }
+
+  &.active .form_label {
+    @include position($t: 0, $l: 6px);
+    @include setFont(12px, $color: $gray-06);
+    transition: all 0.3s;
+  }
+
+  .form_input {
+    @include setFont(14px, $color: $gray-01);
+    letter-spacing: 0;
+    height: 2.5rem;
+  }
+}
+
+.form_item.type_02 {
+  font-size: 13.5px;
+
+  .form_input,
+  .form_textarea {
+    @include setFont(1.185em, $color: $gray-01);
+  }
+}
+
+.form_section__timepicker {
+  width: calc(100% - 4.1rem) !important;
+  max-width: calc(1024px - 4.1rem);
+  border-radius: 10px !important;
+  
+  .popper__arrow {
+    left: 50% !important;
+    translate: translateX(-50%) !important;
+  }
+  .el-time-spinner__item {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: $gray-04;
+  }
+  .el-time-panel__content::after,
+  .el-time-panel__content::before {
+    height: 40px;
+    padding-bottom: 6px;
+  }
+  .el-time-panel__btn {
+    @include setFont(14px, $weight: 400, $color: $gray-01);
+    width: 50%;
+    margin: 0;
+  }
+  .el-time-panel__btn.confirm {
+    color: $theme-02 !important;
+    font-weight: 500 !important;
+  }
+}

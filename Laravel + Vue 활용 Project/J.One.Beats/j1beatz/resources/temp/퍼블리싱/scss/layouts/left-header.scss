@@ -1,0 +1,362 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+// 고정네비게이션
+
+.header {
+  width: $theme-hd-width;
+  background-color: $theme-hd-color;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  .logo {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+
+  &-scroll-area {
+    height: calc(100% - 260px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+  }
+
+  &-scroll-area::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-btn {
+    position: absolute;
+    top: 125px;
+    right: -52px;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+// 주요기능01
+
+.gnb01 {
+  // 주요기능 그룹
+  &-nav {
+    width: 100%;
+    height: 105px;
+    background-color: $theme-hd-nav-color;
+
+    ul {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+  } // end
+
+  // 주요기능 마이페이지-장바구니-팔로우 (hover해야하는 곳)
+  &-list {
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+
+    .tt {
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      bottom: 18px;
+      color: #fff;
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0;
+      transition: all 0.2s;
+      left: 0;
+    }
+
+    .icon {
+      opacity: 0.3;
+      background-repeat: no-repeat;
+      background-size: 30%;
+      background-position: 50% 40%;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+    @each $btn-name in btn_01_mypage, btn_02_cart, btn_03_follow {
+      .#{$btn-name} {
+        background-image: url($ui-path-img-btn+"#{$btn-name}.svg");
+      }
+    }
+
+    &.active {
+      background-color: #0f0f1f;
+      transition: all 0.2s;
+
+      .icon,
+      .tt {
+        opacity: 1;
+        transition: all 0.2s;
+      }
+    }
+
+    &.active-msg:after {
+      @include beforeAfterSelector(10px, 10px, $red-color, $r: 15px, $t: 15px);
+      border-radius: 50%;
+    }
+  } // end
+
+  // 주요기능 소메뉴 그룹 (hover하면 나타나는 메뉴)
+  &-lnb {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &-con {
+      display: none;
+      padding: 25px 0;
+    }
+
+    // 마이페이지
+    &-con.__mypage .btn {
+      width: 80%;
+      display: block;
+      margin: 10px auto 30px;
+    }
+
+    &-con.__mypage .my_info {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    &-con.__mypage .my_id {
+      padding: 0 0 25px;
+      font-size: 1.2em;
+      font-weight: 200;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    &-con.__mypage .my_using {
+      background: #000000;
+      color: #bc9bff;
+      font-size: 0.85em;
+      padding: 25px 20px;
+    }
+
+    &-con.__mypage .my_using .btn {
+      @include buttonStyle(30px, 45px, $theme-button01-color, #fff);
+      margin-bottom: 0;
+    }
+
+    // 장바구니
+    &-con.__cart li {
+      padding: 1.2em 0 1em 7.5em;
+    }
+
+    &-con.__cart .input-style-02 + label {
+      @include position($t: 50%, $l: 18px);
+      transform: translateY(-50%);
+    }
+
+    &-con.__cart li input[type="checkbox"] {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20px;
+    }
+
+    &-con.__cart .btns {
+      padding: 20px 20px 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-con.__cart .btns .btn {
+      width: 48%;
+    }
+
+    // 팔로우
+    &-con.__flw li {
+      padding: 1.6em 0 1.2em 5.8em;
+      padding-right: 1.2em;
+    }
+
+    &-con.__flw li input[type="checkbox"] {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20px;
+    }
+
+    &-con.__flw .thumb-mini {
+      left: 23px;
+    }
+
+    &-con.__flw .pd_name {
+      width: 100%;
+      display: inline-block;
+      color: #bfbfc7;
+      font-weight: 400;
+      font-size: 1em;
+    }
+  } // end
+
+  .more_info {
+    margin-bottom: 25px;
+    padding: 0 20px;
+
+    .left {
+      font-size: 17px;
+      color: #bc9bff;
+    }
+
+    .left em {
+      color: #bc9bff;
+    }
+
+    .right {
+      float: right;
+      color: #fff;
+    }
+
+    .right a {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+    }
+  }
+}
+
+// gnb01-list 마이페이지
+
+.lnb01 {
+  width: 100%;
+  font-size: 18px;
+
+  a {
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 0.8em 3.2em;
+    font-size: 0.85em;
+    font-weight: 100;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #7e2aff;
+      transition: all 0.2s;
+    }
+  }
+
+  &.before_login {
+    text-align: center;
+  }
+
+  & > li {
+    position: relative;
+  }
+
+  & > li.active-msg:after {
+    @include beforeAfterSelector(10px, 10px, $red-color, $r: 30px, $t: 15px);
+    border-radius: 50%;
+  }
+}
+
+// gnb01-list 장바구니, 팔로우
+
+.lnb02 {
+  width: 100%;
+  font-size: 18px;
+
+  li {
+    position: relative;
+    height: 4.5em;
+    font-size: 0.9em;
+    padding-right: 1.2em;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 0.2s;
+    }
+  }
+
+  li.active-new:after {
+    @include beforeAfterSelector(10px, 10px, $red-color, $r: 30px, $t: 50%);
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// 주요기능02
+
+.gnb02 {
+  ul {
+    font-size: 18px;
+  }
+
+  &-nav {
+    width: 100%;
+  }
+
+  &-list {
+    font-size: 0.9em;
+
+    a,
+    label {
+      color: #fff;
+      width: 100%;
+      padding: 1.15em 30px;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    a:hover,
+    label:hover {
+      background-color: rgba(126, 42, 255, 0.2);
+      transition: all 0.1s;
+    }
+
+    input[type="checkbox"]:checked ~ .gnb02-lnb {
+      height: 35vh;
+      overflow: auto;
+    }
+  }
+
+  &-lnb {
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+    transition: min-height 0.2s;
+
+    li {
+      font-size: 0.83em;
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      width: 100%;
+      padding: 1em 50px;
+      display: inline-block;
+    }
+
+    a:hover {
+      background-color: rgba(126, 42, 255, 0.1);
+    }
+  }
+}
+
+.gnb02-list label{
+  position: relative;
+}
+
+.gnb02-list label:after{
+  display: block;
+  content: '';
+  position: absolute;
+  border: 7px solid transparent;
+  border-top: 7px solid rgba(255,255,255,0.3);
+  right: 30px;
+  top: 57%;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+/* 
+    --------------------------------------------------------------------
+            * input_style component *
+            // style-01 진한보라
+            // style-02 연한보라
+            // style-03 큰체크
+    --------------------------------------------------------------------
+*/
+input.input-style-01, input.input-style-02, input.input-style-03 {
+  display: none;
+}
+
+input.input-style-01 + label:before,
+input.input-style-02 + label:before,
+input.input-style-03 + label:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  background-image: url("/img/icon/checkbox-outline.svg");
+}
+
+input.input-style-03 + label:before {
+  background-image: url("/img/icon/checkbox-purple-check-after.svg");
+  width: 43px;
+  height: 43px;
+}
+
+input.input-style-01:checked + label:before {
+  background-image: url("/img/icon/checkbox-purple.svg");
+}
+
+input.input-style-02:checked + label:before {
+  background-image: url("/img/icon/checkbox-lighten-purple.svg");
+}
+
+input.input-style-03:checked + label:before {
+  background-image: url("/img/icon/checkbox-purple-check-before.svg");
+}
+/*# sourceMappingURL=input_checkbox.css.map */

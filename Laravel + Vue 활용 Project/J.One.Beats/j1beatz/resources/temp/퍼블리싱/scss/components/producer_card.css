@@ -1,0 +1,163 @@
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/* 
+    ----------------- 
+        array 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+/* 
+    --------------------------------------------------------------------
+            * producer-card component *
+    --------------------------------------------------------------------
+*/
+.producer-card {
+  width: 215px;
+  display: inline-block;
+}
+
+.producer-card-thumbnail {
+  width: 100%;
+  height: 214px;
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.producer-card-thumbnail:before {
+  background: linear-gradient(35deg, rgba(0, 0, 0, 0.35), transparent);
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.producer-card-name {
+  text-align: center;
+  color: #fff;
+  font-size: 1.3em;
+  padding: 0 0.3em;
+  height: 1.8em;
+  overflow: hidden;
+  margin: 0.6em 0;
+  line-height: 1.6;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+  font-weight: 400;
+}
+
+.producer-card-ranking {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.producer-card-summing_up {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+
+.producer-card-summing_up li {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.producer-card-summing_up li:nth-child(2) {
+  padding: 0 17px;
+}
+
+.producer-card-summing_up li b {
+  color: #bc9bff;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.producer-card-summing_up li em {
+  color: #fff;
+  position: relative;
+  display: block;
+}
+
+.producer-card-summing_up li:first-child em {
+  padding-left: 14px;
+}
+
+.producer-card-summing_up li:first-child em:before {
+  content: "";
+  background-image: url("../../img/btn/like-heart-purple.svg");
+  position: absolute;
+  left: -10px;
+  top: -2px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
+.sub-section .producer-card-thumbnail {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sub-section .producer-card-thumbnail:before {
+  display: none;
+}
+
+.sub-section .producer-card-name {
+  color: #333;
+  font-weight: bold;
+}
+
+.sub-section .producer-card-summing_up {
+  background-color: #f9f9f9;
+}
+
+.sub-section .producer-card-summing_up em {
+  color: #333;
+  font-weight: 500;
+}
+/*# sourceMappingURL=producer_card.css.map */

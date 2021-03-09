@@ -1,0 +1,230 @@
+/*------------------------MARKET RESPONSIVE STYLE 거래소 페이지 반응형 START------------------------*/
+
+@media all and (max-width: 1750px) {
+
+	/*.trans_wrap .center_con .trans_hd (coin state bar-코인상태바)*/
+	.trans_wrap .center_con .trans_hd .coin_state_1 {
+		width: 45%;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_2 {
+		width: 55%;
+	}
+	/*//.trans_wrap .center_con .trans_hd (coin state bar-코인상태바)*/
+}
+
+@media all and (max-width: 1650px) {
+
+	/*.trans_wrap .center_con .trans_hd (coin state bar-코인상태바)*/
+	.trans_wrap .center_con .trans_hd .coin_state_1 {
+		width: 45%;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_2 {
+		width: 55%;
+		margin-bottom: 15px;
+	}
+	.trans_wrap .center_con .coin_state_1 .coin_name {
+	}
+
+	.trans_wrap .center_con .coin_state_1 .coin_name span {
+		text-align: right;
+		padding-right: 20px;
+	}
+	/*//.trans_wrap .center_con .trans_hd (coin state bar-코인상태바)*/
+
+	/*.trans_wrap .center_con .chart_con (chart area-트레이딩 뷰 차트영역)*/
+	.trans_wrap .center_con .chart_con {
+		height: 345px;
+	}
+	/*//.trans_wrap .center_con .chart_con (chart area-트레이딩 뷰 차트영역)*/
+}
+
+@media all and (min-width: 1581px) {
+
+	/*.trans_wrap .center_con .deal_wrap .deal_con (trans con-구매 판매창)*/
+	/*
+	.trans_wrap .center_con .deal_wrap .deal_con.coin_buy_con, .trans_wrap .center_con .deal_wrap .deal_con.coin_sell_con {
+		display: block !important;
+	}
+	*/
+	/*//.trans_wrap .center_con .deal_wrap .deal_con (trans con-구매 판매창)*/
+}
+
+@media all and (max-width: 1580px) {
+
+	/*.ntc_bar (news bar-공지사항 위로 움직이는 영역)*/
+	.ntc_bar.active .ntc_show {
+		display: none;
+	}
+	.ntc_bar.active, .ntc_bar.active .close_btn {
+		width: 35px;
+	}
+	.ntc_bar.active .close_btn span {
+		right: 15px !important;
+	}
+	/*//.ntc_bar (news bar-공지사항 위로 움직이는 영역)*/
+
+	/*.event_bar (news bar-공지사항 위로 움직이는 영역)*/
+	.event_bar.active .event_show {
+		display: none;
+	}
+	.event_bar.active, .event_bar.active .close_btn {
+		width: 35px;
+	}
+	.event_bar.active .close_btn span {
+		right: 15px !important;
+	}
+	/*//.event_bar (news bar-공지사항 위로 움직이는 영역)*/
+
+	/*.trans_wrap .center_con .deal_wrap .deal_con (trans con-구매 판매창)*/
+	.trans_wrap .center_con .deal_wrap {
+		position: relative;
+	}
+	.trans_wrap .center_con .choice_option_tit {
+		display: block;
+	}
+	.trans_wrap .center_con .deal_con .tit, .trans_wrap .center_con .deal_wrap .deal_con.coin_sell_con {
+		display: none;
+	}
+	.trans_wrap .center_con .deal_wrap .deal_con.coin_buy_con {
+		border-right: 0;
+	}
+	.trans_wrap .center_con {
+		padding: 0 340px;
+		padding-left: 270px;
+	}
+	.trans_wrap .left_con{
+		width: 260px;
+	}
+	.trans_wrap .right_con {
+		width: 330px;
+	}
+	.trans_wrap .market_list_tab{
+		height: 44px;
+	}
+	.trans_wrap .market_list_tab li label {
+		font-size: 14px;
+		padding: 11px 0;
+	}
+	.trans_wrap .tit .coin_sch_bar {
+		padding: 13px 11px 0;
+	}
+	.trans_wrap .tit .coin_sch_bar input {
+		height: 35px;
+		background: url(/storage/image/homepage/icon/sch_icon.svg) no-repeat 10px center;
+		background-size: 15px;
+		font-size: 12px;
+	}
+	.trans_wrap .coin_table tr td:nth-child(1) {
+		padding-left: 48px;
+	}
+	.trans_wrap .coin_table tr td:nth-child(1):before {
+		width: 3px;
+	}
+	.trans_wrap .coin_table tr td:nth-child(1) .coin_img {
+		width: 30px;
+		height: 30px;
+	}
+	.trans_wrap .coin_table tr td:nth-child(1) p {
+		font-size: 13px;
+	}
+	.trans_wrap .coin_table tr td:nth-child(1) span {
+		font-size: 12px;
+	}
+	.trans_wrap .coin_table tr td:nth-child(2) {
+		font-size: 12px;
+		width: 27%;
+		padding-right: 10px;
+	}
+	.trans_wrap .coin_table tr td:nth-child(3) {
+		padding-right: 12px;
+		font-size: 12px;
+		width: 25%;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_1>p{
+		margin-top: 2px;
+	}
+	.trans_wrap .center_con .coin_state_1 .coin_num_data span:nth-child(1) b{
+		font-size: 22px;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_1{
+		padding: 14px 10px;
+	}
+	.trans_wrap .center_con .coin_state_1 .coin_name>img {
+		width: 50px;
+		height: 50px;
+	}
+	.trans_wrap .center_con .deal_con .tit span, .trans_wrap .center_con .choice_option_tit span{
+		padding: 10px 0;
+		font-size: 14px;
+	}
+	.trans_wrap .center_con .buysell_table ul li button {
+		font-size: 12px;
+		padding: 10px 0;
+		height: 35px;
+	}
+	.trans_wrap .center_con .buysell_table .buysell_btn button {
+		font-size: 15px;
+	}
+	.trans_wrap .center_con .buysell_table .buysell_btn {
+		height: 50px;
+		margin-bottom: 25px;
+	}
+	.deal_n_history_wrap .history_wrap .right_con_inbox-2 .scl_wrap {
+		height: 437px;
+	}
+	.trans_wrap .center_con .trans_hd {
+		height: auto;
+		margin-bottom: 10px;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_1 {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding: 10px 10px;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_1>div {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_1>p {
+		float: none;
+		margin-top: 0;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.trans_wrap .center_con .coin_state_1 .coin_name>img {
+		float: left;
+		width: 50px;
+		height: 50px;
+	}
+	.trans_wrap .center_con .coin_state_1 .coin_num_data span:nth-child(1) b {
+		font-size: 22px;
+	}
+	.trans_wrap .center_con .trans_hd .coin_state_2 {
+		margin-bottom: 0;
+		background: #fff;
+		float: none;
+		height: auto;
+		border-top: 1px solid #dcdcdc;
+		width: 100%;
+	}
+	/*//.trans_wrap .center_con .deal_wrap .deal_con (trans con-구매 판매창)*/
+}
+
+@media (max-width: 1280px){
+	.trans_wrap .left_con{
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		bottom:auto !important;
+	}
+	.trans_wrap .right_con{
+		position: absolute !important;
+		top: 0 !important;
+		right: 0 !important;
+		bottom:auto !important;
+	}
+}
+
+/*------------------------MARKET RESPONSIVE STYLE 거래소 페이지 반응형 END------------------------*/

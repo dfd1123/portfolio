@@ -1,0 +1,132 @@
+/*
+    PAGES - 주문취소신청
+*/
+
+#dg-apply-cancel-wrapper {
+  padding-top: 35px;
+  padding-bottom: 200px;
+
+  #_mini_quick_menu {
+    top: 110px;
+    right: -80px;
+  }
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  .l-contents-group {
+    padding: 0 10px;
+  }
+
+  // 좌측 정보
+  .in-detail-info {
+    border-bottom: 1px solid $light_gray6;
+  }
+
+  .in-detail-info .in-information {
+    border-bottom: 0;
+  }
+  // 좌측 정보 END
+
+  // 우측 취소 정보
+  .in-pay-info .in-information {
+    padding: 10px 0 10px;
+    margin-bottom: 25px;
+  }
+
+  .in-pay-info ._list {
+    &--sale ._txt {
+      color: #ff5656;
+    }
+    &--final {
+      border-top: 1px solid #c8c8c8;
+      padding: 13px 0px 0px 115px;
+      margin-top: 20px;
+    }
+    &--final ._label {
+      @include fontType01(#{$px-18}rem, $weight: 500);
+
+      top: calc(50% + 8px);
+    }
+    &--final ._txt {
+      @include fontType01(#{$px-24}rem, $weight: bold, $color: $purple);
+    }
+    ._txt {
+      text-align: right;
+      font-weight: 400;
+    }
+  }
+  // 우측 취소 정보 END
+}
+
+/*
+    PAGES - 환불신청
+*/
+
+#dg-apply-refund-wrapper {
+  padding-top: 35px;
+  padding-bottom: 200px;
+
+  #_mini_quick_menu {
+    top: 110px;
+    right: -80px;
+  }
+
+  .l-con-area.full {
+    width: 100%;
+  }
+
+  .l-contents-group {
+    padding: 0 10px;
+  }
+
+  // 좌측 정보
+  .in-detail-info .l-con-article {
+    border-bottom: 1px solid $light_gray6;
+    margin-bottom: 30px;
+  }
+
+  .in-detail-info .l-con-article:first-child {
+    padding-bottom: 25px;
+  }
+
+  .in-detail-info .l-con-article:last-child {
+    padding-bottom: 15px;
+  }
+
+  .in-detail-info .in-information {
+    border-bottom: 0;
+  }
+  // 좌측 정보 END
+
+  // 우측 취소 정보
+  .in-pay-info .in-information {
+    padding: 10px 0 10px;
+    margin-bottom: 25px;
+  }
+
+  .in-pay-info ._list {
+    &--sale ._txt {
+      color: #ff5656;
+    }
+    &--final {
+      border-top: 1px solid #c8c8c8;
+      padding: 13px 0px 0px 115px;
+      margin-top: 20px;
+    }
+    &--final ._label {
+      @include fontType01(#{$px-18}rem, $weight: 500);
+
+      top: calc(50% + 8px);
+    }
+    &--final ._txt {
+      @include fontType01(#{$px-24}rem, $weight: bold, $color: $purple);
+    }
+    ._txt {
+      text-align: right;
+      font-weight: 400;
+    }
+  }
+  // 우측 취소 정보 END
+}

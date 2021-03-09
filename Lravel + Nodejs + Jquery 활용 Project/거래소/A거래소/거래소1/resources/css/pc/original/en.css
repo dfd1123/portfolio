@@ -1,0 +1,147 @@
+/* common.css */
+.board_st_wrap .board_st_inner .left_tit,
+.board_st_wrap .list_tab_ul li,
+.board_st_wrap .tab_menu_bar ul li,
+.board_st_wrap .main_tit {
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0;
+}
+
+/* header.css */
+.navbar-sharebits .right_nav .mypage_toggle li:first-child a{
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0;
+}
+
+/* main.css */
+.main_visual_wrap .viusal_top,
+.main_visual_wrap .p_2nd b,
+.main_section_wrap_1 .text_box h1,
+.main_section_wrap_2 .sharebits_advan_ul li h2,
+.main_section_wrap_3 .title{
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0;
+}
+
+/* mypage.css */
+.mypage_hd h1{
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0;
+}
+
+.main_visual_wrap .p_2nd b,
+.main_visual_wrap .p_3rd {
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0;
+}
+
+.lv_certifi_before .certifi_form_group:nth-child(1) .certify_btn{
+    width: 35%;
+}
+
+/* 거래소 */
+
+.trans_wrap .center_con .buysell_table td{
+    padding-left: 55px;
+}
+
+/* 입출금 */
+.ta_coin_list_wrap .coin_chart_tbl tbody > tr > td:nth-child(4){
+    width: 130px;
+}
+.coin_chart_tbl .status_btn{
+    width: 90%;
+}
+
+.second_wdr_con .second_wdr_form_group .btn {
+    width: 23%;
+    padding: 0.2rem 0.5rem;
+}
+
+.second_wdr_con .second_wdr_form_group_wrap .ta_form_group label{
+    width: 195px;
+}
+
+/* 내자산 */
+
+.history_con .note_label .btn_style{
+    width: 70px;
+}
+
+.table_label thead > tr > th{
+    vertical-align: middle;
+}
+
+.my_asset_2 .note_label > .type_sort_slt{
+    width: 125px;
+}
+
+
+
+/* ICO */
+
+.board_st_wrap .tab_menu_bar.eng_w_long ul li{
+    width: 200px;
+}
+
+.ico_write_con .info_form_group._notice h5:after{
+    content:'Use thumbnail image resolution at least 570 X 570px.';
+}
+.ico_write_con .info_form_group._detail_page h5:after{
+    content:'Attached images Up to 3 / resolution 1225px width is recommended. (It should be less than 20MB per piece.)';
+}
+
+.ico_write_con .info_form_group._interview label.under_txt:after {
+    content: '(Max 10)';
+    color: #474846;
+    top: 22px;
+}
+
+.attach_btn{
+    width: 145px;
+}
+
+.ico_write_con .info_form_group label.tit{
+    width: 210px;
+}
+
+/* 장외거래 */
+.board_st_wrap .list_tab_ul li{
+    font-size: 13px;
+}
+
+.p2p_onpro_wrap .list_in_con .step_ment{
+    width: 125%;
+}
+.history_con .period_sch_group .period_sch_input{
+    background-position: 95% 50%;
+    width: 110px;
+}
+
+.p2p_modal_popup label{
+    width: 25%;
+}
+
+.p2p_modal_popup .small_slc{
+    width: 55%;
+}
+
+.p2p_list_group .list_in_con .buy_tit::before {
+    content: 'Buy';
+}
+.p2p_list_group .list_in_con .sell_tit::before {
+    content: 'Sell';
+}
+
+/* tab_menu_bar */
+.board_st_wrap .tab_menu_bar ul li{
+    width: 155px;
+}
+
+/* 헤더 */
+
+.drop_menu:nth-child(4):hover .drop_down{
+	height: 120px;
+	transition: all 0.5s;
+	padding: 0 0 10px 0;
+}

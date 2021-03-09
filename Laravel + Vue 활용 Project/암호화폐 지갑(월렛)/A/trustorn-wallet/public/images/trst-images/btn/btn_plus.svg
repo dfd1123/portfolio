@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <g id="btn_plus" transform="translate(-296.5 -203.5)">
+    <line id="선_56" data-name="선 56" x2="10" transform="translate(296.5 208.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="선_57" data-name="선 57" x2="10" transform="translate(301.5 203.5) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,497 @@
+/*
+    COMPONENT - donggle clothes history component
+*/
+
+// donggle about order number label
+.dg-about-odnum-label {
+  @include fontType01(#{$px-13}em);
+  padding: 4px 0;
+  min-height: 30px;
+
+  dt {
+    @include inlineBlockStyle(middle);
+  }
+
+  dd {
+    @include fontType01(inherit, #787878, 200);
+    @include fontType02(0.2px);
+    @include inlineBlockStyle(middle);
+
+    padding: 0 10px 0 5px;
+  }
+  .rounded-btn-outline {
+    @include fontType01(#{$px-13}em);
+
+    border-color: #c8c8c8;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 10px;
+  }
+}
+
+// donggle final price label
+.dg-final-price-label {
+  background-color: $light_gray5;
+  border-top: 1px solid $light_gray6;
+  border-bottom: 1px solid $light_gray6;
+  padding: 12px 30px 12px;
+  text-align: right;
+
+  span {
+    @include fontType01(#{$px-13}em, $color: #787878);
+  }
+
+  span b {
+    padding: 0 3px 0 5px;
+    color: #333333;
+  }
+
+  strong {
+    color: $purple;
+    padding: 0 10px;
+  }
+
+  ._point_size_pp {
+    @include fontType01(#{$px-18}rem, $color: $purple);
+  }
+
+  ._point_size {
+    @include fontType01(#{$px-18}rem);
+  }
+}
+
+// donggle 주문내역조회 / 환불내역조회할때 조회하는 필터그룹
+.dg-filter-inquiry-group {
+  background-color: #fafafa;
+  padding: 20px 20px 15px;
+  border: 1px solid $light_gray6;
+
+  .in-sorting {
+    margin-bottom: 12px;
+  }
+
+  .in-sorting ._type {
+    border-color: #c8c8c8;
+    .sort_radio_input:checked ~ .word{
+      color: $black;
+      font-weight: 400;
+    }
+  }
+
+  .in-sorting ._type .word {
+    @include hoverActiveFont(#787878);
+    @include fontType01(13px, $weight: 100, $color: $gray);
+
+    padding: 0 10px;
+  }
+
+  .in-sorting ._type:first-child .word {
+    padding-left: 0;
+  }
+
+  // .in-sorting ._type.active .word {
+  //   color: #333;
+  //   font-weight: 400;
+  // }
+
+  .in-bottom-group {
+    border-top: 1px solid $light_gray6;
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
+
+    .square-btn-outline {
+      @include inlineBlockStyle(middle);
+      @include fontType01(14px, $color: #787878);
+      height: 40px;
+      line-height:40px;
+      border-color: #c8c8c8;
+      padding:0px 13px;
+    }
+
+    .square-btn-outline.active {
+      background-color: #333;
+      border-color: #333;
+      color: white;
+    }
+
+    ._btns_group {
+      @include inlineBlockStyle(middle);
+    }
+
+    ._btns_group .square-btn-outline {
+      float: left;
+      margin: -1px;
+    }
+
+    ._input_group {
+      @include inlineBlockStyle(middle);
+    }
+
+    ._input_group .square-btn-outline {
+      @include hoverActiveBg(#676767);
+
+      background-color: #676767;
+      color: white;
+      border-color: #333;
+      margin-left: 8px;
+    }
+
+    ._input_group label {
+      @include fontType01(#{$px-13}em, $weight: 200, $color: #787878);
+      @include inlineBlockStyle(middle);
+
+      padding-right: 5px;
+      user-select: none;
+    }
+
+    ._mid {
+      padding: 0 3px;
+      @include fontType01(#{$px-13}em, $weight: 100, $color: #787878);
+    }
+
+    .period-input {
+      @include fontType01(#{$px-13}em);
+      @include bgimg(url($path-btn+"btn_calendar.svg"));
+      @include bgOption($size: 17px, $position: calc(100% - 10px) 50%);
+      @include inputInit(
+        $bd: 1px solid #c8c8c8,
+        $pd: 0 35px 0 10px,
+        $pointer: auto,
+        $focus-bd: #333
+      );
+      @include inlineBlockStyle(middle);
+
+      height: 40px;
+      width: 150px;
+    }
+  }
+}
+
+.vdp-datepicker {
+  @include inlineBlockStyle(middle);
+
+  height: 40px;
+  width: 150px;
+  > div {
+    > input {
+      @include fontType01(#{$px-13}em);
+      @include bgimg(url($path-btn+"btn_calendar.svg"));
+      @include bgOption($size: 17px, $position: calc(100% - 10px) 50%);
+      @include inputInit(
+        $bd: 1px solid #c8c8c8,
+        $pd: 0 35px 0 10px,
+        $pointer: auto,
+        $focus-bd: #333
+      );
+      @include inlineBlockStyle(middle);
+
+      height: 40px;
+      width: 150px;
+    }
+  }
+}
+
+.dg-clothes-history-card {
+  .dg-clothes-thumbnail {
+    @include position($t: 0, $l: 0);
+    width: 90px;
+    height: 90px;
+
+    .in-image {
+      border-radius: 0;
+    }
+  }
+  .in-content .inner-box {
+    width: 100%;
+    position: relative;
+    padding-left: 108px;
+  }
+  .in-content {
+    padding: 22px 17px 17px;
+    margin-top: -1px;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+
+    ._informations {
+      @include fontType01(#{$px-13}em);
+
+      margin-bottom: 13px;
+    }
+    ._informations li {
+      @include inlineBlockStyle(middle);
+
+      line-height: 1;
+    }
+    ._informations li:first-child {
+      padding-right: 10px;
+      border-right: 1px solid $light_gray6;
+    }
+    ._informations li a {
+      @include fontType01(inherit, #787878, 200);
+    }
+    ._informations li a:before {
+      @include inlineBlockStyle(middle);
+      @include fontType01(#{$px-13}em, $black, 400);
+
+      position: relative;
+      top: -1px;
+    }
+    ._informations ._sellername a:before {
+      @include makePseudo("스토어명");
+
+      padding-left: 0;
+      padding-right: 8px;
+    }
+    ._informations ._prdtnum a:before {
+      @include makePseudo("품번");
+
+      padding: 0 8px;
+    }
+    ._name {
+      @include fontType01(#{$px-19}em, $weight: 400);
+
+      margin: 8px 0 10px;
+      line-height: 1.5;
+    }
+    ._options {
+      border-top: 1px solid $light_gray6;
+      border-bottom: 1px solid $light_gray6;
+      padding: 14px 0;
+    }
+    ._op_category {
+      position: relative;
+      padding-left: 2.5em;
+    }
+    ._op_tit {
+      @include position($t: 4px, $l: 0);
+      @include fontType01(#{$px-11}em, $weight: 400);
+    }
+    ._op_list {
+      @include fontType01(#{$px-13}em, $weight: 100, $color: #787878);
+      @include fontType02(0, 1.5);
+
+      margin-bottom: 2px;
+    }
+    ._op_list span {
+      @include makeAfter("/") {
+        padding: 0 1px 0 4px;
+      }
+    }
+    ._op_list span:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    ._amount {
+      padding-left: 2.5em;
+    }
+    ._amount span {
+      @include fontType01(#{$px-13}em, $weight: 100, $color: #787878);
+    }
+    ._amount b {
+      @include fontType01(inherit, $weight: bold, $color: black);
+      padding-right: 3px;
+    }
+    ._price {
+      padding: 8px 0 13px;
+      border-bottom: 1px solid $light_gray6;
+      margin-bottom: 17px;
+    }
+    ._price span {
+      @include fontType01(#{$px-13}em, $weight: 100, $color: #787878);
+      @include inlineBlockStyle(middle);
+    }
+    ._price b {
+      @include fontType01(inherit, $weight: bold, $color: black);
+      @include fontType02(0, 1);
+
+      padding-left: 6px;
+    }
+    ._sale_price {
+      border-right: 1px solid $light_gray6;
+      border-left: 1px solid $light_gray6;
+      padding: 0 12px;
+      margin: 0 12px;
+    }
+    ._total_price b {
+      color: $purple;
+    }
+    ._btn_list .rounded-btn-outline {
+      @include fontType01(#{$px-15}em, $color: #787878);
+
+      border-color: #c8c8c8;
+      padding: 0 14px;
+      margin-right: 5px;
+
+      &:hover {
+        color: #333;
+        border-color: #333;
+      }
+    }
+    ._order_status {
+      @include position($t: 0, $r: 0);
+      @include fontType01(#{$px-13}em, $weight: 400, $color: white);
+
+      cursor: default;
+      background-color: #333333;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 17px;
+    }
+
+    ._ask_textarea {
+      @include fontType01(#{$px-13}rem, $weight: 300, $color: #c8c8c8);
+
+      text-align: right;
+    }
+    ._ask_textarea textarea {
+      @include fontType01(13px);
+      @include fontType02(-0.2px, 1.7);
+
+      width: 100%;
+      resize: none;
+      min-height: 78px;
+      border: 1px solid $light_gray6;
+      padding: 10px;
+      margin-bottom: 7px;
+      border-radius: 0;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      outline: none;
+
+      &:focus {
+        border-color: #333;
+      }
+    }
+    ._ask_textarea textarea::placeholder {
+      color: #c8c8c8;
+    }
+    ._del_btn {
+      @include position($r: -10px, $t: -10px);
+      @include buttonInit(
+        $bg: white,
+        $bd-radius: 50%,
+        $pd: 10px,
+        $pointer: pointer
+      );
+
+      user-select: none;
+    }
+  }
+}
+
+.dg-clothes-history-card.type-cart {
+  .in-content {
+    padding-bottom: 2px;
+    ._price {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+    ._op_category {
+      padding-left: 0;
+    }
+    ._op_tit {
+      @include position(relative, 0, 0);
+
+      margin-bottom: 5px;
+    }
+    ._tit_span {
+      @include inlineBlockStyle(middle);
+      margin-right: 8px;
+    }
+    ._edit_btn {
+      @include fontType01(10px, $weight: 100, $color: #787878);
+      border-color: #c8c8c8;
+      height: 18px;
+      padding: 0 8px;
+      min-width: unset;
+      line-height: 1;
+    }
+    ._amount {
+      padding-left: 0;
+    }
+  }
+}
+
+.dg-clothes-history-card.type-detail {
+  .in-content {
+    ._op_category {
+      padding-left: 0;
+    }
+    ._op_tit {
+      @include position(relative, 0, 0);
+
+      margin-bottom: 7px;
+    }
+    ._op_tit span {
+      @include inlineBlockStyle(middle);
+      margin-right: 8px;
+    }
+    ._amount {
+      padding-left: 0;
+    }
+
+    ._options {
+      display: flex;
+    }
+    ._options ._in_col:first-child {
+      width: 80%;
+      padding-right: 22px;
+    }
+    ._options ._in_col:last-child {
+      width: 20%;
+      min-width: 235px;
+      padding-left: 19px;
+      border-left: 1px solid $light_gray6;
+    }
+    ._cp_status {
+      position: relative;
+    }
+    ._cp_tit {
+      @include fontType01(#{$px-11}em, $weight: 400);
+
+      margin-bottom: 7px;
+    }
+    ._cp_list {
+      .nothing {
+        color: #c8c8c8;
+      }
+    }
+    ._cp_list span {
+      @include inlineBlockStyle;
+      @include fontType01(#{$px-13}em);
+      @include fontType02(0, 1.5);
+      @include ellipse(2, 19px);
+    }
+    ._price {
+      margin-bottom: 12px;
+    }
+    ._price.mb-0 {
+      margin-bottom: 0;
+    }
+    ._etc_ment {
+      width: 100%;
+      padding-bottom: 5px;
+    }
+    ._etc_ment_tit {
+      @include fontType01(#{$px-11}em, $weight: 400);
+
+      margin-bottom: 9px;
+    }
+    ._etc_ment_list {
+      @include fontType01(#{$px-13}em, $weight: 300, $color: #787878);
+    }
+  }
+}
+
+.dg-clothes-history-card.type-cancel {
+  .in-content {
+    padding-bottom: 2px;
+    ._price {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}

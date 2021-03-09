@@ -1,0 +1,87 @@
+.slick-dots {
+  position: absolute;
+  top: -43px;
+  right: 0px;
+  width: 100%;
+  height: fit-content;
+  display: block;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 0px;
+    padding: 0;
+    cursor: pointer;
+
+    > button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 3px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: 0;
+      background: 0 0;
+    }
+
+    &.slick-active button:before {
+      color: #a134e8;
+    }
+
+    &:active button:before {
+      color: #a134e8;
+    }
+
+    button:before {
+      font-family: slick;
+      font-size: 10px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: "•";
+      text-align: center;
+      opacity: 0.25;
+      color: #dbdbdb;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+
+.popular-main-lists {
+  .slick-dots {
+    left: -173px;
+  }
+}
+
+.slick-dotted {
+  &.slick-slider {
+    margin-bottom: 0;
+  }
+}
+
+.img-thumbnail_wrap .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+#dg-product-detail-view-wrapper{
+  .slick-dots li.slick-active button:before{
+    color: #FC4EAD;
+  }
+}

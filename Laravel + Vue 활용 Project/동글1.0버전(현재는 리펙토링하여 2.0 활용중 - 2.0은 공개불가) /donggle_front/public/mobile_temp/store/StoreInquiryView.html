@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-store-inquiry-wrapper" class="dg-store-wrapper">
+      <div class="l-store-qna-contents">
+        <div class="l-con-area">
+          <!-- 
+          등록된 문의가 없을 때: ._question_fill 에 .display_none
+          등록된 문의가 있을 때: ._question_empty 와 ._question_empty_a 에 .display_none
+          답변이 있을 때: ._no_response 에 display_none
+          답변이 없을 때: ._response 에 display_none
+          왼쪽 1:1 문의 영역의 높이가 576px 넘길 때 ._question_wrap 에 .over-y_scroll 추가
+          스토어문의 클릭시 ._support_title 에 .active 추가
+          답변이 없을 시 ._support_answer_content 에 ._no_answer 추가
+
+          ._support_title_wrapper > ._write_popup_btn 
+          클릭시
+          .store_qna_write_popup_wrapper
+          remove class .display_none
+         -->
+          <!-- 1) 스토어문의 -->
+          <!-- 스토어문의 작성 팝업 -->
+          <div
+            class="_popup_wrapper _write_ppopup_wrapper qna_write_popup_wrapper _cs_support_write_popup_wrapper display_none"
+          >
+            <div class="_bg"></div>
+            <div class="_popup_wrap">
+              <div class="_popup_title">
+                <h4>스토어 문의 작성<button type="button" class="_close_btn"> </button></h4>
+              </div>
+              <div class="_popup_content">
+                <!-- 상품 종류 E -->
+                <div class="_product_view _store_view vi">
+                  <div class="symbol-circle">
+                    <img
+                      src="/images/img/profile_store_02.jpg"
+                      alt="스토어2 로고"
+                      class="_imgtag"
+                    />
+                  </div>
+                  <div class="_text">
+                    <p>스토어명</p>
+                  </div>
+                </div>
+                <!-- 상품 종류 E -->
+                <h5>문의사항</h5>
+                <div class="_input_wrap">
+                  <div class="dg_write write_title">
+                    <label for="#" class="dg_blind">제목</label>
+                    <input
+                      type="tel"
+                      id="#"
+                      class="input_text_box"
+                      placeholder="제목"
+                      maxlength="13"
+                    />
+                  </div>
+                </div>
+                <!-- 에디터 대신 삽입 -->
+                <div class="_edter_wrap">
+                  <textarea
+                    class="_editer"
+                    name="#"
+                    id="#"
+                    placeholder="내용"
+                  ></textarea>
+                </div>
+                <!-- 에디터 대신 삽입 E -->
+                <div class="dg-dubble_btn_wrap clear_both">
+                  <button type="button" class="dg-btn_line dg-dubble_btn">작성완료</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 스토어문의 작성 팝업 E -->
+          <div class="l-con-article clear_both">
+
+            <!-- 1. 스토어 문의 질문목록 -->
+            <section>
+              <div class="_page_title_wrap">
+                <h2>
+                  스토어 문의
+                  <a href="#" class="_back_btn">뒤로가기</a>
+                  <button href="#" class="_write_popup_btn">문의하기</button>
+                </h2>
+              </div>
+
+              <div class="_board">
+                <!-- 등록된 문의가 없을 때  -->
+                <div class="_empty">
+                  <div class="_img_box">
+                    <img
+                      src="/images/icon/empty_inquiry.svg"
+                      alt="등록된 문의가 없습니다."
+                    />
+                  </div>
+                  <div class="_text">등록된 문의가 없습니다.</div>
+                </div>
+                <!-- 등록된 문의가 없을 때 E -->
+
+                <!-- 등록된 문의가 있을 때 -->
+                <ul
+                  class="_board_layout _inquiry_wrap _question_fill"
+                >
+                  <li class="_inquiry_content clear_both">
+                    <div class="symbol-circle">
+                      <img
+                        src="/images/img/profile_store_01.jpg"
+                        alt="스토어1 로고"
+                        class="_imgtag"
+                      />
+                    </div>
+                    <button type="button" class="_board_title_label _quastion_title_label">
+                      <!-- ._name 글자만큼 ._inquiry_content ._date 에 padding-left 변경 -->
+                      <span class="_check _wait">답변대기</span>
+                      <span class="_name">스토어명</span>
+                      <span class="_date">2019-00-00</span>
+                      <span class="_title"
+                        >질문 제목입니다. 제목이 이 레이아웃안에서는 ...으로
+                        표시되게 바꿔주세요</span
+                      >
+                    </button>
+                  </li>
+                  <li class="_inquiry_content clear_both">
+                    <div class="symbol-circle">
+                      <img
+                        src="/images/img/profile_store_02.jpg"
+                        alt="스토어2 로고"
+                        class="_imgtag"
+                      />
+                    </div>
+                    <button class="_board_title_label _quastion_title_label">
+                      <span class="_check _end">답변완료</span>
+                      <span class="_name">스토어명</span>
+                      <span class="_date">2019-00-00</span>
+                      <span class="_title"
+                        >질문 제목입니다. 제목이 길어지면 이 레이아웃안에서는
+                        ...으로 표시되게 바꿔주세요</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <!-- 등록된 문의가 있을 때 E -->
+              </div>
+            </section>
+            <!-- 1. 스토어 문의 질문목록 E -->
+
+            <!-- 2. 스토어 문의 답변 -->
+            <section class="inquiry_answer_wrap">
+              <div class="_page_title_wrap">
+                <h2>
+                  <div class="symbol-circle">
+                  <img
+                    src="/images/img/profile_store_01.jpg"
+                    alt="스토어1 로고"
+                    class="_imgtag"
+                  />
+                </div>
+                  <a href="#">스토어명 ></a>
+                  <a href="#" class="_back_btn">뒤로가기</a>
+                </h2>
+              </div>
+              <div class="_board">
+                <!-- 등록된 문의가 있을 때 -->
+                <ul class="_board_layout _question_fill">
+                  <li class="_cs_content _qna_content">
+                    <div class="_qna_content_wrap">
+                      <div class="_board_title_label _qna_content_title">
+                        <!-- ._name 글자만큼 .inquiry_answer_wrap ._board_layout ._date 에 padding-left 변경 -->
+                        <span class="_name">내닉네임</span>
+                        <span class="_date">2019-00-00</span>
+                        <span class="_title"
+                          >질문 제목입니다. 제목이 길어져 2줄이 되어도 모두
+                          표시를 해주세요</span
+                        >
+                      </div>
+                      <div class="_qna_content_desc">
+                        <p>
+                          문의 내용입니다.최소 높이를 초과하면 자연스럽게 높이가
+                          늘어납니다. 어느 스토어에서 어떤걸 사려는데 주문을
+                          받다 막히던데요 왜 그런거죠?
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="_cs_content _qna_content _qna_answer_content _no_response display_none"
+                  >
+                    <div class="_qna_content_wrap">
+                      <div class="_board_title_label _qna_content_title _answer_content_title">
+                        <span class="_name">스토어명</span>
+                        <span class="_title">답변 대기중</span>
+                      </div>
+                      <div class="_qna_content_desc">
+                        <p class="_rate">답변 대기 중입니다.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="_cs_content _qna_content _qna_answer_content _response"
+                  >
+                    <div class="_qna_content_wrap">
+                      <div class="_board_title_label _qna_content_title _answer_content_title">
+                        <span class="_name">스토어명</span>
+                        <span class="_title"
+                          >답변 제목입니다. 제목이 2줄이 되어도 모두 표시를
+                          해주세요</span
+                        >
+                      </div>
+                      <div class="_qna_content_desc">
+                        <p>
+                          문의해주신 상품에 관하여 문의해주신 상품은 현재
+                          품절중으로 확인되었습니다. 이후 추가 구매에 대한
+                          계획이 있을 경우, 동글 메시지를 통하여
+                          연락드리겠습니다. 최소 높이를 초과하면 자연스럽게
+                          높이가 늘어납니다.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- 등록된 문의가 있을 때 E -->
+              </div>
+            </section>
+            <!-- 2. 스토어 문의 답변 E -->
+        </div>
+      </div>
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

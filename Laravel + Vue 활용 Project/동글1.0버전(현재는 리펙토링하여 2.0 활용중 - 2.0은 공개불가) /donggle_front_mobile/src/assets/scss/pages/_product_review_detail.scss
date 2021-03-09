@@ -1,0 +1,243 @@
+/*
+    PAGES - 리뷰 자세히보기
+*/
+/* review title */
+.review-detail_title {
+  border-top: 1px solid $light_gray6;
+  margin: 0px 20px;
+  padding: 20px 0px;
+  ._back_btn {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 15px 0px 0px 10px;
+    text-indent: -9999px;
+    @include bgOption(auto, 5% center);
+    background-image: url($path-btn+"btn_back.svg");
+  }
+  .review_img_box {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px 0px 0px;
+    overflow: hidden;
+    border-radius: 8px;
+    user-select: none;
+    > img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+  > h2 {
+    margin: 6px 0px;
+    > span {
+      font-size: $f-11;
+      font-weight: 300;
+      color: $gray;
+    }
+    > b {
+      font-size: $f-15;
+      font-weight: 500;
+    }
+  }
+}
+
+/* review description */
+// .review-detail_and_comment_wrap {
+// }
+.product_review_detail {
+  margin: 0px;
+  ._review {
+    cursor: default;
+    margin: 0px;
+    border: none;
+    border-bottom: 6px solid $profill_bd;
+    padding: 15px 0px;
+    &:hover ._review_write_tex > p {
+      text-decoration: none;
+    }
+  }
+  ._review_writer {
+    margin: 0px 20px;
+  }
+  ._review_write_product {
+    padding: 0px 0px 0px 42px;
+    font-size: $f-10;
+    font-weight: 200;
+    line-height: 1.5;
+  }
+  /* 20-03-31 */
+  ._view_more{
+    border-top: 1px solid $light_gray6;
+  }
+  ._review_write_text {
+    width: 100%;
+    margin: 30px 20px;
+    padding: 0px;
+    > img {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  /* END 20-03-31 */
+  ._review_write_text > p {
+    float: none;
+    width: calc(100% - 40px);
+    height: inherit;
+    margin: 20px 20px 40px;
+    -webkit-line-clamp: inherit;
+    font-size: $f-13;
+  }
+  ._review_product_wrap {
+    margin: 1px 42px;
+  }
+}
+.product_review_detail ._review:hover ._review_write_text > p {
+  text-decoration: none;
+}
+/* comment layout */
+.product_review_comment {
+  position: relative;
+  vertical-align: top;
+  > h3 {
+    margin: 20px 0px 0px 20px;
+    font-size: $f-14;
+    > span {
+      padding: 0px 4px;
+      font-size: $f-13;
+      font-weight: 100;
+      color: $gray;
+    }
+  }
+}
+._comment_page {
+  ._empty {
+    height: 26vh;
+    padding: 0px;
+    border: 0px none;
+  }
+  ._comment {
+    position: relative;
+    margin: 0px 20px;
+    border-bottom: 1px solid $light_gray6;
+    padding: 20px 0px;
+  }
+  ._comment .symbol-circle {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+  ._comment_text {
+    margin: 0px 0px 0px 50px;
+    line-height: 1.6;
+    > span {
+      font-size: $f-13;
+      font-weight: 600;
+    }
+    ._date {
+      font-size: $f-11;
+      font-weight: 200;
+      color: $gray;
+    }
+    ._comment_desc {
+      font-size: $f-13;
+      font-weight: 200;
+    }
+  }
+
+  .dg-my-review-btn-wrap {
+    margin: 15px 0px 0px;
+  }
+  .btn--del {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    border: 0px none;
+    outline: 0px none;
+    background-color: transparent;
+    font-size: $f-11;
+  }
+  ._view_more {
+    margin: 0px;
+  }
+}
+._comment_write_wrap {
+  width: 100%;
+  margin: -1px 0px 0px;
+  padding: 0px 10px 20px;
+  border-bottom: 6px solid $profill_bd;
+  background-color: $white;
+  ._comment_write {
+    width: 80%;
+    height: 40px;
+    border: 1px solid $light_gray6;
+    border-right: 0px none;
+    padding: 10px;
+    font-size: $f-13;
+  }
+  ._comment_sign_up {
+    width: 20%;
+    height: 40px;
+    margin: 1px 0px 0px -5px;
+    border: 1px solid $light_gray6;
+    border-left: 0px none;
+    line-height: 0;
+    background-color: transparent;
+    font-size: $f-13;
+    font-weight: 400;
+    color: $light_gray7;
+  }
+}
+._review_df {
+  margin: 20px 0px;
+}
+._deffrent_review_wrap {
+  margin: 0px;
+  > h3 {
+    margin: 20px;
+    border: 0px none;
+    padding: 0px;
+    font-size: $f-14;
+  }
+  ._empty {
+    height: 19vh;
+    padding: 0px;
+    border: 0px none;
+  }
+  ._review:last-of-type,
+  ._review:nth-of-type(5n) {
+    margin: 20px 0px 0px;
+  }
+  ._review_write_text._with_img > p {
+    width: calc(100% - 100px);
+    margin: 0px 20px 0px 0px;
+  }
+  ._view_more {
+    margin: 0px;
+  }
+}
+
+._review_write_text {
+  img {
+    max-height: 115px;
+  }
+}
+/* iphone 6~8 */
+@media all and (max-width: 375px) and (min-width: 361px) {
+  ._deffrent_review_wrap ._empty {
+    height: 22vh;
+  }
+}
+/* gelaxy s5 이하 */
+@media all and (max-width: 360px) and (min-width: 321px) {
+  ._deffrent_review_wrap ._empty {
+    height: 24vh;
+  }
+}
+/* iphone 5이하 */
+@media all and (max-width: 320px) {
+  ._deffrent_review_wrap ._empty {
+    height: 24vh;
+  }
+}

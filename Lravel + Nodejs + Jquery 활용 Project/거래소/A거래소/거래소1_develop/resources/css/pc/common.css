@@ -1,0 +1,1002 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	box-sizing: border-box;
+}
+
+/* 지정 폰트     */
+@font-face {
+    font-family:'Spoqa Han Sans Regular';
+    src:url(/fonts/SpoqaHanSans_all/SpoqaHanSans_subset/Spoqa_Han_Sans_Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Spoqa Han Sans Bold';
+    src:url(/fonts/SpoqaHanSans_all/SpoqaHanSans_subset/Spoqa_Han_Sans_Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Spoqa Han Sans Light';
+    src : url(/fonts/SpoqaHanSans_all/SpoqaHanSans_subset/Spoqa_Han_Sans_Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Spoqa Han Sans Thin';
+    src : url(/fonts/SpoqaHanSans_all/SpoqaHanSans_subset/Spoqa_Han_Sans_Thin.ttf) format('truetype');
+}
+@font-face {
+    font-family:'Poppins-Regular';
+    src : url(/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family:'Poppins-Bold';
+    src : url(/fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family:'Poppins-SemiBold';
+    src : url(/fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:'Poppins-ExtraLight';
+    src : url(/fonts/Poppins/Poppins-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeue";
+    src: url(/fonts/HelveticaNeue/Helvetica-Neue-Bold-Italic_22497.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+input::-webkit-input-placeholder {
+    color: #969696;
+}
+input:-ms-input-placeholder {
+    color: #969696;
+}
+textarea::-webkit-input-placeholder {
+    color: #969696;
+}
+textarea:-ms-input-placeholder {
+    color: #969696;
+}
+
+::-webkit-scrollbar{width: 0px;}
+::-webkit-scrollbar-track {background-color:transparent;}
+::-webkit-scrollbar-thumb {background-color:#dcdcdc;border-radius: 0px;}
+::-webkit-scrollbar-thumb:hover {background: #555;}
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+    width:4px;
+    height:16px;
+    background:#dcdcdc;
+} 
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+html, body{
+	min-width:1280px;
+    height:100%;
+    background: #fff;
+}
+
+body{
+    font-family: 'Spoqa Han Sans Regular','Poppins-Regular';
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 0.45px;
+    -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+    text-shadow: rgba(0,0,0,.01) 0 0 0.45px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6,li{
+    margin:0 0;
+    padding: 0 0;
+}
+
+input, button{
+    box-sizing:border-box;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td{
+    vertical-align: middle;
+}
+
+b{
+    font-weight:bold;
+}
+
+.hide, .readonly{
+    display: none !important;
+}
+.hide_modal{
+    display: none;
+}
+
+.non_data{
+    padding:110px 0;
+    text-align:center;
+}
+
+.red{
+    color:#ff6060 !important;
+}
+
+.blue{
+    color:#6498ff !important;
+}
+
+#wrapper{
+	min-height: 100%;
+    padding: 75px 0 323px;
+    margin: -75px 0 -323px;
+}
+
+#wrapper.back_bg{
+    background-color: #f8f8f8;
+}
+
+#container{
+	min-width:1280px;
+	width:100%;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.bg_wh_btn{
+	width: 100%;
+    height: 60px;
+    border: solid 1px #00b9ff;
+    background: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #00b9ff;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+.bg_wh_btn:hover{
+    border: solid 3px #00b9ff;
+}
+
+.bg_blue_btn{
+	width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #00b9ff 20%, #4375ff 80%);
+}
+
+.invalid-feedback{
+	font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #ff6060;
+}
+
+/* 내역 조회기간 스타일 */
+.history_con .note_label > .type_sort_slt:focus{
+	border-color: #00b9ff;
+}
+
+.history_con .increase_btn_group,
+.history_con .period_sch_group,
+.history_con .coin_sch_group{
+	display: inline-block;
+}
+
+.history_con .note_label .btn_style {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #333;
+    background: #333;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.history_con .note_label .increase_btn_group .btn_style{
+	background: #fff;
+	color: #333;
+}
+
+.history_con .note_label .increase_btn_group .btn_style:active{
+	color: #fff;
+}
+
+.history_con .period_sch_group{
+	color: #333;
+}
+
+.history_con .period_sch_group .period_sch_input{
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid #dcdcdc;
+    outline: 0;
+    color: #333;
+    background-image: url(/images/calender_icon.svg);
+    background-size: 19px;
+    background-position: 120px 5px;
+    background-repeat: no-repeat;
+    width: 150px;
+    padding: 0 8px;
+}
+
+.history_con .period_sch_group .period_sch_input:focus{
+	border-color: #00b9ff;
+}
+
+.history_con .period_sch_group label{
+	font-size: 10px; 
+}
+
+.history_con .coin_sch_group input{
+    height: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    width: 140px;
+    padding: 0 30px 0px 7px;
+    background: url(/images/btn_search.svg) no-repeat 115px center;
+    background-color: #fff;
+    background-size: 14px;
+    outline: none;
+}
+
+.history_con .coin_sch_group input:focus{
+	border-color: #00b9ff;
+}
+/* //내역 조회기간 스타일 */
+
+/* 장외거래, ICO, 자주묻는 질문의 질문유형 분류탭메뉴 스타일 end */
+
+/* ------------장외거래, ICO, 고객센터 게시판 공통스타일 end------------ */
+
+/* ------------note_label (내역 조회기간 선택 스타일) start------------ */
+
+/* 내자산의 테이블라벨 공통스타일 */
+.note_label {
+	background: #f5f5f5;
+	text-align: left;
+	font-size: 12px;
+	color: #787878;
+	border: 1px solid #dddddd;
+	border-bottom: 0;
+	padding: 15px;
+	position: relative;
+}
+
+.note_label > .type_sort_slt {
+	color: #333;
+    width: 80px;
+    border-radius: 0;
+    float: right;
+    height: 30px;
+    outline: none;
+    width: 100px;
+    padding: 0 5px;
+}
+/* //내자산의 테이블라벨 공통스타일 */
+
+/* 내역 조회기간 스타일 */
+.history_con .note_label > .type_sort_slt:focus{
+	border-color: #00b9ff;
+}
+
+.history_con .increase_btn_group,
+.history_con .period_sch_group,
+.history_con .coin_sch_group{
+	display: inline-block;
+}
+
+.history_con .note_label .btn_style {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #333;
+	box-shadow: none;
+	outline: none;
+}
+
+.history_con .note_label .increase_btn_group .btn_style{
+	background: #fff;
+	color: #333;
+}
+
+.history_con .note_label .increase_btn_group .btn_style:active{
+    background-color:#333333;
+	color: #fff;
+}
+
+.history_con .period_sch_group{
+	color: #333;
+}
+
+.history_con .period_sch_group .period_sch_input{
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid #dcdcdc;
+    outline: 0;
+    color: #333;
+    background-image: url(/images/calender_icon.svg);
+    background-size: 19px;
+    background-position: 120px 5px;
+    background-repeat: no-repeat;
+    width: 150px;
+    padding: 0 8px;
+}
+
+.history_con .period_sch_group .period_sch_input:focus{
+	border-color: #00b9ff;
+}
+
+.history_con .period_sch_group label{
+	font-size: 10px; 
+}
+
+.history_con .coin_sch_group input{
+    height: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    width: 140px;
+    padding: 0 30px 0px 7px;
+    background: url(/images/btn_search.svg) no-repeat 115px center;
+    background-color: #fff;
+    background-size: 14px;
+    outline: none;
+}
+
+.history_con .coin_sch_group input:focus{
+	border-color: #00b9ff;
+}
+/* //내역 조회기간 스타일 */
+
+.posi_wrap{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.posi_wrap>div{
+	display: block;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    padding-top: 80%;
+    
+}
+
+#loading {
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #00b9ff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+  }
+
+/* ------------note_label (내역 조회기간 선택 스타일) end------------ */
+
+/*------------modal popup start------------*/
+
+#fullscreen_modal {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 77, 79, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.modal_popup{
+    width: 520px;
+    padding: 41px 30px 25px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 13px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%);
+}
+
+.p2p_modal_popup{
+	width: 600px;
+}
+
+.modal_popup h1{
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -1.2px;
+    text-align: center;
+    color: #496582;
+    margin-bottom: 30px;
+}
+
+.modal_popup textarea{
+	resize: none; height: 400px;
+}
+
+.modal_popup .btn_style{
+	background: #333;
+    box-shadow: none;
+    outline: none;
+    border:none;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0;
+    height: 50px;
+}
+
+.modal_popup .btn_style.cancel_btn{
+    background: #fff !important;
+    border: 1px solid #333;
+    color: #333 !important;
+    padding: 13px 0;
+}
+
+.modal_popup .btn_style.cancel_btn:hover{
+    border: 2px solid #333;
+}
+
+a.btn_style{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+    height: calc(2.19rem + 2px);
+    line-height: calc(2.19rem + 2px);
+}
+
+/*------------modal popup end------------*/
+
+/*------------pagination start------------*/
+
+.cs_pagination{
+	width: 100%; text-align: center;
+	margin-top: 30px;
+}
+
+.cs_pagination ul{
+	display: inline-block;
+}
+
+.cs_pagination ul li{
+    float: left;
+}
+
+.cs_pagination ul li a{
+    padding: 5px 10px;
+    font-size: 13px;
+    border: 1px solid #dddddd;
+}
+
+.cs_pagination ul li a:hover{
+	background: #f7f7f7;
+}
+
+.cs_pagination ul li a:active{
+	background: #e6e6e6;
+}
+
+.cs_pagination ul li.paging_arrow a{
+	border: 0;
+}
+
+.cs_pagination ul li.paging_arrow a i{
+	font-size: 15px;
+	color: black;
+}
+
+.cs_pagination ul li.active a{
+    background: #28283c;
+    border-color: #28283c;
+    color: #00b9ff;
+}
+
+.cs_pagination ul li.paging_arrow.active a{
+	background: transparent;
+	border-color: transparent;
+	color: black;
+}
+
+/*------------pagination end------------*/
+
+/* pagination new */
+.pagination{
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    height: 35px;
+}
+.pagination li {
+    width: auto;
+    height: 35px;
+    float: left;
+}
+
+
+.page-item.active .page-link {
+    background-color: #28283c;
+    border-color: #28283c;
+}
+
+.pagination li .page-link {
+    color: #787878;
+    text-align: center;
+    padding: .5rem 0.7rem;
+}
+/* pagination end */
+
+/*------------scrollbar style start------------*/
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #787878;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555555;
+}
+
+/*------------scrollbar style end------------*/
+
+/*------------input[type="checkbox"] grayCheckbox style start------------*/
+
+.grayCheckbox {
+	width: 12px;
+	height: 12px;
+	position: relative;
+	transition: all .3s;
+}
+
+.grayCheckbox:checked::after {
+	content: '';
+	position: absolute;
+	background-image: url(/storage/image/homepage/icon/graycheckbox-02.svg);
+	background-size: 110%;
+	background-color: #dcdcdc;
+	background-position: center;
+	transition: all .3s;
+	width: 20px;
+	height: 20px;
+	top: -3px;
+	left: -3px;
+}
+
+.grayCheckbox::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	border-radius: 50%;
+	transition: all .3s;
+	background-size: 115%;
+}
+
+/*------------input[type="checkbox"] grayCheckbox style end------------*/
+
+/*------------jconfirm alert plugin style start------------*/
+
+.jconfirm.jconfirm-my-theme .jconfirm-bg {
+	background-color: #3a4d4f;
+	opacity: .2;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box div.jconfirm-title-c {
+	text-align: center;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box {
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.jconfirm.jconfirm-my-theme.jconfirm-open .jconfirm-box .jconfirm-title-c {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-title-c {
+	transition: transform .5s, -webkit-transform .5s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	color: #00b9ff !important;
+	font-size: 40px;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content {
+	text-align: center;
+	font-size: 14px;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons {
+	text-align: center;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button {
+	background: #dcdcdc;
+	color: rgba(255,255,255,0.8);
+	padding: 4px 25px;
+	text-transform: uppercase;
+	font-family: "Nunito", sans-serif;
+	font-weight: bold;
+}
+
+
+
+.btn_notice {
+    margin-right: 7px;
+    vertical-align: top;
+}
+
+/* 체크박스 */
+
+.checkbox_label {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    position: relative;
+    top: 3px;
+}
+
+.checkbox_style:checked + .checkbox_label:after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.checkbox_style02:checked + .checkbox_label{
+    background-color: #333;
+    border-color: #333;
+    background-image: url(/images/icon/icon_check_wh.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox_style02:checked + .checkbox_label:after{
+    display: none;
+}
+
+/* end 체크박스 */
+
+/* 팝업 (커뮤니티쪽) */
+
+.custom_alert_popup {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 40px 20px 30px;
+    border: 1px solid #D5E9FF;
+    box-shadow: 0 9px 9px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    
+    width: 90%;
+    position: fixed;
+    z-index: 9999;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    display: none;
+}
+
+.custom_alert_popup.active{
+    opacity: 0;
+    transform: translateX(-50%) translateY(3rem);
+    animation: custom_alert_popup_open 0.2s 1 0.1s;
+    animation-fill-mode: forwards;
+}
+
+.custom_alert_popup .modal_icon {
+    margin-bottom: 15px;
+}
+
+.custom_alert_popup_tit {
+    color: #496582;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -1.3px;
+    margin-bottom: 17px;
+}
+
+.custom_alert_popup_desc {
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: #969696;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.custom_alert_popup_btn {
+    min-width: 100px;
+    display: inline-block;
+    font-size: 15px;
+    padding: 13px 0;
+    border-radius: 0;
+    border: 1px solid;
+    background-color: white;
+    cursor: pointer;
+    margin: 0 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.custom_alert_popup_btn.outline_gray {
+    color: #969696;
+}
+
+.custom_alert_popup_btn.outline_blue {
+    color: #00B9FF;
+}
+
+.custom_alert_popup_btn:hover {
+    background-color: #f8f8f8;
+    transition: all 0.2s;
+}
+
+.custom_alert_popup_btn.outline_blue:hover {
+    color: #00a4e2;
+}
+
+.custom_alert_popup_btn.outline_gray:hover {
+    color: #7b7b7b;
+}
+
+.custom_alert_popup_btn:active{
+    background-color: #e0e0e0;
+}
+
+.one_button {
+    min-width: 65%;
+}
+
+.custom_alert_popup_input {
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: #969696;
+    display: inline-block;
+    margin-bottom: 18px;
+    width: 90%;
+    margin-top: 5px;
+}
+
+.custom_alert_popup_input input {
+    width: 100%;
+    display: inline-block;
+    height: 40px;
+    border-radius: 0;
+    border: 1px solid #dcdcdc;
+    padding: 0 10px;
+    outline: none;
+}
+
+.custom_alert_popup_input input::placeholder {
+    color: #dcdcdc;
+}
+
+.custom_alert_popup_input input:focus{
+    border-color: #00B9FF;
+}
+
+.custom_alert_popup .double_btn_02 button {
+    padding: 8px 0;
+    font-size: 13px;
+    min-width: 130px;
+}
+
+.custom_alert_popup .default_textarea {
+    width: 90%;
+    border-radius: 0;
+    border: 1px solid #dcdcdc;
+    color: #333;
+    resize: none;
+    min-height: 110px;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.5;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.custom_alert_popup .default_textarea:focus {
+    border-color: #00B9FF;
+}
+
+.custom_alert_popup .default_textarea::placeholder {
+    color: #dcdcdc;
+}
+
+@keyframes custom_alert_popup_open{
+    100%{
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* end 팝업 (커뮤니티쪽) */
+.swal-icon{
+    transform: scale(0.8);
+}
+
+.swal-icon:first-child{
+    margin-top: 32px;
+    margin-bottom: 5px;
+}
+
+.swal-modal{
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+.swal-button-container{
+    width: 55%;
+}
+
+.swal-button-container:nth-child(1):nth-last-child(2),
+.swal-button-container:nth-child(1):nth-last-child(2) ~ .swal-button-container{
+    width: 31%;
+    min-width: 138px;
+}
+
+.swal-button {
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 44px;
+    box-shadow: none !important;
+    outline: none !important;
+    border: solid 1px #00b9ff;
+    border-radius: 0;
+    transition: border 0.2s;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #00b9ff;
+}
+
+.swal-button.swal-button--no{
+    border: solid 1px #969696;
+    color: #969696;
+}
+
+.swal-title{
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.48;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #496582;
+}
+
+.swal-text{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #969696;
+}
+
+.swal-footer{
+    padding-bottom: 40px;
+}
+
+
+.swal-icon--warning {
+    border-color: #fff;
+    background-color: #ff6060;
+    -webkit-animation: pulseWarning .75s infinite alternate;
+    animation: pulseWarning .75s infinite alternate;
+}
+
+.swal-icon--warning__body, .swal-icon--warning__dot {
+    position: absolute;
+    left: 50%;
+    background-color: #fff;
+}
+
+.swal-icon.swal-icon--warning{
+    transform: scale(0.75);
+}
+
+.swal-button:hover{
+    background-color: #fff !important;
+    border:3px solid #00b9ff;
+}
+.swal-button.swal-button--yes:hover{
+    background-color: #fff !important;
+    border:3px solid #00b9ff;
+}
+.swal-button.swal-button--no:hover{
+    background-color: #fff !important;
+    border:3px solid #969696;
+}
+

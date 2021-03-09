@@ -1,0 +1,127 @@
+/* 
+    ----------------- 
+        color 
+    -----------------
+*/
+/* 
+    ----------------- 
+        unit 
+    -----------------
+*/
+/*
+    ----------------- 
+        path
+    ----------------- 
+*/
+/* 
+    ----------------- 
+        mixin 
+    -----------------
+*/
+.certify-mail {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  border: 1px solid #dcdcdc98;
+  text-align: center;
+}
+
+.certify-mail__hd {
+  height: 200px;
+  background-image: url("/img/imgs/img_bg_head.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.certify-mail__contents {
+  padding: 40px 30px;
+  font-weight: 400;
+}
+
+.certify-mail__contents__tit {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.certify-mail__contents__text {
+  line-height: 1.5;
+  font-weight: inherit;
+  margin-bottom: 30px;
+}
+
+.certify-mail__contents__text b {
+  color: #7e2aff;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.certify-mail__contents__btn {
+  width: 175px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background-color: #7e2aff;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.certify-mail .member-mail-guide {
+  background: #f9f9f9;
+  border-radius: 30px;
+  padding: 15px 15px 32px;
+  margin: 30px 0 40px;
+}
+
+.certify-mail .member-mail-guide span {
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.certify-mail .member-mail-guide p {
+  color: #7e2aff;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.certify-mail__ft {
+  background-color: #f9f9f9;
+  border-top: 1px solid #dbdbdb;
+  padding: 25px 0;
+}
+
+.certify-mail__ft .ft-company {
+  font-weight: 400;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.certify-mail__ft span,
+.certify-mail__ft address {
+  color: #848484;
+}
+
+.certify-mail__ft .certify-mail__ft__info span {
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.certify-mail__ft .certify-mail__ft__info span.bd-right {
+  border-right: 1px solid #848484;
+  padding-right: 8px;
+  display: inline-block;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=certify-mail.css.map */

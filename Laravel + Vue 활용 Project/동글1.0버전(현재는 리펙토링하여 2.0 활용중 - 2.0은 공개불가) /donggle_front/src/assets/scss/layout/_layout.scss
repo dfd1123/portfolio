@@ -1,0 +1,511 @@
+/*
+    LAYOUT - layout.scss
+*/
+
+body {
+  min-width: 1056px;
+}
+
+.dg-page-wrapper {
+  min-height: 960px;
+}
+
+/*
+  페이지구역
+  l-page-wrapper
+*/
+
+.l-page-wrapper {
+  position: relative;
+  @include center(1100px);
+  padding: 0 12px;
+}
+
+/*
+  컨텐츠구역
+  l-con-area (컨텐츠 구역)
+    ㄴ l-con-article (나누는 구역)
+    　ㄴ l-con-title-group (제목)
+      ㄴ l-contents-group (내용)
+  ============================================
+*/
+
+.l-con-area {
+  position: relative;
+}
+
+.l-con-article {
+  position: relative;
+}
+
+.l-con-title-group {
+  position: relative;
+  padding: 0 10px;
+  user-select: none;
+
+  .in-subject {
+    @include inlineBlockStyle(middle);
+  }
+
+  // 메인 제목 타입
+  &.type-main .in-subject {
+    @include fontType01(#{$px-22}rem, $black, $weight: bold);
+
+    border-bottom: 2px solid $black;
+    padding-bottom: 4px;
+  }
+
+  // 제목 타입 1
+  &.type01 .in-subject {
+    @include fontType01(#{$px-20}rem, $weight: bold);
+
+    width: 100%;
+    border-bottom: 1px solid $black;
+    padding: 15px 0;
+    letter-spacing: -1px;
+  }
+
+  // 제목 타입 2
+  &.type02 .in-subject {
+    @include fontType01(#{$px-26}rem, $weight: bold);
+
+    width: 100%;
+    border-bottom: 1px solid $black;
+    padding: 15px 0;
+  }
+
+  & .in-sorting {
+    @include position($t: 50%, $r: 10px);
+
+    transform: translateY(-50%);
+  }
+}
+
+.l-contents-group {
+  padding: 0 5px;
+}
+
+/*
+  마이페이지 레이아웃
+  ============================================
+*/
+
+// 마이페이지 헤더 (프로필사진영역, 쿠폰-주문완료-취소/환불)
+.l-mypage-hd {
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 25px;
+  position: relative;
+  text-align: right;
+
+  .l-mypage-hd-inner {
+    @include center(1105px);
+
+    padding: 0 35px;
+    position: relative;
+  }
+
+  .in-profile {
+    @include position($t: 50%, $l: 35px);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    display: inline-block;
+    padding-left: 99px;
+    height: 84px;
+    padding-top: 15px;
+    ._pic {
+      @include position($t: 0, $l: 0);
+
+      width: 84px;
+      height: 84px;
+      display: inline-block;
+    }
+    ._pic .symbol-circle {
+      @include circleSize(100%);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    }
+    ._pic ._grade {
+      @include position($b: 0, $r: 0);
+    }
+    @for $i from 1 through 5 {
+      ._pic ._grade.lv-0#{$i} {
+        @include makeAfter {
+          @include bgimg(
+            url($path-img+"/donggle_grade/donggle_grade_0"+$i+".png")
+          );
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+    ._name {
+      @include fontType01(#{$px-13}em, $weight: 300);
+      @include inlineBlockStyle(middle);
+
+      margin-bottom: 7px;
+      i {
+        @include fontType01(1.2em, #3482e8, 400);
+        @include inlineBlockStyle(middle);
+
+        font-style: normal;
+        padding: 0 3px;
+      }
+      span {
+        @include inlineBlockStyle(bottom);
+      }
+      b {
+        @include fontType01(1.2em, inherit, 400);
+        @include inlineBlockStyle(middle);
+
+        padding-right: 3px;
+      }
+    }
+    .rounded-btn-outline {
+      display: block;
+      padding: 0 13px;
+      color: #787878;
+      border-color: #c8c8c8;
+      text-align: center;
+    }
+  }
+  .in-panels {
+    height: 135px;
+    display: inline-block;
+    border-left: 1px solid $light_gray6;
+    user-select: none;
+
+    ._list {
+      width: 135px;
+      float: left;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid $light_gray6;
+    }
+    ._list span {
+      @include fontType01(#{$px-13}rem, #787878, 200);
+      display: inline-block;
+      padding: 5px 0;
+    }
+    ._list a {
+      @include hoverActiveFont($purple);
+      @include fontType01(#{$px-20}rem, $purple, bold);
+      cursor: pointer;
+    }
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+}
+
+// 마이페이지 컨텐츠구역 (사이드네비, 오른쪽 컨텐츠)
+.l-mypage-contents {
+  $mypage-side-navi-w: 170px;
+
+  @include center(1100px);
+  @include makeAfter {
+    display: block;
+    clear: both;
+  }
+
+  padding: 0 12px;
+  position: relative;
+
+  // 마이페이지 좌측 사이드네비게이션
+  .l-side-navi {
+    float: left;
+    width: $mypage-side-navi-w;
+    user-select: none;
+  }
+  .l-side-navi .in-subject {
+    cursor: pointer;
+  }
+  .in-nav-section {
+    @include fontType01($weight: 400);
+
+    border-bottom: 1px solid $light_gray6;
+    padding: 15px 14px 10px 24px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    & > ul {
+      padding: 5px 0;
+    }
+
+    ._subject {
+      @include fontType01(#{$px-16}em, $weight: inherit);
+
+      cursor: default;
+    }
+    ._list {
+      @include fontType01(#{$px-13}em, $weight: 200);
+      @include fontType02($letter-spacing: -0.2px);
+
+      margin: 10.5px 0 10px 10px;
+
+      &:hover a {
+        color: $purple;
+      }
+      &.active a {
+        color: $purple;
+        text-decoration: underline;
+        text-decoration-color: $purple;
+      }
+      > a.router-link-active {
+        color: $purple;
+        border-bottom: 1px solid $purple;
+      }
+    }
+  }
+  // 마이페이지 좌측 사이드네비게이션 END
+
+  // 마이페이지 우측 컨텐츠구역
+  .l-con-area {
+    float: right;
+    width: calc(100% - #{$mypage-side-navi-w+10});
+
+    .nothing-history {
+      padding: 55px 0;
+    }
+  }
+
+  .l-con-title-group .in-more {
+    @include position($t: 50%, $r: 10px);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+
+  .l-contents-group {
+    padding: 0 11px;
+  }
+  // 마이페이지 우측 컨텐츠구역
+}
+
+// 고객센터 컨텐츠구역 (사이드네비, 오른쪽 컨텐츠)
+.l-cs-contents {
+  position: relative;
+  @include center(1100px);
+  @include makeAfter {
+    display: block;
+    clear: both;
+  }
+
+  padding: 50px 12px 200px;
+
+  // 고객센터 좌측 사이드네비게이션
+  .l-side-navi {
+    float: left;
+    width: 170px;
+    user-select: none;
+  }
+  .l-con-title-group.type01 .in-subject {
+    padding: 0px 0px 15px;
+  }
+  .mb-10 {
+    margin-bottom: 0px;
+  }
+  .in-nav-section {
+    @include fontType01($weight: 400);
+
+    padding: 0px 0px 10px 0px;
+    margin-bottom: 10px;
+
+    ._subject {
+      @include fontType01(#{$px-16}em, $weight: inherit);
+
+      cursor: default;
+    }
+    ._list {
+      @include fontType01(#{$px-16}em, $weight: 500);
+      @include fontType02($letter-spacing: -0.2px);
+
+      border-bottom: 1px solid $light_gray6;
+
+      > a {
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        padding: 0px 0px 0px 24px;
+      }
+      &:hover a,
+      &.active a {
+        color: $purple;
+      }
+      > a.router-link-active {
+        color: $purple;
+      }
+    }
+  }
+  // 고객센터 좌측 사이드네비게이션 END
+
+  // 고객센터 우측 컨텐츠구역
+  .l-con-area {
+    float: right;
+    width: calc(100% - 180px);
+
+    .nothing-history {
+      padding: 55px 0;
+    }
+  }
+
+  .l-con-title-group .in-more {
+    @include position($t: 50%, $r: 10px);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+
+  .l-contents-group {
+    padding: 0 11px;
+  }
+  // 고객센터 우측 컨텐츠구역
+}
+
+// 스토어 컨텐츠구역 (사이드네비, 오른쪽 컨텐츠)
+.l-store-contents {
+  $store-side-navi-w: 200px;
+
+  @include center(1100px);
+  @include makeAfter {
+    display: block;
+    clear: both;
+  }
+
+  padding: 55px 12px 80px 12px;
+
+  // 스토어홈 좌측 사이드네비게이션
+  .l-side-navi {
+    float: left;
+    width: $store-side-navi-w;
+  }
+  // 스토어홈 좌측 사이드네비게이션 END
+
+  // 스토어홈 우측 컨텐츠구역
+  .l-con-area {
+    float: right;
+    width: calc(100% - #{$store-side-navi-w+5});
+
+    .nothing-history {
+      padding: 55px 0;
+    }
+  }
+
+  .l-con-title-group .in-more {
+    @include position($t: 50%, $r: 10px);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+
+  .l-contents-group {
+    padding: 0 11px;
+  }
+  // 스토어홈 우측 컨텐츠구역
+}
+
+/*
+  그리드
+  ============================================
+*/
+
+.l-grid-group {
+  position: relative;
+
+  &:after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+}
+
+.l-grid-list {
+  float: left;
+
+  &.l-col-1 {
+    width: 100%;
+    padding: 0;
+  }
+  &.l-col-2 {
+    width: 50%;
+    padding: 0;
+    padding: 0 6px;
+  }
+  &.l-col-3 {
+    width: 33%;
+    padding: 0;
+    padding: 0 6px;
+  }
+  &.l-col-4 {
+    width: 25%;
+    padding: 0 6px;
+  }
+  &.l-col-5 {
+    width: 20%;
+    padding: 0 6px;
+  }
+}
+
+.slick-slide {
+  margin-right: 6px;
+}
+
+.progress_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: rgba(255, 255, 255, 0.3);
+  .progress_con {
+    display: table-cell;
+    vertical-align: middle;
+    .multi-spinner {
+      border-top-color: #fc4ead;
+    }
+  }
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+}
+
+.swal2-container {
+  z-index: 999999;
+}
+
+@media screen and (max-width: 1600px) {
+  #_mini_quick_menu {
+    right: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #_mini_quick_menu {
+    display: none;
+  }
+}

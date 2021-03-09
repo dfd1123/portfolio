@@ -1,0 +1,73 @@
+$theme-01: #fa753d;
+$theme-02: #faa13c;
+$theme-03: #fabb3c;
+$theme-04: #f8eed9;
+
+$gray-01: #272720;
+$gray-02: #62656c;
+$gray-03: #9b9b9b;
+$gray-04: #bfbfbf;
+$gray-05: #c3c3c3;
+$gray-06: #c6cedc;
+
+$sky-blue-01: #73c8d2;
+$red-01: #ff3939;
+
+// unit
+
+$g-page_title_height: 3.75rem;
+$g-wide_btn: 3.3rem;
+$g-page_footer_nav_height: 5rem;
+
+// z-index
+
+$z-indexes: (
+  "popup": 9999,
+  "overlay": 999,
+  "nav": 500,
+  "default": 1,
+  "below": -1,
+  "zero": 0
+);
+
+// font size em
+$em-font-sizes: (
+  "12px": 0.75em,
+  "13px": 0.813em,
+  "14px": 0.875em,
+  "15px": 0.938em,
+  "16px": 1em,
+  "18px": 1.125em,
+  "20px": 1.25em,
+  "26px": 1.625em
+);
+
+// font size rem
+$rem-font-sizes: (
+  "12px": 0.75rem,
+  "13px": 0.8125rem,
+  "14px": 0.875rem,
+  "15px": 0.9375rem,
+  "16px": 1rem,
+  "18px": 1.125rem,
+  "19px": 1.1875rem,
+  "20px": 1.25rem,
+  "26px": 1.625rem,
+  "34px": 2.125rem
+);
+
+// base url
+$g-btn-url: "/assets/images/btn/";
+
+// breakpoints
+
+$breakpoints: (
+  "iphone5": 320px,
+  "galaxy5": 350px,
+  "mobile": 576px,
+  "tablet_tab": 800px,
+  "tablet_pad": 1024px,
+  "desktop": 1248px,
+  "desktop-wide": 1440px,
+  "desktop-basic": 1920px
+);

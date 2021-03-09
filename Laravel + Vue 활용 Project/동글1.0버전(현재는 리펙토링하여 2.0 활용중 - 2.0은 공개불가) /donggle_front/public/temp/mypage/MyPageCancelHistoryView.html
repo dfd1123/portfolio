@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/ui.css" />
+  </head>
+
+  <body>
+    <!--
+    header 자리
+  -->
+
+    <!-- content -->
+    <div id="dg-mypage-cancel-history-wrapper">
+      <!-- * 마이페이지 헤더 -->
+      <div class="l-mypage-hd">
+        <div class="l-mypage-hd-inner">
+          <div class="in-profile">
+            <figure class="_pic">
+              <div class="symbol-circle">
+                <img
+                  src="/images/img/basic_profile/01.png"
+                  alt="default profile img"
+                  class="_imgtag"
+                />
+              </div>
+              <!-- ※ 회원등급에 따라서 lv-01, lv-02, lv-03, lv-04, lv-05 클래스 바뀜 -->
+              <span class="_grade lv-01"></span>
+              <!-- ※ 회원등급에 따라서 lv-01, lv-02, lv-03, lv-04, lv-05 클래스 바뀜 END -->
+            </figure>
+            <h3 class="_name">
+              <b>김동글</b><span>님의 등급은</span> <i>비기너</i
+              ><span>입니다.</span>
+            </h3>
+            <button
+              type="button"
+              class="rounded-btn-outline"
+              onclick="alert('(기능)프로필 사진 변경기능입니다.')"
+            >
+              프로필 사진 변경
+            </button>
+          </div>
+
+          <ul class="in-panels">
+            <li class="_list">
+              <span>쿠폰</span>
+              <a href="MyPageCouponListView.html">0개</a>
+            </li>
+            <li class="_list">
+              <span>주문완료</span>
+              <a href="MyPageOrderHistoryView.html">5개</a>
+            </li>
+            <li class="_list">
+              <span>취소/환불</span>
+              <a href="MyPageCancelHistoryView.html">0건</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- * 마이페이지 헤더 -->
+
+      <div class="l-mypage-contents">
+        <!-- 
+      미니 퀵메뉴 스크롤 이벤트로 지정높이부터는 #_mini_quick_menu 에 .scroll 추가
+     -->
+        <!-- 미니 퀵메뉴 -->
+        <aside id="_mini_quick_menu">
+          <div class="_img_box">
+            <img src="/images/badge/badge_3.svg" alt="logo" />
+          </div>
+          <h2 class="_title">#QUICK</h2>
+          <ul class="_mini_quick_menu_btn_wrap">
+            <li><a href="#" class="_mini_quick_menu_btn">최근 본 상품</a></li>
+            <li><a href="#" class="_mini_quick_menu_btn">장바구니</a></li>
+            <li><a href="#" class="_mini_quick_menu_btn">찜한 상품</a></li>
+            <li><a href="#" class="_mini_quick_menu_btn">마이페이지</a></li>
+            <li><a href="#" class="_mini_quick_menu_btn">고객센터</a></li>
+            <li>
+              <a
+                href="#"
+                class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_top"
+                >위로</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="_mini_quick_menu_btn _mini_quick_menu_btn_arrow _mini_quick_menu_btn_bottom"
+                >아래로</a
+              >
+            </li>
+          </ul>
+        </aside>
+        <!-- 미니 퀵메뉴 E -->
+
+        <!-- 활성화된 메뉴 _list 에 active 추가 -->
+        <div class="l-side-navi">
+          <div class="l-con-title-group type01 mb-10">
+            <h2
+              class="in-subject"
+              onclick="location.href='MyPageDefaultView.html'"
+            >
+              마이페이지
+            </h2>
+          </div>
+          <article class="in-nav-section">
+            <h4 class="_subject">주문배송</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageOrderHistoryView.html">주문내역 조회</a>
+              </li>
+              <li class="_list active">
+                <a href="MyPageCancelHistoryView.html">취소/환불내역</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">나의 구매후기</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageWriteReviewView.html">구매후기 작성하기</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageMyReviewView.html">나의 구매후기</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">관심리스트</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageLikeListView.html">찜한 상품</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCurrentListView.html">최근 본 상품</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageStoreListView.html">즐겨찾기 스토어</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">쿠폰</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageCouponListView.html">내 쿠폰함</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCouponZoneView.html">쿠폰받기</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageCouponHistoryView.html">쿠폰 사용내역</a>
+              </li>
+            </ul>
+          </article>
+          <article class="in-nav-section">
+            <h4 class="_subject">내 정보</h4>
+            <ul>
+              <li class="_list">
+                <a href="MyPageSetInfoView.html">내 정보 관리</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageSetAccountView.html">카드 및 환불계좌 관리</a>
+              </li>
+              <li class="_list">
+                <a href="MyPageGradeView.html">회원등급</a>
+              </li>
+              <!-- TODO: 회원등급 페이지 요청中 -->
+              <!-- <li class="_list">
+              <a href="#">회원등급</a>
+            </li> -->
+            </ul>
+          </article>
+        </div>
+
+        <!-- 1) 주문내역 조회 -->
+        <div class="l-con-area">
+          <article class="l-con-article">
+            <div class="l-con-title-group type01 mb-18">
+              <h2 class="in-subject">취소/환불내역</h2>
+            </div>
+
+            <div class="l-contents-group">
+              <!-- 0. 검색옵션 설정영역 -->
+              <div class="dg-filter-inquiry-group mb-23">
+                <ul class="in-sorting">
+                  <li class="_type active">
+                    <a href="#" class="word">전체</a>
+                  </li>
+                  <li class="_type">
+                    <a href="#" class="word">취소</a>
+                  </li>
+                  <li class="_type">
+                    <a href="#" class="word">환불</a>
+                  </li>
+                </ul>
+                <div class="in-bottom-group">
+                  <div class="_btns_group">
+                    <button class="square-btn-outline active">1주일</button>
+                    <button class="square-btn-outline">1개월</button>
+                    <button class="square-btn-outline">3개월</button>
+                    <button class="square-btn-outline">6개월</button>
+                  </div>
+                  <div class="_input_group">
+                    <label>기간입력</label>
+                    <!-- ※ datepicker 적용해야함 -->
+                    <input
+                      type="text"
+                      class="period-input"
+                      placeholder="2000-00-00"
+                    />
+                    <!-- ※ datepicker 적용해야함 END -->
+                    <span class="_mid">~</span>
+                    <!-- ※ datepicker 적용해야함 -->
+                    <input
+                      type="text"
+                      class="period-input"
+                      placeholder="2000-00-00"
+                    />
+                    <!-- ※ datepicker 적용해야함 END -->
+                    <button class="square-btn-outline">조회</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 0. 검색옵션 설정영역 E -->
+
+              <!-- 1. 환불 내역 없을 때 -->
+              <div class="nothing-history">
+                <img
+                  src="/images/icon/empty_order.svg"
+                  alt="icon empty"
+                  class="in-empty-icon"
+                />
+                <span class="in-empty-ment">환불 내역이 없습니다.</span>
+              </div>
+              <!-- 1. 환불 내역 없을 때 E -->
+
+              <!-- 2. 환불 내역 있을 때 -->
+              <ul class="l-grid-group">
+                <li class="l-grid-list l-col-1">
+                  <!-- * 주문일시, 주문번호 정보라벨 -->
+                  <dl class="dg-about-odnum-label">
+                    <dt>신청일시</dt>
+                    <dd>2019-11-11 00:00:00</dd>
+                    <dt>주문번호</dt>
+                    <dd>0012547884</dd>
+                  </dl>
+                  <!-- * 주문일시, 주문번호 정보라벨 E -->
+                </li>
+
+                <li class="l-grid-list l-col-1">
+                  <!-- * 환불시: 환불신청중 -->
+                  <div class="dg-clothes-history-card">
+                    <div class="in-content">
+                      <div class="inner-box">
+                        <figure class="dg-clothes-thumbnail">
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="_informations">
+                          <li class="_sellername">
+                            <a href="#">디어러버윤</a>
+                          </li>
+                          <li class="_prdtnum"><a href="#">1234567</a></li>
+                        </ul>
+                        <h3 class="_name">
+                          <a href="#"
+                            >[모델추천] 팝콘체크 롱코트 (2color)_디어러버윤</a
+                          >
+                        </h3>
+                        <div class="_options">
+                          <dl class="_op_category">
+                            <dt class="_op_tit">옵션</dt>
+                            <dd class="_op_list">
+                              <span>팔찌1 컬러 : 실버</span>
+                              <span>팔찌2 컬러 : 실버</span>
+                              <span
+                                >각인문구/폰트 : 주문요청사항에 남겨주세요</span
+                              >
+                              <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                            </dd>
+                          </dl>
+                          <div class="_amount">
+                            <span>수량 : <b>1</b>개</span>
+                          </div>
+                        </div>
+                        <div class="_price">
+                          <span class="_prdt_price"
+                            >상품금액 <b>19,800 원</b></span
+                          >
+                          <span class="_sale_price"
+                            >할인금액 <b>- 19,800 원</b></span
+                          >
+                          <span class="_total_price"
+                            >총 상품금액 <b>19,800 원</b></span
+                          >
+                        </div>
+                        <div class="_btn_list">
+                          <button
+                            class="rounded-btn-outline"
+                            onclick="alert('(팝업) 환불내역신청 팝업입니다.')"
+                          >
+                            신청내역 보기
+                          </button>
+                        </div>
+                        <span class="rounded-btn-dark _order_status"
+                          >환불신청 중</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- * 환불시: 환불신청중 E -->
+                </li>
+
+                <li class="l-grid-list l-col-1">
+                  <!-- 환불시: 환불거절 -->
+                  <div class="dg-clothes-history-card">
+                    <div class="in-content">
+                      <div class="inner-box">
+                        <figure class="dg-clothes-thumbnail">
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="_informations">
+                          <li class="_sellername">
+                            <a href="#">디어러버윤</a>
+                          </li>
+                          <li class="_prdtnum"><a href="#">1234567</a></li>
+                        </ul>
+                        <h3 class="_name">
+                          <a href="#"
+                            >[모델추천] 팝콘체크 롱코트 (2color)_디어러버윤</a
+                          >
+                        </h3>
+                        <div class="_options">
+                          <dl class="_op_category">
+                            <dt class="_op_tit">옵션</dt>
+                            <dd class="_op_list">
+                              <span>팔찌1 컬러 : 실버</span>
+                              <span>팔찌2 컬러 : 실버</span>
+                              <span
+                                >각인문구/폰트 : 주문요청사항에 남겨주세요</span
+                              >
+                              <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                            </dd>
+                          </dl>
+                          <div class="_amount">
+                            <span>수량 : <b>1</b>개</span>
+                          </div>
+                        </div>
+                        <div class="_price">
+                          <span class="_prdt_price"
+                            >상품금액 <b>19,800 원</b></span
+                          >
+                          <span class="_sale_price"
+                            >할인금액 <b>- 19,800 원</b></span
+                          >
+                          <span class="_total_price"
+                            >총 상품금액 <b>19,800 원</b></span
+                          >
+                        </div>
+                        <div class="_btn_list">
+                          <button
+                            class="rounded-btn-outline"
+                            onclick="alert('(팝업) 환불내역신청 팝업입니다.')"
+                          >
+                            신청내역 보기
+                          </button>
+                        </div>
+                        <span class="rounded-btn-dark _order_status"
+                          >환불거절</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 환불시: 환불거절 E -->
+                </li>
+
+                <li class="l-grid-list l-col-1">
+                  <!-- 환불시: 환불완료 -->
+                  <div class="dg-clothes-history-card">
+                    <div class="in-content">
+                      <div class="inner-box">
+                        <figure class="dg-clothes-thumbnail">
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="_informations">
+                          <li class="_sellername">
+                            <a href="#">디어러버윤</a>
+                          </li>
+                          <li class="_prdtnum"><a href="#">1234567</a></li>
+                        </ul>
+                        <h3 class="_name">
+                          <a href="#"
+                            >[모델추천] 팝콘체크 롱코트 (2color)_디어러버윤</a
+                          >
+                        </h3>
+                        <div class="_options">
+                          <dl class="_op_category">
+                            <dt class="_op_tit">옵션</dt>
+                            <dd class="_op_list">
+                              <span>팔찌1 컬러 : 실버</span>
+                              <span>팔찌2 컬러 : 실버</span>
+                              <span
+                                >각인문구/폰트 : 주문요청사항에 남겨주세요</span
+                              >
+                              <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                            </dd>
+                          </dl>
+                          <div class="_amount">
+                            <span>수량 : <b>1</b>개</span>
+                          </div>
+                        </div>
+                        <div class="_price">
+                          <span class="_prdt_price"
+                            >상품금액 <b>19,800 원</b></span
+                          >
+                          <span class="_sale_price"
+                            >할인금액 <b>- 19,800 원</b></span
+                          >
+                          <span class="_total_price"
+                            >총 상품금액 <b>19,800 원</b></span
+                          >
+                        </div>
+                        <div class="_btn_list">
+                          <button
+                            class="rounded-btn-outline"
+                            onclick="alert('(팝업) 환불내역신청 팝업입니다.')"
+                          >
+                            신청내역 보기
+                          </button>
+                        </div>
+                        <span class="rounded-btn-dark _order_status"
+                          >환불완료</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 환불시: 환불완료 E -->
+                </li>
+
+                <li class="l-grid-list l-col-1">
+                  <!-- 주문취소시: 취소신청 중 -->
+                  <div class="dg-clothes-history-card">
+                    <div class="in-content">
+                      <div class="inner-box">
+                        <figure class="dg-clothes-thumbnail">
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="_informations">
+                          <li class="_sellername">
+                            <a href="#">디어러버윤</a>
+                          </li>
+                          <li class="_prdtnum"><a href="#">1234567</a></li>
+                        </ul>
+                        <h3 class="_name">
+                          <a href="#"
+                            >[모델추천] 팝콘체크 롱코트 (2color)_디어러버윤</a
+                          >
+                        </h3>
+                        <div class="_options">
+                          <dl class="_op_category">
+                            <dt class="_op_tit">옵션</dt>
+                            <dd class="_op_list">
+                              <span>팔찌1 컬러 : 실버</span>
+                              <span>팔찌2 컬러 : 실버</span>
+                              <span
+                                >각인문구/폰트 : 주문요청사항에 남겨주세요</span
+                              >
+                              <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                            </dd>
+                          </dl>
+                          <div class="_amount">
+                            <span>수량 : <b>1</b>개</span>
+                          </div>
+                        </div>
+                        <div class="_price">
+                          <span class="_prdt_price"
+                            >상품금액 <b>19,800 원</b></span
+                          >
+                          <span class="_sale_price"
+                            >할인금액 <b>- 19,800 원</b></span
+                          >
+                          <span class="_total_price"
+                            >총 상품금액 <b>19,800 원</b></span
+                          >
+                        </div>
+                        <div class="_btn_list">
+                          <button
+                            class="rounded-btn-outline"
+                            onclick="alert('(팝업) 취소내역신청 팝업입니다.')"
+                          >
+                            신청내역 보기
+                          </button>
+                        </div>
+                        <span class="rounded-btn-dark _order_status"
+                          >취소신청 중</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 주문취소시: 취소신청 중 E -->
+                </li>
+
+                <li class="l-grid-list l-col-1">
+                  <!-- 주문취소시: 취소완료 -->
+                  <div class="dg-clothes-history-card">
+                    <div class="in-content">
+                      <div class="inner-box">
+                        <figure class="dg-clothes-thumbnail">
+                          <a
+                            class="in-image"
+                            href="#"
+                            style="background-image: url('/images/example/ex-clothes-img2.png');"
+                          ></a>
+                        </figure>
+                        <ul class="_informations">
+                          <li class="_sellername">
+                            <a href="#">디어러버윤</a>
+                          </li>
+                          <li class="_prdtnum"><a href="#">1234567</a></li>
+                        </ul>
+                        <h3 class="_name">
+                          <a href="#"
+                            >[모델추천] 팝콘체크 롱코트 (2color)_디어러버윤</a
+                          >
+                        </h3>
+                        <div class="_options">
+                          <dl class="_op_category">
+                            <dt class="_op_tit">옵션</dt>
+                            <dd class="_op_list">
+                              <span>팔찌1 컬러 : 실버</span>
+                              <span>팔찌2 컬러 : 실버</span>
+                              <span
+                                >각인문구/폰트 : 주문요청사항에 남겨주세요</span
+                              >
+                              <span>뒷면 각인 시 선택 :뒷면 각인 안함</span>
+                            </dd>
+                          </dl>
+                          <div class="_amount">
+                            <span>수량 : <b>1</b>개</span>
+                          </div>
+                        </div>
+                        <div class="_price">
+                          <span class="_prdt_price"
+                            >상품금액 <b>19,800 원</b></span
+                          >
+                          <span class="_sale_price"
+                            >할인금액 <b>- 19,800 원</b></span
+                          >
+                          <span class="_total_price"
+                            >총 상품금액 <b>19,800 원</b></span
+                          >
+                        </div>
+                        <div class="_btn_list">
+                          <button
+                            class="rounded-btn-outline"
+                            onclick="alert('(팝업) 취소내역신청 팝업입니다.')"
+                          >
+                            신청내역 보기
+                          </button>
+                        </div>
+                        <span class="rounded-btn-dark _order_status"
+                          >취소완료</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 주문취소시: 취소완료 E -->
+                </li>
+              </ul>
+
+              <!-- 주문취소 팝업 -->
+              <div
+                class="_popup_wrapper _cancel_popup_wrapper _cancel_cancel_popup_wrapper"
+              >
+                <div class="_bg"></div>
+                <div class="_popup_wrap">
+                  <div class="_popup_title">
+                    <h4>
+                      주문취소 신청 내역<a href="#" class="_close_btn"> </a>
+                    </h4>
+                  </div>
+                  <div class="_popup_content">
+                    <div class="_popup_text_wrap">
+                      <div class="_cancel_info">
+                        <span class="_title">신청일시</span>
+                        <span class="_content _num">2019-11-11 00:00:00</span>
+                        <span class="_title _order_number_title">주문번호</span>
+                        <span class="_content _num">0012547884</span>
+                        <span class="rounded-btn-dark _cancel_status"
+                          >취소신청 중</span
+                        >
+                      </div>
+                      <div class="_cancel_reason_wrap">
+                        <div class="_cancel_reason _cancel_my_reason re">
+                          <h5 class="_title">취소사유</h5>
+                          <p class="_reason">
+                            주문에는 이상없으나 구매의사 없음(변심)
+                          </p>
+                          <div class="_reason_detail">
+                            사유에 작성했던 내용
+                          </div>
+                        </div>
+                        <div class="_cancel_reason _cancel_store_reason">
+                          <h5 class="_title">거절사유</h5>
+                          <div class="_reason_detail">
+                            거절시에만 표시되는 창입니다.<br />
+                            저희 동글스토어를 이용해주셔서 진심으로 감사합니다.
+                            고객님의 취소신청을 확인하였습니다. 하지만 단순
+                            변심만으로는 주문 취소가 불가하오니 다시
+                            확인해주시길 바랍니다.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dg-dubble_btn_wrap clear_both">
+                        <a href="#" class="dg-btn_line dg-dubble_btn">닫기</a>
+                        <a href="#" class="dg-btn_gra dg-dubble_btn">확인</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 주문취소 팝업 E -->
+
+              <!-- 환불 팝업 -->
+              <div
+                class="_popup_wrapper _cancel_popup_wrapper _cancel_refund_popup_wrapper"
+              >
+                <div class="_bg"></div>
+                <div class="_popup_wrap">
+                  <div class="_popup_title">
+                    <h4>환불 신청 내역<a href="#" class="_close_btn"> </a></h4>
+                  </div>
+                  <div class="_popup_content">
+                    <div class="_popup_text_wrap">
+                      <div class="_cancel_info">
+                        <span class="_title">신청일시</span>
+                        <span class="_content _num">2019-11-11 00:00:00</span>
+                        <span class="_title _order_number_title">주문번호</span>
+                        <span class="_content _num">0012547884</span>
+                        <span class="rounded-btn-dark _cancel_status"
+                          >환불완료</span
+                        >
+                      </div>
+                      <div class="_cancel_reason_wrap over-y_scroll">
+                        <div class="_cancel_reason _cancel_my_reason re">
+                          <h5 class="_title">취소사유</h5>
+                          <p class="_reason">
+                            주문에는 이상없으나 구매의사 없음(변심)
+                          </p>
+                          <div class="_reason_detail">
+                            사유에 작성했던 내용
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dg-dubble_btn_wrap clear_both">
+                        <a href="#" class="dg-btn_line dg-dubble_btn">닫기</a>
+                        <a href="#" class="dg-btn_gra dg-dubble_btn">확인</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 환불 팝업 E -->
+
+              <!-- 2. 환불 내역 있을 떄 E -->
+            </div>
+          </article>
+        </div>
+        <!-- 1) E -->
+      </div>
+    </div>
+    <!-- content E -->
+
+    <!--
+    footer 자리
+  --></body>
+</html>

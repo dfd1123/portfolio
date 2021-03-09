@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+@import "../utils/_variable.scss";
+
+@mixin popupStyle($width) {
+  width: $width;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 67px 30px 30px;
+  text-align: center;
+  z-index: 999;
+  position: relative;
+}
+
+.popup-layer {
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+
+  .popup-01 {
+    @include popupStyle(400px);
+  }
+
+  .popup-02 {
+    @include popupStyle(600px);
+    padding: 67px 40px 30px;
+  }
+
+  b {
+    color: $theme-button01-color;
+  }
+
+  &-title {
+    @include position($t: 0, $l: 0);
+    @include fontStyle(15px, 400);
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  &-txt {
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+
+    &._small {
+      @include fontStyle(13px, 400);
+    }
+  }
+
+  &-close-btn {
+    @include position($r: 20px, $t: 20px);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url($ui-path-img-btn+"btn-close-dark.svg");
+    border: 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .btn-01 {
+    @include buttonStyle(10px, 47px, $theme-button01-color, #fff, 1.1rem);
+  }
+
+  .btn-02 {
+    @include buttonStyle(10px, 47px, #c5c5c5, #fff, 1.1rem);
+  }
+
+  .btn-group {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+
+    &._double {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .btn {
+      width: 48.5%;
+    }
+  }
+
+  .member-mail-guide {
+    padding: 15px;
+    margin-bottom: 18px;
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  .select-folder {
+    display: inline-block;
+    width: 79%;
+    background-color: #f9f9f9;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 10px;
+    position: relative;
+
+    &-label {
+      display: inline-block;
+      font-size: 14px;
+      width: 20%;
+      text-align: left;
+    }
+
+    ._label {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      padding: 0 15px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    ._label em {
+      font-size: 15px;
+      color: black;
+    }
+
+    ._label:after {
+      @include position($r: 15px, $t: 50%);
+      transform: translateY(-50%);
+
+      content: "";
+      border-top: 5px solid rgba(51, 51, 51, 0.5);
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      display: inline-block;
+      width: 0;
+      height: 0;
+    }
+
+    ._input {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #dbdbdb;
+      border-radius: 10px;
+      padding: 0 15px;
+      font-size: 15px;
+    }
+
+    ._input:placeholder {
+      color: rgba(114, 114, 114, 0.5);
+    }
+
+    &-group {
+      @include position($t: 55px, $l: 0);
+      background-color: #f9f9f9;
+      width: 100%;
+      border-radius: 10px;
+      text-align: left;
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+      max-height: 0;
+      border: 0;
+      transition: all 0.2s;
+      z-index: 1;
+    }
+
+    .select-folder-list {
+      font-size: 15px;
+      line-height: 40px;
+      padding: 0 15px;
+      color: black;
+      cursor: pointer;
+
+      &._create_btn {
+        color: $red-color;
+      }
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .label-select-group {
+    margin-bottom: 15px;
+  }
+
+  #check-show-folder-list:checked + .select-folder-group {
+    padding: 10px 0;
+    height: auto;
+    max-height: 50em;
+    border: 1px solid #dbdbdb;
+
+    transition: all 0.2s;
+  }
+
+  .ticket-info-table {
+    table th,
+    table td {
+      @include fontStyle(14px, 400);
+      border: 1px solid #dbdbdb;
+      text-align: center;
+      vertical-align: middle;
+      padding: 12px 0;
+      text-transform: uppercase;
+    }
+
+    table th {
+      @include fontStyle(15px, 400);
+      background-color: #f8f8f8;
+      width: 27%;
+
+      &:first-child{
+          width: 19%;
+      }
+    }
+
+    em {
+      @include fontStyle(13px, 400);
+    }
+  }
+}
+
+.popup-layer-etc {
+  max-width: 610px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  padding: 67px 30px 30px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}

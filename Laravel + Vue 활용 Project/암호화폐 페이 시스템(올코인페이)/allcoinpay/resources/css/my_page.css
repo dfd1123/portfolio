@@ -1,0 +1,587 @@
+/* ------------------------MYPAGE 마이페이지 스타일 START ------------------------ */
+
+/* 마이페이지 헤더 공통 start */
+.mypage_hd{
+    width: 100%;
+    height: 100px;
+    background-image: url(/image/image/homepage/bg_top.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    padding: 35px 0;
+    background-size: cover;
+}
+
+.mypage_hd h1{
+    font-family: 'Noto Sans Korean', sans-serif;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.sub_nav_bar {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.sub_nav_bar ul li{
+    display: inline-block;
+}
+
+.sub_nav_bar ul li a span{
+    padding: 12px 25px 8px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.sub_nav_bar ul li.active span{
+    border-bottom: 3px solid #87cdce;
+}
+
+/* 마이페이지 헤더 공통 end */
+
+/* 마이페이지 공통 start */
+
+.mypage_wrap{
+    width: 100%;
+    position: relative;
+}
+
+.mypage_inner {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 70%;
+    padding: 45px 0;
+    color: #474846;
+}
+
+.mypage_inner .title{
+    text-align: center;
+    font-size: 17px;
+}
+
+.mypage_inner .btn_style{
+    font-size: 13px;
+}
+
+.mypage_inner .complit_icon{
+    width: 105px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 마이페이지 공통 end */
+
+/* 알림 설정 start */
+
+.mypage_inner .boxing{
+    font-size: 13px;
+    padding: 11px;
+    text-align: center;
+}
+
+.mypage_inner .form-group .alarm_group{
+    display: inline-block;
+    float: right;
+}
+
+.mypage_inner .boxing b{
+    color: #4aa4a4;
+}
+
+/* 알림 설정 end */
+
+/* OTP 보안강화 start */
+
+.mypage_inner .otp_setting_group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mypage_inner .otp_setting_group .left_con{
+    width: 45%;
+    background: #f5f5f5;
+    padding: 30px 0 20px;
+    text-align: center;
+}
+
+.mypage_inner .otp_setting_group .left_con .qr_box{
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.mypage_inner .otp_setting_group .left_con .qr_adrs{
+    font-size: 13px;
+    width: 100%;
+    display: inline-block;
+}
+
+.mypage_inner .otp_setting_group .right_con{
+    width: 52%;
+}
+
+.mypage_inner .otp_setting_group .right_con .tit{
+    font-size: 22px; text-align: left;
+}
+
+.mypage_inner .otp_setting_group .right_con .s_txt{
+    padding-left: 3px;
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+}
+
+.mypage_inner .otp_setting_group .otp_num_group{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 40px;
+}
+
+.mypage_inner .otp_setting_group .otp_num_group>form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mypage_inner .otp_setting_group .otp_num_group .btn_style{
+    width: 50%;
+    background: #b4b4b4;
+    box-shadow: none;
+    outline: none;
+}
+
+.mypage_inner .otp_setting_group .download_btn_group .s_txt{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.mypage_inner .otp_setting_group .download_btn{
+    text-align: left;
+    font-size: 12px;
+    padding: 0 13px;
+    background: #fff;
+    border: 1px solid #474846;
+    color: #474846; 
+    outline: none;
+    width: 100%;
+}
+
+.mypage_inner .otp_setting_group .download_btn b{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.mypage_inner .otp_setting_group .download_btn:hover{
+    border-color: #4aa4a4;
+    color: #4aa4a4;
+}
+
+.mypage_inner .otp_setting_guide{
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* OTP 보안강화 end */
+
+/* 락리워드 start */
+
+.lock_reward_hd .coin_amount_bar{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+
+.lock_reward_hd .coin_amount_bar label{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    color: #4aa4a4;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.lock_reward_hd .coin_amount_bar input{
+    width: 100%;
+    font-size: 22px;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    text-align: right;
+    padding: 0px 10px 0 80px;
+    color: #474846;
+    outline: none;
+}
+
+.lock_reward_hd .coin_amount_bar input:focus{
+    border-color: #4aa4a4;
+    outline: none;
+}
+
+.lock_reward_hd .coin_amount_bar select.form-control{
+    width: 20%;
+    text-transform: uppercase;
+}
+
+.lock_reward_hd .svgicon{
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    position: relative;
+    left: -4px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+}
+
+.lock_reward_hd .svgicon + span{
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.lock_reward_hd .svgicon.lock_icon{
+	background-image: url(/image/icon/icon_lock.svg);
+}
+
+.lock_reward_hd .svgicon.unlock_icon{
+	background-image: url(/image/icon/unlock.svg);
+}
+
+.lock_indicator{
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+
+.lock_indicator ul{
+    width: 100%; 
+    display: inline-block;
+}
+
+.lock_indicator ul li{
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+    font-size: 13px;
+    color: #474846;
+}
+
+.lock_indicator ul li:nth-child(2){
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.lock_indicator ul li .amount_span{
+    color: #0fa5a5;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.lock_indicator ul li .amount_span .currency{
+    color: #787878;
+    text-transform: uppercase;
+    margin-left: 3px;
+}
+
+.lock_reward_group .lock_history_tab{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+
+.lock_reward_group .lock_history_tab ul{
+    width: 100%; height: 100%;
+}
+
+.lock_history_tab li {
+    width: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #dddddd;
+    border-bottom-color: #4aa4a4;
+    float: left;
+    height: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lock_history_tab li.active{
+    border-bottom: 0;
+    border-color: #4aa4a4;
+}
+
+.lock_history_table .table_label{
+    border: 1px solid #dddddd;
+}
+
+.lock_history_table.table_1 .table_label thead > tr > th:nth-child(1),
+.lock_history_table.table_1 .table_label thead > tr > th:nth-child(2){
+    width: 30%;
+}
+.lock_history_table.table_1 .table_label thead > tr > th:nth-child(3){
+    width: 40%;
+}
+
+.lock_history_table .coin_chart_tbl{
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.lock_history_table .coin_chart_tbl tbody > tr:last-child{
+    border-color: #dddddd;
+}
+
+.lock_history_table .coin_chart_tbl tbody > tr > td{
+    text-align: center;
+    color: #474846;
+    padding: 15px 0;
+}
+
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(1),
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    width: 30%;
+}
+
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr > td:nth-child(3){
+    width: 40%;
+}
+
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr.lock_status > td:nth-child(1){
+    font-weight: bold;
+    color: #ff4646;
+}
+.lock_history_table.table_1 .coin_chart_tbl tbody > tr.unlock_status > td:nth-child(1){
+    font-weight: bold;
+    color: #4378ff;
+}
+
+.lock_history_table.table_2 .table_label thead > tr > th:nth-child(1),
+.lock_history_table.table_2 .table_label thead > tr > th:nth-child(2){
+    width: 50%;
+}
+
+.lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(1),
+.lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    width: 50%;
+}
+
+.lock_history_table.table_2 .coin_chart_tbl tbody > tr > td:nth-child(2){
+    border-right: 1px solid #dddddd;
+}
+
+/* 락리워드 end */
+
+/* 보안인증 start */
+
+.mypage_inner .lv_certifi_before .title{
+    line-height: 25px;
+}
+
+.mypage_wrap .big_tit{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.security_set_group .boan_level_wrap{
+    display: block;
+    text-align: center;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con{
+    width: 148px;
+    height: 148px;
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 90px 0 30px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 31%;
+    background-size: 28px;
+    position: relative;
+    font-size: 13px;
+    color: #a0a0a0;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1){
+    background-position: 50% 40%;
+    background-image: url(/image/icon/level_icon1_b.svg);
+    background-size: 35px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1):after,.boan_level_con:nth-child(2):after,.boan_level_con:nth-child(3):after{
+    position: absolute;
+    content:'';
+    width: 7px;
+    height: 7px;
+    background: #87cdce;
+    border-radius: 50%;
+    right: -19px;
+    top: 50%;
+    margin-top: -3.5px;
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(2){
+	background-image: url(/image/icon/level_icon2_b.svg);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(3){
+	background-image: url(/image/icon/level_icon3_b.svg);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(4){
+	background-image: url(/image/icon/level_icon4_b.svg);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con.active{
+    color: #474846;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.2);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(1).active{
+    background-image: url(/image/icon/level_icon1_a.svg);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(2).active{
+    background-image: url(/image/icon/level_icon2_a.svg);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(3).active{
+    background-image: url(/image/icon/level_icon3_a.svg);
+}
+
+.security_set_group .boan_level_wrap .boan_level_con:nth-child(4).active{
+    background-image: url(/image/icon/level_icon4_a.svg);
+}
+
+.security_set_group .info_list {
+    border-top: 1px solid #f0f0f0;
+    font-size: 12px;
+}
+
+.mypage_inner .complit_icon{
+    width: 105px;
+}
+
+.resend_btn{
+    width: 100px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 3px 0;
+}
+
+/*.overlay{
+	position: fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.sending_progress_wrap {
+    height:50px;
+    width:40px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:-22%;
+	bottom:0;
+	z-index: 10;
+    margin:auto;
+}
+
+.sending_progress_wrap::after {
+    content:'Email Sending..';
+	color: #fff;
+    text-shadow: 0px 0px 1px #222;
+    font-weight: 700;
+    position: absolute;
+    bottom: -35px;
+    left: -31px;
+    width: 120px;
+}
+.sending_progress_wrap .box {
+    position:relative;
+    height:50px;
+    width:40px;
+    animation: box 5s infinite linear;
+}
+
+.sending_progress_wrap .border {
+    background: #fff;
+    border: 1px solid #464a58 !important;
+    position: absolute;
+}
+
+.sending_progress_wrap .border.one {
+    height:4px;
+    top:0;
+    left:0;
+    animation: border-one 5s infinite linear;
+}
+
+.sending_progress_wrap .border.two {
+    top:0;
+    right:0;
+    height:100%;
+    width:4px;
+    animation: border-two 5s infinite linear;
+}
+
+.sending_progress_wrap .border.three {
+    bottom:0;
+    right:0;
+    height:4px;
+    width:100%;
+    animation: border-three 5s infinite linear;
+}
+
+.sending_progress_wrap .border.four {
+    bottom:0;
+    left:0;
+    height:100%;
+    width:4px;
+    animation: border-four 5s infinite linear;
+}
+
+.sending_progress_wrap .line {
+    height:4px;
+    background:#464a58;
+    position:absolute;
+    width:0%;
+    left:25%;
+}
+
+.sending_progress_wrap .line.one {
+    top:25%;
+    width:0%;
+    animation: line-one 5s infinite linear;
+}
+
+.sending_progress_wrap .line.two {
+    top:45%;
+    animation: line-two 5s infinite linear;
+}
+
+.sending_progress_wrap .line.three {
+    top:65%;
+    animation: line-three 5s infinite linear;
+}*/
+
+/* 보안인증 end */
+
+/* ------------------------MYPAGE 마이페이지 스타일 END ------------------------ */

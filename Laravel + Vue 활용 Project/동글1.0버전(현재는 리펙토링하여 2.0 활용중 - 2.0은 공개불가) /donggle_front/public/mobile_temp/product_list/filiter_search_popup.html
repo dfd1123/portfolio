@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>동글</title>
+
+  <link rel="stylesheet" href="/vendor/css/normalize.css" />
+  <link rel="stylesheet" href="/css/common/mobile_ui.css" />
+</head>
+
+<body>
+
+  <!-- content -->
+  <div id="dg-category-choice-wrapper" class="dg-product-list-wrapper">
+
+    <!-- * 필터검색 팝업 -->
+    <div class="_popup_wrapper _filter_search_popup_wrapper">
+        <div class="_bg"></div>
+        <div class="_popup_wrap">
+          <div class="_popup_title">
+            <h4>필터검색<a href="#" class="_close_btn"> </a></h4>
+          </div>
+          <div class="_popup_content">
+            <div class="dg-filter-search-group clear_both">
+        
+              <div class="l-title-group">
+                <ul>
+                  <!-- 클릭시 클릭한 애와 .l-contents-group 중에서 같은 인덱스인 .in-section 둘다 .active -->
+                    <li class="in-label -gender">
+                        성별
+                        <small class="_choice_num">(1)</small>
+                    </li>
+                    <li class="in-label -age active">
+                        나이
+                        <small class="_choice_num">(2)</small>
+                    </li>
+                    <li class="in-label -color">
+                        색상
+                        <small class="_choice_num">(3)</small>
+                    </li>
+                    <li class="in-label -price">
+                        가격대
+                        <small class="_choice_num">(4)</small>
+                    </li>
+                    <li class="in-label -size">
+                        사이즈
+                        <small class="_choice_num">(2)</small>
+                    </li>
+                    <li class="in-label -hashtag">
+                        해시태그
+                        <small class="_choice_num">(4)</small>
+                    </li>
+                </ul>
+              </div>
+              <div class="l-contents-group">
+                <!-- 
+                  각 div에서 선택된 갯수를 .l-title-group중 같은 인덱스인 .in-label의 ._choice_num에 기입
+                  -->
+                  <div class="in-section">
+                    <div class="filiter-choice-item-wrap">
+                        <input type="radio" id="test001" name="test_1" class="_input_choice display_none">
+                        <label for="test001" class="rounded-btn-dark _input_chck">남자</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="radio" id="test002" name="test_1" class="_input_choice display_none">
+                        <label for="test002" class="rounded-btn-dark _input_chck">여자</label>
+                    </div>
+                  </div>
+
+                  <div class="in-section active">
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="test_1" class="_input_choice display_none">
+                        <label for="test_1" class="rounded-btn-dark _input_chck">10대</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="test_2" class="_input_choice display_none">
+                        <label for="test_2" class="rounded-btn-dark _input_chck">20대</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="test_3" class="_input_choice display_none">
+                        <label for="test_3" class="rounded-btn-dark _input_chck">30대</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="test_4" class="_input_choice display_none">
+                        <label for="test_4" class="rounded-btn-dark _input_chck">40대</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="test_5" class="_input_choice display_none">
+                        <label for="test_5" class="rounded-btn-dark _input_chck">50대 이상</label>
+                    </div>
+                  </div>
+
+                  <div class="in-section _color_wrap active">
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">블랙</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">화이트</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">아이보리</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">베이지</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">챠콜</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">블루</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">핑크</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">카키</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">그린</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">옐로우</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">레드</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">와인</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">퍼플</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">브라운</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">카멜</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">민트</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">네온핑크</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">네온옐로우</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">오렌지</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">청</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">연청</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">진청</label>
+                    </div>
+                    <div class="_color-more">
+                      <button type="button" class="more-btn">기타 색상 선택</button>
+                      <span>레몬</span>
+                      <span>코발트블루</span>
+                      <span>라임</span>
+                      <span>올리브그린</span>
+                    </div>
+                  </div>
+
+                  <div class="in-section active">
+                    <div class="filiter-choice-item-wrap">
+                        <input type="radio" id="test01" name="test_2" class="_input_choice display_none">
+                        <label for="test01" class="rounded-btn-dark _input_chck">5,000원 이하</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="radio" id="test02" name="test_2" class="_input_choice display_none">
+                        <label for="test02" class="rounded-btn-dark _input_chck">5,000원 ~ 10,000원</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="radio" id="test03" name="test_2" class="_input_choice display_none">
+                        <label for="test03" class="rounded-btn-dark _input_chck">10,000원 ~ 20,000원</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="radio" id="test04" name="test_2" class="_input_choice display_none">
+                        <label for="test04" class="rounded-btn-dark _input_chck">20,000원 ~ 40,000원</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="radio" id="test05" name="test_2" class="_input_choice display_none">
+                        <label for="test05" class="rounded-btn-dark _input_chck">40,000원 ~ 60,000원</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="radio" id="test06" name="test_2" class="_input_choice display_none">
+                        <label for="test06" class="rounded-btn-dark _input_chck">100,000원 이상</label>
+                    </div>
+                    <div class="_price_range">
+                      <p>직접입력</p>
+                      <span class="_start"><input type="text" class="init-input">원</span>
+                      <span class="_end"><input type="text" class="init-input">원</span>
+                      <input type="button" class="square-btn-outline" value="적용"></input>
+                    </div>
+                  </div>
+
+                  <div class="in-section">
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">10~20</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">20~30</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">30~40</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">40~50</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">50~60</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">60~70</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">70~80</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">80~90</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">90~100</label>
+                    </div>
+                    <div class="filiter-choice-item-wrap">
+                        <input type="checkbox" id="#" class="_input_choice display_none">
+                        <label for="#" class="rounded-btn-dark _input_chck">110 이상</label>
+                    </div>
+                  </div>
+
+                  <div class="in-section _hash_wrap active">
+                    <div class="_hash">
+                      <input type="text" class="init-input">
+                      <input type="button" class="square-btn"></input>
+                    </div>
+                    <div>
+                      <!-- 인풋으로 추가된 해시태그들이 보이는 곳. 각 ._hashtag_plus 을 누르면 삭제됨 -->
+                      <p class="hash-list">목록</p>
+                      <button class="_hashtag_plus rounded-btn-dark">태그추가</button>
+                      <button class="_hashtag_plus rounded-btn-dark">누르면삭제</button>
+                      <button class="_hashtag_plus rounded-btn-dark">삭제할때누르기</button>
+                      <button class="_hashtag_plus rounded-btn-dark">태그추가</button>
+                      <button class="_hashtag_plus rounded-btn-dark">태그</button>
+                      <button class="_hashtag_plus rounded-btn-dark">태그</button>
+                    </div>
+                  </div>
+        
+              </div>
+        
+            </div>
+            <div class="dg-dubble_btn_wrap clear_both">
+              <a class="in-refresh">
+                <img src="/images/btn/btn_refresh.svg" alt="refresh button">
+                <span>전체해제</span>
+              </a>
+              <a href="#" target="_blank" class="dg-btn_gra dg-dubble_btn">선택완료</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 필터검색 팝업 E -->
+
+
+  </div>
+  <!-- content E -->
+
+  <!--
+    footer 자리
+  -->
+</body>
+
+</html>

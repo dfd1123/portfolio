@@ -1,0 +1,531 @@
+/*------------------------LOGIN-REGISTER-FIND PASSWORD-OTP-기존회원보안인증 (권한 관련 페이지) START------------------------*/
+
+/*common*/
+.auth_wrap{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 75px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.auth_wrap .card_title{
+    font-size: 45px;
+    position: relative;
+}
+
+.card_title:after {
+    content: '';
+    border-bottom: 3px solid #00B9FF;
+    position: absolute;
+    bottom: 0;
+    width: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.auth_input {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.auth_input:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: rgba(0,185,255,1);
+	outline: 0;
+	box-shadow: 0 0 0 0.2 rem rgba(0,185,255,0.3);
+}
+
+.auth_input_line {
+	margin: 0 auto;
+}
+
+.both_btn_group{
+	display: flex; 
+	justify-content: space-between;
+}
+
+.both_btn_group button{
+	width: 49%;
+}
+
+.btn_style {
+    background: #fff;
+    color:  #00B9FF;
+    text-transform: uppercase;
+    border: 1px solid  #00B9FF;
+    height: calc(2.19rem + 12px);
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn_style:hover {
+    border: 2px solid  #00B9FF;
+}
+
+.btn_style:active {
+	box-shadow: inset 0 3px 7px rgba(0,0,0,0.3);
+	outline: none;
+}
+
+.btn_group .btn-link {
+	color: #333;
+}
+
+.btn_style.cancel_btn{
+	background: #fff; border: 1px solid #c8c8c8;
+	color: #333;
+}
+
+.btn_style.cancel_btn:hover{
+	background: #f7f7f7;
+}
+
+.btn_style.cancel_btn:active {
+	background: #f7f7f7;
+	box-shadow: inset 0 3px 7px rgba(0,0,0,0.3);
+	outline: none;
+}
+
+.auth_wrap .ment {
+	text-align: center;
+	width: 100%;
+	font-size: 13px;
+	color: #464a58;
+	letter-spacing: -.8px;
+	font-weight: 500;
+	display: inline-block;
+}
+
+/*//common*/
+
+/*------------------------회원가입 공통 REGISTER common START------------------------*/
+
+.auth_wrap.register_auth_wrap {
+    padding: 20px 75px;
+    width: 650px;
+}
+
+.auth_wrap.register_auth_wrap .term_infor_div{
+    text-align:left;
+}
+
+.auth_wrap.register_auth_wrap .term_infor_div>div{
+    height: 112px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-break: break-all;
+}
+
+/*------------------------회원가입 공통 REGISTER common END------------------------*/
+
+/*------------------------회원가입 동의 REGISTER_AGREE START------------------------*/
+
+.auth_wrap.register_auth_wrap .agree_con {
+	background: #fff;
+	height: 150px;
+	border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+}
+
+.auth_wrap.register_auth_wrap .agree_con:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+.auth_wrap.register_auth_wrap .top_tit {
+	width: 100%;
+	border-bottom: 1px solid #edf0f2;
+    padding: 5px 10px;
+    position: relative;
+    text-align: left;
+}
+
+.auth_wrap.register_auth_wrap .top_tit.last_top_tit {
+	padding: 10px 5px;
+}
+
+.auth_wrap.register_auth_wrap .top_tit label {
+	font-size: 13px;
+	color: #333333;
+	text-indent: 5px;
+}
+
+.auth_wrap.register_auth_wrap .top_tit .grayCheckbox {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+.auth_wrap.register_auth_wrap .top_tit.last_top_tit {
+	border-bottom: 0;
+}
+
+.auth_wrap.register_auth_wrap .top_tit.last_top_tit .grayCheckbox {
+	top: 15px;
+}
+
+.auth_wrap.register_auth_wrap .agree_con textarea {
+	width: 100%;
+	height: 100px;
+	resize: none;
+	border: 0;
+	font-size: 11px;
+	line-height: 20px;
+	padding: 10px 15px;
+	outline: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/*------------------------회원가입 동의 REGISTER_AGREE END------------------------*/
+
+/*------------------------회원가입 REGISTER START------------------------*/
+
+.certifi_form_group {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.mobile_certify_code_wrap{
+	width: 78%;
+	position: relative;
+}
+
+.mobile_certify_code_wrap>span{
+	position: absolute;
+    top: 6px;
+	right: 16px;
+	z-index: 2;
+}
+
+.certifi_form_group .certifi_form_input {
+	width: 78%;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Spoqa Han Sans Light';
+}
+
+.mobile_certify_code_wrap .certifi_form_input {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+
+.certifi_form_group .certify_label {
+	color: #00B9FF;
+	font-weight: bold;
+	position: absolute;
+	top: 8px;
+	left: 13px;
+	font-size: 14px;
+	z-index: 2;
+}
+
+.certifi_form_group .btn {
+	width: 21%;
+	display: inline-block;
+	font-size: 12px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+}
+
+.certifi_form_group .certify_btn {
+	background: transparent;
+    border:1px solid #00b9ff;
+}
+
+.certifi_form_group .certify_btn:active {
+    border:2px solid #00b9ff;
+}
+
+.certifi_form_group .certify_btn.active {
+    border-radius: 0;
+    border: 2px solid #00b9ff;
+    background-color: transparent;
+    color: #00b9ff;
+}
+
+.auth_wrap.register_auth_wrap .group_name {
+	font-weight: bold;
+	color: #000000;
+	font-size: 17px;
+	letter-spacing: -1px;
+	text-align: left;
+}
+
+.auth_wrap.register_auth_wrap .group_ment {
+	margin-bottom: 7px;
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+}
+
+.certifi_form_group .country_slt{
+    width: 90px;
+	border-color: #dcdcdc;
+	padding-left: 7px;
+}
+
+.certifi_form_group .country_slt + .certifi_form_input{
+    width: 59%;
+}
+
+.info_change_tit{
+    font-size: 15px;
+}
+
+/*------------------------회원가입 REGISTER END------------------------*/
+
+/*------------------------회원가입 완료 REGISTER_COMPLETE START------------------------*/
+
+.auth_wrap .small_ment{
+	color: #969696; font-size: 12px;
+}
+
+/*------------------------회원가입 완료 REGISTER_COMPLETE END------------------------*/
+
+/*------------------------비밀번호 찾기 FIND PASSWORD START------------------------*/
+
+.auth_wrap.find_pw_wrap{
+    width: 700px;
+}
+
+.find_pw_group{
+    background: #f5f5f5;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+.overlay{
+	position: fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.sending_progress_wrap {
+    height:50px;
+    width:40px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:-22%;
+	bottom:0;
+	z-index: 10;
+    margin:auto;
+}
+
+.sending_progress_wrap::after {
+    content:'Email Sending..';
+	color: #fff;
+    text-shadow: 0px 0px 1px #222;
+    font-weight: 700;
+    position: absolute;
+    bottom: -35px;
+    left: -31px;
+    width: 120px;
+}
+.sending_progress_wrap .box {
+    position:relative;
+    height:50px;
+    width:40px;
+    animation: box 5s infinite linear;
+}
+
+.sending_progress_wrap .border {
+    background: #fff;
+    border: 1px solid #464a58 !important;
+    position: absolute;
+}
+
+.sending_progress_wrap .border.one {
+    height:4px;
+    top:0;
+    left:0;
+    animation: border-one 5s infinite linear;
+}
+
+.sending_progress_wrap .border.two {
+    top:0;
+    right:0;
+    height:100%;
+    width:4px;
+    animation: border-two 5s infinite linear;
+}
+
+.sending_progress_wrap .border.three {
+    bottom:0;
+    right:0;
+    height:4px;
+    width:100%;
+    animation: border-three 5s infinite linear;
+}
+
+.sending_progress_wrap .border.four {
+    bottom:0;
+    left:0;
+    height:100%;
+    width:4px;
+    animation: border-four 5s infinite linear;
+}
+
+.sending_progress_wrap .line {
+    height:4px;
+    background:#464a58;
+    position:absolute;
+    width:0%;
+    left:25%;
+}
+
+.sending_progress_wrap .line.one {
+    top:25%;
+    width:0%;
+    animation: line-one 5s infinite linear;
+}
+
+.sending_progress_wrap .line.two {
+    top:45%;
+    animation: line-two 5s infinite linear;
+}
+
+.sending_progress_wrap .line.three {
+    top:65%;
+    animation: line-three 5s infinite linear;
+}
+
+@keyframes border-one {
+    0%   {width:0;}
+    10%  {width:100%;}
+    100% {width:100%;}
+}
+
+@keyframes border-two {
+    0%   {height:0;}
+    10%  {height:0%;}
+    20%  {height:100%;}
+    100% {height:100%;}
+}
+
+@keyframes border-three {
+    0%   {width:0;}
+    20%  {width:0%;}
+    30%  {width:100%;}
+    100% {width:100%;}
+}
+
+@keyframes border-four {
+    0%   {height:0;}
+    30%  {height:0%;}
+    40%  {height:100%;}
+    100% {height:100%;}
+}
+
+@keyframes line-one {
+    0%   {left:25%;width:0;}
+    40%  {left:25%;width:0%;}
+    43%  {left:25%;width:50%;}
+    52%  {left:25%;width:50%;}
+    54%  {left:25%;width:0% }
+    55%  {right:25%;left:auto;}
+    63%  {width:10%;right:25%;left:auto;}
+    100% {width:10%;right:25%;left:auto;}
+}
+
+@keyframes line-two {
+    0%   {width:0;}
+    42%  {width:0%;}
+    45%  {width:50%;}
+    53%  {width:50%;}
+    54%  {width:0% }
+    60%  {width:50%}
+    100% {width:50%;}
+}
+
+@keyframes line-three {
+    0%   {width:0;}
+    45%  {width:0%;}
+    48%  {width:50%;}
+    51%  {width:50%;}
+    52%  {width:0% }
+    100% {width:0%;}
+}
+
+@keyframes box {
+    0%   {opacity:1;margin-left:0px;height:50px;width:40px;}
+    55%  {margin-left:0px;height:50px;width:40px;}
+    60%  {margin-left:0px;height:35px;width:50px;}
+    74%  {msthin-left:0;}
+    80%  {margin-left:-50px;opacity:1;}
+    90% {height:35px;width:50px;margin-left:50px;opacity:0;}
+    100% {opacity:0;}
+}
+
+/*------------------------비밀번호 찾기 FIND PASSWORD END------------------------*/
+
+/*------------------------기존회원 보안인증 SECURITY_LV START------------------------*/
+.auth_wrap.register_auth_wrap .group_name .step_span{
+	display: inline-block; 
+	width: 100%;
+	color: #00B9FF;
+}
+
+.auth_wrap .small_ment.boxing strong{
+	color: #00B9FF;
+}
+/*------------------------기존회원 보안인증 SECURITY_LV END------------------------*/
+
+/*------------------------이메일 인증 verify START------------------------*/
+.auth_wrap .icon_mailcheck,
+.auth_wrap .complt_icon{
+	width: 100px;
+	margin: auto;
+}
+
+.auth_wrap .vrf_send_btn{
+	color: #fff;
+	font-size: 13px;
+}
+
+.auth_wrap .vrf_send_btn.not_active{
+	background: #dcdcdc;
+    box-shadow: none;
+}
+
+.auth_wrap .ment.s_ment{
+	font-size: 12px;
+}
+
+.auth_wrap .ment.s_ment a{
+	margin-left: 5px;
+	color: #ff6060;
+}
+
+.auth_wrap .ment.s_ment a:hover{
+	text-decoration: underline;
+}
+/*------------------------이메일 인증 verify END------------------------*/
+
+/*------------------------LOGIN-REGISTER-FIND PASSWORD-OTP END------------------------*/
+
+.mypage_msg {
+    font-size: 0.85rem;
+    color: #333;
+    line-height: 1.47;
+    letter-spacing: -0.6px;
+    background-color: #F8F8F8;
+    padding: 15px 0;
+    width: 100%;
+}
+
+

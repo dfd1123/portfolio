@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_drainage" width="73" height="73" viewBox="0 0 73 73">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-1,.cls-2,.cls-3{stroke:#adb3bc;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}.cls-2{fill:none}.cls-3{fill:#91ccfd}
+        </style>
+    </defs>
+    <g id="레이어_1" data-name="레이어 1">
+        <rect id="사각형_292" width="70" height="70" class="cls-1" data-name="사각형 292" rx="10" transform="translate(1.5 1.5)"/>
+        <circle id="타원_281" cx="22" cy="22" r="22" class="cls-2" data-name="타원 281" transform="translate(14.5 14.5)"/>
+        <circle id="타원_282" cx="3" cy="3" r="3" class="cls-3" data-name="타원 282" transform="translate(9.25 8.75)"/>
+        <circle id="타원_283" cx="3" cy="3" r="3" class="cls-3" data-name="타원 283" transform="translate(57.75 9.25)"/>
+        <circle id="타원_284" cx="3" cy="3" r="3" class="cls-3" data-name="타원 284" transform="translate(9.25 57.75)"/>
+        <circle id="타원_285" cx="3" cy="3" r="3" class="cls-3" data-name="타원 285" transform="translate(57.75 58.25)"/>
+        <path id="선_34" d="M0 0h19" class="cls-2" data-name="선 34" transform="translate(27 27.5)"/>
+        <path id="선_35" d="M0 0h19" class="cls-2" data-name="선 35" transform="translate(27 36.5)"/>
+        <path id="선_36" d="M0 0h19" class="cls-2" data-name="선 36" transform="translate(27 45.5)"/>
+    </g>
+</svg>

@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+// j1beatz 헤더
+
+.j1beatz-hd {
+  width: 100%;
+  padding: 35px 30px 20px;
+
+  &-sch-field {
+    width: 440px;
+    height: 40px;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid #9b4eff;
+      color: #fff;
+      font-weight: 100;
+    }
+
+    button {
+      @include position($t: 0, $r: 0);
+      width: 40px;
+      height: 100%;
+      background-color: transparent;
+      background-image: url($ui-path-img-btn+"btn_sch_big.svg");
+      background-position: center center;
+      border: 0;
+      background-repeat: no-repeat;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &-cs-field {
+    float: right;
+    display: inline-block;
+
+    h3 {
+      color: #fff;
+      display: inline-block;
+    }
+
+    .cs-btns {
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 14px;
+      vertical-align: middle;
+      line-height: 15px;
+      padding: 8px 9px;
+      margin-left: 15px;
+    }
+
+    .cs-btn {
+      background-repeat: no-repeat;
+      background-position: center center;
+      color: transparent;
+      display: inline-block;
+      width: 28px;
+      height: 32px;
+      background-size: 100%;
+      margin: 0 7px;
+      opacity: 0.4;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    @each $cs-btn-name in cs-btn-blg, cs-btn-kkt, cs-btn-insta, cs-btn-ytb {
+      .#{$cs-btn-name} {
+        background-image: url($ui-path-img-icon+"#{$cs-btn-name}.svg");
+      }
+    }
+  }
+}
+
+// 서브페이지일 때 j1beatz 헤더
+
+.sub-section .j1beatz-hd {
+  button {
+    background-image: url($ui-path-img-btn+"btn_sch_big_purple.svg");
+  }
+
+  .cs-btns {
+    background-color: #f9f9f9;
+  }
+
+  .cs-btn {
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @each $cs-btn-name in cs-btn-blg, cs-btn-kkt, cs-btn-insta, cs-btn-ytb {
+    .#{$cs-btn-name} {
+      background-image: url($ui-path-img-icon+"#{$cs-btn-name}-light.svg");
+    }
+  }
+}
+
+// 서브페이지 중 실시간 TOP100 페이지일 때 j1beatz 헤더
+
+.sub-section .j1beatz-hd.dark_ver {
+  background-color: #1b1b38;
+
+  button {
+    background-image: url($ui-path-img-btn+"btn_sch_big.svg");
+  }
+
+  .cs-btns {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .cs-btn {
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @each $cs-btn-name in cs-btn-blg, cs-btn-kkt, cs-btn-insta, cs-btn-ytb {
+    .#{$cs-btn-name} {
+      background-image: url($ui-path-img-icon+"#{$cs-btn-name}.svg");
+    }
+  }
+}
+
+// 서브페이지 중 이용권정보, 장바구니, 고객센터, 마이페이지일 때 j1beatz 헤더
+
+.sub-section .j1beatz-hd.bg_gray_ver {
+  background-color: #f9f9f9;
+
+  .cs-btns {
+    background-color: #fff;
+  }
+
+  .j1beatz-hd-cs-field {
+    h3 {
+      color: #333;
+    }
+  }
+}

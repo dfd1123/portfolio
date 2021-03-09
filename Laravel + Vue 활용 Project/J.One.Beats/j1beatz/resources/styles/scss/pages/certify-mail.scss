@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+.certify-mail {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    border: 1px solid #dcdcdc98;
+    text-align: center;
+
+    &__hd {
+        height: 200px;
+        background-image: url($G-path-img+"imgs/img_bg_head.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__contents {
+        padding: 40px 30px;
+        font-weight: 400;
+
+        &__tit {
+            font-weight: 500;
+            font-size: 28px;
+        }
+
+        &__text {
+            line-height: 1.5;
+            font-weight: inherit;
+            margin-bottom: 30px;
+
+            b {
+                color: #7e2aff;
+                font-weight: 500;
+                margin-right: 5px;
+            }
+        }
+
+        &__btn {
+            width: 175px;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            background-color: #7e2aff;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    }
+
+    .member-mail-guide {
+        background: #f9f9f9;
+        border-radius: 30px;
+        padding: 15px 15px 32px;
+        margin: 30px 0 40px;
+
+        span {
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #7e2aff;
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+
+    &__ft {
+        background-color: #f9f9f9;
+        border-top: 1px solid #dbdbdb;
+        padding: 25px 0;
+
+        .ft-company {
+            font-weight: 400;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        span,
+        address {
+            color: #848484;
+        }
+
+        .certify-mail__ft__info {
+            span {
+                font-size: 13px;
+                font-weight: 200;
+                line-height: 1.4;
+            }
+
+            span.bd-right {
+                border-right: 1px solid #848484;
+                padding-right: 8px;
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+    }
+}

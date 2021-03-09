@@ -1,0 +1,593 @@
+@import "../helpers/mixin";
+
+.wrapper--home{
+
+    .ani-logo-group {
+
+        padding-top: 10vh;
+        padding-bottom: 0px;
+        height: 30vh;
+
+        @include xsm{
+
+            padding-bottom: 0;
+
+        }
+
+    }
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    &__scroll-area{
+
+        @include scrollArea(calc( 100% - 6rem ));
+
+    }
+
+    &__earth{
+
+        position: relative;
+        left: -5%;
+        background: linear-gradient(to top, #00BCDB, #00BCDB, #00D3D9, #00DBD8);
+        width: 110%;
+        height: 70vh;
+        border-top-left-radius: 46%;
+        border-top-right-radius: 46%;
+        overflow: hidden;
+        opacity: 0;
+        z-index: 0;
+        animation-delay: 0.5s;
+        animation-name: earthAni;
+        animation-duration: 1.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        @include beforeSelector(110%, 50%, linear-gradient(to top, transparent, rgba(255, 255, 255, 0.7)));
+        border-top-left-radius: 46%;
+        border-top-right-radius: 46%;
+
+        &__img{
+
+            position: absolute;
+            width: 25%;
+
+        }
+
+        &__img01{
+
+            @include position($t: 10%, $l: 8%, $transX: 5%, $transY: -50%);
+            opacity: 0;
+            animation: transAni 2s 0.8s 1 forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        }
+
+        &__img02{
+
+            @include position($t: 30%, $l: 30%, $transX: -5%, $transY: -50%);
+            opacity: 0;
+            animation: transAni 2.5s 0.8s 1 forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        }
+
+        &__img03{
+
+            @include position($t: 10%, $r: 10%, $transX: 20%, $transY: -50%);
+            opacity: 0;
+            animation: transAni 2.8s 0.8s 1 forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        }
+
+        &__img04{
+
+            width: 100%;
+            @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+
+        }
+
+    }
+
+    &__con{
+
+        @include fontStyle(1.7rem, 400, #fff);
+        position: absolute;
+        top: 27vh;
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+        margin-top: 30px;
+        
+        @include xsm{
+
+        }
+
+        &__p{
+
+            line-height: 1.3;
+            
+        }
+
+        .button{
+
+            width: 48%;
+            margin-top: 25px;
+            transform: translateY(100%);
+            opacity: 0;
+            animation: transAni 0.5s 0.5s 1 forwards;
+            animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+
+        
+            @include xsm{
+
+                height: 3.5rem;
+                line-height: 3.5rem;
+                margin-top: 14px;
+    
+            }
+
+        }
+        
+        @include xsm{
+
+            font-size: 1.5rem;
+
+        }
+
+    }
+
+    &__product{
+
+        position: relative;
+        z-index: 1;
+
+        &__alink{
+
+            @include beforeSelector(1.65rem, 1.65rem, transparent);
+            position: relative;
+            color: #fff;
+            padding: 0 1rem 0 2rem;
+
+        }
+
+        &__alink--view-prdt{
+
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+            margin-right: 14px;
+
+            &:before{
+                
+                @include bgStyle(contain);
+                background-image: url('/img/icon/icon-view-prdt.svg');
+
+            }
+
+        }
+
+        &__alink--find-frnd{
+
+            &:before{
+                
+                @include bgStyle(contain);
+                background-image: url('/img/icon/icon-find-frnd.svg');
+
+            }
+
+        }
+
+    }
+
+    &__recommend-intro{
+
+        width: 100%;
+        padding: 2rem 2rem 0;
+        margin-bottom: 3rem;
+
+    }
+
+    &__estimate-con{
+
+        @include paddingLeftRight2rem;
+        margin-bottom: 4rem;
+
+        &__title{
+
+            @include fontStyle(1.5rem, bold, $navy-color);
+
+        }
+        
+        .matching-product__list{
+
+            border-bottom: 1px solid $border-color;
+
+        }
+
+        .matching-product__list:last-child{
+
+            border-bottom: 0;
+
+        }
+
+        .matching-product__card{
+
+            padding: 2rem 1rem 2rem 7rem;
+
+        }
+        
+        .matching-product__list--nothing .matching-product__card{
+            display: block;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        .matching-product__list--nothing .matching-product__card .icon{
+            display: block;
+            width: 30px;
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+
+        .matching-product__list--nothing .matching-product__card .caution{
+            display: block;
+            width: 100%;
+            color: #00cada;
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
+
+        .matching-product__card__logo{
+
+            left: 5px;
+
+        }
+
+        .matching-product__card__desc02{
+
+            font-size: 11px;
+            line-height: 1.4;
+
+        }
+
+        .matching-product__card__info--color:nth-of-type(2){
+
+            padding-left: 0;
+
+        }
+
+    }
+
+}
+
+.wrapper--home-trip{
+
+    width: 100%;
+    height: calc(100% - 6rem);
+    padding-top: $hd-title-height;
+    padding-bottom: 6rem;
+
+    &__scroll-area{
+
+        @include scrollArea(100%);
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 6rem;
+
+        .ft-info{
+            width: calc(100% - 2rem);
+            margin-top: 30px;
+        }
+
+    }
+
+}
+
+.matching-product{
+
+    &--bt-fixed{
+
+        @include maxWidth1024;
+        position: fixed;
+        bottom: 6rem;
+        padding: 1rem 0 0;
+
+        .inline{
+
+            margin-bottom: 17px;
+
+        }
+
+        .matching-product__card{
+
+            width: calc( 100% - 4rem );
+            margin: 0 auto;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 15px 20px rgba(0, 36, 76, 0.25);
+            box-shadow: 0 15px 20px rgba(0, 36, 76, 0.25);
+            @include xsm{
+                height: 10rem;
+            }
+
+        }
+
+        .matching-product__list {
+            margin-bottom: 2rem;
+        }
+
+    }
+    
+}
+
+.recommend-intro-card{
+
+    width: 100%;
+    background: linear-gradient(45deg, #00B1DC, #00DBD8);
+    border-radius: 15px;
+    box-shadow: 0 15px 19px rgba(0,0,0,0.15);
+    padding: 7rem 3rem 4rem;
+    position: relative;
+
+    .button{
+        margin-bottom: 1rem;
+        height: 3.8rem;
+        line-height: 3.8rem;
+        font-size: 1.25rem;
+    }
+
+    @include beforeSelector(90px, 40px, transparent);
+
+    &:before{
+
+        @include bgStyle(contain);
+        @include position ($t: 24px, $l: 50%, $transX: -50%, $transY: 0);
+        background-image: url(/img/logo/logo-word-tripik-white.svg);
+
+    }
+
+}
+
+@keyframes earthAni{
+
+    0%{
+
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+        opacity: 0;
+        bottom: -5%;
+
+    }
+
+    45%{
+
+        border-top-left-radius: 46%;
+        border-top-right-radius: 46%;
+        opacity: 0.3;
+
+    }
+    100%{
+
+        opacity: 1;
+        bottom: 0;
+
+    }
+
+}
+
+@keyframes transAni{
+
+    100%{
+
+        transform: none;
+        opacity: 1;
+
+    }
+
+}
+
+.trip-product{
+
+    &__list {
+
+        width: 55%;
+        float: left;
+        margin-bottom: 20px;
+
+        &:nth-child(2n){
+
+            margin-right: 0;
+
+        }
+
+        .rating-stars__total{
+
+            font-size: 0.75em;
+            position: relative;
+            top: -3px;
+            padding-left: 3px;
+
+            &--mini{
+                @include fontStyle(12px, 500, #A8A8A8);
+            }
+
+        }
+
+        .rating-stars__group {
+            margin-top: 1rem;
+        }
+
+    }
+
+    &__etc {
+
+        @include fontStyle($small-font, 100, #A8A8A8);
+        margin-bottom: 0.7rem;
+        display: inline-block;
+
+    }
+
+    &__tit{
+
+        @include fontStyle(0.7em, 400, inherit);
+        @include textOverflow(2);
+        line-height: 1.5;
+
+    }
+
+    &__thum {
+
+        @include bgStyle(cover);
+        width: 100%;
+        height: 12rem;
+        background-color: $light-blue-color;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+
+    }
+
+}
+
+.recom-trip-special{
+    margin-bottom: 2rem;
+}
+
+.home-trip-contents{
+
+    @include fontStyle(19px, 400, $navy-color);
+
+    &__tit{
+
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+}
+
+.recom-trip-knlg{
+
+    &__list{
+
+        width: calc(100% - 2rem);
+        height: 20rem;
+        color: #fff;
+        margin-right: 2rem;
+
+    }
+
+    &__card{
+
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        padding-left: 120px;
+        overflow: hidden;
+        position: relative;
+        
+        @include xsm{
+            padding-left: 90px;
+        }
+
+    }
+
+    &__label{
+
+        @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+        display: inline-block;
+        width: 120px;
+        height: 100%;
+        background: linear-gradient(to right, #00D9D8, #00B3DB);
+
+        &:before{
+            @include position($t: 15px, $l: 50%, $transX: -50%, $transY: 0);
+            @include bgStyle(contain);
+            content: '';
+            width: 50%;
+            height: 100px;
+            display: inline-block;
+            background-image: url(/img/logo/logo-full-tripik-bg.svg);
+
+            @include xsm{
+                @include position($t: 0, $l: 50%, $transX: -50%, $transY: 0);
+            }
+
+        }
+
+        @include xsm{
+            width: 90px;
+        }
+
+    }
+
+    &__con{
+
+        @include bgStyle(cover);
+        width: 100%;
+        height: 100%;
+        padding: 1.8rem 1rem;
+        position: relative;
+        font-size: 17px;
+    
+        &:before{
+
+            @include position($t: 0, $l: 0, $transX: 0, $transY: 0);
+            content: '';
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.15));
+
+        }
+
+        .knlg__con{
+
+            &__tit,
+            &__date,
+            &__text{
+
+
+                position: relative;
+                z-index: 1;
+
+            }
+
+            &__tit{
+                font-weight: bold;
+                line-height: 1.4;
+            }
+
+            &__date{
+                @include fontStyle(11px, 100, inherit);
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+
+            &__text{
+                @include fontStyle(0.75em, 300, inherit);
+                @include textOverflow(4);
+                line-height: 1.35;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+#matching_product_slick{
+    opacity: 0;
+    transform: translateY(5rem);
+}
+
+#matching_product_slick.ani{
+    animation: product_slick 0.5s 1 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes product_slick{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}

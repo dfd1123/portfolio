@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.26" height="20.479" viewBox="0 0 22.26 20.479">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fc4ead"/>
+      <stop offset="1" stop-color="#a134e8"/>
+    </linearGradient>
+  </defs>
+  <path id="btn_heart-on_cl" d="M11.13,40.879,9.572,39.321C3.784,34.2,0,30.751,0,26.522A6.035,6.035,0,0,1,6.122,20.4a6.689,6.689,0,0,1,5.009,2.337A6.689,6.689,0,0,1,16.139,20.4a6.035,6.035,0,0,1,6.122,6.122c0,4.229-3.784,7.68-9.572,12.8Z" transform="translate(0 -20.4)" fill="url(#linear-gradient)"/>
+</svg>

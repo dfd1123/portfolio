@@ -1,0 +1,683 @@
+@charset "UTF-8";
+@import "../utils/_variable.scss";
+@import "../utils/_path.scss";
+@import "../utils/_mixin.scss";
+
+@import "../components/mood_genre_btns.scss";
+
+/* 
+    --------------------------------------------------------------------
+
+        INDEX (권한관련페이지 - 로그인,회원가입,비번찾기,아이디찾기, 프로듀서프로필등록)
+
+            00. 공통
+            01. 로그인 페이지
+            02. 아이디 찾기 페이지
+            03. 비밀번호 찾기 페이지
+            04. 회원가입 페이지
+            05. 프로듀서 프로필 등록
+        
+    --------------------------------------------------------------------
+*/
+
+// 00. 공통
+
+// 서브페이지 권한관련 제목스타일
+
+.sub-page-auth {
+  margin-top: 40px;
+  text-align: center;
+
+  &-title {
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 17px;
+    }
+
+    h2 + span {
+      font-size: 16px;
+    }
+
+    .highlight {
+      font-size: 16px;
+      font-weight: 400;
+      color: $theme-button01-color;
+    }
+  }
+
+  &-panel {
+    max-width: 600px;
+    border-radius: 30px;
+    border: 1px solid #cccccc;
+    padding: 40px 30px;
+    margin: 0 auto;
+  }
+
+  .btn-certify {
+    @include buttonStyle(5px, 50px, #cccccc, #fff, 1.1rem);
+    width: 160px;
+    display: block;
+    margin-right: auto;
+
+    &-mini {
+      @include buttonStyle(5px, 47px, #cccccc, #fff, 1.1rem);
+      width: 100px;
+      margin: auto;
+
+      &:hover {
+        background-color: #333333;
+      }
+    }
+
+    &.active {
+      @include buttonStyle(5px, 50px, $theme-button01-color, #fff, 1.1rem);
+    }
+
+    &:hover {
+      background-color: #333333;
+    }
+  }
+
+  .btn-complete {
+    @include buttonStyle(30px, 55px, #cccccc, #fff, 1.1rem);
+    width: 100%;
+
+    &.active {
+      @include buttonStyle(30px, 55px, $theme-bg-color, #fff, 1.1rem);
+    }
+  }
+}
+
+// 입력 폼스타일
+
+.auth-input_form {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+
+  &._mail {
+    display: flex;
+
+    input {
+      width: 45%;
+    }
+
+    span {
+      width: 5%;
+      line-height: 45px;
+      color: #727272;
+      font-size: 20px;
+    }
+
+    select {
+      @include inputStyle();
+      width: 50%;
+    }
+  }
+
+  input {
+    @include inputStyle();
+  }
+
+  &._pw-alert {
+    &:after {
+      @include beforeAfterSelector(auto, auto, transparent, $t: 50%, $r: 5px);
+      transform: translateY(-50%);
+      font-size: 14px;
+    }
+
+    &-able {
+      &:after {
+        content: "비밀번호가 일치합니다.";
+        color: rgba(106, 126, 255, 0.8);
+      }
+
+      input {
+        border-color: rgba(106, 126, 255, 0.8);
+      }
+    }
+
+    &-disable {
+      &:after {
+        content: "비밀번호가 일치하지 않습니다.";
+        color: rgba(255, 103, 103, 0.8);
+      }
+
+      input {
+        border-color: rgba(255, 103, 103, 0.8);
+      }
+    }
+  }
+
+  &._double-chck,
+  &._input-beat {
+    display: flex;
+
+    input {
+      margin-right: 30px;
+    }
+
+    .btn-certify-mini {
+      width: 130px;
+    }
+  }
+
+  &._double-chck {
+    margin-bottom: 45px;
+  }
+}
+
+// 01. 로그인 페이지
+
+.sub-page-auth-login {
+  .btn {
+    @include buttonStyle(30px, 55px, #7e2aff, #fff, 1.1rem);
+    width: 100%;
+    font-weight: 500;
+    margin: 28px 0;
+  }
+
+  .auth-login_option {
+    position: relative;
+    text-align: right;
+    color: #727272;
+    font-size: 14px;
+
+    .auto-login-group {
+      @include position($t: -7px, $l: 0);
+    }
+
+    input[type="checkbox"] + label:before {
+      position: relative;
+      top: 4px;
+      margin-right: 7px;
+    }
+
+    .id-pw-join-group {
+      li {
+        display: inline-block;
+        position: relative;
+      }
+
+      li:nth-child(2) {
+        margin: 0 15px;
+      }
+
+      li:nth-child(2):before {
+        @include beforeAfterSelector(1px, 17px, #dcdcdc, $t: 0, $l: -8px);
+      }
+
+      li:nth-child(2):after {
+        @include beforeAfterSelector(1px, 17px, #dcdcdc, $t: 0, $r: -8px);
+      }
+
+      a {
+        color: rgba(114, 114, 114, 0.5);
+      }
+
+      a:hover {
+        color: darken(rgba(114, 114, 114, 0.5), 40%);
+      }
+
+      .highlight a {
+        color: $theme-button01-color;
+      }
+    }
+  }
+}
+
+// 02. 아이디 찾기 페이지
+
+.sub-page-auth-find_id {
+  &__before {
+    .btn-certify {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__after {
+    .member-mail-guide {
+      margin-top: 30px;
+    }
+
+    .btn {
+      @include buttonStyle(30px, 55px, $theme-bg-color, #fff, 1.1rem);
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+}
+
+// 03. 비밀번호 찾기 페이지
+
+.sub-page-auth-find_pw {
+  &__before,
+  &__after {
+    .btn {
+      margin-top: 30px;
+    }
+  }
+
+  &__after {
+    .in-title-mini_ver {
+      margin: 40px 0 12px;
+    }
+  }
+}
+
+// 04. 회원가입 페이지
+
+.sub-page-auth-join {
+  &__choice {
+    .join-type-choice-panel {
+      max-width: 600px;
+      margin: 0 auto;
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .join-type-list {
+      width: 49%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      border-radius: 40px;
+      border: 1px solid #cccccc;
+      transition: all 0.2s;
+      cursor: pointer;
+      flex-wrap: wrap;
+    }
+
+    .join-type-list:hover {
+      transition: all 0.2s;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+    }
+
+    .join-type-list img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+
+    .join-type-list span {
+      color: $theme-button01-color;
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .join-type-list p {
+      color: #5b5b5b;
+      font-size: 0.95rem;
+      width: 100%;
+    }
+  }
+
+  &__form {
+    .in-title-mini_ver {
+      margin: 50px 0 12px;
+    }
+
+    .in-title-mini_ver:nth-child(1) {
+      margin-top: 0;
+    }
+
+    .btn-certify {
+      margin-bottom: 45px;
+    }
+
+    .agree-align {
+      background-color: #f9f9f9;
+      font-size: 1em;
+      text-align: left;
+      border-radius: 20px;
+      font-weight: 400;
+      margin: 15px 0;
+    }
+
+    .access-terms {
+      margin-bottom: 20px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .agree-align ._label,
+    .access-terms li ._label {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding: 15px 20px;
+      position: relative;
+    }
+
+    ._label input[type="checkbox"] + label {
+      position: relative;
+      top: 4px;
+      margin-right: 7px;
+    }
+
+    .access-terms b,
+    .highlight {
+      color: $theme-button01-color;
+      font-weight: 500;
+    }
+
+    .access-terms .more {
+      @include position($t: 50%, $r: 20px);
+      transform: translateY(-50%);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__complete {
+    .certify-good {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      @include buttonStyle(30px, 55px, $theme-bg-color, #fff, 1.1rem);
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+
+  &__mood-choice{
+
+    .sub-page-auth-panel{
+        background-color: $theme-hd-color;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .mood-choice-container{
+        height: 750px;
+        font-size: 23px;
+        padding: 0 10px;
+
+        .con_tit{
+            color: #fff;
+            font-size: 0.9em;
+            padding: 0 35px;
+
+            padding-top: 40px;
+            height: 90px;
+
+            b, span{
+                color: inherit;
+            }
+
+            span{
+                font-size: 0.75em;
+                padding-left: 10px;
+            }
+
+        }
+
+    }
+
+    .mood-choice-slider{
+        width: 100%;
+        height: calc(100% - 90px);
+        overflow-y: scroll;
+    }
+
+    .mood-choice{
+
+        &__group{
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            padding: 0 20px 50px;
+
+        }
+
+        &__list{
+            width: 30%;
+            margin: 0 8px;
+            background-color: white;
+            height: 110px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+
+            &:before{
+                background: linear-gradient(to top, black, transparent);
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                opacity: 0.7;
+            }
+
+            ._bg{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                border-radius: 15px;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+            }
+
+            ._bg span{
+                color: #fff;
+                font-weight: 400;
+                font-size: 0.8em;
+                position: relative;
+            }
+        }
+
+        &__list.active{
+
+            &:before{
+                display: none;
+            }
+
+        }
+
+    }
+
+    .btn_group{
+        background-color: #fff;
+        width: 100%;
+        padding: 40px 30px;
+        border-top: 1px solid #cccccc;
+
+        .btn {
+            @include buttonStyle(30px, 55px, $theme-bg-color, #fff, 1.1rem);
+            width: 100%;
+        }
+
+    }
+    
+  }
+}
+
+// 05. 프로듀서 프로필 등록
+
+.sub-page-auth-pd-profile {
+  .certify-good {
+    margin-bottom: 20px;
+  }
+
+  .pd-profile-enroll-thumbnail {
+    @include thumnail(180px, 180px);
+    position: relative;
+    border-radius: 30px;
+    background-color: #707070;
+    margin: 60px auto;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+
+    button {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    span {
+      @include fontStyle(14px, 400);
+      color: #fff;
+      display: inline-block;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    &:hover {
+      button {
+        opacity: 1;
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  .main-mood-genre-choice {
+    margin-bottom: 30px;
+
+    ul {
+      text-align: left;
+    }
+
+    .mood-genre-choice-btn {
+      margin-bottom: 10px;
+    }
+
+    @each $mood-num in $mood {
+      $i: index($mood, $mood-num);
+
+      #main-mood-#{$i}-check:checked ~ ul .main-mood-#{$i} {
+        background-color: $theme-button01-color;
+        border-color: $theme-button01-color;
+
+        span {
+          color: #fff;
+          transition: all 0.2s;
+        }
+      }
+    }
+
+    @each $genre-num in $genre {
+      $i: index($genre, $genre-num);
+
+      .main-genre-#{$i} {
+        span {
+          text-transform: capitalize;
+        }
+      }
+
+      #main-genre-#{$i}-check:checked ~ ul .main-genre-#{$i} {
+        background-color: $theme-button01-color;
+        border-color: $theme-button01-color;
+
+        span {
+          color: #fff;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+
+  .pd-profile-caution {
+    @include fontStyle(13px, 400);
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: $red-color;
+  }
+
+  .btn-complete {
+    @include buttonStyle(30px, 55px, $theme-bg-color, #fff, 1.1rem);
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .pd-profile-complt {
+    width: 100%;
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+
+    figure {
+      @include thumnail(180px, 180px);
+      position: relative;
+      border-radius: 30px;
+      background-color: #333333;
+      display: inline-block;
+    }
+
+    dl {
+      width: 63%;
+      float: right;
+      padding-left: 20px;
+    }
+
+    dl dt {
+      @include fontStyle(1.5em, bold);
+      display: inline-block;
+      margin: 1.2em 0 0.7em;
+    }
+
+    dl dd {
+      font-size: 0.85em;
+      line-height: 1.8;
+      position: relative;
+      padding-left: 60px;
+      width: 100%;
+      word-break: break-all;
+    }
+
+    dl dd b {
+      @include position($t: 0, $l: 0);
+      display: inline-block;
+      width: 60px;
+      color: #8d8d8d;
+    }
+
+    dl dd em {
+      margin-right: 15px;
+      color: rgba(51, 51, 51, 0.8);
+      font-weight: 400;
+    }
+  }
+}

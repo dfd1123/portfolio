@@ -1,0 +1,107 @@
+/* COMPONENTS - input, select, textarea ...
+   ========================================================================== */
+// -------------------------------------------------------------------------- //
+// 공통 input스타일 //
+
+@mixin common-input-style {
+  @include form-tag-init(
+    $bd: 1px solid $gray-light-01,
+    $rounded: 5px,
+    $pd: 0 13px,
+    $ip: true
+  );
+  @include font(15px, 300, $gray);
+  @include set-placholder {
+    @include font(inherit, 300, rgba($gray, 0.4));
+  }
+  @include inline-block;
+
+  min-height: 42px;
+  letter-spacing: -0.4px;
+
+  &:focus {
+    border-color: rgba($gray, 0.6);
+    transition: 0.3s;
+  }
+}
+
+// -------------------------------------------------------------------------- //
+
+// input[type="text"]
+.form-input-txt {
+  @include common-input-style;
+}
+
+// search input
+.form-input-search {
+  @include common-input-style;
+  @include bg-img($path-icon, "icon-search-gray.svg");
+  @include bg-option($p: calc(100% - 13px) 50%, $s: 12px);
+
+  padding-right: 35px;
+}
+
+// datepicker input
+.form-input-date {
+  @include common-input-style;
+  @include bg-img($path-icon, "icon-datepick.svg");
+  @include bg-option($s: 12px, $p: calc(100% - 10px));
+  @include font(13px, $c: $gray);
+
+  min-height: 30px;
+  padding: 0 30px 0 10px;
+}
+
+// select
+.form-select {
+  @include common-input-style;
+  @include bg-img($path-btn, "btn_arrow.svg");
+  @include bg-option($p: calc(100% - 13px) 50%, $s: 10px);
+
+  background-color: white;
+  color: rgba($gray, 0.6);
+
+  & option:not(:first-of-type) {
+    color: rgba($gray, 1);
+  }
+}
+
+// textarea
+.form-textarea {
+  @include common-input-style;
+  @include font(13px, 400, $primary-color);
+
+  resize: none;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  line-height: 1.7;
+}
+
+// image thumbnail review area
+.form-upload-img-area {
+  @include bg-img($path-icon, "icon_img.svg");
+  @include bg-option($p: center, $s: 28px);
+  @include inline-block;
+
+  overflow: hidden;
+
+  &.type-circle {
+    @include circle-size(80px) {
+      box-shadow: 0 0 2px $gray-light-01 inset;
+    }
+  }
+
+  &.type-square {
+    @include rounded;
+
+    box-shadow: 0 0 3px $gray-light-01 inset;
+    width: 100%;
+    min-height: 200px;
+  }
+
+  img {
+    @include width-height-100;
+
+    object-fit: cover;
+  }
+}

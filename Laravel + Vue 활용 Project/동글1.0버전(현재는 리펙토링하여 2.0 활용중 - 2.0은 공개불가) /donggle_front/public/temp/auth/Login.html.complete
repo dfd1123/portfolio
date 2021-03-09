@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>동글</title>
+
+    <link rel="stylesheet" href="/vendor/css/normalize.css" />
+    <link rel="stylesheet" href="/css/common/ui.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="dg-reg-hd">
+      <h1 class="dg-reg-hd-logo">gonggle</h1>
+    </header>
+    <!-- header E -->
+
+    <!-- content -->
+    <section id="login_main" class="step_common">
+      <h2 class="dg_blind">로그인하기</h2>
+      <form action="#" method="post">
+        <fieldset class="dg-write_form">
+          <legend class="dg_blind">로그인</legend>
+          <div class="dg_write write_mail">
+            <label for="#">이메일</label>
+            <input
+              type="email"
+              id="#"
+              class="input_text_box"
+              placeholder="이메일 입력"
+            />
+          </div>
+          <div class="dg_write write_pw">
+            <label for="#">비밀번호</label>
+            <input
+              type="password"
+              id="#"
+              class="input_text_box"
+              placeholder="비밀번호"
+            />
+          </div>
+          <input
+            type="checkbox"
+            id="test"
+            class="dg-input-checkbox display_none"
+          />
+          <label for="test" class="dg-input-checkbox_label"></label>
+          <label for="test" class="dg-input-checkbox_text"
+            >이메일 저장하기</label
+          >
+          <a href="test" class="dg-find_id_pw">아이디/비밀번호 찾기</a>
+        </fieldset>
+      </form>
+      <div class="dg-reg-end_btn_wrap clear_both">
+        <a href="#" class="dg-btn_gra dg-dubble_btn dg-btn_width100">로그인</a>
+        <a href="#" class="dg-btn_line dg-dubble_btn dg-btn_width100"
+          >회원가입</a
+        >
+      </div>
+      <div class="login_connect_wrap">
+        <h3>간편 로그인</h3>
+        <div class="login_connect login-login_connect login_connect_naver">
+          네이버로 로그인
+        </div>
+        <div class="login_connect login-login_connect login_connect_kakao">
+          카카오로 로그인
+        </div>
+        <div class="login_connect login-login_connect login_connect_facebook">
+          페이스북으로 로그인
+        </div>
+      </div>
+    </section>
+
+    <!-- alert display:none -->
+    <section id="dg-login-popup1" class="dg-login-popup">
+      <div class="dg-popup_alert_desc">
+        <h2 class="dg-reg-step_end_title">이메일 인증이 되어있지 않습니다.</h2>
+        <div class="dg-popup_alert_text">
+          가입하신 이메일 주소에서 인증 완료 후, 로그인해주세요.
+        </div>
+        <div class="dg-dubble_btn_wrap clear_both">
+          <a href="#" class="dg-btn_line dg-dubble_btn">닫기</a>
+          <a href="#" class="dg-btn_gra dg-dubble_btn">확인</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="dg-login-popup2" class="dg-login-popup">
+      <div class="dg-popup_alert_desc">
+        <h2 class="dg-reg-step_end_title">회원정보가 일치하지 않습니다.</h2>
+        <div class="dg-popup_alert_text">
+          아이디와 비밀번호를 확인해주세요.
+        </div>
+        <div class="dg-dubble_btn_wrap clear_both">
+          <a href="#" class="dg-btn_line dg-dubble_btn">닫기</a>
+          <a href="#" class="dg-btn_gra dg-dubble_btn">확인</a>
+        </div>
+      </div>
+    </section>
+    <!-- content E -->
+  </body>
+</html>
+
+<!-- Login E -->

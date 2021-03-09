@@ -1,0 +1,104 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+const app = require('../app');
+const fs = require('fs');
+const path = require('path');
+const debug = require('debug')('parking-server:server');
+const http = require('http');
+const https = require('https');
+
+try {
+    const SSL_PORT = 443;
+    const OPTIONS = {
+        ca: fs.readFileSync('/etc/letsencrypt/live/intospace.kr/fullchain.pem'),
+        key: fs.readFileSync(path.resolve(process.cwd(), '/etc/letsencrypt/live/intospace.kr/privkey.pem'), 'utf8').toString(),
+        cert: fs.readFileSync(path.resolve(process.cwd(), '/etc/letsencrypt/live/intospace.kr/cert.pem'), 'utf8').toString(),
+    };
+
+    https.createServer(OPTIONS, app).listen(SSL_PORT, () => {
+        console.log(`[HTTPS] Soda Server is started on port ${SSL_PORT}`);
+    });
+} catch (error) {
+    console.error('[HTTPS] HTTPS 오류가 발생하였습니다. HTTPS 서버는 실행되지 않습니다.');
+    console.error(error);
+}
+
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+const port = normalizePort(process.env.PORT || '8080');
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+const httpServer = http.createServer(app);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+httpServer.listen(port);
+httpServer.on('error', onError);
+httpServer.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+    var port = parseInt(val, 10);
+    if (isNaN(port)) {
+        // named pipe
+        return val;
+    }
+    if (port >= 0) {
+        // port number
+        return port;
+    }
+
+    return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+    if (error.syscall !== 'listen') {
+        throw error;
+    }
+
+    var bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+
+    // handle specific listen errors with friendly messages
+    switch (error.code) {
+        case 'EACCES':
+            console.error(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            console.error(bind + ' is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw error;
+    }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+    var addr = httpServer.address();
+    var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
+    debug('Listening on ' + bind);
+}

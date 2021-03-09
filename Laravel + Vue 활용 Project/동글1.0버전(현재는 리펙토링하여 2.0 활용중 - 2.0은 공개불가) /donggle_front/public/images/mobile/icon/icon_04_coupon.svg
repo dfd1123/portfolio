@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.77" height="14.958" viewBox="0 0 26.77 14.958">
+  <g id="icon_04_coupon" transform="translate(-1154.5 -28.5)">
+    <g id="그룹_3677" data-name="그룹 3677" transform="translate(1154.5 28.5)">
+      <path id="패스_152" data-name="패스 152" d="M25.733.5H8.016L6.943,1.574,5.869.5H1.037A.537.537,0,0,0,.5,1.037V13.921a.537.537,0,0,0,.537.537H5.869l1.074-1.073,1.074,1.073H25.733a.537.537,0,0,0,.537-.537V1.037A.537.537,0,0,0,25.733.5Z" fill="none" stroke="#3a3a3a" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_153" data-name="패스 153" d="M117.9,193.563a.537.537,0,1,1,.537-.537A.536.536,0,0,1,117.9,193.563Z" transform="translate(-110.978 -182.327)" fill="#3a3a3a"/>
+      <path id="패스_154" data-name="패스 154" d="M117.9,154.194a.537.537,0,1,1,.537-.537A.537.537,0,0,1,117.9,154.194Z" transform="translate(-110.978 -144.938)" fill="#3a3a3a"/>
+      <path id="패스_155" data-name="패스 155" d="M117.9,111.544a.537.537,0,1,1,.537-.537A.537.537,0,0,1,117.9,111.544Z" transform="translate(-110.978 -104.435)" fill="#3a3a3a"/>
+      <path id="패스_156" data-name="패스 156" d="M117.9,68.883a.537.537,0,1,1,.537-.537A.536.536,0,0,1,117.9,68.883Z" transform="translate(-110.978 -63.922)" fill="#3a3a3a"/>
+    </g>
+    <g id="그룹_3678" data-name="그룹 3678" transform="translate(1165.148 36.498) rotate(-45)">
+      <line id="선_237" data-name="선 237" x1="9.412" y1="0.005" transform="translate(0 3.816)" fill="none" stroke="#a134e8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_73" data-name="패스 73" d="M26.038,31.708a.667.667,0,1,1,0-.943A.666.666,0,0,1,26.038,31.708Z" transform="translate(-20.743 -24.037)" fill="#fc4ead" stroke="#fc4ead" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_74" data-name="패스 74" d="M26.038,18.678a.667.667,0,1,1,0-.943A.666.666,0,0,1,26.038,18.678Z" transform="translate(-20.743 -17.54)" fill="#fc4ead" stroke="#fc4ead" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

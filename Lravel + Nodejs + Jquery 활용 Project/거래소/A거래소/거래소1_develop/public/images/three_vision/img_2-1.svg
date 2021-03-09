@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1184" height="524" viewBox="0 0 1184 524">
+    <defs>
+        <style>
+            .cls-1,.cls-10,.cls-3,.cls-5,.cls-6{fill:#fff}.cls-11,.cls-2,.cls-9{fill:#1382ce}.cls-3{font-size:27px}.cls-14,.cls-3,.cls-5{font-family:SpoqaHanSans-Bold,SpoqaHanSans;font-weight:700}.cls-12,.cls-13,.cls-3,.cls-5,.cls-9{letter-spacing:-.04em}.cls-4{fill:#00b9ff}.cls-5{font-size:28px}.cls-12,.cls-6{font-size:18px}.cls-11,.cls-12,.cls-13,.cls-6,.cls-9{font-family:SpoqaHanSans-Regular,SpoqaHanSans}.cls-7{fill:url(#linear-gradient)}.cls-8{fill:#6498ff}.cls-11,.cls-9{font-size:22px}.cls-10{stroke:#6498ff;stroke-width:8px}.cls-12{fill:#686868}.cls-13{fill:#004777;font-size:29px}.cls-15,.cls-17{fill:none}.cls-15{stroke:#004777}.cls-16{stroke:none}.cls-18{filter:url(#Combined_Shape-3)}.cls-19{filter:url(#Combined_Shape-2)}.cls-20{filter:url(#Combined_Shape)}.cls-21{filter:url(#사각형_1366)}
+        </style>
+        <filter id="사각형_1366" width="1184" height="524" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="17"/>
+            <feGaussianBlur result="blur" stdDeviation="14"/>
+            <feFlood flood-color="#97a9ce" flood-opacity=".102"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="linear-gradient" x1="-.009" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f2f2f2"/>
+            <stop offset="1" stop-color="#6498ff"/>
+        </linearGradient>
+        <filter id="Combined_Shape" width="170" height="146.087" x="320.004" y="142.407" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-2" stdDeviation="8"/>
+            <feFlood flood-color="#4b556e" flood-opacity=".2"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Combined_Shape-2" width="170" height="146.087" x="694.003" y="142.407" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-3" stdDeviation="8"/>
+            <feFlood flood-color="#4b556e" flood-opacity=".2"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Combined_Shape-3" width="170" height="146.087" x="507" y="142.41" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-4" stdDeviation="8"/>
+            <feFlood flood-color="#4b556e" flood-opacity=".2"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="img_2-1" transform="translate(-368 -6719)">
+        <g class="cls-21" transform="translate(368 6719)">
+            <path id="사각형_1366-2" d="M0 0h1100v440H0z" class="cls-1" data-name="사각형 1366" transform="translate(42 25)"/>
+        </g>
+        <path id="사각형_1373" d="M0 0h1100v72H0z" class="cls-2" data-name="사각형 1373" transform="translate(410 6744)"/>
+        <text id="보유_코인팀_승리시_리워드" class="cls-3" data-name="보유 코인팀 승리시 리워드" transform="translate(821.207 6791)">
+            <tspan x="0" y="0">보유 코인팀 승리시 리워드</tspan>
+        </text>
+        <circle id="타원_101" cx="97.5" cy="97.5" r="97.5" class="cls-4" data-name="타원 101" transform="translate(450 6879)"/>
+        <circle id="타원_105" cx="97.5" cy="97.5" r="97.5" class="cls-4" data-name="타원 105" transform="translate(1275 6879)"/>
+        <text id="STAKING" class="cls-5" transform="translate(490.152 6968)">
+            <tspan x="0" y="0">STAKING</tspan>
+        </text>
+        <text id="맨유_승리시" class="cls-5" data-name="맨유 승리시" transform="translate(1308.222 6968)">
+            <tspan x="0" y="0">맨유 승리시</tspan>
+        </text>
+        <g id="그룹">
+            <text id="_100만원" class="cls-6" data-name="100만원" transform="translate(515.348 6997)">
+                <tspan x="0" y="0">100만원</tspan>
+            </text>
+            <text id="MNU_Coin_보유" class="cls-6" data-name="MNU Coin 보유" transform="translate(487.943 7017)">
+                <tspan x="0" y="0">MNU Coin 보유</tspan>
+            </text>
+        </g>
+        <g id="그룹-2" data-name="그룹">
+            <text id="_46_000원" class="cls-6" data-name="+46,000원" transform="translate(1331.132 6997)">
+                <tspan x="0" y="0">+46,000원</tspan>
+            </text>
+            <text id="Reward" class="cls-6" transform="translate(1340.933 7017)">
+                <tspan x="0" y="0">Reward</tspan>
+            </text>
+        </g>
+        <g id="그룹_4089" data-name="그룹 4089" transform="translate(682 6994)">
+            <path id="사각형_1372" d="M0 0h539v6H0z" class="cls-7" data-name="사각형 1372" transform="translate(0 9)"/>
+            <path id="다각형_22" d="M12 0l12 17H0z" class="cls-8" data-name="다각형 22" transform="rotate(90 278 278)"/>
+        </g>
+        <g id="그룹_4105" data-name="그룹 4105">
+            <g id="그룹_4104" data-name="그룹 4104" transform="translate(713.454 6869.407)">
+                <g class="cls-20" transform="translate(-345.45 -150.41)">
+                    <path id="Combined_Shape-4" d="M48.471 87.534H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8h106a8 8 0 0 1 8 8v71.534a8 8 0 0 1-8 8H73.529L61 98.087z" class="cls-1" data-name="Combined Shape" transform="translate(344 161.41)"/>
+                </g>
+                <g id="그룹-3" data-name="그룹">
+                    <text id="스테이킹" class="cls-9" transform="translate(20.386 47.593)">
+                        <tspan x="0" y="0">스테이킹</tspan>
+                    </text>
+                    <text id="_8시간" class="cls-9" data-name="8시간" transform="translate(33.63 74.593)">
+                        <tspan x="0" y="0">8시간</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="타원_106" class="cls-10" data-name="타원 106" transform="translate(757 6989)">
+                <circle cx="16.5" cy="16.5" r="16.5" class="cls-16"/>
+                <circle cx="16.5" cy="16.5" r="12.5" class="cls-17"/>
+            </g>
+            <rect id="사각형_1396" width="80" height="31" class="cls-2" data-name="사각형 1396" rx="15.5" transform="translate(733 7035)"/>
+            <text id="_8:00" class="cls-6" data-name="8:00" transform="translate(746.486 7057)">
+                <tspan x="0" y="0">+0.8%</tspan>
+            </text>
+        </g>
+        <g id="타원_106-2" class="cls-10" data-name="타원 106" transform="translate(944 6989)">
+            <circle cx="16.5" cy="16.5" r="16.5" class="cls-16"/>
+            <circle cx="16.5" cy="16.5" r="12.5" class="cls-17"/>
+        </g>
+        <rect id="사각형_1396-2" width="80" height="31" class="cls-2" data-name="사각형 1396" rx="15.5" transform="translate(920 7035)"/>
+        <text id="_8:00-2" class="cls-6" data-name="8:00" transform="translate(933.486 7057)">
+            <tspan x="0" y="0">+0.3%</tspan>
+        </text>
+        <g id="그룹_4107" data-name="그룹 4107" transform="translate(374)">
+            <g id="그룹_4104-2" data-name="그룹 4104" transform="translate(713.453 6869.407)">
+                <g class="cls-19" transform="translate(-719.45 -150.41)">
+                    <path id="Combined_Shape-5" d="M48.471 87.534H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8h106a8 8 0 0 1 8 8v71.534a8 8 0 0 1-8 8H73.529L61 98.087z" class="cls-1" data-name="Combined Shape" transform="translate(718 161.41)"/>
+                </g>
+                <g id="그룹-4" data-name="그룹">
+                    <text id="등급별" class="cls-9" transform="translate(30.066 47.593)">
+                        <tspan x="0" y="0">등급별</tspan>
+                    </text>
+                    <text id="추가_" class="cls-9" data-name="추가 %" transform="translate(28.031 74.593)">
+                        <tspan x="0" y="0">추가 %</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="타원_106-3" class="cls-10" data-name="타원 106" transform="translate(757 6989)">
+                <circle cx="16.5" cy="16.5" r="16.5" class="cls-16"/>
+                <circle cx="16.5" cy="16.5" r="12.5" class="cls-17"/>
+            </g>
+            <rect id="사각형_1396-3" width="80" height="31" class="cls-2" data-name="사각형 1396" rx="15.5" transform="translate(733 7035)"/>
+            <text id="_8:00-3" class="cls-6" data-name="8:00" transform="translate(746.486 7057)">
+                <tspan x="0" y="0">+0.5%</tspan>
+            </text>
+        </g>
+        <g id="그룹_4109" data-name="그룹 4109">
+            <g class="cls-18" transform="translate(368 6719)">
+                <path id="Combined_Shape-6" d="M48.471 87.534H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8h106a8 8 0 0 1 8 8v71.534a8 8 0 0 1-8 8H73.529L61 98.087z" class="cls-1" data-name="Combined Shape" transform="translate(531 161.41)"/>
+            </g>
+            <text id="_8:00-4" class="cls-9" data-name="8:00" transform="translate(930.52 6917)">
+                <tspan x="0" y="0">연승시</tspan>
+            </text>
+            <text id="_8:00-5" class="cls-11" data-name="8:00" transform="translate(944.594 6950)">
+                <tspan x="0" y="0">0.1%+</tspan>
+            </text>
+            <g id="그룹_4108" data-name="그룹 4108">
+                <circle id="타원_107" cx="11" cy="11" r="11" class="cls-2" data-name="타원 107" transform="translate(918 6931)"/>
+                <path id="_8:00-6" d="M-.8-7.37h-4.469v-1.474H-.8v-4.8H.8v4.8h4.469v1.474H.8v4.818H-.8z" class="cls-1" data-name="8:00" transform="translate(929.269 6949.64)"/>
+            </g>
+        </g>
+        <g id="그룹-5" data-name="그룹">
+            <text id="승리기본_3_추가_1.6_" class="cls-12" data-name="승리기본 3% + 추가 1.6%" transform="translate(1279.193 7107)">
+                <tspan x="0" y="0">승리기본 3% + 추가 1.6%</tspan>
+            </text>
+            <text id="_" class="cls-12" data-name="=" transform="translate(1366.349 7125)">
+                <tspan x="0" y="0">=</tspan>
+            </text>
+            <text id="총_승리_REWARD_마일리지_4.6_" class="cls-12" data-name="총 승리 REWARD 마일리지 4.6%" transform="translate(1256.387 7143)">
+                <tspan x="0" y="0">총 승리 REWARD 마일리지 4.6%</tspan>
+            </text>
+        </g>
+        <text id="최대추가_3.0_가능" class="cls-13" data-name="최대추가 +3.0% 가능" transform="translate(836.852 7130)">
+            <tspan x="0" y="0">최대추가 </tspan><tspan y="0" class="cls-14">+3.0%</tspan><tspan y="0"> 가능</tspan>
+        </text>
+        <g id="그룹_4111" data-name="그룹 4111">
+            <path id="선_338" d="M0 0h144" class="cls-15" data-name="선 338" transform="translate(682.5 7117.5)"/>
+            <path id="선_340" d="M0 0v21" class="cls-15" data-name="선 340" transform="translate(682.5 7106.5)"/>
+        </g>
+        <g id="그룹_4110" data-name="그룹 4110">
+            <path id="선_339" d="M0 0h144" class="cls-15" data-name="선 339" transform="translate(1094.5 7117.5)"/>
+            <path id="선_341" d="M0 0v21" class="cls-15" data-name="선 341" transform="translate(1238.5 7106.5)"/>
+        </g>
+    </g>
+</svg>

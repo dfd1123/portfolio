@@ -1,0 +1,21 @@
+// 0. font
+@import "base/animation";
+@import "base/typography";
+
+// 1. utility (도구들)
+@import "util/variables";
+@import "util/functions";
+@import "util/mixin";
+@import "util/helpers";
+
+// 2. layouts (공통)
+@import "layouts/_app.scss";
+@import "layouts/_common.scss";
+
+// 3. components (컴퍼넌트)
+@import "components/_buttons.scss";
+@import "components/_checkbox.scss";
+@import "components/_form_items.scss";
+@import "components/_icons.scss";
+@import "components/_question_card.scss";
+@import "components/_answer_items.scss";

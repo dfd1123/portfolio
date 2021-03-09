@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>philips pay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+        <!-- Open graph -->
+        <meta property="og:url" content="#" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="img/meta_image.png" />
+        <meta name="keyword" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500" rel="stylesheet">
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="stylesheet/scss/vendors/normalize-custom.css">
+        <link rel="stylesheet" href="css/common.css">
+
+        <!-- 개별 css -->
+        <link rel="stylesheet" href="css/wallet.css">
+        <link rel="stylesheet" href="css/wallet_03.css">
+        
+        <!-- 공통 js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="app" class="app">
+
+            <!-- 헤더 -->
+            <header class="header header--type01">
+                <button type="button" class="header__btn header__btn--left header__btn--prev" onClick="location.href='./03_main_make_wallet(after).html'">
+                    <b class="hide-text">닫기</b>
+                </button>
+                <h1 class="header__center">입금</h1>
+            </header>
+            <!-- end 헤더 -->
+            <!-- 컨텐츠 -->
+            <div class="content_wrapper">
+                <!-- 각 페이지마다 다른 컨테이너 -->
+                <div class="container container--wallet container--wallet03 container--wallet03-1">
+                    <div class="basic_panel">
+                        <h2 class="basic_panel__title">입금안내</h2>
+                        <p class="wallet__etc-info wallet__account-info">
+                            <span class="wallet__account-info__bank">국민은행 <b>590202-06-095743</b></span>
+                            <span class="wallet__account-info__name">(예금주 : 필립스주식회사)</span>
+                        </p>
+                        <div class="basic_panel__contents">
+                            <p class="caution_list">※ 금융사고 방지를 위해 반드시 인증한 계좌로 입금해주세요.</p>
+                            <p class="caution_list">※ 입금신청 후, 위의 계좌번호로 입금하셔야 입금이 완료됩니다.</p>
+                            <p class="caution_list">※ 입금 확인 후 입금요청이 승인됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="basic_panel basic_panel--dark">
+                        <h2 class="basic_panel--dark__title">입금금액</h2>
+                        <div class="basic_panel--dark__contents">
+                            <table class="table_type01">
+                                <tr class="table_type01__tr table_type01__tr--direct-input">
+                                    <th class="table_type01__th">
+                                    </th>
+                                    <td class="table_type01__td">
+                                        <input type="text" placeholder="0" class="table_type01__input" id="deposit_amount">
+                                        <em class="tbl_unit">won</em>
+                                    </td>
+                                </tr>
+                                <tr class="table_type01__tr">
+                                    <th class="table_type01__th">
+                                        <span class="plus_fee">총 입금금액</span>
+                                    </th>
+                                    <td class="table_type01__td">
+                                        <span>30,000</span>
+                                        <em class="tbl_unit">won</em>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="basic_panel basic_panel--dark">
+                        <input type="checkbox" id="chck_history_tbl" class="none">
+                        <h2 class="basic_panel--dark__title">
+                            <label class="basic_panel__title-label" for="chck_history_tbl">입출금내역</label>
+                        </h2>
+                        <div class="basic_panel--dark__contents wallet__history-contents">
+                            <div class="wallet__history">
+                                <div class="wallet__history__btns">
+                                    <button type="button" class="wallet__history__btn active">전체</button>
+                                    <button type="button" class="wallet__history__btn">입금</button>
+                                    <button type="button" class="wallet__history__btn">출금</button>
+                                </div>
+                                <div class="wallet__history__tbl-box">
+                                    <table class="wallet__history__tbl">
+                                        <thead>
+                                            <tr>
+                                                <th>입출금</th>
+                                                <th>수량</th>
+                                                <th>상태</th>
+                                                <th>날짜</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                    <div class="wallet__history__tbl-scrl">
+                                        <table class="wallet__history__tbl">
+                                            <tbody>
+                                                <tr class="wallet__history__tr wallet__history__tr--in">
+                                                    <td class="status">입금</td>
+                                                    <td>100,000,000 WON</td>
+                                                    <td>입금대기<br><button type="button" class="btn_mini02 btn_mini02-b" onclick="alert_popup('#alert_cancel_deposit')">입금취소</button></td>
+                                                    <td>19.08.04<br>00:00</td>
+                                                </tr>
+                                                <tr class="wallet__history__tr wallet__history__tr--out">
+                                                    <td class="status">출금</td>
+                                                    <td>100,000,000 WON</td>
+                                                    <td>출금대기<br><button type="button" class="btn_mini02 btn_mini02-r">출금취소</button></td>
+                                                    <td>19.08.04<br>00:00</td>
+                                                </tr>
+                                                <tr class="wallet__history__tr wallet__history__tr--in">
+                                                    <td class="status">입금</td>
+                                                    <td>100,000,000 WON</td>
+                                                    <td>입금대기</button></td>
+                                                    <td>19.08.04<br>00:00</td>
+                                                </tr>
+                                                <tr class="wallet__history__tr wallet__history__tr--out">
+                                                    <td class="status">출금</td>
+                                                    <td>100,000,000 WON</td>
+                                                    <td>출금대기<br><button type="button" class="btn_mini02 btn_mini02-r">출금취소</button></td>
+                                                    <td>19.08.04<br>00:00</td>
+                                                </tr>
+                                                <tr class="wallet__history__tr wallet__history__tr--in">
+                                                    <td class="status">입금</td>
+                                                    <td>100,000,000 WON</td>
+                                                    <td>입금대기</button></td>
+                                                    <td>19.08.04<br>00:00</td>
+                                                </tr>
+                                                <tr class="wallet__history__tr wallet__history__tr--out">
+                                                    <td class="status">출금</td>
+                                                    <td>100,000,000 WON</td>
+                                                    <td>출금대기<br><button type="button" class="btn_mini02 btn_mini02-r">출금취소</button></td>
+                                                    <td>19.08.04<br>00:00</td>
+                                                </tr>
+                                                <tr class="wallet__history__tr wallet__history__tr--in">
+                                                    <td class="status">입금</td>
+                                                    <td>100,000,000 WON</td>
+                                                    <td>입금대기<br><button type="button" class="btn_mini02 btn_mini02-b">입금취소</button></td>
+                                                    <td>19.08.04<br>00:00</td>
+                                                </tr>
+                                                <tr class="wallet__history__tr wallet__history__tr--out">
+                                                    <td class="status">출금</td>
+                                                    <td>100,000,000 WON</td>
+                                                    <td>출금대기<br><button type="button" class="btn_mini02 btn_mini02-r">출금취소</button></td>
+                                                    <td>19.08.04<br>00:00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bt-fix-btn">
+                        <button type="button" class="btn_solid btn_solid02" id="deposit_request_btn">입금요청</button>
+                    </div>
+                </div>
+                <!-- end 각 페이지마다 다른 컨테이너 -->
+            </div>
+            <!-- end 컨텐츠  -->
+
+            <!-- alert 팝업 까만배경 -->
+            <div class="alert_black_overlay"></div>
+            <!-- end alert 팝업 까만배경 -->
+            <!-- alert 팝업 보이는 영역 -->
+            <div class="alert_popup_overlay">
+                <table class="alert_popup_tbl" id="alert_deposit_minimal">
+                    <tbody>
+                        <tr>
+                            <td class="alert_popup_tbl_td">
+                                <div class="alert_popup">
+                                    <span class="alert_popup_icon">
+                                        <img src="img/icon/pop_signal.png" alt="alert pop icon">
+                                    </span>
+                                    <p class="alert_popup_txt">입금 최소 금액이 5000KRW 이상이어야 합니다.</p>
+                                    <button type="button" class="alert_popup_btn alert_popup_btn02" onclick="alert_modal_overlay()">닫기</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="alert_popup_tbl" id="alert_cancel_deposit">
+                    <tbody>
+                        <tr>
+                            <td class="alert_popup_tbl_td">
+                                <div class="alert_popup">
+                                    <span class="alert_popup_icon">
+                                        <img src="img/icon/pop_get.png" alt="alert pop icon">
+                                    </span>
+                                    <p class="alert_popup_txt">입금신청을 취소하시겠습니까?</p>
+                                    <div class="alert_popup_btns">
+                                        <button type="button" class="alert_popup_btn alert_popup_btn01" onclick="alert_modal_overlay()">아니요</button>
+                                        <button type="button" class="alert_popup_btn alert_popup_btn02">예</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="alert_popup_tbl" id="alert_chck_final_deposit">
+                    <tbody>
+                        <tr>
+                            <td class="alert_popup_tbl_td">
+                                <div class="alert_popup">
+                                    <span class="alert_popup_icon">
+                                        <img src="img/icon/pop_get.png" alt="alert pop icon">
+                                    </span>
+                                    <p class="alert_popup_txt">총 <b id="deposit_amount_check"></b> <em class="unit">krw</em> 금액을<br>입금신청 하시겠습니까?</p>
+                                    <div class="alert_popup_btns">
+                                        <button type="button" class="alert_popup_btn alert_popup_btn01">아니요</button>
+                                        <button type="button" class="alert_popup_btn alert_popup_btn02">예</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end alert 팝업 보이는 영역 -->
+        </div>
+
+        <script>
+
+            //alert 팝업 소스
+            $('.alert_popup_overlay').click(function(e){
+                
+                var thisclassname = $(e.target).attr('class');
+                if(thisclassname == 'alert_popup_tbl_td'){
+                    alert_modal_overlay();
+                }
+        
+            }) // 1. 까만배경 클릭할 떄 alert팝업 꺼짐
+            
+            function alert_popup(name){
+            
+                $('.alert_black_overlay').fadeIn(100);
+                $('.alert_popup_overlay').fadeIn(100);
+                $(name).fadeIn();
+                $(name).find('.alert_popup').addClass('alert_popup_visible');
+                
+            } // 2. 까만배경열리고, 보이는 영역 보이고, alert팝업 효과주기 
+        
+            function alert_modal_overlay(){
+                
+                $('.alert_popup_overlay').find('.alert_popup_visible').removeClass('alert_popup_visible');
+                $('.alert_popup_overlay').fadeOut(400);
+                $('.alert_popup_tbl').fadeOut();
+                $('.alert_black_overlay').fadeOut(500);
+        
+            } // 3. 보이는 영역 애니메이션 해제되고, 까만배경 닫히고, 보이는 영역 사라지기
+            //alert 팝업 소스
+
+            // 입금요청버튼 누를때 (5000원 이하면 팅김)
+            $('#deposit_request_btn').click(function(e){
+
+                var deposit_amt =  $('#deposit_amount').val();
+
+                if( deposit_amt < 5000 ){
+                    alert_popup('#alert_deposit_minimal');
+                }else{
+                    $('#deposit_amount_check').append(deposit_amt);
+                    alert_popup('#alert_chck_final_deposit');
+                }
+                
+            })
+            // end
+        
+        </script>
+
+    </body>
+
+</html>

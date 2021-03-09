@@ -1,0 +1,64 @@
+body{
+    letter-spacing: -0.4px;
+	font-family: "Nunito", 'Noto Sans SC', sans-serif;
+}
+
+/* common.css */
+.board_st_wrap .board_st_inner .left_tit,
+.board_st_wrap .list_tab_ul li,
+.board_st_wrap .tab_menu_bar ul li,
+.board_st_wrap .main_tit {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* header.css */
+.navbar-sharebits .right_nav .mypage_toggle li:first-child a{
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* main.css */
+.main_visual_wrap .viusal_top,
+.main_visual_wrap .p_2nd b,
+.main_section_wrap_1 .text_box h1,
+.main_section_wrap_2 .sharebits_advan_ul li h2,
+.main_section_wrap_3 .title{
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* mypage.css */
+.mypage_hd h1{
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* 입출금 */
+.history_con .note_label .btn_style{
+    width: 75px;
+}
+
+/* p2p */
+.p2p_list_group .list_in_con .buy_tit:before{
+    content: '买入';
+}
+.p2p_list_group .list_in_con .sell_tit:before{
+    content: '卖出';
+}
+
+.history_con .period_sch_group .period_sch_input{
+    width: 110px;
+    background-position: 95% 50%;
+}
+
+
+/* ICO */
+.ico_write_con .info_form_group._notice h5:after{
+    content:'我们建议缩略图图像分辨率至少为570 X 570px。';
+}
+.ico_write_con .info_form_group._detail_page h5:after{
+    content:'附加图像建议最多3个/分辨率为1225像素宽。 （每件应少于20MB。）';
+}
+
+.ico_write_con .info_form_group._interview label.under_txt:after {
+    content: '(截至 10)';
+    color: #474846;
+    top: 22px;
+}

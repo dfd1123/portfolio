@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="399" height="1192" viewBox="0 0 399 1192">
+  <defs>
+    <filter id="사각형_1366" x="0" y="0" width="399" height="1192" filterUnits="userSpaceOnUse">
+      <feOffset dy="17" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feFlood flood-color="#97a9ce" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="-0.009" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#6498ff"/>
+    </linearGradient>
+    <filter id="Combined_Shape" x="41" y="307" width="146.087" height="143.733" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-2"/>
+      <feFlood flood-color="#4b556e" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Combined_Shape-2" x="41" y="426" width="146.087" height="143.733" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-3"/>
+      <feFlood flood-color="#4b556e" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Combined_Shape-3" x="41" y="544" width="146.087" height="143.733" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-4"/>
+      <feFlood flood-color="#4b556e" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="mobile_img_04" transform="translate(19 -5244)">
+    <g transform="matrix(1, 0, 0, 1, -19, 5244)" filter="url(#사각형_1366)">
+      <rect id="사각형_1366-2" data-name="사각형 1366" width="315" height="1108" transform="translate(42 25)" fill="#fff"/>
+    </g>
+    <rect id="사각형_1373" data-name="사각형 1373" width="315" height="60" transform="translate(23 5269)" fill="#1382ce"/>
+    <text id="보유_코인팀_승리시_리워드" data-name="보유 코인팀 승리시 리워드" transform="translate(68 5309)" fill="#fff" font-size="22" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">보유 코인팀 승리시 리워드</tspan></text>
+    <circle id="타원_101" data-name="타원 101" cx="80" cy="80" r="80" transform="translate(101 5350)" fill="#00b9ff"/>
+    <text id="STAKING" transform="translate(139 5417)" fill="#fff" font-size="20" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">STAKING</tspan></text>
+    <text id="_100만원" data-name="100만원" transform="translate(152 5443)" fill="#fff" font-size="16" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">100만원</tspan></text>
+    <text id="MNU_Coin_보유" data-name="MNU Coin 보유" transform="translate(127 5463)" fill="#fff" font-size="16" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">MNU Coin 보유</tspan></text>
+    <rect id="사각형_1372" data-name="사각형 1372" width="539" height="6" transform="translate(184 5527) rotate(90)" fill="url(#linear-gradient)"/>
+    <path id="다각형_22" data-name="다각형 22" d="M12,0,24,17H0Z" transform="translate(192 6083) rotate(180)" fill="#6498ff"/>
+    <g id="타원_106" data-name="타원 106" transform="translate(197 5601) rotate(90)" fill="#fff" stroke="#6498ff" stroke-width="8">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="12.5" fill="none"/>
+    </g>
+    <g id="타원_106-2" data-name="타원 106" transform="translate(197 5720) rotate(90)" fill="#fff" stroke="#6498ff" stroke-width="8">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="12.5" fill="none"/>
+    </g>
+    <g id="타원_106-3" data-name="타원 106" transform="translate(197 5838) rotate(90)" fill="#fff" stroke="#6498ff" stroke-width="8">
+      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+      <circle cx="16.5" cy="16.5" r="12.5" fill="none"/>
+    </g>
+    <g id="그룹_4122" data-name="그룹 4122" transform="translate(-6128 3125.549)">
+      <g transform="matrix(1, 0, 0, 1, 6109, 2118.45)" filter="url(#Combined_Shape)">
+        <path id="Combined_Shape-4" data-name="Combined Shape" d="M38.035,87.534H6.278c-3.467,0-6.278-3.582-6.278-8V8C0,3.582,2.811,0,6.278,0H89.456c3.467,0,6.278,3.582,6.278,8V79.534c0,4.418-2.811,8-6.278,8H57.7L47.867,98.087Z" transform="translate(65 421.73) rotate(-90)" fill="#fff"/>
+      </g>
+      <text id="스테이킹" transform="translate(6186 2488)" fill="#1382ce" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">스테이킹</tspan></text>
+      <text id="_8시간" data-name="8시간" transform="translate(6197 2515)" fill="#1382ce" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">8시간</tspan></text>
+    </g>
+    <g id="그룹_4123" data-name="그룹 4123" transform="translate(-6315 3244.546)">
+      <g transform="matrix(1, 0, 0, 1, 6296, 1999.45)" filter="url(#Combined_Shape-2)">
+        <path id="Combined_Shape-5" data-name="Combined Shape" d="M38.035,87.534H6.278c-3.467,0-6.278-3.582-6.278-8V8C0,3.582,2.811,0,6.278,0H89.456c3.467,0,6.278,3.582,6.278,8V79.534c0,4.418-2.811,8-6.278,8H57.7L47.867,98.087Z" transform="translate(65 540.73) rotate(-90)" fill="#fff"/>
+      </g>
+      <text id="_8:00" data-name="8:00" transform="translate(6381 2488)" fill="#1382ce" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">연승시</tspan></text>
+      <text id="_8:00-2" data-name="8:00" transform="translate(6385.594 2512)" fill="#1382ce" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">0.1%+</tspan></text>
+      <g id="그룹_4108" data-name="그룹 4108" transform="translate(5448.514 -4434.486)">
+        <circle id="타원_107" data-name="타원 107" cx="8" cy="8" r="8" transform="translate(918.486 6931.486)" fill="#1382ce"/>
+        <path id="_8:00-3" data-name="8:00" d="M-1.821-8.8H-5.269V-9.941h3.448v-3.7H-.587v3.7H2.86V-8.8H-.587v3.717H-1.821Z" transform="translate(927.898 6948.498)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="그룹_4124" data-name="그룹 4124" transform="translate(-6502 3362.549)">
+      <g transform="matrix(1, 0, 0, 1, 6483, 1881.45)" filter="url(#Combined_Shape-3)">
+        <path id="Combined_Shape-6" data-name="Combined Shape" d="M38.035,87.534H6.278c-3.467,0-6.278-3.582-6.278-8V8C0,3.582,2.811,0,6.278,0H89.456c3.467,0,6.278,3.582,6.278,8V79.534c0,4.418-2.811,8-6.278,8H57.7L47.867,98.087Z" transform="translate(65 658.73) rotate(-90)" fill="#fff"/>
+      </g>
+      <text id="등급별" transform="translate(6568 2488)" fill="#1382ce" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">등급별</tspan></text>
+      <text id="추가_" data-name="추가 %" transform="translate(6566 2515)" fill="#1382ce" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">추가 %</tspan></text>
+    </g>
+    <rect id="사각형_1396" data-name="사각형 1396" width="70" height="31" rx="15.5" transform="translate(205 5601)" fill="#1382ce"/>
+    <text id="_8:00-4" data-name="8:00" transform="translate(213.486 5623)" fill="#fff" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">+0.8%</tspan></text>
+    <rect id="사각형_1396-2" data-name="사각형 1396" width="70" height="31" rx="15.5" transform="translate(205 5720)" fill="#1382ce"/>
+    <text id="_8:00-5" data-name="8:00" transform="translate(213.486 5742)" fill="#fff" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">+0.3%</tspan></text>
+    <rect id="사각형_1396-3" data-name="사각형 1396" width="70" height="31" rx="15.5" transform="translate(202 5839)" fill="#1382ce"/>
+    <text id="_8:00-6" data-name="8:00" transform="translate(210.486 5861)" fill="#fff" font-size="18" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">+0.5%</tspan></text>
+    <g id="그룹_4125" data-name="그룹 4125" transform="translate(0 2.5)">
+      <text id="최대추가_3.0_가능" data-name="최대추가 +3.0% 가능" transform="translate(286 5708.852) rotate(90)" fill="#004777" font-size="22" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">최대추가 </tspan><tspan y="0" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700">+3.0%</tspan><tspan y="0" xml:space="preserve"> 가능</tspan></text>
+      <g id="그룹_4111" data-name="그룹 4111" transform="translate(7412 4842) rotate(90)">
+        <line id="선_338" data-name="선 338" x2="144" transform="translate(682.5 7117.5)" fill="none" stroke="#004777" stroke-width="1"/>
+        <line id="선_340" data-name="선 340" y2="21" transform="translate(682.5 7106.5)" fill="none" stroke="#004777" stroke-width="1"/>
+      </g>
+      <g id="그룹_4110" data-name="그룹 4110" transform="translate(7412 4842) rotate(90)">
+        <line id="선_339" data-name="선 339" x2="144" transform="translate(1094.5 7117.5)" fill="none" stroke="#004777" stroke-width="1"/>
+        <line id="선_341" data-name="선 341" y2="21" transform="translate(1238.5 7106.5)" fill="none" stroke="#004777" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="그룹_4126" data-name="그룹 4126" transform="translate(-5984 3784)">
+      <circle id="타원_101-2" data-name="타원 101" cx="80" cy="80" r="80" transform="translate(6085 2325)" fill="#00b9ff"/>
+      <text id="STAKING-2" data-name="STAKING" transform="translate(6119 2392)" fill="#fff" font-size="20" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">맨유 승리시</tspan></text>
+      <text id="_46_000원" data-name="+46,000원" transform="translate(6128 2418)" fill="#fff" font-size="16" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">+46,000원</tspan></text>
+      <text id="Reward" transform="translate(6137 2438)" fill="#fff" font-size="16" font-family="SpoqaHanSans-Regular, SpoqaHanSans"><tspan x="0" y="0">Reward</tspan></text>
+    </g>
+    <g id="그룹_4127" data-name="그룹 4127" transform="translate(27)">
+      <text id="승리기본_3_추가_1.6_" data-name="승리기본 3% + 추가 1.6% " transform="translate(81 6300)" fill="#686868" font-size="14" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">승리기본 3% + 추가 1.6% </tspan></text>
+      <text id="_" data-name="= " transform="translate(149 6318)" fill="#686868" font-size="14" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">= </tspan></text>
+      <text id="총_승리_REWARD_마일리지_4.6_" data-name="총 승리 REWARD 마일리지 4.6%" transform="translate(63 6336)" fill="#686868" font-size="14" font-family="SpoqaHanSans-Regular, SpoqaHanSans" letter-spacing="-0.04em"><tspan x="0" y="0">총 승리 REWARD 마일리지 4.6%</tspan></text>
+    </g>
+  </g>
+</svg>
